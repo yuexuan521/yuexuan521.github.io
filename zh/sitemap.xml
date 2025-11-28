@@ -18,6 +18,18 @@
     <loc>https://yuexuan521.github.io/zh/about_me_zh/</loc>
     <lastmod>2023-05-14T13:15:59-07:00</lastmod>
   </url><url>
+    <loc>https://yuexuan521.github.io/zh/post/test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/post/test/"
+                />
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -40,6 +52,18 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yuexuan521.github.io/zh/categories/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/post/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/post/"
                 />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/search/</loc>

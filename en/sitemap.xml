@@ -19,6 +19,16 @@
                 />
   </url><url>
     <loc>https://yuexuan521.github.io/en/post/test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/post/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/test/"
+                />
   </url><url>
     <loc>https://yuexuan521.github.io/en/archives/</loc>
     <xhtml:link
@@ -45,6 +55,16 @@
                 />
   </url><url>
     <loc>https://yuexuan521.github.io/en/post/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/"
+                />
   </url><url>
     <loc>https://yuexuan521.github.io/en/search/</loc>
     <xhtml:link
