@@ -1,11 +1,11 @@
-baseURL: https://ramsayleung.github.io
+baseURL: https://yuexuan521.github.io
 title: "In Pursuit of Simplicity"
 pagination:
   pagerSize: 5
 theme: PaperMod
 
 author:
-  name: Ramsay Leung
+  name: Yue Xuan
 languageCode: en-us
 rssLimit: 10
 enableRobotsTXT: true
@@ -14,7 +14,7 @@ buildFuture: false
 buildExpired: false
 hasCJKLanguage: true # has chinese/japanese/korean ?
 
-googleAnalytics: "G-9MG65HQHEL"
+googleAnalytics: ""
 
 minify:
   disableXML: true
@@ -22,10 +22,10 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Ramsay's Blog"
+  title: "YueXUan's Blog"
   description: "In Pursuit of Hubris"
-  keywords: [Blog, Software, Life, Enginering]
-  author: Ramsay Leung
+  keywords: [博客, Software, Life, Enginering]
+  author: Yue Xuan
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -77,8 +77,8 @@ params:
     buttons:
       - name: Posts
         url: posts
-      - name: Tags
-        url: tags
+      - name: 标签
+        url: 标签
 
   # home-info mode
   homeInfoParams:
@@ -102,7 +102,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/ramsayleung/ramsayleung.github.io/blob/master/content"
+    URL: "https://github.com/yuexuan521/yuexuan521.github.io/blob/master/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -118,14 +118,14 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 
   giscus:
-    repo: "ramsayleung/comment"
-    repoId: "MDEwOlJlcG9zaXRvcnkzMDk2NjQ1NDk="
+    repo: "yuexuan521/Comment"
+    repoId: "R_kgDOQerVlg"
     category: "General"
-    categoryId: "DIC_kwDOEnUbJc4Cltnz"
+    categoryId: "DIC_kwDOQerVls4CzJw8"
 
   socialIcons:
     - name: github
-      url: "https://github.com/ramsayleung"
+      url: "https://github.com/yuexuan521"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/5738112/ramsay"
     - name: x
@@ -148,13 +148,13 @@ languages:
         - name: Archives
           url: /archives/
           weight: 1
-        - name: Search
+        - name: 搜索
           url: /search/
           weight: 10
-        - name: Tags
+        - name: 标签
           url: /tags/
           weight: 30
-        - name: About
+        - name: 关于
           url: /about_me
           weight: 40
         - name: RSS
