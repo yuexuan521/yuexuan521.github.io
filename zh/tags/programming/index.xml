@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programming on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/programming/</link>
+    <link>https://yuexuan521.github.io/zh/tags/programming/</link>
     <description>Recent content in Programming on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 10:21:36 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</link>
       <pubDate>Sat, 13 Sep 2025 14:28:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</guid>
       <description>&lt;h2 id=&#34;引言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 引言&lt;/h2&gt;
 &lt;p&gt;半个月前，我发布了一个基于贝叶斯算法的Telegram广告拦截机器人 &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;系列文章:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;尽管项目代码开源，但我始终以产品思维运营它。上线半个月以来，经历了故障、用户反馈与持续优化，现将这段经历分享出来。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="引言"><span class="section-num">1</span> 引言</h2>
@@ -75,15 +75,18 @@
 <p>常见的 Telegram 广告机器人是大多是基于关键字的，通过匹配关键字进行文本拦截，非常容易被发垃圾广告的人绕过。</p>
 <p>这不禁让我想起了保罗.格雷厄姆在《黑客与画家》一书在2002年介绍的情况：</p>
 <p>当时电子邮件兴起，也有非常多的垃圾邮件，常见的垃圾广告拦截方式是关键字匹配+邮件地址黑名单，但是既低效也容易被绕过。</p>
-<p>保罗.格雷厄姆就创造性地使用贝叶斯算法(Bayes Theorem)实现了一个广告拦截器, 效果竟然出奇地好。</p></blockquote>
+<p>保罗.格雷厄姆就创造性地使用贝叶斯算法(Bayes Theorem)实现了一个广告拦截器, 效果竟然出奇地好。</p>
+</blockquote>
 <p>但产品上线之后，我发现聊天软件消息和Email虽然都是文字，还是有很大差别的:</p>
 <p>Email 大多时候都是长文的，内容较长，并且大多情况，一封邮件上下文本身也很完整，就有较多的内容，较高的准确度来判断是否是广告。</p>
 <p>而 Telegram, 微信这类的即时聊天软件，聊天消息大多都不长，可能把内容分成多条消息来发，就没有完整的上下文，比如:</p>
 <blockquote>
-<p>换U</p></blockquote>
+<p>换U</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
-<p>找我</p></blockquote>
+<p>找我</p>
+</blockquote>
 <p>单条消息很较难准确判断是否是广告，所以对即时消息做广告拦截本身就更难, 「短文本+无上下文」是NLP中的经典难题，也是本项目最大的技术挑战。</p>
 <h3 id="漏删与误删"><span class="section-num">3.2</span> 漏删与误删</h3>
 <p>漏删与误删是广告拦截中不可避免的矛盾权衡。</p>
@@ -114,7 +117,8 @@
 <p>这个警告的消息不会自动删除，如果有很多人在群里发广告，那么群里就会有一堆这样的消息，也算是对群消息的污染。</p>
 <p>所以用户建议:</p>
 <blockquote>
-<p>可以发这个提醒，但在几分钟后也把这个提醒消息删除掉</p></blockquote>
+<p>可以发这个提醒，但在几分钟后也把这个提醒消息删除掉</p>
+</blockquote>
 <p>我觉得这是个非常好的优化体验，因为就把这个功能给加上了，提醒消息本身会在5分钟后自动删除。</p>
 
 <figure>
@@ -137,7 +141,8 @@
 <ol>
 <li>恢复消息, 恢复用户. (让管理员恢复误删的消息和用户)</li>
 <li>主动投喂正常消息. (让管理员主动投喂一些消息. 比如, 群里面昨天 的消息, 随便选一些正常的, 投喂给机器人)</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p>恢复消息这个功能没有太大必要，并且也不实用，因为恢复消息这个功能本身就很微妙，是直接恢复被删除的消息呢，还是重新发一条新消息？</p>
 <p>如：</p>
 <blockquote>
@@ -145,7 +150,8 @@
 <li>2025-09-09 10:01:00 张三: 我今天吃了鸡翅</li>
 <li>2025-09-09 10:02:00 李四：鸡翅有啥好的（被误删消息）</li>
 <li>2025-09-09 10:03:00 王五：人家就喜欢吃，你管得着嘛</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>如果是直接恢复被删除的消息，当前时间是 <code>2025-09-09 11:00:00</code> ，把消息恢复之后，还有人会手动刷历史消息，查找旧消息么？</p>
 <p>Telegram客户端不一定支持会跳转被恢复的旧消息，这意味着，你恢复误删的消息，也没人看得到。</p>
 <p>假如是重新发一条新消息 <code>鸡翅有啥好的</code>, 因为缺失了上下文，群里的人反而会疑惑，你在说什么。</p>
@@ -368,13 +374,13 @@
     </item>
     <item>
       <title>基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Thu, 28 Aug 2025 23:45:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/&#34;&gt;English Version&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;系列文章：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;序言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 序言&lt;/h2&gt;
 &lt;p&gt;我花了一周末时间，写了一个自学习的 Telegram 广告拦截机器人 &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;)，项目开源在：&lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
@@ -852,15 +858,18 @@
 <p>虽然关键词封禁效率不高，但是那些能让我们见到的广告说明已经是绕过关键词拦截的。</p>
 <p>比如:</p>
 <blockquote>
-<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p></blockquote>
+<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p>
+</blockquote>
 <p>又或者</p>
 <blockquote>
-<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p></blockquote>
+<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p>
+</blockquote>
 <p>前者通过空格分隔来绕过关键词，后者通过添加标点符号来绕过关键词。</p>
 <p>与英文等基于拉丁字母的语言天然通过空格分词不同，中文使用贝叶斯算法进行统计时，需要先进行分词</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了</p></blockquote>
+<p>我们的中文就不一样了</p>
+</blockquote>
 <p>「我们的中文就不一样了」就会被分词成「我们 | 的 | 中文 | 就 | 不 | 一样 | 了」, 然后才能对词频进行统计。</p>
 <p>但是像广告 <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code> , 空格除了会影响关键字匹配，也会影响分词，这句话的分词结果就会变成:</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>
@@ -1086,9 +1095,9 @@
     </item>
     <item>
       <title>从在加拿大退货失败的一件小事思考系统设计</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Sat, 31 May 2025 11:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;前天刚写完《&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/&#34;&gt;软件设计的哲学&lt;/a&gt;》，满脑子还萦绕着模块耦合和接口抽象，
 结果昨天就撞上一个现实中的“设计陷阱”——一次耗时数小时却无解的「退货」噩梦。&lt;/p&gt;
@@ -1147,7 +1156,8 @@
 <h3 id="邮政罢工"><span class="section-num">4.1</span> 邮政罢工</h3>
 <p>因为加拿大邮政罢工，所以只能去 Purolator 寄，但是去到 Purolator后，人家反馈:</p>
 <blockquote>
-<p>你这个退货码是给加拿大邮政的，我们不认哦，你要给个我们家的退货码。</p></blockquote>
+<p>你这个退货码是给加拿大邮政的，我们不认哦，你要给个我们家的退货码。</p>
+</blockquote>
 <p>我只能去再打电话给 Telus 客服要退货码，花费了15分钟，终于打通了，解释完一番之后，他们说给我的邮箱发了新的 Puralator 退货码，我等了一分钟，说没有收到，然后让给我另外的一个邮箱也发一次指引，还是没有收到，然后客服说邮件会在24-48小时内到达..</p>
 <p>但挂电话后再等了一个小时还是没有收到.</p>
 <h3 id="邮箱收不到email"><span class="section-num">4.2</span> 邮箱收不到email</h3>
@@ -1232,9 +1242,9 @@
     </item>
     <item>
       <title>软件设计的哲学</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
       <pubDate>Fri, 30 May 2025 00:39:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;知道这本书是因为在 Hacker News 上有人提问：&lt;a href=&#34;https://news.ycombinator.com/item?id=31713756&#34;&gt;你读过最好的技术书是什么&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
 &lt;p&gt;最高赞的书是 Design Data Intensive Application(DDIA, 即《&lt;a href=&#34;https://book.douban.com/subject/30329536/&#34;&gt;数据密集型应用系统设计&lt;/a&gt;》&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;), 我觉得 DDIA 也担得起这个赞誉，然后最高赞的回答顺势提到了 &lt;a href=&#34;https://book.douban.com/subject/30218046/&#34;&gt;A Philosophy Of Software Design&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, 想来能与 DDIA 齐名的书，肯定不会差得哪里去。&lt;/p&gt;</description>
@@ -1246,7 +1256,8 @@
 <p>而这本书的主旨，开篇就点出来了:</p>
 <blockquote>
 <p>This book is about how to design software systems to minimize their complexity.</p>
-<p>本书讲述如何设计软件系统以最小化其复杂度</p></blockquote>
+<p>本书讲述如何设计软件系统以最小化其复杂度</p>
+</blockquote>
 <p>而软件工程的本质就是如何管理复杂度，全书围绕如何降低软件复杂性提出的思考和解决方案，
 主要围绕抽象，异常，文档，一致性，设计原则这五个方向。</p>
 <p>许多原则我看着都深有共鸣，尤其在设计过相当多的系统之后，犯过许多错误之后，才会意识到这些原则的重要之处。</p>
@@ -1254,17 +1265,20 @@
 <p>关于谨慎暴露过多的配置给用户，尽量让程序动态计算各种参数值，尽量提供默认参数。</p>
 <blockquote>
 <p>开发软件时，开发者主动承担一些额外痛苦，从而减少用户的痛苦。</p>
-<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p></blockquote>
+<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p>
+</blockquote>
 <p>关于接口设计的原则:</p>
 <blockquote>
 <p>模块拥有简单的接口比简单的实现更重要。</p>
-<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p></blockquote>
+<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p>
+</blockquote>
 <p>关于异常处理的洞见:</p>
 <blockquote>
 <p>解决问题的最好方式是避免出现问题。</p>
 <p>The best way to eliminate exception handling complexity is to define your APIs so that there are no exceptions to handle: <strong><strong>define errors out of existence</strong></strong></p>
 <p>归根结底，减少 Bug 的最佳方法是让软件更简单(少即是多)</p>
-<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p></blockquote>
+<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p>
+</blockquote>
 <h2 id="抽象"><span class="section-num">2</span> 抽象</h2>
 <p>所谓的抽象，用我自己的话来说的就是把复杂的东西简单地呈现出来。</p>
 <h3 id="模块深度"><span class="section-num">2.1</span> 模块深度</h3>
@@ -1466,14 +1480,16 @@
 <p>虽然我们一直说「又不是不能跑」，但是我们对代码的要求，不能是「能跑就行啦」.</p>
 <p>再者就是要和扁鹊他大哥治病一样，把功夫都做在前期，防范于未然，修补错误成本往往也越往后越高，病入膏肓之后，扁鹊来了也要提桶跑路:</p>
 <blockquote>
-<p>治不了，等死吧，告辞</p></blockquote>
+<p>治不了，等死吧，告辞</p>
+</blockquote>
 <h2 id="代码整洁之道vs软件设计哲学"><span class="section-num">7</span> 代码整洁之道vs软件设计哲学</h2>
 <p>本书的作者对<a href="https://book.douban.com/subject/34986245/">《代码整洁之道》</a>(Clean Code)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 的作者(Robert C. Martin, 即 Uncle Bob)的诸多观点作了反驳</p>
 <h3 id="函数拆分"><span class="section-num">7.1</span> 函数拆分</h3>
 <p>比如关于什么时候应该拆分一个函数，Uncle Bob 的观点是，基于函数的代码行数，一个函数需要相当短，甚至10行都有太长了。</p>
 <p>Uncle Bob 原话:</p>
 <blockquote>
-<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p></blockquote>
+<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p>
+</blockquote>
 <p>而本书作者 John 的观点是: <strong><strong>每个函数应只做一件事，并完整地做好</strong></strong></p>
 <p>函数的接口应当简洁，这样调用者无需记住大量信息就能正确使用它。</p>
 <p>函数应当具备深度：其接口应远比实现更简单。如果一个函数满足以上所有特性，那么它的长度通常并不重要。</p>
@@ -1484,14 +1500,16 @@
 <p><strong><strong>注释的正确用途，是弥补我们无法用代码清晰表达的缺陷……注释始终是一种失败</strong></strong></p>
 <blockquote>
 <p>If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need comments very much — perhaps not at all.</p>
-<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p></blockquote>
+<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p>
+</blockquote>
 <p>而 John 的观点是</p>
 <p>但注释并非失败的表现。</p>
 <p><strong><strong>它们提供的信息与代码截然不同，而这些信息目前无法通过代码本身来表达。</strong></strong></p>
 <p><strong><strong>注释的作用之一，正是让人无需阅读代码即可理解其含义</strong></strong></p>
 <p>甚至直接反驳其观点:</p>
 <blockquote>
-<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p></blockquote>
+<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p>
+</blockquote>
 <h3 id="网上对线"><span class="section-num">7.3</span> 网上对线</h3>
 <p>所以也难怪 Uncle Bob 和 John Ousterhout 几个月前直接在网上论坛来了一次 <del>对线</del> (<a href="https://news.ycombinator.com/item?id=43166362">辩论)</a> <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>然后有看热闹不嫌事大的播主，把两人邀请到直播上，让他们直接面对面再来了一次对线</p>
@@ -1587,9 +1605,9 @@
     </item>
     <item>
       <title>编程十年的感悟</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;马尔科姆·格拉德威尔的“一万小时定律”指出，持续投入一万小时的努力，足以使人在某个领域达到专家水平。
 按照每周20小时的练习量计算，每天大约需要投入3小时，十年左右才能达成这一目标。&lt;/p&gt;</description>
@@ -1661,7 +1679,8 @@
 <p>关于独立思考，我最喜欢的是一句话是HBO出品短剧《切尔诺贝利》里面，
 科学家瓦列里·列加索夫希望克格勃释放调查真相同事乌拉娜·霍缪克的要求，说可以保证她是没问题的，克格勃头子回答的那句话:</p>
 <blockquote>
-<p>Trust, but verify.(相信，但要核实)</p></blockquote>
+<p>Trust, but verify.(相信，但要核实)</p>
+</blockquote>
 <p>因为独立思考的第一步是：开始质疑</p>
 <h2 id="先跑起来再说"><span class="section-num">5</span> 先跑起来再说</h2>
 <p>这句话还有一个广为人知的变种：「又不是不能用」</p>
@@ -1672,7 +1691,8 @@
 <p>当运行速度成为瓶颈时, 你的业务已经非常大，肯定有足够的钱可以招一打的程序员把你的项目换成Golang/Java了。</p>
 <p>对此，我很赞同坐我旁边大佬关于代码质量的说法：</p>
 <blockquote>
-<p>make it run, make it fast, make it beautiful.</p></blockquote>
+<p>make it run, make it fast, make it beautiful.</p>
+</blockquote>
 <p>最近在做副业的尝试，有个深刻的体会，技术可能是商业里面最不重要的。</p>
 <p>从零把产品做出来，推广给用户，用户只会关注你的产品是否好用，能否解决他们的问题.</p>
 <p>他们既不会关注你是用C++/Java还是Javascript 写的,也不会关注你代码写得是否优雅，与其执着于技术选型，不如先把产品干出来让用户试用。</p>
@@ -1699,7 +1719,8 @@
 <li>是不是好的东西就能流行？不一定</li>
 <li>是不是我喜欢的东西就是好的东西？不一定</li>
 <li>我会不会花时间精力在一个不一定会流行但是我喜欢的东西上？会</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h2 id="多与人交流"><span class="section-num">7</span> 多与人交流</h2>
 <p>程序员固然是和机器打交道，但是本质解决的还是人的问题.</p>
 <p>当初学习编程的时候，曾经有个误区，认为自己只要把技术搞好，就可以不去关心什么「人情世故」。</p>
@@ -1830,9 +1851,9 @@
     </item>
     <item>
       <title>Rust通过Trait扩展已有类型</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Wed, 04 Dec 2024 18:04:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</guid>
       <description>&lt;h2 id=&#34;swift-extension&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Swift extension&lt;/h2&gt;
 &lt;p&gt;可扩展性是一个语言非常关键的特性，以Swift 为例，它有一个相当好用的特性，名为 &lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/&#34;&gt;extension&lt;/a&gt;, 它可以非常便利地扩展已有的类型, 例如给已有类型增加 computed property, 实例方法, 新增构造器又或是实现新的 Protocol.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="swift-extension"><span class="section-num">1</span> Swift extension</h2>

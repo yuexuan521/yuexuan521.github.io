@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Bloom_filter on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/bloom_filter/</link>
+    <link>https://yuexuan521.github.io/zh/tags/bloom_filter/</link>
     <description>Recent content in Bloom_filter on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Wed, 23 Feb 2022 17:49:09 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/bloom_filter/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/bloom_filter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>爬虫高效去重之布隆过滤器</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</guid>
       <description>an dscription about bloom filter</description>
       <content:encoded><![CDATA[<p>笔者最近思考如何编写高效的爬虫; 而在编写高效爬虫的时候，有一个必需解决的问题就是：
 url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，那就不要重复爬取。</p>

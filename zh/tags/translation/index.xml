@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Translation on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/translation/</link>
+    <link>https://yuexuan521.github.io/zh/tags/translation/</link>
     <description>Recent content in Translation on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 19:18:56 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/translation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/translation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(翻译)从Helm到Ivy</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/from-helm-to-ivy/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/from-helm-to-ivy/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/from-helm-to-ivy/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/from-helm-to-ivy/</guid>
       <description>An Translated Post about switch from helm to ivy</description>
       <content:encoded><![CDATA[<p>最近，我发现很多Emacs 用户对Ivy 很感兴趣；而且大部份用户都是已经了解过Helm 或者Ido的
 当有人在Reddit 上面问 <a href="https://www.reddit.com/r/emacs/comments/51lqn9/helm_or_ivy/">选择Helm 还是Ido</a>这类问题的时候，我觉得我会给出我自己的选择：
@@ -85,7 +85,8 @@
 <p>Helm 只是一个用来补全的包，就好像Ido或者Ivy.它可能很容易使用，一旦有人经历过配置它的困难，就会发现它很难做到让你随心所欲。</p>
 <p>有些人觉得只要可以让他们使用好的工具，即使他们完全不了解这些工具也无所谓。</p>
 <p>但是我就做不到</p>
-<p>&ndash;abo-abo,Ivy 的开发者，回答<a href="https://github.com/abo-abo/swiper/issues/3">&ldquo;为什么不选择Helm&rdquo;</a> 这个问题</p></blockquote>
+<p>&ndash;abo-abo,Ivy 的开发者，回答<a href="https://github.com/abo-abo/swiper/issues/3">&ldquo;为什么不选择Helm&rdquo;</a> 这个问题</p>
+</blockquote>
 <p><strong>Ivy 为实现最小化，简单化，可定制化，可发现化而努力</strong>.这四个形容词告诉我们很多Helm
 和Ivy 这两个工具间不同的设计理念。阅读<a href="http://oremacs.com/swiper/">Ivy介绍</a> 以便更好了解Ivy的理念。</p>
 <p>在写这篇文章的时候，Ivy 只有大概3400行代码，为Ivy 所打造的生态系统：即Swipter 和

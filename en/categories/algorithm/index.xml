@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Algorithm on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/categories/algorithm/</link>
+    <link>https://yuexuan521.github.io/en/categories/algorithm/</link>
     <description>Recent content in Algorithm on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 22 May 2022 16:22:34 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Topological Sort</title>
-      <link>https://ramsayleung.github.io/en/post/2022/topological_sorting/</link>
+      <link>https://yuexuan521.github.io/en/post/2022/topological_sorting/</link>
       <pubDate>Sun, 22 May 2022 10:34:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2022/topological_sorting/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2022/topological_sorting/</guid>
       <description>&lt;h2 id=&#34;definition&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Definition&lt;/h2&gt;
 &lt;p&gt;In computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge &lt;code&gt;uv&lt;/code&gt; from vertex &lt;code&gt;u&lt;/code&gt; to vertx &lt;code&gt;v&lt;/code&gt;, &lt;code&gt;u&lt;/code&gt; comes before &lt;code&gt;v&lt;/code&gt; in the ordering.&lt;/p&gt;
 &lt;p&gt;It sounds pretty academic, but I am sure you are using topological sort unconsciously every single day.&lt;/p&gt;

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Distributed_system on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/distributed_system/</link>
+    <link>https://yuexuan521.github.io/en/tags/distributed_system/</link>
     <description>Recent content in Distributed_system on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 22:16:46 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/distributed_system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/distributed_system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How To Design A Reliable Distributed Timer</title>
-      <link>https://ramsayleung.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</link>
+      <link>https://yuexuan521.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</link>
       <pubDate>Thu, 05 Aug 2021 09:19:36 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;I have been maintained a legacy distributed timer for months for my employer, then some important pay business are leveraging on it, with 1 billion tasks handled every day and 20k tasks added per second at most.&lt;/p&gt;
 &lt;p&gt;Even though it&amp;rsquo;s old and full of black magic code, but it also also have insighted and well-designed code. Based on this old, running timer, I summarize and extract as this article, and it wont include any running code(perhaps pseudocode, and a lot of figures, as an adage says: &lt;em&gt;A picture is worth a thousand words&lt;/em&gt;).&lt;/p&gt;</description>

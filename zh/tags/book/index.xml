@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Book on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/book/</link>
+    <link>https://yuexuan521.github.io/zh/tags/book/</link>
     <description>Recent content in Book on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 10:13:07 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一本读了八年还没读完的书</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</link>
       <pubDate>Mon, 04 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</guid>
       <description>&lt;h2 id=&#34;缘起&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 缘起&lt;/h2&gt;
 &lt;p&gt;正如我在之前博客文章《&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/&#34;&gt;这些年走过的路：从广州到温哥华&lt;/a&gt;》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;提到的那样，我在大二暑假的时候因缘际会，获得了去一家在深圳的初创公司实习的 Offer。&lt;/p&gt;
 &lt;p&gt;实习的两个多月时间也快就过去了，我也顺利拿到了 Return Offer，公司也非常有人情味地给实习生办了个欢送典礼。&lt;/p&gt;
@@ -122,7 +122,8 @@
 </div><p>毕竟大部分真正让人进步的阅读，读起来都不是愉悦的：</p>
 <blockquote>
 <p>世之奇伟、瑰怪、非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。</p>
-<p>&mdash;-王安石《游褒禅山记》</p></blockquote>
+<p>&mdash;-王安石《游褒禅山记》</p>
+</blockquote>
 <h2 id="主旨"><span class="section-num">3</span> 主旨</h2>
 <p>如果笼统地概括整本书，“无非”是「抽象」，通过使用一门非常简单的语言 <code>Scheme</code>, 以及几个非常简单的操作 <code>cons(构造一个序对)</code>, <code>car(取出序对的第一个值)</code>, <code>cdr(取出序对的第二个值)</code>:</p>
 <div class="highlight"><div class="chroma">
@@ -147,7 +148,8 @@
 <p>而后两章更进一步，第四章介绍如何实现一个 Scheme 简单的解释器，一个简单的 Prolog 解释器；而第五章介绍计算机体系结构的 CPU 设计，编译器，垃圾回收等。</p>
 <p>从括号中的几个简单函数，到最后造出整个计算机体系，有种《道德经》里道生万物的感觉：</p>
 <blockquote>
-<p>道生一，一生二，二生三，三生万物。</p></blockquote>
+<p>道生一，一生二，二生三，三生万物。</p>
+</blockquote>
 <h2 id="计算机科学与工程"><span class="section-num">4</span> 计算机科学与工程</h2>
 <p>我本科专业读的是软件工程(Software Engineering )，翻看当初的专业培养计划，从计算机导论开始入门，到程序设计基础，面向对象程序设计基础，数据结构，操作系统，计算机组成原理，再到计算机网络，汇编与编译原理，数据库原理到软件工程等。</p>
 <p>学习完这些课程，可以成为一个合格的软件工程师，但广义的计算机专业还有一门专业，叫计算机科学(Computer Science)，我一直很疑惑两者之间的差别是什么，就我所见过的不同学校的培养计划里面，两者的课程都非常相似。</p>
@@ -227,7 +229,8 @@
 <p>用人话来说就是不断地试，在试错的过程中逼近确定解，试的次数越多，结果越准确。</p>
 <p>书中就介绍了一种通过蒙特卡罗模拟来计算 π 的方法, 就像通过随机撒豆子估算圆的面积，概率统计将抽象的π转化为可计算的实验：</p>
 <blockquote>
-<p>举例来说，6/π^2 是随机选取的两个整数之间没有公因子（也就是说，它们的最大公因子是1）的概率。我们可以利用这一事实做出π的近似值。</p></blockquote>
+<p>举例来说，6/π^2 是随机选取的两个整数之间没有公因子（也就是说，它们的最大公因子是1）的概率。我们可以利用这一事实做出π的近似值。</p>
+</blockquote>
 <p>完全读不懂这段话，没理解是怎么可以算出π的近似值的。</p>
 <p>查阅资料后得知:</p>
 <p>随机选取两个正整数，它们互质（即最大公约数GCD为1）的概率是 \(\frac{6}{\pi^2}\) , 所谓的 互质指两个数没有公共因子（如8和15互质，但8和12不互质，因为公约数为4）。</p>
@@ -381,9 +384,9 @@
     </item>
     <item>
       <title>软件设计的哲学</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
       <pubDate>Fri, 30 May 2025 00:39:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;知道这本书是因为在 Hacker News 上有人提问：&lt;a href=&#34;https://news.ycombinator.com/item?id=31713756&#34;&gt;你读过最好的技术书是什么&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
 &lt;p&gt;最高赞的书是 Design Data Intensive Application(DDIA, 即《&lt;a href=&#34;https://book.douban.com/subject/30329536/&#34;&gt;数据密集型应用系统设计&lt;/a&gt;》&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;), 我觉得 DDIA 也担得起这个赞誉，然后最高赞的回答顺势提到了 &lt;a href=&#34;https://book.douban.com/subject/30218046/&#34;&gt;A Philosophy Of Software Design&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, 想来能与 DDIA 齐名的书，肯定不会差得哪里去。&lt;/p&gt;</description>
@@ -395,7 +398,8 @@
 <p>而这本书的主旨，开篇就点出来了:</p>
 <blockquote>
 <p>This book is about how to design software systems to minimize their complexity.</p>
-<p>本书讲述如何设计软件系统以最小化其复杂度</p></blockquote>
+<p>本书讲述如何设计软件系统以最小化其复杂度</p>
+</blockquote>
 <p>而软件工程的本质就是如何管理复杂度，全书围绕如何降低软件复杂性提出的思考和解决方案，
 主要围绕抽象，异常，文档，一致性，设计原则这五个方向。</p>
 <p>许多原则我看着都深有共鸣，尤其在设计过相当多的系统之后，犯过许多错误之后，才会意识到这些原则的重要之处。</p>
@@ -403,17 +407,20 @@
 <p>关于谨慎暴露过多的配置给用户，尽量让程序动态计算各种参数值，尽量提供默认参数。</p>
 <blockquote>
 <p>开发软件时，开发者主动承担一些额外痛苦，从而减少用户的痛苦。</p>
-<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p></blockquote>
+<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p>
+</blockquote>
 <p>关于接口设计的原则:</p>
 <blockquote>
 <p>模块拥有简单的接口比简单的实现更重要。</p>
-<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p></blockquote>
+<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p>
+</blockquote>
 <p>关于异常处理的洞见:</p>
 <blockquote>
 <p>解决问题的最好方式是避免出现问题。</p>
 <p>The best way to eliminate exception handling complexity is to define your APIs so that there are no exceptions to handle: <strong><strong>define errors out of existence</strong></strong></p>
 <p>归根结底，减少 Bug 的最佳方法是让软件更简单(少即是多)</p>
-<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p></blockquote>
+<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p>
+</blockquote>
 <h2 id="抽象"><span class="section-num">2</span> 抽象</h2>
 <p>所谓的抽象，用我自己的话来说的就是把复杂的东西简单地呈现出来。</p>
 <h3 id="模块深度"><span class="section-num">2.1</span> 模块深度</h3>
@@ -615,14 +622,16 @@
 <p>虽然我们一直说「又不是不能跑」，但是我们对代码的要求，不能是「能跑就行啦」.</p>
 <p>再者就是要和扁鹊他大哥治病一样，把功夫都做在前期，防范于未然，修补错误成本往往也越往后越高，病入膏肓之后，扁鹊来了也要提桶跑路:</p>
 <blockquote>
-<p>治不了，等死吧，告辞</p></blockquote>
+<p>治不了，等死吧，告辞</p>
+</blockquote>
 <h2 id="代码整洁之道vs软件设计哲学"><span class="section-num">7</span> 代码整洁之道vs软件设计哲学</h2>
 <p>本书的作者对<a href="https://book.douban.com/subject/34986245/">《代码整洁之道》</a>(Clean Code)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 的作者(Robert C. Martin, 即 Uncle Bob)的诸多观点作了反驳</p>
 <h3 id="函数拆分"><span class="section-num">7.1</span> 函数拆分</h3>
 <p>比如关于什么时候应该拆分一个函数，Uncle Bob 的观点是，基于函数的代码行数，一个函数需要相当短，甚至10行都有太长了。</p>
 <p>Uncle Bob 原话:</p>
 <blockquote>
-<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p></blockquote>
+<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p>
+</blockquote>
 <p>而本书作者 John 的观点是: <strong><strong>每个函数应只做一件事，并完整地做好</strong></strong></p>
 <p>函数的接口应当简洁，这样调用者无需记住大量信息就能正确使用它。</p>
 <p>函数应当具备深度：其接口应远比实现更简单。如果一个函数满足以上所有特性，那么它的长度通常并不重要。</p>
@@ -633,14 +642,16 @@
 <p><strong><strong>注释的正确用途，是弥补我们无法用代码清晰表达的缺陷……注释始终是一种失败</strong></strong></p>
 <blockquote>
 <p>If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need comments very much — perhaps not at all.</p>
-<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p></blockquote>
+<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p>
+</blockquote>
 <p>而 John 的观点是</p>
 <p>但注释并非失败的表现。</p>
 <p><strong><strong>它们提供的信息与代码截然不同，而这些信息目前无法通过代码本身来表达。</strong></strong></p>
 <p><strong><strong>注释的作用之一，正是让人无需阅读代码即可理解其含义</strong></strong></p>
 <p>甚至直接反驳其观点:</p>
 <blockquote>
-<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p></blockquote>
+<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p>
+</blockquote>
 <h3 id="网上对线"><span class="section-num">7.3</span> 网上对线</h3>
 <p>所以也难怪 Uncle Bob 和 John Ousterhout 几个月前直接在网上论坛来了一次 <del>对线</del> (<a href="https://news.ycombinator.com/item?id=43166362">辩论)</a> <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>然后有看热闹不嫌事大的播主，把两人邀请到直播上，让他们直接面对面再来了一次对线</p>
@@ -736,9 +747,9 @@
     </item>
     <item>
       <title>《过河卒》: 比特币雏形之父之父的故事</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E8%BF%87%E6%B2%B3%E5%8D%92/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E8%BF%87%E6%B2%B3%E5%8D%92/</link>
       <pubDate>Wed, 09 Apr 2025 23:08:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E8%BF%87%E6%B2%B3%E5%8D%92/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E8%BF%87%E6%B2%B3%E5%8D%92/</guid>
       <description>&lt;h2 id=&#34;缘起&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 缘起&lt;/h2&gt;
 &lt;p&gt;在《软件那些事儿》播客采访听众故事的系列里面，有一期名为《&lt;a href=&#34;https://podcasts.apple.com/us/podcast/no-502-%E8%B7%9F35%E5%B2%81%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98%E8%81%8A%E8%81%8A%E6%AF%94%E7%89%B9%E5%B8%81/id1147186605?i=1000697534091&#34;&gt;No.502 跟35岁的程序员聊聊比特币&lt;/a&gt;》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 长达三个多小时的播客，主人公分享自己与比特币的故事，还谈到其在2020年卖房买比特币的故事。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="缘起"><span class="section-num">1</span> 缘起</h2>
@@ -749,7 +760,8 @@
 <p>因为比特币的作者中本聪的第一封<a href="https://www.bitcoin.com/satoshi-archive/emails/wei-dai/1/">已知公开的邮件</a><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>，即讨论比特币白皮书草稿的邮件，就是发给戴习为之子，<a href="http://www.weidai.com/">戴维</a> <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>的:</p>
 <p>戴维的项目 <a href="http://www.weidai.com/bmoney.txt">b-money</a> <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>与比特币有诸多的相似之处，甚至可以称为比特币的雏形, 所以中本聪在白本书中引用了 b-money , 原文:</p>
 <blockquote>
-<p>I was very interested to read your b-money page.  I&rsquo;m getting ready to release a paper that expands on your ideas into a complete working system.</p></blockquote>
+<p>I was very interested to read your b-money page.  I&rsquo;m getting ready to release a paper that expands on your ideas into a complete working system.</p>
+</blockquote>
 <p>而戴维是著名的密码学专家，在大一的时候就写出了被诸多公司和开源项目使用的支持多种加密算法的C++加密库 <a href="https://cryptopp.com/">Cryptocpp</a> <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup></p>
 <p>虽然错过了买比特币的致富之路，但是多读点书，多学点知识终究是不会晚的，所以对《过河卒》这本书产生了浓厚的兴趣，不到一周就读完了。</p>
 <h2 id="太平洋两岸"><span class="section-num">2</span> 太平洋两岸</h2>
@@ -938,9 +950,9 @@
     </item>
     <item>
       <title>《走出戈壁》：从沙漠苦力到常青藤教授</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E8%B5%B0%E5%87%BA%E6%88%88%E5%A3%81/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E8%B5%B0%E5%87%BA%E6%88%88%E5%A3%81/</link>
       <pubDate>Sun, 25 Aug 2024 11:24:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E8%B5%B0%E5%87%BA%E6%88%88%E5%A3%81/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E8%B5%B0%E5%87%BA%E6%88%88%E5%A3%81/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;六月份的时候，读到了一篇名为《&lt;a href=&#34;https://1byte.io/articles/luck/&#34;&gt;运气与努力&lt;/a&gt;》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的文章，是由 LeanCloud的创始人江宏博士写的，文章以一本书开篇，引出他关于运气与努力的思考:(文章写得相当真诚，充满洞见，也推荐大家阅读下) &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -949,7 +961,8 @@
 <p>很多人意识不到运气的重要性，而错把成功归功于自己的才能和努力， <br/>
 却没有意识到好运在其中的重要性。忽视了这一点就难以保持谦虚，难以不断学习。 <br/></p>
 <p>明白了运气的重要性，就知道不是人人生而能得到平等的机会的， <br/>
-在遇到处境不如自己的人，不能假设这种差别是聪明或努力程度的不同造成的，应该知道善待弱者。 <br/></p></blockquote>
+在遇到处境不如自己的人，不能假设这种差别是聪明或努力程度的不同造成的，应该知道善待弱者。 <br/></p>
+</blockquote>
 <p>而文章开篇提到的书名为(Out of the Gobi: My story of China and America)《走出戈壁：我的中美故事》, 作者单伟建在读完小学之后，就被文革的知青下乡运动感召，「自愿」下放到内蒙古生产建设兵团做了六年的苦力。 <br/></p>
 <p>文革后，没拿到小学毕业证的他进入了首都经济贸易大学，之后在旧金山大学获得了 MBA， <br/>
 在 UC Berkeley 取得博士学位，后来在 University of Pennsylvania 任教。 <br/></p>
@@ -1063,9 +1076,9 @@
     </item>
     <item>
       <title>金榜题名之后</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E9%87%91%E6%A6%9C%E9%A2%98%E5%90%8D%E4%B9%8B%E5%90%8E/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E9%87%91%E6%A6%9C%E9%A2%98%E5%90%8D%E4%B9%8B%E5%90%8E/</link>
       <pubDate>Sun, 25 Feb 2024 20:27:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E9%87%91%E6%A6%9C%E9%A2%98%E5%90%8D%E4%B9%8B%E5%90%8E/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E9%87%91%E6%A6%9C%E9%A2%98%E5%90%8D%E4%B9%8B%E5%90%8E/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;过年期间，趁着各种零碎的闲暇时间，将一本探究学生出身与毕业出路生涯前景的书看完，名为《金榜题名之后：大学生出路分化之迷》。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;大约自科举取士以来，通过读书来改变自己乃至整个家族的命运，就已成为中国社会妇孺皆知的常识，”读书改变命运“。 &lt;br/&gt;&lt;/p&gt;</description>
@@ -1098,7 +1111,8 @@
 <h2 id="非名校生的大学"><span class="section-num">3</span> 非名校生的大学</h2>
 <p>近年来，红遍网络的“985废物”和“小镇做题家”的自嘲俯拾即是： <br/></p>
 <blockquote>
-<p>“从一个连电影院都没有的小县城，考到了全河北最好的高中，六年之后要来到国际大都市上海了，要来到倾尽我家所有小积蓄，才能勉强付个首付的上海了。我这才发现，光考了好大学也是没有用的。” &ndash; 《我上了985,211，才发现自己一无所有》 <br/></p></blockquote>
+<p>“从一个连电影院都没有的小县城，考到了全河北最好的高中，六年之后要来到国际大都市上海了，要来到倾尽我家所有小积蓄，才能勉强付个首付的上海了。我这才发现，光考了好大学也是没有用的。” &ndash; 《我上了985,211，才发现自己一无所有》 <br/></p>
+</blockquote>
 <p>如果考上985，211的“小镇做题家”都如此自嘲一无所有，那些没有考上211的小镇考生，又该如何自处呢？ <br/></p>
 <p>当聊起大学和学历话题的时候，我时常和名校毕业的高中好友开玩笑，我不是“小镇做题家”，虽然我和你们一样来自小镇，但是我连题都做不好。 <br/></p>
 <h3 id="直觉依赖者的探索之路"><span class="section-num">3.1</span> 直觉依赖者的探索之路</h3>
@@ -1141,7 +1155,8 @@
 <p>我：那你有同样的感觉么？ <br/></p>
 <p>发小：有阿，也觉得压力很大。 <br/></p>
 <p>我笑道：那你还生？ <br/></p>
-<p>发小笑回：世界上只有一种英雄主义，那就是认清生活的真想之后，继续热爱生活。 <br/></p></blockquote>
+<p>发小笑回：世界上只有一种英雄主义，那就是认清生活的真想之后，继续热爱生活。 <br/></p>
+</blockquote>
 <p>在两个人的笑声中，听到发小说出罗曼罗兰的名句，觉得发小已经活出这句话的精髓了。 <br/></p>
 <p>写在最后，鸡汤一下： <br/></p>
 <p>路要怎么走，每个人都会有自己的选择，但了解迷宫的规则的【学子】，路可以走得更加自在。 <br/></p>
@@ -1172,9 +1187,9 @@
     </item>
     <item>
       <title>胡说：从西游记看职场感悟</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E8%A5%BF%E6%B8%B8%E8%AE%B0%E7%9C%8B%E8%81%8C%E5%9C%BA%E6%84%9F%E6%82%9F/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E8%A5%BF%E6%B8%B8%E8%AE%B0%E7%9C%8B%E8%81%8C%E5%9C%BA%E6%84%9F%E6%82%9F/</link>
       <pubDate>Sat, 16 Dec 2023 09:46:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E8%A5%BF%E6%B8%B8%E8%AE%B0%E7%9C%8B%E8%81%8C%E5%9C%BA%E6%84%9F%E6%82%9F/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E8%A5%BF%E6%B8%B8%E8%AE%B0%E7%9C%8B%E8%81%8C%E5%9C%BA%E6%84%9F%E6%82%9F/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;前几天在讨论刷题工作，分享职场经历（也就是水群）的群里，有位「老好人」senior 工程师向大家倾诉他的职场烦恼。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;他作为项目的后端负责人，把后端的活都又快又好地干完了，然后前端毫无进度，大家看起来还没有什么责任心和紧迫感。 &lt;br/&gt;&lt;/p&gt;</description>
@@ -1193,7 +1208,8 @@
 </ol>
 <p>用群主的原话来总结： <br/></p>
 <blockquote>
-<p>银行被抢了，是冲上去和歹徒搏斗，牺牲了还要为是不是工伤扯皮？还是顺便把自己和领导亏空的那部分也算在损失里，提拔一下？ <br/></p></blockquote>
+<p>银行被抢了，是冲上去和歹徒搏斗，牺牲了还要为是不是工伤扯皮？还是顺便把自己和领导亏空的那部分也算在损失里，提拔一下？ <br/></p>
+</blockquote>
 <p>群主的话可谓是振聋发聩。 <br/></p>
 <p>当然，企业老板听了可能会不高兴，觉得给了员工工资，即使公司搞996，搞降本增效，裁员减薪，员工也应该献出自己的心脏。 <br/></p>
 <p>因为我总是读些乱七八糟的东西，所以我思绪比较容易飞扬，总是会联想到一些不搭边的东西。 <br/></p>
@@ -1228,7 +1244,8 @@
 <p>悟空道：“我也不记寿数几何，且只消了名字便罢。取笔过来。” <br/></p>
 <p>那判官慌忙捧笔，饱掭浓墨。 <br/></p>
 <p>悟空拿过簿子，把猴属之类，但有名者，一概勾之。捽下簿子道：“了帐，了帐，今番不伏你管了。”一路棒，打出幽冥界。 <br/></p>
-<p>那十王不敢相近，都去翠云宫，同拜地藏王菩萨，商量启表，奏闻上天，不在话下。 <br/></p></blockquote>
+<p>那十王不敢相近，都去翠云宫，同拜地藏王菩萨，商量启表，奏闻上天，不在话下。 <br/></p>
+</blockquote>
 <p>相当于孙悟空把地府这个机构最重要的账本都给改没了，阎王这个主管相当于严重渎职啊，负有重大管理责任! <br/></p>
 <p>那么为什么每次孙悟空来找阎王，阎王都毕恭毕敬的呢？ <br/></p>
 <p>以前觉得是阎王怕了孙悟空，所以因惧生敬。 <br/></p>
@@ -1308,9 +1325,9 @@
     </item>
     <item>
       <title>为什么梦想买不起，故乡回不去</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</link>
       <pubDate>Sat, 14 Jan 2023 23:21:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;有心仪工作的城市房价太高，而房价合适的城市没有心仪的工作。&lt;/p&gt;
 &lt;p&gt;梦想买不起，故乡回不去。&lt;/p&gt;
@@ -1593,16 +1610,18 @@
     </item>
     <item>
       <title>党员，党权与党争</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</link>
       <pubDate>Sun, 20 Feb 2022 13:35:35 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;每个朝代灭亡之后，就会由下一个朝代的史官编写，如元朝灭亡之后，就由明朝来撰写《元史》。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
 <blockquote>
-<p>秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也</p></blockquote>
+<p>秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也</p>
+</blockquote>
 <p>每个朝代灭亡之后，就会由下一个朝代的史官编写，如元朝灭亡之后，就由明朝来撰写《元史》。</p>
 <p>虽然国民党政权在大陆败退之后，没有史官来专门编写《民国史》，但还是有许多资料来探究国民党失败的原因。
 而《党员，党权与党争》就从组织角度来考察国民党失败的原因。</p>
@@ -1676,9 +1695,9 @@
     </item>
     <item>
       <title>天朝的崩溃</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</link>
       <pubDate>Wed, 16 Feb 2022 14:04:09 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;历史教科书说，与英国的第一次鸦片战争，敲开了清朝的大门，清朝也因此和外国签订了一系列不平等条约.
 而因为清朝的落伍，导致清朝不敌英国.&lt;/p&gt;
@@ -1709,7 +1728,8 @@
 <p>工业革命使英国的冶炼技术改观，铁质大为提高，为铸造高质量的火炮提供了良好的原料。</p>
 <p>清朝的冶炼技术落后，炉温低，铁水无法提纯，含杂质多，铸造出来的火炮十分粗糙，气孔气泡多，容易炸膛：</p>
 <blockquote>
-<p>关天培称，在1835年，他在佛山制造59门新炮，试放时就炸裂10门，损坏3门。</p></blockquote>
+<p>关天培称，在1835年，他在佛山制造59门新炮，试放时就炸裂10门，损坏3门。</p>
+</blockquote>
 <p>清军针对此问题主要采用两策:
 一是加厚火炮的管壁，使清军的火炮极为笨重，数千斤巨炮，威力还不如西方小炮；
 二是使用铜作为铸炮材料，但铜资源缺乏</p>
@@ -1877,9 +1897,9 @@
     </item>
     <item>
       <title>罗马人的故事（二）：天选之子西庇阿</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</link>
       <pubDate>Sun, 23 Jan 2022 13:10:50 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</guid>
       <description>&lt;h2 id=&#34;命运的必然&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 命运的必然&lt;/h2&gt;
 &lt;p&gt;公元前219年，汉尼拨翻过阿尔卑斯山，向意大利发起进攻，指挥官科尔涅利乌斯迎战汉尼拨，被重伤。
 幸而从手下的新兵抢回到营地，而这名新兵，恰好是首次参加战斗的，科尔涅利乌斯的儿子，年仅17岁西庇阿。&lt;/p&gt;</description>
@@ -1916,7 +1936,8 @@
 <p>执政官是共和政体罗马的最高官职，同时也是军队的最高司令官，由市民大会选举产生。但是，这两位执政官的任地原则上通过抽签决定。但事实上，指挥一个战略单位即两个军团的所有总司令官，包括两位执政官负责的战场都是由元老院决定的。 但西庇阿请求元老院让自己负责北非战线。</p>
 <p>而后，西庇阿在元老院展开演讲，阐述自己的「围迦救罗」战略：</p>
 <blockquote>
-<p>早晚我会和汉尼拨交锋，但是，这场交锋，不是他在发动进攻的时候。我要主动出击，引他出击，让他不得不与我展开会战。战场不应该在卡拉布里亚已经毁了一半的城堡，而是在迦太基!</p></blockquote>
+<p>早晚我会和汉尼拨交锋，但是，这场交锋，不是他在发动进攻的时候。我要主动出击，引他出击，让他不得不与我展开会战。战场不应该在卡拉布里亚已经毁了一半的城堡，而是在迦太基!</p>
+</blockquote>
 <p>因为这与现有的持久战战略相违背，也正因为持久战战略，才把汉尼拨逼到无处腾挪之地，现状的确没有必要改变，不然有让汉尼拨猛虎出笼的危险。但西庇阿的战法又的确有可取之处。
 最后，双方达到一个折中的意见，既不伤害元老院年长者的体面，又不违背年轻议员们的变革意愿：西庇阿的任地在西西里岛，并授予一个权力，如有必要，第二年可以进军非洲。</p>
 <p>只是作为执政官，他必须放弃指挥在首都完成编组的两个军团的指挥权，也就是放弃执政官应得到的指挥正规军的权利。取之代之，他有权在西西里招募志愿兵。元老院明确表示：将来西庇阿远征非洲，不是元老院认可的军事行动，一旦远征失败，责任不在元老院，而在他个人。</p>
@@ -1939,12 +1960,14 @@
 <blockquote>
 <p>两位护民官及罗马各位市民，今天，是我在非洲扎马与汉尼拔和迦太基军队作战，有幸取得胜利的第15个纪念日。在这样一个值得纪念的日子里，我建议让我们忘掉一切争执，大家团结一心，向诸神奉上我们的感恩之心。</p>
 <p>现在，我就要出发前往卡匹托尔山，向供奉在那里的、以最高神朱庇特和朱诺女神及密涅瓦女神为代表的诸神表示感谢，感谢他们给了我和参加那次战役的所有罗马市民为祖国罗马的自由和安全竭尽全力的机会。</p>
-<p>各位，如果你们愿意，我诚心邀请各位与我同行。希望各位和我一样对诸神心怀感激之情。因为从我17岁开始到已显老迈的现在，是罗马的各位市民给了我打破常规的机遇，让我有机会发挥了自己的才能。</p></blockquote>
+<p>各位，如果你们愿意，我诚心邀请各位与我同行。希望各位和我一样对诸神心怀感激之情。因为从我17岁开始到已显老迈的现在，是罗马的各位市民给了我打破常规的机遇，让我有机会发挥了自己的才能。</p>
+</blockquote>
 <p>说完，没等人们开口回答，西庇阿就离开了会场，他的身后，不只有他的朋友们和支持者们。因为所有罗马人终于都想了起来，元老院议会站起了身，旁听的市民们离开了会场，连书记员都放下铁笔，跟随在西庇阿之后。会场只剩下两个检举人和西庇阿的政敌。</p>
 <p>历史学家李维写道：这一天，身着托加的西庇阿已经不见昔日的风采。他脑袋秃顶，身体羸弱。但是，市民们对他的敬爱之情，胜过第二次布匿战争结束，从非洲凯旋时，人们向三十几岁的年轻胜将发出喝彩声，并送上鲜花。李维还说：“这一天，成了西庇阿灿烂辉煌的最后一天。”</p>
 <p>第二天，西庇阿离开了罗马，在海边的别墅过起了隐居生活。4年后，西庇阿-阿非努加利斯在别墅出世，享年52岁，但他留下遗言，拒绝葬在祖祖辈辈的墓地里，原因是墓地在罗马境内：</p>
 <blockquote>
-<p><code>不知感恩的祖国，你们有何资格拥有我的遗骨</code></p></blockquote>
+<p><code>不知感恩的祖国，你们有何资格拥有我的遗骨</code></p>
+</blockquote>
 <div center class="qr-container">
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" width="160px" height="160px" center="t" class="qr-container" />
 公号同步更新，欢迎关注👻

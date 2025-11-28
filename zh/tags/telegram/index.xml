@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Telegram on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/telegram/</link>
+    <link>https://yuexuan521.github.io/zh/tags/telegram/</link>
     <description>Recent content in Telegram on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 14:26:39 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Telegram频道精华贴检索机器人</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Wed, 01 Oct 2025 21:55:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
       <description>&lt;h2 id=&#34;引言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 引言&lt;/h2&gt;
 &lt;p&gt;我有时总会觉得自己是个「奇葩」：
 在现在各种算法推荐大行其道的当下，我却偏偏不喜欢算法推荐，因为这种「千人千面」的模式，总让我担心自己会陷入「信息茧房」的焦虑之中，此外我也希望可以看到一些我兴趣之外的内容。&lt;/p&gt;</description>
@@ -185,15 +185,15 @@
     </item>
     <item>
       <title>基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</link>
       <pubDate>Sat, 13 Sep 2025 14:28:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/</guid>
       <description>&lt;h2 id=&#34;引言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 引言&lt;/h2&gt;
 &lt;p&gt;半个月前，我发布了一个基于贝叶斯算法的Telegram广告拦截机器人 &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;项目地址：&lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;系列文章:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;尽管项目代码开源，但我始终以产品思维运营它。上线半个月以来，经历了故障、用户反馈与持续优化，现将这段经历分享出来。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="引言"><span class="section-num">1</span> 引言</h2>
@@ -244,15 +244,18 @@
 <p>常见的 Telegram 广告机器人是大多是基于关键字的，通过匹配关键字进行文本拦截，非常容易被发垃圾广告的人绕过。</p>
 <p>这不禁让我想起了保罗.格雷厄姆在《黑客与画家》一书在2002年介绍的情况：</p>
 <p>当时电子邮件兴起，也有非常多的垃圾邮件，常见的垃圾广告拦截方式是关键字匹配+邮件地址黑名单，但是既低效也容易被绕过。</p>
-<p>保罗.格雷厄姆就创造性地使用贝叶斯算法(Bayes Theorem)实现了一个广告拦截器, 效果竟然出奇地好。</p></blockquote>
+<p>保罗.格雷厄姆就创造性地使用贝叶斯算法(Bayes Theorem)实现了一个广告拦截器, 效果竟然出奇地好。</p>
+</blockquote>
 <p>但产品上线之后，我发现聊天软件消息和Email虽然都是文字，还是有很大差别的:</p>
 <p>Email 大多时候都是长文的，内容较长，并且大多情况，一封邮件上下文本身也很完整，就有较多的内容，较高的准确度来判断是否是广告。</p>
 <p>而 Telegram, 微信这类的即时聊天软件，聊天消息大多都不长，可能把内容分成多条消息来发，就没有完整的上下文，比如:</p>
 <blockquote>
-<p>换U</p></blockquote>
+<p>换U</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
-<p>找我</p></blockquote>
+<p>找我</p>
+</blockquote>
 <p>单条消息很较难准确判断是否是广告，所以对即时消息做广告拦截本身就更难, 「短文本+无上下文」是NLP中的经典难题，也是本项目最大的技术挑战。</p>
 <h3 id="漏删与误删"><span class="section-num">3.2</span> 漏删与误删</h3>
 <p>漏删与误删是广告拦截中不可避免的矛盾权衡。</p>
@@ -283,7 +286,8 @@
 <p>这个警告的消息不会自动删除，如果有很多人在群里发广告，那么群里就会有一堆这样的消息，也算是对群消息的污染。</p>
 <p>所以用户建议:</p>
 <blockquote>
-<p>可以发这个提醒，但在几分钟后也把这个提醒消息删除掉</p></blockquote>
+<p>可以发这个提醒，但在几分钟后也把这个提醒消息删除掉</p>
+</blockquote>
 <p>我觉得这是个非常好的优化体验，因为就把这个功能给加上了，提醒消息本身会在5分钟后自动删除。</p>
 
 <figure>
@@ -306,7 +310,8 @@
 <ol>
 <li>恢复消息, 恢复用户. (让管理员恢复误删的消息和用户)</li>
 <li>主动投喂正常消息. (让管理员主动投喂一些消息. 比如, 群里面昨天 的消息, 随便选一些正常的, 投喂给机器人)</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p>恢复消息这个功能没有太大必要，并且也不实用，因为恢复消息这个功能本身就很微妙，是直接恢复被删除的消息呢，还是重新发一条新消息？</p>
 <p>如：</p>
 <blockquote>
@@ -314,7 +319,8 @@
 <li>2025-09-09 10:01:00 张三: 我今天吃了鸡翅</li>
 <li>2025-09-09 10:02:00 李四：鸡翅有啥好的（被误删消息）</li>
 <li>2025-09-09 10:03:00 王五：人家就喜欢吃，你管得着嘛</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <p>如果是直接恢复被删除的消息，当前时间是 <code>2025-09-09 11:00:00</code> ，把消息恢复之后，还有人会手动刷历史消息，查找旧消息么？</p>
 <p>Telegram客户端不一定支持会跳转被恢复的旧消息，这意味着，你恢复误删的消息，也没人看得到。</p>
 <p>假如是重新发一条新消息 <code>鸡翅有啥好的</code>, 因为缺失了上下文，群里的人反而会疑惑，你在说什么。</p>
@@ -537,13 +543,13 @@
     </item>
     <item>
       <title>基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Thu, 28 Aug 2025 23:45:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/&#34;&gt;English Version&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;系列文章：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;序言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 序言&lt;/h2&gt;
 &lt;p&gt;我花了一周末时间，写了一个自学习的 Telegram 广告拦截机器人 &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;)，项目开源在：&lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
@@ -1021,15 +1027,18 @@
 <p>虽然关键词封禁效率不高，但是那些能让我们见到的广告说明已经是绕过关键词拦截的。</p>
 <p>比如:</p>
 <blockquote>
-<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p></blockquote>
+<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p>
+</blockquote>
 <p>又或者</p>
 <blockquote>
-<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p></blockquote>
+<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p>
+</blockquote>
 <p>前者通过空格分隔来绕过关键词，后者通过添加标点符号来绕过关键词。</p>
 <p>与英文等基于拉丁字母的语言天然通过空格分词不同，中文使用贝叶斯算法进行统计时，需要先进行分词</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了</p></blockquote>
+<p>我们的中文就不一样了</p>
+</blockquote>
 <p>「我们的中文就不一样了」就会被分词成「我们 | 的 | 中文 | 就 | 不 | 一样 | 了」, 然后才能对词频进行统计。</p>
 <p>但是像广告 <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code> , 空格除了会影响关键字匹配，也会影响分词，这句话的分词结果就会变成:</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>

@@ -2,86 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/</link>
+    <link>https://yuexuan521.github.io/en/tags/</link>
     <description>Recent content in Tags on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 22:51:59 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
-      <link>https://ramsayleung.github.io/en/tags/ai/</link>
+      <link>https://yuexuan521.github.io/en/tags/ai/</link>
       <pubDate>Sat, 25 Oct 2025 20:18:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/ai/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Hacking</title>
-      <link>https://ramsayleung.github.io/en/tags/hacking/</link>
+      <link>https://yuexuan521.github.io/en/tags/hacking/</link>
       <pubDate>Fri, 10 Oct 2025 15:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/hacking/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://ramsayleung.github.io/en/tags/network/</link>
+      <link>https://yuexuan521.github.io/en/tags/network/</link>
       <pubDate>Fri, 10 Oct 2025 15:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/network/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Design</title>
-      <link>https://ramsayleung.github.io/en/tags/design/</link>
+      <link>https://yuexuan521.github.io/en/tags/design/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/design/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
-      <link>https://ramsayleung.github.io/en/tags/programming/</link>
+      <link>https://yuexuan521.github.io/en/tags/programming/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/programming/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Rails</title>
-      <link>https://ramsayleung.github.io/en/tags/rails/</link>
+      <link>https://yuexuan521.github.io/en/tags/rails/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/rails/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/rails/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://ramsayleung.github.io/en/tags/rust/</link>
+      <link>https://yuexuan521.github.io/en/tags/rust/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/rust/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Telegram</title>
-      <link>https://ramsayleung.github.io/en/tags/telegram/</link>
+      <link>https://yuexuan521.github.io/en/tags/telegram/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/telegram/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/telegram/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>https://ramsayleung.github.io/en/tags/life/</link>
+      <link>https://yuexuan521.github.io/en/tags/life/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/life/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>Summary</title>
-      <link>https://ramsayleung.github.io/en/tags/summary/</link>
+      <link>https://yuexuan521.github.io/en/tags/summary/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/tags/summary/</guid>
+      <guid>https://yuexuan521.github.io/en/tags/summary/</guid>
       <description></description>
     </item>
   </channel>

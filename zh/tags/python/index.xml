@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/python/</link>
+    <link>https://yuexuan521.github.io/zh/tags/python/</link>
     <description>Recent content in Python on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:02:08 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试技能进阶(二): Parameterized Tests</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
       <pubDate>Sun, 13 Oct 2024 09:35:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;测试技巧具有普适性，大多是与语言无关的，只是不同语言的生态可能对测试技术的支持各不一样，
 比如Python和Java，基本什么库都有，而像C++，有顺手的单元测试和Mock库能用就很不错了。&lt;/p&gt;</description>
@@ -313,9 +313,9 @@
     </item>
     <item>
       <title>用python 来操控 sqlite3</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</link>
       <pubDate>Sun, 12 Nov 2017 07:05:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</guid>
       <description>&lt;p&gt;python 与嵌入式关系数据库 sqlite3的邂逅&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;SQLite&lt;/code&gt; 是一个非常优秀的嵌入式数据库，非常轻量，可以与 Mysql, PostgreSQL 这样的 大型数据库互补使用. 而 Python 标准库中的 &lt;code&gt;sqlite3&lt;/code&gt; 模块实现了兼容 SQLite 的 &lt;a href=&#34;https://www.python.org/dev/peps/pep-0249/&#34;&gt;Python DB-API 2.0&lt;/a&gt;接口, 因此我们可以很方 便地使用 &lt;code&gt;sqlite3&lt;/code&gt; 模块来操作 &lt;code&gt;SQLite&lt;/code&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>python 与嵌入式关系数据库 sqlite3的邂逅</p>
@@ -1236,9 +1236,9 @@
     </item>
     <item>
       <title>从京东&#34;窃取&#34;150&#43;万条数据</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/jd_spider/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/jd_spider/</link>
       <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/jd_spider/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/jd_spider/</guid>
       <description>An spider to crawl jindong item and comments</description>
       <content:encoded><![CDATA[<p>我最近编写了两只京东商品和评论的分布式爬虫来进行数据分析，现在就来分享一下。</p>
 <h2 id="爬取策略"><span class="section-num">1</span> 爬取策略</h2>
@@ -1446,9 +1446,9 @@
     </item>
     <item>
       <title>你所不可或缺的 – logging</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/logging/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/logging/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/logging/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/logging/</guid>
       <description>an introduction about logging</description>
       <content:encoded><![CDATA[<h2 id="重要性"><span class="section-num">1</span> 重要性</h2>
 <p>笔者最近都在负责项目中关于日志的部分，因为跟日志打交道比较多，所以有一些关于日 志感受和技巧想要分享一下。</p>
@@ -2044,9 +2044,9 @@
     </item>
     <item>
       <title>爬虫高效去重之布隆过滤器</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</guid>
       <description>an dscription about bloom filter</description>
       <content:encoded><![CDATA[<p>笔者最近思考如何编写高效的爬虫; 而在编写高效爬虫的时候，有一个必需解决的问题就是：
 url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，那就不要重复爬取。</p>
@@ -2151,9 +2151,9 @@ url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，�
     </item>
     <item>
       <title>Python多线程端口扫描器</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/port_scanner/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/port_scanner/</link>
       <pubDate>Sun, 19 Mar 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/port_scanner/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/port_scanner/</guid>
       <description>An introduction about port scan</description>
       <content:encoded><![CDATA[<p>近两日，闲来无事，就写了些端口扫描器，重温TCP/IP协议栈的部分原理。</p>
 <h2 id="端口扫描器"><span class="section-num">1</span> 端口扫描器</h2>
@@ -2359,9 +2359,9 @@ url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，�
     </item>
     <item>
       <title>flask牛刀小试之微信公众号开发</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</link>
       <pubDate>Thu, 23 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</guid>
       <description>An flask project</description>
       <content:encoded><![CDATA[<p><a href="http://flask.pocoo.org/">flask</a> 是一个轻量级的python 框架(官网称为微型框架),很容易上手，之前因为笔者跟朋友开发小程序的时候使用过 flask,过后就遗忘了。</p>
 <p>为了重拾flask, 笔者决定写点小东西，之前开发小程序，不如现在再玩玩公众号开发</p>
@@ -2484,9 +2484,9 @@ url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，�
     </item>
     <item>
       <title>在Emacs中使用Ipython</title>
-      <link>https://ramsayleung.github.io/zh/post/2016/emacs_ipython/</link>
+      <link>https://yuexuan521.github.io/zh/post/2016/emacs_ipython/</link>
       <pubDate>Wed, 03 Aug 2016 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2016/emacs_ipython/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2016/emacs_ipython/</guid>
       <description>Use Ipython in Emasc</description>
       <content:encoded><![CDATA[<h2 id="emacs-ipython-输出错误"><span class="section-num">1</span> Emacs Ipython 输出错误</h2>
 <p>在Emacs 运行 <code>run-python</code> 的时候，报错了，如下</p>

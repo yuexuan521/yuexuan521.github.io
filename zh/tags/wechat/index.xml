@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wechat on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/wechat/</link>
+    <link>https://yuexuan521.github.io/zh/tags/wechat/</link>
     <description>Recent content in Wechat on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 10:22:14 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/wechat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/wechat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>那些年，我从微信支付学到的东西</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
       <pubDate>Thu, 06 Apr 2023 18:31:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;从微信支付离职，我能带走什么？文档，代码，设计方案还是微信支付的漏洞？&lt;/p&gt;
 &lt;p&gt;如果我带走这些资产，那我现在就在深圳的看守所里面吃着公家饭了。&lt;/p&gt;
@@ -32,7 +32,8 @@
 业务开发每天对着业务需求做CRUD，可能会羡慕开发底层组件的工程师，可以学习并提升技术水平，而自己技术水平还是在原地打转，能学习到的东西随着时间的推移，越来越少。</p>
 <p>王安石的《游褒禅山记》有这样的感叹：</p>
 <blockquote>
-<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p></blockquote>
+<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p>
+</blockquote>
 <p>所谓的「险以远」，并不特指深奥难懂的底层组件技术，也指思考的深度；</p>
 <p>如果多去思考技术和业务，挖掘背后的本质，我们也可以看到许多「世之奇伟瑰怪非常之观」</p>
 <h3 id="鱼与渔"><span class="section-num">1.1</span> 鱼与渔</h3>
@@ -48,7 +49,8 @@
 <p>既然选择「渔」，那么，要怎么挑选适合的「渔」来丰富自己的「渔库」呢？</p>
 <p>两千多年前的老师孔子就已经给出自己的答案：</p>
 <blockquote>
-<p>见贤思齐焉，见不贤而内自省也</p></blockquote>
+<p>见贤思齐焉，见不贤而内自省也</p>
+</blockquote>
 <p>见到那些优秀的实践和思路，就学下来；
 对于有弊端的实践，就要分析弊端形成的原因，再想办法避免和改进，别人掉进去的坑，我们就不要进去凑热闹了。</p>
 <h2 id="贤"><span class="section-num">3</span> 贤</h2>
@@ -59,11 +61,13 @@
 <p>这本书即是《设计模式：可复用面向对象软件的基础》(Design Patterns:
 Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang of Four (GoF)</p>
 <blockquote>
-<p>A design pattern is the re-usable form of a solution to a design problem.</p></blockquote>
+<p>A design pattern is the re-usable form of a solution to a design problem.</p>
+</blockquote>
 <p>那么什么是模式呢？</p>
 <p>按照另外一本经典名著《面向模式的软件架构卷一》的定义：</p>
 <blockquote>
-<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p></blockquote>
+<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p>
+</blockquote>
 <p>在微信支付研发理念中，程序设计和开发，很多问题都是类似，或者是重复出现的。</p>
 <p>针对此类重复问题，直接复制代码来解决，是下下策。</p>
 <p>对代码进行抽象，复用代码来解决重复问题，也是下策。
@@ -123,7 +127,8 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <h3 id="云雨伞"><span class="section-num">3.5</span> “云雨伞”</h3>
 <p>“云雨伞”这个概念来自内部的一份PPT，讲述的是如何更好地向别人提出建议，内容大概是：</p>
 <blockquote>
-<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p></blockquote>
+<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p>
+</blockquote>
 <p>“云雨伞”的步骤就是：</p>
 <ol>
 <li>指出现状：乌云密布，马上要下雨</li>
@@ -174,9 +179,9 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
     </item>
     <item>
       <title>思考：公众号背后的产品逻辑</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E6%80%9D%E8%80%83_%E5%85%AC%E4%BC%97%E5%8F%B7%E8%83%8C%E5%90%8E%E7%9A%84%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E6%80%9D%E8%80%83_%E5%85%AC%E4%BC%97%E5%8F%B7%E8%83%8C%E5%90%8E%E7%9A%84%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/</link>
       <pubDate>Thu, 02 Feb 2023 20:45:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E6%80%9D%E8%80%83_%E5%85%AC%E4%BC%97%E5%8F%B7%E8%83%8C%E5%90%8E%E7%9A%84%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E6%80%9D%E8%80%83_%E5%85%AC%E4%BC%97%E5%8F%B7%E8%83%8C%E5%90%8E%E7%9A%84%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;在公众号开通10天之际，我已经在公众号写了10来篇文章了，也基本熟悉了公众号的写作，发文以及与用户的互动流程。&lt;/p&gt;
 &lt;p&gt;对比个人博客，公众号多了很多额外的限制和规则。

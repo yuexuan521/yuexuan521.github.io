@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>履迹与沉思 on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/%E5%B1%A5%E8%BF%B9%E4%B8%8E%E6%B2%89%E6%80%9D/</link>
+    <link>https://yuexuan521.github.io/zh/categories/%E5%B1%A5%E8%BF%B9%E4%B8%8E%E6%B2%89%E6%80%9D/</link>
     <description>Recent content in 履迹与沉思 on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 10:29:28 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/%E5%B1%A5%E8%BF%B9%E4%B8%8E%E6%B2%89%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/%E5%B1%A5%E8%BF%B9%E4%B8%8E%E6%B2%89%E6%80%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编程十年的感悟</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E7%BC%96%E7%A8%8B%E5%8D%81%E5%B9%B4%E7%9A%84%E6%84%9F%E6%82%9F/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;马尔科姆·格拉德威尔的“一万小时定律”指出，持续投入一万小时的努力，足以使人在某个领域达到专家水平。
 按照每周20小时的练习量计算，每天大约需要投入3小时，十年左右才能达成这一目标。&lt;/p&gt;</description>
@@ -90,7 +90,8 @@
 <p>关于独立思考，我最喜欢的是一句话是HBO出品短剧《切尔诺贝利》里面，
 科学家瓦列里·列加索夫希望克格勃释放调查真相同事乌拉娜·霍缪克的要求，说可以保证她是没问题的，克格勃头子回答的那句话:</p>
 <blockquote>
-<p>Trust, but verify.(相信，但要核实)</p></blockquote>
+<p>Trust, but verify.(相信，但要核实)</p>
+</blockquote>
 <p>因为独立思考的第一步是：开始质疑</p>
 <h2 id="先跑起来再说"><span class="section-num">5</span> 先跑起来再说</h2>
 <p>这句话还有一个广为人知的变种：「又不是不能用」</p>
@@ -101,7 +102,8 @@
 <p>当运行速度成为瓶颈时, 你的业务已经非常大，肯定有足够的钱可以招一打的程序员把你的项目换成Golang/Java了。</p>
 <p>对此，我很赞同坐我旁边大佬关于代码质量的说法：</p>
 <blockquote>
-<p>make it run, make it fast, make it beautiful.</p></blockquote>
+<p>make it run, make it fast, make it beautiful.</p>
+</blockquote>
 <p>最近在做副业的尝试，有个深刻的体会，技术可能是商业里面最不重要的。</p>
 <p>从零把产品做出来，推广给用户，用户只会关注你的产品是否好用，能否解决他们的问题.</p>
 <p>他们既不会关注你是用C++/Java还是Javascript 写的,也不会关注你代码写得是否优雅，与其执着于技术选型，不如先把产品干出来让用户试用。</p>
@@ -128,7 +130,8 @@
 <li>是不是好的东西就能流行？不一定</li>
 <li>是不是我喜欢的东西就是好的东西？不一定</li>
 <li>我会不会花时间精力在一个不一定会流行但是我喜欢的东西上？会</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h2 id="多与人交流"><span class="section-num">7</span> 多与人交流</h2>
 <p>程序员固然是和机器打交道，但是本质解决的还是人的问题.</p>
 <p>当初学习编程的时候，曾经有个误区，认为自己只要把技术搞好，就可以不去关心什么「人情世故」。</p>
@@ -259,9 +262,9 @@
     </item>
     <item>
       <title>登陆加拿大一年后的体会</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E7%99%BB%E9%99%86%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%9A%84%E4%BD%93%E4%BC%9A/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E7%99%BB%E9%99%86%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%9A%84%E4%BD%93%E4%BC%9A/</link>
       <pubDate>Sun, 25 Feb 2024 19:46:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E7%99%BB%E9%99%86%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%9A%84%E4%BD%93%E4%BC%9A/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E7%99%BB%E9%99%86%E5%8A%A0%E6%8B%BF%E5%A4%A7%E4%B8%80%E5%B9%B4%E7%9A%84%E4%BD%93%E4%BC%9A/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;不知不觉，落地加拿大已经快一年，套用句老话，真的是光阴似箭。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;想来蜜月期已过，可以去掉刚落地时【兴奋】和【新奇】的滤镜，从道听途说，到雾里看花，再分享自己在加拿大的亲身经历 &lt;br/&gt;&lt;/p&gt;</description>
@@ -405,9 +408,9 @@
     </item>
     <item>
       <title>那些年，我从微信支付学到的东西</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
       <pubDate>Thu, 06 Apr 2023 18:31:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;从微信支付离职，我能带走什么？文档，代码，设计方案还是微信支付的漏洞？&lt;/p&gt;
 &lt;p&gt;如果我带走这些资产，那我现在就在深圳的看守所里面吃着公家饭了。&lt;/p&gt;
@@ -421,7 +424,8 @@
 业务开发每天对着业务需求做CRUD，可能会羡慕开发底层组件的工程师，可以学习并提升技术水平，而自己技术水平还是在原地打转，能学习到的东西随着时间的推移，越来越少。</p>
 <p>王安石的《游褒禅山记》有这样的感叹：</p>
 <blockquote>
-<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p></blockquote>
+<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p>
+</blockquote>
 <p>所谓的「险以远」，并不特指深奥难懂的底层组件技术，也指思考的深度；</p>
 <p>如果多去思考技术和业务，挖掘背后的本质，我们也可以看到许多「世之奇伟瑰怪非常之观」</p>
 <h3 id="鱼与渔"><span class="section-num">1.1</span> 鱼与渔</h3>
@@ -437,7 +441,8 @@
 <p>既然选择「渔」，那么，要怎么挑选适合的「渔」来丰富自己的「渔库」呢？</p>
 <p>两千多年前的老师孔子就已经给出自己的答案：</p>
 <blockquote>
-<p>见贤思齐焉，见不贤而内自省也</p></blockquote>
+<p>见贤思齐焉，见不贤而内自省也</p>
+</blockquote>
 <p>见到那些优秀的实践和思路，就学下来；
 对于有弊端的实践，就要分析弊端形成的原因，再想办法避免和改进，别人掉进去的坑，我们就不要进去凑热闹了。</p>
 <h2 id="贤"><span class="section-num">3</span> 贤</h2>
@@ -448,11 +453,13 @@
 <p>这本书即是《设计模式：可复用面向对象软件的基础》(Design Patterns:
 Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang of Four (GoF)</p>
 <blockquote>
-<p>A design pattern is the re-usable form of a solution to a design problem.</p></blockquote>
+<p>A design pattern is the re-usable form of a solution to a design problem.</p>
+</blockquote>
 <p>那么什么是模式呢？</p>
 <p>按照另外一本经典名著《面向模式的软件架构卷一》的定义：</p>
 <blockquote>
-<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p></blockquote>
+<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p>
+</blockquote>
 <p>在微信支付研发理念中，程序设计和开发，很多问题都是类似，或者是重复出现的。</p>
 <p>针对此类重复问题，直接复制代码来解决，是下下策。</p>
 <p>对代码进行抽象，复用代码来解决重复问题，也是下策。
@@ -512,7 +519,8 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <h3 id="云雨伞"><span class="section-num">3.5</span> “云雨伞”</h3>
 <p>“云雨伞”这个概念来自内部的一份PPT，讲述的是如何更好地向别人提出建议，内容大概是：</p>
 <blockquote>
-<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p></blockquote>
+<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p>
+</blockquote>
 <p>“云雨伞”的步骤就是：</p>
 <ol>
 <li>指出现状：乌云密布，马上要下雨</li>
@@ -563,9 +571,9 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
     </item>
     <item>
       <title>这些年走过的路：从广州到温哥华</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/</link>
       <pubDate>Sat, 25 Mar 2023 21:51:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;人总是健忘的, 所以在行走一段人生旅途之后, 总要不自觉地停下来, 整理下前段时间的得与失, 得大于失证明这段时间没有浪费, 欣喜之余, 准备下一段旅途;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -1041,7 +1049,8 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <blockquote>
 <p>我: はじめまして、わたしわ梁です</p>
 <p>HR: はじめまして、よろしくお願いします</p>
-<p>我: よろしくお願いします</p></blockquote>
+<p>我: よろしくお願いします</p>
+</blockquote>
 <p>当然，后面我就切换回英文了，毕竟我的日语口语还不支持我完成面试。paypay 是一轮笔试加四轮面试</p>
 <p>另外一家就是AWS，base 在Canada，毕竟我没有身份可以去美帝。</p>
 <p>AWS也是一轮笔试加四轮面试，笔试还是很有难度的，一道大概leetcode medium + 一道leetcode hard+ 原题，那道 hard+ 的题，如果不是刷过原题，我是解不出来的。</p>
@@ -1153,10 +1162,12 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <p>先达德隆望尊，门人弟子填其室，未尝稍降辞色。</p>
 <p>余立侍左右，援疑质理，俯身倾耳以请；或遇其叱咄，色愈恭，礼愈至，不敢出一言以复；俟其欣悦，则又请焉。</p>
 <p>故余虽愚，卒获有所闻。</p>
-<p>&hellip;</p></blockquote>
+<p>&hellip;</p>
+</blockquote>
 <p>我自己的经历和成就，自知无法与宋濂先生相比。但十数年后，再读宋先生的《送东阳马生序》，却有了不一样的感悟。</p>
 <blockquote>
-<p>故余虽愚，卒获有所闻。</p></blockquote>
+<p>故余虽愚，卒获有所闻。</p>
+</blockquote>
 <p>我虽然普通，但是坚持还是有收获了。</p>
 <div class="qr-container" center>
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" class="qr-container" width="160px" height="160px" center="t" />
@@ -1180,9 +1191,9 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
     </item>
     <item>
       <title>2019年总结: 人生如逆旅, 我亦是行人</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/2019%E6%80%BB%E7%BB%93/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/2019%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 26 Dec 2019 21:12:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/2019%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/2019%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;人总是健忘的, 所以在行走一段人生旅途之后, 总要不自觉地停下来,
 整理下前段时间的得与失, 得大于失证明这段时间没有浪费, 欣喜之余,
@@ -1194,7 +1205,8 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <p>失大于得则证明这段时间虚度罢了, 却无法重来.
 本文便是对过去一年得与失的总结.</p>
 <blockquote>
-<p>无可奈何花落去，似曾相识燕归来.</p></blockquote>
+<p>无可奈何花落去，似曾相识燕归来.</p>
+</blockquote>
 <h2 id="工作"><span class="section-num">2</span> 工作</h2>
 <p>我所在的项目组做的是对B端的聚合收单业务, 有蚂蚁的big title 背书,
 服务一堆的服务商, 但业务主导一切, 一切以业务为中心, 技术并没有话语权.</p>
@@ -1264,7 +1276,8 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
 <p>对于杭州有了新的认识, 借用下别人对杭州的评价:</p>
 <blockquote>
 <p>马路平整, 四季分明, 冬暖夏凉, 房价便宜, 美食多样, 工资够用, 一天工作 8
-小时, 地铁发达, 大公司多, 小公司都很专业</p></blockquote>
+小时, 地铁发达, 大公司多, 小公司都很专业</p>
+</blockquote>
 <p>只需将上面的内容反转一下, 就可以知道杭州的实况.
 去掉古代文人墨客诗文的滤镜, 杭州也就是这样罢了.</p>
 <p>逐渐明白, 技术并不是万能, 甚至用处并不是那么大.</p>
@@ -1287,7 +1300,8 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
 </ol>
 <p>借一句诗勉励自己:</p>
 <blockquote>
-<p>沉舟侧畔千帆过，病树前头万木春.</p></blockquote>
+<p>沉舟侧畔千帆过，病树前头万木春.</p>
+</blockquote>
 <div class="qr-container" center>
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" class="qr-container" width="160px" height="160px" center="t" />
 公号同步更新，欢迎关注👻
@@ -1296,9 +1310,9 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
     </item>
     <item>
       <title>工作一年记</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%91%A8%E5%B9%B4%E8%AE%B0/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%91%A8%E5%B9%B4%E8%AE%B0/</link>
       <pubDate>Fri, 28 Jun 2019 14:18:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%91%A8%E5%B9%B4%E8%AE%B0/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E5%B7%A5%E4%BD%9C%E4%B8%80%E5%91%A8%E5%B9%B4%E8%AE%B0/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;转眼间, 我已经工作一年了&lt;/p&gt;
 &lt;p&gt;去年的6月28日, 我到了杭州, 入职了的一家全国闻名的金融科技公司, 开始了自己的职业生涯.&lt;/p&gt;
@@ -1367,7 +1381,8 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
 <h2 id="憧憬与展望"><span class="section-num">7</span> 憧憬与展望</h2>
 <p>借用高适的一首诗以寄期望:</p>
 <blockquote>
-<p>千里黄云白日曛 北风吹雁雪纷纷 莫愁前路无知己 天下谁人不识君</p></blockquote>
+<p>千里黄云白日曛 北风吹雁雪纷纷 莫愁前路无知己 天下谁人不识君</p>
+</blockquote>
 <p>希望自己还能保持乐观~~</p>
 <div class="qr-container" center>
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" class="qr-container" width="160px" height="160px" center="t" />
@@ -1377,15 +1392,16 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
     </item>
     <item>
       <title>迟来的2018年总结</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/2018%E6%80%BB%E7%BB%93/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/2018%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 23 Jan 2019 01:48:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/2018%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/2018%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;一晃，2018年已经过去了&lt;/p&gt;
 &lt;p&gt;6月25日，拖着行李，从广州来了杭州&lt;/p&gt;
 &lt;p&gt;告别了学校，从学生变成了一个社会人&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;既然选择了远方, 便只顾风雨兼程 &amp;ndash; 汪国真&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;既然选择了远方, 便只顾风雨兼程 &amp;ndash; 汪国真&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;工作&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 工作&lt;/h2&gt;
 &lt;p&gt;从工作上来说，我”换”了两份工作，阿里大文娱和蚂蚁金服; 阿里大文娱-UC
 2017.11-2018.5
@@ -1395,7 +1411,8 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
 <p>告别了学校，从学生变成了一个社会人</p>
 <hr>
 <blockquote>
-<p>既然选择了远方, 便只顾风雨兼程 &ndash; 汪国真</p></blockquote>
+<p>既然选择了远方, 便只顾风雨兼程 &ndash; 汪国真</p>
+</blockquote>
 <h2 id="工作"><span class="section-num">1</span> 工作</h2>
 <p>从工作上来说，我”换”了两份工作，阿里大文娱和蚂蚁金服; 阿里大文娱-UC
 2017.11-2018.5
@@ -1445,9 +1462,9 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
     </item>
     <item>
       <title>恰同学少年： 纪念我的大学时光</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/farewell_to_my_university_time/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/farewell_to_my_university_time/</link>
       <pubDate>Mon, 21 May 2018 18:25:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/farewell_to_my_university_time/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/farewell_to_my_university_time/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;转眼到了5月，广州的夏天来的特别早。&lt;/p&gt;
 &lt;p&gt;学校的花已谢幕，而我在上个月已经拍完毕业照，在上星期已经完成了毕业答辨，如无意外，我大学的旅程已要走到尽头。&lt;/p&gt;</description>
@@ -1516,7 +1533,8 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
 <p>峥嵘四载，今再望，诸事宛如梦中。</p>
 <p>前路茫茫，不失辛酸与希望，突然想起高中英语口试前，用于设备测试的那句名言：</p>
 <blockquote>
-<p>生活就像海洋，只有意志坚强的人才能到达彼岸。</p></blockquote>
+<p>生活就像海洋，只有意志坚强的人才能到达彼岸。</p>
+</blockquote>
 <div class="qr-container" center>
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" class="qr-container" width="160px" height="160px" center="t" />
 公号同步更新，欢迎关注👻
@@ -1525,9 +1543,9 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
     </item>
     <item>
       <title>写博客的动机</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/blog/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/blog/</link>
       <pubDate>Sun, 17 Sep 2017 10:36:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/blog/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/blog/</guid>
       <description>&lt;h2 id=&#34;为什么要写博客&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 为什么要写博客&lt;/h2&gt;
 &lt;p&gt;虽说我写博客的时间不长，但是当9月份为止，我已写了不少博文的。那么，为什么要写博文呢？&lt;/p&gt;
 &lt;p&gt;很明显，这是一个费时费精力的工作，那么为什么我还要写呢？我自己思考过这个问题，我觉得，原因有下：&lt;/p&gt;</description>
@@ -1598,9 +1616,9 @@ Tyrion Lannister所说的那般, 好脑筋需要书本, 就如同宝剑需要磨
     </item>
     <item>
       <title>关于工具, 关于折腾</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/about_tool_about_tweak/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/about_tool_about_tweak/</link>
       <pubDate>Fri, 24 Mar 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/about_tool_about_tweak/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/about_tool_about_tweak/</guid>
       <description>An discussion about tool and tweak</description>
       <content:encoded><![CDATA[<p>我最近一直在思考，关于工具，关于折腾，关于其中的付出与收获</p>
 <h2 id="乐趣"><span class="section-num">1</span> 乐趣</h2>

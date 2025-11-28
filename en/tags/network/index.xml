@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Network on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/network/</link>
+    <link>https://yuexuan521.github.io/en/tags/network/</link>
     <description>Recent content in Network on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Tue, 14 Oct 2025 08:59:56 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Story About Bypassing Air Canada&#39;s In-flight Network Restrictions</title>
-      <link>https://ramsayleung.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</link>
       <pubDate>Fri, 10 Oct 2025 15:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</guid>
       <description>&lt;h2 id=&#34;prologue&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Prologue&lt;/h2&gt;
 &lt;p&gt;A while ago, I took a flight from Canada back to Hong Kong - about 12 hours in total with Air Canada.&lt;/p&gt;
 &lt;p&gt;Interestingly, the plane actually had WiFi:&lt;/p&gt;
@@ -30,7 +30,7 @@
     &lt;label for=&#34;zoomCheck-a931d&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -204,7 +204,8 @@
 <p>After all, if the IPs are directly blocked, no amount of disguise will help. This network likely maintains some IP whitelist (such as WhatsApp and WeChat&rsquo;s egress IPs), and only IPs on the whitelist can be accessed.</p>
 <hr>
 <blockquote>
-<p>If a ping to a specific IP times out, I wouldn&rsquo;t say the IP is blocked. It could be that ICMP specifically is blocked, following some network rules on the firewall. This is pretty common in entreprise networks to not allow endpoint discovery. I could be missing something and happy to be corrected here, but I was surprised to read that. &ndash; HackerNews top comment</p></blockquote>
+<p>If a ping to a specific IP times out, I wouldn&rsquo;t say the IP is blocked. It could be that ICMP specifically is blocked, following some network rules on the firewall. This is pretty common in entreprise networks to not allow endpoint discovery. I could be missing something and happy to be corrected here, but I was surprised to read that. &ndash; HackerNews top comment</p>
+</blockquote>
 <p><a href="https://news.ycombinator.com/item?id=45536325">https://news.ycombinator.com/item?id=45536325</a></p>
 <p>Actually, I did verified whether only ICMP was blocked, was it possible to create a connection through TLS:</p>
 <div class="highlight"><div class="chroma">
@@ -626,7 +627,8 @@ But if the gateway were stricter and inspected the content of DNS request packet
 <h2 id="follow-up-can-we-bypass-the-speed-limit"><span class="section-num">7</span> Follow up: Can we bypass the speed limit?</h2>
 <blockquote>
 <p>There&rsquo;s a speed limit. No matter what you try, you can&rsquo;t break through it.</p>
-<p>The bandwidth for free texting is the ultimate bottleneck. Even if you bypass the restrictions, without solving the bandwidth issue, you can&rsquo;t use it like paid Wi-Fi 😭</p></blockquote>
+<p>The bandwidth for free texting is the ultimate bottleneck. Even if you bypass the restrictions, without solving the bandwidth issue, you can&rsquo;t use it like paid Wi-Fi 😭</p>
+</blockquote>
 <p>This is a comment from a reader. Is this true?</p>
 <p>Not exactly.</p>
 <p>There are actually ways to bypass it. During communication on the network, there is no business marker indicating &ldquo;paid user&rdquo; attached.
@@ -637,7 +639,8 @@ So, if I were designing this paid system, after a user pays, I would add the uni
 <p>The ARP (Address Resolution Protocol) is used to resolve an IP address into its corresponding MAC address. The basic idea of the ARP protocol is to broadcast an ARP request within the network:</p>
 <blockquote>
 <p>Gateway: Whose IP address is 192.168.1.100? Please tell me your MAC address.
-Device with that IP: I am 192.168.1.100, my MAC address is XX:XX:XX:XX:XX:XX.</p></blockquote>
+Device with that IP: I am 192.168.1.100, my MAC address is XX:XX:XX:XX:XX:XX.</p>
+</blockquote>
 <p>The ARP protocol itself has no security verification mechanism – it unconditionally trusts the received ARP replies. I could also tell the gateway that my IP address corresponds to the MAC address of a user who has already paid. This way, all traffic coming from me would enjoy the benefits of the paid line. This is the so-called ARP Spoofing.</p>
 <p>The final question is, how do we know which MAC address belongs to a paid user?</p>
 <p>It&rsquo;s quite easy, just brute-force: try every known MAC address in the network. If there is a paid user&rsquo;s MAC address, requests from that MAC address should definitely be able to access sites like YouTube/Netflix. This can easily be automated and detected with a script.</p>

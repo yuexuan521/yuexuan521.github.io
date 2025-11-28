@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Biography on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/biography/</link>
+    <link>https://yuexuan521.github.io/zh/tags/biography/</link>
     <description>Recent content in Biography on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 19:21:34 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/biography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/biography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>黑客列传：强得抠脚的教主RMS</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</link>
       <pubDate>Sun, 16 Jul 2023 22:58:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;前段时间流行一种关于程序员效率的说法，叫「10x程序员」，即一个好的程序员的工作效率是普通程序员的10倍。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;但是，在编程界，有这么一群人，他们的工作效率，可以说是百倍，甚至千倍于普通程序员； &lt;br/&gt;&lt;/p&gt;</description>
@@ -250,16 +250,19 @@
 <p>根据 RMS <a href="https://usesthis.com/interviews/richard.stallman/">自述</a>, 他之前用的一直是中国科学院设计的龙芯处理器的龙梦电脑, 虽然这台电脑的性能，显示尺寸(只有9英寸)都无法让RMS 满意，但是这台电脑的是完全自由的，包括硬件, bios, 软件: <br/></p>
 <blockquote>
 <p>What hardware do you use? <br/></p>
-<p>I am using a Lemote Yeelong, a netbook with a Loongson chip and a 9-inch display. This is my only computer, and I use it all the time. I chose it because I can run it with 100% free software even at the BIOS level. <br/></p></blockquote>
+<p>I am using a Lemote Yeelong, a netbook with a Loongson chip and a 9-inch display. This is my only computer, and I use it all the time. I chose it because I can run it with 100% free software even at the BIOS level. <br/></p>
+</blockquote>
 <p>在性能和自由之间，他一如既往地选择了「自由」 <br/></p>
 <p>根据RMS <a href="https://stallman.org/intel.html">官网的描述</a>, 他不用intel 或者 amd 的芯片，是因为他们都有后门: <br/></p>
 <blockquote>
 <p>Reasons not to use Intel <br/></p>
 <p>Don&rsquo;t use Intel processors newer than Core2, because they have the &ldquo;management engine&rdquo; back door. <br/></p>
-<p>Recent AMD processors have a similar problem, but we do not yet have an article about it. <br/></p></blockquote>
+<p>Recent AMD processors have a similar problem, but we do not yet have an article about it. <br/></p>
+</blockquote>
 <p>不过，据闻他的龙梦电脑被偷了之后，他也就换到 <a href="https://stallman.org/stallman-computing.html">ThinkPad 上了</a>: <br/></p>
 <blockquote>
-<p>As of 2022 I use a Thinkpad x200 computer, which has a free initialization program (Libreboot) and a free operating system (Trisquel GNU/Linux). <br/></p></blockquote>
+<p>As of 2022 I use a Thinkpad x200 computer, which has a free initialization program (Libreboot) and a free operating system (Trisquel GNU/Linux). <br/></p>
+</blockquote>
 <h3 id="抠脚"><span class="section-num">6.4</span> 抠脚</h3>
 <p>菜的抠脚就听说过，强得抠脚又是什么呢？ <br/></p>
 <p>因为他真的抠脚（字面意思），还吃回去了。 <br/></p>

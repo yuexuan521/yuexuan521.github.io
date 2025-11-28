@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rust on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/rust/</link>
+    <link>https://yuexuan521.github.io/zh/categories/rust/</link>
     <description>Recent content in Rust on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 22:28:21 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Rust的Iterator优雅解决FizzBuzz问题</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 18 Sep 2024 22:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;按照维基百科的说法，&lt;a href=&#34;https://en.wikipedia.org/wiki/Fizz_buzz&#34;&gt;FizzBuzz问题&lt;/a&gt; 是一个简单但是常见的面试编程问题（可能以前常见，现在都是考Leetcode了,这种连Easy 都不算了），这个问题的要求如下： &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -303,7 +303,8 @@
 <h2 id="zero-cost-abstraction"><span class="section-num">4</span> Zero Cost Abstraction</h2>
 <p>所谓的是零开销抽象（Zero Cost Abstraction），用C++之父的话来解释就是: <br/></p>
 <blockquote>
-<p>In general, C++ implementations obey the zero-overhead principle: What you don’t use, you don’t pay for. And further: What you do use, you couldn’t hand code any better. <br/></p></blockquote>
+<p>In general, C++ implementations obey the zero-overhead principle: What you don’t use, you don’t pay for. And further: What you do use, you couldn’t hand code any better. <br/></p>
+</blockquote>
 <p>概括来说，就是使用 Iterator 写出来的代码，和你自己 for-loop 手写是性能是一样的，并不会有额外的抽象开销。 <br/></p>
 <p>换个角度讲，你手写的代码也没法实现得比 Iterator 更快，表达力还可能没有那么强。 <br/></p>
 <p>如果看上面的 Iterator 实现觉得着实难以理解，我们可以再来一版兼具优雅与简洁的实现： <br/></p>
@@ -345,9 +346,9 @@
     </item>
     <item>
       <title>Let&#39;s make everything iterable</title>
-      <link>https://ramsayleung.github.io/zh/post/2021/iterate_through_pagination_api/</link>
+      <link>https://yuexuan521.github.io/zh/post/2021/iterate_through_pagination_api/</link>
       <pubDate>Thu, 29 Apr 2021 11:48:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2021/iterate_through_pagination_api/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2021/iterate_through_pagination_api/</guid>
       <description>&lt;p&gt;Iterate through pagination in the Rest API&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;About 4 months ago, &lt;a href=&#34;https://github.com/icewind1991&#34;&gt;icewind1991&lt;/a&gt; created an exciting &lt;a href=&#34;https://github.com/ramsayleung/rspotify/pull/166&#34;&gt;PR&lt;/a&gt; that adding &lt;code&gt;Stream/Iterator&lt;/code&gt; based versions of methods with paginated results, which makes enpoints in &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;Rspotify&lt;/a&gt; more much ergonomic to use, and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; completed this PR.&lt;/p&gt;
@@ -698,9 +699,9 @@ to the <code>Iterator</code> trait.</p>
     </item>
     <item>
       <title>Serde Tricks</title>
-      <link>https://ramsayleung.github.io/zh/post/2020/serde_lesson/</link>
+      <link>https://yuexuan521.github.io/zh/post/2020/serde_lesson/</link>
       <pubDate>Sun, 13 Dec 2020 22:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2020/serde_lesson/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2020/serde_lesson/</guid>
       <description>&lt;p&gt;The lesson learned from refactoring rspotify&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Recently, I and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; are working on refactoring &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;&lt;code&gt;rspotify&lt;/code&gt;&lt;/a&gt;, trying to improve performance, documentation, error-handling, data model and reduce compile time, to make it easier to use. (For those who has never heard about &lt;code&gt;rspotify&lt;/code&gt;, it is a Spotify HTTP SDK implemented in Rust).&lt;/p&gt;
@@ -773,7 +774,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>And Koxiaet gave great advice about how to polish <code>Actions</code>:</p>
 <blockquote>
-<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p></blockquote>
+<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p>
+</blockquote>
 <p>To be honest, I was not that familiar with <code>Serde</code> before, after digging in its official documentation for a while, it seems there is now a built-in way to convert JSON map to <code>Vec&lt;T&gt;</code> base on map&rsquo;s value.</p>
 <p>After reading the <a href="https://serde.rs/custom-serialization.html">Custom serialization</a> from documentation, there was a simple solution came to my mind, so I wrote my first customized deserialize function.</p>
 <p>I created a dumb <code>Actions</code> struct inside the <code>deserialize</code> function, and converted <code>HashMap</code> to <code>Vec</code> by filtering its value.</p>
@@ -905,7 +907,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>As before, Koxiaet made a great point about <code>timestamp</code> and =progress_ms=(I will talk about it later):</p>
 <blockquote>
-<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p></blockquote>
+<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p>
+</blockquote>
 <p>The polished struct looks like:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1104,7 +1107,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>As before without saying, Koxiaet pointed out that</p>
 <blockquote>
-<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p></blockquote>
+<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p>
+</blockquote>
 <p>Since I have worked with <code>Serde</code>&rsquo;s custome deserialization, it&rsquo;s not a hard job for me any more. I easily figure out how to deserialize <code>u64</code> to <code>Duration</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1189,10 +1193,12 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 <p>The <code>progress_ms</code> field is either not present or a millisecond, the <code>u32</code> handles the milliseconds, as its value might not be present in the response, it&rsquo;s an <code>Option&lt;u32&gt;</code>, so it won&rsquo;t work with <code>from_duration_ms</code>.</p>
 <p>Thus, it&rsquo;s necessary to figure out how to handle the <code>Option</code> type, and the answer is in the documentation, the <code>deserialize_option</code> function:</p>
 <blockquote>
-<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p></blockquote>
+<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
-<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p></blockquote>
+<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1344,7 +1350,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>Koxiaet made a great point about <code>mode</code> field:</p>
 <blockquote>
-<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p></blockquote>
+<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p>
+</blockquote>
 <p>In this case, we don&rsquo;t need the <code>Opiton</code> type and in order to deserialize enum from number, we firstly need to define a C-like enum:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1517,9 +1524,9 @@ construction. And it turns out that there is a way to construct <code>DateTime</
     </item>
     <item>
       <title>rspotify has come to async/await</title>
-      <link>https://ramsayleung.github.io/zh/post/2020/async_await_for_rspotify/</link>
+      <link>https://yuexuan521.github.io/zh/post/2020/async_await_for_rspotify/</link>
       <pubDate>Fri, 28 Feb 2020 01:27:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2020/async_await_for_rspotify/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2020/async_await_for_rspotify/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Today, I am exited to introduce you the &lt;a href=&#34;https://github.com/ramsayleung/rspotify/releases/tag/v0.9&#34;&gt;v0.9&lt;/a&gt; release I have been continued to work on it for the past few weeks that
 adds &lt;code&gt;async/await&lt;/code&gt; support now!&lt;/p&gt;
@@ -1656,9 +1663,9 @@ tracker!</p>
     </item>
     <item>
       <title>RSpotify– 我的第一个Rust crate</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/rspotify/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/rspotify/</link>
       <pubDate>Wed, 28 Feb 2018 20:44:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/rspotify/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/rspotify/</guid>
       <description>&lt;p&gt;开发第一个Rust crate 的感受和踩到的坑&lt;/p&gt;
 &lt;p&gt;最近写了人生第一个 Rust crate &amp;ndash; &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;RSpotify&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;虽说并不是什么惊天地，泣鬼神的大作，但是也是我花费了近两个月实现的。&lt;/p&gt;
@@ -1921,9 +1928,9 @@ tracker!</p>
     </item>
     <item>
       <title>Rust的错误处理(二)</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_2/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_2/</link>
       <pubDate>Thu, 08 Feb 2018 22:01:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_2/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_2/</guid>
       <description>&lt;p&gt;自定义错误和&lt;code&gt;error_chain&lt;/code&gt; 库&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;上一篇文章聊到 Rust 的错误处理机制，以及和 Java 的简单比较，现在就来聊一下如何在 Rust 自定义错误，以及引入 &lt;code&gt;error_chain&lt;/code&gt;这个库来优雅地进行错误处理。&lt;/p&gt;</description>
@@ -2472,9 +2479,9 @@ tracker!</p>
     </item>
     <item>
       <title>Rust的错误处理(一)</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_1/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_1/</link>
       <pubDate>Mon, 05 Feb 2018 20:35:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_1/</guid>
       <description>&lt;p&gt;拉上Java 来谈谈 Rust的错误处理&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;每个语言都会有异常处理机制（没有异常处理机制的语言估计也没有人会用了），Rust 自然也不例外，所以今天我就来谈Rust 的异常处理，因为 Rust 的异常处理跟常见的语言 （Java/Python 等）的处理机制差异略大，所以打算拉个上个语言，对比着解释. 没错，这 个光荣的任务就落到了 Java 身上&lt;/p&gt;</description>
@@ -2506,7 +2513,8 @@ tracker!</p>
 <blockquote>
 <p>An {() Error} is a subclass of {() Throwable}
 that indicates serious problems that a reasonable application should
-not try to catch. Most such errors are abnormal conditions.</p></blockquote>
+not try to catch. Most such errors are abnormal conditions.</p>
+</blockquote>
 <p>比如虚拟机挂了，或者JRE 出了问题就可能是 <code>Error</code>，前几天我就遇到一个JRE 的 Bug, 整个项目都挂 了：</p>
 
 <figure>

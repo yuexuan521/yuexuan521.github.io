@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programmer on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/programmer/</link>
+    <link>https://yuexuan521.github.io/zh/tags/programmer/</link>
     <description>Recent content in Programmer on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 27 Oct 2025 17:17:26 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>杂谈AI取代程序员</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E6%9D%82%E8%B0%88ai%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E6%9D%82%E8%B0%88ai%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
       <pubDate>Fri, 14 Feb 2025 21:15:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E6%9D%82%E8%B0%88ai%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E6%9D%82%E8%B0%88ai%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;最近国产的DeepSeek 模型的爆火，让「AI取代程序员」的说法又甚嚣尘上, 比如在国内著名的程序员社区 V2ex 搜索「&lt;a href=&#34;https://www.sov2ex.com/?q=AI%E5%8F%96%E4%BB%A3%E7%A8%8B%E5%BA%8F%E5%91%98&#34;&gt;AI取代程序员&lt;/a&gt;」&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，可以搜索出 69627 条结果(截止2025-02-15):&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -55,13 +55,15 @@
 <blockquote>
 <p>你有对项目开发的各个环节的耗时和阻塞时间做量化分析么？</p>
 <p>编码是整个研发流程效能最低的部分么？</p>
-<p>从拿到需求到开发上线，只有编码可以提效么?</p></blockquote>
+<p>从拿到需求到开发上线，只有编码可以提效么?</p>
+</blockquote>
 <p>评委这么一顿批头盖脸的输出，直接把我的信心给浇没了。</p>
 <p>虽然我写的代码生成工具远不如大模型加持的AI强大，但看起来都只局限于解决编码问题，研发流程的其他问题并没有解决。</p>
 <h3 id="冰山之下"><span class="section-num">2.2</span> 冰山之下</h3>
 <blockquote>
 <p>冰山运动之所以雄伟壮观，是因为它只有八分之一在水面上</p>
-<p>《午后之死》 海明威</p></blockquote>
+<p>《午后之死》 海明威</p>
+</blockquote>
 
 <figure>
     
@@ -147,7 +149,8 @@
 <li>全元音字符的特殊情况</li>
 <li>不含元音的字符串</li>
 <li>非法输入类型校验</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p>AI生成结果：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -213,7 +216,8 @@
 <li>Is your country changing rapidly?</li>
 <li>In what ways have changes in technology changed people&rsquo;s lives?</li>
 <li>Why do old people not accept change?</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <!--quoteend-->
 <blockquote>
 <p>Here are some Band 9 answers for the IELTS Speaking Part 1 topic &ldquo;Change&rdquo;, with a natural, fluent style and advanced vocabulary.</p>
@@ -221,17 +225,20 @@
 <li>Do you think change is good?</li>
 </ol>
 <p>Absolutely. Change is an inevitable part of life, and in most cases, it drives progress and personal growth. While change can be daunting at first, it often leads to new opportunities and valuable experiences. Without change, we would stagnate, both individually and as a society.
-&hellip;</p></blockquote>
+&hellip;</p>
+</blockquote>
 <p>让AI做词典, 帮我解释和翻译我不懂的单词，或者做中译英方便交流:</p>
 <blockquote>
-<p>You are a professional translator. Translate all input Chinese paragraphs into English and all input English into Chinese, and help me explain its meaning</p></blockquote>
+<p>You are a professional translator. Translate all input Chinese paragraphs into English and all input English into Chinese, and help me explain its meaning</p>
+</blockquote>
 <p>而后我输入中文，它就会给我英文翻译；输入英文，它会给我中文翻译:</p>
 <blockquote>
 <p>&ldquo;爱哭的孩子有奶喝&rdquo;</p>
 <hr>
 <p>&ldquo;The crying baby gets the milk.&rdquo;
 Meaning:</p>
-<p>This Chinese proverb &ldquo;爱哭的孩子有奶喝&rdquo; (ài kū de háizi yǒu nǎi hē) means that those who complain, express their needs, or fight for their interests are more likely to get attention and benefits. It suggests that speaking up and advocating for oneself can lead to better outcomes, similar to how a baby who cries gets fed first.</p></blockquote>
+<p>This Chinese proverb &ldquo;爱哭的孩子有奶喝&rdquo; (ài kū de háizi yǒu nǎi hē) means that those who complain, express their needs, or fight for their interests are more likely to get attention and benefits. It suggests that speaking up and advocating for oneself can lead to better outcomes, similar to how a baby who cries gets fed first.</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
 <p>illiterate</p>
@@ -252,15 +259,18 @@ Meaning:</p>
 <li>在科技、法律、文化等方面，也可以用 illiterate 来形容缺乏基础知识的人，例如 &ldquo;technologically illiterate&rdquo;（科技文盲）。</li>
 </ul>
 </li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <p>还有一个就是让AI 给我写的内容纠错，这个也比传统的语法工具类如 Grammarly 好用.</p>
 <blockquote>
-<p>You are a professional and seasoned translator, correct me if I am wrong.</p></blockquote>
+<p>You are a professional and seasoned translator, correct me if I am wrong.</p>
+</blockquote>
 <h3 id="代码审计"><span class="section-num">4.3</span> 代码审计</h3>
 <p>有时候我会查看一些智能合约的代码或者 Telegram bot的代码，在实际交互前，我一般会把代码丢给AI，让它检查一下是否有可疑的代码片段，类如窃取用户的私钥，把资金转到可疑账户等等。</p>
 <p>或者把我自己写的代码丢给AI，让它看下是否有安全漏洞:</p>
 <blockquote>
-<p>Given the following code, help me spot if there is any vulnerability here:</p></blockquote>
+<p>Given the following code, help me spot if there is any vulnerability here:</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -283,7 +293,8 @@ Meaning:</p>
 <li>SQL Injection Vulnerability (Critical):</li>
 </ul>
 <p>The most severe issue is that the code uses string formatting (f-string) to directly insert user input into the SQL query. This allows SQL injection attacks. For example, a malicious user could input:</p>
-<p>Here&rsquo;s a secure version of the code:</p></blockquote>
+<p>Here&rsquo;s a secure version of the code:</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -318,7 +329,8 @@ Meaning:</p>
 <p>现代前端基本都会使用类似webpack 的打包工具进行打包压缩, 甚至还会进行代码混淆，所以F12 查看源码，并不能查出端倪.</p>
 <p>因此我一般都是让AI 来帮我反编译和还原, 这样就免去了复杂的人工转译的过程:</p>
 <blockquote>
-<p>Given the obfuscated and compressed code, could you reverse it back to the original source code?</p></blockquote>
+<p>Given the obfuscated and compressed code, could you reverse it back to the original source code?</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -365,7 +377,8 @@ Meaning:</p>
 </div>
 </div><blockquote>
 <p>Let me help you deobfuscate this code. Based on the patterns and structure, this appears to be JavaScript code that has been obfuscated using common techniques like array-based string storage and variable name mangling.
-The original source code would be:</p></blockquote>
+The original source code would be:</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -402,7 +415,8 @@ The original source code would be:</p></blockquote>
 <h3 id="数据处理"><span class="section-num">4.6</span> 数据处理</h3>
 <p>非结构化数据转换成结构化数据，如JSON, 相当于让AI做了数据清洗的脏活:</p>
 <blockquote>
-<p>Given the following output of ls command, could you convert it to JSON?</p></blockquote>
+<p>Given the following output of ls command, could you convert it to JSON?</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -439,7 +453,8 @@ Explanation:</p>
 <li>&ldquo;group&rdquo; is the group the file belongs to.</li>
 <li>&ldquo;size&rdquo; is the size of the file in bytes.</li>
 <li>&ldquo;modified&rdquo; is the date of the last modification.</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -604,7 +619,8 @@ Explanation:</p>
 <p><strong><strong>程序员的核心能力已从“编码”回归到“解决问题”本身。</strong></strong></p>
 <p>强烈推荐 Lex Fridman 采访 Ruby On Rails 作者 DHH关于AI与程序员相关的内容，DHH的评论相当深刻与有洞见：<a href="https://www.youtube.com/watch?v=6i5hvNA72ZU">https://www.youtube.com/watch?v=6i5hvNA72ZU</a></p>
 <blockquote>
-<p>AI 只会让会使用它的人更强，但你不可能通过AI vibe coding 学会编程，正如你不能只通过观看 Youtube 视频来学会弹吉他，只用把手指放到琴弦之上才可能学习弹琴。</p></blockquote>
+<p>AI 只会让会使用它的人更强，但你不可能通过AI vibe coding 学会编程，正如你不能只通过观看 Youtube 视频来学会弹吉他，只用把手指放到琴弦之上才可能学习弹琴。</p>
+</blockquote>
 <p>如果每个人都会使用 Cursor tab tab tab, 你的优势又在何方呢？</p>
 <p>AI会强迫我们思考自己的核心竞争力，总而然之，AI不是我们的对手，它是助力器，又是放大镜 —— 它让优秀的工程师更强，也让平庸的重复劳动无处隐藏</p>
 <h3 id="推荐阅读">推荐阅读</h3>

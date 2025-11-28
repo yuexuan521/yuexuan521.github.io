@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ReInvent: 重新造轮子系列 on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/reinvent-%E9%87%8D%E6%96%B0%E9%80%A0%E8%BD%AE%E5%AD%90%E7%B3%BB%E5%88%97/</link>
+    <link>https://yuexuan521.github.io/zh/categories/reinvent-%E9%87%8D%E6%96%B0%E9%80%A0%E8%BD%AE%E5%AD%90%E7%B3%BB%E5%88%97/</link>
     <description>Recent content in ReInvent: 重新造轮子系列 on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 26 Apr 2025 17:12:10 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/reinvent-%E9%87%8D%E6%96%B0%E9%80%A0%E8%BD%AE%E5%AD%90%E7%B3%BB%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/reinvent-%E9%87%8D%E6%96%B0%E9%80%A0%E8%BD%AE%E5%AD%90%E7%B3%BB%E5%88%97/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重新造轮子系列(六)：构建工具</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_build_manager/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_build_manager/</link>
       <pubDate>Sun, 20 Apr 2025 18:18:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_build_manager/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_build_manager/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/build_manager&#34;&gt;Build Manager&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;以 C 语言为例，一个程序通常由多个源文件 &lt;code&gt;.c&lt;/code&gt; 组成, 每个源文件需要先编译成目标文件 &lt;code&gt;.o&lt;/code&gt;, 再链接成最终的可执行文件。&lt;/p&gt;
@@ -30,7 +30,7 @@
     &lt;label for=&#34;zoomCheck-63797&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/c_program_build_phase.jpg&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/c_program_build_phase.jpg&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -494,9 +494,9 @@
     </item>
     <item>
       <title>重新造轮子系列(五)：模板引擎</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_page_template/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_page_template/</link>
       <pubDate>Mon, 14 Apr 2025 22:59:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_page_template/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_page_template/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/page_templates&#34;&gt;Page Template&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;在现代网站开发里，内容与表现的分离已经成为基本准则(Separation of content and presentation),
@@ -539,11 +539,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-golang" data-lang="golang"><span class="line"><span class="cl"><span class="p">{</span><span class="o">%</span> <span class="nx">comment</span> <span class="o">%</span><span class="p">}</span> <span class="nx">自创模板语法</span> <span class="p">{</span><span class="o">%</span> <span class="nx">endcomment</span> <span class="o">%</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="o">%</span> <span class="k">for</span> <span class="nx">post</span> <span class="nx">in</span> <span class="nx">posts</span> <span class="o">%</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">{{</span> <span class="nx">post</span><span class="p">.</span><span class="nx">title</span> <span class="p">|</span> <span class="nx">truncate</span><span class="p">:</span> <span class="mi">30</span> <span class="p">}}</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span><span class="o">%</span> <span class="nx">endfor</span> <span class="o">%</span><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-golang" data-lang="golang"><span class="line"><span class="cl"><span class="p">{</span><span class="o">%</span><span class="w"> </span><span class="nx">comment</span><span class="w"> </span><span class="o">%</span><span class="p">}</span><span class="w"> </span><span class="nx">自创模板语法</span><span class="w"> </span><span class="p">{</span><span class="o">%</span><span class="w"> </span><span class="nx">endcomment</span><span class="w"> </span><span class="o">%</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">{</span><span class="o">%</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">post</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">posts</span><span class="w"> </span><span class="o">%</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">{{</span><span class="w"> </span><span class="nx">post</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nx">truncate</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="p">}}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">{</span><span class="o">%</span><span class="w"> </span><span class="nx">endfor</span><span class="w"> </span><span class="o">%</span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>优点就是语法简洁，缺点就是发展下去，可以又是自己造了一个新的编程语言，功能还不如通用的编程语言强大</p>
 <h3 id="html指令"><span class="section-num">1.3</span> HTML指令</h3>
@@ -1442,9 +1442,9 @@
     </item>
     <item>
       <title>重新造轮子系列(四)：正则表达式引擎</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_regex/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_regex/</link>
       <pubDate>Sat, 15 Mar 2025 11:01:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_regex/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_regex/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/regular_expression&#34;&gt;Regex&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;所谓的正则表达式，指的是由一系列字符和特殊字符组成的模式，用于描述要匹配的文本。&lt;/p&gt;
@@ -1457,7 +1457,8 @@
 <p>想起个关于 <code>Regex</code> 的经典笑话:</p>
 <blockquote>
 <p>程序员A：我有个问题，想用正则表达式解决。</p>
-<p>程序员B：现在你有两个问题了。</p></blockquote>
+<p>程序员B：现在你有两个问题了。</p>
+</blockquote>
 <h2 id="需求"><span class="section-num">2</span> 需求</h2>
 <p>完整版本的正则表达式非常复杂，我们的实现不会覆盖所有的规则，所以先来看下我们要支持的正则表达式规则：</p>
 <table>
@@ -2726,9 +2727,9 @@
     </item>
     <item>
       <title>重新造轮子系列(三): HTML Selector</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_selector/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_selector/</link>
       <pubDate>Sat, 15 Mar 2025 10:53:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_selector/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_selector/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/html_selector&#34;&gt;Selector&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;以前写爬虫的时候，必不可少的一个工具就是 HTML selector, 就是用于匹配指定的 HTML 标签。&lt;/p&gt;
@@ -3042,7 +3043,8 @@
 <blockquote>
 <p><span class="org-target" id="org-target--Unix----"></span>这本砖头书读过, 其他的C++书籍, 如<span class="org-target" id="org-target--C---Primer"></span>, <span class="org-target" id="org-target--Effective-C--"></span>, <span class="org-target" id="org-target--Modern-C--"></span>也读过, 感觉不把书中的内容实践下, 很容易遗忘。</p>
 <p>但是日常的工作内容并不会涉及底层网络服务, 一切底层细节内容都被框架给包掉了, 开发的主力语言是Java, 也不会使用到C++.</p>
-<p>因此决定创造个机会实践下这些知识，最终决定只用C/C++内置函数库实现。</p></blockquote>
+<p>因此决定创造个机会实践下这些知识，最终决定只用C/C++内置函数库实现。</p>
+</blockquote>
 <p>的确所有工具都是用C/C++内置函数库实现的，甚至测试框架还是自己用宏实现的.</p>
 <p>只是我未曾想到的是，写了这段话后不足一年，C++就成为了我下一家公司干活的主力语言; 而现在，我又在重新写 Java, 着实是「白衣苍狗」。</p>
 <p><a href="/zh/post/2025/reinvent_project/">回到本系列的目录</a></p>
@@ -3067,12 +3069,12 @@
     </item>
     <item>
       <title>重新造轮子系列(二)：文件备份</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_file_backup/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_file_backup/</link>
       <pubDate>Sun, 02 Mar 2025 11:57:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_file_backup/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_file_backup/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/file_backup&#34;&gt;File Backup&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
-&lt;p&gt;既然我们已经有&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/reinvent_unit_test/&#34;&gt;单元测试&lt;/a&gt;框架来测试软件了，我们肯定不想已经写好的代码丢失掉。&lt;/p&gt;
+&lt;p&gt;既然我们已经有&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/reinvent_unit_test/&#34;&gt;单元测试&lt;/a&gt;框架来测试软件了，我们肯定不想已经写好的代码丢失掉。&lt;/p&gt;
 &lt;p&gt;对于重要的文件，一个必不可少的功能肯定是备份, 这样在丢失文件之后可以重新恢复。&lt;/p&gt;
 &lt;p&gt;今天我们就来写个简单的文件备份软件，类似 Git 这样的版本系统可以当作是高级版本的文件系统，因为它还支持切换到不同版本，对比版本间的差异等等功能，而我们不打算实现一个版本管理系统，只实现基础的文件备份功能。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>项目 GitHub 地址: <a href="https://github.com/ramsayleung/reinvent/tree/master/file_backup">File Backup</a></p>
@@ -3397,9 +3399,9 @@
     </item>
     <item>
       <title>重新造轮子系列(一)：单元测试框架</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_unit_test/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_unit_test/</link>
       <pubDate>Sun, 16 Feb 2025 22:27:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_unit_test/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_unit_test/</guid>
       <description>&lt;p&gt;项目 GitHub 地址: &lt;a href=&#34;https://github.com/ramsayleung/reinvent/tree/master/unit_test&#34;&gt;Unit Test&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;单元测试的重要性无须多言，它是保证项目质量的基石.&lt;/p&gt;
@@ -4739,9 +4741,9 @@
     </item>
     <item>
       <title>ReInvent: 重新造轮子系列(序言)</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/reinvent_project/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/reinvent_project/</link>
       <pubDate>Sun, 16 Feb 2025 22:10:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/reinvent_project/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/reinvent_project/</guid>
       <description>&lt;h2 id=&#34;起因与动机&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 起因与动机&lt;/h2&gt;
 &lt;p&gt;最近在看 &lt;a href=&#34;https://third-bit.com/sdxjs/unit-test/&#34;&gt;System Design By Example&lt;/a&gt; 这本书，主旨是通过设计和实现各种日常开发中常见的软件，以理解和提高系统设计(System Design)的能力。&lt;/p&gt;
 &lt;p&gt;每个章节都会实现一个软件，然后还会有大量的习题来完善这个软件，以练带学。&lt;/p&gt;</description>

@@ -2,86 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/categories/</link>
+    <link>https://yuexuan521.github.io/en/categories/</link>
     <description>Recent content in Categories on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 22:51:59 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Design</title>
-      <link>https://ramsayleung.github.io/en/categories/design/</link>
+      <link>https://yuexuan521.github.io/en/categories/design/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/design/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/design/</guid>
       <description></description>
     </item>
     <item>
       <title>Summary</title>
-      <link>https://ramsayleung.github.io/en/categories/summary/</link>
+      <link>https://yuexuan521.github.io/en/categories/summary/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/summary/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/summary/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://ramsayleung.github.io/en/categories/git/</link>
+      <link>https://yuexuan521.github.io/en/categories/git/</link>
       <pubDate>Sat, 13 Apr 2024 12:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/git/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Til</title>
-      <link>https://ramsayleung.github.io/en/categories/til/</link>
+      <link>https://yuexuan521.github.io/en/categories/til/</link>
       <pubDate>Sat, 13 Apr 2024 12:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/til/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/til/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>https://ramsayleung.github.io/en/categories/github/</link>
+      <link>https://yuexuan521.github.io/en/categories/github/</link>
       <pubDate>Mon, 01 Jan 2024 16:16:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/github/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Project</title>
-      <link>https://ramsayleung.github.io/en/categories/project/</link>
+      <link>https://yuexuan521.github.io/en/categories/project/</link>
       <pubDate>Mon, 01 Jan 2024 16:16:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/project/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/project/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>https://ramsayleung.github.io/en/categories/aws/</link>
+      <link>https://yuexuan521.github.io/en/categories/aws/</link>
       <pubDate>Wed, 28 Jun 2023 09:41:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/aws/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>https://ramsayleung.github.io/en/categories/algorithm/</link>
+      <link>https://yuexuan521.github.io/en/categories/algorithm/</link>
       <pubDate>Sun, 22 May 2022 10:34:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/algorithm/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed_system</title>
-      <link>https://ramsayleung.github.io/en/categories/distributed_system/</link>
+      <link>https://yuexuan521.github.io/en/categories/distributed_system/</link>
       <pubDate>Thu, 05 Aug 2021 09:19:36 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/distributed_system/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/distributed_system/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://ramsayleung.github.io/en/categories/rust/</link>
+      <link>https://yuexuan521.github.io/en/categories/rust/</link>
       <pubDate>Thu, 29 Apr 2021 11:48:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/categories/rust/</guid>
+      <guid>https://yuexuan521.github.io/en/categories/rust/</guid>
       <description></description>
     </item>
   </channel>

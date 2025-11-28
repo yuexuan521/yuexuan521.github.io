@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Maven on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/maven/</link>
+    <link>https://yuexuan521.github.io/zh/tags/maven/</link>
     <description>Recent content in Maven on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Fri, 25 Feb 2022 07:59:43 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/maven/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maven 小记</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
       <pubDate>Tue, 23 Oct 2018 12:15:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
       <description>&lt;p&gt;Maven 在工作中的经验以及《Maven 实战》读后感&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;蚂蚁金服的伯岩大大曾经说 &lt;a href=&#34;http://blog.fnil.net/index.php/archives/70/&#34;&gt;Java 生态都太重量级，连Maven 都是怪兽级的构建工具，需要整整一本书来讲解&lt;/a&gt;. 平心而论，Maven 的确如此, 但是无论是怪兽级，还是迪迦级的工具，只要能把事情做好了就是好工具, 而 Maven 恰恰就是这样的工具&lt;/p&gt;</description>

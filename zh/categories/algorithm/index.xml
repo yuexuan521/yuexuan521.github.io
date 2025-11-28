@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Algorithm on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/algorithm/</link>
+    <link>https://yuexuan521.github.io/zh/categories/algorithm/</link>
     <description>Recent content in Algorithm on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 22:34:05 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Topological Sort</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/topological_sorting/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/topological_sorting/</link>
       <pubDate>Sun, 22 May 2022 10:34:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/topological_sorting/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/topological_sorting/</guid>
       <description>&lt;h2 id=&#34;definition&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Definition&lt;/h2&gt;
 &lt;p&gt;In computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge &lt;code&gt;uv&lt;/code&gt; from vertex &lt;code&gt;u&lt;/code&gt; to vertx &lt;code&gt;v&lt;/code&gt;, &lt;code&gt;u&lt;/code&gt; comes before &lt;code&gt;v&lt;/code&gt; in the ordering.&lt;/p&gt;
 &lt;p&gt;It sounds pretty academic, but I am sure you are using topological sort unconsciously every single day.&lt;/p&gt;
@@ -328,9 +328,9 @@
     </item>
     <item>
       <title>关于分布式系统唯一ID的探究</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/distributed_system_unique_id/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/distributed_system_unique_id/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/distributed_system_unique_id/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/distributed_system_unique_id/</guid>
       <description>An discussion about unique id in distributed system</description>
       <content:encoded><![CDATA[<p>最近我需要为运行的分布式系统某部分模块构造系统唯一的ID, 而 ID 需要是数字的形式，并应该尽量的短。不得不说，这是一个有趣的问题</p>
 <h2 id="若干实现策略"><span class="section-num">1</span> 若干实现策略</h2>
@@ -679,9 +679,9 @@ flake 算法生成的是 128 位的 ID, 略长；所以最后我选择了 Snowfl
     </item>
     <item>
       <title>爬虫高效去重之布隆过滤器</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/bloom_filter/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/bloom_filter/</guid>
       <description>an dscription about bloom filter</description>
       <content:encoded><![CDATA[<p>笔者最近思考如何编写高效的爬虫; 而在编写高效爬虫的时候，有一个必需解决的问题就是：
 url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，那就不要重复爬取。</p>
@@ -786,9 +786,9 @@ url 的去重，即如何判别 url 是否已经被爬取，如果被爬取，�
     </item>
     <item>
       <title>归并排序算法改进</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/merge-sort-improvment/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/merge-sort-improvment/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/merge-sort-improvment/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/merge-sort-improvment/</guid>
       <description>An introduction about how to improve merge-sort algorithms</description>
       <content:encoded><![CDATA[<p>最近笔者在阅读《<a href="http://algs4.cs.princeton.edu/home/">算法》</a>,重温经典数据结构和算法，毕竟一直以来的说法是程序就是数据结构＋算法归并算法所需的时间和N*logN成正比，所以可以用归并算法处理数百万甚至更大规模的数据。</p>
 <p>但是归并算法也是存在不足之处的，需要额外的空间来完成排序，而且空间和N的 大小也是成正比的</p>

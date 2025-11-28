@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>History on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/history/</link>
+    <link>https://yuexuan521.github.io/zh/tags/history/</link>
     <description>Recent content in History on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 21:48:05 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/history/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>闲话罗马：国王是选举出来的</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E5%9B%BD%E7%8E%8B%E6%98%AF%E9%80%89%E4%B8%BE%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E5%9B%BD%E7%8E%8B%E6%98%AF%E9%80%89%E4%B8%BE%E5%87%BA%E6%9D%A5%E7%9A%84/</link>
       <pubDate>Fri, 21 Jul 2023 21:38:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E5%9B%BD%E7%8E%8B%E6%98%AF%E9%80%89%E4%B8%BE%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E5%9B%BD%E7%8E%8B%E6%98%AF%E9%80%89%E4%B8%BE%E5%87%BA%E6%9D%A5%E7%9A%84/</guid>
       <description>&lt;h2 id=&#34;引子&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 引子&lt;/h2&gt;
 &lt;p&gt;年少的时候，很喜欢看历史书，倒不是因为「以史为鉴，可以明得失」发人深省的思考，单纯是因为手头没有太多打发时间的活动（那时还没有太多的电脑游戏和视频），而少年人最多的就是时间。 &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="引子"><span class="section-num">1</span> 引子</h2>
@@ -112,9 +112,9 @@
     </item>
     <item>
       <title>黑客列传：强得抠脚的教主RMS</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</link>
       <pubDate>Sun, 16 Jul 2023 22:58:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E5%BC%BA%E5%BE%97%E6%8A%A0%E8%84%9A%E7%9A%84%E6%95%99%E4%B8%BBrms/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;前段时间流行一种关于程序员效率的说法，叫「10x程序员」，即一个好的程序员的工作效率是普通程序员的10倍。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;但是，在编程界，有这么一群人，他们的工作效率，可以说是百倍，甚至千倍于普通程序员； &lt;br/&gt;&lt;/p&gt;</description>
@@ -346,16 +346,19 @@
 <p>根据 RMS <a href="https://usesthis.com/interviews/richard.stallman/">自述</a>, 他之前用的一直是中国科学院设计的龙芯处理器的龙梦电脑, 虽然这台电脑的性能，显示尺寸(只有9英寸)都无法让RMS 满意，但是这台电脑的是完全自由的，包括硬件, bios, 软件: <br/></p>
 <blockquote>
 <p>What hardware do you use? <br/></p>
-<p>I am using a Lemote Yeelong, a netbook with a Loongson chip and a 9-inch display. This is my only computer, and I use it all the time. I chose it because I can run it with 100% free software even at the BIOS level. <br/></p></blockquote>
+<p>I am using a Lemote Yeelong, a netbook with a Loongson chip and a 9-inch display. This is my only computer, and I use it all the time. I chose it because I can run it with 100% free software even at the BIOS level. <br/></p>
+</blockquote>
 <p>在性能和自由之间，他一如既往地选择了「自由」 <br/></p>
 <p>根据RMS <a href="https://stallman.org/intel.html">官网的描述</a>, 他不用intel 或者 amd 的芯片，是因为他们都有后门: <br/></p>
 <blockquote>
 <p>Reasons not to use Intel <br/></p>
 <p>Don&rsquo;t use Intel processors newer than Core2, because they have the &ldquo;management engine&rdquo; back door. <br/></p>
-<p>Recent AMD processors have a similar problem, but we do not yet have an article about it. <br/></p></blockquote>
+<p>Recent AMD processors have a similar problem, but we do not yet have an article about it. <br/></p>
+</blockquote>
 <p>不过，据闻他的龙梦电脑被偷了之后，他也就换到 <a href="https://stallman.org/stallman-computing.html">ThinkPad 上了</a>: <br/></p>
 <blockquote>
-<p>As of 2022 I use a Thinkpad x200 computer, which has a free initialization program (Libreboot) and a free operating system (Trisquel GNU/Linux). <br/></p></blockquote>
+<p>As of 2022 I use a Thinkpad x200 computer, which has a free initialization program (Libreboot) and a free operating system (Trisquel GNU/Linux). <br/></p>
+</blockquote>
 <h3 id="抠脚"><span class="section-num">6.4</span> 抠脚</h3>
 <p>菜的抠脚就听说过，强得抠脚又是什么呢？ <br/></p>
 <p>因为他真的抠脚（字面意思），还吃回去了。 <br/></p>
@@ -407,9 +410,9 @@
     </item>
     <item>
       <title>皇帝与官僚：「上面」与「下面」</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E7%9A%87%E5%B8%9D%E4%B8%8E%E5%AE%98%E5%83%9A/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E7%9A%87%E5%B8%9D%E4%B8%8E%E5%AE%98%E5%83%9A/</link>
       <pubDate>Fri, 27 Jan 2023 12:34:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E7%9A%87%E5%B8%9D%E4%B8%8E%E5%AE%98%E5%83%9A/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E7%9A%87%E5%B8%9D%E4%B8%8E%E5%AE%98%E5%83%9A/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;年后在家略为空闲，就写了篇思考与感悟：&lt;/p&gt;
 &lt;p&gt;「上面的意思是好的，就是下面的人执行出了问题」&lt;/p&gt;
@@ -473,7 +476,8 @@
 <blockquote>
 <p>你不是真正的爱国者</p>
 <p>你是让善良无罪的国家生病的蛆虫，军事政权肮脏的帮手而已</p>
-<p>说出真相，那才是真正的爱国</p></blockquote>
+<p>说出真相，那才是真正的爱国</p>
+</blockquote>
 <p>官僚利益与皇帝利益并不一致，管你洪水滔天，还是民不聊生，反正民不是我家的，国不是我家的，钱才是我家的。</p>
 <h3 id="服从性测试"><span class="section-num">3.3</span> 服从性测试</h3>
 <p>对于皇帝而言，官员的能力，品格，尚在其次，皇帝最关心的是忠诚。毕竟品格越高尚，能力越出色，但是怀有二心，对皇帝的危害就越大。</p>
@@ -513,7 +517,8 @@
 <p>王小波先生在《沉默的大多数》中有一篇文章，名为《花剌子模信使问题》：</p>
 <blockquote>
 <p>据野史记载，中亚古国花剌子模有一古怪的风俗，凡是给君王带来好消息的信使，就会得到提升，给君王带来坏消息的人则会被送去喂老虎。</p>
-<p>于是将帅出征在外，凡麾下将士有功，就派他们给君王送好消息，以使他们得到提升；有罪，则派去送坏消息，顺便给国王的老虎送去食物。</p></blockquote>
+<p>于是将帅出征在外，凡麾下将士有功，就派他们给君王送好消息，以使他们得到提升；有罪，则派去送坏消息，顺便给国王的老虎送去食物。</p>
+</blockquote>
 <p>虽说信使带来的消息的好坏，决定人并不是信使本身，并不妨碍君王把他们当作老虎的点心。</p>
 <p>正常人都会趋利避害，长此下去，君王只会听到各种花团锦簇的好消息，不会听到任何反映现实的坏消息，就这样活在了自己制造的信息茧房里。
 缺乏现实感，又怎能作出正确的决定的呢。</p>
@@ -541,9 +546,9 @@
     </item>
     <item>
       <title>为什么梦想买不起，故乡回不去</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</link>
       <pubDate>Sat, 14 Jan 2023 23:21:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;有心仪工作的城市房价太高，而房价合适的城市没有心仪的工作。&lt;/p&gt;
 &lt;p&gt;梦想买不起，故乡回不去。&lt;/p&gt;
@@ -826,16 +831,18 @@
     </item>
     <item>
       <title>党员，党权与党争</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</link>
       <pubDate>Sun, 20 Feb 2022 13:35:35 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%85%9A%E5%91%98_%E5%85%9A%E6%9D%83%E4%B8%8E%E5%85%9A%E4%BA%89/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;每个朝代灭亡之后，就会由下一个朝代的史官编写，如元朝灭亡之后，就由明朝来撰写《元史》。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
 <blockquote>
-<p>秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也</p></blockquote>
+<p>秦人不暇自哀而后人哀之，后人哀之而不鉴之，亦使后人而复哀后人也</p>
+</blockquote>
 <p>每个朝代灭亡之后，就会由下一个朝代的史官编写，如元朝灭亡之后，就由明朝来撰写《元史》。</p>
 <p>虽然国民党政权在大陆败退之后，没有史官来专门编写《民国史》，但还是有许多资料来探究国民党失败的原因。
 而《党员，党权与党争》就从组织角度来考察国民党失败的原因。</p>
@@ -909,9 +916,9 @@
     </item>
     <item>
       <title>天朝的崩溃</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</link>
       <pubDate>Wed, 16 Feb 2022 14:04:09 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E6%9C%9D%E7%9A%84%E5%B4%A9%E6%BA%83/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;历史教科书说，与英国的第一次鸦片战争，敲开了清朝的大门，清朝也因此和外国签订了一系列不平等条约.
 而因为清朝的落伍，导致清朝不敌英国.&lt;/p&gt;
@@ -942,7 +949,8 @@
 <p>工业革命使英国的冶炼技术改观，铁质大为提高，为铸造高质量的火炮提供了良好的原料。</p>
 <p>清朝的冶炼技术落后，炉温低，铁水无法提纯，含杂质多，铸造出来的火炮十分粗糙，气孔气泡多，容易炸膛：</p>
 <blockquote>
-<p>关天培称，在1835年，他在佛山制造59门新炮，试放时就炸裂10门，损坏3门。</p></blockquote>
+<p>关天培称，在1835年，他在佛山制造59门新炮，试放时就炸裂10门，损坏3门。</p>
+</blockquote>
 <p>清军针对此问题主要采用两策:
 一是加厚火炮的管壁，使清军的火炮极为笨重，数千斤巨炮，威力还不如西方小炮；
 二是使用铜作为铸炮材料，但铜资源缺乏</p>
@@ -1110,9 +1118,9 @@
     </item>
     <item>
       <title>罗马人的故事（二）：天选之子西庇阿</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</link>
       <pubDate>Sun, 23 Jan 2022 13:10:50 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%A4%A9%E9%80%89%E4%B9%8B%E5%AD%90%E8%A5%BF%E5%BA%87%E9%98%BF/</guid>
       <description>&lt;h2 id=&#34;命运的必然&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 命运的必然&lt;/h2&gt;
 &lt;p&gt;公元前219年，汉尼拨翻过阿尔卑斯山，向意大利发起进攻，指挥官科尔涅利乌斯迎战汉尼拨，被重伤。
 幸而从手下的新兵抢回到营地，而这名新兵，恰好是首次参加战斗的，科尔涅利乌斯的儿子，年仅17岁西庇阿。&lt;/p&gt;</description>
@@ -1149,7 +1157,8 @@
 <p>执政官是共和政体罗马的最高官职，同时也是军队的最高司令官，由市民大会选举产生。但是，这两位执政官的任地原则上通过抽签决定。但事实上，指挥一个战略单位即两个军团的所有总司令官，包括两位执政官负责的战场都是由元老院决定的。 但西庇阿请求元老院让自己负责北非战线。</p>
 <p>而后，西庇阿在元老院展开演讲，阐述自己的「围迦救罗」战略：</p>
 <blockquote>
-<p>早晚我会和汉尼拨交锋，但是，这场交锋，不是他在发动进攻的时候。我要主动出击，引他出击，让他不得不与我展开会战。战场不应该在卡拉布里亚已经毁了一半的城堡，而是在迦太基!</p></blockquote>
+<p>早晚我会和汉尼拨交锋，但是，这场交锋，不是他在发动进攻的时候。我要主动出击，引他出击，让他不得不与我展开会战。战场不应该在卡拉布里亚已经毁了一半的城堡，而是在迦太基!</p>
+</blockquote>
 <p>因为这与现有的持久战战略相违背，也正因为持久战战略，才把汉尼拨逼到无处腾挪之地，现状的确没有必要改变，不然有让汉尼拨猛虎出笼的危险。但西庇阿的战法又的确有可取之处。
 最后，双方达到一个折中的意见，既不伤害元老院年长者的体面，又不违背年轻议员们的变革意愿：西庇阿的任地在西西里岛，并授予一个权力，如有必要，第二年可以进军非洲。</p>
 <p>只是作为执政官，他必须放弃指挥在首都完成编组的两个军团的指挥权，也就是放弃执政官应得到的指挥正规军的权利。取之代之，他有权在西西里招募志愿兵。元老院明确表示：将来西庇阿远征非洲，不是元老院认可的军事行动，一旦远征失败，责任不在元老院，而在他个人。</p>
@@ -1172,12 +1181,14 @@
 <blockquote>
 <p>两位护民官及罗马各位市民，今天，是我在非洲扎马与汉尼拔和迦太基军队作战，有幸取得胜利的第15个纪念日。在这样一个值得纪念的日子里，我建议让我们忘掉一切争执，大家团结一心，向诸神奉上我们的感恩之心。</p>
 <p>现在，我就要出发前往卡匹托尔山，向供奉在那里的、以最高神朱庇特和朱诺女神及密涅瓦女神为代表的诸神表示感谢，感谢他们给了我和参加那次战役的所有罗马市民为祖国罗马的自由和安全竭尽全力的机会。</p>
-<p>各位，如果你们愿意，我诚心邀请各位与我同行。希望各位和我一样对诸神心怀感激之情。因为从我17岁开始到已显老迈的现在，是罗马的各位市民给了我打破常规的机遇，让我有机会发挥了自己的才能。</p></blockquote>
+<p>各位，如果你们愿意，我诚心邀请各位与我同行。希望各位和我一样对诸神心怀感激之情。因为从我17岁开始到已显老迈的现在，是罗马的各位市民给了我打破常规的机遇，让我有机会发挥了自己的才能。</p>
+</blockquote>
 <p>说完，没等人们开口回答，西庇阿就离开了会场，他的身后，不只有他的朋友们和支持者们。因为所有罗马人终于都想了起来，元老院议会站起了身，旁听的市民们离开了会场，连书记员都放下铁笔，跟随在西庇阿之后。会场只剩下两个检举人和西庇阿的政敌。</p>
 <p>历史学家李维写道：这一天，身着托加的西庇阿已经不见昔日的风采。他脑袋秃顶，身体羸弱。但是，市民们对他的敬爱之情，胜过第二次布匿战争结束，从非洲凯旋时，人们向三十几岁的年轻胜将发出喝彩声，并送上鲜花。李维还说：“这一天，成了西庇阿灿烂辉煌的最后一天。”</p>
 <p>第二天，西庇阿离开了罗马，在海边的别墅过起了隐居生活。4年后，西庇阿-阿非努加利斯在别墅出世，享年52岁，但他留下遗言，拒绝葬在祖祖辈辈的墓地里，原因是墓地在罗马境内：</p>
 <blockquote>
-<p><code>不知感恩的祖国，你们有何资格拥有我的遗骨</code></p></blockquote>
+<p><code>不知感恩的祖国，你们有何资格拥有我的遗骨</code></p>
+</blockquote>
 <div center class="qr-container">
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" width="160px" height="160px" center="t" class="qr-container" />
 公号同步更新，欢迎关注👻
@@ -1186,20 +1197,20 @@
     </item>
     <item>
       <title>罗马人的故事（二）：汉尼拨的遥望</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E6%B1%89%E5%B0%BC%E6%8B%A8%E7%9A%84%E9%81%A5%E6%9C%9B/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E6%B1%89%E5%B0%BC%E6%8B%A8%E7%9A%84%E9%81%A5%E6%9C%9B/</link>
       <pubDate>Sat, 22 Jan 2022 13:48:29 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E6%B1%89%E5%B0%BC%E6%8B%A8%E7%9A%84%E9%81%A5%E6%9C%9B/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E6%B1%89%E5%B0%BC%E6%8B%A8%E7%9A%84%E9%81%A5%E6%9C%9B/</guid>
       <description>&lt;h2 id=&#34;夫国以一人兴-以一人亡&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 夫国以一人兴, 以一人亡&lt;/h2&gt;
 &lt;p&gt;经过三次，历经百年的布匿战争，腓尼基民族建立起来的北非强国迦太基灭亡，地中海被罗马人称为“我们的海”。&lt;/p&gt;
 
-&lt;figure&gt;&lt;a href=&#34;https://ramsayleung.github.io/ox-hugo/%e6%88%91%e4%bb%ac%e7%9a%84%e6%b5%b7.jpg&#34;&gt;
+&lt;figure&gt;&lt;a href=&#34;https://yuexuan521.github.io/ox-hugo/%e6%88%91%e4%bb%ac%e7%9a%84%e6%b5%b7.jpg&#34;&gt;
     
     
     &lt;input type=&#34;checkbox&#34; id=&#34;zoomCheck-e531f&#34; hidden&gt;
     &lt;label for=&#34;zoomCheck-e531f&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/%e6%88%91%e4%bb%ac%e7%9a%84%e6%b5%b7.jpg&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/%e6%88%91%e4%bb%ac%e7%9a%84%e6%b5%b7.jpg&#34;/&gt; 
     
     
     &lt;/label&gt;&lt;/a&gt;
@@ -1299,9 +1310,9 @@
     </item>
     <item>
       <title>罗马人的故事（一）：希腊文明</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E5%B8%8C%E8%85%8A%E6%96%87%E6%98%8E/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E5%B8%8C%E8%85%8A%E6%96%87%E6%98%8E/</link>
       <pubDate>Sat, 08 Jan 2022 23:02:35 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E5%B8%8C%E8%85%8A%E6%96%87%E6%98%8E/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E5%B8%8C%E8%85%8A%E6%96%87%E6%98%8E/</guid>
       <description>&lt;p&gt;来自《罗马人的故事》第一册，介绍罗马的时候，总离不开希腊文明。&lt;/p&gt;
 &lt;p&gt;希腊文明起源于公元前2000年前后的克里特岛。因为特里克岛比希腊本土更靠近当时的先进文明之国埃及。新的文明往往出自自身的周边&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>来自《罗马人的故事》第一册，介绍罗马的时候，总离不开希腊文明。</p>
@@ -1334,7 +1345,8 @@
 <p>同时，他还废除了因无法偿还政务而被迫为奴的旧制度，彻底废除了在古代被认为理所当然地以人身偿还债务的制度，这是古代社会第一个尊重人权的例子</p>
 <p>梭伦自身似乎是个温和的自由主义者，他拒绝了激进派市民的提案，即没收私有土地为国有，然后将土地重新进行平等分配的提案，对此梭伦写道：</p>
 <blockquote>
-<p>我们给了市民们适当的名誉。我们不剥夺他们已有的权利，但也不再新加任何权利。</p></blockquote>
+<p>我们给了市民们适当的名誉。我们不剥夺他们已有的权利，但也不再新加任何权利。</p>
+</blockquote>
 <p>梭伦改革的最大着眼点是政治改革：他首先开展了人口改革，并以调查结果为依据，制定了个人权利与其所拥有的不动产成正比的政策。如此一来，参与国政的权利不再受出身左右。</p>
 <p>梭伦根据财产的多少，将雅典市民分成四个等级，根据收入，从高到低依次为第一等级，第二等级，第三等级及无产市民构成的第四等级。</p>
 <p>各等级业务：</p>
@@ -1385,11 +1397,13 @@
 <p>我们爱美，但我们有度；我们尊重智慧，但绝不迷恋于此；我们追求财富，但我们只会尽可能地利用它，而不以此炫耀。</p>
 <p><code>在雅典，贫穷不可耻，可耻的是不为脱离贫穷而努力。</code></p>
 <p>我们尊重个人利益，却是为了更加关心公共利益。这是因为在追求个人利益为目的的事业中表现出的能力，同样可以服务于公共事业。</p>
-<p><code>在雅典，一个不关心政治的人，我们不会认为他爱好和平，我们认为他不具有市民的资格。</code></p></blockquote>
+<p><code>在雅典，一个不关心政治的人，我们不会认为他爱好和平，我们认为他不具有市民的资格。</code></p>
+</blockquote>
 <p>时隔2500年后，作为一句x国人，读起这段话，不免心生感慨: <code>2500年前雅典人的权利与追求，我们到现在都还没有实现，甚至越走越远</code></p>
 <p>与伯里克利同时代，留下《伯罗奔尼撒战争史》的历史学家修昔底德对伯里克利的雅典所作的评价是：</p>
 <blockquote>
-<p>表面上看实行的是民主政体，实际上是一个人统治的国家</p></blockquote>
+<p>表面上看实行的是民主政体，实际上是一个人统治的国家</p>
+</blockquote>
 <h3 id="斯巴达"><span class="section-num">3.2</span> 斯巴达</h3>
 <p>公元前1200年前后，多利亚民族挥军南下，征服了土著居民后，建立了城邦国家&ndash;斯巴达。</p>
 <p>征服者的子孙，构成现有统治阶级的斯巴达人，他们是自由市民及其家人，共约1万人。服兵役是这些血统纯正的斯巴达人的唯一工作，参与国政的权利也只有这些人享有</p>
@@ -1415,9 +1429,9 @@
     </item>
     <item>
       <title>罗马人的故事（一）：罗马不是一天建成的</title>
-      <link>https://ramsayleung.github.io/zh/post/2022/%E7%BD%97%E9%A9%AC%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9%E5%BB%BA%E6%88%90%E7%9A%84/</link>
+      <link>https://yuexuan521.github.io/zh/post/2022/%E7%BD%97%E9%A9%AC%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9%E5%BB%BA%E6%88%90%E7%9A%84/</link>
       <pubDate>Tue, 04 Jan 2022 23:05:57 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2022/%E7%BD%97%E9%A9%AC%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9%E5%BB%BA%E6%88%90%E7%9A%84/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2022/%E7%BD%97%E9%A9%AC%E4%B8%8D%E6%98%AF%E4%B8%80%E5%A4%A9%E5%BB%BA%E6%88%90%E7%9A%84/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;以史为鉴，可以知兴替。而罗马，作为西方文明的来源之一，有着漫长辉煌无比的历史，其影响直至今天仍可见。因此，我开了个新坑，阅读盐野阿姨的《罗马人的故事》。当然，这只能算是历史的科普书，其学术价值约等于当年明月的《明朝那些事》，就很适合我这样的非专业人士阅读。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -1435,7 +1449,8 @@
 <p>在适当的时候, 把适当的人放在适当的位置上施展才华的事例, 在各民族走向兴盛的历程中比比皆是. 而领导者政德不修, 让整个国家与民族走向衰頹, 也正在上演.</p>
 <p>罗穆路斯死后就任的国王是努马, 历史学习李维在&lt;罗马史&gt;中关于努马的功绩是这样描述的:</p>
 <blockquote>
-<p>就任王位后的努马, 试图对依靠武力和战争打下建国基础的罗马进行立法和习俗的改革.</p></blockquote>
+<p>就任王位后的努马, 试图对依靠武力和战争打下建国基础的罗马进行立法和习俗的改革.</p>
+</blockquote>
 <p>这里所谓的立法改革, 不是要制定全新的法律, 而是要建立秩序, 要让当时逞强好胜的罗马人懂得做人的礼法. 在了解自身力量的局限性的同时, 让他们懂得要对超越自身极限心存畏惧.</p>
 <p>努马认为除了为防御而战之外, 这一时期的罗马不需要战争. 他集中力量发展农业和畜牧业. 目的是在战争取得服务后, 即使不对失败者进行掠夺也能做到自给自足.(在2700年前, 有这样长远的眼光, 着实令人敬佩)</p>
 <p>努马还对罗马市民进行了职业分工, 让每个人归属于有独立保护神的团体.</p>
@@ -1444,13 +1459,15 @@
 <p>一神教和多神教的区别不只在于纯粹的神的数量, 还在于是否认同他人信奉的神. 认可他人的神, 意味着认可他人的存在.</p>
 <p>希腊历史学家狄厄尼索斯在其著作&lt;古罗马史&gt;中说过这样的一句话:</p>
 <blockquote>
-<p>使罗马强大起来的要因在于他们对宗教的见解之中</p></blockquote>
+<p>使罗马强大起来的要因在于他们对宗教的见解之中</p>
+</blockquote>
 <p>对罗马人来说, 宗教不是指导原理, 它只是精神寄托. 因为有宗教信仰, 人性不再受到禁锢. 想到在某个政党的统治下, 连信仰自由这样的自由都失去了.</p>
 <p>和罗马人一样从不向神祈求纠正人类伦理道德的希腊人转而在哲学中探索真理. 因此:</p>
 <blockquote>
 <p>向宗教寻求纠正人类行为准则的是犹太人</p>
 <p>向哲学寻求纠正人类行为准则的是希腊人</p>
-<p>向法律寻求纠正人类行为准则的是罗马人</p></blockquote>
+<p>向法律寻求纠正人类行为准则的是罗马人</p>
+</blockquote>
 <h3 id="第三代国王托里斯-奥斯蒂吕斯"><span class="section-num">2.3</span> 第三代国王托里斯-奥斯蒂吕斯</h3>
 <p>继努马之后, 登上王位的是托里斯-奥斯蒂吕斯. 他是拉丁系罗马人, 和罗穆路斯一样, 是个崇尚对外进攻的男人.</p>
 <p>托里斯攻占了拉丁民族的发祥地, 阿鲁巴, 并将居民强行迁居罗马, 但给予他们罗马市民的身份, 吸纳他们成功罗马国民, 进一步壮大罗马.</p>
@@ -1621,7 +1638,8 @@
 <p>众议员选举是对应到人口数量的(每N个选民划定一个选区, 每个选区选出一个众议员), 因此众议院更像选民的[传声筒], 能迅速反馈选区的民意, 但这种机制容易被民意裹挟.</p>
 <p>为了体现制衡，国会的【任何法案】要参众两院都批准才能成为法律。而且两院投票通过的法案文本必须是【完全一样】的。</p>
 <p>由于参议院的性质，使得它比较稳重。关于这点，作为“美国国父”之一的华盛顿打了个比方（大意是）：&ldquo;把热咖啡从众议院这个杯子倒入参议院这个杯子，使之冷却一下&rdquo;。</p>
-<p>他的意思是：有了参议院的制衡，可以防止众议院一时头脑发热而让某个不恰当的法案获得通过。</p></blockquote>
+<p>他的意思是：有了参议院的制衡，可以防止众议院一时头脑发热而让某个不恰当的法案获得通过。</p>
+</blockquote>
 <p>跑题之再跑题, 这种把主题相同内容的书籍相互关联的阅读方式, 被称为主题阅读(来自如何阅读一本书的这本书)</p>
 <p>从此, 罗马不再是贵族政体, 而是变成名副其实的寡头政体国家, 所谓贵族政体是由贵族出身的少数人统治绝大多数人的政体, 而寡头政体在少数人统治多数人的这一点上与贵族政体相同, 但是, 对少数人的血统没有要求. (寡头政体也是分情况的, 罗马这种由市民大会选举出来的执政官执政的方式是少数人统治的寡头政体, 像俄罗斯这种普京一人转的, 也是寡头政体, 但是他是上了不会下来. 而80年代某国的老人政治, 一群老家伙在最高领导人之上继续执政的方式, 也是寡头政体, 他们也不是选举出来的)</p>
 <h3 id="罗马政体"><span class="section-num">3.6</span> 罗马政体</h3>
@@ -1765,10 +1783,12 @@
 <p>获得自由的奴隶叫解放奴隶, 他们的子孙可以取得罗马譏权, 至于有了市民权后, 能否在社会上出人头地, 就看个人的才能和运气了.</p>
 <p>希腊哲学家亚里士多德把奴隶和家畜作了比较, 并写下这样的一句话:</p>
 <blockquote>
-<p>在有用方面, 两者几乎没有区别. 奴隶和家畜用他们的肉体为我们人类所用, 这一方面是一样的.</p></blockquote>
+<p>在有用方面, 两者几乎没有区别. 奴隶和家畜用他们的肉体为我们人类所用, 这一方面是一样的.</p>
+</blockquote>
 <p>比亚里士多德早200年的罗马第六代国王塞尔维乌斯-图里乌斯说过这样的话, 尽管有传言说他本人是奴隶出身:</p>
 <blockquote>
-<p>奴隶和自由民的不同不是先天造成的, 而是生来遭遇的命运不同而已.</p></blockquote>
+<p>奴隶和自由民的不同不是先天造成的, 而是生来遭遇的命运不同而已.</p>
+</blockquote>
 <div center class="qr-container">
 <img src="/ox-hugo/qrcode_gh_e06d750e626f_1.jpg" alt="qrcode_gh_e06d750e626f_1.jpg" width="160px" height="160px" center="t" class="qr-container" />
 公号同步更新，欢迎关注👻

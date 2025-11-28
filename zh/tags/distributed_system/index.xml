@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Distributed_system on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/distributed_system/</link>
+    <link>https://yuexuan521.github.io/zh/tags/distributed_system/</link>
     <description>Recent content in Distributed_system on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 19:09:33 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/distributed_system/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/distributed_system/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(笔记)Distributed Systems for fun and profit</title>
-      <link>https://ramsayleung.github.io/zh/post/2021/distributed_system_for_fun_and_profit/</link>
+      <link>https://yuexuan521.github.io/zh/post/2021/distributed_system_for_fun_and_profit/</link>
       <pubDate>Sat, 12 Jun 2021 13:08:54 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2021/distributed_system_for_fun_and_profit/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2021/distributed_system_for_fun_and_profit/</guid>
       <description>&lt;h2 id=&#34;distributed-systems-for-fun-and-profit&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Distributed Systems for fun and profit&lt;/h2&gt;
 &lt;p&gt;source: &lt;a href=&#34;http://book.mixu.net/distsys/&#34;&gt;http://book.mixu.net/distsys/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1-dot-basic&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; 1. Basic&lt;/h2&gt;
@@ -34,14 +34,17 @@
 <p>本章介绍了分布式系统的基本概念, 例如 scalablity, perfomance, latency, availability</p>
 <p>关于 <code>latent</code>, 这里给出了一个很cool的描述:</p>
 <blockquote>
-<p>For example, imagine that you are infected with an airbone virus that turns people into zombies. The laten period is the time between when you became infected, and when you turn into a zombie. That&rsquo;s latency: the time during which something that has already happed is concealed from view.</p></blockquote>
+<p>For example, imagine that you are infected with an airbone virus that turns people into zombies. The laten period is the time between when you became infected, and when you turn into a zombie. That&rsquo;s latency: the time during which something that has already happed is concealed from view.</p>
+</blockquote>
 <p>关于 <code>availability</code>, 计算公式是:</p>
 <blockquote>
-<p>Availability = uptime / (uptime  + downtime)</p></blockquote>
+<p>Availability = uptime / (uptime  + downtime)</p>
+</blockquote>
 <h3 id="failt-tolerance"><span class="section-num">2.2</span> Failt tolerance</h3>
 <p>设计一个可靠的分布式系统, 相当程度上是设计一个fault tolerance 系统, failure 一词 在此章出现了很多次. But without knowing every single aspect of the system, the best we can do is design for fault tolerance.</p>
 <blockquote>
-<p>Fault tolerance: ability of a system to behave in a well-defined manner once faults occur. Fault tolerance boils down to this: define what faults you expect and then design a system or an algorithm that is tolerant of them. You can&rsquo;t tolerate faults you haven&rsquo;t considered.</p></blockquote>
+<p>Fault tolerance: ability of a system to behave in a well-defined manner once faults occur. Fault tolerance boils down to this: define what faults you expect and then design a system or an algorithm that is tolerant of them. You can&rsquo;t tolerate faults you haven&rsquo;t considered.</p>
+</blockquote>
 <p>限制分布式系统的主要是两个物理因素:</p>
 <ol>
 <li>节点数(你想要更多的存储空间, 更强的计算能力, 自然需要更多的节点)</li>
@@ -92,14 +95,16 @@
 <li>
 <p>replication: 不同节点都存储同一份数据, 这样就可以减少读取不同数据的开销, 以及避免某个节点挂了, 导致部分数据不可用的情况. 但是需要更多的存储空间且不同节点之间数据的同步又是个大问题, 可以说是按下葫芦浮起瓢</p>
 <blockquote>
-<p>To replication! The cause of, and the solution to all of life&rsquo;s problems - Homer J Simpson(我很喜欢这句话)</p></blockquote>
+<p>To replication! The cause of, and the solution to all of life&rsquo;s problems - Homer J Simpson(我很喜欢这句话)</p>
+</blockquote>
 </li>
 </ul>
 <h2 id="2-dot-up-and-down-the-level-of-abstraction"><span class="section-num">3</span> 2. Up and down the level of abstraction</h2>
 <h3 id="abstraction"><span class="section-num">3.1</span> Abstraction</h3>
 <p>何谓抽象, 有过编程经验的我们自然不会陌生. 抽象, 即去除真实世界与问题域无关的干扰, 专注于问题本身, 使解决方案可被广泛采用.</p>
 <blockquote>
-<p>Abstractions make the world manaeable: simpler problem statements - free of reality - are much more analytically tractable and provided that we did not ignore anything essential, the solutions are widely acclicable.</p></blockquote>
+<p>Abstractions make the world manaeable: simpler problem statements - free of reality - are much more analytically tractable and provided that we did not ignore anything essential, the solutions are widely acclicable.</p>
+</blockquote>
 <h3 id="a-system-model"><span class="section-num">3.2</span> A system model</h3>
 <p>分布式系统的关键属性是分布式, 或者说, 程序运行在分布式环境:</p>
 <ul>
@@ -117,7 +122,8 @@
 </ul>
 <p>通过定义一个模型(model)来标识实现一个分布式系统需要交互的环境与机制:</p>
 <blockquote>
-<p>a set of assumptions about the environment and facilities on which a distributed system is implemented</p></blockquote>
+<p>a set of assumptions about the environment and facilities on which a distributed system is implemented</p>
+</blockquote>
 <p>A robust system model is one that makes the weakest assumptions: any algorithm written for such a system is very tolerant of different environments, since it makes very few and very weak assumptions.</p>
 <p>模型需要越少的假设条件, 可以适应的环境就越多. 等价交换, fair enough.</p>
 <h4 id="nodes-in-our-system-model"><span class="section-num">3.2.1</span> Nodes in our system model</h4>
@@ -129,7 +135,8 @@
 </ul>
 <p>有很多的故障模型(failure models) 描述了节点挂掉(fail)的方式, 实际中, 大部分的系统都假设是个crash-recovery failure model, 即节点可能挂掉, 但是能从某个状态中恢复回来.</p>
 <blockquote>
-<p>A crash-recovery failure model: that is, nodes can only fail by crashing, and can(possibly) recover after crashing at some later point.</p></blockquote>
+<p>A crash-recovery failure model: that is, nodes can only fail by crashing, and can(possibly) recover after crashing at some later point.</p>
+</blockquote>
 <h4 id="communication-links-in-our-system-model"><span class="section-num">3.2.2</span> Communication links in our system model</h4>
 <p>communication links 不知道应该怎么翻译, 通讯链路? 不译也罢</p>
 <p>communication links 用于沟通不同的节点, 允许信息在双向流动. 部分算法假设网络是可靠的: 消息永不丢失并且永不延迟. 虽说这样假设有些许道理, 但是通常我们都是假设网络是不可靠, 因此消息可能丢失或者延迟.</p>
@@ -166,7 +173,8 @@
 <h3 id="the-flp-impossibility-result"><span class="section-num">3.3</span> The FLP impossibility result</h3>
 <p>FLP 不可能原理(FLP impossibility result, 以作者的首字母命名, Fischer, Lynch and Patterson): 在网络可靠, 但节点失效(即便只有一个)的最小化异步模型系统中, 不可能存在一个可以解决一致性问题的确定性共性算法.</p>
 <blockquote>
-<p>There does not exist a (deterministic) algorithm for the consensus problem in an asynchronous system subject to failures, even if message can never be lost, at most one process may fail, and it can only fail by carshing(stoppping executing).</p></blockquote>
+<p>There does not exist a (deterministic) algorithm for the consensus problem in an asynchronous system subject to failures, even if message can never be lost, at most one process may fail, and it can only fail by carshing(stoppping executing).</p>
+</blockquote>
 <p>FLP impossibility result 告诉我们: 不要浪费时间, 去试图为异步分布式系统设计面向任意场景的共识算法(别忙了, 白费力气的).</p>
 <p>FLP impossibility result 定义了一个最坏情况, 在允许节点失效的情况下, 异步系统无法确保共识在有限时间内完成, 包括Paxos, Raft等算法也都存在无法达成共识的极端情况, 只是在工程实践中这种情况出现的概率很小.</p>
 <h3 id="the-cap-theorem"><span class="section-num">3.4</span> The CAP theorem</h3>
@@ -204,7 +212,8 @@
 <h3 id="consistency-model"><span class="section-num">3.5</span> Consistency model</h3>
 <p>何谓一致性模型呢:</p>
 <blockquote>
-<p>Consistency model: a contract between programmer and system, wherein the system guarantees that if the programmer follows some specific rules, the results of operations on the data will be predictable.</p></blockquote>
+<p>Consistency model: a contract between programmer and system, wherein the system guarantees that if the programmer follows some specific rules, the results of operations on the data will be predictable.</p>
+</blockquote>
 <p>一致性模型可以区分成两类: 强和弱一致性模型</p>
 <ul>
 <li>强一致性模型:
@@ -271,7 +280,8 @@
 <p>所以说R是偏序关系.</p>
 <p>全序举例：</p>
 <p>假设有 A={a,b,c}，假设R是集合A上的关系：{&lt;a,a&gt;,&lt;b,b&gt;,&lt;c,c&gt;,&lt;a,b&gt;,&lt;a,c&gt;,&lt;b,c&gt;}和上述一样，可以证明具有自反性，反对称性，传递性，所以是偏序的.</p>
-<p>又因为有 &lt;a,b&gt;,&lt;a,c&gt;,&lt;b,c&gt;， 也就是说两两关系都有了，所以满足对于任意的A集合上的 x,y，都有 x &lt;= y，或者 y &lt;= x，二者必居其一，所以说是全序关系.</p></blockquote>
+<p>又因为有 &lt;a,b&gt;,&lt;a,c&gt;,&lt;b,c&gt;， 也就是说两两关系都有了，所以满足对于任意的A集合上的 x,y，都有 x &lt;= y，或者 y &lt;= x，二者必居其一，所以说是全序关系.</p>
+</blockquote>
 <p>目前还不是很清楚有什么用处.</p>
 <h3 id="what-s-time"><span class="section-num">4.2</span> What&rsquo;s time</h3>
 <p>Time is a source of order. 时间可以解析成以下三种形式:</p>
@@ -563,7 +573,8 @@
 <p>提起分区容忍的共识算法, 最有名的就是Paxos算法, 但是Lamport大神把他的论文写小说, 让大家苦不堪言, 正因为Paxos出了名的难理解, 所以出现了Raft. 但Goole Chubby的作者Mike Burrow认为:</p>
 <blockquote>
 <p>There is only one consensus protocol, and that&rsquo;s Paxos – all other approaches are just broken versions of Paxos.
-(世界上只有一种共识协议，就是Paxos，其他所有共识算法都是Paxos 的残缺版本)</p></blockquote>
+(世界上只有一种共识协议，就是Paxos，其他所有共识算法都是Paxos 的残缺版本)</p>
+</blockquote>
 <p>首先让我们看下分区容忍算法的特点:</p>
 <h4 id="network-partition"><span class="section-num">5.6.1</span> Network partition</h4>
 <p>网络分区是指一个或几个节点的网络链接失效. 节点本身继续保持活跃，它们甚至可以接收来自网络分区一侧的客户端的请求.</p>
@@ -633,11 +644,13 @@
 <p>当客户端提交一个提案（如更新操作）, 领导会联络所有节点. 如果不存在竞争性的提议, 领导者就会提出该值.
 如果大多数民众接受该值, 那么该值就被认为被接受了. 一旦一个提案被接受, 其值就不能改变, 关于此, Lamport的表述是:</p>
 <blockquote>
-<p>P2: If a proposal with value v is chosen, then every higher-numbered proposal that is chosen has value v.</p></blockquote>
+<p>P2: If a proposal with value v is chosen, then every higher-numbered proposal that is chosen has value v.</p>
+</blockquote>
 <p>为了实现这个属性, 领导提案前必须先询问民众, 编号最高的提案与值是哪个, 如果领导发现现在已经有一个提案在执行, 那么就必须先把这个提案执行完, 而不是提出自己的提案.</p>
 <p>即:</p>
 <blockquote>
-<p>P2c. For any v and n, if a proposal with value v and number n is issued [by a leader], then there is a set S consisting of a majority of acceptors [followers] such that either (a) no acceptor in S has accepted any proposal numbered less than n, or (b) v is the value of the highest-numbered proposal among all proposals numbered less than n accepted by the followers in S.</p></blockquote>
+<p>P2c. For any v and n, if a proposal with value v and number n is issued [by a leader], then there is a set S consisting of a majority of acceptors [followers] such that either (a) no acceptor in S has accepted any proposal numbered less than n, or (b) v is the value of the highest-numbered proposal among all proposals numbered less than n accepted by the followers in S.</p>
+</blockquote>
 <p>这是Paxos算法的核心, 为了确保领导在咨询民众编号最高的提案与值时, 没有竞争提案出现,领导要求民众不能接受比当前编号低的提案. 所以把Lamport的话组合起来, 使用Paxos算法要达到一个共识, 需要两轮的沟通:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -709,9 +722,9 @@
     </item>
     <item>
       <title>关于分布式系统唯一ID的探究</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/distributed_system_unique_id/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/distributed_system_unique_id/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/distributed_system_unique_id/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/distributed_system_unique_id/</guid>
       <description>An discussion about unique id in distributed system</description>
       <content:encoded><![CDATA[<p>最近我需要为运行的分布式系统某部分模块构造系统唯一的ID, 而 ID 需要是数字的形式，并应该尽量的短。不得不说，这是一个有趣的问题</p>
 <h2 id="若干实现策略"><span class="section-num">1</span> 若干实现策略</h2>

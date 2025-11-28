@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Testing on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/testing/</link>
+    <link>https://yuexuan521.github.io/zh/tags/testing/</link>
     <description>Recent content in Testing on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 17:28:38 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试技能进阶(三): Property Based Testing</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</link>
       <pubDate>Mon, 14 Oct 2024 09:37:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;h3 id=&#34;test-case的局限&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; test case的局限&lt;/h3&gt;
 &lt;p&gt;想要更好地理解什么是 Property based testing, 就来先看下已有 test case 的局限，再来观察它解决了什么问题。&lt;/p&gt;
@@ -862,7 +862,8 @@
 不同成员变量的值可取的范围实在太多了，再叠加上 optional 的可能性，构造数据的代码写得相当恶心.</p>
 <p>所以有了 quickcheck 之后，我只需要为这个 struct 实现 <code>Arbitrary</code> 接口，剩下的就由 <code>quickcheck</code> 替我生成，所以我直接和PE大佬说:</p>
 <blockquote>
-<p>property test saves me life, now I couldn&rsquo;t live without it.</p></blockquote>
+<p>property test saves me life, now I couldn&rsquo;t live without it.</p>
+</blockquote>
 <h2 id="总结"><span class="section-num">5</span> 总结</h2>
 <p>本来想抒发感想写点结语，但是看到 Hypothesis 作者写的 <a href="https://hypothesis.readthedocs.io/en/latest/manifesto.html">The purpose of Hypothesis</a><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> 来说明他开发的 Hypothesis 的动机，他的文章甚至用来给这个《测试技能进阶》系列总结都相当妥当。</p>
 <p>我就试翻译下他文章的部分段落, 更推荐阅读原文，可谓是用心良苦，字字珠玑:</p>
@@ -875,7 +876,8 @@
 <p>与此同时，有各种各样让测试变成更好的工具却基本无人使用，最初的 Quickcheck 是1999年推出的，但是大多数开发者甚至从未听说过它，更别提使用了（开山始祖的Quickcheck在GitHub只有700多个Star，就知道作者所言不虚）。
 虽然其他语言有些半成品的实现，但是大部分都不值得一试。</p>
 <p>而 Hypothesis 的目标正是正本清源，把先进的测试技术传递给大众，并提供一个高质量的实现，让人们可以接纳它。</p>
-<p>希望可以集百家之所长，附以个人微薄之力，让软件测试变得更好。</p></blockquote>
+<p>希望可以集百家之所长，附以个人微薄之力，让软件测试变得更好。</p>
+</blockquote>
 <p>系列文章:</p>
 <ul>
 <li><a href="https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/">测试技能进阶(一): 软件质量认知</a></li>
@@ -916,9 +918,9 @@
     </item>
     <item>
       <title>测试技能进阶(二): Parameterized Tests</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
       <pubDate>Sun, 13 Oct 2024 09:35:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;测试技巧具有普适性，大多是与语言无关的，只是不同语言的生态可能对测试技术的支持各不一样，
 比如Python和Java，基本什么库都有，而像C++，有顺手的单元测试和Mock库能用就很不错了。&lt;/p&gt;</description>
@@ -1213,9 +1215,9 @@
     </item>
     <item>
       <title>测试技能进阶(一): 软件质量认知</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/</link>
       <pubDate>Sat, 12 Oct 2024 10:30:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;最近几个月都在赶个非常重要项目，基本每天或每几天都要提交CR，而因为每个CR都要附上对应的 test case, 所以这段时间写了非常多的 test case, 又在坐我旁边的 Principal Engineer 巨佬身上学到了很多有用的测试技巧，所以就想写个系列文章总结和分享我所学到的新技能。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -1286,9 +1288,9 @@
     </item>
     <item>
       <title>How to fool the Jacoco ◜◡‾</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
       <pubDate>Thu, 14 Mar 2019 11:14:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
       <description>&lt;p&gt;刷POJO类的变更行覆盖率&lt;/p&gt;
 &lt;h2 id=&#34;反射大法好&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 反射大法好&lt;/h2&gt;
 &lt;h3 id=&#34;背景&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; 背景&lt;/h3&gt;
@@ -1652,9 +1654,9 @@
     </item>
     <item>
       <title>Spock 一个优雅的Groovy/Java测试框架</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/spock/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/spock/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/spock/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/spock/</guid>
       <description>an introduction about spock</description>
       <content:encoded><![CDATA[<p>因为需要编写 RESTful api 测试的缘故，重拾了 Spock 这个适用于 Groovy/Java 的测试
 框架，顺便把以前写的一篇旧文整理了一下，权当重温。</p>
@@ -1856,7 +1858,8 @@ Specification 的名字一般是跟系统或者业务逻辑有关的组合词，
 <p>Fixture methods are responsible for setting up and cleaning up the environment in
 which feature methods are run. Usually it’s a good idea to use a fresh fixture for
 every feature method, which is what the setup() and cleanup() methods are for.
-All fixture methods are optional.</p></blockquote>
+All fixture methods are optional.</p>
+</blockquote>
 <p>简而言之， <strong>Fixture methodr</strong> 是进行初始化或者收尾工作的。为了更好地理解 Spock
 的特性，可以用 Spock 和 Junit 进行比较，(图截自官网)</p>
 
@@ -1882,7 +1885,8 @@ All fixture methods are optional.</p></blockquote>
 feature method. To this end, feature methods are structured into so-called blocks.
 Blocks start with a label, and extend to the beginning of the next block, or the
 end of the method. There are six kinds of blocks: setup, when, then, expect,
-cleanup, and where blocks</p></blockquote>
+cleanup, and where blocks</p>
+</blockquote>
 <p>简而言之， 这些内置的功能强大的 blocks, 就是帮助开发者编写单元测试的语法糖</p>
 
 <figure>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Flask on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/flask/</link>
+    <link>https://yuexuan521.github.io/zh/tags/flask/</link>
     <description>Recent content in Flask on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 22:32:24 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>flask牛刀小试之微信公众号开发</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</link>
       <pubDate>Thu, 23 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</guid>
       <description>An flask project</description>
       <content:encoded><![CDATA[<p><a href="http://flask.pocoo.org/">flask</a> 是一个轻量级的python 框架(官网称为微型框架),很容易上手，之前因为笔者跟朋友开发小程序的时候使用过 flask,过后就遗忘了。</p>
 <p>为了重拾flask, 笔者决定写点小东西，之前开发小程序，不如现在再玩玩公众号开发</p>

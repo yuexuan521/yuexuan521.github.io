@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/hugo/</link>
+    <link>https://yuexuan521.github.io/zh/tags/hugo/</link>
     <description>Recent content in Hugo on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:12:43 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo评论系统自适应博客主题: 支持dark与light theme</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/hugo%E8%AF%84%E8%AE%BA%E7%BB%84%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%8D%9A%E5%AE%A2%E6%9A%97%E9%BB%91%E4%B8%BB%E9%A2%98/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/hugo%E8%AF%84%E8%AE%BA%E7%BB%84%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%8D%9A%E5%AE%A2%E6%9A%97%E9%BB%91%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Wed, 04 Dec 2024 13:25:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/hugo%E8%AF%84%E8%AE%BA%E7%BB%84%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%8D%9A%E5%AE%A2%E6%9A%97%E9%BB%91%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/hugo%E8%AF%84%E8%AE%BA%E7%BB%84%E4%BB%B6%E8%87%AA%E9%80%82%E5%BA%94%E5%8D%9A%E5%AE%A2%E6%9A%97%E9%BB%91%E4%B8%BB%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;问题&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 问题&lt;/h2&gt;
 &lt;p&gt;评论系统是博客的关键组件，Hugo 支持若干个评论系统，包括流行的 &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt;, 基于 GitHub 的 &lt;a href=&#34;https://giscus.app&#34;&gt;Giscus&lt;/a&gt; 和 &lt;a href=&#34;https://utteranc.es/&#34;&gt;Utteranc&lt;/a&gt;, 以及其他&lt;a href=&#34;https://gohugo.io/content-management/comments/&#34;&gt;评论系统&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我&lt;a href=&#34;https://ramsayleung.github.io/&#34;&gt;博客&lt;/a&gt;使用的评论系统是 Utteranc, 主题是 &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod/&#34;&gt;PaperMod&lt;/a&gt;, PaperMod 支持 dark 和 light 两种主题, 在初始化 Utteranc 时可以指定 theme, 如 &lt;code&gt;Github-Light&lt;/code&gt;&lt;/p&gt;</description>

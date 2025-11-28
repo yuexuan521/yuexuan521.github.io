@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>区块链 on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+    <link>https://yuexuan521.github.io/zh/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
     <description>Recent content in 区块链 on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:03:58 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>区块链的完整性校验方案: Merkle Tree</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%A1%E9%AA%8C%E6%96%B9%E6%A1%88_merkle_tree/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%A1%E9%AA%8C%E6%96%B9%E6%A1%88_merkle_tree/</link>
       <pubDate>Sat, 12 Oct 2024 18:22:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%A1%E9%AA%8C%E6%96%B9%E6%A1%88_merkle_tree/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%A1%E9%AA%8C%E6%96%B9%E6%A1%88_merkle_tree/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;最近通过 &lt;a href=&#34;https://www.wtf.academy/docs/solidity-103&#34;&gt;Solidity-103&lt;/a&gt; 课程在学习 Solidity, 看到&lt;a href=&#34;https://www.wtf.academy/docs/solidity-103/MerkleTree/&#34;&gt;第36课&lt;/a&gt; Merkle Tree 的时候着实头疼, 即使我已经了解 Merkle Tree 这数据结构，但是课程还是看得不明所以。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;所以写下这篇文章，梳理我所理解的 Merkle Tree 及其用途，既加深自己的理解，又践行了&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2022/feynman_technique/&#34;&gt;费曼学习法&lt;/a&gt; &lt;br/&gt;&lt;/p&gt;</description>

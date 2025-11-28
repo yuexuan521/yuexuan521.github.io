@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/git/</link>
+    <link>https://yuexuan521.github.io/en/tags/git/</link>
     <description>Recent content in Git on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 13 Apr 2024 13:52:07 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TIL: Git Blame with Following</title>
-      <link>https://ramsayleung.github.io/en/post/2024/git_blame_with_following/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/git_blame_with_following/</link>
       <pubDate>Sat, 13 Apr 2024 12:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/git_blame_with_following/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/git_blame_with_following/</guid>
       <description>&lt;p&gt;Developers usually use &lt;code&gt;git blame&lt;/code&gt; in GUI tools like GitHub Blame &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
@@ -28,7 +28,7 @@
     &lt;label for=&#34;zoomCheck-68df0&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/github_blame.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/github_blame.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -43,7 +43,7 @@
     &lt;label for=&#34;zoomCheck-7f082&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/git_blame_git_lens_vscode.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/git_blame_git_lens_vscode.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -157,9 +157,9 @@
     </item>
     <item>
       <title>TIL: Git Conditional Configs</title>
-      <link>https://ramsayleung.github.io/en/post/2024/git_conditional_configs/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/git_conditional_configs/</link>
       <pubDate>Sun, 07 Apr 2024 12:38:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/git_conditional_configs/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/git_conditional_configs/</guid>
       <description>&lt;p&gt;Every Git user will have probably been asked to set up their Git at the first time: &lt;br/&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

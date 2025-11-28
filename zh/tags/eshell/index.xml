@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Eshell on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/eshell/</link>
+    <link>https://yuexuan521.github.io/zh/tags/eshell/</link>
     <description>Recent content in Eshell on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 19:20:26 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/eshell/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/eshell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eshell实现fzf的历史命令搜索功能</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/search_eshell_history_like_fzf/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/search_eshell_history_like_fzf/</link>
       <pubDate>Sun, 17 Dec 2017 15:46:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/search_eshell_history_like_fzf/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/search_eshell_history_like_fzf/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;目标: 在=Eshell=中像在bash/zsh中使用=fzf=那般搜索历史命令&lt;/p&gt;
 &lt;h2 id=&#34;fzf&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; fzf&lt;/h2&gt;
@@ -125,9 +125,9 @@
     </item>
     <item>
       <title>Eshell提示符优化</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/tweak_eshell_prompt/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/tweak_eshell_prompt/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/tweak_eshell_prompt/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/tweak_eshell_prompt/</guid>
       <description>Tweak with Emacs shell prompt</description>
       <content:encoded><![CDATA[<h2 id="发现帅气的提示符"><span class="section-num">1</span> 发现帅气的提示符</h2>
 <p>近日，我在浏览 <a href="https://www.reddit.com/r/emacs/comments/6f0rkz/my_fancy_eshell_prompt/">Reddit</a> 的时候，发现了一位 Emacs 用户把他的 Eshell 提示符修改得很帅，如图：</p>
@@ -467,12 +467,13 @@
     </item>
     <item>
       <title>Shell神器fasd与Eshell的不期而遇</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/fasd-meet-eshell/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/fasd-meet-eshell/</link>
       <pubDate>Thu, 02 Mar 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/fasd-meet-eshell/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/fasd-meet-eshell/</guid>
       <description>An introduction about tweaking eshell with fasd</description>
       <content:encoded><![CDATA[<blockquote>
-<p>fasd - quick access to files and directory</p></blockquote>
+<p>fasd - quick access to files and directory</p>
+</blockquote>
 <p>之前一位 Windows 用户看到我在 Shell 下面的操作，他很奇怪，觉得明明已经有图形化界面，为什么还要用这种命令行呢，直接用鼠标点击不就很好了么。</p>
 <p>我觉得很难直接跟他解释，因为他没有用过Linux/Unix,完全不熟悉命令行，不知道其强大之处，其高效率是图形化界面完全无法比拟的(当然，命令行的学习成本和学习曲线肯定比图型化界面高), So I live in terminal.</p>
 <p>而今天我要介绍的神器 fasd 就是可以让命令行操作变得更加高效</p>
@@ -665,9 +666,9 @@ Fasd 文档还建议你为 fasd的命令选项设置别名</p>
     </item>
     <item>
       <title>(翻译)Mastering Eshell</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/master_eshell/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/master_eshell/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/master_eshell/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/master_eshell/</guid>
       <description>An complete instroduction about Eshell</description>
       <content:encoded><![CDATA[<p>Emacs 支持若干种shell,但是就功能丰富度，以及与Emacs 的集成程度而言，
 无一能望Eshell项背。</p>

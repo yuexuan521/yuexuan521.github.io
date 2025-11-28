@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Swiftui on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/swiftui/</link>
+    <link>https://yuexuan521.github.io/zh/tags/swiftui/</link>
     <description>Recent content in Swiftui on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:04:57 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/swiftui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>100 Days of SwiftUI</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/100_days_of_swiftui/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/100_days_of_swiftui/</link>
       <pubDate>Tue, 09 Apr 2024 19:04:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/100_days_of_swiftui/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/100_days_of_swiftui/</guid>
       <description>&lt;h2 id=&#34;缘起&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 缘起&lt;/h2&gt;
 &lt;p&gt;我花了半年多的时间，在闲暇时间，学习了苹果的Swift语言和SwiftUI框架，想体验下IOS开发，再看下有没有机会通过写软件来做点副业。 &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="缘起"><span class="section-num">1</span> 缘起</h2>

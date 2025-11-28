@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Userscript on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/userscript/</link>
+    <link>https://yuexuan521.github.io/zh/tags/userscript/</link>
     <description>Recent content in Userscript on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:05:21 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/userscript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/userscript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TamperMonkey userscript在 Single Page Application 跳转链接后不运行问题分析</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/tampermonkey_userscript_not_invokved_in_spa/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/tampermonkey_userscript_not_invokved_in_spa/</link>
       <pubDate>Sat, 26 Aug 2023 09:29:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/tampermonkey_userscript_not_invokved_in_spa/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/tampermonkey_userscript_not_invokved_in_spa/</guid>
       <description>&lt;h2 id=&#34;背景&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 背景&lt;/h2&gt;
 &lt;p&gt;我习惯使用浏览器匿名模式来打开 Youtube 视频，避免 Youtube 的推荐算法给我总是推荐同一类的视频。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;但有个问题: 匿名模式下，Youtube的播放器是默认自动播放的。 &lt;br/&gt;&lt;/p&gt;</description>

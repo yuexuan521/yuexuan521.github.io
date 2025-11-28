@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rust on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/rust/</link>
+    <link>https://yuexuan521.github.io/en/tags/rust/</link>
     <description>Recent content in Rust on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 22:51:59 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Telegram Spam Blocker Bot Based On Bayesian Algorithm</title>
-      <link>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;I spent a weekend building a Telegram spam blocker bot based on Bayesian Algorithm &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;). The project is open-sourced at: &lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;telegram&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Telegram&lt;/h3&gt;
@@ -483,16 +483,19 @@ as they are valuable training data that I need to record quickly before they get
 <p>For example:</p>
 <blockquote>
 <p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略
-(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p></blockquote>
+(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p>
+</blockquote>
 <p>Or</p>
 <blockquote>
 <p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666
-(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p></blockquote>
+(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p>
+</blockquote>
 <p>The former uses spaces to bypass keywords, the latter uses punctuation.</p>
 <p>Unlike languages based on the Latin alphabet which naturally use spaces for word separation, Chinese requires word segmentation before statistical analysis with Bayes&rsquo; theorem.</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了(Our Chinese is different)</p></blockquote>
+<p>我们的中文就不一样了(Our Chinese is different)</p>
+</blockquote>
 <p>&ldquo;我们的中文就不一样了&rdquo; (Our Chinese is different) would be segmented into &ldquo;我们 | 的 | 中文 | 就 | 不 | 一样 | 了&rdquo; before word frequency can be counted.</p>
 <p>But for the spam <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code>, the spaces not only affect keyword matching but also affect segmentation. The segmentation result for this sentence becomes(incorrect):</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>
@@ -675,9 +678,9 @@ Therefore, I focus on building the prototype first. But this doesn&rsquo;t mean 
     </item>
     <item>
       <title>Let&#39;s make everything iterable</title>
-      <link>https://ramsayleung.github.io/en/post/2021/iterate_through_pagination_api/</link>
+      <link>https://yuexuan521.github.io/en/post/2021/iterate_through_pagination_api/</link>
       <pubDate>Thu, 29 Apr 2021 11:48:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2021/iterate_through_pagination_api/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2021/iterate_through_pagination_api/</guid>
       <description>&lt;p&gt;Iterate through pagination in the Rest API&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;About 4 months ago, &lt;a href=&#34;https://github.com/icewind1991&#34;&gt;icewind1991&lt;/a&gt; created an exciting &lt;a href=&#34;https://github.com/ramsayleung/rspotify/pull/166&#34;&gt;PR&lt;/a&gt; that adding &lt;code&gt;Stream/Iterator&lt;/code&gt; based versions of methods with paginated results, which makes enpoints in &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;Rspotify&lt;/a&gt; more much ergonomic to use, and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; completed this PR.&lt;/p&gt;
@@ -1024,9 +1027,9 @@ to the <code>Iterator</code> trait.</p>
     </item>
     <item>
       <title>Serde Tricks</title>
-      <link>https://ramsayleung.github.io/en/post/2020/serde_lesson/</link>
+      <link>https://yuexuan521.github.io/en/post/2020/serde_lesson/</link>
       <pubDate>Sun, 13 Dec 2020 22:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2020/serde_lesson/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2020/serde_lesson/</guid>
       <description>&lt;p&gt;The lesson learned from refactoring rspotify&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Recently, I and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; are working on refactoring &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;&lt;code&gt;rspotify&lt;/code&gt;&lt;/a&gt;, trying to improve performance, documentation, error-handling, data model and reduce compile time, to make it easier to use. (For those who has never heard about &lt;code&gt;rspotify&lt;/code&gt;, it is a Spotify HTTP SDK implemented in Rust).&lt;/p&gt;
@@ -1099,7 +1102,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>And Koxiaet gave great advice about how to polish <code>Actions</code>:</p>
 <blockquote>
-<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p></blockquote>
+<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p>
+</blockquote>
 <p>To be honest, I was not that familiar with <code>Serde</code> before, after digging in its official documentation for a while, it seems there is now a built-in way to convert JSON map to <code>Vec&lt;T&gt;</code> base on map&rsquo;s value.</p>
 <p>After reading the <a href="https://serde.rs/custom-serialization.html">Custom serialization</a> from documentation, there was a simple solution came to my mind, so I wrote my first customized deserialize function.</p>
 <p>I created a dumb <code>Actions</code> struct inside the <code>deserialize</code> function, and converted <code>HashMap</code> to <code>Vec</code> by filtering its value.</p>
@@ -1231,7 +1235,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>As before, Koxiaet made a great point about <code>timestamp</code> and =progress_ms=(I will talk about it later):</p>
 <blockquote>
-<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p></blockquote>
+<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p>
+</blockquote>
 <p>The polished struct looks like:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1430,7 +1435,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>As before without saying, Koxiaet pointed out that</p>
 <blockquote>
-<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p></blockquote>
+<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p>
+</blockquote>
 <p>Since I have worked with <code>Serde</code>&rsquo;s custome deserialization, it&rsquo;s not a hard job for me any more. I easily figure out how to deserialize <code>u64</code> to <code>Duration</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1515,10 +1521,12 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 <p>The <code>progress_ms</code> field is either not present or a millisecond, the <code>u32</code> handles the milliseconds, as its value might not be present in the response, it&rsquo;s an <code>Option&lt;u32&gt;</code>, so it won&rsquo;t work with <code>from_duration_ms</code>.</p>
 <p>Thus, it&rsquo;s necessary to figure out how to handle the <code>Option</code> type, and the answer is in the documentation, the <code>deserialize_option</code> function:</p>
 <blockquote>
-<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p></blockquote>
+<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
-<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p></blockquote>
+<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1670,7 +1678,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>Koxiaet made a great point about <code>mode</code> field:</p>
 <blockquote>
-<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p></blockquote>
+<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p>
+</blockquote>
 <p>In this case, we don&rsquo;t need the <code>Opiton</code> type and in order to deserialize enum from number, we firstly need to define a C-like enum:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1839,9 +1848,9 @@ construction. And it turns out that there is a way to construct <code>DateTime</
     </item>
     <item>
       <title>rspotify has come to async/await</title>
-      <link>https://ramsayleung.github.io/en/post/2020/async_await_for_rspotify/</link>
+      <link>https://yuexuan521.github.io/en/post/2020/async_await_for_rspotify/</link>
       <pubDate>Fri, 28 Feb 2020 01:27:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2020/async_await_for_rspotify/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2020/async_await_for_rspotify/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Today, I am exited to introduce you the &lt;a href=&#34;https://github.com/ramsayleung/rspotify/releases/tag/v0.9&#34;&gt;v0.9&lt;/a&gt; release I have been continued to work on it for the past few weeks that
 adds &lt;code&gt;async/await&lt;/code&gt; support now!&lt;/p&gt;

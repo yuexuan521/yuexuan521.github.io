@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Gmail on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/gmail/</link>
+    <link>https://yuexuan521.github.io/zh/tags/gmail/</link>
     <description>Recent content in Gmail on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:06:06 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>两个鲜为人知的Gmail地址技巧</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/gmail%E5%9C%B0%E5%9D%80%E7%9A%84%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/gmail%E5%9C%B0%E5%9D%80%E7%9A%84%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Sat, 24 Jun 2023 20:15:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/gmail%E5%9C%B0%E5%9D%80%E7%9A%84%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/gmail%E5%9C%B0%E5%9D%80%E7%9A%84%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;分享两个鲜为人知，但是却相当有用的 Gmail 地址技巧。「鲜为人知」并非是标题党，而是引用Gmail 博客原话： &lt;br/&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -26,7 +26,8 @@
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
 <p>分享两个鲜为人知，但是却相当有用的 Gmail 地址技巧。「鲜为人知」并非是标题党，而是引用Gmail 博客原话： <br/></p>
 <blockquote>
-<p>I recently discovered some <strong><strong>little-known</strong></strong> ways to use your Gmail address that can give you greater control over your inbox and save you some time and headache. <br/></p></blockquote>
+<p>I recently discovered some <strong><strong>little-known</strong></strong> ways to use your Gmail address that can give you greater control over your inbox and save you some time and headache. <br/></p>
+</blockquote>
 <h2 id="技巧"><span class="section-num">2</span> 技巧</h2>
 <p>假设你的Gmail 地址是 <code>xiaoming@gmail.com</code>: <br/></p>
 <h3 id="加号"><span class="section-num">2.1</span> 加号</h3>

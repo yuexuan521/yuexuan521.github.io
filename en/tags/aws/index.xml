@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Aws on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/aws/</link>
+    <link>https://yuexuan521.github.io/en/tags/aws/</link>
     <description>Recent content in Aws on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 02 Dec 2023 10:09:35 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to share resource between CDK stacks</title>
-      <link>https://ramsayleung.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</link>
+      <link>https://yuexuan521.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</link>
       <pubDate>Wed, 28 Jun 2023 09:41:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Introduction&lt;/h2&gt;
 &lt;h3 id=&#34;iac&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; IaC&lt;/h3&gt;
 &lt;p&gt;Infrastructure as code(IaC) is the managing and provisioning of infrastructure through code instead of manual processes, for example, clicking button, adding or editing roles in AWS console.&lt;/p&gt;

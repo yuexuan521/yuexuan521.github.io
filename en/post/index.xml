@@ -2,32 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/post/</link>
+    <link>https://yuexuan521.github.io/en/post/</link>
     <description>Recent content in Posts on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 22:51:59 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Essence of Prompt Engineering is the Art of Asking Questions</title>
-      <link>https://ramsayleung.github.io/en/post/2025/the-essence-of-prompt-engineering-is-the-art-of-asking-questions/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/the-essence-of-prompt-engineering-is-the-art-of-asking-questions/</link>
       <pubDate>Sat, 25 Oct 2025 20:18:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/the-essence-of-prompt-engineering-is-the-art-of-asking-questions/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/the-essence-of-prompt-engineering-is-the-art-of-asking-questions/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Introduction&lt;/h2&gt;
 &lt;p&gt;In today&amp;rsquo;s AI-driven world, &amp;ldquo;Prompt Engineer&amp;rdquo; has become a buzzword.&lt;/p&gt;
 &lt;p&gt;AI enthusiasts are eager to share prompts, study token control, and tweak temperature parameters.&lt;/p&gt;
 &lt;p&gt;The classic meme from Linux founder Linus Torvalds&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Talk is cheap. Show me the code.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Talk is cheap. Show me the code.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;has evolved into:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Code is cheap. Show me the prompts.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Code is cheap. Show me the prompts.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;figure&gt;
     
@@ -36,7 +38,7 @@
     &lt;label for=&#34;zoomCheck-f61ab&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/talk_is_cheap_show_me_the_prompt.jpg&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/talk_is_cheap_show_me_the_prompt.jpg&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -49,10 +51,12 @@
 <p>AI enthusiasts are eager to share prompts, study token control, and tweak temperature parameters.</p>
 <p>The classic meme from Linux founder Linus Torvalds</p>
 <blockquote>
-<p>Talk is cheap. Show me the code.</p></blockquote>
+<p>Talk is cheap. Show me the code.</p>
+</blockquote>
 <p>has evolved into:</p>
 <blockquote>
-<p>Code is cheap. Show me the prompts.</p></blockquote>
+<p>Code is cheap. Show me the prompts.</p>
+</blockquote>
 
 <figure>
     
@@ -73,39 +77,47 @@
 <p>Originally written for technical seekers in the open-source community during the rise of hacker culture, its principles prove surprisingly applicable to today&rsquo;s AI interactions — <strong><strong>because whether seeking help from experts or large models, it&rsquo;s essentially about providing as much effective information as possible to get problem-solving answers quickly</strong></strong>.</p>
 <p>As the guide states:</p>
 <blockquote>
-<p>The kind of answers you get to your technical questions depends as much on the way you ask the questions as on the difficulty of developing the answer.</p></blockquote>
+<p>The kind of answers you get to your technical questions depends as much on the way you ask the questions as on the difficulty of developing the answer.</p>
+</blockquote>
 <p>In my daily work, whether asking colleagues or domain experts, I continue to quickly obtain the answers I need by applying the philosophy from &ldquo;little book&rdquo;.</p>
 <p>In this new AI era, I&rsquo;m applying the timeless wisdom of &ldquo;asking questions the smart way&rdquo; to the modern craft of prompt engineering.</p>
 <h2 id="do-your-own-homework-first"><span class="section-num">2</span> Do Your Own Homework First</h2>
 <blockquote>
-<p>Try to find an answer by searching the archives of the forum or mailing list you plan to post to. Try to find an answer by searching the Web. Try to find an answer by reading the manual.</p></blockquote>
+<p>Try to find an answer by searching the archives of the forum or mailing list you plan to post to. Try to find an answer by searching the Web. Try to find an answer by reading the manual.</p>
+</blockquote>
 <p>AI is not your personal assistant, let alone a substitute for your own thinking.</p>
 <p>If you toss out a vague &ldquo;write me a program&rdquo; without understanding the problem, the model can only guess.</p>
 <p><strong><strong>Good prompts should demonstrate the effort you&rsquo;ve already made</strong></strong>:</p>
 <blockquote>
 <p>&ldquo;I tried to scrape a website using Python&rsquo;s requests library but got a 403 error. I&rsquo;ve checked my network connection and added a User-Agent header, but the problem persists. Do I need to handle cookies or consider JavaScript rendering?</p>
 <p>Here&rsquo;s my error log:
-&hellip;&rdquo;</p></blockquote>
+&hellip;&rdquo;</p>
+</blockquote>
 <p>This not only helps AI pinpoint the issue more accurately but also <strong><strong>reduces its futile attempts</strong></strong>.</p>
 <p>As Raymond advises:</p>
 <blockquote>
-<p>When you ask your question, display the fact that you have done these things first; this will help establish that you&rsquo;re not being a lazy sponge and wasting people&rsquo;s time.</p></blockquote>
+<p>When you ask your question, display the fact that you have done these things first; this will help establish that you&rsquo;re not being a lazy sponge and wasting people&rsquo;s time.</p>
+</blockquote>
 <h2 id="describe-symptoms-not-guesses"><span class="section-num">3</span> Describe Symptoms, Not Guesses</h2>
 <blockquote>
-<p>Describe the problem&rsquo;s symptoms, not your guesses.</p></blockquote>
+<p>Describe the problem&rsquo;s symptoms, not your guesses.</p>
+</blockquote>
 <p>Many people tend to preset conclusions in their prompts: &ldquo;My code has a memory leak,&rdquo; &ldquo;This API must have a bug.&rdquo;</p>
 <p>But AI lacks context and cannot verify your assumptions.</p>
 <p><strong><strong>Provide observable facts</strong></strong>:</p>
 <blockquote>
-<p>&ldquo;After running for 10 minutes, the program&rsquo;s memory usage increases from 100MB to 2GB without release. Here are my core code snippets and resource monitoring data.&rdquo;</p></blockquote>
+<p>&ldquo;After running for 10 minutes, the program&rsquo;s memory usage increases from 100MB to 2GB without release. Here are my core code snippets and resource monitoring data.&rdquo;</p>
+</blockquote>
 <p>The most common observable facts are logs and runtime data; for UI issues (like unexpected CSS rendering), providing screenshots is extremely helpful.</p>
 <p>The key is: <strong><strong>Your role is to present the evidence; let AI draw its own conclusions.</strong></strong></p>
 <p>As the guide emphasizes:</p>
 <blockquote>
-<p>All diagnosticians are from Missouri. Show us.</p></blockquote>
+<p>All diagnosticians are from Missouri. Show us.</p>
+</blockquote>
 <h2 id="goal-oriented-not-step-oriented"><span class="section-num">4</span> Goal-Oriented, Not Step-Oriented</h2>
 <blockquote>
-<p>Describe the goal, not the step.</p></blockquote>
+<p>Describe the goal, not the step.</p>
+</blockquote>
 <p>Users often fall into &ldquo;path dependency&rdquo;: clinging to a specific tool or method while forgetting the ultimate goal.</p>
 <p><strong><strong>State the goal first, then the sticking point</strong></strong>.</p>
 <p>Bad question:</p>
@@ -119,7 +131,8 @@
 <p>This way, AI might suggest switching to <code>XLOOKUP</code>, <code>Power Query</code>, or even recommend using Python directly—**offering you a better solution, not just focusing on your specified step.**</p>
 <h2 id="be-concise-specific-and-structured"><span class="section-num">5</span> Be Concise, Specific, and Structured</h2>
 <blockquote>
-<p>Volume is not precision.</p></blockquote>
+<p>Volume is not precision.</p>
+</blockquote>
 <p><strong><strong>Text length ≠ Information density.</strong></strong></p>
 <p>A 500-line code dump often carries less information density than a carefully refined, 10-line minimal reproducible example.</p>
 <p>While large models can handle long contexts, <strong><strong>more noise means weaker effective signals</strong></strong>.</p>
@@ -146,7 +159,8 @@
 </div><h2 id="seek-key-guidance-not-complete-answers"><span class="section-num">6</span> Seek &ldquo;Key Guidance,&rdquo; Not &ldquo;Complete Answers&rdquo;</h2>
 <p>While AI&rsquo;s capabilities far exceed traditional Q&amp;A scenarios, the key to efficient collaboration isn&rsquo;t &ldquo;full disclosure&rdquo; but &ldquo;step-by-step guidance.&rdquo;</p>
 <blockquote>
-<p>If you can&rsquo;t be bothered to do that, we can&rsquo;t be bothered to pay attention.</p></blockquote>
+<p>If you can&rsquo;t be bothered to do that, we can&rsquo;t be bothered to pay attention.</p>
+</blockquote>
 <p>In the AI era, although AI can directly output complete answers, a phased interaction pattern — first outline the approach, then select solutions, finally generate code  —is often more efficient, controllable, and reduces &ldquo;hallucinations.&rdquo;</p>
 <p>This essentially treats AI as a collaborator rather than an oracle.</p>
 <p>More efficient collaboration model:</p>
@@ -159,7 +173,8 @@
 <p>This &ldquo;phased collaboration&rdquo; significantly reduces hallucinations, improves controllability, and keeps humans in charge of key decisions.</p>
 <h2 id="politeness-plus-closure-long-term-win-win"><span class="section-num">7</span> Politeness + Closure = Long-term Win-Win</h2>
 <blockquote>
-<p>Courtesy never hurts, and sometimes helps.</p></blockquote>
+<p>Courtesy never hurts, and sometimes helps.</p>
+</blockquote>
 <p>Although AI has no emotions, structured politeness and feedback can shape higher-quality interactions:</p>
 <ul>
 <li>Clearly state the context at the beginning; express thanks at the end</li>
@@ -192,7 +207,8 @@
 (Even though current AI remains essentially a probabilistic model.)</p>
 <p>As the book wisely states:</p>
 <blockquote>
-<p>Good questions are a stimulus and a gift.</p></blockquote>
+<p>Good questions are a stimulus and a gift.</p>
+</blockquote>
 <h2 id="further-reading"><span class="section-num">9</span> Further Reading</h2>
 <ul>
 <li><a href="http://www.catb.org/~esr/faqs/smart-questions.html">How To Ask Questions The Smart Way</a></li>
@@ -202,9 +218,9 @@
     </item>
     <item>
       <title>A Story About Bypassing Air Canada&#39;s In-flight Network Restrictions</title>
-      <link>https://ramsayleung.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</link>
       <pubDate>Fri, 10 Oct 2025 15:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/a_story_about_bypassing_air_canadas_in-flight_network_restrictions/</guid>
       <description>&lt;h2 id=&#34;prologue&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Prologue&lt;/h2&gt;
 &lt;p&gt;A while ago, I took a flight from Canada back to Hong Kong - about 12 hours in total with Air Canada.&lt;/p&gt;
 &lt;p&gt;Interestingly, the plane actually had WiFi:&lt;/p&gt;
@@ -216,7 +232,7 @@
     &lt;label for=&#34;zoomCheck-a931d&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -390,7 +406,8 @@
 <p>After all, if the IPs are directly blocked, no amount of disguise will help. This network likely maintains some IP whitelist (such as WhatsApp and WeChat&rsquo;s egress IPs), and only IPs on the whitelist can be accessed.</p>
 <hr>
 <blockquote>
-<p>If a ping to a specific IP times out, I wouldn&rsquo;t say the IP is blocked. It could be that ICMP specifically is blocked, following some network rules on the firewall. This is pretty common in entreprise networks to not allow endpoint discovery. I could be missing something and happy to be corrected here, but I was surprised to read that. &ndash; HackerNews top comment</p></blockquote>
+<p>If a ping to a specific IP times out, I wouldn&rsquo;t say the IP is blocked. It could be that ICMP specifically is blocked, following some network rules on the firewall. This is pretty common in entreprise networks to not allow endpoint discovery. I could be missing something and happy to be corrected here, but I was surprised to read that. &ndash; HackerNews top comment</p>
+</blockquote>
 <p><a href="https://news.ycombinator.com/item?id=45536325">https://news.ycombinator.com/item?id=45536325</a></p>
 <p>Actually, I did verified whether only ICMP was blocked, was it possible to create a connection through TLS:</p>
 <div class="highlight"><div class="chroma">
@@ -812,7 +829,8 @@ But if the gateway were stricter and inspected the content of DNS request packet
 <h2 id="follow-up-can-we-bypass-the-speed-limit"><span class="section-num">7</span> Follow up: Can we bypass the speed limit?</h2>
 <blockquote>
 <p>There&rsquo;s a speed limit. No matter what you try, you can&rsquo;t break through it.</p>
-<p>The bandwidth for free texting is the ultimate bottleneck. Even if you bypass the restrictions, without solving the bandwidth issue, you can&rsquo;t use it like paid Wi-Fi 😭</p></blockquote>
+<p>The bandwidth for free texting is the ultimate bottleneck. Even if you bypass the restrictions, without solving the bandwidth issue, you can&rsquo;t use it like paid Wi-Fi 😭</p>
+</blockquote>
 <p>This is a comment from a reader. Is this true?</p>
 <p>Not exactly.</p>
 <p>There are actually ways to bypass it. During communication on the network, there is no business marker indicating &ldquo;paid user&rdquo; attached.
@@ -823,7 +841,8 @@ So, if I were designing this paid system, after a user pays, I would add the uni
 <p>The ARP (Address Resolution Protocol) is used to resolve an IP address into its corresponding MAC address. The basic idea of the ARP protocol is to broadcast an ARP request within the network:</p>
 <blockquote>
 <p>Gateway: Whose IP address is 192.168.1.100? Please tell me your MAC address.
-Device with that IP: I am 192.168.1.100, my MAC address is XX:XX:XX:XX:XX:XX.</p></blockquote>
+Device with that IP: I am 192.168.1.100, my MAC address is XX:XX:XX:XX:XX:XX.</p>
+</blockquote>
 <p>The ARP protocol itself has no security verification mechanism – it unconditionally trusts the received ARP replies. I could also tell the gateway that my IP address corresponds to the MAC address of a user who has already paid. This way, all traffic coming from me would enjoy the benefits of the paid line. This is the so-called ARP Spoofing.</p>
 <p>The final question is, how do we know which MAC address belongs to a paid user?</p>
 <p>It&rsquo;s quite easy, just brute-force: try every known MAC address in the network. If there is a paid user&rsquo;s MAC address, requests from that MAC address should definitely be able to access sites like YouTube/Netflix. This can easily be automated and detected with a script.</p>
@@ -841,9 +860,9 @@ Device with that IP: I am 192.168.1.100, my MAC address is XX:XX:XX:XX:XX:XX.</p
     </item>
     <item>
       <title>A Telegram Spam Blocker Bot Based On Bayesian Algorithm</title>
-      <link>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;I spent a weekend building a Telegram spam blocker bot based on Bayesian Algorithm &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;). The project is open-sourced at: &lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;telegram&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Telegram&lt;/h3&gt;
@@ -1308,16 +1327,19 @@ as they are valuable training data that I need to record quickly before they get
 <p>For example:</p>
 <blockquote>
 <p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略
-(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p></blockquote>
+(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p>
+</blockquote>
 <p>Or</p>
 <blockquote>
 <p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666
-(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p></blockquote>
+(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p>
+</blockquote>
 <p>The former uses spaces to bypass keywords, the latter uses punctuation.</p>
 <p>Unlike languages based on the Latin alphabet which naturally use spaces for word separation, Chinese requires word segmentation before statistical analysis with Bayes&rsquo; theorem.</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了(Our Chinese is different)</p></blockquote>
+<p>我们的中文就不一样了(Our Chinese is different)</p>
+</blockquote>
 <p>&ldquo;我们的中文就不一样了&rdquo; (Our Chinese is different) would be segmented into &ldquo;我们 | 的 | 中文 | 就 | 不 | 一样 | 了&rdquo; before word frequency can be counted.</p>
 <p>But for the spam <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code>, the spaces not only affect keyword matching but also affect segmentation. The segmentation result for this sentence becomes(incorrect):</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>
@@ -1500,9 +1522,9 @@ Therefore, I focus on building the prototype first. But this doesn&rsquo;t mean 
     </item>
     <item>
       <title>Reflections on Ten Years of Programming</title>
-      <link>https://ramsayleung.github.io/en/post/2024/reflection_on_ten_years_of_programming/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/reflection_on_ten_years_of_programming/</link>
       <pubDate>Sun, 15 Dec 2024 21:09:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/reflection_on_ten_years_of_programming/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/reflection_on_ten_years_of_programming/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Malcolm Gladwell&amp;rsquo;s &amp;ldquo;10,000-hour rule&amp;rdquo; suggests that continuous investment of 10,000 hours of effort is sufficient to reach expert level in any field.
 Based on 20 hours of practice per week, this requires about 3 hours of daily investment, taking roughly ten years to achieve this goal.&lt;/p&gt;
@@ -1556,7 +1578,8 @@ and you might search online for evaluations of each component, finding diverse o
 <p>Regarding independent thinking, my favorite quote is from the HBO miniseries &ldquo;Chernobyl,&rdquo;
 when scientist Valery Legasov asks the KGB to release his colleague Ulana Khomyuk, who was investigating the truth, saying he could guarantee she was no problem, the KGB chief responds:</p>
 <blockquote>
-<p>Trust, but verify.</p></blockquote>
+<p>Trust, but verify.</p>
+</blockquote>
 <p>Because the first step of independent thinking is: start questioning.</p>
 <h2 id="get-it-running-first"><span class="section-num">4</span> Get It Running First</h2>
 <p>This phrase has a well-known variant: &ldquo;It&rsquo;s not like it doesn&rsquo;t work.&rdquo;</p>
@@ -1567,7 +1590,8 @@ when scientist Valery Legasov asks the KGB to release his colleague Ulana Khomyu
 <p>When performance becomes a bottleneck, your business is already very success, and you&rsquo;ll definitely have enough money to hire a dozen programmers to rewrite your project in Rust/C++, or assembly.</p>
 <p>In this regard, I strongly agree with the my co-worker sitting next to me about code quality:</p>
 <blockquote>
-<p>make it run, make it fast, make it beautiful.</p></blockquote>
+<p>make it run, make it fast, make it beautiful.</p>
+</blockquote>
 <p>Recently attempting side projects, I have a profound realization that technology might be the least important aspect of business.</p>
 <p>Building a product from scratch and promoting it to users - users only care whether your product is useful and can solve their problems.</p>
 <p>They don&rsquo;t care whether you wrote it in C++/Java or JavaScript, nor do they care whether your code is elegant. Rather than obsessing over technology selection, it&rsquo;s better to build the product first and let users try it.</p>
@@ -1594,7 +1618,8 @@ when scientist Valery Legasov asks the KGB to release his colleague Ulana Khomyu
 <li>Do good things necessarily become popular? Not necessarily</li>
 <li>Are things I like necessarily good things? Not necessarily</li>
 <li>Will I spend time and energy on something that might not become popular but I like? Yes</li>
-</ol></blockquote>
+</ol>
+</blockquote>
 <h2 id="communicate-more-with-people"><span class="section-num">6</span> Communicate More with People</h2>
 <p>While programmers certainly work with machines, fundamentally we&rsquo;re still solving human problems.</p>
 <p>When I first learned programming, I had a misconception that as long as I mastered the technology, I wouldn&rsquo;t need to care about &ldquo;interpersonal relationships.&rdquo;</p>
@@ -1671,9 +1696,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>TIL: Git Blame with Following</title>
-      <link>https://ramsayleung.github.io/en/post/2024/git_blame_with_following/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/git_blame_with_following/</link>
       <pubDate>Sat, 13 Apr 2024 12:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/git_blame_with_following/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/git_blame_with_following/</guid>
       <description>&lt;p&gt;Developers usually use &lt;code&gt;git blame&lt;/code&gt; in GUI tools like GitHub Blame &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
@@ -1683,7 +1708,7 @@ The core competitiveness is the ability to solve problems through technology - w
     &lt;label for=&#34;zoomCheck-68df0&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/github_blame.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/github_blame.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -1698,7 +1723,7 @@ The core competitiveness is the ability to solve problems through technology - w
     &lt;label for=&#34;zoomCheck-7f082&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/git_blame_git_lens_vscode.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/git_blame_git_lens_vscode.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -1812,9 +1837,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>TIL: Git Conditional Configs</title>
-      <link>https://ramsayleung.github.io/en/post/2024/git_conditional_configs/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/git_conditional_configs/</link>
       <pubDate>Sun, 07 Apr 2024 12:38:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/git_conditional_configs/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/git_conditional_configs/</guid>
       <description>&lt;p&gt;Every Git user will have probably been asked to set up their Git at the first time: &lt;br/&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1942,9 +1967,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>Rewind your Github summary</title>
-      <link>https://ramsayleung.github.io/en/post/2024/github_summary/</link>
+      <link>https://yuexuan521.github.io/en/post/2024/github_summary/</link>
       <pubDate>Mon, 01 Jan 2024 16:16:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2024/github_summary/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2024/github_summary/</guid>
       <description>&lt;h2 id=&#34;goodbye-2023&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Goodbye 2023&lt;/h2&gt;
 &lt;p&gt;As I farewelled to 2023, a year marked by numerous changes and personal evolution, I find myself recollecting the multitude of experiences that unfolded. &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;My 2023 journey was nothing short of fascinating and exciting, prompting me to revisit the year from various angles. &lt;br/&gt;&lt;/p&gt;
@@ -1978,9 +2003,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>How to share resource between CDK stacks</title>
-      <link>https://ramsayleung.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</link>
+      <link>https://yuexuan521.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</link>
       <pubDate>Wed, 28 Jun 2023 09:41:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2023/how_to_share_resource_between_cdk_stacks/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Introduction&lt;/h2&gt;
 &lt;h3 id=&#34;iac&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; IaC&lt;/h3&gt;
 &lt;p&gt;Infrastructure as code(IaC) is the managing and provisioning of infrastructure through code instead of manual processes, for example, clicking button, adding or editing roles in AWS console.&lt;/p&gt;
@@ -2215,9 +2240,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>Topological Sort</title>
-      <link>https://ramsayleung.github.io/en/post/2022/topological_sorting/</link>
+      <link>https://yuexuan521.github.io/en/post/2022/topological_sorting/</link>
       <pubDate>Sun, 22 May 2022 10:34:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2022/topological_sorting/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2022/topological_sorting/</guid>
       <description>&lt;h2 id=&#34;definition&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Definition&lt;/h2&gt;
 &lt;p&gt;In computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge &lt;code&gt;uv&lt;/code&gt; from vertex &lt;code&gt;u&lt;/code&gt; to vertx &lt;code&gt;v&lt;/code&gt;, &lt;code&gt;u&lt;/code&gt; comes before &lt;code&gt;v&lt;/code&gt; in the ordering.&lt;/p&gt;
 &lt;p&gt;It sounds pretty academic, but I am sure you are using topological sort unconsciously every single day.&lt;/p&gt;
@@ -2523,9 +2548,9 @@ The core competitiveness is the ability to solve problems through technology - w
     </item>
     <item>
       <title>How To Design A Reliable Distributed Timer</title>
-      <link>https://ramsayleung.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</link>
+      <link>https://yuexuan521.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</link>
       <pubDate>Thu, 05 Aug 2021 09:19:36 +0000</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2021/how_to_design_a_reliable_distributed_timer/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;I have been maintained a legacy distributed timer for months for my employer, then some important pay business are leveraging on it, with 1 billion tasks handled every day and 20k tasks added per second at most.&lt;/p&gt;
 &lt;p&gt;Even though it&amp;rsquo;s old and full of black magic code, but it also also have insighted and well-designed code. Based on this old, running timer, I summarize and extract as this article, and it wont include any running code(perhaps pseudocode, and a lot of figures, as an adage says: &lt;em&gt;A picture is worth a thousand words&lt;/em&gt;).&lt;/p&gt;</description>

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>工作流 on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
+    <link>https://yuexuan521.github.io/zh/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/</link>
     <description>Recent content in 工作流 on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 19 Jan 2025 13:38:32 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的搜索流：高效搜索经验分享</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E6%90%9C%E7%B4%A2%E6%B5%81/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E6%90%9C%E7%B4%A2%E6%B5%81/</link>
       <pubDate>Sun, 25 Jun 2023 13:55:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E6%90%9C%E7%B4%A2%E6%B5%81/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E6%90%9C%E7%B4%A2%E6%B5%81/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;人并非全知全能，工作和生活难免会有各种的疑问，有问题自然可以询问有经验的同事或朋友。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;但为了避免一有问题就去问人，给别人造成困扰，更推荐的就是: 自己先搜索，然后再去问人(Do a search before you ask a question) &lt;br/&gt;&lt;/p&gt;</description>
@@ -458,7 +458,8 @@
 <li>懒惰意味着不想花精心做重复无用的事情，会想办法自动化，让电脑帮忙处理。 <br/></li>
 </ul>
 <blockquote>
-<p>&ldquo;We will encourage you to develop the three great virtues of a programmer: laziness, impatience, and hubris.&rdquo; &ndash; LarryWall <br/></p></blockquote>
+<p>&ldquo;We will encourage you to develop the three great virtues of a programmer: laziness, impatience, and hubris.&rdquo; &ndash; LarryWall <br/></p>
+</blockquote>
 <p>而我对搜索流的优化，就是在培养「急躁」与「懒惰」的美德。 <br/></p>
 <h2 id="延伸阅读"><span class="section-num">6</span> 延伸阅读</h2>
 <p>我的各种「流」： <br/></p>
@@ -480,9 +481,9 @@
     </item>
     <item>
       <title>我的画图流：画图工具与技巧分享</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E7%94%BB%E5%9B%BE%E6%B5%81/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E7%94%BB%E5%9B%BE%E6%B5%81/</link>
       <pubDate>Mon, 30 Jan 2023 19:22:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E7%94%BB%E5%9B%BE%E6%B5%81/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E7%94%BB%E5%9B%BE%E6%B5%81/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;古人云：「一图胜千言」。
 一幅合适的图片可以清晰地向读者表达我们的意图，又因为我们人脑的作用机制，阅读一张图片所耗费的脑力要远少于一段文字，故而我们对图片更加深刻。&lt;/p&gt;</description>
@@ -1580,9 +1581,9 @@
     </item>
     <item>
       <title>我的写作流</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%B5%81/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%B5%81/</link>
       <pubDate>Wed, 25 Jan 2023 14:25:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%B5%81/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%B5%81/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;自大学起，已经写过好几年的东西，写作工具和流程也反复折腾过好多回. 目前的写作流程已经很流程顺手，所以想分享一下。&lt;/p&gt;
 &lt;h2 id=&#34;写作工具&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;2&lt;/span&gt; 写作工具&lt;/h2&gt;
@@ -1648,7 +1649,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{\&lt; figure src=&#34;https://ramsayleung.github.io/ox-hugo/emacs_org_mode.png&#34; link=&#34;/ox-hugo/emacs_org_mode.png&#34; &gt;}}
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{\&lt; figure src=&#34;https://yuexuan521.github.io/ox-hugo/emacs_org_mode.png&#34; link=&#34;/ox-hugo/emacs_org_mode.png&#34; &gt;}}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>只需要将复制到 <code>ox-hugo</code> 目录的图片和文章的Markdown 文件一起提交到Git, 并上传到GitHub 就相当于把GitHub 当作图床，但是其他操作都由ox-hugo 和 GitHub 代劳了.</p>
@@ -1751,7 +1752,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># ## &lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言 {#前言} =&gt; ## &lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">{{\&lt; figure src=&#34;https://ramsayleung.github.io/ox-hugo/emacs_org_mode.png&#34; link=&#34;/ox-hugo/emacs_org_mode.png&#34; &gt;}}
+</span></span><span class="line"><span class="cl">{{\&lt; figure src=&#34;https://yuexuan521.github.io/ox-hugo/emacs_org_mode.png&#34; link=&#34;/ox-hugo/emacs_org_mode.png&#34; &gt;}}
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>既然编辑器不支持Hugo语法，那么把Hugo特有的语法去掉就行了嘛，所以我写了一个 shell script 用来把Hugo Markdown 转换回标准 Markdown:</p>
@@ -1855,7 +1856,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">replace_link <span class="o">()</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># hugo的图片链接，转换成markdown 标准链接</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># {{\&lt; figure src=&#34;https://ramsayleung.github.io/ox-hugo/土地金融-政府债务.png&#34; link=&#34;/ox-hugo/土地金融-政府债务.png&#34; &gt;}}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># {{\&lt; figure src=&#34;https://yuexuan521.github.io/ox-hugo/土地金融-政府债务.png&#34; link=&#34;/ox-hugo/土地金融-政府债务.png&#34; &gt;}}</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># =&gt; ![](https://gitea.com/myusername/store/raw/branch/master/static/ox-hugo/土地金融-政府债务.png)</span>
 </span></span><span class="line"><span class="cl">    sed <span class="s1">&#39;s/{{\&lt; figure src=&#34;\(.*\)&#34; link=.*&gt;}}/!\[\](https:\/\/gitea.com\/myusername\/store\/raw\/branch\/master\/static\1)/&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>

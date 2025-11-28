@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mysql on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/mysql/</link>
+    <link>https://yuexuan521.github.io/zh/tags/mysql/</link>
     <description>Recent content in Mysql on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 24 Feb 2022 22:29:04 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记存储集群的一次迁移过程（下）</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/store_cluster_migrate2/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/store_cluster_migrate2/</link>
       <pubDate>Fri, 09 Mar 2018 13:55:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/store_cluster_migrate2/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/store_cluster_migrate2/</guid>
       <description>&lt;p&gt;从Mysql, Hbase 迁移数据&lt;/p&gt;
 &lt;h2 id=&#34;mysql-数据迁移&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Mysql 数据迁移&lt;/h2&gt;
 &lt;p&gt;搭建完之后就是数据迁移了，mysql 的数据迁移比较简单。在旧的机器用 mysqldump 把所 有的数据导出来，然后传到新的环境然后导出：&lt;/p&gt;</description>
@@ -206,9 +206,9 @@
     </item>
     <item>
       <title>记存储集群的一次迁移过程（上）</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/store_cluster_migrate1/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/store_cluster_migrate1/</link>
       <pubDate>Mon, 05 Mar 2018 17:39:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/store_cluster_migrate1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/store_cluster_migrate1/</guid>
       <description>&lt;p&gt;搭建和配置 Hadoop, Zookeeper, Hbase&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;最近负责公司测试环境的迁移，主要包括 Hbase+Mysql 存储集群的迁移，消息队列，缓存组件的迁移, 而我打算说说存储集群的迁移。因为公司的机器的Ip 和Host 不便在博文展示，所以我会用：&lt;/p&gt;</description>

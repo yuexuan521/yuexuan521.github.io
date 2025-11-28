@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Network on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/network/</link>
+    <link>https://yuexuan521.github.io/zh/tags/network/</link>
     <description>Recent content in Network on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Fri, 17 Oct 2025 09:58:16 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于破解加拿大航空飞机网络限制的一件小事</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E5%85%B3%E4%BA%8E%E7%A0%B4%E8%A7%A3%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%88%AA%E7%A9%BA%E9%A3%9E%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E5%85%B3%E4%BA%8E%E7%A0%B4%E8%A7%A3%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%88%AA%E7%A9%BA%E9%A3%9E%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B/</link>
       <pubDate>Fri, 10 Oct 2025 06:53:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E5%85%B3%E4%BA%8E%E7%A0%B4%E8%A7%A3%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%88%AA%E7%A9%BA%E9%A3%9E%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E5%85%B3%E4%BA%8E%E7%A0%B4%E8%A7%A3%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%88%AA%E7%A9%BA%E9%A3%9E%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%99%90%E5%88%B6%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B/</guid>
       <description>&lt;h2 id=&#34;序章&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 序章&lt;/h2&gt;
 &lt;p&gt;前段时间，坐飞机从加拿大飞回香港，全程大概12个小时，坐的是加拿大航空(Air Canada)的飞机。&lt;/p&gt;
 &lt;p&gt;有趣的是，飞机上竟然有 Wifi:&lt;/p&gt;
@@ -30,7 +30,7 @@
     &lt;label for=&#34;zoomCheck-a931d&#34;&gt;
     
     
-    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://ramsayleung.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
+    &lt;img class=&#34;zoomCheck&#34; loading=&#34;lazy&#34; src=&#34;https://yuexuan521.github.io/ox-hugo/acwifi-connect-2.png&#34;/&gt; 
     
     
     &lt;/label&gt;
@@ -208,7 +208,8 @@
 <li>舍友：我想看看TLS有没有被拦截。万一只拦截了ICMP没拦截TLS, 那就是虚惊一场。</li>
 <li>我：想得有点美好😂</li>
 <li>舍友：做安全的就是要每个都试试</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -629,7 +630,8 @@
 <h2 id="后话-可以突破限速么"><span class="section-num">7</span> 后话：可以突破限速么?</h2>
 <blockquote>
 <p>有限速 你再怎么折腾也不可能把限速破了</p>
-<p>free texting的带宽才是最大限制。再怎么bypass不解决带宽问题也没办法像付费Wi-Fi一样用😭</p></blockquote>
+<p>free texting的带宽才是最大限制。再怎么bypass不解决带宽问题也没办法像付费Wi-Fi一样用😭</p>
+</blockquote>
 <p>这是来自于读者的评论，这个是真的么？</p>
 <p>也不尽然。</p>
 <p>其实还是有法子可以Bypass的，对于网络链路，通信的时候并不会带有「已付费用户」的业务标记信息，
@@ -640,7 +642,8 @@
 <p>所谓的ARP（Address Resolution Protocol）协议，就是将一个IP地址解析成对应的MAC地址。而ARP协议的工作原理就是在网络内广播ARP请求:</p>
 <blockquote>
 <p>网关：谁的IP地址是192.168.1.100？请告诉你的MAC地址。
-拥有该IP的设备：我是192.168.1.100，我的MAC地址是XX:XX:XX:XX:XX:XX。</p></blockquote>
+拥有该IP的设备：我是192.168.1.100，我的MAC地址是XX:XX:XX:XX:XX:XX。</p>
+</blockquote>
 <p>ARP协议本身没有安全验证机制——它无条件信任收到的ARP应答，我可以也告诉网关的，我的IP 地址对应的也是已经付费的Mac 地址，这样所有从我这里来的流量，都是可以享受到付费线路，这个即所谓的 ARP欺骗（ARP Spoofing）</p>
 <p>最后一个问题是，怎么知道哪个是付费用户的Mac地址呢？</p>
 <p>很粗暴，把网络中所有知道的Mac地址都尝试一次，如果有付费的Mac 地址，来自该Mac地址的请求绝对是能访问类似 Youtube/Netflex 这样的网站的，这样用脚本非常容易来自动化检测到。</p>
@@ -702,9 +705,9 @@
     </item>
     <item>
       <title>Python多线程端口扫描器</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/port_scanner/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/port_scanner/</link>
       <pubDate>Sun, 19 Mar 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/port_scanner/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/port_scanner/</guid>
       <description>An introduction about port scan</description>
       <content:encoded><![CDATA[<p>近两日，闲来无事，就写了些端口扫描器，重温TCP/IP协议栈的部分原理。</p>
 <h2 id="端口扫描器"><span class="section-num">1</span> 端口扫描器</h2>

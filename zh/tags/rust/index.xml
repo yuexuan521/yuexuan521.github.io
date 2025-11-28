@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Rust on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/rust/</link>
+    <link>https://yuexuan521.github.io/zh/tags/rust/</link>
     <description>Recent content in Rust on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 14:26:39 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Telegram频道精华贴检索机器人</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Wed, 01 Oct 2025 21:55:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/telegram%E9%A2%91%E9%81%93%E6%A3%80%E7%B4%A2%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
       <description>&lt;h2 id=&#34;引言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 引言&lt;/h2&gt;
 &lt;p&gt;我有时总会觉得自己是个「奇葩」：
 在现在各种算法推荐大行其道的当下，我却偏偏不喜欢算法推荐，因为这种「千人千面」的模式，总让我担心自己会陷入「信息茧房」的焦虑之中，此外我也希望可以看到一些我兴趣之外的内容。&lt;/p&gt;</description>
@@ -185,13 +185,13 @@
     </item>
     <item>
       <title>基于贝叶斯算法的Telegram广告拦截机器人（一）：从问题到产品</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
       <pubDate>Thu, 28 Aug 2025 23:45:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E4%B8%80%E4%B8%AA%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/&#34;&gt;English Version&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;系列文章：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://yuexuan521.github.io/zh/post/2025/%E5%9F%BA%E4%BA%8E%E8%B4%9D%E5%8F%B6%E6%96%AF%E7%AE%97%E6%B3%95%E7%9A%84telegram%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BA%8C/&#34;&gt;基于贝叶斯算法的Telegram广告拦截机器人（二）：上线半月的故障、挑战与优化之路&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;序言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 序言&lt;/h2&gt;
 &lt;p&gt;我花了一周末时间，写了一个自学习的 Telegram 广告拦截机器人 &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;)，项目开源在：&lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
@@ -669,15 +669,18 @@
 <p>虽然关键词封禁效率不高，但是那些能让我们见到的广告说明已经是绕过关键词拦截的。</p>
 <p>比如:</p>
 <blockquote>
-<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p></blockquote>
+<p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</p>
+</blockquote>
 <p>又或者</p>
 <blockquote>
-<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p></blockquote>
+<p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666</p>
+</blockquote>
 <p>前者通过空格分隔来绕过关键词，后者通过添加标点符号来绕过关键词。</p>
 <p>与英文等基于拉丁字母的语言天然通过空格分词不同，中文使用贝叶斯算法进行统计时，需要先进行分词</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了</p></blockquote>
+<p>我们的中文就不一样了</p>
+</blockquote>
 <p>「我们的中文就不一样了」就会被分词成「我们 | 的 | 中文 | 就 | 不 | 一样 | 了」, 然后才能对词频进行统计。</p>
 <p>但是像广告 <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code> , 空格除了会影响关键字匹配，也会影响分词，这句话的分词结果就会变成:</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>
@@ -903,9 +906,9 @@
     </item>
     <item>
       <title>Rust通过Trait扩展已有类型</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Wed, 04 Dec 2024 18:04:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/rust%E9%80%9A%E8%BF%87trait%E6%89%A9%E5%B1%95%E5%B7%B2%E6%9C%89%E7%B1%BB%E5%9E%8B/</guid>
       <description>&lt;h2 id=&#34;swift-extension&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Swift extension&lt;/h2&gt;
 &lt;p&gt;可扩展性是一个语言非常关键的特性，以Swift 为例，它有一个相当好用的特性，名为 &lt;a href=&#34;https://docs.swift.org/swift-book/documentation/the-swift-programming-language/extensions/&#34;&gt;extension&lt;/a&gt;, 它可以非常便利地扩展已有的类型, 例如给已有类型增加 computed property, 实例方法, 新增构造器又或是实现新的 Protocol.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="swift-extension"><span class="section-num">1</span> Swift extension</h2>
@@ -1198,9 +1201,9 @@
     </item>
     <item>
       <title>测试技能进阶(三): Property Based Testing</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</link>
       <pubDate>Mon, 14 Oct 2024 09:37:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%89_property_based_testing/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;h3 id=&#34;test-case的局限&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; test case的局限&lt;/h3&gt;
 &lt;p&gt;想要更好地理解什么是 Property based testing, 就来先看下已有 test case 的局限，再来观察它解决了什么问题。&lt;/p&gt;
@@ -2044,7 +2047,8 @@
 不同成员变量的值可取的范围实在太多了，再叠加上 optional 的可能性，构造数据的代码写得相当恶心.</p>
 <p>所以有了 quickcheck 之后，我只需要为这个 struct 实现 <code>Arbitrary</code> 接口，剩下的就由 <code>quickcheck</code> 替我生成，所以我直接和PE大佬说:</p>
 <blockquote>
-<p>property test saves me life, now I couldn&rsquo;t live without it.</p></blockquote>
+<p>property test saves me life, now I couldn&rsquo;t live without it.</p>
+</blockquote>
 <h2 id="总结"><span class="section-num">5</span> 总结</h2>
 <p>本来想抒发感想写点结语，但是看到 Hypothesis 作者写的 <a href="https://hypothesis.readthedocs.io/en/latest/manifesto.html">The purpose of Hypothesis</a><sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> 来说明他开发的 Hypothesis 的动机，他的文章甚至用来给这个《测试技能进阶》系列总结都相当妥当。</p>
 <p>我就试翻译下他文章的部分段落, 更推荐阅读原文，可谓是用心良苦，字字珠玑:</p>
@@ -2057,7 +2061,8 @@
 <p>与此同时，有各种各样让测试变成更好的工具却基本无人使用，最初的 Quickcheck 是1999年推出的，但是大多数开发者甚至从未听说过它，更别提使用了（开山始祖的Quickcheck在GitHub只有700多个Star，就知道作者所言不虚）。
 虽然其他语言有些半成品的实现，但是大部分都不值得一试。</p>
 <p>而 Hypothesis 的目标正是正本清源，把先进的测试技术传递给大众，并提供一个高质量的实现，让人们可以接纳它。</p>
-<p>希望可以集百家之所长，附以个人微薄之力，让软件测试变得更好。</p></blockquote>
+<p>希望可以集百家之所长，附以个人微薄之力，让软件测试变得更好。</p>
+</blockquote>
 <p>系列文章:</p>
 <ul>
 <li><a href="https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%80_%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E8%AE%A4%E7%9F%A5/">测试技能进阶(一): 软件质量认知</a></li>
@@ -2098,9 +2103,9 @@
     </item>
     <item>
       <title>测试技能进阶(二): Parameterized Tests</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</link>
       <pubDate>Sun, 13 Oct 2024 09:35:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E6%B5%8B%E8%AF%95%E6%8A%80%E8%83%BD%E8%BF%9B%E9%98%B6%E4%BA%8C_parameterized_tests/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;测试技巧具有普适性，大多是与语言无关的，只是不同语言的生态可能对测试技术的支持各不一样，
 比如Python和Java，基本什么库都有，而像C++，有顺手的单元测试和Mock库能用就很不错了。&lt;/p&gt;</description>
@@ -2395,9 +2400,9 @@
     </item>
     <item>
       <title>使用Rust的Iterator优雅解决FizzBuzz问题</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 18 Sep 2024 22:46:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E4%BD%BF%E7%94%A8rust%E7%9A%84iterator%E8%A7%A3%E5%86%B3fizzbuzz%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;按照维基百科的说法，&lt;a href=&#34;https://en.wikipedia.org/wiki/Fizz_buzz&#34;&gt;FizzBuzz问题&lt;/a&gt; 是一个简单但是常见的面试编程问题（可能以前常见，现在都是考Leetcode了,这种连Easy 都不算了），这个问题的要求如下： &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
@@ -2682,7 +2687,8 @@
 <h2 id="zero-cost-abstraction"><span class="section-num">4</span> Zero Cost Abstraction</h2>
 <p>所谓的是零开销抽象（Zero Cost Abstraction），用C++之父的话来解释就是: <br/></p>
 <blockquote>
-<p>In general, C++ implementations obey the zero-overhead principle: What you don’t use, you don’t pay for. And further: What you do use, you couldn’t hand code any better. <br/></p></blockquote>
+<p>In general, C++ implementations obey the zero-overhead principle: What you don’t use, you don’t pay for. And further: What you do use, you couldn’t hand code any better. <br/></p>
+</blockquote>
 <p>概括来说，就是使用 Iterator 写出来的代码，和你自己 for-loop 手写是性能是一样的，并不会有额外的抽象开销。 <br/></p>
 <p>换个角度讲，你手写的代码也没法实现得比 Iterator 更快，表达力还可能没有那么强。 <br/></p>
 <p>如果看上面的 Iterator 实现觉得着实难以理解，我们可以再来一版兼具优雅与简洁的实现： <br/></p>
@@ -2724,9 +2730,9 @@
     </item>
     <item>
       <title>Rust模拟C&#43;&#43;的函数重载</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</link>
       <pubDate>Fri, 30 Aug 2024 22:23:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</guid>
       <description>&lt;h2 id=&#34;函数重载--function-overloading&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 函数重载(function overloading)&lt;/h2&gt;
 &lt;p&gt;所谓的函数重载，指的是某些语言支持创建函数名相同，但函数签名不同的多个函数，所谓的函数签名，既指参数类型，也指参数的数量。 &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="函数重载--function-overloading"><span class="section-num">1</span> 函数重载(function overloading)</h2>
@@ -2801,9 +2807,9 @@
     </item>
     <item>
       <title>RSpotify: 一个用爱发电五年的开源项目</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/rspotify_%E4%B8%80%E4%B8%AA%E7%94%A8%E7%88%B1%E5%8F%91%E7%94%B5%E4%BA%94%E5%B9%B4%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/rspotify_%E4%B8%80%E4%B8%AA%E7%94%A8%E7%88%B1%E5%8F%91%E7%94%B5%E4%BA%94%E5%B9%B4%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Tue, 07 Feb 2023 15:40:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/rspotify_%E4%B8%80%E4%B8%AA%E7%94%A8%E7%88%B1%E5%8F%91%E7%94%B5%E4%BA%94%E5%B9%B4%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/rspotify_%E4%B8%80%E4%B8%AA%E7%94%A8%E7%88%B1%E5%8F%91%E7%94%B5%E4%BA%94%E5%B9%B4%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;一周前看到个&lt;a href=&#34;https://www.theverge.com/2023/1/31/23577499/spotify-q4-2022-earnings-release-subscriber-growth-layoffs&#34;&gt;新闻&lt;/a&gt;，Spotify在其第四季度财报中披露，截至2022年12月31日，它的付费订阅用户数达到了2.05亿，同比增长14%；
 月活用户4.89亿。Spotify成为第一家订阅用户数突破2亿的音乐流服务。&lt;/p&gt;
@@ -3196,9 +3202,9 @@
     </item>
     <item>
       <title>Let&#39;s make everything iterable</title>
-      <link>https://ramsayleung.github.io/zh/post/2021/iterate_through_pagination_api/</link>
+      <link>https://yuexuan521.github.io/zh/post/2021/iterate_through_pagination_api/</link>
       <pubDate>Thu, 29 Apr 2021 11:48:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2021/iterate_through_pagination_api/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2021/iterate_through_pagination_api/</guid>
       <description>&lt;p&gt;Iterate through pagination in the Rest API&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;About 4 months ago, &lt;a href=&#34;https://github.com/icewind1991&#34;&gt;icewind1991&lt;/a&gt; created an exciting &lt;a href=&#34;https://github.com/ramsayleung/rspotify/pull/166&#34;&gt;PR&lt;/a&gt; that adding &lt;code&gt;Stream/Iterator&lt;/code&gt; based versions of methods with paginated results, which makes enpoints in &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;Rspotify&lt;/a&gt; more much ergonomic to use, and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; completed this PR.&lt;/p&gt;
@@ -3549,9 +3555,9 @@ to the <code>Iterator</code> trait.</p>
     </item>
     <item>
       <title>Serde Tricks</title>
-      <link>https://ramsayleung.github.io/zh/post/2020/serde_lesson/</link>
+      <link>https://yuexuan521.github.io/zh/post/2020/serde_lesson/</link>
       <pubDate>Sun, 13 Dec 2020 22:29:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2020/serde_lesson/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2020/serde_lesson/</guid>
       <description>&lt;p&gt;The lesson learned from refactoring rspotify&lt;/p&gt;
 &lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;Recently, I and &lt;a href=&#34;https://github.com/marioortizmanero&#34;&gt;Mario&lt;/a&gt; are working on refactoring &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;&lt;code&gt;rspotify&lt;/code&gt;&lt;/a&gt;, trying to improve performance, documentation, error-handling, data model and reduce compile time, to make it easier to use. (For those who has never heard about &lt;code&gt;rspotify&lt;/code&gt;, it is a Spotify HTTP SDK implemented in Rust).&lt;/p&gt;
@@ -3624,7 +3630,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>And Koxiaet gave great advice about how to polish <code>Actions</code>:</p>
 <blockquote>
-<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p></blockquote>
+<p><code>Actions::disallows</code> can be replaced with a <code>Vec&lt;DisallowKey&gt;</code> or <code>HashSet&lt;DisallowKey&gt;</code> by removing all entires whose value is false, which will result in a simpler API.</p>
+</blockquote>
 <p>To be honest, I was not that familiar with <code>Serde</code> before, after digging in its official documentation for a while, it seems there is now a built-in way to convert JSON map to <code>Vec&lt;T&gt;</code> base on map&rsquo;s value.</p>
 <p>After reading the <a href="https://serde.rs/custom-serialization.html">Custom serialization</a> from documentation, there was a simple solution came to my mind, so I wrote my first customized deserialize function.</p>
 <p>I created a dumb <code>Actions</code> struct inside the <code>deserialize</code> function, and converted <code>HashMap</code> to <code>Vec</code> by filtering its value.</p>
@@ -3756,7 +3763,8 @@ to the <code>Iterator</code> trait.</p>
 </div>
 </div><p>As before, Koxiaet made a great point about <code>timestamp</code> and =progress_ms=(I will talk about it later):</p>
 <blockquote>
-<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p></blockquote>
+<p><code>CurrentlyPlayingContext::timestamp</code> should be a <code>chrono::DateTime&lt;Utc&gt;</code>, which could be easier to use.</p>
+</blockquote>
 <p>The polished struct looks like:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3955,7 +3963,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>As before without saying, Koxiaet pointed out that</p>
 <blockquote>
-<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p></blockquote>
+<p><code>SimplifiedEpisode::duration_ms</code> should be replaced with a <code>duration</code> of type <code>Duration</code>, since a built-in <code>Duration</code> type works better than primitive type.</p>
+</blockquote>
 <p>Since I have worked with <code>Serde</code>&rsquo;s custome deserialization, it&rsquo;s not a hard job for me any more. I easily figure out how to deserialize <code>u64</code> to <code>Duration</code>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4040,10 +4049,12 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 <p>The <code>progress_ms</code> field is either not present or a millisecond, the <code>u32</code> handles the milliseconds, as its value might not be present in the response, it&rsquo;s an <code>Option&lt;u32&gt;</code>, so it won&rsquo;t work with <code>from_duration_ms</code>.</p>
 <p>Thus, it&rsquo;s necessary to figure out how to handle the <code>Option</code> type, and the answer is in the documentation, the <code>deserialize_option</code> function:</p>
 <blockquote>
-<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p></blockquote>
+<p>Hint that the <code>Deserialize</code> type is expecting an optional value.</p>
+</blockquote>
 <!--quoteend-->
 <blockquote>
-<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p></blockquote>
+<p>This allows deserializers that encode an optional value as a nullable value to convert the null value into <code>None</code> and a regular value into <code>Some(value)</code>.</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -4195,7 +4206,8 @@ construction. And it turns out that there is a way to construct <code>DateTime</
 </div>
 </div><p>Koxiaet made a great point about <code>mode</code> field:</p>
 <blockquote>
-<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p></blockquote>
+<p><code>AudioAnalysisSection::mode</code> and <code>AudioFeatures::mode</code> are <code>f32=s but should be =Option&lt;Mode&gt;=s where =enum Mode { Major, Minor }</code> as it is more useful.</p>
+</blockquote>
 <p>In this case, we don&rsquo;t need the <code>Opiton</code> type and in order to deserialize enum from number, we firstly need to define a C-like enum:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>软件设计 on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</link>
+    <link>https://yuexuan521.github.io/zh/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/</link>
     <description>Recent content in 软件设计 on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 16 Nov 2025 10:22:14 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一本读了八年还没读完的书</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</link>
       <pubDate>Mon, 04 Aug 2025 10:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/structure_and_interpretation_of_computer_programs/</guid>
       <description>&lt;h2 id=&#34;缘起&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 缘起&lt;/h2&gt;
 &lt;p&gt;正如我在之前博客文章《&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2023/%E8%BF%99%E4%BA%9B%E5%B9%B4%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF_%E4%BB%8E%E5%B9%BF%E5%B7%9E%E5%88%B0%E6%B8%A9%E5%93%A5%E5%8D%8E/&#34;&gt;这些年走过的路：从广州到温哥华&lt;/a&gt;》&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;提到的那样，我在大二暑假的时候因缘际会，获得了去一家在深圳的初创公司实习的 Offer。&lt;/p&gt;
 &lt;p&gt;实习的两个多月时间也快就过去了，我也顺利拿到了 Return Offer，公司也非常有人情味地给实习生办了个欢送典礼。&lt;/p&gt;
@@ -122,7 +122,8 @@
 </div><p>毕竟大部分真正让人进步的阅读，读起来都不是愉悦的：</p>
 <blockquote>
 <p>世之奇伟、瑰怪、非常之观，常在于险远，而人之所罕至焉，故非有志者不能至也。</p>
-<p>&mdash;-王安石《游褒禅山记》</p></blockquote>
+<p>&mdash;-王安石《游褒禅山记》</p>
+</blockquote>
 <h2 id="主旨"><span class="section-num">3</span> 主旨</h2>
 <p>如果笼统地概括整本书，“无非”是「抽象」，通过使用一门非常简单的语言 <code>Scheme</code>, 以及几个非常简单的操作 <code>cons(构造一个序对)</code>, <code>car(取出序对的第一个值)</code>, <code>cdr(取出序对的第二个值)</code>:</p>
 <div class="highlight"><div class="chroma">
@@ -147,7 +148,8 @@
 <p>而后两章更进一步，第四章介绍如何实现一个 Scheme 简单的解释器，一个简单的 Prolog 解释器；而第五章介绍计算机体系结构的 CPU 设计，编译器，垃圾回收等。</p>
 <p>从括号中的几个简单函数，到最后造出整个计算机体系，有种《道德经》里道生万物的感觉：</p>
 <blockquote>
-<p>道生一，一生二，二生三，三生万物。</p></blockquote>
+<p>道生一，一生二，二生三，三生万物。</p>
+</blockquote>
 <h2 id="计算机科学与工程"><span class="section-num">4</span> 计算机科学与工程</h2>
 <p>我本科专业读的是软件工程(Software Engineering )，翻看当初的专业培养计划，从计算机导论开始入门，到程序设计基础，面向对象程序设计基础，数据结构，操作系统，计算机组成原理，再到计算机网络，汇编与编译原理，数据库原理到软件工程等。</p>
 <p>学习完这些课程，可以成为一个合格的软件工程师，但广义的计算机专业还有一门专业，叫计算机科学(Computer Science)，我一直很疑惑两者之间的差别是什么，就我所见过的不同学校的培养计划里面，两者的课程都非常相似。</p>
@@ -227,7 +229,8 @@
 <p>用人话来说就是不断地试，在试错的过程中逼近确定解，试的次数越多，结果越准确。</p>
 <p>书中就介绍了一种通过蒙特卡罗模拟来计算 π 的方法, 就像通过随机撒豆子估算圆的面积，概率统计将抽象的π转化为可计算的实验：</p>
 <blockquote>
-<p>举例来说，6/π^2 是随机选取的两个整数之间没有公因子（也就是说，它们的最大公因子是1）的概率。我们可以利用这一事实做出π的近似值。</p></blockquote>
+<p>举例来说，6/π^2 是随机选取的两个整数之间没有公因子（也就是说，它们的最大公因子是1）的概率。我们可以利用这一事实做出π的近似值。</p>
+</blockquote>
 <p>完全读不懂这段话，没理解是怎么可以算出π的近似值的。</p>
 <p>查阅资料后得知:</p>
 <p>随机选取两个正整数，它们互质（即最大公约数GCD为1）的概率是 \(\frac{6}{\pi^2}\) , 所谓的 互质指两个数没有公共因子（如8和15互质，但8和12不互质，因为公约数为4）。</p>
@@ -381,9 +384,9 @@
     </item>
     <item>
       <title>从在加拿大退货失败的一件小事思考系统设计</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Sat, 31 May 2025 11:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/%E4%BB%8E%E5%9C%A8%E5%8A%A0%E6%8B%BF%E5%A4%A7%E9%80%80%E8%B4%A7%E5%A4%B1%E8%B4%A5%E7%9A%84%E4%B8%80%E4%BB%B6%E5%B0%8F%E4%BA%8B%E6%80%9D%E8%80%83%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;前天刚写完《&lt;a href=&#34;https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/&#34;&gt;软件设计的哲学&lt;/a&gt;》，满脑子还萦绕着模块耦合和接口抽象，
 结果昨天就撞上一个现实中的“设计陷阱”——一次耗时数小时却无解的「退货」噩梦。&lt;/p&gt;
@@ -442,7 +445,8 @@
 <h3 id="邮政罢工"><span class="section-num">4.1</span> 邮政罢工</h3>
 <p>因为加拿大邮政罢工，所以只能去 Purolator 寄，但是去到 Purolator后，人家反馈:</p>
 <blockquote>
-<p>你这个退货码是给加拿大邮政的，我们不认哦，你要给个我们家的退货码。</p></blockquote>
+<p>你这个退货码是给加拿大邮政的，我们不认哦，你要给个我们家的退货码。</p>
+</blockquote>
 <p>我只能去再打电话给 Telus 客服要退货码，花费了15分钟，终于打通了，解释完一番之后，他们说给我的邮箱发了新的 Puralator 退货码，我等了一分钟，说没有收到，然后让给我另外的一个邮箱也发一次指引，还是没有收到，然后客服说邮件会在24-48小时内到达..</p>
 <p>但挂电话后再等了一个小时还是没有收到.</p>
 <h3 id="邮箱收不到email"><span class="section-num">4.2</span> 邮箱收不到email</h3>
@@ -527,9 +531,9 @@
     </item>
     <item>
       <title>软件设计的哲学</title>
-      <link>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
+      <link>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</link>
       <pubDate>Fri, 30 May 2025 00:39:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2025/a_philosophy_of_software_design/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;知道这本书是因为在 Hacker News 上有人提问：&lt;a href=&#34;https://news.ycombinator.com/item?id=31713756&#34;&gt;你读过最好的技术书是什么&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;?&lt;/p&gt;
 &lt;p&gt;最高赞的书是 Design Data Intensive Application(DDIA, 即《&lt;a href=&#34;https://book.douban.com/subject/30329536/&#34;&gt;数据密集型应用系统设计&lt;/a&gt;》&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;), 我觉得 DDIA 也担得起这个赞誉，然后最高赞的回答顺势提到了 &lt;a href=&#34;https://book.douban.com/subject/30218046/&#34;&gt;A Philosophy Of Software Design&lt;/a&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;, 想来能与 DDIA 齐名的书，肯定不会差得哪里去。&lt;/p&gt;</description>
@@ -541,7 +545,8 @@
 <p>而这本书的主旨，开篇就点出来了:</p>
 <blockquote>
 <p>This book is about how to design software systems to minimize their complexity.</p>
-<p>本书讲述如何设计软件系统以最小化其复杂度</p></blockquote>
+<p>本书讲述如何设计软件系统以最小化其复杂度</p>
+</blockquote>
 <p>而软件工程的本质就是如何管理复杂度，全书围绕如何降低软件复杂性提出的思考和解决方案，
 主要围绕抽象，异常，文档，一致性，设计原则这五个方向。</p>
 <p>许多原则我看着都深有共鸣，尤其在设计过相当多的系统之后，犯过许多错误之后，才会意识到这些原则的重要之处。</p>
@@ -549,17 +554,20 @@
 <p>关于谨慎暴露过多的配置给用户，尽量让程序动态计算各种参数值，尽量提供默认参数。</p>
 <blockquote>
 <p>开发软件时，开发者主动承担一些额外痛苦，从而减少用户的痛苦。</p>
-<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p></blockquote>
+<p>When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to reduce the suffering of your users.</p>
+</blockquote>
 <p>关于接口设计的原则:</p>
 <blockquote>
 <p>模块拥有简单的接口比简单的实现更重要。</p>
-<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p></blockquote>
+<p>it&rsquo;s more important for a module to have simple interface than a simple implementation</p>
+</blockquote>
 <p>关于异常处理的洞见:</p>
 <blockquote>
 <p>解决问题的最好方式是避免出现问题。</p>
 <p>The best way to eliminate exception handling complexity is to define your APIs so that there are no exceptions to handle: <strong><strong>define errors out of existence</strong></strong></p>
 <p>归根结底，减少 Bug 的最佳方法是让软件更简单(少即是多)</p>
-<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p></blockquote>
+<p><strong><strong>Overall, the best way to reduce bugs is to make software simpler.</strong></strong></p>
+</blockquote>
 <h2 id="抽象"><span class="section-num">2</span> 抽象</h2>
 <p>所谓的抽象，用我自己的话来说的就是把复杂的东西简单地呈现出来。</p>
 <h3 id="模块深度"><span class="section-num">2.1</span> 模块深度</h3>
@@ -761,14 +769,16 @@
 <p>虽然我们一直说「又不是不能跑」，但是我们对代码的要求，不能是「能跑就行啦」.</p>
 <p>再者就是要和扁鹊他大哥治病一样，把功夫都做在前期，防范于未然，修补错误成本往往也越往后越高，病入膏肓之后，扁鹊来了也要提桶跑路:</p>
 <blockquote>
-<p>治不了，等死吧，告辞</p></blockquote>
+<p>治不了，等死吧，告辞</p>
+</blockquote>
 <h2 id="代码整洁之道vs软件设计哲学"><span class="section-num">7</span> 代码整洁之道vs软件设计哲学</h2>
 <p>本书的作者对<a href="https://book.douban.com/subject/34986245/">《代码整洁之道》</a>(Clean Code)<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 的作者(Robert C. Martin, 即 Uncle Bob)的诸多观点作了反驳</p>
 <h3 id="函数拆分"><span class="section-num">7.1</span> 函数拆分</h3>
 <p>比如关于什么时候应该拆分一个函数，Uncle Bob 的观点是，基于函数的代码行数，一个函数需要相当短，甚至10行都有太长了。</p>
 <p>Uncle Bob 原话:</p>
 <blockquote>
-<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p></blockquote>
+<p>In the book Clean Code1, Robert Martin argues that functions should be broken up on length alone. He says that functions should be extremely short, and that even 10 lines is too long.</p>
+</blockquote>
 <p>而本书作者 John 的观点是: <strong><strong>每个函数应只做一件事，并完整地做好</strong></strong></p>
 <p>函数的接口应当简洁，这样调用者无需记住大量信息就能正确使用它。</p>
 <p>函数应当具备深度：其接口应远比实现更简单。如果一个函数满足以上所有特性，那么它的长度通常并不重要。</p>
@@ -779,14 +789,16 @@
 <p><strong><strong>注释的正确用途，是弥补我们无法用代码清晰表达的缺陷……注释始终是一种失败</strong></strong></p>
 <blockquote>
 <p>If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need comments very much — perhaps not at all.</p>
-<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p></blockquote>
+<p>he proper use of comments is to compensate for our failure to express ourselves in code&hellip;. Comments are always failures.</p>
+</blockquote>
 <p>而 John 的观点是</p>
 <p>但注释并非失败的表现。</p>
 <p><strong><strong>它们提供的信息与代码截然不同，而这些信息目前无法通过代码本身来表达。</strong></strong></p>
 <p><strong><strong>注释的作用之一，正是让人无需阅读代码即可理解其含义</strong></strong></p>
 <p>甚至直接反驳其观点:</p>
 <blockquote>
-<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p></blockquote>
+<p>I worry that Martin’s philosophy encourages a bad attitude in programmers, where they avoid comments so as not to seem like failures.</p>
+</blockquote>
 <h3 id="网上对线"><span class="section-num">7.3</span> 网上对线</h3>
 <p>所以也难怪 Uncle Bob 和 John Ousterhout 几个月前直接在网上论坛来了一次 <del>对线</del> (<a href="https://news.ycombinator.com/item?id=43166362">辩论)</a> <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
 <p>然后有看热闹不嫌事大的播主，把两人邀请到直播上，让他们直接面对面再来了一次对线</p>
@@ -882,9 +894,9 @@
     </item>
     <item>
       <title>那些年，我从微信支付学到的东西</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</link>
       <pubDate>Thu, 06 Apr 2023 18:31:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E4%BB%8E%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E7%A6%BB%E7%BA%BF_%E6%88%91%E5%B8%A6%E8%B5%B0%E4%BA%86%E4%BB%80%E4%B9%88/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;从微信支付离职，我能带走什么？文档，代码，设计方案还是微信支付的漏洞？&lt;/p&gt;
 &lt;p&gt;如果我带走这些资产，那我现在就在深圳的看守所里面吃着公家饭了。&lt;/p&gt;
@@ -898,7 +910,8 @@
 业务开发每天对着业务需求做CRUD，可能会羡慕开发底层组件的工程师，可以学习并提升技术水平，而自己技术水平还是在原地打转，能学习到的东西随着时间的推移，越来越少。</p>
 <p>王安石的《游褒禅山记》有这样的感叹：</p>
 <blockquote>
-<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p></blockquote>
+<p>夫夷以近，则遊者众；险以远，则至者少；而世之奇伟瑰怪非常之观，常在于险远，而人之所罕至焉；故非有志者，不能至也。</p>
+</blockquote>
 <p>所谓的「险以远」，并不特指深奥难懂的底层组件技术，也指思考的深度；</p>
 <p>如果多去思考技术和业务，挖掘背后的本质，我们也可以看到许多「世之奇伟瑰怪非常之观」</p>
 <h3 id="鱼与渔"><span class="section-num">1.1</span> 鱼与渔</h3>
@@ -914,7 +927,8 @@
 <p>既然选择「渔」，那么，要怎么挑选适合的「渔」来丰富自己的「渔库」呢？</p>
 <p>两千多年前的老师孔子就已经给出自己的答案：</p>
 <blockquote>
-<p>见贤思齐焉，见不贤而内自省也</p></blockquote>
+<p>见贤思齐焉，见不贤而内自省也</p>
+</blockquote>
 <p>见到那些优秀的实践和思路，就学下来；
 对于有弊端的实践，就要分析弊端形成的原因，再想办法避免和改进，别人掉进去的坑，我们就不要进去凑热闹了。</p>
 <h2 id="贤"><span class="section-num">3</span> 贤</h2>
@@ -925,11 +939,13 @@
 <p>这本书即是《设计模式：可复用面向对象软件的基础》(Design Patterns:
 Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang of Four (GoF)</p>
 <blockquote>
-<p>A design pattern is the re-usable form of a solution to a design problem.</p></blockquote>
+<p>A design pattern is the re-usable form of a solution to a design problem.</p>
+</blockquote>
 <p>那么什么是模式呢？</p>
 <p>按照另外一本经典名著《面向模式的软件架构卷一》的定义：</p>
 <blockquote>
-<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p></blockquote>
+<p>当专家求解一个问题时，他们一般不会发明一种和已有解决方案完全不同的方案来处理这个问题。他们往往想起已解决过的相似的问题，并重用其解法的精华来解决新问题。</p>
+</blockquote>
 <p>在微信支付研发理念中，程序设计和开发，很多问题都是类似，或者是重复出现的。</p>
 <p>针对此类重复问题，直接复制代码来解决，是下下策。</p>
 <p>对代码进行抽象，复用代码来解决重复问题，也是下策。
@@ -989,7 +1005,8 @@ Elements of Reusable Object-Oriented Software)，这四位博士也被称为Gang
 <h3 id="云雨伞"><span class="section-num">3.5</span> “云雨伞”</h3>
 <p>“云雨伞”这个概念来自内部的一份PPT，讲述的是如何更好地向别人提出建议，内容大概是：</p>
 <blockquote>
-<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p></blockquote>
+<p>屋外乌云密布，儿子要出门，妈妈对儿子说，马上要下雨，淋雨容易生病，把伞带上吧。</p>
+</blockquote>
 <p>“云雨伞”的步骤就是：</p>
 <ol>
 <li>指出现状：乌云密布，马上要下雨</li>

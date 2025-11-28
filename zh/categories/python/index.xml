@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/python/</link>
+    <link>https://yuexuan521.github.io/zh/categories/python/</link>
     <description>Recent content in Python on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 22:32:24 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用python 来操控 sqlite3</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</link>
       <pubDate>Sun, 12 Nov 2017 07:05:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</guid>
       <description>&lt;p&gt;python 与嵌入式关系数据库 sqlite3的邂逅&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;SQLite&lt;/code&gt; 是一个非常优秀的嵌入式数据库，非常轻量，可以与 Mysql, PostgreSQL 这样的 大型数据库互补使用. 而 Python 标准库中的 &lt;code&gt;sqlite3&lt;/code&gt; 模块实现了兼容 SQLite 的 &lt;a href=&#34;https://www.python.org/dev/peps/pep-0249/&#34;&gt;Python DB-API 2.0&lt;/a&gt;接口, 因此我们可以很方 便地使用 &lt;code&gt;sqlite3&lt;/code&gt; 模块来操作 &lt;code&gt;SQLite&lt;/code&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>python 与嵌入式关系数据库 sqlite3的邂逅</p>
@@ -939,9 +939,9 @@
     </item>
     <item>
       <title>从京东&#34;窃取&#34;150&#43;万条数据</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/jd_spider/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/jd_spider/</link>
       <pubDate>Wed, 21 Jun 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/jd_spider/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/jd_spider/</guid>
       <description>An spider to crawl jindong item and comments</description>
       <content:encoded><![CDATA[<p>我最近编写了两只京东商品和评论的分布式爬虫来进行数据分析，现在就来分享一下。</p>
 <h2 id="爬取策略"><span class="section-num">1</span> 爬取策略</h2>
@@ -1149,9 +1149,9 @@
     </item>
     <item>
       <title>你所不可或缺的 – logging</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/logging/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/logging/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/logging/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/logging/</guid>
       <description>an introduction about logging</description>
       <content:encoded><![CDATA[<h2 id="重要性"><span class="section-num">1</span> 重要性</h2>
 <p>笔者最近都在负责项目中关于日志的部分，因为跟日志打交道比较多，所以有一些关于日 志感受和技巧想要分享一下。</p>
@@ -1747,9 +1747,9 @@
     </item>
     <item>
       <title>flask牛刀小试之微信公众号开发</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</link>
       <pubDate>Thu, 23 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/weixin_flask/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/weixin_flask/</guid>
       <description>An flask project</description>
       <content:encoded><![CDATA[<p><a href="http://flask.pocoo.org/">flask</a> 是一个轻量级的python 框架(官网称为微型框架),很容易上手，之前因为笔者跟朋友开发小程序的时候使用过 flask,过后就遗忘了。</p>
 <p>为了重拾flask, 笔者决定写点小东西，之前开发小程序，不如现在再玩玩公众号开发</p>

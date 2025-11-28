@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Log on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/log/</link>
+    <link>https://yuexuan521.github.io/zh/tags/log/</link>
     <description>Recent content in Log on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Wed, 23 Feb 2022 21:48:13 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/log/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>你所不可或缺的 – logging</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/logging/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/logging/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/logging/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/logging/</guid>
       <description>an introduction about logging</description>
       <content:encoded><![CDATA[<h2 id="重要性"><span class="section-num">1</span> 重要性</h2>
 <p>笔者最近都在负责项目中关于日志的部分，因为跟日志打交道比较多，所以有一些关于日 志感受和技巧想要分享一下。</p>

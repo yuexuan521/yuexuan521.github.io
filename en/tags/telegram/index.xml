@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Telegram on In Pursuit of Simplicity</title>
-    <link>https://ramsayleung.github.io/en/tags/telegram/</link>
+    <link>https://yuexuan521.github.io/en/tags/telegram/</link>
     <description>Recent content in Telegram on In Pursuit of Simplicity</description>
     <image>
       <title>In Pursuit of Simplicity</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Nov 2025 22:51:59 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/en/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/en/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Telegram Spam Blocker Bot Based On Bayesian Algorithm</title>
-      <link>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
+      <link>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</link>
       <pubDate>Sat, 30 Aug 2025 10:34:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
+      <guid>https://yuexuan521.github.io/en/post/2025/a_telegram_spam_blocker_bot_based_on_bayesian/</guid>
       <description>&lt;h2 id=&#34;preface&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Preface&lt;/h2&gt;
 &lt;p&gt;I spent a weekend building a Telegram spam blocker bot based on Bayesian Algorithm &lt;code&gt;@BayesSpamSniperBot&lt;/code&gt; (&lt;a href=&#34;https://t.me/BayesSpamSniperBot&#34;&gt;https://t.me/BayesSpamSniperBot&lt;/a&gt;). The project is open-sourced at: &lt;a href=&#34;https://github.com/ramsayleung/bayes_spam_sniper&#34;&gt;https://github.com/ramsayleung/bayes_spam_sniper&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;telegram&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; Telegram&lt;/h3&gt;
@@ -483,16 +483,19 @@ as they are valuable training data that I need to record quickly before they get
 <p>For example:</p>
 <blockquote>
 <p>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略
-(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p></blockquote>
+(Want to make money in the crypto circle? It&rsquo;s a real pity if you don&rsquo;t follow this ace community. Sincerely recommended, free strategies every day)</p>
+</blockquote>
 <p>Or</p>
 <blockquote>
 <p>这人简-介挂的 合-约-报单群组挺牛的ETH500点，大饼5200点！ + @BTCETHl6666
-(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p></blockquote>
+(The contract reporting group linked in this person&rsquo;s bio is pretty awesome. ETH to $500, BTC to $5200! + @BTCETHl6666)</p>
+</blockquote>
 <p>The former uses spaces to bypass keywords, the latter uses punctuation.</p>
 <p>Unlike languages based on the Latin alphabet which naturally use spaces for word separation, Chinese requires word segmentation before statistical analysis with Bayes&rsquo; theorem.</p>
 <blockquote>
 <p>the fox jumped over the lazy dog</p>
-<p>我们的中文就不一样了(Our Chinese is different)</p></blockquote>
+<p>我们的中文就不一样了(Our Chinese is different)</p>
+</blockquote>
 <p>&ldquo;我们的中文就不一样了&rdquo; (Our Chinese is different) would be segmented into &ldquo;我们 | 的 | 中文 | 就 | 不 | 一样 | 了&rdquo; before word frequency can be counted.</p>
 <p>But for the spam <code>在 币圈 想 赚 钱，那 你 不关 注 这 个 王 牌 社 区，真的太可惜了，真 心 推 荐，每 天 都 有 免 费 策 略</code>, the spaces not only affect keyword matching but also affect segmentation. The segmentation result for this sentence becomes(incorrect):</p>
 <p><code>在 | | 币圈 | | 想 | | 赚 | | 钱 | ， | 那 | | 你 | | 不 | 关 | | 注 | | 这 | | 个 | | 王 | | 牌 | | 社 | | 区 | ， | 真的 | 太 | 可惜 | 了 | ， | 真 | | 心 | | 推 | | 荐 | ， | 每 | | 天 | | 都 | | 有 | | 免 | | 费 | | 策 | | 略</code></p>

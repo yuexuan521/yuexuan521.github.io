@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Thought on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/thought/</link>
+    <link>https://yuexuan521.github.io/zh/tags/thought/</link>
     <description>Recent content in Thought on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:01:41 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/thought/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/thought/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>产品的快速试错与及早反馈</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/%E4%BA%A7%E5%93%81%E7%9A%84%E5%BF%AB%E9%80%9F%E8%AF%95%E9%94%99%E4%B8%8E%E5%8F%8A%E6%97%A9%E5%8F%8D%E9%A6%88/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/%E4%BA%A7%E5%93%81%E7%9A%84%E5%BF%AB%E9%80%9F%E8%AF%95%E9%94%99%E4%B8%8E%E5%8F%8A%E6%97%A9%E5%8F%8D%E9%A6%88/</link>
       <pubDate>Fri, 07 Jul 2023 15:06:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/%E4%BA%A7%E5%93%81%E7%9A%84%E5%BF%AB%E9%80%9F%E8%AF%95%E9%94%99%E4%B8%8E%E5%8F%8A%E6%97%A9%E5%8F%8D%E9%A6%88/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/%E4%BA%A7%E5%93%81%E7%9A%84%E5%BF%AB%E9%80%9F%E8%AF%95%E9%94%99%E4%B8%8E%E5%8F%8A%E6%97%A9%E5%8F%8D%E9%A6%88/</guid>
       <description>&lt;h2 id=&#34;关于-demo&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 关于 Demo&lt;/h2&gt;
 &lt;p&gt;昨天下班路上，和朋友闲聊的时候，想起了当年大学时候看过的《李开复自传》的一个故事。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;当年李开复在卡内基梅隆大学的研究方向是语音识别，即如何将人说的声音，转变成计算机可以识别的文字内容。 &lt;br/&gt;&lt;/p&gt;</description>
@@ -37,7 +37,8 @@
 学者，他们的口音我的系统可没听过。” <br/></p>
 <p>老师说：“实际上你的识别率是 90％还是 96％，没有什么差别。我们这么做的 <br/>
 目的，不是要监测你的识别率，而是要造成一个效果，让每个学者终生都会记得， <br/>
-第一次接触不指定语者系统就是在纽约，在李开复的演讲上。” <br/></p></blockquote>
+第一次接触不指定语者系统就是在纽约，在李开复的演讲上。” <br/></p>
+</blockquote>
 <p>在学术结果和演示效果的交互相映之下，李开复的研究成果撼动了整个学术领域，认为他的研究成果，建立起了人机沟通的桥梁。 <br/></p>
 <p>纵然演示者的PPT美轮美奂，演讲舌灿莲花，带来的冲击，远不如用户亲身体验来得强烈。 <br/></p>
 <h2 id="mvp与及早反馈"><span class="section-num">2</span> MVP与及早反馈</h2>

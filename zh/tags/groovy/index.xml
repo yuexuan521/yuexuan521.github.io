@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Groovy on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/groovy/</link>
+    <link>https://yuexuan521.github.io/zh/tags/groovy/</link>
     <description>Recent content in Groovy on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 17:26:31 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spock 一个优雅的Groovy/Java测试框架</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/spock/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/spock/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/spock/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/spock/</guid>
       <description>an introduction about spock</description>
       <content:encoded><![CDATA[<p>因为需要编写 RESTful api 测试的缘故，重拾了 Spock 这个适用于 Groovy/Java 的测试
 框架，顺便把以前写的一篇旧文整理了一下，权当重温。</p>
@@ -220,7 +220,8 @@ Specification 的名字一般是跟系统或者业务逻辑有关的组合词，
 <p>Fixture methods are responsible for setting up and cleaning up the environment in
 which feature methods are run. Usually it’s a good idea to use a fresh fixture for
 every feature method, which is what the setup() and cleanup() methods are for.
-All fixture methods are optional.</p></blockquote>
+All fixture methods are optional.</p>
+</blockquote>
 <p>简而言之， <strong>Fixture methodr</strong> 是进行初始化或者收尾工作的。为了更好地理解 Spock
 的特性，可以用 Spock 和 Junit 进行比较，(图截自官网)</p>
 
@@ -246,7 +247,8 @@ All fixture methods are optional.</p></blockquote>
 feature method. To this end, feature methods are structured into so-called blocks.
 Blocks start with a label, and extend to the beginning of the next block, or the
 end of the method. There are six kinds of blocks: setup, when, then, expect,
-cleanup, and where blocks</p></blockquote>
+cleanup, and where blocks</p>
+</blockquote>
 <p>简而言之， 这些内置的功能强大的 blocks, 就是帮助开发者编写单元测试的语法糖</p>
 
 <figure>

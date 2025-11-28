@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sqlite on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/sqlite/</link>
+    <link>https://yuexuan521.github.io/zh/tags/sqlite/</link>
     <description>Recent content in Sqlite on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 24 Feb 2022 16:00:09 +0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用python 来操控 sqlite3</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</link>
       <pubDate>Sun, 12 Nov 2017 07:05:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/python_with_sqlite3/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/python_with_sqlite3/</guid>
       <description>&lt;p&gt;python 与嵌入式关系数据库 sqlite3的邂逅&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;SQLite&lt;/code&gt; 是一个非常优秀的嵌入式数据库，非常轻量，可以与 Mysql, PostgreSQL 这样的 大型数据库互补使用. 而 Python 标准库中的 &lt;code&gt;sqlite3&lt;/code&gt; 模块实现了兼容 SQLite 的 &lt;a href=&#34;https://www.python.org/dev/peps/pep-0249/&#34;&gt;Python DB-API 2.0&lt;/a&gt;接口, 因此我们可以很方 便地使用 &lt;code&gt;sqlite3&lt;/code&gt; 模块来操作 &lt;code&gt;SQLite&lt;/code&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>python 与嵌入式关系数据库 sqlite3的邂逅</p>

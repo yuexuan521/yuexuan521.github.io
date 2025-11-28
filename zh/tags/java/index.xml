@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Java on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/java/</link>
+    <link>https://yuexuan521.github.io/zh/tags/java/</link>
     <description>Recent content in Java on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 17:28:38 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java8基于堆实现尾递归优化</title>
-      <link>https://ramsayleung.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</link>
+      <link>https://yuexuan521.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</link>
       <pubDate>Sun, 05 Jul 2020 16:51:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;尾调用消除(tail call elimination, TCE)是函数式编程的重要概念, 有时也被称为尾调用优化(tail call optimization, TCO),
 作用是将尾递归函数转化成循环, 避免创建许多栈帧, 减少开销.&lt;/p&gt;</description>
@@ -513,7 +513,8 @@ StackOverflowError</strong>.</p>
 <blockquote>
 <p>In jdk classes there are a number of security sensitive methods that
 rely on counting stack frames between jdk library code and calling
-code to figure out who&rsquo;s calling them.</p></blockquote>
+code to figure out who&rsquo;s calling them.</p>
+</blockquote>
 <p>后续java版本也暂无支持尾递归优化的计划, 无奈摊手.jpg</p>
 <h2 id="参考"><span class="section-num">5</span> 参考</h2>
 <ul>
@@ -530,9 +531,9 @@ code to figure out who&rsquo;s calling them.</p></blockquote>
     </item>
     <item>
       <title>guava 探究系列之五：新类型容器</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%96%B0%E7%B1%BB%E5%9E%8B%E5%AE%B9%E5%99%A8/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%96%B0%E7%B1%BB%E5%9E%8B%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Thu, 12 Dec 2019 15:45:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%96%B0%E7%B1%BB%E5%9E%8B%E5%AE%B9%E5%99%A8/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E6%96%B0%E7%B1%BB%E5%9E%8B%E5%AE%B9%E5%99%A8/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;JDK 提供了各种功能强大的工具类, 宛如装备齐全的军火库,
 而容器就是其中一项内置的利器, 提供了包括诸多常用的数据结构, 下图对 JDK
@@ -598,7 +599,8 @@ value 都加起来?</p>
 <code>Multiset</code>
 的<a href="https://en.wikipedia.org/wiki/Set_%28abstract_data_type%29#Multiset">解释</a>:</p>
 <blockquote>
-<p>这是个成员可以出现多次的集合(Set), 也被称为背包(bag)</p></blockquote>
+<p>这是个成员可以出现多次的集合(Set), 也被称为背包(bag)</p>
+</blockquote>
 <p>大名鼎鼎的《算法/Algorithm》也给出过 <a href="https://algs4.cs.princeton.edu/13stacks/">bag</a> 的解释和实现.</p>
 <p>需要注意的是, <code>multisets</code> 的成员是无序的, <code>{a,a,b}</code> 和 <code>{a,b,a}</code>
 这两个集合在 <code>multisets</code> 看来是相等.</p>
@@ -1585,9 +1587,9 @@ key 阿! 你也可以这样理解, well, 咬文嚼字就没有什么意义了)</
     </item>
     <item>
       <title>guava探究系列之四：不可变容器</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AE%B9%E5%99%A8/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Thu, 05 Sep 2019 15:36:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AE%B9%E5%99%A8/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%B8%8D%E5%8F%AF%E5%8F%98%E5%AE%B9%E5%99%A8/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;先此声明, 个人倾向于将 &lt;code&gt;Collection&lt;/code&gt; 翻译成容器, 将 &lt;code&gt;Set&lt;/code&gt; 翻译成集合.&lt;/p&gt;
 &lt;p&gt;已经许久没有更新Guava研读系列的文章, 今天要介绍的是Guava的不可变容器.&lt;/p&gt;
@@ -1979,9 +1981,9 @@ Collections</a></li>
     </item>
     <item>
       <title>Guava探究系列之三：改善通用方法</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%B1%BB%E6%94%B9%E5%96%84%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%95/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%B1%BB%E6%94%B9%E5%96%84%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 25 Jul 2019 22:33:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%B1%BB%E6%94%B9%E5%96%84%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E7%B1%BB%E6%94%B9%E5%96%84%E9%80%9A%E7%94%A8%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;Java 是一门集大成的面向对象语言, 在Java的世界里, 一切皆对象, 而=Object=类就是所有对象的默认父类. Guava
 提供了若干个工具方法来扩展=Object=类的通用能力.&lt;/p&gt;</description>
@@ -2035,7 +2037,8 @@ Guava叫=hashCode=).</p>
 <h3 id="hashcode"><span class="section-num">2.1</span> hashCode</h3>
 <p>在《Effective Java》的条款9中说到:</p>
 <blockquote>
-<p>Always override <code>hashCode</code> when you override <code>equals</code></p></blockquote>
+<p>Always override <code>hashCode</code> when you override <code>equals</code></p>
+</blockquote>
 <p>就是说在你重写=equals=方法的时候, 记得重写=hashCode=方法,
 因为按照Java的约定, 如果两个对象通过调用=equals=方法判断是相等的话,
 它们调用=hashCode()=方法的返回结果也是一样的.</p>
@@ -2109,7 +2112,8 @@ JDK也推出了一个=Objects.hash(field1, field2,&hellip;,fieldn)=的方法,
 <h2 id="tostring"><span class="section-num">3</span> toString</h2>
 <p>《Effective Java》的条款10说到:</p>
 <blockquote>
-<p>Always override toString</p></blockquote>
+<p>Always override toString</p>
+</blockquote>
 <p>也就是说, 《Effective Java》建议所有的类都重写=toString()=方法.
 其实=toString()=方法不是给程序看的, 而是给开发者自己看的.</p>
 <p>据说, 好看的=toString()=方法的输出结果可以让程序员更愉悦, 可见颜值处处都有用.
@@ -2173,7 +2177,8 @@ JDK也推出了一个=Objects.hash(field1, field2,&hellip;,fieldn)=的方法,
 <p>既然前面提到了《Effective Java》, 那么基于前后呼应的原则,
 最后也免不了要再引用一下《Effective Java》:</p>
 <blockquote>
-<p>条款12: Consider implementing Comparable</p></blockquote>
+<p>条款12: Consider implementing Comparable</p>
+</blockquote>
 <p>不像前文介绍过的方法, =compareTo=方法并不是=Object=类的方法,
 而是=Comparable=接口的方法. 这个方法和前文提到的=equals=方法类似,
 只不过用法不一样. =compareTo=通常用于排序,
@@ -2291,9 +2296,9 @@ JDK也推出了一个=Objects.hash(field1, field2,&hellip;,fieldn)=的方法,
     </item>
     <item>
       <title>Guava探究系列之二: 优雅校验数据</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BC%98%E9%9B%85%E6%A0%A1%E9%AA%8C%E6%95%B0%E6%8D%AE/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BC%98%E9%9B%85%E6%A0%A1%E9%AA%8C%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Thu, 04 Jul 2019 10:16:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BC%98%E9%9B%85%E6%A0%A1%E9%AA%8C%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BC%98%E9%9B%85%E6%A0%A1%E9%AA%8C%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;根据防御式编程的要求, 在日常的开发中, 总少不了对函数的各种入参做校验,
 以便保证函数能按照预期的流程执行下去.&lt;/p&gt;
@@ -2726,23 +2731,26 @@ Guava wiki 还提了两点最佳实践(best practice):</p>
     </item>
     <item>
       <title>Guava探究系列之一: 使用和避免使用空指针</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BD%BF%E7%94%A8%E5%92%8C%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E7%A9%BA%E6%8C%87%E9%92%88/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BD%BF%E7%94%A8%E5%92%8C%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E7%A9%BA%E6%8C%87%E9%92%88/</link>
       <pubDate>Tue, 02 Jul 2019 19:25:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BD%BF%E7%94%A8%E5%92%8C%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E7%A9%BA%E6%8C%87%E9%92%88/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/guava%E6%8E%A2%E7%A9%B6%E7%B3%BB%E5%88%97%E4%B9%8B%E4%BD%BF%E7%94%A8%E5%92%8C%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E7%A9%BA%E6%8C%87%E9%92%88/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;To be, or not to be, that is the question:&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;To be, or not to be, that is the question:&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;先来看看奆佬们关于空指针的看法:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Null sucks - &lt;a href=&#34;https://en.wikipedia.org/wiki/Doug_Lea&#34;&gt;Doug Lea&lt;/a&gt;(JCP,Java并发编程实战作者, Java巨佬)&lt;/p&gt;
 &lt;p&gt;I call it my billion-dollar mistake. - &lt;a href=&#34;https://en.wikipedia.org/wiki/C._A._R._Hoare&#34;&gt;Sir C. A. R. Hoare&lt;/a&gt;, 空指针的发明者&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
 <blockquote>
-<p>To be, or not to be, that is the question:</p></blockquote>
+<p>To be, or not to be, that is the question:</p>
+</blockquote>
 <p>先来看看奆佬们关于空指针的看法:</p>
 <blockquote>
 <p>Null sucks - <a href="https://en.wikipedia.org/wiki/Doug_Lea">Doug Lea</a>(JCP,Java并发编程实战作者, Java巨佬)</p>
-<p>I call it my billion-dollar mistake. - <a href="https://en.wikipedia.org/wiki/C._A._R._Hoare">Sir C. A. R. Hoare</a>, 空指针的发明者</p></blockquote>
+<p>I call it my billion-dollar mistake. - <a href="https://en.wikipedia.org/wiki/C._A._R._Hoare">Sir C. A. R. Hoare</a>, 空指针的发明者</p>
+</blockquote>
 <p>按照Guava wiki的说法,
 大部分的Google代码都是不支持使用空指针(下文用=null=表示空指针)的,</p>
 <p>如接近95%的集合类都不支持使用=null=作为集合元素.
@@ -3028,9 +3036,9 @@ API几乎都是通过返回一个null的方式表示所需的值的缺失,
     </item>
     <item>
       <title>一条经典面试题的错误答案引发的思考</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</link>
       <pubDate>Thu, 21 Mar 2019 11:04:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</guid>
       <description>&lt;p&gt;浅谈Java公平锁与内存模型&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;春天来了，春招还会远么? 又到了春招的季节，随之而来的是各种的面试题。今天就看到组内大佬面试实习生的一道Java题目:&lt;/p&gt;</description>
@@ -3040,7 +3048,8 @@ API几乎都是通过返回一个null的方式表示所需的值的缺失,
 <blockquote>
 <p>编写一个程序，开启 3 个线程A,B,C，这三个线程的输出分别为
 A、B、C，每个线程将自己的 输出在屏幕上打印 10
-遍，要求输出的结果必须按顺序显示。如：ABCABCABC&hellip;.</p></blockquote>
+遍，要求输出的结果必须按顺序显示。如：ABCABCABC&hellip;.</p>
+</blockquote>
 <h2 id="经过"><span class="section-num">2</span> 经过</h2>
 <p>出于好奇的心态，我花了点时间来尝试解决这个问题, 主要的难点是让线程顺序地如何顺序地输出，线程之间如何交换。</p>
 <p>很快就按着思路写出了一个版本，用Lock 来控制线程的顺序，A,B,C线程依次启动，因为A线程先启动，所以A线程会最先拿到锁，B,C阻塞；但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环:</p>
@@ -3248,7 +3257,8 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
 <p>前文说到，</p>
 <blockquote>
 <p>这个程序是用Lock 来控制线程的顺序，A,B,C线程依次启动，因为A线程先启动，所以A线程会最先拿到锁，B,C阻塞；</p>
-<p>但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环。</p></blockquote>
+<p>但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环。</p>
+</blockquote>
 <p>粗看似乎没什么问题, 但是这里是存在着一个问题: 当线程A释放锁的时候，获取锁的是否一定是线程B, 而不是线程C,
 线程C是否能够”插队”抢占锁?</p>
 <p>这个就涉及到了公平锁和非公平锁的定义了:</p>
@@ -3307,9 +3317,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>How to fool the Jacoco ◜◡‾</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
       <pubDate>Thu, 14 Mar 2019 11:14:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
       <description>&lt;p&gt;刷POJO类的变更行覆盖率&lt;/p&gt;
 &lt;h2 id=&#34;反射大法好&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 反射大法好&lt;/h2&gt;
 &lt;h3 id=&#34;背景&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; 背景&lt;/h3&gt;
@@ -3673,9 +3683,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>Maven 小记</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
       <pubDate>Tue, 23 Oct 2018 12:15:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
       <description>&lt;p&gt;Maven 在工作中的经验以及《Maven 实战》读后感&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;蚂蚁金服的伯岩大大曾经说 &lt;a href=&#34;http://blog.fnil.net/index.php/archives/70/&#34;&gt;Java 生态都太重量级，连Maven 都是怪兽级的构建工具，需要整整一本书来讲解&lt;/a&gt;. 平心而论，Maven 的确如此, 但是无论是怪兽级，还是迪迦级的工具，只要能把事情做好了就是好工具, 而 Maven 恰恰就是这样的工具&lt;/p&gt;</description>
@@ -4256,9 +4266,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>Rust的错误处理(二)</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_2/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_2/</link>
       <pubDate>Thu, 08 Feb 2018 22:01:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/error_handle_in_rust_2/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/error_handle_in_rust_2/</guid>
       <description>&lt;p&gt;自定义错误和&lt;code&gt;error_chain&lt;/code&gt; 库&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;上一篇文章聊到 Rust 的错误处理机制，以及和 Java 的简单比较，现在就来聊一下如何在 Rust 自定义错误，以及引入 &lt;code&gt;error_chain&lt;/code&gt;这个库来优雅地进行错误处理。&lt;/p&gt;</description>

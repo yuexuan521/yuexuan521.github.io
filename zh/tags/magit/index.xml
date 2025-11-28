@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Magit on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/magit/</link>
+    <link>https://yuexuan521.github.io/zh/tags/magit/</link>
     <description>Recent content in Magit on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 18:08:11 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/magit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/magit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>单独使用Emacs的Magit插件</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/%E5%8D%95%E7%8B%AC%E4%BD%BF%E7%94%A8emacs%E7%9A%84magit%E6%8F%92%E4%BB%B6/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/%E5%8D%95%E7%8B%AC%E4%BD%BF%E7%94%A8emacs%E7%9A%84magit%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Wed, 11 Dec 2024 16:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/%E5%8D%95%E7%8B%AC%E4%BD%BF%E7%94%A8emacs%E7%9A%84magit%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/%E5%8D%95%E7%8B%AC%E4%BD%BF%E7%94%A8emacs%E7%9A%84magit%E6%8F%92%E4%BB%B6/</guid>
       <description>&lt;h2 id=&#34;emacs-与-magit&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; Emacs 与 Magit&lt;/h2&gt;
 &lt;p&gt;不知不觉，我已经使用Emacs 快10年了，在我使用过的编辑器中，Emacs是扩展性最强的编辑器，毕竟Emacs是个披着编辑器外衣的Lisp虚拟机。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="emacs-与-magit"><span class="section-num">1</span> Emacs 与 Magit</h2>

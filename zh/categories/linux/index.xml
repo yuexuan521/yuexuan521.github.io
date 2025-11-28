@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/linux/</link>
+    <link>https://yuexuan521.github.io/zh/categories/linux/</link>
     <description>Recent content in Linux on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 17:38:42 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux下如何避免蓝牙音箱自动关机</title>
-      <link>https://ramsayleung.github.io/zh/post/2023/linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA/</link>
+      <link>https://yuexuan521.github.io/zh/post/2023/linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA/</link>
       <pubDate>Mon, 15 May 2023 20:48:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2023/linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2023/linux%E4%B8%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%93%9D%E7%89%99%E9%9F%B3%E7%AE%B1%E8%87%AA%E5%8A%A8%E5%85%B3%E6%9C%BA/</guid>
       <description>&lt;h2 id=&#34;问题&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 问题&lt;/h2&gt;
 &lt;p&gt;最近整理了桌上乱糟糟的线，把原来使用aux 线连接的蓝牙音响换成通过蓝牙连接。 &lt;br/&gt;&lt;/p&gt;
 &lt;p&gt;然后就发现一个问题，只要音响没有发出声音超过30分钟，蓝牙音响就会断开连接，并且自动关机，即使蓝牙音响连接着电源。 &lt;br/&gt;&lt;/p&gt;</description>
@@ -143,9 +143,9 @@
     </item>
     <item>
       <title>lsof can&#39;t identify protocol</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/lsof_cant_identify_protocol/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/lsof_cant_identify_protocol/</link>
       <pubDate>Wed, 11 Apr 2018 15:24:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/lsof_cant_identify_protocol/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/lsof_cant_identify_protocol/</guid>
       <description>&lt;p&gt;Socket 泄漏引起的Tomcat 宕机问题分析&lt;/p&gt;
 &lt;p&gt;在2018年4月9号下午，收到反馈：测试集群部分接口访问有问题，请求时而正常，时而超时。&lt;/p&gt;
 &lt;p&gt;最近的测试环境真的是问题多多，可是测试环境就是我搭建的，冏。查看日志发现87 这台 服务器的Tomcat 无法访问：&lt;/p&gt;</description>
@@ -933,12 +933,14 @@ sockets 处于 <code>CLOSED</code> 的状态，但是却没有真正close 掉，
 <li>
 <p>Connections</p>
 <blockquote>
-<p>The number of connection attempts (successful or not) to the MySQL server.</p></blockquote>
+<p>The number of connection attempts (successful or not) to the MySQL server.</p>
+</blockquote>
 </li>
 <li>
 <p>Threads_connected</p>
 <blockquote>
-<p>The number of currently open connections.</p></blockquote>
+<p>The number of currently open connections.</p>
+</blockquote>
 </li>
 </ul>
 <p>也就是说，当时共有20000 多的连接请求，但是真正被 Mysql accpet 并且服务的只有 28 个连接。看来的确是因为连接池的连接导致 socket 泄漏</p>
@@ -961,9 +963,9 @@ sockets 处于 <code>CLOSED</code> 的状态，但是却没有真正close 掉，
     </item>
     <item>
       <title>大话Linux文件系统</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/linux_file_system/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/linux_file_system/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/linux_file_system/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/linux_file_system/</guid>
       <description>an discussion about linux file system</description>
       <content:encoded><![CDATA[<p>不久前，Apple 的文件系统 (Apple File System) 新推出，然后各方便一起挤身向前对APFS &ldquo;评头品足&rdquo;,我是不了解 APFS ,所以也没有什么发言权嘛，不过话分两头；</p>
 <p>对Linux的文件系统，我还是有了解过的，所以可以聊聊Linux 的文件系统；与Windows 和Apple 两家商业公司不同，Linux 是开源的，因此，只要你有足够的时间和能力，你就可以自己写一个文件系统，这个也是Linux 文件系统众多的主要原因。</p>
@@ -1081,13 +1083,14 @@ sockets 处于 <code>CLOSED</code> 的状态，但是却没有真正close 掉，
     </item>
     <item>
       <title>Linux/Unix Shell 二三事之过滤器grep</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/grep/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/grep/</link>
       <pubDate>Mon, 13 Mar 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/grep/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/grep/</guid>
       <description>an introduction about grep</description>
       <content:encoded><![CDATA[<p>文本三剑客之 Grep</p>
 <blockquote>
-<p>grep - print  lines matching a pattern</p></blockquote>
+<p>grep - print  lines matching a pattern</p>
+</blockquote>
 <p>今天我想聊聊 <strong>grep</strong> 这个命令；据说，有Unix/Linux 的地方就会有 <strong>grep</strong>, 这个可能是安装得最广泛的命令之一；那么 <strong>grep</strong> 是用来干什么的呢？</p>
 <p>grep 其实是用来在文件中搜索特定内容或者模式的工具(配合正则表达式“食用”，味道更佳 :))现在就来一起看看*grep* 的用法</p>
 <h2 id="基本用法"><span class="section-num">1</span> 基本用法</h2>
@@ -1098,7 +1101,8 @@ sockets 处于 <code>CLOSED</code> 的状态，但是却没有真正close 掉，
 it was the age of wisdom it was age of foolishness
 it was the epoch of belief it was the epoch of incredulity
 it was the season of light it was the season of darkness
-IT WAS THE SPRING OF HOPE IT WAS THE WINTER OF DESPAIRE</p></blockquote>
+IT WAS THE SPRING OF HOPE IT WAS THE WINTER OF DESPAIRE</p>
+</blockquote>
 <p>现在开始介绍 <strong>grep</strong> 的基本用法： <strong>grep</strong> 的基本用法很简单的，假设我想要搜索单词 <strong>darkness</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1770,12 +1774,13 @@ IT WAS THE SPRING OF HOPE IT WAS THE WINTER OF DESPAIRE</p></blockquote>
     </item>
     <item>
       <title>Linux/Unix Shell 二三事之过滤器diff</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/diff/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/diff/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/diff/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/diff/</guid>
       <description>An introduction about diff</description>
       <content:encoded><![CDATA[<blockquote>
-<p>diff - compare files line by line</p></blockquote>
+<p>diff - compare files line by line</p>
+</blockquote>
 <p>如果你有使用过git,那么你一定不会对diff 陌生，因为对你源文件和修改后的文件进行比较的就是 <strong>diff</strong> 这个大名鼎鼎的家伙了。</p>
 <p>多年以来， <strong>diff</strong> 都一直是非常重要的工具，上古大神 都是使用 <strong>diff</strong> 和 <strong>patch</strong> 对程序进行差分和打补丁滴(现在有git了，但是diff同样发挥着重要作用)</p>
 <h2 id="语法"><span class="section-num">1</span> 语法</h2>
@@ -1990,9 +1995,9 @@ address1 包含：</p>
     </item>
     <item>
       <title>枯树逢春之ArchLinux领风骚</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/install_archlinux/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/install_archlinux/</link>
       <pubDate>Mon, 27 Feb 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/install_archlinux/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/install_archlinux/</guid>
       <description>An description about how to install arch linux in an old machine</description>
       <content:encoded><![CDATA[<h2 id="枯树"><span class="section-num">1</span> 枯树</h2>
 <p>周末回了一趟家，没带自己的笔记本，在家闲来无事，无意中看到墙角的电脑，已经尘封已久反正无事，何不玩玩这台老古董呢？于是把电脑拿去修理店把坏了的硬件修好。</p>
@@ -2097,7 +2102,8 @@ address1 包含：</p>
 <h4 id="生成fstab"><span class="section-num">3.1.7</span> 生成fstab</h4>
 <p>fstab 的作用：</p>
 <blockquote>
-<p>The fstab(5) file can be used to define how disk partitions, various other block devices, or remote filesystems should be mounted into the filesystem</p></blockquote>
+<p>The fstab(5) file can be used to define how disk partitions, various other block devices, or remote filesystems should be mounted into the filesystem</p>
+</blockquote>
 <p>生成fstab,并且查看是否正确生成fstab</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2357,12 +2363,13 @@ address1 包含：</p>
     </item>
     <item>
       <title>Linux/Unix Shell 二三事之过滤器cat</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/cat/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/cat/</link>
       <pubDate>Wed, 22 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/cat/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/cat/</guid>
       <description>An introduction about cat</description>
       <content:encoded><![CDATA[<blockquote>
-<p>cat - concatenate files and print on the standard output</p></blockquote>
+<p>cat - concatenate files and print on the standard output</p>
+</blockquote>
 <h2 id="过滤器"><span class="section-num">1</span> 过滤器</h2>
 <p>何谓过滤器呢，例如cat,grep,wl 之类的命令就是过滤器了。这样的命令
 读取数据，对数据执行一些操作，然后写入结果。更准确地说，过滤器就是任何能够从标准
@@ -2494,13 +2501,14 @@ vim/emacs 新建一个文本文件，然后输入几行文字，然后保存退�
     </item>
     <item>
       <title>Linux/Unix Shell 二三事之过滤器head&#43;tail</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/head_tail/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/head_tail/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/head_tail/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/head_tail/</guid>
       <description>An introduction about head and tail</description>
       <content:encoded><![CDATA[<blockquote>
 <p>head - output the first part of files
-tail - output the last part of files</p></blockquote>
+tail - output the last part of files</p>
+</blockquote>
 <p>当拥有的数据太多的时候，使用cat 来展示数据的话，数据量过大，屏幕就只能显示最后一部分的数据了。</p>
 <p>所以如果你想选取部分的数据的话，cat 就不是一个好选择了。有两个命令可以满足你的要求，分别是 <strong>head</strong> 和 <strong>tail</strong>.顾名思义，head 选取数据的开头部分tail 是选取数据的结尾部分</p>
 <h2 id="用法"><span class="section-num">1</span> 用法</h2>
@@ -2594,9 +2602,9 @@ tail - output the last part of files</p></blockquote>
     </item>
     <item>
       <title>Linux/Unix Shell 二三事之神器percol</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/percol/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/percol/</link>
       <pubDate>Mon, 13 Feb 2017 00:00:00 -0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/percol/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/percol/</guid>
       <description>An introduction about percol</description>
       <content:encoded><![CDATA[<p><a href="https://github.com/mooz/percol">Percol</a> 是Emacs 的一个非常优秀package, js2-mode作者mooz 的又一力作得益于Unix Shell的管道和重定向设计理念，percol 所有的输入输出变得可交互 percol 给我一种很熟悉的感觉，就是 Eamcs 中helm 增量补全 (incremental completion)的感觉，真的可以10倍提高工作效率。</p>
 <h2 id="例子"><span class="section-num">1</span> 例子</h2>

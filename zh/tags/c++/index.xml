@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C&#43;&#43; on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/tags/c&#43;&#43;/</link>
+    <link>https://yuexuan521.github.io/zh/tags/c&#43;&#43;/</link>
     <description>Recent content in C&#43;&#43; on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 09 Jan 2025 20:05:50 -0800</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rust模拟C&#43;&#43;的函数重载</title>
-      <link>https://ramsayleung.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</link>
+      <link>https://yuexuan521.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</link>
       <pubDate>Fri, 30 Aug 2024 22:23:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2024/rust%E6%A8%A1%E6%8B%9Fc&#43;&#43;%E7%9A%84%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD/</guid>
       <description>&lt;h2 id=&#34;函数重载--function-overloading&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 函数重载(function overloading)&lt;/h2&gt;
 &lt;p&gt;所谓的函数重载，指的是某些语言支持创建函数名相同，但函数签名不同的多个函数，所谓的函数签名，既指参数类型，也指参数的数量。 &lt;br/&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="函数重载--function-overloading"><span class="section-num">1</span> 函数重载(function overloading)</h2>

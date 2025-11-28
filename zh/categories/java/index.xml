@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Java on 菠萝油与天光墟</title>
-    <link>https://ramsayleung.github.io/zh/categories/java/</link>
+    <link>https://yuexuan521.github.io/zh/categories/java/</link>
     <description>Recent content in Java on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
-      <url>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://ramsayleung.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.146.7</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 17:28:38 -0700</lastBuildDate>
-    <atom:link href="https://ramsayleung.github.io/zh/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>java8基于堆实现尾递归优化</title>
-      <link>https://ramsayleung.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</link>
+      <link>https://yuexuan521.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</link>
       <pubDate>Sun, 05 Jul 2020 16:51:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2020/java%E5%AE%9E%E7%8E%B0%E5%B0%BE%E9%80%92%E5%BD%92%E4%BC%98%E5%8C%96/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;尾调用消除(tail call elimination, TCE)是函数式编程的重要概念, 有时也被称为尾调用优化(tail call optimization, TCO),
 作用是将尾递归函数转化成循环, 避免创建许多栈帧, 减少开销.&lt;/p&gt;</description>
@@ -513,7 +513,8 @@ StackOverflowError</strong>.</p>
 <blockquote>
 <p>In jdk classes there are a number of security sensitive methods that
 rely on counting stack frames between jdk library code and calling
-code to figure out who&rsquo;s calling them.</p></blockquote>
+code to figure out who&rsquo;s calling them.</p>
+</blockquote>
 <p>后续java版本也暂无支持尾递归优化的计划, 无奈摊手.jpg</p>
 <h2 id="参考"><span class="section-num">5</span> 参考</h2>
 <ul>
@@ -530,9 +531,9 @@ code to figure out who&rsquo;s calling them.</p></blockquote>
     </item>
     <item>
       <title>一条经典面试题的错误答案引发的思考</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</link>
       <pubDate>Thu, 21 Mar 2019 11:04:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E4%B8%80%E6%9D%A1%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/</guid>
       <description>&lt;p&gt;浅谈Java公平锁与内存模型&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;春天来了，春招还会远么? 又到了春招的季节，随之而来的是各种的面试题。今天就看到组内大佬面试实习生的一道Java题目:&lt;/p&gt;</description>
@@ -542,7 +543,8 @@ code to figure out who&rsquo;s calling them.</p></blockquote>
 <blockquote>
 <p>编写一个程序，开启 3 个线程A,B,C，这三个线程的输出分别为
 A、B、C，每个线程将自己的 输出在屏幕上打印 10
-遍，要求输出的结果必须按顺序显示。如：ABCABCABC&hellip;.</p></blockquote>
+遍，要求输出的结果必须按顺序显示。如：ABCABCABC&hellip;.</p>
+</blockquote>
 <h2 id="经过"><span class="section-num">2</span> 经过</h2>
 <p>出于好奇的心态，我花了点时间来尝试解决这个问题, 主要的难点是让线程顺序地如何顺序地输出，线程之间如何交换。</p>
 <p>很快就按着思路写出了一个版本，用Lock 来控制线程的顺序，A,B,C线程依次启动，因为A线程先启动，所以A线程会最先拿到锁，B,C阻塞；但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环:</p>
@@ -750,7 +752,8 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
 <p>前文说到，</p>
 <blockquote>
 <p>这个程序是用Lock 来控制线程的顺序，A,B,C线程依次启动，因为A线程先启动，所以A线程会最先拿到锁，B,C阻塞；</p>
-<p>但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环。</p></blockquote>
+<p>但是A输出完字符串，释放锁，B 线程获得锁，C,A线程阻塞; 依此循环。</p>
+</blockquote>
 <p>粗看似乎没什么问题, 但是这里是存在着一个问题: 当线程A释放锁的时候，获取锁的是否一定是线程B, 而不是线程C,
 线程C是否能够”插队”抢占锁?</p>
 <p>这个就涉及到了公平锁和非公平锁的定义了:</p>
@@ -809,9 +812,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>How to fool the Jacoco ◜◡‾</title>
-      <link>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
+      <link>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</link>
       <pubDate>Thu, 14 Mar 2019 11:14:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2019/%E5%A6%82%E4%BD%95%E5%88%B7pojo%E7%B1%BB%E7%9A%84%E5%8F%98%E6%9B%B4%E8%A1%8C%E8%A6%86%E7%9B%96%E7%8E%87/</guid>
       <description>&lt;p&gt;刷POJO类的变更行覆盖率&lt;/p&gt;
 &lt;h2 id=&#34;反射大法好&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 反射大法好&lt;/h2&gt;
 &lt;h3 id=&#34;背景&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1.1&lt;/span&gt; 背景&lt;/h3&gt;
@@ -1175,9 +1178,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>Maven 小记</title>
-      <link>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</link>
       <pubDate>Tue, 23 Oct 2018 12:15:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2018/maven%E5%B0%8F%E8%AE%B0/</guid>
       <description>&lt;p&gt;Maven 在工作中的经验以及《Maven 实战》读后感&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;1&lt;/span&gt; 前言&lt;/h2&gt;
 &lt;p&gt;蚂蚁金服的伯岩大大曾经说 &lt;a href=&#34;http://blog.fnil.net/index.php/archives/70/&#34;&gt;Java 生态都太重量级，连Maven 都是怪兽级的构建工具，需要整整一本书来讲解&lt;/a&gt;. 平心而论，Maven 的确如此, 但是无论是怪兽级，还是迪迦级的工具，只要能把事情做好了就是好工具, 而 Maven 恰恰就是这样的工具&lt;/p&gt;</description>
@@ -1758,9 +1761,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>为Java瘦身 – Lombok</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/lombok/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/lombok/</link>
       <pubDate>Wed, 24 May 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/lombok/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/lombok/</guid>
       <description>An introduction about lombok</description>
       <content:encoded><![CDATA[<h2 id="前言"><span class="section-num">1</span> 前言</h2>
 <p>几天前 Goolge 在 I/O 大会上宣布了 Android 将官方支持 Kotlin, 这意味着 Android开发者可以更好地使用 Kotlin 开发 Android.</p>
@@ -2230,9 +2233,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>Java UUID 源码剖析</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/uuid/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/uuid/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/uuid/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/uuid/</guid>
       <description>a introduction about uuid</description>
       <content:encoded><![CDATA[<p>笔者近来闲来无事，又因为有需要构造全局唯一 ID 的需求，所以就去看了 UUID 这个提供稳定的系统唯一标识符的类的源码</p>
 <h2 id="uuid-variant"><span class="section-num">1</span> UUID variant</h2>
@@ -2673,9 +2676,9 @@ A、B、C，每个线程将自己的 输出在屏幕上打印 10
     </item>
     <item>
       <title>Spock 一个优雅的Groovy/Java测试框架</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/spock/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/spock/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 -0700</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/spock/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/spock/</guid>
       <description>an introduction about spock</description>
       <content:encoded><![CDATA[<p>因为需要编写 RESTful api 测试的缘故，重拾了 Spock 这个适用于 Groovy/Java 的测试
 框架，顺便把以前写的一篇旧文整理了一下，权当重温。</p>
@@ -2877,7 +2880,8 @@ Specification 的名字一般是跟系统或者业务逻辑有关的组合词，
 <p>Fixture methods are responsible for setting up and cleaning up the environment in
 which feature methods are run. Usually it’s a good idea to use a fresh fixture for
 every feature method, which is what the setup() and cleanup() methods are for.
-All fixture methods are optional.</p></blockquote>
+All fixture methods are optional.</p>
+</blockquote>
 <p>简而言之， <strong>Fixture methodr</strong> 是进行初始化或者收尾工作的。为了更好地理解 Spock
 的特性，可以用 Spock 和 Junit 进行比较，(图截自官网)</p>
 
@@ -2903,7 +2907,8 @@ All fixture methods are optional.</p></blockquote>
 feature method. To this end, feature methods are structured into so-called blocks.
 Blocks start with a label, and extend to the beginning of the next block, or the
 end of the method. There are six kinds of blocks: setup, when, then, expect,
-cleanup, and where blocks</p></blockquote>
+cleanup, and where blocks</p>
+</blockquote>
 <p>简而言之， 这些内置的功能强大的 blocks, 就是帮助开发者编写单元测试的语法糖</p>
 
 <figure>
@@ -3501,9 +3506,9 @@ boot, 和 Restful service 测试等。更多的用法，就要查阅官方文档
     </item>
     <item>
       <title>Java读写文件小结</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/java8_file_io/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/java8_file_io/</link>
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/java8_file_io/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/java8_file_io/</guid>
       <description>An post about write and read file with java</description>
       <content:encoded><![CDATA[<p>今天在完成《算法》上的练习的时候，要对文件进行读写，而书上的例子是直接通过 Linux/Unix的重定向来实现的，我要把它修改成直接读取文件。</p>
 <p>此外，个人一直觉得Java IO 很容易混淆，因为有太多的选择(但是这也是Java 的强大之处)，现在Java8 又新增了文件的API,所以我就对文件IO作了个小结</p>
@@ -3838,9 +3843,9 @@ boot, 和 Restful service 测试等。更多的用法，就要查阅官方文档
     </item>
     <item>
       <title>Lambda与Java Collection有感</title>
-      <link>https://ramsayleung.github.io/zh/post/2017/java_collection_lambda/</link>
+      <link>https://yuexuan521.github.io/zh/post/2017/java_collection_lambda/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0800</pubDate>
-      <guid>https://ramsayleung.github.io/zh/post/2017/java_collection_lambda/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/2017/java_collection_lambda/</guid>
       <description>An Discussion abount Java Collection with Lambda Expression</description>
       <content:encoded><![CDATA[<p>我平时也有浏览各类博客的习惯，毕竟三人行则必有我师嘛。今天在浏览关于Java的一个博客的时候，对博主的观点有一些不同的开发，但是困于没法在博客下评论，内容如下：
 <a href="/ox-hugo/argument.png"><img loading="lazy" src="/ox-hugo/argument.png"></a>
