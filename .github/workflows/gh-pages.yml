@@ -3,40 +3,38 @@ name: github pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
+      - master  # ⚠️ 注意：如果你的主分支叫 master，请把这里改回 master
   pull_request:
+  workflow_dispatch: # 允许你在 GitHub 网页上手动点击按钮触发部署
 
 jobs:
   deploy:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 赋予机器人写入仓库的权限
+    
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  # 下载主题
+          fetch-depth: 0    # 获取完整历史，用于生成文章的"最后修改时间"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.146.7'
-          extended: true
+          hugo-version: 'latest' # 使用最新版 Hugo
+          extended: true         # 开启扩展版（PaperMod主题通常需要）
 
-      - name: Generate Configuration
-        env:
-          GITALK_CLIENT_ID_PLACEHOLDER: ${{ secrets.GITALK_CLIENT_ID_PLACEHOLDER }}
-          GITALK_CLIENT_SECRET_PLACEHOLDER: ${{ secrets.GITALK_CLIENT_SECRET_PLACEHOLDER }}
-        shell: bash
-        run: |
-          "${GITHUB_WORKSPACE}/config.sh"
+      # 原来的 Generate Configuration 步骤已被删除，因为不需要了
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
+        # 仅在推送到主分支时才执行发布
+        if: github.ref == 'refs/heads/master' # ⚠️ 注意：如果你上面改了 master，这里也要改成 refs/heads/master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          hugo-version: '0.109.0'
-          extended: true
