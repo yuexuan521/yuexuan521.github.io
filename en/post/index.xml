@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on In Pursuit of Simplicity</title>
+    <link>https://yuexuan521.github.io/en/post/</link>
+    <description>Recent content in Posts on In Pursuit of Simplicity</description>
+    <image>
+      <title>In Pursuit of Simplicity</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <atom:link href="https://yuexuan521.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://yuexuan521.github.io/en/post/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/en/post/test/</guid>
+      <description>&lt;p&gt;测试&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>测试</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
