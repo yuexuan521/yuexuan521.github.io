@@ -15,3 +15,12 @@
 1. 克隆仓库：
    ```bash
    git clone --recursive https://github.com/yuexuan521/yuexuan521.github.io.git
+   ```
+2. 运行 Hugo 服务器：
+   ```bash
+   hugo server
+   ```
+   
+## 📝 版权说明
+本博客内容由 [yuexuan521](https://github.com/yuexuan521/) 创作。
+仓库 Fork 自 [ramsayleung](https://github.com/ramsayleung/ramsayleung.github.io)，感谢原作者的配置分享。
