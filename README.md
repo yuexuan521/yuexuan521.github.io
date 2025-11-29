@@ -1,4 +1,4 @@
-# My Personal Blog (yuexuan521)
+# My Personal Blog (yuexuan)
 
 这是我的个人博客源代码，基于 [Hugo](https://gohugo.io/) 构建，使用了 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题。
 
