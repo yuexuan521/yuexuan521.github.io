@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>菠萝油与天光墟</title>
-    <link>https://yuexuan521.github.io/zh/</link>
-    <description>Recent content on 菠萝油与天光墟</description>
+    <title>MISC on 菠萝油与天光墟</title>
+    <link>https://yuexuan521.github.io/zh/tags/misc/</link>
+    <description>Recent content in MISC on 菠萝油与天光墟</description>
     <image>
       <title>菠萝油与天光墟</title>
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -13,7 +13,7 @@
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://yuexuan521.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yuexuan521.github.io/zh/tags/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF 金三 1</title>
       <link>https://yuexuan521.github.io/zh/post/buuctf-%E9%87%91%E4%B8%89-1_githubpage/</link>
@@ -72,49 +72,6 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
-    </item>
-    <item>
-      <title>关于我</title>
-      <link>https://yuexuan521.github.io/zh/about_me_zh/</link>
-      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/about_me_zh/</guid>
-      <description>&lt;h2 id=&#34;自我认知&#34;&gt;自我认知&lt;/h2&gt;
-&lt;p&gt;希望成为个有趣的人, work hard and be nice to people.
-信息安全从业者&lt;/p&gt;
-&lt;h2 id=&#34;主业&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;0x1&lt;/span&gt; 主业&lt;/h2&gt;
-&lt;h2 id=&#34;写作&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;0x2&lt;/span&gt; 写作&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Simple is Beautiful &lt;br/&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;开源&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;0x3&lt;/span&gt; 开源&lt;/h2&gt;
-&lt;h2 id=&#34;交流&#34;&gt;&lt;span class=&#34;section-num&#34;&gt;0x4&lt;/span&gt; 交流&lt;/h2&gt;
-&lt;p&gt;Ramsay 喜读书，电影，历史；亦爱生活，料理；闲暇时常涂鸦写作，抒发感想。 &lt;br/&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="自我认知">自我认知</h2>
-<p>希望成为个有趣的人, work hard and be nice to people.
-信息安全从业者</p>
-<h2 id="主业"><span class="section-num">0x1</span> 主业</h2>
-<h2 id="写作"><span class="section-num">0x2</span> 写作</h2>
-<blockquote>
-<p>Simple is Beautiful <br/></p>
-</blockquote>
-<h2 id="开源"><span class="section-num">0x3</span> 开源</h2>
-<h2 id="交流"><span class="section-num">0x4</span> 交流</h2>
-<p>Ramsay 喜读书，电影，历史；亦爱生活，料理；闲暇时常涂鸦写作，抒发感想。 <br/></p>
-<blockquote>
-<p>绿蚁新醅酒，红泥小火炉。 <br/></p>
-<p>晚来天欲雪，能饮一杯无？ <br/></p>
-</blockquote>
-<p>有想法交流的朋友可以给我发邮件: ramsayleung+blog[AT]gmail.com <br/></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title></title>
-      <link>https://yuexuan521.github.io/zh/post/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/test/</guid>
-      <description>&lt;p&gt;test&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>test</p>
-]]></content:encoded>
     </item>
   </channel>
 </rss>

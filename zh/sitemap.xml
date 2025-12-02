@@ -2,8 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuexuan521.github.io/zh/post/buuctf-%E9%87%91%E4%B8%89-1_githubpage/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/categories/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/categories/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/tags/misc/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/post/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/post/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/tags/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/categories/%E6%AF%94%E8%B5%9B/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/</loc>
-    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,30 +93,6 @@
                 href="https://yuexuan521.github.io/zh/archives/"
                 />
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yuexuan521.github.io/zh/categories/"
-                />
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/post/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yuexuan521.github.io/zh/post/"
-                />
-  </url><url>
     <loc>https://yuexuan521.github.io/zh/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -76,18 +103,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yuexuan521.github.io/zh/search/"
-                />
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yuexuan521.github.io/zh/tags/"
                 />
   </url>
 </urlset>
