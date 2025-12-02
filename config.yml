@@ -127,15 +127,15 @@ params:
     - name: github
       url: "https://github.com/yuexuan521"
     - name: stackoverflow
-      url: "https://stackoverflow.com/users/5738112/ramsay"
+      url: ""
     - name: x
-      url: "https://twitter.com/foobar_ramsay"
+      url: ""
     - name: linkedin
-      url: "https://www.linkedin.com/in/ramsayleung/"
+      url: ""
     - name: telegram
-      url: "https://t.me/+Z2PUA7NFt41iY2M1"
+      url: ""
 defaultContentLanguageInSubdir: true
-copyright: "See this site's source code [here](https://github.com/ramsayleung/ramsayleung.github.io), licensed under GPLv3 ·"
+copyright: "See this site's source code [here](https://github.com/yuexuan521/yuexuan521.github.io), licensed under GPLv3 ·"
 defaultContentLanguage: en
 languages:
   en:
