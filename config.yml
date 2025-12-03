@@ -1,5 +1,5 @@
 baseURL: https://yuexuan521.github.io
-title: "In Pursuit of Simplicity"
+title: "less but better"
 pagination:
   pagerSize: 5
 theme: PaperMod
@@ -84,7 +84,7 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: >
-      less but better. \
+      The true secret of happiness lies in taking a genuine interest in all the details of daily life. \
 
       _-- **Yue Xuan Blog**_
 
