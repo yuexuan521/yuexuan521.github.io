@@ -84,9 +84,9 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: >
-      There is Ramsay's personal blog, where he shares a bit of what he has learned along the way. \
+      The true secret of happiness lies in taking a genuine interest in all the details of daily life. \
 
-      _-- **Ramsay Leung**_
+      _-- **Yue Xuan**_
 
   analytics:
     google:
@@ -161,7 +161,7 @@ languages:
           url: /en/index.xml
           weight: 50
   zh:
-    title: "菠萝油与天光墟"
+    title: "知识带给我们自由"
     languageName: "中文"
     subtitle: "博客残本"
     contentDir: 'content/zh'

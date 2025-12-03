@@ -1,3 +1,5 @@
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512021211599.png)
+
 # My Personal Blog (yuexuan)
 
 这是我的个人博客源代码，基于 [Hugo](https://gohugo.io/) 构建，使用了 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题。
