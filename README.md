@@ -1,6 +1,8 @@
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512021211599.png)
 
-# My Personal Blog (YueXuan)
+# My Personal Blog (Yue Xuan)
+
+> The days are long but the decades are short.
 
 这是我的个人博客源代码，基于 [Hugo](https://gohugo.io/) 构建，使用了 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题。
 
@@ -27,4 +29,3 @@
 本博客内容由 [yuexuan521](https://github.com/yuexuan521/) 创作。
 仓库 Fork 自 [ramsayleung](https://github.com/ramsayleung/ramsayleung.github.io)，感谢原作者的配置分享。
 
-> The days are long but the decades are short.
