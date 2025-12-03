@@ -183,41 +183,41 @@ languages:
         - name: RSS
           url: "/zh/index.xml"
           weight: 50
-        - identifier: series
-          name: "系列 "
-          url: /zh/categories/
-          post: ' ▾'
-          weight: 2
-        - identifier: gain_and_loss
-          parent: series
-          name: "履迹与沉思"
-          url: /zh/categories/履迹与沉思/
-          weight: 1
-        - identifier: adventure_in_canada
-          parent: series
-          name: "旅加经历"
-          url: /zh/categories/旅加经历
-          weight: 2
-        - identifier: workflow
-          parent: series
-          name: "我的工作流"
-          url: /zh/categories/工作流/
-          weight: 3
-        - identifier: advanced_testing
-          parent: series
-          name: "测试技能进阶"
-          url: /zh/categories/测试技能进阶/
-          weight: 4
-        - identifier: soft_skill
-          parent: series
-          name: "软件工程师的软技能指北"
-          url: /zh/categories/软件工程师的软技能指北/
-          weight: 5
-        - identifier: book_reading
-          parent: series
-          name: "读书感悟"
-          url: /zh/categories/读书感悟/
-          weight: 6
+        # - identifier: series
+        #   name: "系列 "
+        #   url: /zh/categories/
+        #   post: ' ▾'
+        #   weight: 2
+        # - identifier: gain_and_loss
+        #   parent: series
+        #   name: "履迹与沉思"
+        #   url: /zh/categories/履迹与沉思/
+        #   weight: 1
+        # - identifier: adventure_in_canada
+        #   parent: series
+        #   name: "旅加经历"
+        #   url: /zh/categories/旅加经历
+        #   weight: 2
+        # - identifier: workflow
+        #   parent: series
+        #   name: "我的工作流"
+        #   url: /zh/categories/工作流/
+        #   weight: 3
+        # - identifier: advanced_testing
+        #   parent: series
+        #   name: "测试技能进阶"
+        #   url: /zh/categories/测试技能进阶/
+        #   weight: 4
+        # - identifier: soft_skill
+        #   parent: series
+        #   name: "软件工程师的软技能指北"
+        #   url: /zh/categories/软件工程师的软技能指北/
+        #   weight: 5
+        # - identifier: book_reading
+        #   parent: series
+        #   name: "读书感悟"
+        #   url: /zh/categories/读书感悟/
+        #   weight: 6
 
 markup:
   # https://github.com/adityatelange/hugo-PaperMod/issues/1386
