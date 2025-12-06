@@ -12,29 +12,17 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Wed, 23 Feb 2022 17:23:37 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>https://yuexuan521.github.io/en/about_me/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/en/about_me/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m Ramsay, a software engineer making a living by pressing keyboard, an amateur cook, an Emacs deadhead and Linux enthusiast.&lt;/p&gt;
-&lt;p&gt;The slogan of this site is &lt;strong&gt;&lt;strong&gt;In pursuit of Simplicity&lt;/strong&gt;&lt;/strong&gt;, because I prefer simple over complex&lt;/p&gt;
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ve contributed multiple projects to open source community, I mainly focus on RSpotify right now due to the constrained energy.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;RSpotify&lt;/a&gt;: A Spotify Web API wrapper implemented in Rust.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;</description>
       <content:encoded><![CDATA[<h2 id="about-me">About me</h2>
-<p>I&rsquo;m Ramsay, a software engineer making a living by pressing keyboard, an amateur cook, an Emacs deadhead and Linux enthusiast.</p>
-<p>The slogan of this site is <strong><strong>In pursuit of Simplicity</strong></strong>, because I prefer simple over complex</p>
 <h2 id="projects">Projects</h2>
-<p>I&rsquo;ve contributed multiple projects to open source community, I mainly focus on RSpotify right now due to the constrained energy.</p>
-<ul>
-<li><a href="https://github.com/ramsayleung/rspotify">RSpotify</a>: A Spotify Web API wrapper implemented in Rust.</li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
