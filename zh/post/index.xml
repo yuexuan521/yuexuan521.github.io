@@ -74,6 +74,58 @@
 </div>]]></content:encoded>
     </item>
     <item>
+      <title>Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛</title>
+      <link>https://yuexuan521.github.io/zh/post/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-github/</link>
+      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-github/</guid>
+      <description>&lt;h1 id=&#34;crypto--affine-password-第二届奇安信杯网络安全技能竞赛&#34;&gt;Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原创 已于 2024-09-24 22:29:43 修改 · 粉丝可见 · 1.9k 阅读 · 41 · 3 · CC 4.0 BY-SA版权 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+文章链接：https://yuexuan.blog.csdn.net/article/details/134363336&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="crypto--affine-password-第二届奇安信杯网络安全技能竞赛">Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛</h1>
+<blockquote>
+<p>原创 已于 2024-09-24 22:29:43 修改 · 粉丝可见 · 1.9k 阅读 · 41 · 3 · CC 4.0 BY-SA版权 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+文章链接：https://yuexuan.blog.csdn.net/article/details/134363336</p>
+</blockquote>
+<h2 id="crypto-affine-password-第二届奇安信杯网络安全技能竞赛">Crypto| Affine password 第二届“奇安信”杯网络安全技能竞赛</h2>
+<hr>
+<p><strong>文章目录</strong></p>
+<p>[TOC]</p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614420.png"></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">JYYHWVPIDCOZ
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
+<a href="http://www.metools.info/code/affinecipher183.html">仿射密码加密_仿射密码解密</a></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614422.png"></p>
+<p>手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">AFFINECRYPTO
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="仿射密码简介">仿射密码简介：</h3>
+<p>单码加密法的另一种形式称为仿射加密法（affinecipher）。在仿射加密法中，字母表的字母被赋予一个数字。例如a=0，b=1，c=2…z=25。仿射加密法的密钥为0-25直接的数字对。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title></title>
       <link>https://yuexuan521.github.io/zh/post/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
