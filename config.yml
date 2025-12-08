@@ -138,7 +138,7 @@ params:
     #  url: "https://yuexuan.blog.csdn.net/"
 defaultContentLanguageInSubdir: true
 copyright: "See this site's source code [here](https://github.com/yuexuan521/yuexuan521.github.io), licensed under GPLv3 ·"
-defaultContentLanguage: en
+defaultContentLanguage: zh
 languages:
   en:
     languageName: "English"
