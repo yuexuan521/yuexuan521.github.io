@@ -26,7 +26,7 @@ toc = true
 
 ## <span class="section-num">0x3</span> 交流
 
- <br/>
+有想法交流的朋友可以给我发邮件: yuexuan521@gmail.com <br/>
 
 > 人生易老天难老，岁岁重阳。今又重阳，战地黄花分外香。 <br/>
 >
@@ -36,4 +36,3 @@ toc = true
 
 
 
-有想法交流的朋友可以给我发邮件: yuexuan521@gmail.com <br/>
