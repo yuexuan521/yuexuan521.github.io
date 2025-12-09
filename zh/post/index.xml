@@ -125,16 +125,5 @@
 <p>单码加密法的另一种形式称为仿射加密法（affinecipher）。在仿射加密法中，字母表的字母被赋予一个数字。例如a=0，b=1，c=2…z=25。仿射加密法的密钥为0-25直接的数字对。</p>
 ]]></content:encoded>
     </item>
-    <item>
-      <title></title>
-      <link>https://yuexuan521.github.io/zh/post/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/test/</guid>
-      <description>&lt;p&gt;The blog is under construction.&lt;/p&gt;
-&lt;p&gt;博客建设中。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>The blog is under construction.</p>
-<p>博客建设中。</p>
-]]></content:encoded>
-    </item>
   </channel>
 </rss>
