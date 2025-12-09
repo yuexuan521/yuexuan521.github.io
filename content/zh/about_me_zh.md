@@ -9,7 +9,7 @@ toc = true
 
 
 
-## <span class="section-num">0x1</span> 关于 {#关于}
+## <span class="section-num">0x1</span> 关于 {# 关于}
 
 信息安全专业大三在读。喜欢阅读、电影、听音乐。似乎不大喜欢出去玩。
 
@@ -19,7 +19,7 @@ toc = true
 >
 > Wer zuletzt über Menschen hintermönte, muss lange stille sein gewesen; wer zuletzt einen Blitz lecken wird, muss lange gleich Wolken wandern.<br/>
 
-## <span class="section-num">0x2</span> Blog {# Blog}
+## <span class="section-num">0x2</span> Blog {#Blog}
 
 这个博客主要是网络安全方向的文章，有一些笔者的CTF题目 Write-ups，后续将专注于技术。也会发一些思考。
 
