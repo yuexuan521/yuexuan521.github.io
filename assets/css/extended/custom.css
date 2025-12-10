@@ -75,3 +75,22 @@ kbd + kbd {
 
 
 
+/* ==================================================================
+   2. Dracula 代码块背景修复 (仅保留此项修改)
+   Fix Dracula Theme Background
+   ================================================================== */
+
+/* 强制覆盖背景色为 Dracula 官方深色 (#282a36) */
+.post-content .highlight pre {
+    background-color: #282a36 !important; 
+    color: #f8f8f2 !important;            
+    border-radius: 4px;
+    padding: 10px;
+    /* 简单的灰色细边框，保持低调 */
+    border: 1px solid #44475a; 
+}
+
+/* 确保代码行号区域背景一致 */
+.post-content .highlight .lntd:first-child pre {
+    background-color: #282a36 !important;
+}
