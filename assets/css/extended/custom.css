@@ -151,3 +151,41 @@ a:hover {
     border-color: var(--cyber-purple);
     box-shadow: 0 0 5px var(--cyber-purple);
 }
+
+/* ==================================================================
+   1. 赛博朋克紫链接 (仅限文章正文)
+   Cyberpunk Purple Links - Only inside Markdown articles
+   ================================================================== */
+
+/* 正常状态下的链接 */
+.post-content a {
+    color: #bc13fe; /* 赛博朋克紫 */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* 鼠标悬停时的链接 */
+.post-content a:hover {
+    color: #d869ff; /* 亮一点的紫色 */
+    text-shadow: 0 0 8px rgba(188, 19, 254, 0.6); /* 发光效果 */
+    text-decoration: none;
+}
+
+/* ==================================================================
+   2. 代码块强制深色背景 (仅限文章正文)
+   Dark Code Blocks - Force dark background
+   ================================================================== */
+
+/* 强制覆盖背景色为深色，确保在白天模式下也是黑底 */
+.post-content .highlight pre {
+    background-color: #272822 !important; /* Monokai 的经典深灰背景 */
+    /* 如果你上面config用的是 dracula，这里改成 #282a36 */
+    
+    color: #f8f8f2 !important; /* 确保文字是浅色的 */
+    border-radius: 4px;        /* 轻微圆角 */
+    padding: 10px;             /* 增加一点内边距 */
+}
+
+/* (可选) 如果你想让行号区域的背景也协调一点，可以加上这句 */
+.post-content .highlight .lntd:first-child pre {
+   background-color: #272822 !important;
+}
