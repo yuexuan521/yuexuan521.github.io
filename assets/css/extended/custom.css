@@ -76,57 +76,55 @@ kbd + kbd {
 
 
 /* ==================================================================
-   CYBERPUNK PURPLE THEME & DARK CODE BLOCKS
-   Add this to the bottom of your custom.css
+   2. 赛博朋克风格变量定义
+   Cyberpunk Variables
    ================================================================== */
-
 :root {
-    /* 定义赛博朋克紫变量，方便统一修改 */
     --cyber-purple: #bc13fe; 
     --cyber-purple-light: #d869ff;
     --cyber-glow: 0 0 8px rgba(188, 19, 254, 0.6);
 }
 
-/* 1. 链接颜色与特效 (覆盖 PaperMod 默认样式) */
-a {
+/* ==================================================================
+   3. 链接样式 (严格限制在文章正文中)
+   Links Style - SCOPED to .post-content only
+   ================================================================== */
+.post-content a {
     color: var(--cyber-purple);
     transition: all 0.3s ease;
 }
 
-a:hover {
+.post-content a:hover {
     color: var(--cyber-purple-light);
-    /* 鼠标悬停时添加霓虹发光效果 */
     text-shadow: var(--cyber-glow);
-    text-decoration: none; /* 可选：去掉下划线 */
+    text-decoration: none;
 }
 
-/* 侧边栏社交图标颜色 (Github, Email等) */
-.social-icons a svg {
-    fill: var(--cyber-purple);
-    transition: all 0.3s ease;
-}
-.social-icons a:hover svg {
-    fill: var(--cyber-purple-light);
-    filter: drop-shadow(0 0 5px var(--cyber-purple));
-}
-
-/* 2. 鼠标选中文本的高亮颜色 */
+/* 鼠标选中文本的高亮颜色 (全局通用，因为很帅) */
 ::selection {
-    background: rgba(188, 19, 254, 0.3); /* 半透明紫色背景 */
+    background: rgba(188, 19, 254, 0.3);
     color: #fff;
 }
 
-/* 3. 代码块强制深色主题优化 */
-/* 确保代码块背景是深色的，即使在白天模式下 */
+/* ==================================================================
+   4. 代码块样式 (强制深色背景)
+   Dark Code Blocks
+   ================================================================== */
 .post-content .highlight pre {
-    background-color: #282a36 !important; /* Dracula 深色背景 */
+    background-color: #282a36 !important; /* 使用 Dracula 深色背景，视觉效果更好 */
     color: #f8f8f2 !important;            /* 浅色文字 */
     border-radius: 8px;
     border: 1px solid rgba(188, 19, 254, 0.3); /* 淡淡的紫色边框 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
 }
 
-/* 代码块的滚动条样式 (Chrome/Safari/Edge) */
+/* 可选：让行号背景也统一 */
+.post-content .highlight .lntd:first-child pre {
+    background-color: #282a36 !important;
+}
+
+/* 漂亮的紫色滚动条 (仅限代码块) */
 .post-content .highlight pre::-webkit-scrollbar {
     height: 8px;
 }
@@ -137,55 +135,4 @@ a:hover {
 .post-content .highlight pre::-webkit-scrollbar-track {
     background: #1e1e1e;
     border-radius: 4px;
-}
-
-/* 4. 目录 (Table of Contents) 当前激活项高亮 */
-.toc a:hover, .toc a.active {
-    color: var(--cyber-purple-light) !important;
-    border-left: 2px solid var(--cyber-purple);
-    padding-left: 5px;
-}
-
-/* 5. 搜索框高亮 (如果开启了搜索) */
-#searchbox input:focus {
-    border-color: var(--cyber-purple);
-    box-shadow: 0 0 5px var(--cyber-purple);
-}
-
-/* ==================================================================
-   1. 赛博朋克紫链接 (仅限文章正文)
-   Cyberpunk Purple Links - Only inside Markdown articles
-   ================================================================== */
-
-/* 正常状态下的链接 */
-.post-content a {
-    color: #bc13fe; /* 赛博朋克紫 */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-/* 鼠标悬停时的链接 */
-.post-content a:hover {
-    color: #d869ff; /* 亮一点的紫色 */
-    text-shadow: 0 0 8px rgba(188, 19, 254, 0.6); /* 发光效果 */
-    text-decoration: none;
-}
-
-/* ==================================================================
-   2. 代码块强制深色背景 (仅限文章正文)
-   Dark Code Blocks - Force dark background
-   ================================================================== */
-
-/* 强制覆盖背景色为深色，确保在白天模式下也是黑底 */
-.post-content .highlight pre {
-    background-color: #272822 !important; /* Monokai 的经典深灰背景 */
-    /* 如果你上面config用的是 dracula，这里改成 #282a36 */
-    
-    color: #f8f8f2 !important; /* 确保文字是浅色的 */
-    border-radius: 4px;        /* 轻微圆角 */
-    padding: 10px;             /* 增加一点内边距 */
-}
-
-/* (可选) 如果你想让行号区域的背景也协调一点，可以加上这句 */
-.post-content .highlight .lntd:first-child pre {
-   background-color: #272822 !important;
 }
