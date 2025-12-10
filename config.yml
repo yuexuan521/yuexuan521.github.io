@@ -229,7 +229,7 @@ markup:
     codeFences: true
     guessSyntax: true
     lineNos: true
-    # style: modus-operandi # useless, need to set custom css
+    style: monokai #modus-operandi # useless, need to set custom css
   goldmark:
     renderer:
       unsafe: true
