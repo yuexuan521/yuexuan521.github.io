@@ -33,8 +33,8 @@
 <p><strong>文章目录</strong></p>
 <p>[TOC]</p>
 <hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+<p>相关阅读</p>
+<p><a href="https://ctf-wiki.org/">CTF Wiki</a></p>
 <p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614420.png"></p>
 <h3 id="题目描述">题目描述：</h3>
 <p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
