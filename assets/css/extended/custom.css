@@ -72,3 +72,82 @@ kbd {
 kbd + kbd {
     margin-left: 0.3em;
 }
+
+
+
+/* ==================================================================
+   CYBERPUNK PURPLE THEME & DARK CODE BLOCKS
+   Add this to the bottom of your custom.css
+   ================================================================== */
+
+:root {
+    /* 定义赛博朋克紫变量，方便统一修改 */
+    --cyber-purple: #bc13fe; 
+    --cyber-purple-light: #d869ff;
+    --cyber-glow: 0 0 8px rgba(188, 19, 254, 0.6);
+}
+
+/* 1. 链接颜色与特效 (覆盖 PaperMod 默认样式) */
+a {
+    color: var(--cyber-purple);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--cyber-purple-light);
+    /* 鼠标悬停时添加霓虹发光效果 */
+    text-shadow: var(--cyber-glow);
+    text-decoration: none; /* 可选：去掉下划线 */
+}
+
+/* 侧边栏社交图标颜色 (Github, Email等) */
+.social-icons a svg {
+    fill: var(--cyber-purple);
+    transition: all 0.3s ease;
+}
+.social-icons a:hover svg {
+    fill: var(--cyber-purple-light);
+    filter: drop-shadow(0 0 5px var(--cyber-purple));
+}
+
+/* 2. 鼠标选中文本的高亮颜色 */
+::selection {
+    background: rgba(188, 19, 254, 0.3); /* 半透明紫色背景 */
+    color: #fff;
+}
+
+/* 3. 代码块强制深色主题优化 */
+/* 确保代码块背景是深色的，即使在白天模式下 */
+.post-content .highlight pre {
+    background-color: #282a36 !important; /* Dracula 深色背景 */
+    color: #f8f8f2 !important;            /* 浅色文字 */
+    border-radius: 8px;
+    border: 1px solid rgba(188, 19, 254, 0.3); /* 淡淡的紫色边框 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 代码块的滚动条样式 (Chrome/Safari/Edge) */
+.post-content .highlight pre::-webkit-scrollbar {
+    height: 8px;
+}
+.post-content .highlight pre::-webkit-scrollbar-thumb {
+    background: var(--cyber-purple);
+    border-radius: 4px;
+}
+.post-content .highlight pre::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+/* 4. 目录 (Table of Contents) 当前激活项高亮 */
+.toc a:hover, .toc a.active {
+    color: var(--cyber-purple-light) !important;
+    border-left: 2px solid var(--cyber-purple);
+    padding-left: 5px;
+}
+
+/* 5. 搜索框高亮 (如果开启了搜索) */
+#searchbox input:focus {
+    border-color: var(--cyber-purple);
+    box-shadow: 0 0 5px var(--cyber-purple);
+}
