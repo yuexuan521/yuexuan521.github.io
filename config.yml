@@ -42,7 +42,7 @@ params:
   ShowPostNavLinks: true                 # 显示“上一篇/下一篇”链接
   ShowBreadCrumbs: true                  # 显示面包屑导航 (主页 > post > 文章名)
   hideAuthor: true                       # 【重要】在文章标题下是否隐藏作者名。True=不显示作者。
-  ShowCodeCopyButtons: true              # 【建议改成 true】显示代码块右上角的“复制”按钮
+  ShowCodeCopyButtons: false             # 【建议改成 true】显示代码块右上角的“复制”按钮
   ShowWordCount: true                    # 显示文章字数统计
   ShowRssButtonInSectionTermList: true   # 在列表页显示 RSS 按钮。
   UseHugoToc: true                       # 使用 Hugo 原生目录生成器 (必须开启)
@@ -53,7 +53,7 @@ params:
   comments: true                         # 【总开关】是否开启评论。具体配置在后面 giscus 部分
    # --- 目录 (Table of Contents) 设置 ---
   showtoc: true                          # 是否默认显示右侧目录
-  tocopen: true                          # 目录默认是展开(true)还是折叠(false)
+  tocopen: false                          # 目录默认是展开(true)还是折叠(false)
 
   assets:
     disableHLJS: true # to disable highlight.js 【重要】禁用主题自带的 Highlight.js # 因为 Hugo 现在内置了 Chroma 高亮 (在 markup 里配置)，通常建议设为 true 以避免冲突。
