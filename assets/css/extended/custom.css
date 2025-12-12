@@ -75,3 +75,64 @@ kbd + kbd {
 
 
 
+/* ==================================================================
+   紧急修复：代码块排版崩溃与行号丢失问题
+   Hotfix for Broken Code Blocks & Missing Line Numbers
+   ================================================================== */
+
+/* 1. 强制重置代码容器的排版方式 */
+.post-content .highlight {
+    background-color: #282a36 !important; /* 确保背景色存在 */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow-x: auto !important; /* 允许横向滚动，防止挤压 */
+}
+
+/* 2. 核心修复：解决“代码竖排”问题 */
+/* 问题原因：原主题可能设置了 word-break 或 display:flex 导致每个单词换行 */
+.post-content .highlight pre,
+.post-content .highlight code,
+.post-content .highlight span {
+    white-space: pre !important;    /* 强制禁止换行，必须保持原样 */
+    word-break: normal !important;  /* 禁止打断单词 */
+    display: inline;                /* 强制 span 标签行内显示，防止变成方块 */
+}
+
+/* 3. 修复表格模式下的容器 (针对开启行号的情况) */
+.post-content .highlight table {
+    display: table !important;      /* 强制回表格布局 */
+    width: 100% !important;
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+}
+
+/* 4. 修复行号消失问题 */
+.post-content .highlight table td {
+    padding: 0 !important;
+    border: none !important;
+    display: table-cell !important; /* 强制单元格显示 */
+    vertical-align: top;
+}
+
+/* 5. 专门针对代码区域 (表格右侧) */
+.post-content .highlight table td:last-child pre {
+    display: block !important;      /* 代码块本身要是块级 */
+    padding: 10px !important;
+    margin: 0 !important;
+    overflow-x: auto !important;
+}
+
+/* 6. 专门针对行号区域 (表格左侧) */
+.post-content .highlight table td:first-child code,
+.post-content .highlight .lntd:first-child pre {
+    color: #6272a4 !important;      /* 行号颜色 */
+    background-color: #2e303e !important; /* 行号背景色 */
+    border-right: 1px solid #44475a !important; /* 分割线 */
+    padding: 10px !important;
+    margin: 0 !important;
+    user-select: none;
+    display: block !important;
+    width: auto !important;
+}
