@@ -42,7 +42,7 @@ params:
   ShowPostNavLinks: true                 # 显示“上一篇/下一篇”链接
   ShowBreadCrumbs: true                  # 显示面包屑导航 (主页 > post > 文章名)
   hideAuthor: true                       # 【重要】在文章标题下是否隐藏作者名。True=不显示作者。
-  ShowCodeCopyButtons: false             # 【建议改成 true】显示代码块右上角的“复制”按钮
+  ShowCodeCopyButtons: true             # 【建议改成 true】显示代码块右上角的“复制”按钮
   ShowWordCount: true                    # 显示文章字数统计
   ShowRssButtonInSectionTermList: true   # 在列表页显示 RSS 按钮。
   UseHugoToc: true                       # 使用 Hugo 原生目录生成器 (必须开启)
