@@ -12,30 +12,175 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Tue, 24 Sep 2024 22:29:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Sep 2024 22:33:24 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛</title>
+      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-%E7%9B%B8%E5%BD%93%E4%BA%8E%E7%AD%BE%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</link>
+      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-%E7%9B%B8%E5%BD%93%E4%BA%8E%E7%AD%BE%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;图片似乎经过了什么处理，你能否将其复原呢？&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，解压得到一张.jpg图片。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png"></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>图片似乎经过了什么处理，你能否将其复原呢？</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到一张.jpg图片。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg"></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png"></p>
+<p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png"></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png"></p>
+<p>2、尝试解压得到的压缩包，需要密码。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png"></p>
+<p>因为没有关于密码的提示，尝试用4位纯数字进行爆破，出现提示“no usable files found”（未找到可用文件）。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png"></p>
+<p><a href="https://blog.csdn.net/qq_26187985/article/details/83654197">zip伪加密原理</a>
+猜测该zip压缩包为伪加密，通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png"></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">未加密：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为00 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为00 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">伪加密：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为00 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为09 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">真加密：
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为09 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为09 <span class="m">00</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ps:也不一定要09 00或00 00，只要是奇数都视为加密，而偶数则视为未加密
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、修改后，解压压缩包不需要密码，解压成功，得到一张.png图片。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png"></p>
+<p>从这里也可以看出图片经过修改，无法正常显示。在010 Editor中打开，提示CRC校验错误，结合题目提示“图片似乎经过了什么处理”，认为图片被修改了宽高。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png"></p>
+<p>通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">struct</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">crcbp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;repair.png&#34;</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>    <span class="c1">#打开图片（修改图片路径）</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">crcbp</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span> <span class="o">+</span> \
+</span></span><span class="line"><span class="cl">            <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="n">crcbp</span><span class="p">[</span><span class="mi">24</span><span class="p">:</span><span class="mi">29</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">crc32</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">crc32</span> <span class="o">==</span> <span class="mh">0x9BF1293B</span><span class="p">):</span>    <span class="c1">#图片当前CRC（修改CRC）</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hex:&#39;</span><span class="p">,</span> <span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">hex</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到正确的宽高值。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png"></p>
+<p>修改图片中的宽高参数，然后保存图片查看。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png"></p>
+<p>获得flag。</p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png"></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>bdbace45-506b-f530-aa4d-57884b2025e<span class="o">}(</span>”-“可能为“_“<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
       <title>Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛</title>
-      <link>https://yuexuan521.github.io/zh/post/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-github/</link>
+      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</link>
       <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-github/</guid>
-      <description>&lt;h1 id=&#34;crypto--affine-password-第二届奇安信杯网络安全技能竞赛&#34;&gt;Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;原创 已于 2024-09-24 22:29:43 修改 · 粉丝可见 · 1.9k 阅读 · 41 · 3 · CC 4.0 BY-SA版权 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-文章链接：https://yuexuan.blog.csdn.net/article/details/134363336&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h1 id="crypto--affine-password-第二届奇安信杯网络安全技能竞赛">Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛</h1>
-<blockquote>
-<p>原创 已于 2024-09-24 22:29:43 修改 · 粉丝可见 · 1.9k 阅读 · 41 · 3 · CC 4.0 BY-SA版权 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-文章链接：https://yuexuan.blog.csdn.net/article/details/134363336</p>
-</blockquote>
-<h2 id="crypto-affine-password-第二届奇安信杯网络安全技能竞赛">Crypto| Affine password 第二届“奇安信”杯网络安全技能竞赛</h2>
-<hr>
-<p><strong>文章目录</strong></p>
-<p>[TOC]</p>
-<hr>
-<p>相关阅读</p>
-<p><a href="https://ctf-wiki.org/">CTF Wiki</a></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614420.png"></p>
+      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;JYYHWVPIDCOZ
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
+&lt;a href=&#34;http://www.metools.info/code/affinecipher183.html&#34;&gt;仿射密码加密_仿射密码解密&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png"></p>
 <h3 id="题目描述">题目描述：</h3>
 <p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
 <h3 id="密文">密文：</h3>
@@ -51,7 +196,7 @@
 <h3 id="解题思路">解题思路：</h3>
 <p>1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
 <a href="http://www.metools.info/code/affinecipher183.html">仿射密码加密_仿射密码解密</a></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614422.png"></p>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png"></p>
 <p>手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。</p>
 <h3 id="flag">flag：</h3>
 <div class="highlight"><div class="chroma">

@@ -12,55 +12,76 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Mon, 01 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2024 17:11:45 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1024程序员节</title>
+      <link>https://yuexuan521.github.io/zh/tags/1024%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82/</link>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/1024%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Crypto</title>
+      <link>https://yuexuan521.github.io/zh/tags/crypto/</link>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/crypto/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CTF</title>
       <link>https://yuexuan521.github.io/zh/tags/ctf/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
-      <title>MISC</title>
+      <title>Misc</title>
       <link>https://yuexuan521.github.io/zh/tags/misc/</link>
-      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/misc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web安全</title>
-      <link>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
       <title>安全</title>
       <link>https://yuexuan521.github.io/zh/tags/%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
-      <title>笔记</title>
-      <link>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>密码学</title>
-      <link>https://yuexuan521.github.io/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
+      <title>奇安信</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1/</link>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>网络安全</title>
       <link>https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web安全</title>
+      <link>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>笔记</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>奇安信杯</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF/</link>
+      <pubDate>Tue, 24 Sep 2024 22:31:42 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF/</guid>
       <description></description>
     </item>
   </channel>
