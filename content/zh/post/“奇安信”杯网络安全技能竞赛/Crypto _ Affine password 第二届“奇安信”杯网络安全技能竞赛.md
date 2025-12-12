@@ -11,30 +11,14 @@ tags:
 - "密码学"
 ---
 
-# Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛
-
-> 原创 已于 2024-09-24 22:29:43 修改 · 粉丝可见 · 1.9k 阅读 · 41 · 3 · CC 4.0 BY-SA版权 版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-> 文章链接：https://yuexuan.blog.csdn.net/article/details/134363336
-
-## Crypto| Affine password 第二届“奇安信”杯网络安全技能竞赛
-
 ---
 
 
-
-**文章目录**
-
-[TOC]
-
-
-
----
 
 相关阅读
-
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614420.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png)
 
 ### 题目描述：
 
@@ -53,7 +37,7 @@ JYYHWVPIDCOZ
 1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
 [仿射密码加密_仿射密码解密](http://www.metools.info/code/affinecipher183.html) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512071614422.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png)
 
 手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。
 
