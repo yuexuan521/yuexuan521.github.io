@@ -203,10 +203,10 @@ languages: # 定义具体语言板块。
         #   url: /zh/categories/
         #   post: ' ▾'
         #   weight: 2
-        # - identifier: gain_and_loss  # 子菜单的唯一标识
-        #   parent: series             # 【关键】指定父菜单是谁 (series)
-        #   name: "履迹与沉思"          # 子菜单名字
-        #   url: /zh/categories/履迹与沉思/
+        # - identifier: QAXCTF                                # 子菜单的唯一标识
+        #   parent: series                                    # 【关键】指定父菜单是谁 (series)
+        #   name: "“奇安信”杯网络安全技能竞赛"                  # 子菜单名字
+        #   url: /zh/categories/“奇安信”杯网络安全技能竞赛/
         #   weight: 1
         # - identifier: adventure_in_canada
         #   parent: series
