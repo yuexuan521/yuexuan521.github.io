@@ -545,8 +545,8 @@
 <p><img alt="image-20241022205934149" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png"></p>
 <h3 id="web">WEB</h3>
 <hr>
-<p>相关阅读：
-<a href="https://blog.csdn.net/YueXuan_521/article/details/134477406?spm=1001.2014.3001.5502">BUUCTF [BJDCTF2020]鸡你太美 1</a></p>
+<p>相关阅读：</p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/134477406?spm=1001.2014.3001.5502">BUUCTF [BJDCTF2020]鸡你太美 1</a></p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/133934621?spm=1001.2014.3001.5502">BUUCTF 大白 1</a></p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/134591569?spm=1001.2014.3001.5502">BUUCTF [ACTF新生赛2020]base64隐写 1</a></p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/134358887?spm=1001.2014.3001.5502">Misc | bucket 第二届“奇安信”杯网络安全技能竞赛</a></p>
@@ -804,6 +804,40 @@
 </div>
 </div><h3 id="仿射密码简介">仿射密码简介：</h3>
 <p>单码加密法的另一种形式称为仿射加密法（affinecipher）。在仿射加密法中，字母表的字母被赋予一个数字。例如a=0，b=1，c=2…z=25。仿射加密法的密钥为0-25直接的数字对。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>中国蚁剑 安装教程 2024年5月</title>
+      <link>https://yuexuan521.github.io/zh/post/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-2024%E5%B9%B45%E6%9C%88/</link>
+      <pubDate>Mon, 10 Jun 2024 09:32:56 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-2024%E5%B9%B45%E6%9C%88/</guid>
+      <description>&lt;h2 id=&#34;2024511中国蚁剑安装教程&#34;&gt;2024/5/11中国蚁剑安装教程&lt;/h2&gt;
+&lt;p&gt;一、下载中国蚁剑的加载器和核心源码（两个都要用到）&lt;/p&gt;
+&lt;p&gt;github官方下载地址：https://github.com/AntSwordProject/&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="2024511中国蚁剑安装教程">2024/5/11中国蚁剑安装教程</h2>
+<p>一、下载中国蚁剑的加载器和核心源码（两个都要用到）</p>
+<p>github官方下载地址：https://github.com/AntSwordProject/</p>
+<p>参考文档： <a href="https://github.com/AntSwordProject/antSword/blob/master/README_CN.md">antSword/README_CN.md at master · AntSwordProject/antSword · GitHub</a></p>
+<p><img alt="屏幕截图 2024-05-11 092201" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png"></p>
+<p><a href="https://github.com/AntSwordProject/antSword?tab=readme-ov-file">核心源码下载：</a></p>
+<p><img alt="image-20240511093710574" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png"></p>
+<p><a href="https://github.com/AntSwordProject/AntSword-Loader">加载器下载：</a></p>
+<p><img alt="image-20240511092300458" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png"></p>
+<p>二、在完成两个文件的下载后，进行解压缩。接下来，到名为“AntSword-Loader-v4.0.3-win32-x64”的加载器文件夹，然后启动该文件夹内的AntSword.exe应用程序。</p>
+<p><img alt="image-20240511092358026" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png"></p>
+<p>加载器页面：</p>
+<p><img alt="image-20240511092512504" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png"></p>
+<p>三、假如依照指示，用户选定一个空白目录来进行初始化操作，系统将自动执行源代码的下载任务。</p>
+<p><img alt="image-20240511092646557" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png"></p>
+<p>不过，我们已经将源代码下载好了，选择源代码的文件夹路径。文件夹内如下所示：</p>
+<p><img alt="image-20240511093202183" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png"></p>
+<p>初始化进程完毕后，系统会自动重新启动。再次开启程序时，即可直接开始使用。</p>
+<p><img alt="image-20240511093323854" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png"></p>
+<p>小问题：</p>
+<p>下载中国蚁剑的核心源码时，可能因为检测到病毒无法下载，或文件被防火墙删除。</p>
+<p><img alt="image-20240511095320246" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png"></p>
+<p>前往“Windows防护中心”–&gt;“保护历史记录”，选择“操作”中的“还原”，就可以解决问题。</p>
+<p><img alt="image-20240511095656181" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png"></p>
 ]]></content:encoded>
     </item>
   </channel>
