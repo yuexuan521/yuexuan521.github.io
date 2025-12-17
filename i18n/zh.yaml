@@ -4,7 +4,7 @@
   translation: "文章日历"
 - id: thousand_words
   translation: "千字"
-- id: copy_to_clipboard
-  translation: "copy"   # 这里改成你想要的小写 "copy"
-- id: copy_success
-  translation: "done" # 这里是点击后的提示，建议改成 "copied" 或 "done"
+# - id: copy_to_clipboard
+#   translation: "copy"   # 这里改成你想要的小写 "copy"
+# - id: copy_success
+#   translation: "done" # 这里是点击后的提示，建议改成 "copied" 或 "done"
