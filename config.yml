@@ -206,12 +206,12 @@ languages: # 定义具体语言板块。
         - identifier: QAX_CTF                                # 子菜单的唯一标识
           parent: series                                    # 【关键】指定父菜单是谁 (series)
           name: "“奇安信”杯网络安全技能竞赛"                  # 子菜单名字
-          url: /zh/categories/“奇安信”杯网络安全技能竞赛/
+          url: /zh/“奇安信”杯网络安全技能竞赛/
           weight: 1
         - identifier: YueXuan_Algorithm
           parent: series
           name: "玥轩算法"
-          url: /zh/categories/玥轩算法
+          url: /zh/玥轩算法
           weight: 2
         # - identifier: workflow
         #   parent: series
