@@ -21,6 +21,19 @@
     <loc>https://yuexuan521.github.io/zh/tags/1024%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82/</loc>
     <lastmod>2024-10-24T17:11:45+00:00</lastmod>
   </url><url>
+    <loc>https://yuexuan521.github.io/zh/categories/</loc>
+    <lastmod>2024-10-24T17:11:45+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/categories/"
+                />
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/crypto/</loc>
     <lastmod>2024-10-24T17:11:45+00:00</lastmod>
   </url><url>
@@ -53,6 +66,9 @@
     <lastmod>2024-10-24T17:11:45+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1/</loc>
+    <lastmod>2024-10-24T17:11:45+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/categories/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</loc>
     <lastmod>2024-10-24T17:11:45+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
@@ -173,18 +189,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://yuexuan521.github.io/zh/archives/"
-                />
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yuexuan521.github.io/zh/categories/"
                 />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/search/</loc>
