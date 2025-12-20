@@ -2,6 +2,7 @@
 title: "Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛"
 date: 2024-09-24 22:29:43
 category: "“奇安信”杯网络安全技能竞赛"
+categories = ["“奇安信”杯网络安全技能竞赛"] 
 tags:
 - "web安全"
 - "安全"
