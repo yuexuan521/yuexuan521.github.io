@@ -1,9 +1,3 @@
 User-agent: *
-Disallow: /404.html
-Disallow: /search/
-Disallow: /zh/search/
-Disallow: /en/search/
-Disallow: /index.json
-Disallow: /zh/index.json
-Disallow: /en/index.json
+Disallow:
 Sitemap: https://yuexuan521.github.io/sitemap.xml
