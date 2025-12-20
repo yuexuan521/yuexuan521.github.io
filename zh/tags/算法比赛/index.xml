@@ -19,19 +19,13 @@
       <link>https://yuexuan521.github.io/zh/post/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%A0%81%E8%B9%84%E9%9B%86%E6%96%B0%E6%89%8B%E6%9D%91600%E9%A2%98mt1020-1040c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 06 Aug 2023 10:31:48 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%A0%81%E8%B9%84%E9%9B%86%E6%96%B0%E6%89%8B%E6%9D%91600%E9%A2%98mt1020-1040c%E8%AF%AD%E8%A8%80/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;算法竞赛入门【码蹄集新手村600题】(MT1020-1040）C语言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210652.jpeg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
 &lt;h3 id=&#34;mt1021-f格式符&#34;&gt;MT1021 %f格式符&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;（1）题目&lt;/strong&gt;&lt;/em&gt;
 输入一个实数，第一次按实型输出；第二次保留2位小数输出；第三次保留3位小数但最小列宽8列输出，空格分隔。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><strong>算法竞赛入门【码蹄集新手村600题】(MT1020-1040）C语言</strong></p>
-<p>[TOC]</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210652.jpeg"></p>
-<p>码蹄集网站地址： <a href="https://www.matiji.net/exam/ojquestionlist">https://www.matiji.net/exam/ojquestionlist</a></p>
+      <content:encoded><![CDATA[<p>码蹄集网站地址： <a href="https://www.matiji.net/exam/ojquestionlist">https://www.matiji.net/exam/ojquestionlist</a></p>
 <hr>
 <h2 id="目录">目录</h2>
 <h3 id="mt1021-f格式符">MT1021 %f格式符</h3>
@@ -1549,19 +1543,13 @@
       <link>https://yuexuan521.github.io/zh/post/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%A0%81%E8%B9%84%E9%9B%86%E6%96%B0%E6%89%8B%E6%9D%91600%E9%A2%98mt1100-1120c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Fri, 04 Aug 2023 18:43:29 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E5%85%A5%E9%97%A8%E7%A0%81%E8%B9%84%E9%9B%86%E6%96%B0%E6%89%8B%E6%9D%91600%E9%A2%98mt1100-1120c%E8%AF%AD%E8%A8%80/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;算法竞赛入门【码蹄集新手村600题】(MT1100-1120）C语言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426136.jpeg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
 &lt;h3 id=&#34;mt1101-带参数的宏ii&#34;&gt;MT1101 带参数的宏II&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;（1）题目&lt;/strong&gt;&lt;/em&gt;
 请编写一个简单程序，把f(x)=x*(x-1)定义成带参数的宏，从键盘输入a，b，将a+b的和作为宏实参计算并输出结果。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p><strong>算法竞赛入门【码蹄集新手村600题】(MT1100-1120）C语言</strong></p>
-<p>[TOC]</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426136.jpeg"></p>
-<p>码蹄集网站地址： <a href="https://www.matiji.net/exam/ojquestionlist">https://www.matiji.net/exam/ojquestionlist</a></p>
+      <content:encoded><![CDATA[<p>码蹄集网站地址： <a href="https://www.matiji.net/exam/ojquestionlist">https://www.matiji.net/exam/ojquestionlist</a></p>
 <hr>
 <h2 id="目录">目录</h2>
 <h3 id="mt1101-带参数的宏ii">MT1101 带参数的宏II</h3>
