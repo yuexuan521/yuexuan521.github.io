@@ -213,11 +213,11 @@ languages: # 定义具体语言板块。
           name: "玥轩算法"
           url: /zh/categories/玥轩算法
           weight: 2
-        - identifier: CDN_Network
-          parent: series
-          name: "神州数码网络设备"
-          url: /zh/categories/神州数码网络设备
-          weight: 3
+        # - identifier: CDN_Network
+        #   parent: series
+        #   name: "神州数码网络设备"
+        #   url: /zh/categories/神州数码网络设备
+        #   weight: 3
         # - identifier: advanced_testing
         #   parent: series
         #   name: "测试技能进阶"
