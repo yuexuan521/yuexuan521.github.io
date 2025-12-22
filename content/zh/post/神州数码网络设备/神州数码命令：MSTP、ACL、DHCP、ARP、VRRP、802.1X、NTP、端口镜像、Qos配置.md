@@ -38,22 +38,22 @@ tags:
 #### 二、ACL配置
 
 **（一）、标准的ACL** 
-`access-list 10 {deny | permit} {{<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
+`access-list 10 {deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
 **（二）、命名标准ACL** 
 1、命名
 `ip access-list standard acb` 
 2、制定规则
-`{deny | permit} {{<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
+`{deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
 3、应用到接口
 `ip access-group 名称 in/out` 
 **（三）、扩展的ACL** 
-`access-list 102 {deny | permit} 协议类型 {{<源网络> <反掩码>} | any-source | {host-source<源地址>}} {{<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
+`access-list 102 {deny | permit} 协议类型 {<源网络> <反掩码>} | any-source | {host-source<源地址>}} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
 **（四）、命名扩展ACL** 
 1、命名
 `ip access-list extended acb` 
 2、制定规则
-`[no] {deny | permit} 协议类型 {{<源网络> <反掩码>} | any-source | {host-source` 
-`<源地址>}} {{<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
+`[no] {deny | permit} 协议类型 <源网络> <反掩码> | any-source | {host-source` 
+`<源地址>}} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
 3、应用到接口
 
 **(五)、MAC命名扩展ACL** 
@@ -80,7 +80,7 @@ deny host-source-mac 00-FF-51-FD-AE-15 host-destination-mac E0-94-67-05-5D-84
 `Sunday}<开始时间>to{Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|` 
 `Sunday} <结束时间>` 
 或
-`[no]periodic{{Monday+Tuesday+Wednesday+Thursday+Friday+Saturday+Sunday}|` 
+`[no]periodic{Monday+Tuesday+Wednesday+Thursday+Friday+Saturday+Sunday}|` 
 `daily| weekdays | weekend} <开始时间> to <结束时间>` 
 3、绝对时间范围
 `[no]absolute start <开始时间> <开始日期> [end <结束时间> <结束日期>]` 
@@ -429,19 +429,5 @@ Switch #show mls qos aggregate-policer policer1
 命令：show mls-qos
 例：在SWB上设置PCA的流量不能超过5M
 
----
 
-相关阅读
-
-- [神州设备使用笔记：命令大全](https://blog.csdn.net/YueXuan_521/article/details/136529482?spm=1001.2014.3001.5502)
-
-- [神州数码命令：交换机配置](https://blog.csdn.net/YueXuan_521/article/details/137198407?spm=1001.2014.3001.5502)
-
-- [神州数码命令：路由器配置](https://blog.csdn.net/YueXuan_521/article/details/137509581?spm=1001.2014.3001.5502)
-
-- [神州数码命令：MSTP、ACL、DHCP、ARP、VRRP、802.1X、NTP、端口镜像、Qos配置](https://blog.csdn.net/YueXuan_521/article/details/137911352?spm=1001.2014.3001.5502)
-
-- [神州数码命令：无线配置](https://blog.csdn.net/YueXuan_521/article/details/137992330?spm=1001.2014.3001.5502)
-
-- [神州数码防火墙：DCFW-1800系列防火墙配置](https://blog.csdn.net/YueXuan_521/article/details/137991767?spm=1001.2014.3001.5502)
 
