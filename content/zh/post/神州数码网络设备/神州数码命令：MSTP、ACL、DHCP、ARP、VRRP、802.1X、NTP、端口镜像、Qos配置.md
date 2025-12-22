@@ -38,29 +38,29 @@ tags:
 #### 二、ACL配置
 
 **（一）、标准的ACL** 
-`access-list 10 {deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
+`access-list 10 {deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}` 
 **（二）、命名标准ACL** 
 1、命名
 `ip access-list standard acb` 
 2、制定规则
-`{deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}}` 
+`{deny | permit} {<源网络> <反掩码>} | any-source | {host-source <源地址>}` 
 3、应用到接口
 `ip access-group 名称 in/out` 
 **（三）、扩展的ACL** 
-`access-list 102 {deny | permit} 协议类型 {<源网络> <反掩码>} | any-source | {host-source<源地址>}} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
+`access-list 102 {deny | permit} 协议类型 {<源网络> <反掩码>} | any-source | {host-source<源地址>} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
 **（四）、命名扩展ACL** 
 1、命名
 `ip access-list extended acb` 
 2、制定规则
 `[no] {deny | permit} 协议类型 <源网络> <反掩码> | any-source | {host-source` 
-`<源地址>}} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>}} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
+`<源地址>} {<目标网络> <反掩码>} | any-destination | {host-destination <目标主机地址>} [precedence <优先级值（0-7）>] [tos<服务级类型（1-15）>][time-range<时间范围名称>]` 
 3、应用到接口
 
 **(五)、MAC命名扩展ACL** 
 1、命名： `mac-ip-access-list extended` 
 2、制定规则
-`{deny|permit}{any-source-mac|{host-source-mac<host_smac>}|{}}` 
-`{any-destination-mac|{host-destination-mac<host_dmac>}|{}}` 
+`{deny|permit}{any-source-mac|{host-source-mac<host_smac>}|{}` 
+`{any-destination-mac|{host-destination-mac<host_dmac>}|{}` 
 
 ```
 例：在SW3的3号接口上,要求mac为 00-FF-51-FD-AE-15的主机不能访问行政部的主机MAC地址为：E0-94-67-05-5D-84，其余主机正常访问。
