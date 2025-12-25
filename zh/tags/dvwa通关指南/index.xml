@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DVWA通关指南 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97/</link>
+    <description>Recent content in DVWA通关指南 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 26 Sep 2024 12:24:47 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络安全 DVWA通关指南 Cross Site Request Forgery (CSRF)</title>
+      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</link>
+      <pubDate>Thu, 26 Sep 2024 12:24:47 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
+      <description>&lt;h2 id=&#34;dvwa-cross-site-request-forgery-csrf&#34;&gt;DVWA Cross Site Request Forgery (CSRF)&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CSRF是跨站请求伪造攻击，由客户端发起，是由于没有在执行关键操作时，进行 &lt;code&gt;是否由用户自愿发起的&lt;/code&gt; 确认攻击者通过用户的浏览器来注入额外的网络请求，来破坏一个网站会话的完整性。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwa-cross-site-request-forgery-csrf">DVWA Cross Site Request Forgery (CSRF)</h2>
+<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg"></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>CSRF是跨站请求伪造攻击，由客户端发起，是由于没有在执行关键操作时，进行 <code>是否由用户自愿发起的</code> 确认攻击者通过用户的浏览器来注入额外的网络请求，来破坏一个网站会话的完整性。</p>
+<p>比如某网站 <strong>用户信息修改</strong> 功能，没有验证Referer也没添加Token，攻击者可以用HTML构造恶意代码提交POST请求，诱骗已经登陆的受害者点击，可以直接修改用户信息</p>
+<p><strong>修复建议</strong></p>
+<blockquote>
+<ul>
+<li>
+<p>验证Referer</p>
+</li>
+<li>
+<p>添加token</p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<h3 id="dvwa-low-级别-csrf">DVWA Low 级别 CSRF</h3>
+<p>0、分析网页源代码（路径：“D:\phpstudy_pro\DVWA-master\vulnerabilities\csrf\source\low.php”）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;Change&#39;</span><span class="p">]))</span> <span class="p">{</span> <span class="c1">// 检查是否有请求更改密码的动作
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// 获取用户输入的新密码和确认密码
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$pass_new</span>  <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;password_new&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$pass_conf</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;password_conf&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 检查两次输入的密码是否匹配
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nv">$pass_new</span> <span class="o">==</span> <span class="nv">$pass_conf</span><span class="p">)</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">        <span class="c1">// 密码匹配
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// 防止SQL注入，转义新密码字符串
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$pass_new</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$pass_new</span><span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// 对新密码进行MD5哈希加密（注意：MD5加密在此处已经过时，不建议用于存储密码）
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$pass_new</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span><span class="nv">$pass_new</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 构造SQL更新语句，更新当前登录用户（由dvwaCurrentUser()函数获取）的密码
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$insert</span> <span class="o">=</span> <span class="s2">&#34;UPDATE `users` SET password = &#39;</span><span class="si">$pass_new</span><span class="s2">&#39; WHERE user = &#39;&#34;</span> <span class="o">.</span> <span class="nx">dvwaCurrentUser</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&#34;&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 执行SQL查询
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$insert</span><span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span><span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 如果密码成功更改，则反馈给用户
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Password Changed.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 如果两次输入的密码不匹配，则反馈错误信息
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Passwords did not match.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 关闭数据库连接
+</span></span></span><span class="line"><span class="cl">    <span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>1、选择DVWA的CSRF，修改密码为111，提交后观察到网站链接发生变化</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">http://dvwa/vulnerabilities/csrf/?password_new=111&amp;password_conf=111&amp;Change=Change#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>观察链接，认为使用get方式提交修改密码参数，只要三个参数符合就可以执行密码修改的操作</p>
+<p><img alt="image-20240415193519864" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png"></p>
+<p>2、打开一个新标签页，在地址栏输入 <code>http://dvwa/vulnerabilities/csrf/?password_new=111&amp;password_conf=111&amp;Change=Change#</code> ，回车后，进入DVWA中并提示Password Changed，修改密码成功。</p>
+<p><img alt="image-20240415194631245" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png"></p>
+<p><img alt="image-20240415194532633" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png"></p>
+<p>3、可以通过将长连接转换为短链接的方法，诱使用户点击链接，通过 <a href="https://uutool.cn/dwz/">在线工具</a> 转换</p>
+<p><img alt="image-20240415194928196" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png"></p>
+<h3 id="dvwa-medium-级别-csrf">DVWA Medium 级别 CSRF</h3>
+<p>0、分析网页源代码（路径：“D:\phpstudy_pro\DVWA-master\vulnerabilities\csrf\source\medium.php”）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Change&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Checks to see where the request came from
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//检查$_SERVER[&#39;HTTP_REFERER&#39;]，看看请求是否来自包含当前服务器名称$_SERVER[&#39;SERVER_NAME&#39;]的地址。stripos函数用于查找HTTP_REFERER是否包含服务器名
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nx">stripos</span><span class="p">(</span> <span class="nv">$_SERVER</span><span class="p">[</span> <span class="s1">&#39;HTTP_REFERER&#39;</span> <span class="p">]</span> <span class="p">,</span><span class="nv">$_SERVER</span><span class="p">[</span> <span class="s1">&#39;SERVER_NAME&#39;</span> <span class="p">])</span> <span class="o">!==</span> <span class="k">false</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span>  <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_new&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$pass_conf</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_conf&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Do the passwords match?
+</span></span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="o">==</span> <span class="nv">$pass_conf</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">// They do!
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$pass_new</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass_new</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">			<span class="nv">$pass_new</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">			<span class="c1">// Update the database
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$insert</span> <span class="o">=</span> <span class="s2">&#34;UPDATE `users` SET password = &#39;</span><span class="si">$pass_new</span><span class="s2">&#39; WHERE user = &#39;&#34;</span> <span class="o">.</span> <span class="nx">dvwaCurrentUser</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&#34;&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$insert</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">			<span class="c1">// Feedback for the user
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Password Changed.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">// Issue with passwords matching
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Passwords did not match.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Didn&#39;t come from a trusted source
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;That request didn&#39;t look correct.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>1、尝试修改密码为222，修改成功，得到链接</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">http://dvwa/vulnerabilities/csrf/?password_new=222&amp;password_conf=222&amp;Change=Change#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、打开新的标签页，使用上面的地址，出现错误提示，密码修改错误</p>
+<p><img alt="image-20240417080206278" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png"></p>
+<p>3、打开计算机代理，修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，BurpSuite调整代理参数与电脑代理一致</p>
+<p><img alt="image-20240412094734133" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png"></p>
+<p><img alt="image-20240412095237028" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png"></p>
+<p><img alt="image-20240412094536046" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png"></p>
+<p>4、正常修改密码的网页，使用BurpSuitePro捕获流量包，发现多出Referer属性信息</p>
+<p><img alt="image-20240418165344132" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png"></p>
+<p>5、而直接粘贴链接修改密码失败的报文缺少Referer属性信息，右键选择Send to Repeater</p>
+<p><img alt="image-20240418170054026" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png"></p>
+<p><img alt="image-20240418170418876" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png"></p>
+<p>5、打开Repeater选项卡，给Request请求中添加Referer信息，Referer需要包括&quot;dvwa&quot;字段（需要符合同源策略），点击Send发送，修改密码成功</p>
+<p><img alt="image-20240418172052977" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png"></p>
+<p><img alt="image-20240418172120333" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png"></p>
+<h3 id="dvwa-high-级别-csrf">DVWA High 级别 CSRF</h3>
+<p>0、分析网页源代码（路径：“D:\phpstudy_pro\DVWA-master\vulnerabilities\csrf\source\high.php”）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Change&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass_new</span>  <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_new&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass_conf</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_conf&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Do the passwords match?
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="o">==</span> <span class="nv">$pass_conf</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// They do!
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass_new</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Update the database
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$insert</span> <span class="o">=</span> <span class="s2">&#34;UPDATE `users` SET password = &#39;</span><span class="si">$pass_new</span><span class="s2">&#39; WHERE user = &#39;&#34;</span> <span class="o">.</span> <span class="nx">dvwaCurrentUser</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&#34;&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$insert</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for the user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Password Changed.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Issue with passwords matching
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Passwords did not match.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>1、正常修改密码并成功，使用BurpSuitePro捕获流量包，发现仍使用get提交方式，但多了验证参数token</p>
+<p><img alt="image-20240418174557916" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png"></p>
+<p>2、直接将链接复制粘贴修改密码肯定失败，提示token不正确</p>
+<p><img alt="image-20240418180900000" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png"></p>
+<p>有两种方法可以获得token值</p>
+<p>方法一：利用DVWA中储存型XSS漏洞获得网页token</p>
+<p>1、修改储存型XSS的网页脚本&quot;D:\phpstudy_pro\DVWA-master\vulnerabilities\xss_s\index.php&quot;，加入下面两行代码（修改文件之前做好备份）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;div&gt;Name:test&lt;br/&gt;Message:this is a test comment.&lt;br/&gt;&lt;/div&gt;
+</span></span><span class="line"><span class="cl">&lt;div&gt;Name:&lt;iframe src=&#39;../csrf&#39; οnlοad=alert(frames[0].document.getElementsByName(&#39;user_token&#39;)[0].value)&gt;&lt;br/&gt;Message:1&lt;br/&gt;&lt;/div&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img alt="屏幕截图 2024-04-18 190045" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959108.png"></p>
+<p>2、保存文件，打开DVWA High级别下的储存型XSS页面，得到token值</p>
+<p><img alt="image-20240418190907301" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png"></p>
+<p>3、将得到的token替换，BurpSuitePro捕获流量包中原有的token</p>
+<p><img alt="image-20240418190836711" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png"></p>
+<p>4、发送构造好的数据包，得到响应，密码修改成功</p>
+<p><img alt="image-20240418191317461" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png"></p>
+<p>方法二：在BurpSuite安装插件，获取token</p>
+<p>1、安装CSRF Token Tracker插件</p>
+<p><img alt="image-20240418184201655" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png"></p>
+<p>2、添加一条CSRF Token Tracker规则并勾选，再勾选&quot;根据规则同步requests&quot;</p>
+<p><img alt="image-20240615214659621" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png"></p>
+<p>3、截获修改密码请求包</p>
+<p><img alt="屏幕截图 2024-06-15 215508" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959114.png"></p>
+<p>4、将抓到的包Send to Repeater，在Repeater页面修改&quot;password_new&quot;和&quot;password_conf&quot;参数，Send后发现token值发生变化，修改密码成功</p>
+<p><img alt="image-20240615215423256" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png"></p>
+<h3 id="dvwa-impossible-级别-csrf">DVWA Impossible 级别 CSRF</h3>
+<p>0、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Change&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass_curr</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_current&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass_new</span>  <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_new&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass_conf</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password_conf&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise current password input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass_curr</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$pass_curr</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass_curr</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass_curr</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass_curr</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass_curr</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check that the current password is correct
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT password FROM users WHERE user = (:user) AND password = (:password) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nx">dvwaCurrentUser</span><span class="p">(),</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:password&#39;</span><span class="p">,</span> <span class="nv">$pass_curr</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Do both new passwords match and does the current password match the user?
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="p">(</span> <span class="nv">$pass_new</span> <span class="o">==</span> <span class="nv">$pass_conf</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// It does!
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass_new</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$pass_new</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass_new</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Update database with new password
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;UPDATE users SET password = (:password) WHERE user = (:user);&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:password&#39;</span><span class="p">,</span> <span class="nv">$pass_new</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nx">dvwaCurrentUser</span><span class="p">(),</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for the user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Password Changed.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Issue with passwords matching
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Passwords did not match or current password incorrect.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

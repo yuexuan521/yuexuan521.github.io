@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.1</generator>
+    <generator>Hugo -- 0.153.2</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 24 Oct 2024 17:11:45 +0000</lastBuildDate>
@@ -64,24 +64,24 @@
       <description></description>
     </item>
     <item>
+      <title>DVWA</title>
+      <link>https://yuexuan521.github.io/zh/tags/dvwa/</link>
+      <pubDate>Thu, 26 Sep 2024 12:25:16 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/dvwa/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Web安全</title>
       <link>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
+      <pubDate>Thu, 26 Sep 2024 12:25:16 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     <item>
-      <title>笔记</title>
-      <link>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>奇安信杯</title>
-      <link>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF/</link>
-      <pubDate>Tue, 24 Sep 2024 22:31:42 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF/</guid>
+      <title>靶场</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E9%9D%B6%E5%9C%BA/</link>
+      <pubDate>Thu, 26 Sep 2024 12:25:16 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E9%9D%B6%E5%9C%BA/</guid>
       <description></description>
     </item>
   </channel>
