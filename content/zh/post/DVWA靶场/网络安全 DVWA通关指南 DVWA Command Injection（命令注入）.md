@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA Command Injection（命令注入）"
-date: 2024-09-26 12:23:57
+date: 2024-09-28 12:23:57
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

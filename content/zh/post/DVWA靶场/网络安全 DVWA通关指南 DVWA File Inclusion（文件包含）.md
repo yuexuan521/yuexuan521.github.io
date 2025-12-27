@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA File Inclusion（文件包含）"
-date: 2024-09-26 12:23:22
+date: 2024-09-30 12:23:22
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

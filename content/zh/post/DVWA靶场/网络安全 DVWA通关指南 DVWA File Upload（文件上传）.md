@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA File Upload（文件上传）"
-date: 2024-09-26 12:22:56
+date: 2024-09-25 12:22:56
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

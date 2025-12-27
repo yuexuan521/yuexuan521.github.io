@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA Weak Session IDs（弱会话）"
-date: 2024-09-26 12:25:16
+date: 2024-09-21 12:25:16
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

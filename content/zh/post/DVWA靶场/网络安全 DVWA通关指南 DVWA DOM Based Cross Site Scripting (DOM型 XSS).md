@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA DOM Based Cross Site Scripting (DOM型 XSS)"
-date: 2024-09-26 12:23:38
+date: 2024-09-29 12:23:38
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

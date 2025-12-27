@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA Reflected Cross Site Scripting (反射型 XSS)"
-date: 2024-09-26 12:22:37
+date: 2024-09-24 12:22:37
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"

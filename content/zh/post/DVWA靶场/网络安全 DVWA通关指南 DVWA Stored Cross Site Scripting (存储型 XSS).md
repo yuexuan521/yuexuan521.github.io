@@ -1,6 +1,6 @@
 ---
 title: "网络安全 DVWA通关指南 DVWA Stored Cross Site Scripting (存储型 XSS)"
-date: 2024-09-26 12:21:39
+date: 2024-09-22 12:21:39
 category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
