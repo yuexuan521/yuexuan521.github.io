@@ -21,7 +21,7 @@
       <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-bucket-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
       <description>&lt;hr&gt;
 &lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png&#34;&gt;
@@ -59,7 +59,7 @@
 &lt;p&gt;1、根据题目“解密Base全家桶”，使用工具CTF-Tools对密文进行base爆破（依次尝试Base家族的编码），这个过程将重复很多次，最后得到flag。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <p>相关阅读
-<a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png">

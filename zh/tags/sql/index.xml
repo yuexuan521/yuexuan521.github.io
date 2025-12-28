@@ -33,7 +33,7 @@
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
@@ -199,7 +199,7 @@
 <hr>
 <p>参考文献</p>
 <ul>
-<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA">WEB 安全靶场通关指南</a></li>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
 </ul>
 <hr>
 <h2 id="low">Low</h2>
@@ -1159,7 +1159,7 @@
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
@@ -1179,7 +1179,7 @@
 <hr>
 <p>参考文献</p>
 <ul>
-<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA">WEB 安全靶场通关指南</a></li>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
 </ul>
 <hr>
 <blockquote>
@@ -1423,7 +1423,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 <a href="https://www.cmd5.com/default.aspx">在线工具</a> 解密</p>
+</div><p>执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 <a href="https://www.cmd5.com/default.aspx"target="_blank" rel="noopener noreferrer">在线工具</a> 解密</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png">
