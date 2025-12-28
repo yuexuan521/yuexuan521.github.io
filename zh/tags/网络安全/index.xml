@@ -16,9 +16,9 @@
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF zip 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-zip-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-zip-1/</link>
       <pubDate>Thu, 20 Nov 2025 09:01:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-zip-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-zip-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png&#34;&gt;
@@ -265,9 +265,9 @@
     </item>
     <item>
       <title>BUUCTF [DDCTF2018]流量分析 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</link>
       <pubDate>Tue, 11 Nov 2025 15:24:51 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png&#34;&gt;
@@ -553,10 +553,184 @@ Quoted-printable编码</a></p>
 </div>]]></content:encoded>
     </item>
     <item>
+      <title>BUUCTF Rabbit 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</link>
+      <pubDate>Tue, 21 Oct 2025 13:21:08 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+&lt;a href=&#34;http://www.jsons.cn/rabbitencrypt/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Rabbit在线工具&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解题思路">解题思路：</h3>
+<p>1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+<a href="http://www.jsons.cn/rabbitencrypt/"target="_blank" rel="noopener noreferrer">Rabbit在线工具</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、得到flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Cute_Rabbit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="rabbit加解密算法">Rabbit加解密算法：</h3>
+<ol>
+<li>
+<p><strong>密钥 - 共享的绝密暗号</strong></p>
+<ul>
+<li>
+<p>你和你朋友事先约定好一个绝密暗号，比如 <strong>“巧克力蛋糕真好吃”</strong> 。这个暗号就是 <strong>“密钥”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，密钥是一串 128 位的数字（比如 <code>2B7E1516...</code> ），长度固定，是加解密的根本，绝对不能泄露。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>初始化向量 - 本次通信的页码</strong></p>
+<ul>
+<li>
+<p>为了更安全，你们决定每次通信都用密码本的不同页。于是你打电话告诉朋友：“今天我们用密码本的 <strong>第58页</strong> 开始。” 这个“第58页”就是 <strong>“初始化向量”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，IV 是一串 64 位的数字。它的作用是确保即使用同一个密钥加密两份相同的内容，也会得到完全不同的密文。就像用同一个密码本，但从不同页开始，写出的密码也不同。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rabbit 机器的工作 - 生成“密码流”</strong></p>
+<ul>
+<li>
+<p>现在，你把密钥（“巧克力蛋糕真好吃”）和 IV（“第58页”）输入到一台叫做 <strong>Rabbit</strong> 的神奇机器里。</p>
+</li>
+<li>
+<p>这台机器会轰隆隆地运转起来，内部有很多齿轮和计数器（这就是算法的内部状态），根据你给的“暗号”和“页码”，它开始疯狂地吐出一长串、完全随机、没有规律的 <strong>“密码流”</strong> 。</p>
+</li>
+<li>
+<p>这个密码流就像： <code>X5j9!kLm@qR3tW#z...</code> （无穷无尽）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>加密 - 编写密码信</strong></p>
+<ul>
+<li>
+<p>现在你开始写原始信件（ <strong>明文</strong> ）： <code>“明天下午三点公园见”</code></p>
+</li>
+<li>
+<p>然后，你拿出 Rabbit 机器生成的“密码流”，将信上的每一个字和密码流上的每一个字符进行 <strong>“一对一混合”</strong> （在计算机里是做“异或”运算）。</p>
+</li>
+<li>
+<p>混合后，你原本清晰的信件就变成了一堆毫无意义的乱码（ <strong>密文</strong> ）： <code>“敨晑佢歮湤歮”</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>解密 - 还原密码信</strong></p>
+<ul>
+<li>
+<p>你的朋友收到了这堆乱码和你的电话通知（IV=“第58页”）。</p>
+</li>
+<li>
+<p>他也有同样的 Rabbit 机器，并且知道你们的共享暗号（密钥=“巧克力蛋糕真好吃”）。</p>
+</li>
+<li>
+<p>他把密钥和 IV 输入机器，机器会生成 <strong>一模一样</strong> 的“密码流”： <code>X5j9!kLm@qR3tW#z...</code></p>
+</li>
+<li>
+<p>他再用这个密码流和乱码（密文）进行 <strong>完全相同的“混合”操作</strong> ，神奇的事情发生了，乱码又变回了清晰的原信： <code>“明天下午三点公园见”</code> 。</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
       <title>BUUCTF [SUCTF 2019]Game 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf-2019game-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf-2019game-1/</link>
       <pubDate>Mon, 13 Oct 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf-2019game-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf-2019game-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34;&gt;
@@ -747,9 +921,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF USB 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-usb-1/</link>
       <pubDate>Mon, 06 Oct 2025 12:09:55 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-usb-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34;&gt;
@@ -994,9 +1168,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [GUET-CTF2019]虚假的压缩包 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</link>
       <pubDate>Mon, 29 Sep 2025 08:15:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png&#34;&gt;
@@ -1317,9 +1491,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [RCTF2019]draw 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-rctf2019draw-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rctf2019draw-1/</link>
       <pubDate>Mon, 15 Sep 2025 08:30:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-rctf2019draw-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rctf2019draw-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34;&gt;
@@ -1792,9 +1966,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [ACTF新生赛2020]明文攻击 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</link>
       <pubDate>Mon, 08 Sep 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34;&gt;
@@ -1984,9 +2158,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [GKCTF 2021]签到 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</link>
       <pubDate>Mon, 18 Aug 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34;&gt;
@@ -2317,9 +2491,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [GXYCTF2019]佛系青年 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-gxyctf2019%E4%BD%9B%E7%B3%BB%E9%9D%92%E5%B9%B4-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gxyctf2019%E4%BD%9B%E7%B3%BB%E9%9D%92%E5%B9%B4-1/</link>
       <pubDate>Tue, 12 Aug 2025 00:15:46 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-gxyctf2019%E4%BD%9B%E7%B3%BB%E9%9D%92%E5%B9%B4-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gxyctf2019%E4%BD%9B%E7%B3%BB%E9%9D%92%E5%B9%B4-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png&#34;&gt;
@@ -2574,297 +2748,6 @@ Quoted-printable编码</a></p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>w0_fo_ci_Be1<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>BUUCTF [DDCTF2018](╯°□°）╯︵ ┻━┻ 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018--1/</link>
-      <pubDate>Mon, 11 Aug 2025 08:30:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018--1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
-&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105324802#:~:text=DDCTF2&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[DDCTF2018](╯°□°）╯︵ ┻━┻&lt;/a&gt;
-&lt;a href=&#34;https://www.cnblogs.com/fishjumpriver/p/17833337.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;[DDCTF2018](╯°□°）╯︵ ┻━┻&lt;/a&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
-<a href="https://blog.csdn.net/mochu7777777/article/details/105324802#:~:text=DDCTF2"target="_blank" rel="noopener noreferrer">BUUCTF：[DDCTF2018](╯°□°）╯︵ ┻━┻</a>
-<a href="https://www.cnblogs.com/fishjumpriver/p/17833337.html"target="_blank" rel="noopener noreferrer">[DDCTF2018](╯°□°）╯︵ ┻━┻</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存附件为attachment.txt</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>╯°□°）╯︵ ┻━┻
-</span></span><span class="line"><span class="cl">50pt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">(</span>╯°□°）╯︵ ┻━┻
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">d4e8e1f4a0f7e1f3a0e6e1f3f4a1a0d4e8e5a0e6ece1e7a0e9f3baa0c4c4c3d4c6fbb9b2b2e1e2b9b9b7b4e1b4b7e3e4b3b2b2e3e6b4b3e2b5b0b6b1b0e6e1e5e1b5fd
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、观察密文，134个字符，猜测为十六进制的数据，先两位截取。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hex列表：<span class="o">[</span><span class="s1">&#39;d4&#39;</span>, <span class="s1">&#39;e8&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;f4&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;f7&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;f3&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;e6&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;f3&#39;</span>, <span class="s1">&#39;f4&#39;</span>, <span class="s1">&#39;a1&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;d4&#39;</span>, <span class="s1">&#39;e8&#39;</span>, <span class="s1">&#39;e5&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;e6&#39;</span>, <span class="s1">&#39;ec&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;e7&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;e9&#39;</span>, <span class="s1">&#39;f3&#39;</span>, <span class="s1">&#39;ba&#39;</span>, <span class="s1">&#39;a0&#39;</span>, <span class="s1">&#39;c4&#39;</span>, <span class="s1">&#39;c4&#39;</span>, <span class="s1">&#39;c3&#39;</span>, <span class="s1">&#39;d4&#39;</span>, <span class="s1">&#39;c6&#39;</span>, <span class="s1">&#39;fb&#39;</span>, <span class="s1">&#39;b9&#39;</span>, <span class="s1">&#39;b2&#39;</span>, <span class="s1">&#39;b2&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;e2&#39;</span>, <span class="s1">&#39;b9&#39;</span>, <span class="s1">&#39;b9&#39;</span>, <span class="s1">&#39;b7&#39;</span>, <span class="s1">&#39;b4&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;b4&#39;</span>, <span class="s1">&#39;b7&#39;</span>, <span class="s1">&#39;e3&#39;</span>, <span class="s1">&#39;e4&#39;</span>, <span class="s1">&#39;b3&#39;</span>, <span class="s1">&#39;b2&#39;</span>, <span class="s1">&#39;b2&#39;</span>, <span class="s1">&#39;e3&#39;</span>, <span class="s1">&#39;e6&#39;</span>, <span class="s1">&#39;b4&#39;</span>, <span class="s1">&#39;b3&#39;</span>, <span class="s1">&#39;e2&#39;</span>, <span class="s1">&#39;b5&#39;</span>, <span class="s1">&#39;b0&#39;</span>, <span class="s1">&#39;b6&#39;</span>, <span class="s1">&#39;b1&#39;</span>, <span class="s1">&#39;b0&#39;</span>, <span class="s1">&#39;e6&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;e5&#39;</span>, <span class="s1">&#39;e1&#39;</span>, <span class="s1">&#39;b5&#39;</span>, <span class="s1">&#39;fd&#39;</span><span class="o">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>将十六进制数据转换为十进制。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">十进制列表：<span class="o">[</span>212, 232, 225, 244, 160, 247, 225, 243, 160, 230, 225, 243, 244, 161, 160, 212, 232, 229, 160, 230, 236, 225, 231, 160, 233, 243, 186, 160, 196, 196, 195, 212, 198, 251, 185, 178, 178, 225, 226, 185, 185, 183, 180, 225, 180, 183, 227, 228, 179, 178, 178, 227, 230, 180, 179, 226, 181, 176, 182, 177, 176, 230, 225, 229, 225, 181, 253<span class="o">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>发现十进制数据都大于128，减去128，再转为字符串。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">-128得到ASCII十进制dec列表：<span class="o">[</span>84, 104, 97, 116, 32, 119, 97, 115, 32, 102, 97, 115, 116, 33, 32, 84, 104, 101, 32, 102, 108, 97, 103, 32, 105, 115, 58, 32, 68, 68, 67, 84, 70, 123, 57, 50, 50, 97, 98, 57, 57, 55, 52, 97, 52, 55, 99, 100, 51, 50, 50, 99, 102, 52, 51, 98, 53, 48, 54, 49, 48, 102, 97, 101, 97, 53, 125<span class="o">]</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>转为字符串，得到flag。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">最终答案：That was fast! The flag is: DDCTF<span class="o">{</span>922ab9974a47cd322cf43b50610faea5<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>解密脚本如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># @Author：YueXuan</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># @Date  ：2024/10/8 22:00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">split_into_hex_pairs</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将输入字符串切片成每两个字符一组的列表&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">2</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">convert_hex_to_int</span><span class="p">(</span><span class="n">hex_pairs</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将十六进制列表转换为十进制整数列表&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">pair</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">hex_pairs</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">adjust_for_ascii</span><span class="p">(</span><span class="n">int_values</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将整数列表中的值减去128以获取ASCII值&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">value</span> <span class="o">-</span> <span class="mi">128</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">int_values</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">convert_int_to_str</span><span class="p">(</span><span class="n">int_values</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将整数列表转换为字符串&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">int_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">hex_string</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;主函数，调用上述函数并打印结果&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;字符串长度：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">hex_string</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">hex_pairs</span> <span class="o">=</span> <span class="n">split_into_hex_pairs</span><span class="p">(</span><span class="n">hex_string</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;hex列表：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">hex_pairs</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">int_values</span> <span class="o">=</span> <span class="n">convert_hex_to_int</span><span class="p">(</span><span class="n">hex_pairs</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;转化为十进制int列表：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">int_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">ascii_values</span> <span class="o">=</span> <span class="n">adjust_for_ascii</span><span class="p">(</span><span class="n">int_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;-128得到ASCII十进制dec列表：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">ascii_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">result_str</span> <span class="o">=</span> <span class="n">convert_int_to_str</span><span class="p">(</span><span class="n">ascii_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最终答案：</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">result_str</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">hex_str</span> <span class="o">=</span> <span class="s1">&#39;d4e8e1f4a0f7e1f3a0e6e1f3f4a1a0d4e8e5a0e6ece1e7a0e9f3baa0c4c4c3d4c6fbb9b2b2e1e2b9b9b7b4e1b4b7e3e4b3b2b2e3e6b4b3e2b5b0b6b1b0e6e1e5e1b5fd&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">(</span><span class="n">hex_str</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<p>网上的其他脚本：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># -*- coding:utf-8 -*-</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># author: mochu7</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hex_str</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span><span class="c1">#对字符串进行切片操作，每两位截取</span>
-</span></span><span class="line"><span class="cl">    <span class="n">hex_str_list</span><span class="o">=</span><span class="p">[]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">hex_str</span><span class="o">=</span><span class="nb">str</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="n">hex_str_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hex_str</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;hex列表：</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">hex_str_list</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">hex_to_str</span><span class="p">(</span><span class="n">hex_str_list</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">hex_to_str</span><span class="p">(</span><span class="n">hex_str_list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">int_list</span><span class="o">=</span><span class="p">[]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dec_list</span><span class="o">=</span><span class="p">[]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">flag</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">hex_str_list</span><span class="p">)):</span><span class="c1">#把16进制转化为10进制</span>
-</span></span><span class="line"><span class="cl">        <span class="n">int_str</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;0x</span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">hex_str_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="mi">16</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">int_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">int_str</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dec_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">int_str</span><span class="o">-</span><span class="mi">128</span><span class="p">)</span><span class="c1">#-128得到正确的ascii码</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dec_list</span><span class="p">)):</span><span class="c1">#ascii码转化为字符串</span>
-</span></span><span class="line"><span class="cl">        <span class="n">flag</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">dec_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;转化为十进制int列表：</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">int_list</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;-128得到ASCII十进制dec列表：</span><span class="si">%s</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">dec_list</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最终答案：</span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="n">flag</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">str</span><span class="o">=</span><span class="s1">&#39;d4e8e1f4a0f7e1f3a0e6e1f3f4a1a0d4e8e5a0e6ece1e7a0e9f3baa0c4c4c3d4c6fbb9b2b2e1e2b9b9b7b4e1b4b7e3e4b3b2b2e3e6b4b3e2b5b0b6b1b0e6e1e5e1b5fd&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;字符串长度：</span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">hex_str</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">key</span><span class="o">=</span><span class="s1">&#39;d4e8e1f4a0f7e1f3a0e6e1f3f4a1a0d4e8e5a0e6ece1e7a0e9f3baa0c4c4c3d4c6fbb9b2b2e1e2b9b9b7b4e1b4b7e3e4b3b2b2e3e6b4b3e2b5b0b6b1b0e6e1e5e1b5fd&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">hex</span><span class="o">=</span><span class="p">[]</span>
-</span></span><span class="line"><span class="cl"><span class="n">flag</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">zdh</span><span class="o">=</span><span class="n">key</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">hex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">zdh</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">hex</span><span class="p">)):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">zdh1</span><span class="o">=</span><span class="nb">hex</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">flag</span><span class="o">+=</span><span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">zdh1</span><span class="p">,</span><span class="mi">16</span><span class="p">))</span><span class="o">-</span><span class="mi">128</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>922ab9974a47cd322cf43b50610faea5<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CTF on 知识带给我们自由</title>
+    <title>Ctf on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/tags/ctf/</link>
-    <description>Recent content in CTF on 知识带给我们自由</description>
+    <description>Recent content in Ctf on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -16,9 +16,9 @@
     <atom:link href="https://yuexuan521.github.io/zh/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF zip 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-zip-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-zip-1/</link>
       <pubDate>Thu, 20 Nov 2025 09:01:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-zip-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-zip-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png&#34;&gt;
@@ -265,9 +265,9 @@
     </item>
     <item>
       <title>BUUCTF [DDCTF2018]流量分析 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</link>
       <pubDate>Tue, 11 Nov 2025 15:24:51 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png&#34;&gt;
@@ -553,10 +553,184 @@ Quoted-printable编码</a></p>
 </div>]]></content:encoded>
     </item>
     <item>
+      <title>BUUCTF Rabbit 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</link>
+      <pubDate>Tue, 21 Oct 2025 13:21:08 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+&lt;a href=&#34;http://www.jsons.cn/rabbitencrypt/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Rabbit在线工具&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解题思路">解题思路：</h3>
+<p>1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+<a href="http://www.jsons.cn/rabbitencrypt/"target="_blank" rel="noopener noreferrer">Rabbit在线工具</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、得到flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Cute_Rabbit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="rabbit加解密算法">Rabbit加解密算法：</h3>
+<ol>
+<li>
+<p><strong>密钥 - 共享的绝密暗号</strong></p>
+<ul>
+<li>
+<p>你和你朋友事先约定好一个绝密暗号，比如 <strong>“巧克力蛋糕真好吃”</strong> 。这个暗号就是 <strong>“密钥”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，密钥是一串 128 位的数字（比如 <code>2B7E1516...</code> ），长度固定，是加解密的根本，绝对不能泄露。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>初始化向量 - 本次通信的页码</strong></p>
+<ul>
+<li>
+<p>为了更安全，你们决定每次通信都用密码本的不同页。于是你打电话告诉朋友：“今天我们用密码本的 <strong>第58页</strong> 开始。” 这个“第58页”就是 <strong>“初始化向量”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，IV 是一串 64 位的数字。它的作用是确保即使用同一个密钥加密两份相同的内容，也会得到完全不同的密文。就像用同一个密码本，但从不同页开始，写出的密码也不同。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rabbit 机器的工作 - 生成“密码流”</strong></p>
+<ul>
+<li>
+<p>现在，你把密钥（“巧克力蛋糕真好吃”）和 IV（“第58页”）输入到一台叫做 <strong>Rabbit</strong> 的神奇机器里。</p>
+</li>
+<li>
+<p>这台机器会轰隆隆地运转起来，内部有很多齿轮和计数器（这就是算法的内部状态），根据你给的“暗号”和“页码”，它开始疯狂地吐出一长串、完全随机、没有规律的 <strong>“密码流”</strong> 。</p>
+</li>
+<li>
+<p>这个密码流就像： <code>X5j9!kLm@qR3tW#z...</code> （无穷无尽）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>加密 - 编写密码信</strong></p>
+<ul>
+<li>
+<p>现在你开始写原始信件（ <strong>明文</strong> ）： <code>“明天下午三点公园见”</code></p>
+</li>
+<li>
+<p>然后，你拿出 Rabbit 机器生成的“密码流”，将信上的每一个字和密码流上的每一个字符进行 <strong>“一对一混合”</strong> （在计算机里是做“异或”运算）。</p>
+</li>
+<li>
+<p>混合后，你原本清晰的信件就变成了一堆毫无意义的乱码（ <strong>密文</strong> ）： <code>“敨晑佢歮湤歮”</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>解密 - 还原密码信</strong></p>
+<ul>
+<li>
+<p>你的朋友收到了这堆乱码和你的电话通知（IV=“第58页”）。</p>
+</li>
+<li>
+<p>他也有同样的 Rabbit 机器，并且知道你们的共享暗号（密钥=“巧克力蛋糕真好吃”）。</p>
+</li>
+<li>
+<p>他把密钥和 IV 输入机器，机器会生成 <strong>一模一样</strong> 的“密码流”： <code>X5j9!kLm@qR3tW#z...</code></p>
+</li>
+<li>
+<p>他再用这个密码流和乱码（密文）进行 <strong>完全相同的“混合”操作</strong> ，神奇的事情发生了，乱码又变回了清晰的原信： <code>“明天下午三点公园见”</code> 。</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
       <title>BUUCTF [BSidesSF2019]zippy 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-bsidessf2019zippy-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-bsidessf2019zippy-1/</link>
       <pubDate>Mon, 20 Oct 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-bsidessf2019zippy-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-bsidessf2019zippy-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png&#34;&gt;
@@ -711,9 +885,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [SUCTF 2019]Game 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf-2019game-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf-2019game-1/</link>
       <pubDate>Mon, 13 Oct 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf-2019game-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf-2019game-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34;&gt;
@@ -904,9 +1078,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF USB 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-usb-1/</link>
       <pubDate>Mon, 06 Oct 2025 12:09:55 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-usb-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34;&gt;
@@ -1151,9 +1325,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [GUET-CTF2019]虚假的压缩包 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</link>
       <pubDate>Mon, 29 Sep 2025 08:15:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png&#34;&gt;
@@ -1474,9 +1648,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [RCTF2019]draw 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-rctf2019draw-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rctf2019draw-1/</link>
       <pubDate>Mon, 15 Sep 2025 08:30:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-rctf2019draw-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rctf2019draw-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34;&gt;
@@ -1949,9 +2123,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [ACTF新生赛2020]明文攻击 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</link>
       <pubDate>Mon, 08 Sep 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34;&gt;
@@ -2141,9 +2315,9 @@ Quoted-printable编码</a></p>
     </item>
     <item>
       <title>BUUCTF [SWPU2019]Network 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-swpu2019network-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-swpu2019network-1/</link>
       <pubDate>Mon, 25 Aug 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-swpu2019network-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-swpu2019network-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png&#34;&gt;
@@ -2663,339 +2837,6 @@ Quoted-printable编码</a></p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>189ff9e5b743ae95f940a6ccc6dbd9ab<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>BUUCTF [GKCTF 2021]签到 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</link>
-      <pubDate>Mon, 18 Aug 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
-&lt;a href=&#34;https://www.freebuf.com/articles/web/278710.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;GKCTF X DASCTF应急挑战杯 签到题WP&lt;/a&gt;
-&lt;a href=&#34;https://www.cnblogs.com/fishjumpriver/p/18015798&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;[GKCTF 2021]签到&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;师傅们玩的开心~（flag由flag头包裹&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到tmpshell.pcapng文件&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
-<a href="https://www.freebuf.com/articles/web/278710.html"target="_blank" rel="noopener noreferrer">GKCTF X DASCTF应急挑战杯 签到题WP</a>
-<a href="https://www.cnblogs.com/fishjumpriver/p/18015798"target="_blank" rel="noopener noreferrer">[GKCTF 2021]签到</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>师傅们玩的开心~（flag由flag头包裹</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到tmpshell.pcapng文件</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开流量文件，照常追踪TCP数据流，到第五个流中发现flag相关信息。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tcp.stream eq <span class="m">5</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>将传输的数据复制下来，进行解密。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">64306c455357644251306c6e51554e4a5a3046355355737764306c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154576c44546d39525241707154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7162314645616b46445357644251306c6e51554e4a5a32644554545a46524530325157704e5a3046365458524e524531305257704e436e5177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d644442705130354e65556c7154586c4a616b31355357704e65556b4b4e6b467154576442656b31305455524e644556715458644a616b38775a566f324d6d56774e557377643074795556645a64315a485a48593152556c3051576c4e4d5546355a4777316255733254545a7162475a7763573579555552304d464e4d64444254544170304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d537a42425357526159585a764e7a567462485a735130354e564530325255524e436e6f77655531334d464e4e6555467154545a524e327877596a647362584a5252484a7a5131706f516c68614d446c745647637751306c355655524a4d315a74596e4676656d3951567974736357563151303477553078304d464e4d64444254544851775530774b63336858576d786b4d5659354d544e6c4e325179576d684752324a7a576d31615a7a427363446c7064573569567974585a7a427363446c7064573569567974585a7a427363446c706457356956797458537a423354586876564531336230524e6555464454517045546a4252524534775555527356324636546c684e65444258596d593562464a48556b524f5245347759584a6b4d464a6d4f565a6162444658596e644252456c6b556d46746345524c61577832526b6c6b556d46746345524c61577832566b747754544a5a436a303955556c6f545442525245347755516f3d
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>首先，由十六进制数据转为字符串。（字符串以“ <code>=</code> ”结尾，结合提示“ <code>cat+%2Ff14g%7Cbase64</code> ”，推测要使用Base64解码）</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">d0lESWdBQ0lnQUNJZ0F5SUswd0lqTXlJak15SWpNeUlqTXlJak15SWpNeUlqTXlJak15SWpNeUlqTXlJak15SWpNeUlqTWlDTm9RRApqTXlJak15SWpNeUlqTXlJak15SWpNeUlqTXlJak15SWpNeUlqb1FEakFDSWdBQ0lnQUNJZ2dETTZFRE02QWpNZ0F6TXRNRE10RWpNCnQwU0x0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMdDBpQ05NeUlqTXlJak15SWpNeUkKNkFqTWdBek10TURNdEVqTXdJak8wZVo2MmVwNUswd0tyUVdZd1ZHZHY1RUl0QWlNMUF5ZGw1bUs2TTZqbGZwcW5yUUR0MFNMdDBTTAp0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMdDBTTHQwU0x0MFNMSzBBSWRaYXZvNzVtbHZsQ05NVE02RURNCnoweU13MFNNeUFqTTZRN2xwYjdsbXJRRHJzQ1poQlhaMDltVGcwQ0l5VURJM1ZtYnFvem9QVytscWV1Q04wU0x0MFNMdDBTTHQwU0wKc3hXWmxkMVY5MTNlN2QyWmhGR2JzWm1aZzBscDlpdW5iVytXZzBscDlpdW5iVytXZzBscDlpdW5iVytXSzB3TXhvVE13b0RNeUFDTQpETjBRRE4wUURsV2F6TlhNeDBXYmY5bFJHUkRORE4wYXJkMFJmOVZabDFXYndBRElkUmFtcERLaWx2RklkUmFtcERLaWx2VktwTTJZCj09UUloTTBRRE4wUQo</span><span class="o">=</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>脚本如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># @Author：YueXuan</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># @Date  ：2024/10/8 22:00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">split_into_hex_pairs</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将输入字符串切片成每两个字符一组的列表&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="mi">2</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">convert_hex_to_int</span><span class="p">(</span><span class="n">hex_pairs</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将十六进制列表转换为十进制整数列表&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">pair</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">hex_pairs</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">adjust_for_ascii</span><span class="p">(</span><span class="n">int_values</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将整数列表中的值减去128以获取ASCII值&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">value</span> <span class="o">-</span> <span class="mi">128</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">int_values</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">convert_int_to_str</span><span class="p">(</span><span class="n">int_values</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;将整数列表转换为字符串&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">int_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">hex_string</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;主函数，调用上述函数并打印结果&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;字符串长度：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">hex_string</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">hex_pairs</span> <span class="o">=</span> <span class="n">split_into_hex_pairs</span><span class="p">(</span><span class="n">hex_string</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;hex列表：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">hex_pairs</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">int_values</span> <span class="o">=</span> <span class="n">convert_hex_to_int</span><span class="p">(</span><span class="n">hex_pairs</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;转化为十进制int列表：</span><span class="si">%s</span><span class="s2">&#34;</span> <span class="o">%</span> <span class="n">int_values</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">result_str</span> <span class="o">=</span> <span class="n">convert_int_to_str</span><span class="p">(</span><span class="n">int_values</span><span class="p">)</span> <span class="c1"># ascii_values</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最终答案：</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">result_str</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="n">hex_str</span> <span class="o">=</span> <span class="s1">&#39;64306c455357644251306c6e51554e4a5a3046355355737764306c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154576c44546d39525241707154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7162314645616b46445357644251306c6e51554e4a5a32644554545a46524530325157704e5a3046365458524e524531305257704e436e5177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d644442705130354e65556c7154586c4a616b31355357704e65556b4b4e6b467154576442656b31305455524e644556715458644a616b38775a566f324d6d56774e557377643074795556645a64315a485a48593152556c3051576c4e4d5546355a4777316255733254545a7162475a7763573579555552304d464e4d64444254544170304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d537a42425357526159585a764e7a567462485a735130354e564530325255524e436e6f77655531334d464e4e6555467154545a524e327877596a647362584a5252484a7a5131706f516c68614d446c745647637751306c355655524a4d315a74596e4676656d3951567974736357563151303477553078304d464e4d64444254544851775530774b63336858576d786b4d5659354d544e6c4e325179576d684752324a7a576d31615a7a427363446c7064573569567974585a7a427363446c7064573569567974585a7a427363446c706457356956797458537a423354586876564531336230524e6555464454517045546a4252524534775555527356324636546c684e65444258596d593562464a48556b524f5245347759584a6b4d464a6d4f565a6162444658596e644252456c6b556d46746345524c61577832526b6c6b556d46746345524c61577832566b747754544a5a436a303955556c6f545442525245347755516f3d&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">(</span><span class="n">hex_str</span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>然后，进行Base64解码，得到逆序的数据。
-<a href="https://the-x.cn/encodings/Base64.aspx"target="_blank" rel="noopener noreferrer">Base64 在线解码、编码</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wIDIgACIgACIgAyIK0wIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMiCNoQD
-</span></span><span class="line"><span class="cl">jMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjMyIjoQDjACIgACIgACIggDM6EDM6AjMgAzMtMDMtEjM
-</span></span><span class="line"><span class="cl">t0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0iCNMyIjMyIjMyIjMyI
-</span></span><span class="line"><span class="cl">6AjMgAzMtMDMtEjMwIjO0eZ62ep5K0wKrQWYwVGdv5EItAiM1Aydl5mK6M6jlfpqnrQDt0SLt0SL
-</span></span><span class="line"><span class="cl">t0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLt0SLK0AIdZavo75mlvlCNMTM6EDM
-</span></span><span class="line"><span class="cl">z0yMw0SMyAjM6Q7lpb7lmrQDrsCZhBXZ09mTg0CIyUDI3VmbqozoPW+lqeuCN0SLt0SLt0SLt0SL
-</span></span><span class="line"><span class="cl">sxWZld1V913e7d2ZhFGbsZmZg0lp9iunbW+Wg0lp9iunbW+Wg0lp9iunbW+WK0wMxoTMwoDMyACM
-</span></span><span class="line"><span class="cl"><span class="nv">DN0QDN0QDlWazNXMx0Wbf9lRGRDNDN0ard0Rf9VZl1WbwADIdRampDKilvFIdRampDKilvVKpM2Y</span>
-</span></span><span class="line"><span class="cl"><span class="o">==</span>QIhM0QDN0Q
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、在tmpshell.pcapng文件的其他流量上，也存在逆序的数据。
-例如：命令whoami，得到数据 <code>595852685a4331336433634b</code> 。
-经过解密，得到 <code>atad-www</code> ，逆序应为 <code>www-data</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>所以，将上面的数据进行按行逆序输出。
-<a href="https://www.qqxiuzi.cn/zh/daoxu/"target="_blank" rel="noopener noreferrer">文字倒序排列</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">cat flag <span class="p">|</span> rev
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">DQoNCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KIyAgICAgICAgIDIw
-</span></span><span class="line"><span class="cl">MjEtMDMtMzAgMjA6MDE6MDggICAgICAgICAjDQojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMj
-</span></span><span class="line"><span class="cl">IyMjIyMjIyMjIyMNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
-</span></span><span class="line"><span class="cl">LS0tLS0tDQrnqpflj6M6Km5ldyA1MiAtIE5vdGVwYWQrKw0K5pe26Ze0OjIwMjEtMDMtMzAgMjA6
-</span></span><span class="line"><span class="cl">MDE6MTMNClvlm57ovaZdIA0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
-</span></span><span class="line"><span class="cl">LS0tLS0tLS0tLS0NCueql+WPozoqbmV3IDUyIC0gTm90ZXBhZCsrDQrml7bpl7Q6MjAyMS0wMy0z
-</span></span><span class="line"><span class="cl">MCAyMDowMToxMw0KW+Wbnui9pl0gW+Wbnui9pl0gW+Wbnui9pl0gZmZsbGFhZ2d7e319V1dlZWxs
-</span></span><span class="line"><span class="cl">Y2MpKVvliKDpmaRdIFvliKDpmaRdIDAwbW1lZV9fR0dra0NDNDRGRl9fbW0xMXNzaWlDQ0NDQ0ND
-</span></span><span class="line"><span class="cl"><span class="nv">Q0NDQ0MhIQ</span><span class="o">==</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>再进行Base64解密得到如下数据：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#######################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#         2021-03-30 20:01:08         #</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#######################################</span>
-</span></span><span class="line"><span class="cl">--------------------------------------------------
-</span></span><span class="line"><span class="cl">窗口:*new <span class="m">52</span> - Notepad++
-</span></span><span class="line"><span class="cl">时间:2021-03-30 20:01:13
-</span></span><span class="line"><span class="cl"><span class="o">[</span>回车<span class="o">]</span> 
-</span></span><span class="line"><span class="cl">--------------------------------------------------
-</span></span><span class="line"><span class="cl">窗口:*new <span class="m">52</span> - Notepad++
-</span></span><span class="line"><span class="cl">时间:2021-03-30 20:01:13
-</span></span><span class="line"><span class="cl"><span class="o">[</span>回车<span class="o">]</span> <span class="o">[</span>回车<span class="o">]</span> <span class="o">[</span>回车<span class="o">]</span> ffllaagg<span class="o">{{}}</span>WWeellcc<span class="o">))[</span>删除<span class="o">]</span> <span class="o">[</span>删除<span class="o">]</span> 00mmee__GGkkCC44FF__mm11ssiiCCCCCCCCCCCC!!
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>将flag的重复数据去除一半，得到flag。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{}</span>Welc0me_GkC4F_m1siCCCCCC!
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>Welc0me_GkC4F_m1siCCCCCC!<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>

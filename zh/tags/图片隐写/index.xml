@@ -16,9 +16,9 @@
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF 小明的保险箱 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</link>
       <pubDate>Fri, 01 Nov 2024 11:37:26 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192920231.png&#34;&gt;
@@ -157,9 +157,9 @@
     </item>
     <item>
       <title>BUUCTF 镜子里面的世界 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%95%9C%E5%AD%90%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%95%9C%E5%AD%90%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C-1/</link>
       <pubDate>Tue, 24 Sep 2024 16:41:38 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%95%9C%E5%AD%90%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%95%9C%E5%AD%90%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%96%E7%95%8C-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193600848.png&#34;&gt;
@@ -275,9 +275,9 @@
     </item>
     <item>
       <title>BUUCTF 隐藏的钥匙 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%9A%90%E8%97%8F%E7%9A%84%E9%92%A5%E5%8C%99-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%9A%90%E8%97%8F%E7%9A%84%E9%92%A5%E5%8C%99-1/</link>
       <pubDate>Tue, 24 Sep 2024 16:30:17 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%9A%90%E8%97%8F%E7%9A%84%E9%92%A5%E5%8C%99-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%9A%90%E8%97%8F%E7%9A%84%E9%92%A5%E5%8C%99-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193626662.png&#34;&gt;
@@ -380,10 +380,191 @@
 </div>]]></content:encoded>
     </item>
     <item>
+      <title>BUUCTF 爱因斯坦 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6-1/</link>
+      <pubDate>Mon, 23 Sep 2024 23:00:50 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205058230.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205058230.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205100371.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205100371.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;下载附件，解压得到一张.jpg图片。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205101940.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205101940.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、因为题目没有什么提示，我们就一一尝试。将图片放到StegSolve中，在查看图片的File Format时，先看到一条有意义的文本，然后找到隐藏zip文件的信息。
+&lt;a href=&#34;https://blog.csdn.net/YueXuan_521/article/details/133822506?spm=1001.2014.3001.5502&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;参考思路&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205058230.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205058230.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205100371.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205100371.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>下载附件，解压得到一张.jpg图片。</p>
+<h3 id="密文">密文：</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205101940.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205101940.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、因为题目没有什么提示，我们就一一尝试。将图片放到StegSolve中，在查看图片的File Format时，先看到一条有意义的文本，然后找到隐藏zip文件的信息。
+<a href="https://blog.csdn.net/YueXuan_521/article/details/133822506?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">参考思路</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205103554.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205103554.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205104700.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205104700.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、使用Kali中的binwalk工具进行检测，确认存在zip压缩包和flag.txt文件。使用Kali中的foremost工具，分离出misc.jpg中的压缩文件，使用ls命令查看，得到一个output目录，查看output目录下的文件，找到zip文件（如果提示错误尝试删除原有的output目录，再执行foremost）。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205106771.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205106771.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205108693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205108693.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、尝试解压zip压缩文件，需要密码，但是题目中没有关于密码的提示。寻找无果后，我使用fcrackzip进行暴力破解，在暴力破解的同时继续寻找密码。我开始在图片中寻找密码，在使用cat命令查看图片时，想起了在第一步中看到的文本“this_is_not_password”，尝试之后我惊奇的发现，解压成功了。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205110080.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205110080.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205112133.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205112133.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205114551.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205114551.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、查看flag.txt文件，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205116400.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205116400.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>dd22a92bf2cceb6c0cd0d6b83ff51606<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
       <title>BUUCTF 假如给我三天光明 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%81%87%E5%A6%82%E7%BB%99%E6%88%91%E4%B8%89%E5%A4%A9%E5%85%89%E6%98%8E-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%81%87%E5%A6%82%E7%BB%99%E6%88%91%E4%B8%89%E5%A4%A9%E5%85%89%E6%98%8E-1/</link>
       <pubDate>Mon, 23 Sep 2024 22:59:32 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%81%87%E5%A6%82%E7%BB%99%E6%88%91%E4%B8%89%E5%A4%A9%E5%85%89%E6%98%8E-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%81%87%E5%A6%82%E7%BB%99%E6%88%91%E4%B8%89%E5%A4%A9%E5%85%89%E6%98%8E-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192638057.png&#34;&gt;
@@ -549,9 +730,9 @@
     </item>
     <item>
       <title>BUUCTF 喵喵喵 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</link>
       <pubDate>Sat, 21 Sep 2024 20:23:28 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png&#34;&gt;
@@ -1088,9 +1269,9 @@
     </item>
     <item>
       <title>BUUCTF qr 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-qr-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-qr-1/</link>
       <pubDate>Wed, 24 Jul 2024 16:42:40 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-qr-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-qr-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190158456.png&#34;&gt;
@@ -1214,9 +1395,9 @@
     </item>
     <item>
       <title>BUUCTF ningen 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-ningen-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ningen-1/</link>
       <pubDate>Wed, 24 Jul 2024 16:34:24 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-ningen-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-ningen-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190050890.png&#34;&gt;
@@ -1401,9 +1582,9 @@
     </item>
     <item>
       <title>BUUCTF 面具下的flag 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%9D%A2%E5%85%B7%E4%B8%8B%E7%9A%84flag-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%9D%A2%E5%85%B7%E4%B8%8B%E7%9A%84flag-1/</link>
       <pubDate>Tue, 23 Jul 2024 22:52:23 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E9%9D%A2%E5%85%B7%E4%B8%8B%E7%9A%84flag-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E9%9D%A2%E5%85%B7%E4%B8%8B%E7%9A%84flag-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193637232.png&#34;&gt;
@@ -1769,9 +1950,9 @@
     </item>
     <item>
       <title>BUUCTF 九连环 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E4%B9%9D%E8%BF%9E%E7%8E%AF-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B9%9D%E8%BF%9E%E7%8E%AF-1/</link>
       <pubDate>Sun, 23 Jun 2024 22:50:58 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E4%B9%9D%E8%BF%9E%E7%8E%AF-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B9%9D%E8%BF%9E%E7%8E%AF-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192459277.png&#34;&gt;
@@ -1991,123 +2172,6 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>1RTo8w@<span class="p">&amp;</span>4nK@z*XL<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>BUUCTF 文件中的秘密 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%A7%98%E5%AF%86-1/</link>
-      <pubDate>Sun, 24 Mar 2024 22:44:51 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%A7%98%E5%AF%86-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;小明经常喜欢在文件中藏一些秘密。时间久了便忘记了，你能帮小明找到该文件中的秘密吗？&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到JPEG图片。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>小明经常喜欢在文件中藏一些秘密。时间久了便忘记了，你能帮小明找到该文件中的秘密吗？</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到JPEG图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、根据题目提示，寻找文件中的秘密。在这里，我发现给到的文件是一张JPEG图片，使用StegSolve工具，查看图片文件格式。直接找到flag。（用WinHex也可以找到flag）
-具体流程可以查看这篇文章： <a href="https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193035480.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193035480.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、将这段字符复制到word或记事本替换掉“.”，清除字符串里的空格，整理出flag。
-<a href="http://www.esjson.com/delSpace.html"target="_blank" rel="noopener noreferrer">清除空格在线工具</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193036956.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193036956.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>870c5a72806115cb5439345d8b014396<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>

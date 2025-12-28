@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>古典密码 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/</link>
+    <description>Recent content in 古典密码 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Wed, 25 Sep 2024 20:40:06 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF Cipher 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-cipher-1/</link>
+      <pubDate>Wed, 25 Sep 2024 20:40:06 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-cipher-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;还能提示什么呢？公平的玩吧（密钥自己找） Dncnoqqfliqrpgeklwmppu 注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Dncnoqqfliqrpgeklwmppu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、仔细阅读题目，从“公平的玩吧”一句中，得到加密方法，为playfair密码。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>还能提示什么呢？公平的玩吧（密钥自己找） Dncnoqqfliqrpgeklwmppu 注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Dncnoqqfliqrpgeklwmppu</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、仔细阅读题目，从“公平的玩吧”一句中，得到加密方法，为playfair密码。</p>
+<p>2、使用在线工具 <a href="http://www.metools.info/code/playfair_186.html"target="_blank" rel="noopener noreferrer">playfair加密解密</a> 进行解密。</p>
+<p>3、要求输入密钥，密钥提示是“公平的玩吧”一句，所指出的“playfair”密码，密钥为“playfair”。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204834115.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204834115.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、输入密文、密钥，得到明文为“itisnotaproblemhavefun”。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">itisnotaproblemhavefun</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="playfair密码原理">playfair密码原理：</h3>
+<p>Playfair密码是一种经典的双字母替换密码，使用一个5x5的矩阵来进行加密和解密。在这个矩阵中，字母J通常与I合并，因为它们在许多语言中具有相似的发音和外观。</p>
+<p><strong>加密过程如下：</strong></p>
+<ol>
+<li>
+<p>去掉明文中所有非字母字符并将所有字母转换为大写。</p>
+</li>
+<li>
+<p>如果明文中有连续重复的字母，插入一个X或Q来分隔它们。</p>
+</li>
+<li>
+<p>如果明文的长度为奇数，可以在末尾添加一个X或Q来使其成为偶数。</p>
+</li>
+<li>
+<p>将明文拆分成两个字母一组，如果有奇数个字母，则最后一组只有一个字母。</p>
+</li>
+<li>
+<p>对于每一组字母，使用以下步骤进行加密：</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>如果两个字母在矩阵的同一行，则用该行相邻的字母进行替换，并保持其在同一行。</p>
+</li>
+<li>
+<p>如果两个字母在矩阵的同一列，则用该列相邻的字母进行替换，并保持其在同一列。</p>
+</li>
+<li>
+<p>如果两个字母在矩阵的不同行不同列，则用与第一个字母在同一行的第二个字母和与第二个字母在同一行的第一个字母进行替换，并保持其在同一行和同一列。</p>
+</li>
+</ul>
+<ol>
+<li>将加密后的每组字母连接起来形成密文。</li>
+</ol>
+<p>解密过程与加密过程相反。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [MRCTF2020]古典密码知多少 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-mrctf2020%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E7%9F%A5%E5%A4%9A%E5%B0%91-1/</link>
+      <pubDate>Wed, 25 Sep 2024 20:36:30 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-mrctf2020%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E7%9F%A5%E5%A4%9A%E5%B0%91-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、观察图片密文，推测为猪圈密码等图形密码。密码种类参考这篇文章： &lt;a href=&#34;https://www.cnblogs.com/Nuy0ah/p/16138118.html#1%E4%BC%A0%E7%BB%9F%E7%8C%AA%E5%9C%88%E5%AF%86%E7%A0%81&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF中的一些图形密码&lt;/a&gt; ，一共使用了三种加密方式：传统猪圈密码、圣堂武士密码、标准银河字母加密。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。</p>
+<h3 id="密文">密文：</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、观察图片密文，推测为猪圈密码等图形密码。密码种类参考这篇文章： <a href="https://www.cnblogs.com/Nuy0ah/p/16138118.html#1%E4%BC%A0%E7%BB%9F%E7%8C%AA%E5%9C%88%E5%AF%86%E7%A0%81"target="_blank" rel="noopener noreferrer">CTF中的一些图形密码</a> ，一共使用了三种加密方式：传统猪圈密码、圣堂武士密码、标准银河字母加密。</p>
+<p>2、通过对照密码表，手工解密，得到明文：FGCPFLIRTUASYON。 <a href="https://charactercalculator.com/zh-cn/case-converter/"target="_blank" rel="noopener noreferrer">字母大小写转换工具</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">明文：FGCPFLIRTUASYON
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">小写：fgcpflirtuasyon
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、尝试提交失败。翻译图片下方的英文，得到栏栅加密和字符串全部大写的信息。通过栏栅加密得到明文：flagiscryptofun，去掉无用信息，转换成大写字母，得到flag：CRYPTOFUN。
+<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php"target="_blank" rel="noopener noreferrer">栅栏密码加密解密</a></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">flag:CRYPTOFUN
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>密码对照表：</strong></p>
+<p><em><strong>1.传统猪圈密码</strong></em></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><em><strong>2.圣堂武士密码</strong></em></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><em><strong>3.标准银河字母加密</strong></em></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

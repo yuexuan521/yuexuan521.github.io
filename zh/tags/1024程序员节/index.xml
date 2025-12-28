@@ -16,9 +16,9 @@
     <atom:link href="https://yuexuan521.github.io/zh/tags/1024%E7%A8%8B%E5%BA%8F%E5%91%98%E8%8A%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第三届“奇安信杯”网络安全技能竞赛 部分题目WriteUP</title>
-      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</link>
       <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</guid>
       <description>&lt;hr&gt;
 &lt;h3 id=&#34;misc&#34;&gt;MISC&lt;/h3&gt;
 &lt;h4 id=&#34;gif&#34;&gt;GIF&lt;/h4&gt;
@@ -770,9 +770,9 @@
     </item>
     <item>
       <title>BUUCTF wireshark 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-wireshark-1/</link>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-wireshark-1/</link>
       <pubDate>Sat, 24 Aug 2024 22:42:44 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-wireshark-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-wireshark-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png&#34;&gt;
@@ -880,6 +880,85 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>ffb7567a1d4f4abdffdb54e022f8facd<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 乌镇峰会种图 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B9%8C%E9%95%87%E5%B3%B0%E4%BC%9A%E7%A7%8D%E5%9B%BE-1/</link>
+      <pubDate>Tue, 24 Oct 2023 22:38:05 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B9%8C%E9%95%87%E5%B3%B0%E4%BC%9A%E7%A7%8D%E5%9B%BE-1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;
+乌镇互联网大会召开了，各国巨头汇聚一堂，他们的照片里隐藏着什么信息呢？（答案格式：flag｛答案｝，只需提交答案）
+&lt;strong&gt;密文：&lt;/strong&gt;
+下载附件，得到一张图片&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>题目描述：</strong>
+乌镇互联网大会召开了，各国巨头汇聚一堂，他们的照片里隐藏着什么信息呢？（答案格式：flag｛答案｝，只需提交答案）
+<strong>密文：</strong>
+下载附件，得到一张图片</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204954303.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204954303.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>解题思路：</strong>
+1、分析题目，题目类型为图片隐写。尝试使用StegSolve对图片做各种分析，没有什么结果。
+2、尝试010Editor，将图片放入010 Editor进行分析，翻到最后，找到flag。（可以用记事本打开，也可以找到flag）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204956121.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204956121.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204957839.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204957839.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>flag：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>97314e7864a8f62627b26f3f998c37f1<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
