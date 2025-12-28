@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]认真你就输了 1"
-date: 2024-09-23 22:48:54
+date: 2024-09-22 22:48:54
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

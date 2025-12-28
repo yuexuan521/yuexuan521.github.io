@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]纳尼 1"
-date: 2024-09-23 10:54:24
+date: 2024-07-23 10:54:24
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

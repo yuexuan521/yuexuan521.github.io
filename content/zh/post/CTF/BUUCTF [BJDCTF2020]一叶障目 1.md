@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]一叶障目 1"
-date: 2024-09-23 10:58:04
+date: 2024-09-21 10:58:04
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

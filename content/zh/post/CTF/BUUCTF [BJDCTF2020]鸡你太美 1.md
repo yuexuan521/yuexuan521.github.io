@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]鸡你太美 1"
-date: 2024-09-23 11:01:20
+date: 2024-08-23 11:01:20
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

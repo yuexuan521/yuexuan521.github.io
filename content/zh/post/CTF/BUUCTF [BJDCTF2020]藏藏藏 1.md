@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]藏藏藏 1"
-date: 2024-09-23 22:47:52
+date: 2024-08-23 22:47:52
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

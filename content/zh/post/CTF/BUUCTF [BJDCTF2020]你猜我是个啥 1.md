@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]你猜我是个啥 1"
-date: 2024-09-23 11:05:33
+date: 2024-09-22 11:05:33
 category: "BUUCTF MISC"
 categories: 
   - "CTF"
