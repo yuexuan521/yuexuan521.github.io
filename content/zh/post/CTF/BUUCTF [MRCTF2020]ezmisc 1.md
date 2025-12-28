@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [MRCTF2020]ezmisc 1"
-date: 2024-09-21 23:02:42
+date: 2024-06-21 23:02:42
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [ACTF新生赛2020]swp 1"
-date: 2024-09-21 20:42:51
+date: 2024-06-21 20:42:51
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

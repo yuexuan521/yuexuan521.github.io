@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [RoarCTF2019]黄金6年 1"
-date: 2024-09-21 20:38:23
+date: 2024-08-21 20:38:23
 category: "BUUCTF MISC"
 categories: 
   - "CTF"
