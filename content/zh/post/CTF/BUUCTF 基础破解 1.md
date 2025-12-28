@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 基础破解 1"
-date: 2024-09-24 22:43:42
+date: 2024-03-24 22:43:42
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

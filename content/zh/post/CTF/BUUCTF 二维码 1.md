@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 二维码 1"
-date: 2024-09-24 22:39:08
+date: 2024-05-24 22:39:08
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

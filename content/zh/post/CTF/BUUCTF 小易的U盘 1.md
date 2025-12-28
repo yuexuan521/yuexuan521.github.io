@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 小易的U盘 1"
-date: 2024-09-21 20:25:04
+date: 2024-08-21 20:25:04
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

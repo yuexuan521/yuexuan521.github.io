@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF rar 1"
-date: 2024-09-24 16:43:58
+date: 2024-07-24 16:43:58
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

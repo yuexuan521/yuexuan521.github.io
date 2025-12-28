@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF easycap 1"
-date: 2024-09-24 16:29:01
+date: 2024-05-24 16:29:01
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

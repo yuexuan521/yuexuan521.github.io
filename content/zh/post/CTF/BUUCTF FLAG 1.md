@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF FLAG 1"
-date: 2024-09-24 16:32:15
+date: 2024-06-24 16:32:15
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

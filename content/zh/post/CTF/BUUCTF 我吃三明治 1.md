@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 我吃三明治 1"
-date: 2024-09-21 20:50:33
+date: 2024-08-21 20:50:33
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

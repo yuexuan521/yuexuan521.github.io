@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 数据包中的线索 1"
-date: 2024-09-24 16:33:26
+date: 2024-01-24 16:33:26
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

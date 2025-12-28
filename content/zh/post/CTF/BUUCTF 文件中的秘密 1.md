@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 文件中的秘密 1"
-date: 2024-09-24 22:44:51
+date: 2024-03-24 22:44:51
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

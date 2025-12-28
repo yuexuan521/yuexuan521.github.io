@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 菜刀666 1"
-date: 2024-09-23 10:59:54
+date: 2024-02-23 10:59:54
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

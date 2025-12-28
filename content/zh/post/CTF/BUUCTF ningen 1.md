@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF ningen 1"
-date: 2024-09-24 16:34:24
+date: 2024-07-24 16:34:24
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

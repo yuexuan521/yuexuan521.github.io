@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF LSB 1"
-date: 2024-09-24 22:45:48
+date: 2024-06-24 22:45:48
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

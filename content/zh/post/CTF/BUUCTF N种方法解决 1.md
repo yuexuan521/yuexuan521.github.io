@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF N种方法解决 1"
-date: 2024-09-24 22:41:47
+date: 2024-06-24 22:41:47
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

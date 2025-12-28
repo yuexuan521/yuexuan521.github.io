@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF qr 1"
-date: 2024-09-24 16:42:40
+date: 2024-07-24 16:42:40
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

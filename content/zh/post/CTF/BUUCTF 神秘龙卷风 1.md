@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 神秘龙卷风 1"
-date: 2024-09-24 16:40:33
+date: 2024-01-24 16:40:33
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

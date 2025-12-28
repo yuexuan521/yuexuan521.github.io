@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF wireshark 1"
-date: 2024-09-24 22:42:44
+date: 2024-08-24 22:42:44
 category: "BUUCTF MISC"
 categories: 
   - "CTF"
