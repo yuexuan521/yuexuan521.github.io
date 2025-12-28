@@ -1,18 +1,26 @@
-{{- `$highlight := resources.Get "js/pangu.min.js" }}$`
-<script>
-  (function (u, c) {
-    var d = document,
-      t = "script",
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) {
-      o.addEventListener("load", function (e) {
-        c(e);
+{{- /* 尝试获取本地的 pangu.js */ -}}
+{{- $pangu := resources.Get "js/pangu.min.js" -}}
+
+{{- /* 如果找到了文件，就加载它 */ -}}
+{{- if $pangu -}}
+    {{- /* 对 JS 进行指纹处理，防止缓存问题 */ -}}
+    {{- $pangu := $pangu | resources.Fingerprint -}}
+    <script>
+      (function (u, c) {
+        var d = document,
+          t = "script",
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) {
+          o.addEventListener("load", function (e) {
+            c(e);
+          });
+        }
+        s.parentNode.insertBefore(o, s);
+      })("{{ $pangu.RelPermalink }}", function () {
+        // 当 pangu.js 加载完成后执行：
+        pangu.spacingPage();
       });
-    }
-    s.parentNode.insertBefore(o, s);
-  })("{{ $highlight.RelPermalink }}", function () {
-    pangu.spacingPage();
-  });
-</script>
+    </script>
+{{- end -}}
