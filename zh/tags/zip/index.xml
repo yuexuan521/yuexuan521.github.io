@@ -264,137 +264,6 @@
 </div>]]></content:encoded>
     </item>
     <item>
-      <title>BUUCTF 神秘龙卷风 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E7%A5%9E%E7%A7%98%E9%BE%99%E5%8D%B7%E9%A3%8E-1/</link>
-      <pubDate>Tue, 24 Sep 2024 16:40:33 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E7%A5%9E%E7%A7%98%E9%BE%99%E5%8D%B7%E9%A3%8E-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;神秘龙卷风转转转，科学家用四位数字为它命名，但是发现解密后居然是一串外星人代码！！好可怕！&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到一个.rar压缩包。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>神秘龙卷风转转转，科学家用四位数字为它命名，但是发现解密后居然是一串外星人代码！！好可怕！</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到一个.rar压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、解压压缩包需要密码，根据题目得知密码为四位纯数字，在RARP中打开压缩包，选择字符范围和密码长度，点击开始破解。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>得到压缩包密码为5463。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、解压压缩包，得到神秘龙卷风.txt文件。打开后，显示内容如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>内容由“+”、“.”、“&gt;”三种符号组成，我刚开始认为这是一种密文，经过搜索，确认这是一种名为“Brainfuck”的计算机语言。
-<a href="https://baike.baidu.com/item/Brainfuck"target="_blank" rel="noopener noreferrer">Brainfuck</a></p>
-<p>3、结合题目提示的“代码”，我找到一个brainfuck 在线工具可以运行brainfuck代码。将记事本中的代码复制到在线工具中，运行得到flag。
-<a href="https://www.w3cschool.cn/tryrun/runcode?lang=brainfuck"target="_blank" rel="noopener noreferrer">Brainfuck 在线工具</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>e4bbef8bdf9743f8bf5b727a9f6332a8<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
       <title>BUUCTF [GUET-CTF2019]zips 1</title>
       <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-guet-ctf2019zips-1/</link>
       <pubDate>Sat, 21 Sep 2024 20:14:36 +0000</pubDate>
@@ -619,6 +488,137 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>fkjabPqnLawhvuikfhgzyffj<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 神秘龙卷风 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E7%A5%9E%E7%A7%98%E9%BE%99%E5%8D%B7%E9%A3%8E-1/</link>
+      <pubDate>Wed, 24 Jan 2024 16:40:33 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E7%A5%9E%E7%A7%98%E9%BE%99%E5%8D%B7%E9%A3%8E-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;神秘龙卷风转转转，科学家用四位数字为它命名，但是发现解密后居然是一串外星人代码！！好可怕！&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，解压得到一个.rar压缩包。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>神秘龙卷风转转转，科学家用四位数字为它命名，但是发现解密后居然是一串外星人代码！！好可怕！</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到一个.rar压缩包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、解压压缩包需要密码，根据题目得知密码为四位纯数字，在RARP中打开压缩包，选择字符范围和密码长度，点击开始破解。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到压缩包密码为5463。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、解压压缩包，得到神秘龙卷风.txt文件。打开后，显示内容如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>内容由“+”、“.”、“&gt;”三种符号组成，我刚开始认为这是一种密文，经过搜索，确认这是一种名为“Brainfuck”的计算机语言。
+<a href="https://baike.baidu.com/item/Brainfuck"target="_blank" rel="noopener noreferrer">Brainfuck</a></p>
+<p>3、结合题目提示的“代码”，我找到一个brainfuck 在线工具可以运行brainfuck代码。将记事本中的代码复制到在线工具中，运行得到flag。
+<a href="https://www.w3cschool.cn/tryrun/runcode?lang=brainfuck"target="_blank" rel="noopener noreferrer">Brainfuck 在线工具</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>e4bbef8bdf9743f8bf5b727a9f6332a8<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
