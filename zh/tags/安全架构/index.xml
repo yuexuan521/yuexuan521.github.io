@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>安全架构 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/</link>
+    <description>Recent content in 安全架构 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 12:41:12 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packet Tracer - Configuring a Zone-Based Policy Firewall (配置基于区域的策略防火墙 ZPF)</title>
+      <link>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
+      <pubDate>Thu, 23 Jan 2025 12:41:12 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在防火墙配置前验证设备之间的连通性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在路由器R3上配置基于区域的策略（ZPF）防火墙。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>在防火墙配置前验证设备之间的连通性。</p>
+</li>
+<li>
+<p>在路由器R3上配置基于区域的策略（ZPF）防火墙。</p>
+</li>
+<li>
+<p>使用ping、Telnet和网页浏览器验证ZPF防火墙功能。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>基于区域的策略（Zone-Based Policy，ZPF）防火墙是Cisco防火墙技术发展的最新成果。在本活动中，您将在边缘路由器R3上配置一个基本的ZPF防火墙，允许内部主机访问外部资源，并阻止外部主机访问内部资源。然后，从内部和外部主机验证防火墙的功能。</p>
+<p>路由器已预先配置了以下内容：</p>
+<ul>
+<li>
+<p>控制台密码： <strong>ciscoconpa55</strong></p>
+</li>
+<li>
+<p>vty线路密码： <strong>ciscovtypa55</strong></p>
+</li>
+<li>
+<p>启用密码： <strong>ciscoenpa55</strong></p>
+</li>
+<li>
+<p>主机名和IP地址配置</p>
+</li>
+<li>
+<p>静态路由配置</p>
+</li>
+</ul>
+<h3 id="第一部分验证基本网络连通性">第一部分：验证基本网络连通性</h3>
+<p>在配置基于区域的策略防火墙之前，验证网络连通性。</p>
+<p><strong>步骤1：从PC-A命令提示符，ping PC-C的192.168.3.3地址。</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从PC-C命令提示符，通过telnet连接到Router R2 S0/0/1接口的10.2.2.2地址。退出Telnet会话。</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：从PC-C打开一个网页浏览器访问PC-A服务器。</strong></p>
+<p>a. 点击桌面标签页并点击Web浏览器应用程序。将PC-A的IP地址 <strong>192.168.1.3</strong> 作为URL输入。此时应显示来自Web服务器的Packet Tracer欢迎页面。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 关闭PC-C上的浏览器。</p>
+<h3 id="第二部分在路由器r3上创建防火墙区域">第二部分：在路由器R3上创建防火墙区域</h3>
+<p>注意：对于所有配置任务，请确保使用指定的确切名称。</p>
+<p><strong>步骤1：创建内部区域。</strong></p>
+<p>使用 <strong>zone security</strong> 命令创建名为 <strong>IN-ZONE</strong> 的区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone security IN-ZONE
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：创建外部区域。</strong></p>
+<p>使用 <strong>zone security</strong> 命令创建名为 <strong>OUT-ZONE</strong> 的区域，并退出区域安全配置模式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone security OUT-ZONE
+</span></span><span class="line"><span class="cl">R3(config-sec-zone)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第三部分定义流量类别和访问列表">第三部分：定义流量类别和访问列表</h3>
+<p><strong>步骤1：创建定义内部流量的ACL。</strong></p>
+<p>使用 <code>access-list</code> 命令创建扩展ACL 101，允许来自192.168.3.0/24源网络的所有IP协议到任何目的地。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# access-list 101 permit ip 192.168.3.0 0.0.0.255 any
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：创建引用内部流量ACL的类映射。</strong></p>
+<p>使用带有match-all选项的 <code>class-map type inspect</code> 命令创建名为 <strong>IN-NET-CLASS-MAP</strong> 的类映射。使用 <code>match access-group</code> 命令匹配ACL 101。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# class-map type inspect match-all IN-NET-CLASS-MAP
+</span></span><span class="line"><span class="cl">R3(config-cmap)# match access-group 101
+</span></span><span class="line"><span class="cl">R3(config-cmap)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：虽然在本Packet Tracer练习中不支持，但可以通过match-any选项指定具体的协议（如HTTP、FTP等），以便对需要检查的流量类型提供更精确的控制。</p>
+<h3 id="第四部分指定防火墙策略">第四部分：指定防火墙策略</h3>
+<p><strong>步骤1：创建策略映射以确定如何处理匹配的流量。</strong></p>
+<p>使用 <code>policy-map type inspect</code> 命令并创建一个名为IN-2-OUT-PMAP的策略映射。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# policy-map type inspect IN-2-OUT-PMAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：指定inspect类型的类，并引用类映射IN-NET-CLASS-MAP。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap)# class type inspect IN-NET-CLASS-MAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：为该策略映射指定inspect操作。</strong></p>
+<p>使用inspect命令会调用基于上下文的访问控制（其他选项包括pass和drop）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap-c)# inspect
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%No specific protocol configured in class IN-NET-CLASS-MAP for inspection. All protocols will be inspected.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>提示信息表示IN-NET-CLASS-MAP类没有配置特定协议进行检查，因此所有协议都将被检查。</p>
+<p>连续两次发出exit命令，退出config-pmap-c模式并返回到config模式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap-c)# exit
+</span></span><span class="line"><span class="cl">R3(config-pmap)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第五部分应用防火墙策略">第五部分：应用防火墙策略</h3>
+<p><strong>步骤1：创建一对区域。</strong></p>
+<p>使用 <code>zone-pair security</code> 命令，创建一个名为 <strong>IN-2-OUT-ZPAIR</strong> 的区域对。指定在任务1中创建的源和目标区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone-pair security IN-2-OUT-ZPAIR source IN-ZONE destination OUT-ZONE
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：为两个区域之间的流量指定策略映射。</strong></p>
+<p>通过 <code>service-policy type inspect</code> 命令将策略映射及其关联操作附加到区域对，并引用之前创建的策略映射IN-2-OUT-PMAP。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-sec-zone-pair)# service-policy type inspect IN-2-OUT-PMAP
+</span></span><span class="line"><span class="cl">R3(config-sec-zone-pair)# exit
+</span></span><span class="line"><span class="cl">R3(config)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：将接口分配给相应的安全区域。</strong></p>
+<p>在接口配置模式下，使用 <code>zone-member security</code> 命令将Fa0/1分配给IN-ZONE，将S0/0/1分配给OUT-ZONE。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# interface fa0/1
+</span></span><span class="line"><span class="cl">R3(config-if)# zone-member security IN-ZONE
+</span></span><span class="line"><span class="cl">R3(config-if)# exit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">R3(config)# interface s0/0/1
+</span></span><span class="line"><span class="cl">R3(config-if)# zone-member security OUT-ZONE
+</span></span><span class="line"><span class="cl">R3(config-if)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：将运行配置复制到启动配置。</strong></p>
+<h3 id="第六部分从in-zone到out-zone测试防火墙功能">第六部分：从IN-ZONE到OUT-ZONE测试防火墙功能</h3>
+<p>验证配置基于区域的策略防火墙后，内部主机仍能访问外部资源。</p>
+<p><strong>步骤1：从内部PC-C，ping外部PC-A服务器。</strong></p>
+<p>从PC-C命令提示符，ping PC-A的192.168.1.3地址。ping操作应成功。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从内部PC-C，telnet到路由器R2 S0/0/1接口。</strong></p>
+<p>a. 从PC-C命令提示符，telnet到R2的10.2.2.2，并提供vty密码 <strong>ciscovtypa55</strong> 。Telnet会话应成功。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 在活动的Telnet会话中，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>源IP地址和端口号是什么？</p>
+<p>目标IP地址和端口号是什么？</p>
+<p><strong>步骤3：从PC-C退出R2上的Telnet会话并关闭命令提示符窗口。</strong></p>
+<p><strong>步骤4：从内部PC-C，打开一个网页浏览器访问PC-A服务器的网页。</strong></p>
+<p>在浏览器URL字段中输入服务器IP地址192.168.1.3，并点击“Go”。HTTP会话应成功。在HTTP会话活动期间，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。</p>
+<p>注：如果在您在R3上执行命令之前HTTP会话超时，您需要在PC-C上点击“Go”按钮来生成PC-C与PC-A之间的会话。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>源IP地址和端口号是什么？</p>
+<p>目标IP地址和端口号是什么？</p>
+<p><strong>步骤5：关闭PC-C上的浏览器。</strong></p>
+<h3 id="第七部分从out-zone到in-zone测试防火墙功能">第七部分：从OUT-ZONE到IN-ZONE测试防火墙功能</h3>
+<p>验证配置基于区域的策略防火墙后，外部主机无法访问内部资源。</p>
+<p><strong>步骤1：从PC-A服务器命令提示符，ping PC-C。</strong></p>
+<p>从PC-A命令提示符，ping PC-C的192.168.3.3地址。ping操作应失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从路由器R2，ping PC-C。</strong></p>
+<p>从R2，ping PC-C的192.168.3.3地址。ping操作应失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：检查结果。</strong></p>
+<p>您的完成百分比应为100%。点击“CheckResults”查看反馈和已完成的必要组件验证。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

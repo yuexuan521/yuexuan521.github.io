@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>信息与通信 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E4%BF%A1%E6%81%AF%E4%B8%8E%E9%80%9A%E4%BF%A1/</link>
+    <description>Recent content in 信息与通信 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 12:48:24 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E4%BF%A1%E6%81%AF%E4%B8%8E%E9%80%9A%E4%BF%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packet Tracer - Configure AAA Authentication on Cisco Routers（在思科路由器上配置 AAA 认证）</title>
+      <link>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
+</li>
+<li>
+<p>从R1控制台和PC-A客户端验证本地AAA身份验证功能。</p>
+</li>
+<li>
+<p>配置基于服务器的AAA身份验证，采用TACACS+协议。</p>
+</li>
+<li>
+<p>从PC-B客户端验证基于服务器的AAA（TACACS+）身份验证。</p>
+</li>
+<li>
+<p>配置基于服务器的AAA身份验证，采用RADIUS协议。</p>
+</li>
+<li>
+<p>从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
+<p>您将在路由器R1上创建一个本地用户账户，并配置本地AAA以测试控制台和vty登录：</p>
+<ul>
+<li>
+<p>用户账户：Admin1，密码admin1pa55
+接下来，将配置路由器R2以支持通过TACACS+协议实现的基于服务器的身份验证。TACACS+服务器已经预先配置了以下信息：</p>
+</li>
+<li>
+<p>客户端：R2，关键字为tacacspa55</p>
+</li>
+<li>
+<p>用户账户：Admin2，密码admin2pa55
+最后，您将配置路由器R3以支持通过RADIUS协议实现的基于服务器的身份验证。RADIUS服务器已预先配置如下信息：</p>
+</li>
+<li>
+<p>客户端：R3，关键字为radiuspa55</p>
+</li>
+<li>
+<p>用户账户：Admin3，密码admin3pa55
+此外，路由器还预配置了以下内容：</p>
+</li>
+<li>
+<p>启用秘密密码：ciscoenpa55</p>
+</li>
+<li>
+<p>使用MD5认证的OSPF路由协议，密码为：MD5pa55
+注意：控制台和vty线路尚未预先配置。</p>
+</li>
+</ul>
+<p>注意：尽管IOS版本15.3使用了更为安全的加密哈希算法SCRYPT，但在Packet Tracer当前支持的IOS版本中仍使用MD5。请始终在您的设备上使用最安全的选项。</p>
+<hr>
+<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3>
+<p><strong>步骤1：测试连通性</strong></p>
+<ul>
+<li>
+<p>从PC-A向PC-B执行Ping操作。</p>
+</li>
+<li>
+<p>从PC-A向PC-C执行Ping操作。</p>
+</li>
+<li>
+<p>从PC-B向PC-C执行Ping操作。</p>
+</li>
+</ul>
+<p><strong>步骤2：在R1上配置本地用户名</strong></p>
+<ul>
+<li>在R1上配置一个名为 <strong>Admin1</strong> 的用户名，设置秘密密码为 <strong>admin1pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R1(config)# username Admin1 secret admin1pa55</p>
+</blockquote>
+<p><strong>步骤3：在R1上为控制台访问配置本地AAA认证</strong></p>
+<ul>
+<li>在R1上启用AAA功能，并配置控制台登录时使用本地数据库进行AAA身份验证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# aaa new-model
+R1(config)# aaa authentication login default local</p>
+</blockquote>
+<p><strong>步骤4：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>在R1上针对控制台登录启用AAA，并配置其使用默认方法列表进行AAA身份验证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# line console 0
+R1(config-line)# login authentication default</p>
+</blockquote>
+<p><strong>步骤5：验证AAA认证方法</strong></p>
+<ul>
+<li>使用本地数据库验证用户EXEC登录过程。</li>
+</ul>
+<p>通过以上配置后，可以在R1的控制台上用Admin1账户和对应的密码admin1pa55进行登录，验证本地AAA身份验证是否生效。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3>
+<p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
+a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
+b. 创建一个1024位的RSA加密密钥。</p>
+<blockquote>
+<p>R1(config)#ip domain-name ccnasecurity.com
+R1(config)# crypto key generate rsa</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">R1<span class="o">(</span>config<span class="o">)</span><span class="c1"># crypto key generate rsa</span>
+</span></span><span class="line"><span class="cl">The name <span class="k">for</span> the keys will be: R3.ccnasecurity.com
+</span></span><span class="line"><span class="cl">Choose the size of the key modulus in the range of <span class="m">360</span> to <span class="m">2048</span> <span class="k">for</span> your
+</span></span><span class="line"><span class="cl">General Purpose Keys. Choosing a key modulus greater than <span class="m">512</span> may take
+</span></span><span class="line"><span class="cl">a few minutes.
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">How many bits in the modulus <span class="o">[</span>512<span class="o">]</span>: <span class="m">1024</span>
+</span></span><span class="line"><span class="cl">% Generating <span class="m">1024</span> bit RSA keys, keys will be non-exportable...<span class="o">[</span>OK<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：为R1上的vty线路配置命名列表AAA认证方法</strong></p>
+<ul>
+<li>配置名为 <strong>SSH-LOGIN</strong> 的命名列表，用于使用本地AAA进行登录认证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# aaa authentication login SSH-LOGIN local</p>
+</blockquote>
+<p><strong>步骤3：配置vty线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置vty线路使用已定义的AAA方法，并只允许通过SSH进行远程访问。</li>
+</ul>
+<blockquote>
+<p>R1(config)# line vty 0 4
+R1(config-line)# transport input ssh
+R1(config-line)# login authentication SSH-LOGIN</p>
+</blockquote>
+<p><strong>步骤4：验证AAA认证方法</strong></p>
+<ul>
+<li>从PC-A的命令提示符处通过SSH连接到R1，验证SSH配置及AAA身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3>
+<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<ul>
+<li>为了备份目的，在R2上配置一个本地用户名 <strong>Admin2</strong> ，密码为 <strong>admin2pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R2(config)# username Admin2 secret admin2pa55</p>
+</blockquote>
+<p><strong>步骤2：验证TACACS+服务器配置</strong></p>
+<ul>
+<li>点击TACACS+ Server，查看“服务”选项卡中的AAA设置，确认存在针对R2的网络配置条目和针对Admin2的用户设置条目。</li>
+</ul>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在R2上配置TACACS+服务器详细信息</strong></p>
+<ul>
+<li>在R2上配置AAA TACACS+服务器IP地址和共享密钥。</li>
+</ul>
+<p>注意：尽管 <code>tacacs-server host</code> 和 <code>tacacs-server key</code> 命令已过时，但目前Packet Tracer暂不支持新命令 <code>tacacs server</code> 。此处依然使用旧命令进行配置。</p>
+<blockquote>
+<p>R2(config)# tacacs-server host 192.168.2.2
+R2(config)# tacacs-server key tacacspa55</p>
+</blockquote>
+<p><strong>步骤4：为R2的控制台访问配置AAA登录认证</strong></p>
+<ul>
+<li>启用R2上的AAA，并配置所有登录通过AAA TACACS+服务器进行认证，若服务器不可用，则使用本地数据库。</li>
+</ul>
+<blockquote>
+<p>R2(config)# aaa new-model
+R2(config)# aaa authentication login default group tacacs+ local</p>
+</blockquote>
+<p><strong>步骤5：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置控制台登录使用默认的AAA认证方法。</li>
+</ul>
+<blockquote>
+<p>R2(config)#line console 0
+R2(config-line)#login authentication default</p>
+</blockquote>
+<p>由于之前已经全局配置了AAA和TACACS+，此处不再需要单独配置console线路。</p>
+<p><strong>步骤6：验证AAA认证方法</strong></p>
+<ul>
+<li>通过AAA TACACS+服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R2并观察其是否成功通过TACACS+服务器进行身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3>
+<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<ul>
+<li>为了备份目的，在R3上配置一个本地用户名 <strong>Admin3</strong> ，密码为 <strong>admin3pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R3(config)# username Admin3 secret admin3pa55</p>
+</blockquote>
+<p><strong>步骤2：验证RADIUS服务器配置</strong></p>
+<ul>
+<li>点击RADIUS服务器，并查看“服务”选项卡中的AAA设置。注意其中包含针对R3的网络配置条目和针对Admin3的用户设置条目。</li>
+</ul>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在R3上配置RADIUS服务器详细信息</strong></p>
+<ul>
+<li>在R3上配置AAA RADIUS服务器IP地址和共享密钥。</li>
+</ul>
+<p>注意：虽然 <code>radius-server host</code> 和 <code>radius-server key</code> 命令可能已过时，但当前Packet Tracer版本暂不支持新的 <code>radius server</code> 命令。此处仍使用旧命令进行配置。</p>
+<blockquote>
+<p>R3(config)# radius-server host 192.168.3.2
+R3(config)# radius-server key radiuspa55</p>
+</blockquote>
+<p><strong>步骤4：为R3的控制台访问配置AAA登录认证</strong></p>
+<ul>
+<li>启用R3上的AAA，并配置所有登录通过AAA RADIUS服务器进行认证，若服务器不可用，则使用本地数据库。</li>
+</ul>
+<blockquote>
+<p>R3(config)# aaa new-model
+R3(config)# aaa authentication login default group radius local</p>
+</blockquote>
+<p><strong>步骤5：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置控制台登录使用默认的AAA认证方法。</li>
+</ul>
+<blockquote>
+<p>R3(config)#line console 0
+R3(config-line)#login authentication default</p>
+</blockquote>
+<p>由于之前已经全局配置了AAA和RADIUS，此处不再需要单独配置console线路。</p>
+<p><strong>步骤6：验证AAA认证方法</strong></p>
+<ul>
+<li>通过AAA RADIUS服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R3并观察其是否成功通过RADIUS服务器进行身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<p><strong>步骤7：检查结果</strong></p>
+<ul>
+<li>您的完成度应达到100%。点击“检查结果”以查看反馈和已完成所需组件的验证情况。</li>
+</ul>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
