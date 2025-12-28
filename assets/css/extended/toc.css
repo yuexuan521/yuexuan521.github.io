@@ -1,0 +1,110 @@
+/* ==================================================================
+   侧边悬浮目录 (Floating TOC) - Native PaperMod Style
+   ================================================================== */
+
+:root {
+  --toc-width: 250px; /* 目录宽度 */
+  --gap: 20px;        /* 间距 */
+}
+
+/* --- 1. 默认状态 (手机/小屏幕) --- */
+/* 保持在文章顶部，不悬浮 */
+.toc {
+  margin: 0 2px 40px 2px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  border-radius: var(--radius);
+  padding: 0.4em;
+}
+
+/* --- 2. 悬浮状态 (大屏幕) --- */
+/* 当屏幕宽度大于 1300px 时，将目录移到左侧悬浮 */
+@media screen and (min-width: 1300px) {
+  .toc-container.wide {
+    position: absolute;
+    height: 100%;
+    /* 计算位置：移到文章主体左侧 */
+    left: calc((var(--toc-width) + var(--gap)) * -1);
+    top: 0;
+    width: var(--toc-width);
+  }
+
+  .wide .toc {
+    position: sticky; /* 粘性定位：随页面滚动 */
+    top: var(--gap);
+    border: none;
+    background: none; /* 悬浮时去掉背景框，融入背景 */
+    border-radius: unset;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* 悬浮时，内部稍微缩进一点 */
+  .toc .inner {
+    margin: 0;
+  }
+}
+
+/* --- 3. 目录细节样式 --- */
+
+/* 标题 "目录" */
+.toc details summary {
+  cursor: pointer;
+  margin-inline-start: 15px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: var(--primary); /* 跟随主题主色 */
+}
+
+/* 目录列表容器 */
+.toc .inner {
+  margin: 0 0 0 20px;
+  padding: 0 10px 15px 15px;
+  font-size: 14px;
+  max-height: 85vh; /* 限制高度，防止超出屏幕 */
+  overflow-y: auto; /* 超出则滚动 */
+}
+
+/* 隐藏原生的列表圆点 */
+.toc ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc li ul {
+  margin-inline-start: 1em;
+}
+
+.toc li {
+  padding-bottom: 5px;
+}
+
+/* 链接样式 */
+.toc a {
+  text-decoration: none;
+  color: var(--secondary); /* 默认为次要颜色 (灰色) */
+  transition: all 0.3s;
+  display: block;
+}
+
+.toc a:hover {
+  color: var(--primary); /* 悬停变为主色 */
+}
+
+/* 当前阅读章节高亮 */
+.toc .active {
+  font-weight: 600;
+  color: var(--primary); /* 高亮为主色 */
+  border-left: 2px solid var(--primary); /* 左侧加个小竖条指示 */
+  padding-left: 5px;
+  background: var(--entry); /* 稍微加点背景区分 */
+}
+
+/* 滚动条美化 (跟随主题色) */
+.toc .inner::-webkit-scrollbar {
+  width: 4px;
+}
+.toc .inner::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}

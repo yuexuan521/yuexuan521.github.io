@@ -1,0 +1,81 @@
+{{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
+{{- $has_headers := ge (len $headers) 1 -}}
+{{- if $has_headers -}}
+
+<!-- 容器：加入了 wide 类用于触发悬浮样式 -->
+<aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details {{if (.Param "TocOpen") }} open{{ end }}>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">{{- i18n "toc" | default "目录" }}</span>
+            </summary>
+
+            <div class="inner">
+                {{- $toc := .TableOfContents -}}
+                {{- $toc := replaceRE "<ul>" "<ul class=\"toc-list\">" $toc -}}
+                {{- $toc | safeHTML -}}
+            </div>
+        </details>
+    </div>
+</aside>
+
+<!-- 自动高亮脚本 -->
+<script>
+    let activeElement;
+    let elements;
+    
+    // 监听 DOM 加载
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition(); // 初始化位置判断
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        
+        if (elements.length > 0) {
+            // 监听滚动
+            window.addEventListener('scroll', () => {
+                activeElement = elements[0];
+                const id = checkActiveElement(elements);
+                if (id) {
+                    // 移除之前的 active
+                    document.querySelectorAll('.toc .active').forEach((el) => {
+                        el.classList.remove('active');
+                    });
+                    // 添加新的 active
+                    const activeLink = document.querySelector(`.toc a[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            }, { passive: true });
+        }
+    });
+
+    // 判断哪个标题在当前视口中
+    function checkActiveElement(elements) {
+        let activeId;
+        const OFFSET = 100; // 偏移量，防止标题被顶部挡住
+        elements.forEach((element) => {
+            if (window.pageYOffset >= element.offsetTop - OFFSET) {
+                activeId = element.id;
+            }
+        });
+        return activeId || elements[0].id;
+    }
+
+    // 判断屏幕宽度，决定是否启用悬浮模式
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        // 这些变量需要和 CSS 中的对应
+        const main = 650; // 文章大致宽度
+        const toc = 250;  // 目录宽度
+        const gap = 20;   // 间距
+
+        // 如果屏幕不够宽，就去掉 wide 类，让目录回到顶部
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+</script>
+{{- end -}}
