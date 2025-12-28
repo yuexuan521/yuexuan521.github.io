@@ -12,8 +12,751 @@
     <generator>Hugo -- 0.153.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 12:23:22 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 15:51:54 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [UTCTF2020]basic-forensics 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020basic-forensics-1/</link>
+      <pubDate>Fri, 14 Mar 2025 15:51:54 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020basic-forensics-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_24033605/article/details/117336177&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUU-MISC-[UTCTF2020]basic-forensics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，是一张打不开的图片&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、使用010Editor打开图片，发现似乎是一本书的数据&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://blog.csdn.net/qq_24033605/article/details/117336177"target="_blank" rel="noopener noreferrer">BUU-MISC-[UTCTF2020]basic-forensics</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，是一张打不开的图片</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、使用010Editor打开图片，发现似乎是一本书的数据</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>直接搜索关键词“flag”，就找到flag了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>fil3_ext3nsi0ns_4r3nt_r34l<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="-玥轩-网络安全拓扑空间">🔒 玥轩 |网络安全拓扑空间</h2>
+<h4 id="-攻防演化方程">🛡️ 攻防演化方程</h4>
+<p><code>#CTF_TOP10% | #密码学 | #漏洞宇宙</code></p>
+<hr>
+<h3 id="-安全算法素因子分解">🔑 安全算法素因子分解</h3>
+<p><strong>漏洞扫描定理</strong> ：</p>
+<p>$$
+\sqrt{61526} \approx 248 \quad \Rightarrow \quad \text{61,526次代码片分享构建248个攻防模型}
+$$</p>
+<p><strong>竞赛场博弈论</strong> ：</p>
+<p>$$
+\begin{cases} \text{CTF攻防矩阵} &amp; \nabla \cdot \vec{F} = \rho/\epsilon_0 \ \text{数模国赛优化解} &amp; \iint_{D} e^{x^2+y^2} , dx , dy \end{cases}
+$$</p>
+<hr>
+<h3 id="-云安全算子矩阵">🛰️ 云安全算子矩阵</h3>
+<p>$$
+\text{专家算子} = \begin{bmatrix} \text{阿里云} &amp; \otimes &amp; \text{乘风者计划} \ \text{华为云} &amp; \oplus &amp; \text{云享专家} \ \end{bmatrix}^{\mathrm{T}}
+$$</p>
+<hr>
+<h3 id="-安全协议证明体系">🧩 安全协议证明体系</h3>
+<p><strong>密码学引理</strong></p>
+<p>$$
+\mathbb{Z}_{p}^{*} \ni \alpha \xrightarrow{\text{ECDSA}} \sigma = (\gamma, \delta) \quad \Rightarrow \quad \text{云原生场景密钥演化}
+$$</p>
+<p><strong>威胁建模推论</strong></p>
+<p>$$
+\forall x \in \mathcal{V},\ \exists y \mid \mathop{\mathbb{P}}(X \leq \phi(y)) \geq 0.95 \quad \Rightarrow \quad \text{APT攻击概率收敛}
+$$</p>
+<hr>
+<h3 id="-尼采安全哲学">🌩️ 尼采安全哲学</h3>
+<p>$$
+\mathop{\text{lim}}_{t\to\infty} \frac{\partial \Psi}{\partial t} = \lambda \Psi \quad \text{其中} \ \Psi = \text{&ldquo;深自缄默→声震人间&rdquo;}
+$$</p>
+<hr>
+<h3 id="-安全信道协议">📡 安全信道协议</h3>
+<p>$$
+\begin{array}{ccc} \text{CTF Writeup库} &amp; \xleftrightarrow{\text{TLS1.3}} &amp; \text{漏洞星球} \ &amp; \Updownarrow &amp; \ \text{云安全智库} &amp; \xrightarrow{\text{AES-GCM}} &amp; \text{我的GitHub} \ \end{array}
+$$</p>
+<hr>
+<h4 id="-安全握手请求">🔗 安全握手请求</h4>
+<p>$$
+\text{Let’s } \mathop{\text{Handshake}} \left( \frac{\text{你}}{\text{我}} \right) \ni { \text{知乎|GitHub|阿里云} }
+$$</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [GKCTF 2021]你知道apng吗 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</link>
+      <pubDate>Sun, 19 Jan 2025 11:53:54 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_45556441/article/details/119801433&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf [GKCTF 2021]你知道apng吗 ＜apng图片格式的考察＞&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_29977871/article/details/128507643&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf-misc-[GKCTF 2021]你知道apng吗1&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/wangjin7356/article/details/123402038&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;你知道apng吗&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://blog.csdn.net/weixin_45556441/article/details/119801433"target="_blank" rel="noopener noreferrer">buuctf [GKCTF 2021]你知道apng吗 ＜apng图片格式的考察＞</a>
+<a href="https://blog.csdn.net/qq_29977871/article/details/128507643"target="_blank" rel="noopener noreferrer">buuctf-misc-[GKCTF 2021]你知道apng吗1</a>
+<a href="https://blog.csdn.net/wangjin7356/article/details/123402038"target="_blank" rel="noopener noreferrer">你知道apng吗</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>（flag由flag头包裹</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到girl.apng文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、根据题目 <code>你知道apng吗</code> ，搜索得到这是一种类似于GIF的动图文件。</p>
+<p><a href="https://www.bilibili.com/opus/301546385385594815"target="_blank" rel="noopener noreferrer">科普（APNG）</a></p>
+<blockquote>
+<p>APNG：我出身于PNG（便携式网络图形），我的使命就是淘汰GIF。我的全称是Animated Portable Network Graphics，我的本质是PNG的位图动画扩展，但未获PNG组织官方认可。我仍对原版PNG保持向下兼容，我的第1帧为标准PNG图像，剩余的动画和帧速等数据放在PNG扩展数据块，因此只支持原版PNG的软件会正确显示第1帧。Firefox与Chrome浏览器（59版本及以上）均可以直接打开我。</p>
+</blockquote>
+<p><a href="https://baike.baidu.com/item/APNG/3582613"target="_blank" rel="noopener noreferrer">APNG百度</a></p>
+<blockquote>
+<p>APNG（Animated Portable Network Graphics）是一个基于PNG（Portable Network Graphics）的位图动画格式，扩展方法类似主要用于网页的GIF 89a，仍对传统PNG保留向下兼容。第1帧是标准的单幅PNG图像，因此只支持原版PNG的软件能正常显示第1帧。剩余的动画帧和帧速数据储存在符合原版PNG标准的扩展数据块里。 APNG与Mozilla社区关系密切，格式标准文档就放在Mozilla网站。</p>
+</blockquote>
+<p>使用Firefox可以打开girl.apng，可以看到有多个二维码一闪而过。</p>
+<p>找到一个APNG在线查看工具： <a href="https://ezgif.com/split?err=expired"target="_blank" rel="noopener noreferrer">https://ezgif.com/split?err=expired</a> ，上传图片后，点击 <code>Split</code> ，得到每帧的图片。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p><code>1、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png" 
+             alt="请添加图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>2、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>3、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>4、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>2、使用PS（或在线PS）处理第一张图片，选择 <code>编辑</code> –&gt; <code>变换</code> –&gt; <code>扭曲</code> ，此时扫码得到四分之一的flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>第二张图片使用StegSolve，查看其它的通道，找到可以识别的二维码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>剩下两张可以直接扫码得到四分之一flag，最后得到完整flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>a3c7e4e5-9b9d-ad20-0327-288a235370ea<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [SUCTF2018]followme 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf2018followme-1/</link>
+      <pubDate>Mon, 16 Dec 2024 09:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-suctf2018followme-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。来源： &lt;a href=&#34;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件得到attachment.pcapng文件&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。来源： <a href="https://github.com/hebtuerror404/CTF_competition_warehouse_2018"target="_blank" rel="noopener noreferrer">https://github.com/hebtuerror404/CTF_competition_warehouse_2018</a></p>
+<h3 id="密文">密文：</h3>
+<p>下载附件得到attachment.pcapng文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="方法一">方法一：</h4>
+<p>使用Wireshark，在分组字节流中查找包含 <code>ctf</code> 的内容，可以找到flag</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="方法二">方法二：</h4>
+<p>将全部HTTP对象导出</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>发现大量的文件如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>搜索文件中的关键词，使用grep命令，查找到flag</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -r -i  <span class="s2">&#34;ctf&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">SUCTF<span class="o">{</span>password_is_not_weak<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>password_is_not_weak<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [WUSTCTF2020]girlfriend 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-wustctf2020girlfriend-1/</link>
+      <pubDate>Mon, 18 Nov 2024 12:58:09 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-wustctf2020girlfriend-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105412940&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[WUSTCTF2020]girlfriend&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台：https://ctfgame.w-ais.cn/&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/105412940"target="_blank" rel="noopener noreferrer">BUUCTF：[WUSTCTF2020]girlfriend</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台：https://ctfgame.w-ais.cn/</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到attachment .zip压缩包，解压后得到girlfriend.zip压缩包。最后材料是girlfriend.wav和题目描述.txt。</p>
+<p>题目描述.txt内容如下：
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、尝试听girlfriend.wav音频文件，刚开始没有听出是手机键盘拨号声。后面看题解，得知是DTMF拨号音识别。
+<strong>Audacity显示</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用dtmf2num程序识别拨号内容
+<a href="https://link.csdn.net/?from_id=105412940&amp;target=http://aluigi.altervista.org/mytoolz/dtmf2num.zip"target="_blank" rel="noopener noreferrer">dtmf2num下载地址</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">dtmf2num.exe ..<span class="se">\资</span>料<span class="se">\g</span>irlfriend.wav
+</span></span><span class="line"><span class="cl">dtmf2num.exe 音频文件位置
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到如下的按键顺序、次数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">999*666*88*2*777*33*6*999*4*4444*777*555*333*777*444*33*66*3*7777
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、对应手机上九宫格输入，得到最后的字符串为 <code>YOUAREMYGIRLFRIENDS</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">YOUAREMYGIRLFRIENDS
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">999</span>     ---&gt;   y
+</span></span><span class="line"><span class="cl"><span class="m">666</span>     ---&gt;   o
+</span></span><span class="line"><span class="cl"><span class="m">88</span>      ---&gt;   u
+</span></span><span class="line"><span class="cl"><span class="m">2</span>       ---&gt;   a
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">33</span>      ---&gt;   e
+</span></span><span class="line"><span class="cl"><span class="m">6</span>       ---&gt;   m
+</span></span><span class="line"><span class="cl"><span class="m">999</span>     ---&gt;   y
+</span></span><span class="line"><span class="cl"><span class="m">4</span>       ---&gt;   g
+</span></span><span class="line"><span class="cl"><span class="m">4444</span>    ---&gt;   i
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">555</span>     ---&gt;   l
+</span></span><span class="line"><span class="cl"><span class="m">333</span>     ---&gt;   f
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">444</span>     ---&gt;   i
+</span></span><span class="line"><span class="cl"><span class="m">33</span>      ---&gt;   e
+</span></span><span class="line"><span class="cl"><span class="m">66</span>      ---&gt;   n
+</span></span><span class="line"><span class="cl"><span class="m">3</span>       ---&gt;   d
+</span></span><span class="line"><span class="cl"><span class="m">7777</span>    ---&gt;   s
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">youaremygirlfriends
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<p>大写提交不成功，切换小写</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>youaremygirlfriends<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA File Inclusion（文件包含）</title>
       <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
@@ -3429,843 +4172,6 @@
 </span></span><span class="line"><span class="cl">		<span class="c1">// Invalid file
 </span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;Your image was not uploaded. We can only accept JPEG or PNG images.&lt;/pre&gt;&#39;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
-</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛</title>
-      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-%E7%9B%B8%E5%BD%93%E4%BA%8E%E7%AD%BE%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</link>
-      <pubDate>Tue, 24 Sep 2024 22:33:24 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-%E7%9B%B8%E5%BD%93%E4%BA%8E%E7%AD%BE%E5%88%B0-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;图片似乎经过了什么处理，你能否将其复原呢？&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到一张.jpg图片。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>图片似乎经过了什么处理，你能否将其复原呢？</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到一张.jpg图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、尝试解压得到的压缩包，需要密码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>因为没有关于密码的提示，尝试用4位纯数字进行爆破，出现提示“no usable files found”（未找到可用文件）。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><a href="https://blog.csdn.net/qq_26187985/article/details/83654197"target="_blank" rel="noopener noreferrer">zip伪加密原理</a>
-猜测该zip压缩包为伪加密，通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">未加密：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为00 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为00 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">伪加密：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为00 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为09 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">真加密：
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">文件头中的全局方式位标记为09 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">目录中源文件的全局方式位标记为09 <span class="m">00</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">ps:也不一定要09 00或00 00，只要是奇数都视为加密，而偶数则视为未加密
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>3、修改后，解压压缩包不需要密码，解压成功，得到一张.png图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>从这里也可以看出图片经过修改，无法正常显示。在010 Editor中打开，提示CRC校验错误，结合题目提示“图片似乎经过了什么处理”，认为图片被修改了宽高。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">struct</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">crcbp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;repair.png&#34;</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>    <span class="c1">#打开图片（修改图片路径）</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">crcbp</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span> <span class="o">+</span> \
-</span></span><span class="line"><span class="cl">            <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="n">crcbp</span><span class="p">[</span><span class="mi">24</span><span class="p">:</span><span class="mi">29</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">        <span class="n">crc32</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">crc32</span> <span class="o">==</span> <span class="mh">0x9BF1293B</span><span class="p">):</span>    <span class="c1">#图片当前CRC（修改CRC）</span>
-</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hex:&#39;</span><span class="p">,</span> <span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">hex</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>得到正确的宽高值。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>修改图片中的宽高参数，然后保存图片查看。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>获得flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>bdbace45-506b-f530-aa4d-57884b2025e<span class="o">}(</span>”-“可能为“_“<span class="o">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Misc | bucket 第二届“奇安信”杯网络安全技能竞赛</title>
-      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-bucket-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</link>
-      <pubDate>Tue, 24 Sep 2024 22:31:42 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/misc-_-bucket-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;解密Base全家桶。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到一个txt文本，打开如下。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037204.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037204.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;3441344134363435344435323442344534423441343635353334353333323442343935413442353434393535354135333441344534353536353535333332353534413436344235363535353533323442344135413433353634443536344235353439344534343535353535343533344334423541344235363442344435333443344134413445343534373536353334453442354134363536343735333442344634393532343335363446353435333443344135323436353635353533333235373441344534373536343735343433344234413441343834353442353334423533344134453437343535373537353334373442354134363536343735333332353034413436344134353437353635333438344235413432353634393533353335333439354134433436344235353541353334423335343634353334353233323537343933353442343534373533333234423441344134333435344235333332353434413445344335353535353435333438343935363443353634463535333234383441344534453435343735363533343634413536344135353539353335333442344134413433353534463536353335343442343234363536353535313533353734413436344135363437353633323441344235413437343534423444353335363442344534333435353734453442343634423541343735363437353333323536344134363443343535373532344234383442344435413435353735333533344234393445343335353537353535413533344235323436343533343534343335363442353634423436343735333433344134423541343734363444353433323536343734413435343535353534353334463439353634363536344435353332343734413441344334353535353634423541344234453441353534463533353334423439344534423535333635363533353434423532343634363435353235333537343935363441353634373536353334443439354134363436344435323332353634373441343634353539353335333438343935363436353634373444353335373441344134363435353535363442353834413541343635353444353333323332343933353443343534463535354135333442354134363435344435343433343634423536344334353437353235333443344135363445343534423536333235343442344534363535353335363533343434423536344335363442353735333534344134453441343534443532344135353442344534413536344435333541353634413445343434353446353533323434344134413436353635353532353335373441353634423434343535363533343834413441343235353442353634423535344234453438353535333536353334363442354134373536344234443533344134413441343834353446353635333536344234413441353534353533333234463441344134423536344635353332353434413445343535353334353333323536343735413443343634373536343334433442344134343436344235323442353334423445344335353537353635333441344235413434353634443444353334433441343634453435344435323533344534423439354134363446353233323442343935413433353635333535333235343441343234353536344435323533353634373441344235343435353633323442344234413434343534423536344235373441344534443435353535373533343734423536343835363437353335413533344134353332353535393532344235303442353634453436343735333332333234393541343335353332353634333434343935413436353634443534343334363439333534413436343735343433344234423541343834353442353333323538344134453442343535373534353334373442353634413536343935353332343534413445344334353539353635333443344233353441353634393533353334463441343234333535353335363533344334423541343635353334353335333537344135363441353635353536353334423441354134333435344235343332353634423441344135353535353335333437344235413442353634353444353334383441344134433435353535363442353834423541344135353531353335333442343934453442353535373536353334433442353634363535333435323332343634423335344235363437353234423443344334413432353634443533333234453442344534363435353535333533343934393536343835363444353533323537344134453436343535353536344234363442344435413435333635333533344234413445344235343444353634413533344235323436353533343532344235363437353234413534343535363533343834433441343734353444353233323537343934453437343535373533353334353439353634363536343535333332353434413445343834353539353634423534344235413441353535373533333233323439353234433435333235363441353334413541343634353444353435333436344135363441343634373534353334433441343634453435344435323332353334373441343635353533353735333434344235413438353634443444353335353441344134323435344235363533344534423439354134363446353334413536343933353443343534463536353235333441344534363435353535323433343634413445344334353537353633323442344135413437353534423536344235383442344534343535353735363533343934423541343435363437353735333534344134413433353434353536344235413442344134363535353935333332353334393541344334353533353634333434343934453435353635353531333235363442333534423435353735363433344334433441343434363444353434423535343934453434343535373445344234443442353634343536343935313332344334413445344534353531353234423443344234443541343634463533353334463441344534423536343735363433353434393335343635363444353335333537344134363442353434353532344234423441354134373435344235373442353734423445343734353537344534423442344235413435353634373535333234463439333534363435353735363442353434423541344135353539353333323332343935413442353434393535333235343442333534363436344435333533353534393536344334343435353333323442344334413432353534423533333235353437344134433435353735333533344234423536344235363437353533323438344134453445343535373536353334363441353634413535353135333533344234413532343335363442353535333443344334323436353635353533353335363442343634413536343735333332344134413541343635363442353633323537344234453437343535373536353334373442353533323436343535353332353734413445343834353539353235333438344234413436353535393534343334423439353234433435333235353541353334413541343635353334353235333436344235363441353634373532333234413442354134373536344435323442353434373441344335353535353435333446343935363437353634443535333235373441344534373536353535323441353734423445344135353537353335333446344135323433353434443536353334423442344534363536343535323533343634373532344134353537353635333438344234413436353534423532333235333442344534353435353935333533343834393536343735363435344435333538344134363438343534443532344235383442344534413535343935333332333234393335344334353332353535413533344235323436343533343533343334363443343634433435353735373433344334423441343634363442344435333534343734393541343535333535353334443439353634363536343935333332353534413441344134353444353234423445344235323441353534443533353335373441344134343435344635353332353434413532343634353535353234333437344135363441353535373535333234383441344134343436344235353332353834423445343334353537353735333442344235413436353533323535333235363441344134363435343535323442344334423541344135353334353333323442344134413443343533363535333234423442354134353534344235343433343634413335344334363435353533323442344135413434343534443536344235333441344534343435353535343533344334393532343335363442344435333443344134413445343534463536344234433442354134363536353135333332344634393532344235363446353635333534344134363436353635353532343335363437344134423534343535373433344234393535354134363442353434423533344134453436343535373533353334373442354134313536343734443533353434413436344534353539353234423534344235353541343535373533333233323439353634433436344235353441353334423541343635343442353333323436344233353443343534373534343334443441344134333435344435343442353534413445344234353537353435333435343935363443353533343533333234453441344534433435343935363533344134423435354134353539353335333533343935413433353535333535353334433441354134363535333235373533343734413536344135363437353433323442344135413432353634423445353335363437344134373435344635333533343634423541343735363437353533323538344134353332353535373536343334363442353234363535353735333533333234393335343335353537353633323443344233353436353533343533343334363442333534413435353734443533344134423536344534353444353233323536343734413439343535353533353334373439353634343536344435333533353434413445344334353535353634423538344234443541343634463533344233323441344534423435353335363441353334423532343635343442353235333437344135363441353634373536344234413442354134363535343935323442353434373441343635353539353335333433344235363436353634373444353335363439333534363435353935323442353634423445344135353537353333323537344134453443343534463536344135333441343234363435333435343533343634423335344334363437353235333442344235413436343634443535344235343442344534363535353535353533343434423541343635363442353533323435344134363445343534443536353335363442344534413536344435333332343734413441344334353446353535413533344134413436343535353532353335373441344534433434343535363332344334413541343435353442353633323535344234453434353535373536344135333439354134343536343334443533353834413441343834353531353234423541344234413441353535313533333234423439344134423536353335363433343434413445343535363435353434333436343734413442353635353535333234423443344134343436344234453433353334373441343434353537353635333442344235413434353634373533333234423441344534453435344235323533344534423532343635363444353233323442344135323442353634423536343335343439333534353536344435333332353734413536344135343435353633323442344135413434353634443536344235333441344134433535353735343533344234423536344335363437353533323530344134413438343534373536343334363442354134413535353735333332344634393541344334353442353535333443344235413434353634353533353334363442333534433436343735333433344334413441343434363442353333323533343734413441353535373534353334363439353634443536343735353332343934413436344334353444353635333445344135363441353635313533353334373441343234333535333235363533344334423541343635343442353335333536344134453441353535373444353334413443344134363536343935333442353634413441344135353537353535333437343935353332343634373531333234373441344433323535353935323442353834423541344135353539353333323442343935413434343535373536353235333442353234363435333235373533343634423445344235363437353434423441344235413434343634443533344235343437344134423535353535333533344234393536343735363435353333323446344134453441343535353536344234453442344534413536344635333533344234393532343335353336353635333434343935323436343634353532333234363441353634423436343735323533344234423541343634363442353633323536343734413435343535353533353334353439354134363536344234443533353934413445343834353437353234423538344233353441353535333533333233323439354134423534343535363441353334423541343634353535353133323535343935363443343535373534353334433443344134363436344435343442353434373441343635353535353335333444343935353333343634423444353335353441344433323535344235363433344334423532343235353444353335323536344135323434343534463536353334343441344534363436353535323433343634413536344334353537353533323442344135413433343534423536344235353442344534363535353335353533343434423541343635353332353533323444344134413436343533343532344235303442344134363535353935333332354134433441343434353533353535413533344133353435353635353533333235373441333534433436343735363433344134373536343434363444353634423533343934453443343534463533353334433442353234333536344635333332344334413441343634353439353234423443344235323436353634373533353334463441353634333536344635363332353434393445343635363444353333323537343933353437353634353535333234423439354134383435344235333442353334413445343934353537353635333446343935413434353634353444353334433441343634433435353935323441353334423536344534363437353334423332343935413442343535373535354135333442333534353534344235343433343634393335344135363437353434423442344134413432353534423534344235343437344134383535353335343533344334393536344335363439353533323436344134363443343535393536344135353442344435413435333435333533343734413532343335353533353635333534344134413436353534423537353334363442333534413536343735333332344134433441343235363442353333323537344234453442343535353537353334373442353533323436343535353332353734393335344134353535353634333436344234453441353535313533353334423439354134433435333235353441353334423335343635353334353235333536344233353438343535373532333234433442354134343436344234453433353634373441344334353533344534423437343935363441353634353533333235373441344134453435344235363432353334383535333635343332334433443344&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、根据题目“解密Base全家桶”，使用工具CTF-Tools对密文进行base爆破（依次尝试Base家族的编码），这个过程将重复很多次，最后得到flag。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037203.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>解密Base全家桶。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到一个txt文本，打开如下。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037204.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037204.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">3441344134363435344435323442344534423441343635353334353333323442343935413442353434393535354135333441344534353536353535333332353534413436344235363535353533323442344135413433353634443536344235353439344534343535353535343533344334423541344235363442344435333443344134413445343534373536353334453442354134363536343735333442344634393532343335363446353435333443344135323436353635353533333235373441344534373536343735343433344234413441343834353442353334423533344134453437343535373537353334373442354134363536343735333332353034413436344134353437353635333438344235413432353634393533353335333439354134433436344235353541353334423335343634353334353233323537343933353442343534373533333234423441344134333435344235333332353434413445344335353535353435333438343935363443353634463535333234383441344534453435343735363533343634413536344135353539353335333442344134413433353534463536353335343442343234363536353535313533353734413436344135363437353633323441344235413437343534423444353335363442344534333435353734453442343634423541343735363437353333323536344134363443343535373532344234383442344435413435353735333533344234393445343335353537353535413533344235323436343533343534343335363442353634423436343735333433344134423541343734363444353433323536343734413435343535353534353334463439353634363536344435353332343734413441344334353535353634423541344234453441353534463533353334423439344534423535333635363533353434423532343634363435353235333537343935363441353634373536353334443439354134363436344435323332353634373441343634353539353335333438343935363436353634373444353335373441344134363435353535363442353834413541343635353444353333323332343933353443343534463535354135333442354134363435344435343433343634423536344334353437353235333443344135363445343534423536333235343442344534363535353335363533343434423536344335363442353735333534344134453441343534443532344135353442344534413536344435333541353634413445343434353446353533323434344134413436353635353532353335373441353634423434343535363533343834413441343235353442353634423535344234453438353535333536353334363442354134373536344234443533344134413441343834353446353635333536344234413441353534353533333234463441344134423536344635353332353434413445343535353334353333323536343735413443343634373536343334433442344134343436344235323442353334423445344335353537353635333441344235413434353634443444353334433441343634453435344435323533344534423439354134363446353233323442343935413433353635333535333235343441343234353536344435323533353634373441344235343435353633323442344234413434343534423536344235373441344534443435353535373533343734423536343835363437353335413533344134353332353535393532344235303442353634453436343735333332333234393541343335353332353634333434343935413436353634443534343334363439333534413436343735343433344234423541343834353442353333323538344134453442343535373534353334373442353634413536343935353332343534413445344334353539353635333443344233353441353634393533353334463441343234333535353335363533344334423541343635353334353335333537344135363441353635353536353334423441354134333435344235343332353634423441344135353535353335333437344235413442353634353444353334383441344134433435353535363442353834423541344135353531353335333442343934453442353535373536353334433442353634363535333435323332343634423335344235363437353234423443344334413432353634443533333234453442344534363435353535333533343934393536343835363444353533323537344134453436343535353536344234363442344435413435333635333533344234413445344235343444353634413533344235323436353533343532344235363437353234413534343535363533343834433441343734353444353233323537343934453437343535373533353334353439353634363536343535333332353434413445343834353539353634423534344235413441353535373533333233323439353234433435333235363441353334413541343634353444353435333436344135363441343634373534353334433441343634453435344435323332353334373441343635353533353735333434344235413438353634443444353335353441344134323435344235363533344534423439354134363446353334413536343933353443343534463536353235333441344534363435353535323433343634413445344334353537353633323442344135413437353534423536344235383442344534343535353735363533343934423541343435363437353735333534344134413433353434353536344235413442344134363535353935333332353334393541344334353533353634333434343934453435353635353531333235363442333534423435353735363433344334433441343434363444353434423535343934453434343535373445344234443442353634343536343935313332344334413445344534353531353234423443344234443541343634463533353334463441344534423536343735363433353434393335343635363444353335333537344134363442353434353532344234423441354134373435344235373442353734423445343734353537344534423442344235413435353634373535333234463439333534363435353735363442353434423541344135353539353333323332343935413442353434393535333235343442333534363436344435333533353534393536344334343435353333323442344334413432353534423533333235353437344134433435353735333533344234423536344235363437353533323438344134453445343535373536353334363441353634413535353135333533344234413532343335363442353535333443344334323436353635353533353335363442343634413536343735333332344134413541343635363442353633323537344234453437343535373536353334373442353533323436343535353332353734413445343834353539353235333438344234413436353535393534343334423439353234433435333235353541353334413541343635353334353235333436344235363441353634373532333234413442354134373536344435323442353434373441344335353535353435333446343935363437353634443535333235373441344534373536353535323441353734423445344135353537353335333446344135323433353434443536353334423442344534363536343535323533343634373532344134353537353635333438344234413436353534423532333235333442344534353435353935333533343834393536343735363435344435333538344134363438343534443532344235383442344534413535343935333332333234393335344334353332353535413533344235323436343533343533343334363443343634433435353735373433344334423441343634363442344435333534343734393541343535333535353334443439353634363536343935333332353534413441344134353444353234423445344235323441353534443533353335373441344134343435344635353332353434413532343634353535353234333437344135363441353535373535333234383441344134343436344235353332353834423445343334353537353735333442344235413436353533323535333235363441344134363435343535323442344334423541344135353334353333323442344134413443343533363535333234423442354134353534344235343433343634413335344334363435353533323442344135413434343534443536344235333441344534343435353535343533344334393532343335363442344435333443344134413445343534463536344234433442354134363536353135333332344634393532344235363446353635333534344134363436353635353532343335363437344134423534343535373433344234393535354134363442353434423533344134453436343535373533353334373442354134313536343734443533353434413436344534353539353234423534344235353541343535373533333233323439353634433436344235353441353334423541343635343442353333323436344233353443343534373534343334443441344134333435344435343442353534413445344234353537353435333435343935363443353533343533333234453441344534433435343935363533344134423435354134353539353335333533343935413433353535333535353334433441354134363535333235373533343734413536344135363437353433323442344135413432353634423445353335363437344134373435344635333533343634423541343735363437353533323538344134353332353535373536343334363442353234363535353735333533333234393335343335353537353633323443344233353436353533343533343334363442333534413435353734443533344134423536344534353444353233323536343734413439343535353533353334373439353634343536344435333533353434413445344334353535353634423538344234443541343634463533344233323441344534423435353335363441353334423532343635343442353235333437344135363441353634373536344234413442354134363535343935323442353434373441343635353539353335333433344235363436353634373444353335363439333534363435353935323442353634423445344135353537353333323537344134453443343534463536344135333441343234363435333435343533343634423335344334363437353235333442344235413436343634443535344235343442344534363535353535353533343434423541343635363442353533323435344134363445343534443536353335363442344534413536344435333332343734413441344334353446353535413533344134413436343535353532353335373441344534433434343535363332344334413541343435353442353633323535344234453434353535373536344135333439354134343536343334443533353834413441343834353531353234423541344234413441353535313533333234423439344134423536353335363433343434413445343535363435353434333436343734413442353635353535333234423443344134343436344234453433353334373441343434353537353635333442344235413434353634373533333234423441344534453435344235323533344534423532343635363444353233323442344135323442353634423536343335343439333534353536344435333332353734413536344135343435353633323442344135413434353634443536344235333441344134433535353735343533344234423536344335363437353533323530344134413438343534373536343334363442354134413535353735333332344634393541344334353442353535333443344235413434353634353533353334363442333534433436343735333433344334413441343434363442353333323533343734413441353535373534353334363439353634443536343735353332343934413436344334353444353635333445344135363441353635313533353334373441343234333535333235363533344334423541343635343442353335333536344134453441353535373444353334413443344134363536343935333442353634413441344135353537353535333437343935353332343634373531333234373441344433323535353935323442353834423541344135353539353333323442343935413434343535373536353235333442353234363435333235373533343634423445344235363437353434423441344235413434343634443533344235343437344134423535353535333533344234393536343735363435353333323446344134453441343535353536344234453442344534413536344635333533344234393532343335353336353635333434343935323436343634353532333234363441353634423436343735323533344234423541343634363442353633323536343734413435343535353533353334353439354134363536344234443533353934413445343834353437353234423538344233353441353535333533333233323439354134423534343535363441353334423541343634353535353133323535343935363443343535373534353334433443344134363436344435343442353434373441343635353535353335333444343935353333343634423444353335353441344433323535344235363433344334423532343235353444353335323536344135323434343534463536353334343441344534363436353535323433343634413536344334353537353533323442344135413433343534423536344235353442344534363535353335353533343434423541343635353332353533323444344134413436343533343532344235303442344134363535353935333332354134433441343434353533353535413533344133353435353635353533333235373441333534433436343735363433344134373536343434363444353634423533343934453443343534463533353334433442353234333536344635333332344334413441343634353439353234423443344235323436353634373533353334463441353634333536344635363332353434393445343635363444353333323537343933353437353634353535333234423439354134383435344235333442353334413445343934353537353635333446343935413434353634353444353334433441343634433435353935323441353334423536344534363437353334423332343935413442343535373535354135333442333534353534344235343433343634393335344135363437353434423442344134413432353534423534344235343437344134383535353335343533344334393536344335363439353533323436344134363443343535393536344135353442344435413435333435333533343734413532343335353533353635333534344134413436353534423537353334363442333534413536343735333332344134433441343235363442353333323537344234453442343535353537353334373442353533323436343535353332353734393335344134353535353634333436344234453441353535313533353334423439354134433435333235353441353334423335343635353334353235333536344233353438343535373532333234433442354134343436344234453433353634373441344334353533344534423437343935363441353634353533333235373441344134453435344235363432353334383535333635343332334433443344</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、根据题目“解密Base全家桶”，使用工具CTF-Tools对密文进行base爆破（依次尝试Base家族的编码），这个过程将重复很多次，最后得到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037205.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512091037205.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>8ddce78c660f0f6fa4ac1f0d0de6ca18<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Crypto | Affine password 第二届“奇安信”杯网络安全技能竞赛</title>
-      <link>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</link>
-      <pubDate>Tue, 24 Sep 2024 22:29:43 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/crypto-_-affine-password-%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
-<h3 id="密文">密文：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">JYYHWVPIDCOZ
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
-<a href="http://www.metools.info/code/affinecipher183.html"target="_blank" rel="noopener noreferrer">仿射密码加密_仿射密码解密</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。</p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">AFFINECRYPTO
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="仿射密码简介">仿射密码简介：</h3>
-<p>单码加密法的另一种形式称为仿射加密法（affinecipher）。在仿射加密法中，字母表的字母被赋予一个数字。例如a=0，b=1，c=2…z=25。仿射加密法的密钥为0-25直接的数字对。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>网络安全 DVWA通关指南 DVWA Reflected Cross Site Scripting (反射型 XSS)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</link>
-      <pubDate>Tue, 24 Sep 2024 12:22:37 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</guid>
-      <description>&lt;h2 id=&#34;dvwareflected-cross-site-scripting-反射型-xss&#34;&gt;DVWAReflected Cross Site Scripting (反射型 XSS)&lt;/h2&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;参考文献&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
-&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="dvwareflected-cross-site-scripting-反射型-xss">DVWAReflected Cross Site Scripting (反射型 XSS)</h2>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<hr>
-<p>参考文献</p>
-<ul>
-<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
-</ul>
-<hr>
-<blockquote>
-<h3 id="xss跨站原理">XSS跨站原理</h3>
-<p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
-<p>浏览器同源策略：只有发布Cookie的网站才能读取Cookie。</p>
-<p>会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害</p>
-<h4 id="反射型">反射型</h4>
-<p>出现在搜索栏，用户登录等地方，常用来窃取客户端的Cookie进行钓鱼欺骗。(需要用户去点击)</p>
-<p>想要窃取cookie要满足两个条件：</p>
-<blockquote>
-<p>1.用户点击攻击者构造的URL</p>
-<p>2.访问被攻击的应用服务(即存在xss的网站)</p>
-</blockquote>
-</blockquote>
-<h3 id="low">Low</h3>
-<p>1、分析网页源代码</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">header</span> <span class="p">(</span><span class="s2">&#34;X-XSS-Protection: 0&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//这行代码实际上禁用了浏览器内置的XSS防护机制。现代浏览器通常会有一个XSS过滤器，默认开启，用于检测并阻止某些类型的反射型XSS攻击。将此值设为0意味着告诉浏览器不要进行任何自动的XSS防护。
-</span></span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Is there any input?
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">array_key_exists</span><span class="p">(</span> <span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="nv">$_GET</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="o">!=</span> <span class="k">NULL</span> <span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">// Feedback for end user
-</span></span></span><span class="line"><span class="cl">	<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;Hello &#39;</span> <span class="o">.</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">//对用户输入的数据没有进行任何过滤或转义处理
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>2、输入 <code>&lt;script&gt;alert(/XSS/)&lt;/script&gt;</code> ，弹出一个警告框显示“XSS”，这证明了XSS攻击的成功。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1、&lt;script&gt;alert(/XSS/)&lt;/script&gt;
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">&lt;script&gt; 和 &lt;/script&gt; 是HTML中的标签，用于定义JavaScript代码块的开始和结束。
-</span></span><span class="line"><span class="cl">alert() 是JavaScript的一个内置函数，用于显示带有一条消息的对话框。用户必须点击确定按钮才能关闭这个对话框并继续操作页面。
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png" 
-             alt="image-20240424173639685" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png" 
-             alt="image-20240424173657851" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>3、 <strong>解决方案</strong> :</p>
-<ul>
-<li>
-<p>对用户输入的数据进行适当的过滤或转义，可以使用PHP的 <code>htmlspecialchars()</code> 函数来转义特殊字符，确保它们被安全地显示为数据而不是被执行为代码：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="mi">1</span><span class="nv">$safeName</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="nx">ENT_QUOTES</span><span class="p">,</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;Hello &#39;</span> <span class="o">.</span> <span class="nv">$safeName</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span><span class="p">;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>同时，考虑是否真的需要禁用XSS防护头，除非有充分的理由，否则应保持浏览器的默认防护机制启用。</p>
-</li>
-</ul>
-<h3 id="medium">Medium</h3>
-<p>1、分析网页源代码</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">header</span> <span class="p">(</span><span class="s2">&#34;X-XSS-Protection: 0&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Is there any input?
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">array_key_exists</span><span class="p">(</span> <span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="nv">$_GET</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="o">!=</span> <span class="k">NULL</span> <span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
-</span></span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="nx">str_replace</span><span class="p">(</span> <span class="s1">&#39;&lt;script&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">// Feedback for end user
-</span></span></span><span class="line"><span class="cl">	<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Hello </span><span class="si">${</span><span class="nv">name</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">//str_replace() 函数以其他字符替换字符串中的一些字符（区分大小写）。本例中的作用为将&#39;&lt;script&gt;&#39;替换为&#39;&#39;。
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>2、因为str_replace() 函数区分大小写，可以将 <code>&lt;script&gt;</code> 中的字符改成大写</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;scr&lt;script&gt;ipt&gt;alert(/XSS/)&lt;/script&gt;
-</span></span><span class="line"><span class="cl">//双写绕过
-</span></span><span class="line"><span class="cl">&lt;ScrIpt&gt;alert(/XSS/)&lt;/scRiPt&gt;
-</span></span><span class="line"><span class="cl">//区分大小写
-</span></span><span class="line"><span class="cl">&lt;script x&gt;alert(/XSS/)&lt;/script y&gt;
-</span></span><span class="line"><span class="cl">//绕过&lt;script&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png" 
-             alt="image-20240424181634960" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png" 
-             alt="image-20240424181648248" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="high">High</h3>
-<p>1、分析网页源代码</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">header</span> <span class="p">(</span><span class="s2">&#34;X-XSS-Protection: 0&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Is there any input?
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">array_key_exists</span><span class="p">(</span> <span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="nv">$_GET</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="o">!=</span> <span class="k">NULL</span> <span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
-</span></span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="nx">preg_replace</span><span class="p">(</span> <span class="s1">&#39;/&lt;(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">// preg_replace 是 PHP 中的一个函数，用于执行正则表达式的搜索和替换操作。
-</span></span></span><span class="line"><span class="cl"><span class="c1">// 正则表达式：/&lt;(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i
-</span></span></span><span class="line"><span class="cl"><span class="c1">// /&lt;...&gt;/：定义了一个正则表达式的匹配模式，前后尖括号表示匹配任意字符直到遇到后面的字符。
-</span></span></span><span class="line"><span class="cl"><span class="c1">// (.*)：点号.表示匹配任意单个字符（除了换行符），后面跟着的*表示前面的模式可以重复零次或多次。因此，(.*?)组合在一起表示匹配任意数量的任意字符，但这里的懒惰量词*?并没有使用，实际是贪婪匹配.*。
-</span></span></span><span class="line"><span class="cl"><span class="c1">// s, c, r, i, p, t：分别匹配这些字母，中间的.和*允许任意字符出现在这些字母之间。
-</span></span></span><span class="line"><span class="cl"><span class="c1">// /i：这是一个修饰符，表示执行不区分大小写的匹配。
-</span></span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">	<span class="c1">// Feedback for end user
-</span></span></span><span class="line"><span class="cl">	<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Hello </span><span class="si">${</span><span class="nv">name</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">// &lt;script&gt;标签被完全过滤
-</span></span></span></code></pre></td></tr></table>
-</div>
-</div><p>2、使用其它标签注入 JS 攻击脚本</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="mi">1</span><span class="err">、</span><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="n">x</span> <span class="n">onerror</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="n">x</span> <span class="n">onerror</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="err">这段代码是一种典型的跨站脚本攻击（</span><span class="n">XSS</span><span class="err">）示例，利用了</span><span class="n">HTML图像标签</span><span class="err">（</span><span class="o">&lt;</span><span class="n">img</span><span class="o">&gt;</span><span class="err">）的</span><span class="n">onerror事件来触发JavaScript代码执行</span><span class="err">。其工作原理如下：</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">图像标签（</span><span class="o">&lt;</span><span class="n">img</span><span class="o">&gt;</span><span class="err">）：此标签用于在网页中嵌入图片。正常情况下，</span><span class="n">src属性会指向一个图像文件的URL</span><span class="err">。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">src</span><span class="o">=</span><span class="n">x</span><span class="err">：这里的</span><span class="n">src属性被赋值为x</span><span class="err">，这是一个无效的图像</span><span class="n">URL</span><span class="err">。当浏览器尝试根据这个无效的</span><span class="n">URL加载图片时</span><span class="err">，自然找不到对应的资源，从而触发错误。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">onerror事件</span><span class="err">：这是</span><span class="n">HTML元素的一个事件属性</span><span class="err">，当指定的错误情况发生时（如图像加载失败），会执行紧跟在其后的</span><span class="n">JavaScript代码</span><span class="err">。在这个例子中，就是</span><span class="n">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="err">。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="err">：这是一个简单的</span><span class="n">JavaScript语句</span><span class="err">，用于弹出一个包含数字</span><span class="mi">1</span><span class="err">的警告框。在实际的</span><span class="n">XSS攻击中</span><span class="err">，这可能被替换为更复杂的恶意代码，用于盗取用户</span><span class="n">Cookie</span><span class="err">、重定向用户到恶意站点、执行恶意脚本等。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="err">、</span><span class="o">&lt;</span><span class="n">svg</span> <span class="n">onload</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">svg</span> <span class="n">onload</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span> <span class="err">这段代码展示了另一种跨站脚本攻击（</span><span class="n">XSS</span><span class="err">）的载体，这次是利用</span><span class="n">SVG</span><span class="err">（可缩放矢量图形）元素的</span><span class="n">onload事件来触发JavaScript代码执行</span><span class="err">。其工作原理如下：</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">SVG元素</span><span class="err">：</span><span class="n">SVG是一种用于定义矢量图形的XML标记语言</span><span class="err">，可以直接嵌入到</span><span class="n">HTML文档中</span><span class="err">。与普通的</span><span class="n">HTML元素一样</span><span class="err">，</span><span class="n">SVG元素也支持事件处理器</span><span class="err">，如</span><span class="n">onload</span><span class="err">。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">onload事件</span><span class="err">：在</span><span class="n">SVG中</span><span class="err">，</span><span class="n">onload事件会在SVG文档或者图像加载完成后触发</span><span class="err">。与</span><span class="n">HTML的</span><span class="o">&lt;</span><span class="n">body</span> <span class="n">onload</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="o">&gt;</span><span class="err">类似，它提供了一个时机来执行指定的</span><span class="n">JavaScript代码</span><span class="err">。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="p">)</span><span class="err">：这里使用的</span><span class="n">JavaScript代码与之前的例子相似</span><span class="err">，目的是弹出一个警告框显示</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="err">。但这里的</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="err">实际上是正则表达式字面量，虽然作为</span><span class="n">alert函数的参数</span><span class="err">，它会被当作普通字符串显示，这不影响弹出警告框的效果，但表明攻击者可以嵌入更复杂的</span><span class="n">JavaScript逻辑</span><span class="err">，不仅仅是简单的字符串。</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="err">攻击原理：当这段</span><span class="n">SVG代码被嵌入到一个网页中</span><span class="err">，一旦</span><span class="n">SVG图形加载完成</span><span class="err">，</span><span class="n">onload事件就会触发</span><span class="err">，并执行</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="p">),</span> <span class="err">弹出一个包含</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="err">的警告框。实质上，这揭示了网页对用户输入数据处理不当，允许执行恶意脚本的风险。攻击者可以利用这一点，不仅限于弹窗，还可以执行任何</span><span class="n">JavaScript代码</span><span class="err">，实现更深层次的攻击，如窃取用户数据、操控页面内容、发起进一步的攻击等。</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png" 
-             alt="image-20240425123935752" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="impossible">Impossible</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// Is there any input?
-</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">array_key_exists</span><span class="p">(</span> <span class="s2">&#34;name&#34;</span><span class="p">,</span> <span class="nv">$_GET</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="o">!=</span> <span class="k">NULL</span> <span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="c1">// Check Anti-CSRF token
-</span></span></span><span class="line"><span class="cl">    <span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// Get input
-</span></span></span><span class="line"><span class="cl">    <span class="nv">$name</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;name&#39;</span> <span class="p">]</span> <span class="p">);</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1">// Feedback for end user
-</span></span></span><span class="line"><span class="cl">    <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;Hello </span><span class="si">${</span><span class="nv">name</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token

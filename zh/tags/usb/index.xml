@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>USB on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/usb/</link>
+    <description>Recent content in USB on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 06 Oct 2025 12:09:55 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF USB 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</link>
+      <pubDate>Mon, 06 Oct 2025 12:09:55 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-usb-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://www.freebuf.com/column/199854.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF解题技能之压缩包分析基础篇&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109632626&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：USB&lt;/a&gt;
+&lt;a href=&#34;https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;(usb键盘隐写)buuctf:USB&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://www.freebuf.com/column/199854.html"target="_blank" rel="noopener noreferrer">CTF解题技能之压缩包分析基础篇</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109632626"target="_blank" rel="noopener noreferrer">BUUCTF：USB</a>
+<a href="https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90"target="_blank" rel="noopener noreferrer">(usb键盘隐写)buuctf:USB</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>Do your konw usb?? 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到233.rar和key.ftm文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、解压233.rar，发现文件损坏，233.png没有解压出来，flag.txt文件中没有flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>用010Editor打开，提示文件的第三个块CRC报错，也就是233.rar的文件块。</p>
+<blockquote>
+<p>RAR是有四个文件块组成的，分别是分别是 <code>标记块</code> 、 <code>归档头部块</code> 、 <code>文件块</code> 、 <code>结束块</code> 。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>检查发现是文件块的HEAD_TYPE出错，原数值应为0x74，而非0x7A。修改后即可成功解压。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、解压已修改后的文件，得到233.png</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用StegSolve打开图片，在Blue plane 0通道发现一个二维码</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>扫描二维码得到疑似flag的密文： <code>ci{v3erf_0tygidv2_fc0}</code> ，猜测为维吉尼亚密码。但缺少key值（密钥），暂时无法解密</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、回过头，key.ftm中应该就有我们要的key值</p>
+<blockquote>
+<p><strong>FTM</strong> 是FamiTracker，用于生产任天堂（NES）系统的音乐的音频节目创建的音频跟踪器模块。 它包括短的音频样本和一系列包含旋律音符。</p>
+</blockquote>
+<p>在010 Editor中搜索“key”关键字，发现隐藏zip压缩包，内部有key.pcap</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>将zip的数据另存为一个单独的zip文件，解压得到key.pcap。（或者使用WinRAR直接打开key.ftm）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>打开发现全部为USB的流量</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用隐写脚本USBUsbKeyboardDataHacker.py，得到内容 <code>aababacbbdbdccccdcdcdbbcccbcbbcbbaababaaaaaaaaaaaaaaaaaakey{xinan}</code> ，key值为 <code>xinan</code></p>
+<p><a href="https://github.com/WangYihang/UsbKeyboardDataHacker"target="_blank" rel="noopener noreferrer">https://github.com/WangYihang/UsbKeyboardDataHacker
+</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python UsbKeyboardDataHacker.py /root/key.pcap
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、使用得到的key值，解密维吉尼亚密码，得到 <code>fa{i3eei_0llgvgn2_sc0}</code>
+<a href="https://www.qqxiuzi.cn/bianma/weijiniyamima.php"target="_blank" rel="noopener noreferrer">维吉尼亚密码加密解密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>猜测明文又经过栅栏加密，解密得到 <code>flag{vig3ne2e_is_c00l}</code>
+<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php"target="_blank" rel="noopener noreferrer">栅栏密码加密解密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>vig3ne2e_is_c00l<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

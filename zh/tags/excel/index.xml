@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Excel on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/excel/</link>
+    <description>Recent content in Excel on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 23 Jun 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [GKCTF 2021]excel 骚操作 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021excel-%E9%AA%9A%E6%93%8D%E4%BD%9C-1/</link>
+      <pubDate>Mon, 23 Jun 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-gkctf-2021excel-%E9%AA%9A%E6%93%8D%E4%BD%9C-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_43871179/article/details/118310357&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;2021GKCTF Misc excel骚操作–详解&lt;/a&gt;
+&lt;a href=&#34;http://appserver.gs1cn.org/ancc2020h/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;中国编码APP下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;你真的了解excel吗（flag由flag头包裹&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/qq_43871179/article/details/118310357"target="_blank" rel="noopener noreferrer">2021GKCTF Misc excel骚操作–详解</a>
+<a href="http://appserver.gs1cn.org/ancc2020h/"target="_blank" rel="noopener noreferrer">中国编码APP下载</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>你真的了解excel吗（flag由flag头包裹</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到flag.xlsx文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、打开文件，hint： <code>我看见flag了，你呢？</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>随便点击几个地方，发现有的单元格有数字 <code>1</code> ，而且不是均匀分布的。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在这里，可以全选单元格，设置单元格格式中的数字类型为 <code>G/通用格式</code> ，就可以直观看到所有含数字 <code>1</code> 的单元格。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>再通过单元格 <code>条件格式</code> ，将单元格中所有数字等于 <code>1</code> 的单元格标黑，看它的图案。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后调整单元格行高为27，可以发现这是个“码”。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、这其实是一个叫 <strong>汉信码</strong> 的二维码，需要使用中国编码网的中国编码APP，扫码得到flag。</p>
+<p>下载地址： <a href="http://appserver.gs1cn.org/ancc2020h/"target="_blank" rel="noopener noreferrer">http://appserver.gs1cn.org/ancc2020h/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>要想实现文中的隐藏效果，可以采取以下步骤：
+1、单元格输入数字
+2、单元格格式，数字选择自定义
+3、类型中输入；；；</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>9ee0cb62-f443-4a72-e9a3-43c0b910757e<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

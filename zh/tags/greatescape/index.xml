@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Greatescape on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/greatescape/</link>
+    <description>Recent content in Greatescape on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 31 Mar 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/greatescape/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF greatescape 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-greatescape-1/</link>
+      <pubDate>Mon, 31 Mar 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-greatescape-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_66146598/article/details/125131129&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;[BUUCTF] greatescape解析&lt;/a&gt;
+&lt;a href=&#34;https://blog.51cto.com/u_16159500/6515299&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：greatescape&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/chinese_cabbage0/article/details/144456714&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf-greatescape题目解析&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://blog.csdn.net/weixin_66146598/article/details/125131129"target="_blank" rel="noopener noreferrer">[BUUCTF] greatescape解析</a>
+<a href="https://blog.51cto.com/u_16159500/6515299"target="_blank" rel="noopener noreferrer">BUUCTF：greatescape</a>
+<a href="https://blog.csdn.net/chinese_cabbage0/article/details/144456714"target="_blank" rel="noopener noreferrer">buuctf-greatescape题目解析</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到 <code>greatescape.pcap</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、过滤常见协议，如FTP、HTTP。在FTP协议中，查看TCP流，发现ssc.key文件，猜测为TLS密钥文件。（位置在 <code>tcp.stream eq 18</code> ）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在 <code>tcp.stream eq 19</code> ，可以找到ssc.key密钥文件数据，另存为ssc.key文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">-----</span><span class="n">BEGIN</span> <span class="n">PRIVATE</span> <span class="n">KEY</span><span class="o">-----</span>
+</span></span><span class="line"><span class="cl"><span class="n">MIIJQwIBADANBgkqhkiG9w0BAQEFAASCCS0wggkpAgEAAoICAQC5twyPH</span><span class="o">+</span><span class="mi">2</span><span class="n">U6X0Q</span>
+</span></span><span class="line"><span class="cl"><span class="n">uxOKPTHSR6MkXGSvAz</span><span class="o">+</span><span class="n">Ax</span><span class="o">+</span><span class="n">G9DKEiBLuTTfl7dNv4oswdmT9nWlSY1kxZatNwlUF8</span>
+</span></span><span class="line"><span class="cl"><span class="n">WAuGLntO5xTEmOJlMtBFrWGD</span><span class="o">+</span><span class="n">DVpCE9KORGvyif8e4xxi6vh4mkW78IxV03VxHM0</span>
+</span></span><span class="line"><span class="cl"><span class="n">mk</span><span class="o">/</span><span class="n">cq5kkERfWQW81pVeYm9UAm4dj</span><span class="o">+</span><span class="n">LcCwQ9aGd</span><span class="o">/</span><span class="n">vfTtcACqS5OGtELFbsHJuFVyn</span>
+</span></span><span class="line"><span class="cl"><span class="n">srpp4K6tLtRk2ensSnmXUXNEjqpodfdb</span><span class="o">/</span><span class="n">wqGT86NYg7i6d</span><span class="o">/</span><span class="mi">4</span><span class="n">Rqa440a6BD7RKrgp</span>
+</span></span><span class="line"><span class="cl"><span class="n">YPaXl7pQusemHQPd248fxsuEfEwhPNDJhIb8fDX9BWv2xTfBLhGwOh7euzSh2C4o</span>
+</span></span><span class="line"><span class="cl"><span class="n">KSuBAO</span><span class="o">+</span><span class="n">bIkL</span><span class="o">+</span><span class="n">pGY1z7DFtuJYfTOSJyQ5zQzToxS</span><span class="o">+</span><span class="n">jE</span><span class="o">+</span><span class="mi">2</span><span class="n">x9</span><span class="o">/</span><span class="mi">3</span><span class="n">GpD2LUD0xkA8bWhv</span>
+</span></span><span class="line"><span class="cl"><span class="n">eecq0v6ZWBVYNX54V5ME3s2qxYc6CSQhi6Moy8xWlcSpTSAa7voNQNa9RvQ4</span><span class="o">/</span><span class="mi">3</span><span class="n">KF</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="n">gCbKtFvdd7IHvxfn8vcCrCZ37eVkq0Fl1y5UNeJU</span><span class="o">/</span><span class="n">Y0Tt8m7UDn3uKNpB841BQa</span>
+</span></span><span class="line"><span class="cl"><span class="n">hiGayCSjsHuTS8B</span><span class="o">+</span><span class="n">MnpnzWCrzD</span><span class="o">+</span><span class="n">rAzCB37B599iBK4t</span><span class="o">/</span><span class="n">mwSIZZUZaqxTWNoFS2Lz</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span><span class="n">m0LumZ4Yk8DpDEuWhNs8OUD8FsgAvWFVAvivaaAciF3kMs8pkmNTs2LFBowOshz</span>
+</span></span><span class="line"><span class="cl"><span class="n">SXfONsHupgXEwwFrKOOZXNhb</span><span class="o">+</span><span class="n">O</span><span class="o">/</span><span class="n">WKQIDAQABAoICAAT6mFaZ94efft</span><span class="o">/</span><span class="n">c9BgnrddC</span>
+</span></span><span class="line"><span class="cl"><span class="n">XmhSJczfXGt6cF3eIc</span><span class="o">/</span><span class="n">Eqra3R3H83wzaaHh</span><span class="o">+</span><span class="n">rEl8DXqPfDqFd6e0CK5pud1eD6Y8</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span><span class="n">bynkKI</span><span class="o">/</span><span class="mi">63</span><span class="o">+</span><span class="n">Ct3OPSvdG5sFJqGS7GblWIpzErtX</span><span class="o">+</span><span class="n">eOzJfr5N5eNOQfxuCqgS3acu</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span><span class="n">iG3XWDlzuRjgSFkCgwvFdD4Fg5HVU6ZX</span><span class="o">+</span><span class="n">cGhh2sDzTRlr</span><span class="o">+</span><span class="n">rilXTMsm4K</span><span class="o">/</span><span class="n">E8udIg</span>
+</span></span><span class="line"><span class="cl"><span class="n">yEbv5KqWEI5y</span><span class="o">+</span><span class="mi">5</span><span class="n">Eh9gWY7AnGW6TgLNxzfYyt0nhYhI2</span><span class="o">+</span><span class="n">Yh4IkRqQd6F8XQARbEhP</span>
+</span></span><span class="line"><span class="cl"><span class="n">yZx1eK4Q</span><span class="o">/</span><span class="n">dRPQxOJNY1KkRpl</span><span class="o">+</span><span class="n">Cx6tAPVimByRx1hu82qsTstb6rLHemruOPbf5Dw</span>
+</span></span><span class="line"><span class="cl"><span class="n">aqgSFdp7it3uqjJHCwJ2hAZoijAcvlhn1sa1hr</span><span class="o">/</span><span class="n">qFFlY</span><span class="o">/</span><span class="n">WeDAi8OyvGdCSh3OvS6</span>
+</span></span><span class="line"><span class="cl"><span class="n">yazkah85GOnY85rz</span><span class="o">+</span><span class="n">s98F9cvIqcRdGJrAeNbUHHnj6</span><span class="o">+</span><span class="n">X9qFVtwDpF0V1vlvn2Ggp</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span><span class="n">m8hiZ0Y</span><span class="o">+</span><span class="mi">8</span><span class="n">T</span><span class="o">+</span><span class="mi">7</span><span class="n">qfnS9WsdPh7MkoIEoZ0CPryYvX</span><span class="o">+</span><span class="n">YPLYWqzxtCvrRWF8tAScI6H</span><span class="o">+</span>
+</span></span><span class="line"><span class="cl"><span class="n">XBz3NlCAUaOk</span><span class="o">+</span><span class="n">ZOkKlZ8ZYMSn</span><span class="o">/</span><span class="n">g5EV2jj</span><span class="o">/</span><span class="n">mwZVdtYoeQjLaCDuLq8E1Hswnpgq7F</span>
+</span></span><span class="line"><span class="cl"><span class="mi">54</span><span class="n">hHU7vOeJ1</span><span class="o">/</span><span class="n">TQltLCNfJFQRaUD</span><span class="o">+</span><span class="n">tPz9R6jVpbqBiXxIC2eiGTo1rP4Ii7hsQRFC</span>
+</span></span><span class="line"><span class="cl"><span class="n">W0KKqu</span><span class="o">+</span><span class="n">bV69HJAmi06yBAoIBAQDvz</span><span class="o">+</span><span class="n">c</span><span class="o">+</span><span class="mi">3</span><span class="n">z9njQFFaeUUqyzl31HOzRHmWhJEoriR</span>
+</span></span><span class="line"><span class="cl"><span class="n">nRhWTLzqMyn</span><span class="o">+</span><span class="n">RLGrD3DJQj</span><span class="o">/</span><span class="n">dGH6tyxHJ7PdI7gtJ3qaF4lCc2dKR3uQW3CBKI9Ys</span>
+</span></span><span class="line"><span class="cl"><span class="n">wzjBWOTijafbttXHanXEwXR3vnPk</span><span class="o">+</span><span class="n">sH52BqTXZQVA5vzPwIPJnz3H6E9hL66b</span><span class="o">/</span><span class="n">uM</span>
+</span></span><span class="line"><span class="cl"><span class="n">DS9owYRBmykXlV9Gt91Vl5cpg3yxPixaeLMhqDD2Ebq6OFyuacExQHfGUeP0Va</span><span class="o">/</span><span class="n">A</span>
+</span></span><span class="line"><span class="cl"><span class="n">IdM9</span><span class="o">+</span><span class="n">H5DE13qR2INX</span><span class="o">+</span><span class="n">N0kAFyFzW7k8AvY37KGZdoACUrDzmmGoilfs</span><span class="o">/</span><span class="n">pFAC0kZaZ</span>
+</span></span><span class="line"><span class="cl"><span class="n">tKXoR9iLNxWSBtlI2Fr3qz4gc5nItYb7JSQsdu6Lc92</span><span class="o">+</span><span class="mi">9</span><span class="n">z4xAoIBAQDGQFDXVQyk</span>
+</span></span><span class="line"><span class="cl"><span class="n">Q5tsWicru5v2c9VoFpLUtBg4Dx3uXOMEVl</span><span class="o">/</span><span class="n">S5hZ8jYbUH4dcwKyLCYQLtNSc9aei</span>
+</span></span><span class="line"><span class="cl"><span class="mi">8</span><span class="n">zm18TdOGm0nCLOo7OPMeet</span><span class="o">+</span><span class="n">JHyx8uz1l</span><span class="o">/</span><span class="n">Sx4ucI</span><span class="o">/</span><span class="n">Jq3yVSTqdtXYakxzijTldNQ</span>
+</span></span><span class="line"><span class="cl"><span class="n">M7YnjpBcs0yDk806R7J3xvxZNMbElQH1bP947Ej0sv40cBcA0hdpjuuNI5C2Ot4P</span>
+</span></span><span class="line"><span class="cl"><span class="n">fUZXfqR34L7aPZPuP82W2WqFgkTyMY8FO235qR</span><span class="o">+</span><span class="n">Sy5xrcHSS4L1FdF</span><span class="o">+</span><span class="n">PhS5ZjiPN</span>
+</span></span><span class="line"><span class="cl"><span class="n">sUdXRvfNFQlKZRUyqB147XY7EDnx6BZW2aoM7AiYPiGhxZeV4NHy1ChdBO2CSmOA</span>
+</span></span><span class="line"><span class="cl"><span class="mi">03</span><span class="n">FvucMEmUF5AoIBAD2xorAOBuXA5L7Sy1hR4S8SEJ2</span><span class="o">/</span><span class="n">LAeyzFhT9F</span><span class="o">+</span><span class="n">hpo0tGLy3</span>
+</span></span><span class="line"><span class="cl"><span class="n">hOohCgQT6NQd8wgSMSTMxTrJd6SPeN</span><span class="o">/</span><span class="mi">8</span><span class="n">I6L14f84Gm</span><span class="o">/</span><span class="n">kg5FN</span><span class="o">+</span><span class="n">BCav5KsdoFnORr</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="n">jlt74et3e</span><span class="o">+</span><span class="n">yuSCQ2HuKdkCGScuPOgzYUw54Ea6cyI5v</span><span class="o">/</span><span class="n">yx9kcxzLik8xZSzx</span><span class="o">+/</span><span class="n">BU</span>
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="n">nF2wBgVXR</span><span class="o">+</span><span class="n">T7BOF</span><span class="o">/</span><span class="n">CIs</span><span class="o">+</span><span class="n">IQd4RebiV0EmqElttI36rec</span><span class="o">+</span><span class="n">jNPBfHpyVkIWqvqrbDb</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="n">qFS0</span><span class="o">+</span><span class="n">rU7FMkaPrM9cnX7O1ED242vzjGMMmvFQmicd0BjsNLnhLWEYRhcP0c3pyS</span>
+</span></span><span class="line"><span class="cl"><span class="n">Az6Z</span><span class="o">/</span><span class="n">HQ9FMn6h</span><span class="o">/</span><span class="n">UZSErWSG970p6NyjieCkICoUECggEBALdyXhvTPD5nvNL3XRWv</span>
+</span></span><span class="line"><span class="cl"><span class="n">pXLY3plRgg7Gkz6UZmrhksO5tTOu6xHX1</span><span class="o">/</span><span class="n">JDNntSYpbJeGFos</span><span class="o">/</span><span class="n">CFs9gp3rYH</span><span class="o">/</span><span class="n">dgM</span>
+</span></span><span class="line"><span class="cl"><span class="n">xgH</span><span class="o">/</span><span class="n">oFdo1KWqD4oK80OqeTAMq0VLo</span><span class="o">+</span><span class="n">OB8xyrdNKqsydZXDmU</span><span class="o">/</span><span class="n">dxD4GRvZVeXKOhO</span>
+</span></span><span class="line"><span class="cl"><span class="n">lTePtbD</span><span class="o">/</span><span class="n">FRqWi310Q5U2GLjkYkWfxyZ</span><span class="o">+</span><span class="mi">1</span><span class="n">pDpQ6</span><span class="o">/</span><span class="n">jt</span><span class="o">/</span><span class="n">xaXoacaVTmhgKpNkTSEBhJ</span>
+</span></span><span class="line"><span class="cl"><span class="n">Y</span><span class="o">/</span><span class="n">EIV</span><span class="o">/</span><span class="n">F3IqM6jcH6uBewWhpKUspZf7jTJeuZBJXA1gMF20MvxqLhzymPqGcPaU9g</span>
+</span></span><span class="line"><span class="cl"><span class="mi">7</span><span class="n">tbjUEkunQ8AFI40xpmc28cD5MHOS2ms3GwYLdtnTH65aJwiajBM62QSw</span><span class="o">/</span><span class="mi">3</span><span class="n">RU67W</span>
+</span></span><span class="line"><span class="cl"><span class="n">rWkCggEBAOtMBi9ko4ZR96BCFcuyPsiMcoDBQBEFgH</span><span class="o">/</span><span class="n">drT3hMlwmmVt5dcInw3Zk</span>
+</span></span><span class="line"><span class="cl"><span class="n">DQb3gIWHP1Ul</span><span class="o">//</span><span class="n">Ma8qwSeuIua0</span><span class="o">+</span><span class="mi">6</span><span class="n">wkQ3NcsDywlJ2cqfZUe7kVJTCl8fuudTAYqT</span>
+</span></span><span class="line"><span class="cl"><span class="n">Bs5Y1ktYPSyQOxmidMeX5IcGe5fPSdpFu9wMXXQ31l8o9SzccFKwz1P1o8G00xvx</span>
+</span></span><span class="line"><span class="cl"><span class="n">wtcfAZ204Dcrdfm6xTWmzMrHqngS1uUDOJbW175gQqeAszy8wLMz41Yau3ypk3ga</span>
+</span></span><span class="line"><span class="cl"><span class="n">edWr4Hzbiph0V1Dv</span><span class="o">/</span><span class="n">V</span><span class="o">+</span><span class="n">kmmreWBmHetH6bhrTWQq3UZ5WbGMpiTmSsD0EXU5vZLbX</span>
+</span></span><span class="line"><span class="cl"><span class="n">xmZSEXjNvG9grjxwR96vp1PK</span><span class="o">/</span><span class="mi">4</span><span class="n">Bq1jo</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="o">-----</span><span class="n">END</span> <span class="n">PRIVATE</span> <span class="n">KEY</span><span class="o">-----</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、在Wireshark中，通过“编辑 &gt; 首选项 &gt; Protocols &gt; TLS”，点击“Edit”后添加Key File并输入ssc.key，最后确认即可完成TLS协议解密。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用如下过滤语句，即可得到flag： <code>INS{OkThatWasWay2Easy}</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">http</span> <span class="n">contains</span> <span class="s2">&#34;FLAG&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>OkThatWasWay2Easy<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Spectogram on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/spectogram/</link>
+    <description>Recent content in Spectogram on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 27 Feb 2025 10:54:30 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/spectogram/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [UTCTF2020]spectogram 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020spectogram-1/</link>
+      <pubDate>Thu, 27 Feb 2025 10:54:30 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020spectogram-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/chumingqian/article/details/123019808&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;语谱图（一） Spectrogram 的定义与机理&lt;/a&gt;
+&lt;a href=&#34;https://www.cnblogs.com/vuclw/p/15848478.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF:[UTCTF2020]spectogram&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，得到attachment.wav&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/chumingqian/article/details/123019808"target="_blank" rel="noopener noreferrer">语谱图（一） Spectrogram 的定义与机理</a>
+<a href="https://www.cnblogs.com/vuclw/p/15848478.html"target="_blank" rel="noopener noreferrer">BUUCTF:[UTCTF2020]spectogram</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到attachment.wav</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、用Audacity打开attachment.wav，显示频谱图，似乎有隐藏信息。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、从题目 <code>spectogram</code> 了解到“语谱图”的存在，我们需要呈现音频的语谱图，目前总结三种方法。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="方法一">方法一：</h4>
+<p>在Audacity中，“ <code>编辑</code> ”选项卡“ <code>首选项</code> ” -&gt; “ <code>频谱图</code> ”，FFT(快速傅里叶窗口变换）窗口大小由默认的256改为 <code>1024</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>点击确定，将图像拉宽，得到flag： <code>utflag{sp3tr0gr4m0ph0n3}</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="方法二">方法二：</h4>
+<p>使用 <code>Sonic Visualiser</code> 分析attachment.wav，得到它的语谱图。</p>
+<p><a href="https://www.sonicvisualiser.org/download.html"target="_blank" rel="noopener noreferrer">Sonic Visualiser下载地址：https://www.sonicvisualiser.org/download.html</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>打开文件后，在 <code>Layer</code> 选项中点击 <code>Add Peak Frequency Spectrogram</code> 或者使用 <code>Shift+K</code> ，然后将右边选项调整成如下图所示，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="方法三">方法三：</h4>
+<p>网上找到的脚本，效果不错。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">librosa</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">soundfile</span> <span class="k">as</span> <span class="nn">sf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">python_speech_features</span> <span class="k">as</span> <span class="nn">psf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">librosa</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">librosa.display</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Spectrogram步骤，</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 1: 预加重</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 2: 分帧</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 3: 加窗</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 4: FFT</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 5: 幅值平方</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Step 6: 对数功率</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">preemphasis</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">coeff</span><span class="o">=</span><span class="mf">0.95</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">signal</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">-</span> <span class="n">coeff</span> <span class="o">*</span> <span class="n">signal</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">pow_spec</span><span class="p">(</span><span class="n">frames</span><span class="p">,</span> <span class="n">NFFT</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">complex_spec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">rfft</span><span class="p">(</span><span class="n">frames</span><span class="p">,</span> <span class="n">NFFT</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">NFFT</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">complex_spec</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">frame_sig</span><span class="p">(</span><span class="n">sig</span><span class="p">,</span> <span class="n">frame_len</span><span class="p">,</span> <span class="n">frame_step</span><span class="p">,</span> <span class="n">win_func</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">    :param sig: 输入的语音信号
+</span></span></span><span class="line"><span class="cl"><span class="s1">    :param frame_len: 帧长
+</span></span></span><span class="line"><span class="cl"><span class="s1">    :param frame_step: 帧移
+</span></span></span><span class="line"><span class="cl"><span class="s1">    :param win_func: 窗函数
+</span></span></span><span class="line"><span class="cl"><span class="s1">    :return: array of frames, num_frame * frame_len
+</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">slen</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">slen</span> <span class="o">&lt;=</span> <span class="n">frame_len</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">num_frames</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># np.ceil(), 向上取整</span>
+</span></span><span class="line"><span class="cl">        <span class="n">num_frames</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">((</span><span class="n">slen</span> <span class="o">-</span> <span class="n">frame_len</span><span class="p">)</span> <span class="o">/</span> <span class="n">frame_step</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">padlen</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="p">(</span><span class="n">num_frames</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">frame_step</span> <span class="o">+</span> <span class="n">frame_len</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 将信号补长，使得(slen - frame_len) /frame_step整除</span>
+</span></span><span class="line"><span class="cl">    <span class="n">zeros</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">padlen</span> <span class="o">-</span> <span class="n">slen</span><span class="p">,))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">padSig</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">sig</span><span class="p">,</span> <span class="n">zeros</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">frame_len</span><span class="p">),</span> <span class="p">(</span><span class="n">num_frames</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_frames</span><span class="o">*</span><span class="n">frame_step</span><span class="p">,</span> <span class="n">frame_step</span><span class="p">),</span> <span class="p">(</span><span class="n">frame_len</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+</span></span><span class="line"><span class="cl">    <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">frames</span> <span class="o">=</span> <span class="n">padSig</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">win</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">win_func</span><span class="p">(</span><span class="n">frame_len</span><span class="p">),</span> <span class="p">(</span><span class="n">num_frames</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">frames</span> <span class="o">*</span> <span class="n">win</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">y</span><span class="p">,</span> <span class="n">sr</span> <span class="o">=</span> <span class="n">sf</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;attachment.wav&#39;</span><span class="p">)</span>   <span class="c1"># 音频文件</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 预加重</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">preemphasis</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">coeff</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 分帧加窗</span>
+</span></span><span class="line"><span class="cl"><span class="n">frames</span> <span class="o">=</span> <span class="n">frame_sig</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">frame_len</span><span class="o">=</span><span class="mi">2048</span><span class="p">,</span> <span class="n">frame_step</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">win_func</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">hanning</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># FFT及幅值平方</span>
+</span></span><span class="line"><span class="cl"><span class="n">feature</span> <span class="o">=</span> <span class="n">pow_spec</span><span class="p">(</span><span class="n">frames</span><span class="p">,</span> <span class="n">NFFT</span><span class="o">=</span><span class="mi">2048</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 对数功率及绘图.</span>
+</span></span><span class="line"><span class="cl"><span class="n">librosa</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">specshow</span><span class="p">(</span><span class="n">librosa</span><span class="o">.</span><span class="n">power_to_db</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">T</span><span class="p">),</span><span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">x_axis</span><span class="o">=</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">y_axis</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Spectrogram&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%+2.0f</span><span class="s1"> dB&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到的语谱图：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>sp3tr0gr4m0ph0n3<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

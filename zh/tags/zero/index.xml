@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zero on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/zero/</link>
+    <description>Recent content in Zero on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 21 Apr 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/zero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [UTCTF2020]zero 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020zero-1/</link>
+      <pubDate>Mon, 21 Apr 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-utctf2020zero-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109817723https://blog.csdn.net/mochu7777777/article/details/109817723&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[UTCTF2020]zero&lt;/a&gt;
+&lt;a href=&#34;https://lazzzaro.github.io/2020/05/24/misc-%E9%9B%B6%E5%AE%BD%E5%BA%A6%E5%AD%97%E7%AC%A6%E9%9A%90%E5%86%99/index.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;零宽度字符隐写&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109817723https://blog.csdn.net/mochu7777777/article/details/109817723"target="_blank" rel="noopener noreferrer">BUUCTF：[UTCTF2020]zero</a>
+<a href="https://lazzzaro.github.io/2020/05/24/misc-%E9%9B%B6%E5%AE%BD%E5%BA%A6%E5%AD%97%E7%AC%A6%E9%9A%90%E5%86%99/index.html"target="_blank" rel="noopener noreferrer">零宽度字符隐写</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>保存附件，内容如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、密文如下，本来想尝试凯撒加密，但在PyCharm中看到存在大量“ZWJ”字符，联想到零宽隐写。</p>
+<blockquote>
+<p><code>&amp;zwj;</code>
+它叫 <strong>零宽</strong> 连字，全称是Zero Width Joiner，简称“ <strong>ZWJ</strong> ”，是一个不打印字符，放在某些需要复杂排版语言（如阿拉伯语、印地语）的两个字符之间，使得这两个本不会发生连字的字符产生了连字效果。零宽连字符的Unicode码位是U+200D (HTML: ‍ ‍）。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">​​​​​​​</span><span class="n">Lorem</span> <span class="n">ipsum</span><span class="err">​​​​​​​</span> <span class="n">dolor</span> <span class="err">‌‌‌‌‍﻿‍‍</span><span class="n">sit</span><span class="err">​​​​​​​​</span> <span class="n">amet</span><span class="err">​​​​​​​​​‌‌‌‌‍﻿‍‌</span><span class="p">,</span> <span class="n">consectetur</span> <span class="err">​​​​​​​</span><span class="n">adipiscing</span><span class="err">​​​​​​​‌‌‌‌‍‬‍‬</span> <span class="n">elit</span><span class="err">​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍‬﻿‌​​​​​​​‌‌‌‌‍‬‌‍</span> <span class="n">Phasellus</span> <span class="n">quis</span><span class="err">​​​​​​​</span> <span class="n">tempus</span><span class="err">​​​​​​</span> <span class="n">ante</span><span class="p">,</span> <span class="err">​​​​​​​​</span><span class="n">nec</span> <span class="n">vehicula</span><span class="err">​​​​​​​​​​​​​​​​</span> <span class="n">mi</span><span class="err">​​​​​​​​</span><span class="o">.</span> <span class="err">​​​​​​​‌‌‌‌‍‬‍﻿</span><span class="n">Aliquam</span> <span class="n">nec</span><span class="err">​​​​​​​​​‌‌‌‌‍﻿‬﻿</span> <span class="n">nisi</span> <span class="n">ut</span> <span class="n">neque</span><span class="err">​​​​​​​</span> <span class="n">interdum</span> <span class="n">auctor</span><span class="err">​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍﻿‍﻿</span> <span class="n">Aliquam</span> <span class="n">felis</span> <span class="err">‌‌‌‌‍‬‬‌</span><span class="n">orci</span><span class="err">​​​​​​​</span><span class="p">,</span> <span class="n">vestibulum</span> <span class="err">‌‌‌‌‍﻿‬‍</span><span class="n">sit</span> <span class="err">​​​​​​​</span><span class="n">amet</span><span class="err">​​​​​​​​​</span> <span class="n">ante</span><span class="err">‌‌‌‌‍‌﻿‬</span> <span class="n">at</span><span class="err">​​​​​​​</span><span class="p">,</span> <span class="n">consectetur</span><span class="err">‌‌‌‌‍‌﻿﻿</span> <span class="n">lobortis</span> <span class="n">eros</span><span class="err">​​​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍‍‍‌</span> <span class="err">‌‌‌‌‍‌‌‌​​​​​​​</span><span class="n">Orci</span> <span class="n">varius</span><span class="err">​​​​​​​</span> <span class="err">​​​​​​​</span><span class="n">natoque</span> <span class="err">‌‌‌‌‍﻿‌﻿</span><span class="n">penatibus</span> <span class="n">et</span> <span class="err">‌‌‌‌‍‬‌﻿​​​​​​​</span><span class="n">magnis</span><span class="err">‌‌‌‌‌﻿‌‍‌‌‌‌‌﻿‌‍</span> <span class="n">dis</span> <span class="err">​​​​​​​‌‌‌‌‍‍﻿﻿</span><span class="n">parturient</span> <span class="n">montes</span><span class="p">,</span> <span class="err">​​​​​​​</span><span class="n">nascetur</span> <span class="n">ridiculus</span> <span class="err">‌‌‌‌‌﻿‍‌​​​​​​​​​​​​​​‌‌‌‌‌﻿‬‍</span><span class="n">mus</span><span class="o">.</span> <span class="n">In</span> <span class="n">finibus</span><span class="err">‌‌‌‌‌﻿‌‬</span> <span class="n">magna</span><span class="err">​​​​​​‌‌‌‌‌﻿‍﻿</span> <span class="n">mauris</span><span class="p">,</span> <span class="n">quis</span><span class="err">‌‌‌‌‍‬‌‍</span> <span class="n">auctor</span> <span class="err">‌‌‌‌‍‬‌‍</span><span class="n">libero</span> <span class="n">congue</span> <span class="n">quis</span><span class="o">.</span> <span class="err">‌‌‌‌‍‬‬‬</span><span class="n">Duis</span><span class="err">‌‌‌‌‍‬‌‬</span> <span class="n">sagittis</span> <span class="n">consequat</span> <span class="n">urna</span> <span class="n">non</span> <span class="n">tristique</span><span class="o">.</span> <span class="n">Pellentesque</span> <span class="n">eu</span> <span class="n">lorem</span> <span class="err">‌‌‌‌‍﻿‌‍</span><span class="n">id</span><span class="err">‌‌‌‌‍‬‬﻿</span> <span class="n">quam</span> <span class="n">vestibulum</span> <span class="n">ultricies</span> <span class="n">vel</span> <span class="n">ac</span> <span class="n">purus</span><span class="err">‌‌‌‌‌﻿‌‍</span><span class="o">.</span><span class="err">‌‌‌‌‌﻿‍‌‌‌‌‌‍﻿﻿‍</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>（在Linux的vim编辑器中也可以看到）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、使用在线解密网站，得到flag： <code>utflag{whyNOT@sc11_4927aajbqk14}</code> 。</p>
+<p>零宽度字符隐写： <a href="https://330k.github.io/misc_tools/unicode_steganography.html"target="_blank" rel="noopener noreferrer">https://330k.github.io/misc_tools/unicode_steganography.html</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>whyNOT@sc11_4927aajbqk14<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>零宽度字符隐写术</strong> （Zero-Width Space Steganography）：
+将隐藏消息编码和解码为不可打印/可读字符。
+<strong>字符包括：</strong>
+零宽度空格（\u200b）
+零宽度非连接符（\u200c）
+零宽度连接符（\u200d）
+从左至右书写标记（\u200e）
+从右至左书写标记（\u200f）</p>
+</blockquote>
+<blockquote>
+<p><strong>解密</strong>
+<strong>在线工具</strong> <a href="https://www.mzy0.com/ctftools/zerowidth1/"target="_blank" rel="noopener noreferrer">https://www.mzy0.com/ctftools/zerowidth1/</a> <a href="http://330k.github.io/misc_tools/unicode_steganography.html"target="_blank" rel="noopener noreferrer">http://330k.github.io/misc_tools/unicode_steganography.html</a>
+<a href="https://offdev.net/demos/zwsp-steg-js"target="_blank" rel="noopener noreferrer">https://offdev.net/demos/zwsp-steg-js</a>
+<a href="https://yuanfux.github.io/zero-width-web/"target="_blank" rel="noopener noreferrer">https://yuanfux.github.io/zero-width-web/</a>
+<a href="http://www.atoolbox.net/Tool.php?Id=829"target="_blank" rel="noopener noreferrer">http://www.atoolbox.net/Tool.php?Id=829</a>
+<strong>其他工具</strong> zwsp-steg-py <a href="https://github.com/enodari/zwsp-steg-py"target="_blank" rel="noopener noreferrer">https://github.com/enodari/zwsp-steg-py</a>
+<strong>转换</strong> 转化为二进制的加密： <a href="https://zhuanlan.zhihu.com/p/87919817"target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/87919817</a>
+转化为Morse编码的加密： <a href="https://zhuanlan.zhihu.com/p/75992161"target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/75992161</a></p>
+</blockquote>
+<hr>
+<p><strong>Tips</strong></p>
+<blockquote>
+<p>居然已经3年了，时间真是快啊。逝者如斯夫，不舍昼夜！</p>
+</blockquote>
+<ol>
+<li>
+<p>您发布的文章将会展示至 <a href="https://blog.csdn.net/rank/list/milestone"target="_blank" rel="noopener noreferrer">里程碑专区</a> ，您也可以在 <a href="https://blog.csdn.net/rank/list/milestone"target="_blank" rel="noopener noreferrer">专区</a> 内查看其他创作者的纪念日文章</p>
+</li>
+<li>
+<p>优质的纪念文章将会获得神秘打赏哦</p>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

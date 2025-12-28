@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hashcat on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/hashcat/</link>
+    <description>Recent content in Hashcat on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.153.3</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 28 Apr 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/hashcat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF hashcat 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-hashcat-1/</link>
+      <pubDate>Mon, 28 Apr 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-hashcat-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_39150356/article/details/135980077&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HashCat 恢复Excel、Word、PPT密码保姆教程&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/c868954104/article/details/134599989&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf MISC - hashcat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，解压得到What kind of document is this_文件。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/qq_39150356/article/details/135980077"target="_blank" rel="noopener noreferrer">HashCat 恢复Excel、Word、PPT密码保姆教程</a>
+<a href="https://blog.csdn.net/c868954104/article/details/134599989"target="_blank" rel="noopener noreferrer">buuctf MISC - hashcat</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到What kind of document is this_文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、文件名提示，需要确定文件类型。在010 Editor中打开，根据文件头 <code>D0 CF 11 E0</code> 确定是MS Office文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">MS</span> <span class="n">Office文件</span>      <span class="n">文件头</span><span class="err">：</span><span class="n">D0</span> <span class="n">CF</span> <span class="mi">11</span> <span class="n">E0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>但是MS Office文件包括MS Word/Excel/PPT三种文件，随便尝试一种文件，发现有密码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、结合题目 <code>hashcat</code> ，我们使用HashCat恢复MS Office文件（Excel、Word、PPT）密码。</p>
+<p>首先，使用office2john.py获取文件的hash值。</p>
+<p>office2john.py文件下载地址： <a href="https://github.com/magnumripper/JohnTheRipper/blob/bleeding-jumbo/run/office2john.py"target="_blank" rel="noopener noreferrer">https://github.com/magnumripper/JohnTheRipper/blob/bleeding-jumbo/run/office2john.py</a></p>
+<p>CMD中打开，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">python</span> <span class="n">office2john</span><span class="o">.</span><span class="n">py</span> <span class="s2">&#34;What kind of document is this_&#34;</span> <span class="o">&gt;</span> <span class="nb">hash</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到文件的hash值如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>去掉文件名 <code>What kind of document is this_:</code> ，保留 <code>$office$</code> 及之后的数据。（从 <code>$office$*2010*</code> 可以得到该文件使用的是 <strong>Office2010</strong> 版本，后面要用到！）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">$</span><span class="n">office</span><span class="err">$</span><span class="o">*</span><span class="mi">2010</span><span class="o">*</span><span class="mi">100000</span><span class="o">*</span><span class="mi">128</span><span class="o">*</span><span class="mi">16</span><span class="o">*</span><span class="mi">265</span><span class="n">c4784621f00ddb85cc3a7227dade7</span><span class="o">*</span><span class="n">f0cc4179b2fcc2a2c5fa417566806249</span><span class="o">*</span><span class="n">b5ad5b66c0b84ba6e5d01f27ad8cffbdb409a4eddc4a87cd4dfbc46ad60160c9</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后，使用HashCat根据hash值去解析密码。</p>
+<p>HashCat官方网站： <a href="https://hashcat.net/hashcat/"target="_blank" rel="noopener noreferrer">https://hashcat.net/hashcat/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>将hash文件放到hashcat文件夹下，CMD打开，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9500</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span> <span class="o">-</span><span class="n">O</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>破解 Office 加密 Offcie 版本对应哈希类型
+Office97-03(MD5+RC4,oldoffice$0,oldoffice$1)：-m 9700
+Office97-03($0/$1, MD5 + RC4, collider #1)：-m 9710
+Office97-03($0/$1, MD5 + RC4, collider #2)：-m 9720
+Office97-03($3/$4, SHA1 + RC4)：-m 9800
+Office97-03($3, SHA1 + RC4, collider #1)：-m9810
+Office97-03($3, SHA1 + RC4, collider #2)：-m9820
+Office2007：-m 9400
+<strong>Office2010：-m 9500</strong>
+Office2013：-m 9600</p>
+</blockquote>
+<blockquote>
+<p>Hashcat 中自定义破解含义值：
+?l = abcdefghijklmnopqrstuvwxyz，代表小写字母。
+?u = ABCDEFGHIJKLMNOPQRSTUVWXYZ，代表大写字母。
+?d = 0123456789，代表数字。
+?s = !&quot;#$%&amp;&rsquo;()*+,-./:;&lt;=&gt;?@[]^_`{|}~，代表特殊字符。
+?a = ?l?u?d?s，大小写数字及特殊字符的组合。
+?b = 0x00 - 0xff</p>
+</blockquote>
+<p>出现下图所示内容，表示成功运行。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在上条命令的后面加上 <code>--show</code> 参数，显示密码为 <code>9919</code> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9500</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span> <span class="o">-</span><span class="n">O</span> <span class="o">--</span><span class="n">show</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、使用密码尝试Excel、Word、PPT文件，直到后缀为 <code>.ppt</code> 的PPT文件，才正常显示内容。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>存在7张空白的幻灯片，全选之后，到“设计”选项卡，选择“设置背景格式”，选择黑色纯色填充。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在第七张幻灯片中，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>okYOUWIN<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="hashcat常用实例">HashCat常用实例</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">8</span> <span class="n">位数字破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat64</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span> <span class="err">–</span><span class="n">O</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="mi">8</span> <span class="n">位数字破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="o">--</span><span class="n">increment</span> <span class="o">--</span><span class="n">increment</span><span class="o">-</span><span class="nb">min</span> <span class="mi">1</span><span class="err">–</span><span class="n">increment</span><span class="o">-</span><span class="nb">max</span> <span class="mi">8</span> <span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span><span class="err">?</span><span class="n">d</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">1</span> <span class="n">到</span> <span class="mi">8</span> <span class="n">位小写字母破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="o">--</span><span class="n">increment</span> <span class="o">--</span><span class="n">increment</span><span class="o">-</span><span class="nb">min</span> <span class="mi">1</span><span class="err">–</span><span class="n">increment</span><span class="o">-</span><span class="nb">max</span> <span class="mi">8</span> <span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">8</span> <span class="n">位小写字母破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span><span class="err">?</span><span class="n">l</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span> <span class="err">–</span><span class="n">O</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="o">-</span><span class="mi">8</span> <span class="n">位大写字母破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="o">--</span><span class="n">increment</span> <span class="o">--</span><span class="n">increment</span><span class="o">-</span><span class="nb">min</span> <span class="mi">1</span><span class="err">–</span><span class="n">increment</span><span class="o">-</span><span class="nb">max</span> <span class="mi">8</span> <span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">8</span> <span class="n">位大写字母破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span><span class="err">?</span><span class="n">u</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span> <span class="err">–</span><span class="n">O</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mi">5</span> <span class="n">位小写</span><span class="o">+</span><span class="n">大写</span><span class="o">+</span><span class="n">数字</span><span class="o">+</span><span class="n">特殊字符破解</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Hashcat</span> <span class="o">-</span><span class="n">m</span> <span class="mi">9700</span> <span class="nb">hash</span> <span class="o">-</span><span class="n">a</span> <span class="mi">3</span> <span class="err">?</span><span class="n">b</span><span class="err">?</span><span class="n">b</span><span class="err">?</span><span class="n">b</span><span class="err">?</span><span class="n">b</span><span class="err">?</span><span class="n">b</span> <span class="o">-</span><span class="n">w</span> <span class="mi">3</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>破解时采取先易后难的原则，建议如下：</p>
+<ul>
+<li>
+<p>使用 1-8 位数字进行破解。</p>
+</li>
+<li>
+<p>使用 1-8 位小写字母进行破解。</p>
+</li>
+<li>
+<p>使用 1-8 位大写字母进行破解。</p>
+</li>
+<li>
+<p>使用 1-8位混合大小写+数字+特殊字符进行破解。</p>
+</li>
+<li>
+<p>利用收集的公开字典进行破解。</p>
+</li>
+</ul>
+</blockquote>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
