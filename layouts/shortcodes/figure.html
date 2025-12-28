@@ -1,4 +1,4 @@
-{{- $random := (substr (md5 (.Get "src")) 0 5) }}
+<!-- {{- $random := (substr (md5 (.Get "src")) 0 5) }}
 <figure{{ if or (.Get "class") (eq (.Get "align") "center") }} class="
            {{- if eq (.Get "align") "center" }}align-center {{ end }}
            {{- with .Get "class" }}{{ . }}{{- end }}"
@@ -40,29 +40,41 @@
         </figcaption>
     {{- end }}
 </figure>
+ -->
 
+<!-- 1. 引入依赖库 (通过 Scratch 确保整页只加载一次，避免重复) -->
+{{ if not ($.Page.Scratch.Get "fancyboxLoaded") }}
+  {{ $.Page.Scratch.Set "fancyboxLoaded" true }}
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+{{ end }}
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-<a data-fancybox="gallery" href="{{ .Get "src" }}">
+<!-- 2. Figure 容器 -->
 <figure{{ if or (.Get "class") (eq (.Get "align") "center") }} class="
            {{- if eq (.Get "align") "center" }}align-center {{ end }}
            {{- with .Get "class" }}{{ . }}{{- end }}"
 {{- end -}}>
+
+    <!-- 3. 链接逻辑：如果有 link 参数则跳转，否则启用 Fancybox 放大 -->
     {{- if .Get "link" -}}
         <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-    {{- end }}
-    <img loading="lazy" src="{{ .Get "src" }}{{- if eq (.Get "align") "center" }}#center{{- end }}"
-         {{- if or (.Get "alt") (.Get "caption") }}
-         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
-         {{- end -}}
-         {{- with .Get "width" }} width="{{ . }}"{{ end -}}
-         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
-    /> <!-- Closing img tag -->
-    {{- if .Get "link" }}</a>{{ end -}}
+    {{- else -}}
+        <a data-fancybox="gallery" href="{{ .Get "src" }}">
+    {{- end -}}
+
+        <!-- 4. 图片本体 (移除了原有的 zoomCheck 相关代码) -->
+        <img loading="lazy" src="{{ .Get "src" }}{{- if eq (.Get "align") "center" }}#center{{- end }}"
+             {{- if or (.Get "alt") (.Get "caption") }}
+             alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+             {{- end -}}
+             {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+             {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+        />
+        
+    </a> <!-- 闭合链接标签 -->
+
+    <!-- 5. 图片说明文字 (保持原样) -->
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
         <figcaption>
             {{ with (.Get "title") -}}
@@ -79,4 +91,3 @@
         </figcaption>
     {{- end }}
 </figure>
-</a>
