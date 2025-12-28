@@ -206,7 +206,7 @@ languages: # 定义具体语言板块。
         - identifier: CTF                                # 子菜单的唯一标识
           parent: series                                 # 【关键】指定父菜单是谁 (series)
           name: "CTF"                                    # 子菜单名字
-          url: /zh/categories/CTF/
+          url: /zh/categories/CTF/                       # 分类页面（所有打 CTF 标签的文章，不能与post/下文件名相同）
           weight: 1
         - identifier: YueXuan_Algorithm
           parent: series
