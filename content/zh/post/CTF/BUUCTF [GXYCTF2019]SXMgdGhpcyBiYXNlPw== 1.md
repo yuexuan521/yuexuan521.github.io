@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [GXYCTF2019]SXMgdGhpcyBiYXNlPw== 1"
-date: 2024-09-21 20:40:44
+date: 2024-02-21 20:40:44
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

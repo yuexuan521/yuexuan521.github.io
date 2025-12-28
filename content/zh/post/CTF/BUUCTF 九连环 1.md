@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 九连环 1"
-date: 2024-09-23 22:50:58
+date: 2024-06-23 22:50:58
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

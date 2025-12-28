@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 面具下的flag 1"
-date: 2024-09-23 22:52:23
+date: 2024-07-23 22:52:23
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF snake 1"
-date: 2024-09-23 11:04:41
+date: 2024-04-23 11:04:41
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

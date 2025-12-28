@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [UTCTF2020]file header 1"
-date: 2024-09-21 20:12:50
+date: 2024-01-21 20:12:50
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

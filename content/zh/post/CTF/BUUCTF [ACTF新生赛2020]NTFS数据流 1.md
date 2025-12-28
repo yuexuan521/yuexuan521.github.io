@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [ACTF新生赛2020]NTFS数据流 1"
-date: 2024-09-21 20:49:16
+date: 2024-03-21 20:49:16
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

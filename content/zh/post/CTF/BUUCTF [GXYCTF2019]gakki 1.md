@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [GXYCTF2019]gakki 1"
-date: 2024-09-21 23:05:16
+date: 2024-07-21 23:05:16
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [BJDCTF2020]just_a_rar 1"
-date: 2024-09-23 11:02:25
+date: 2024-05-23 11:02:25
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

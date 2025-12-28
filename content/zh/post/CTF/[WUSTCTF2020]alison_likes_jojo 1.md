@@ -1,6 +1,6 @@
 ---
 title: "[WUSTCTF2020]alison_likes_jojo 1"
-date: 2024-09-21 20:22:28
+date: 2024-04-21 20:22:28
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

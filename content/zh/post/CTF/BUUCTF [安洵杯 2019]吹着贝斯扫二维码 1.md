@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [安洵杯 2019]吹着贝斯扫二维码 1"
-date: 2024-09-21 20:18:10
+date: 2024-02-21 20:18:10
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

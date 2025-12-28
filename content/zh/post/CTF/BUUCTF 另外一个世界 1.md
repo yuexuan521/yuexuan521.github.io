@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF 另外一个世界 1"
-date: 2024-09-24 16:37:44
+date: 2024-02-24 16:37:44
 category: "BUUCTF MISC"
 categories: 
   - "CTF"
