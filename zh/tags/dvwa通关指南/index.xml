@@ -20,7 +20,16 @@
       <pubDate>Thu, 26 Sep 2024 12:24:47 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
       <description>&lt;h2 id=&#34;dvwa-cross-site-request-forgery-csrf&#34;&gt;DVWA Cross Site Request Forgery (CSRF)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -30,7 +39,16 @@
 &lt;blockquote&gt;
 &lt;p&gt;CSRF是跨站请求伪造攻击，由客户端发起，是由于没有在执行关键操作时，进行 &lt;code&gt;是否由用户自愿发起的&lt;/code&gt; 确认攻击者通过用户的浏览器来注入额外的网络请求，来破坏一个网站会话的完整性。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-cross-site-request-forgery-csrf">DVWA Cross Site Request Forgery (CSRF)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -138,12 +156,48 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>观察链接，认为使用get方式提交修改密码参数，只要三个参数符合就可以执行密码修改的操作</p>
-<p><img alt="image-20240415193519864" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png" 
+             alt="image-20240415193519864" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、打开一个新标签页，在地址栏输入 <code>http://dvwa/vulnerabilities/csrf/?password_new=111&amp;password_conf=111&amp;Change=Change#</code> ，回车后，进入DVWA中并提示Password Changed，修改密码成功。</p>
-<p><img alt="image-20240415194631245" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png"></p>
-<p><img alt="image-20240415194532633" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png" 
+             alt="image-20240415194631245" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png" 
+             alt="image-20240415194532633" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、可以通过将长连接转换为短链接的方法，诱使用户点击链接，通过 <a href="https://uutool.cn/dwz/">在线工具</a> 转换</p>
-<p><img alt="image-20240415194928196" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png" 
+             alt="image-20240415194928196" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="dvwa-medium-级别-csrf">DVWA Medium 级别 CSRF</h3>
 <p>0、分析网页源代码（路径：“D:\phpstudy_pro\DVWA-master\vulnerabilities\csrf\source\medium.php”）</p>
 <div class="highlight"><div class="chroma">
@@ -236,19 +290,100 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>2、打开新的标签页，使用上面的地址，出现错误提示，密码修改错误</p>
-<p><img alt="image-20240417080206278" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png" 
+             alt="image-20240417080206278" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、打开计算机代理，修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，BurpSuite调整代理参数与电脑代理一致</p>
-<p><img alt="image-20240412094734133" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png"></p>
-<p><img alt="image-20240412095237028" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png"></p>
-<p><img alt="image-20240412094536046" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png" 
+             alt="image-20240412094734133" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png" 
+             alt="image-20240412095237028" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png" 
+             alt="image-20240412094536046" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、正常修改密码的网页，使用BurpSuitePro捕获流量包，发现多出Referer属性信息</p>
-<p><img alt="image-20240418165344132" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png" 
+             alt="image-20240418165344132" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>5、而直接粘贴链接修改密码失败的报文缺少Referer属性信息，右键选择Send to Repeater</p>
-<p><img alt="image-20240418170054026" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png"></p>
-<p><img alt="image-20240418170418876" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png" 
+             alt="image-20240418170054026" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png" 
+             alt="image-20240418170418876" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>5、打开Repeater选项卡，给Request请求中添加Referer信息，Referer需要包括&quot;dvwa&quot;字段（需要符合同源策略），点击Send发送，修改密码成功</p>
-<p><img alt="image-20240418172052977" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png"></p>
-<p><img alt="image-20240418172120333" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png" 
+             alt="image-20240418172052977" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png" 
+             alt="image-20240418172120333" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="dvwa-high-级别-csrf">DVWA High 级别 CSRF</h3>
 <p>0、分析网页源代码（路径：“D:\phpstudy_pro\DVWA-master\vulnerabilities\csrf\source\high.php”）</p>
 <div class="highlight"><div class="chroma">
@@ -328,9 +463,27 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>1、正常修改密码并成功，使用BurpSuitePro捕获流量包，发现仍使用get提交方式，但多了验证参数token</p>
-<p><img alt="image-20240418174557916" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png" 
+             alt="image-20240418174557916" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、直接将链接复制粘贴修改密码肯定失败，提示token不正确</p>
-<p><img alt="image-20240418180900000" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png" 
+             alt="image-20240418180900000" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>有两种方法可以获得token值</p>
 <p>方法一：利用DVWA中储存型XSS漏洞获得网页token</p>
 <p>1、修改储存型XSS的网页脚本&quot;D:\phpstudy_pro\DVWA-master\vulnerabilities\xss_s\index.php&quot;，加入下面两行代码（修改文件之前做好备份）</p>
@@ -344,22 +497,94 @@
 </span></span><span class="line"><span class="cl">&lt;div&gt;Name:&lt;iframe src=&#39;../csrf&#39; οnlοad=alert(frames[0].document.getElementsByName(&#39;user_token&#39;)[0].value)&gt;&lt;br/&gt;Message:1&lt;br/&gt;&lt;/div&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="屏幕截图 2024-04-18 190045" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959108.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959108.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959108.png" 
+             alt="屏幕截图 2024-04-18 190045" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、保存文件，打开DVWA High级别下的储存型XSS页面，得到token值</p>
-<p><img alt="image-20240418190907301" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png" 
+             alt="image-20240418190907301" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、将得到的token替换，BurpSuitePro捕获流量包中原有的token</p>
-<p><img alt="image-20240418190836711" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png" 
+             alt="image-20240418190836711" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、发送构造好的数据包，得到响应，密码修改成功</p>
-<p><img alt="image-20240418191317461" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png" 
+             alt="image-20240418191317461" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>方法二：在BurpSuite安装插件，获取token</p>
 <p>1、安装CSRF Token Tracker插件</p>
-<p><img alt="image-20240418184201655" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png" 
+             alt="image-20240418184201655" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、添加一条CSRF Token Tracker规则并勾选，再勾选&quot;根据规则同步requests&quot;</p>
-<p><img alt="image-20240615214659621" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png" 
+             alt="image-20240615214659621" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、截获修改密码请求包</p>
-<p><img alt="屏幕截图 2024-06-15 215508" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959114.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959114.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959114.png" 
+             alt="屏幕截图 2024-06-15 215508" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、将抓到的包Send to Repeater，在Repeater页面修改&quot;password_new&quot;和&quot;password_conf&quot;参数，Send后发现token值发生变化，修改密码成功</p>
-<p><img alt="image-20240615215423256" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png" 
+             alt="image-20240615215423256" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="dvwa-impossible-级别-csrf">DVWA Impossible 级别 CSRF</h3>
 <p>0、分析网页源代码</p>
 <div class="highlight"><div class="chroma">

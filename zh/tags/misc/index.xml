@@ -23,26 +23,107 @@
 &lt;h3 id=&#34;misc&#34;&gt;MISC&lt;/h3&gt;
 &lt;h4 id=&#34;gif&#34;&gt;GIF&lt;/h4&gt;
 &lt;p&gt;下载附件，解压得到test1.jpg。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241019112516253&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34; 
+             alt=&#34;image-20241019112516253&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;image-20241019112337531&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34; 
+             alt=&#34;image-20241019112337531&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <h3 id="misc">MISC</h3>
 <h4 id="gif">GIF</h4>
 <p>下载附件，解压得到test1.jpg。</p>
-<p><img alt="image-20241019112516253" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png" 
+             alt="image-20241019112516253" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。</p>
-<p><img alt="image-20241019112337531" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png"></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png" 
+             alt="image-20241019112337531" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>QR_Research扫码得到flag： <code>flag{255fb106-47a8-4932-a0e9-4a2567513db3}</code> 。</p>
-<p><img alt="image-20241019112840972" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png" 
+             alt="image-20241019112840972" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h4 id="pyc">pyc</h4>
 <p>下载附件，解压得到test.pyc文件。</p>
-<p><img alt="image-20241019114034253" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png" 
+             alt="image-20241019114034253" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用Uncompyle6工具对test.pyc文件反编译，得到test.py文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -62,8 +143,26 @@
 </span></span><span class="line"><span class="cl">// 这会将test.pyc文件反编译，并输出到test.py文件中
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20241019114406083" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png"></p>
-<p><img alt="image-20241019114425933" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png" 
+             alt="image-20241019114406083" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png" 
+             alt="image-20241019114425933" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -120,17 +219,71 @@
 </div>
 </div><h4 id="seeyouagain">seeyouagain</h4>
 <p>下载附件，解压得到flag.png图片。</p>
-<p><img alt="image-20241019115057086" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png" 
+             alt="image-20241019115057086" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>用010 Editor打开，提示CRC错误，粘贴到MarkDown中也无法显示，应该被修改宽高了。</p>
-<p><img alt="image-20241019115221034" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png" 
+             alt="image-20241019115221034" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>显示失败
-<img alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png"></p>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png" 
+             alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用脚本，爆破flag.png图片宽高并修复文件。</p>
-<p><img alt="image-20241019115550428" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png" 
+             alt="image-20241019115550428" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>修复图片如下：</p>
-<p><img alt="unhex" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png" 
+             alt="unhex" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>得到flag的密码： <code>flag@abc</code> ，压缩包应该隐藏在图片中。用010 Editor打开修复后的图片，发现ZIP压缩包。</p>
-<p><img alt="image-20241019120045868" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png" 
+             alt="image-20241019120045868" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>另存为zip文件，使用密码解压得到flag.txt，内容如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -392,12 +545,30 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行得到flag： <code>flag{da6ac101b05b6974}</code> 。（要补个“}”）</p>
-<p><img alt="image-20241019120526730" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png" 
+             alt="image-20241019120526730" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <h3 id="crypto">CRYPTO</h3>
 <h4 id="base全家桶">base全家桶</h4>
 <p>下载附件，解压得到cipher.txt文件。</p>
-<p><img alt="image-20241018151311265" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png" 
+             alt="image-20241018151311265" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>1、cipher.txt内容如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -408,12 +579,39 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>根据题目提示，使用Base16解密，得到一大串密文，后面应该还有多重Base加密。</p>
-<p><img alt="image-20241019110546923" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png" 
+             alt="image-20241019110546923" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用多次Base16解密，再切换Base32解密，最后得到flag： <code>flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}</code> 。</p>
-<p><img alt="image-20241019111111971" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png" 
+             alt="image-20241019111111971" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h4 id="base6432">base64+32</h4>
 <p>下载附件，解压得到base64+32.html文件。</p>
-<p><img alt="image-20241019111251572" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png" 
+             alt="image-20241019111251572" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>双击文件打开，页面内容如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -423,7 +621,16 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTKLEYFUV2JGJHFGVJTKJAT2PI</span><span class="o">=</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20241019111425315" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png" 
+             alt="image-20241019111425315" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>根据题目提示，大致要使用Base64和Base32解密。</p>
 <p>先进行Base32解密，得到</p>
 <div class="highlight"><div class="chroma">
@@ -434,7 +641,16 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA</span><span class="o">==</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20241019111649611" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png" 
+             alt="image-20241019111649611" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>再进行Base64解密，得到经过URL编码的字符串。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -444,9 +660,27 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">flag%7B6682ad1e-43cc-406d-af02-4c76ef64eb65%7D
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20241019111739307" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png" 
+             alt="image-20241019111739307" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>最后进行URL解码，得到flag： <code>flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}</code> 。</p>
-<p><img alt="image-20241019111918659" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png" 
+             alt="image-20241019111918659" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h4 id="rsa">rsa</h4>
 <p>下载附件，解压得到enc.py文件，内容如下：（RSA真难，算不出来，(╯°□°）╯︵ ┻━┻）</p>
 <div class="highlight"><div class="chroma">
@@ -515,7 +749,16 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行得到flag： <code>flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}</code> 。</p>
-<p><img alt="image-20241022205934149" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png" 
+             alt="image-20241022205934149" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="web">WEB</h3>
 <hr>
 <p>相关阅读：</p>
@@ -533,39 +776,138 @@
       <description>&lt;hr&gt;
 &lt;p&gt;相关阅读
 &lt;a href=&#34;https://ctf-wiki.org/&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
 &lt;p&gt;图片似乎经过了什么处理，你能否将其复原呢？&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
 &lt;p&gt;下载附件，解压得到一张.jpg图片。&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
 &lt;p&gt;1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <p>相关阅读
 <a href="https://ctf-wiki.org/">CTF Wiki</a></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="题目描述">题目描述：</h3>
 <p>图片似乎经过了什么处理，你能否将其复原呢？</p>
 <h3 id="密文">密文：</h3>
 <p>下载附件，解压得到一张.jpg图片。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <h3 id="解题思路">解题思路：</h3>
 <p>1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png"></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、尝试解压得到的压缩包，需要密码。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>因为没有关于密码的提示，尝试用4位纯数字进行爆破，出现提示“no usable files found”（未找到可用文件）。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><a href="https://blog.csdn.net/qq_26187985/article/details/83654197">zip伪加密原理</a>
 猜测该zip压缩包为伪加密，通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png"></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -611,9 +953,27 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>3、修改后，解压压缩包不需要密码，解压成功，得到一张.png图片。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>从这里也可以看出图片经过修改，无法正常显示。在010 Editor中打开，提示CRC校验错误，结合题目提示“图片似乎经过了什么处理”，认为图片被修改了宽高。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -648,11 +1008,38 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>得到正确的宽高值。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>修改图片中的宽高参数，然后保存图片查看。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>获得flag。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="flag">flag：</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

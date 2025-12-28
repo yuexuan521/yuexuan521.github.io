@@ -20,7 +20,16 @@
       <pubDate>Sat, 21 Sep 2024 12:25:16 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-weak-session-ids%E5%BC%B1%E4%BC%9A%E8%AF%9D/</guid>
       <description>&lt;h2 id=&#34;dvwa-weaksessionids弱会话&#34;&gt;DVWA WeakSessionIDs（弱会话）&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -63,7 +72,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Low级别的cookie生成方式：如果 $cookie_value不存在就设为0，存在则$ cookie_value加1，最后以dvwaSession=$cookie_value呈现。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-weaksessionids弱会话">DVWA WeakSessionIDs（弱会话）</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -106,10 +124,37 @@
 </div>
 </div><p>Low级别的cookie生成方式：如果 $cookie_value不存在就设为0，存在则$ cookie_value加1，最后以dvwaSession=$cookie_value呈现。</p>
 <p>2、使用BurpSuite抓包，如下：</p>
-<p><img alt="image-20240517140744204" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536615.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536615.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536615.png" 
+             alt="image-20240517140744204" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>每重放一次，dvwaSession值加1。</p>
-<p><img alt="image-20240517141306684" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536616.png"></p>
-<p><img alt="image-20240517142357483" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536617.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536616.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536616.png" 
+             alt="image-20240517141306684" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536617.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536617.png" 
+             alt="image-20240517142357483" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>构造Payload：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -120,7 +165,16 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用火狐浏览器的hackbarV2，粘贴URL和cookie，提交(Execute)，实现免密码登录。</p>
-<p><img alt="image-20240517142320371" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536618.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536618.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536618.png" 
+             alt="image-20240517142320371" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="medium-level">Medium Level</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -150,11 +204,47 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>Medium Level的cookie值由时间戳生成。抓包如下：</p>
-<p><img alt="image-20240517143656163" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536619.png"></p>
-<p><img alt="image-20240517143721534" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536620.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536619.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536619.png" 
+             alt="image-20240517143656163" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536620.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536620.png" 
+             alt="image-20240517143721534" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、获取对应时间的时间戳，拼接到cookie中提交，即可登录成功</p>
-<p><img alt="image-20240517144322688" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536621.png"></p>
-<p><img alt="image-20240517144204048" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536622.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536621.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536621.png" 
+             alt="image-20240517144322688" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536622.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536622.png" 
+             alt="image-20240517144204048" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high-level">High Level</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -192,8 +282,26 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>cookie值的初始生成与Low level一致，对cookie值进行MD5加密后作为cookie值。抓包如下：</p>
-<p><img alt="image-20240517145842879" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536623.png"></p>
-<p><img alt="image-20240517145810334" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536624.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536623.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536623.png" 
+             alt="image-20240517145842879" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536624.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536624.png" 
+             alt="image-20240517145810334" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、将从0增加的整数进行MD5加密，MD5值作为cookie值，构造Payload提交：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -203,9 +311,27 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dvwaSession=cfcd208495d565ef66e7dff9f98764da; dvwaSession=1715928053; PHPSESSID=26ks0v1tpvqsu15da00mn3i2cq; security=high
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240517150947017" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536625.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536625.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536625.png" 
+             alt="image-20240517150947017" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>我的是新的页面，所以cookie值为0</p>
-<p><img alt="image-20240517151113764" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536626.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536626.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536626.png" 
+             alt="image-20240517151113764" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible-level">Impossible Level</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

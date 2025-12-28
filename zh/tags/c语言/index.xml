@@ -3432,7 +3432,16 @@
 <h3 id="mt1290-级数">MT1290 级数</h3>
 <p><em><strong>（1）题目</strong></em>
 编写程序求级数前n项的和，其中n从键盘上输入</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -3509,7 +3518,16 @@
 <h3 id="mt1291-级数ii">MT1291 级数II</h3>
 <p><em><strong>（1）题目</strong></em>
 编写程序求级数前n项的和，其中n从键盘上输入</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644042.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644042.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644042.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -8582,7 +8600,16 @@
 <h3 id="mt1225-复杂分数">MT1225 复杂分数</h3>
 <p><em><strong>（1）题目</strong></em>
 编写程序连续输入a1、a2、…、a5，计算下列表达式的值并输出。本题不考虑输入0，负数或者其他特殊情况。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558048.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558048.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558048.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -8661,7 +8688,16 @@
 <h3 id="mt1226-解不等式">MT1226 解不等式</h3>
 <p><em><strong>（1）题目</strong></em>
 n为正整数，求解n满足不等式:</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558049.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558049.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558049.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -10745,7 +10781,16 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 </span></span><span class="line"><span class="cl">输出格式:
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543013.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543013.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543013.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><em><strong>（2）参考代码</strong></em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -11727,7 +11772,16 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 </div><hr>
 <h3 id="mt1219斐波那契数列ii">MT1219斐波那契数列II</h3>
 <p><em><strong>（1）题目</strong></em></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543014.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543014.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543014.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -13097,7 +13151,16 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 <h3 id="mt1195-公式求和">MT1195 公式求和</h3>
 <p><em><strong>（1）题目</strong></em>
 输入正整数N和M，按照下列公式求和。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162532463.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162532463.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162532463.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -17769,7 +17832,16 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 <h3 id="mt1085-分期付款">MT1085 分期付款</h3>
 <p><em><strong>（1）题目</strong></em>
 请编写一个简单程序，使用以下公式计算每月分期付款：</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318004.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318004.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318004.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>其中：
 p=本金
 r=每月利率
@@ -18236,7 +18308,16 @@ Rate ® = R/(12*100)</p>
 <h3 id="mt1092-非常大的n">MT1092 非常大的N</h3>
 <p><em><strong>（1）题目</strong></em>
 编写程序求</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318005.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318005.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318005.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -18733,7 +18814,16 @@ Rate ® = R/(12*100)</p>
 <h3 id="mt1099-个人所得税">MT1099 个人所得税</h3>
 <p><em><strong>（1）题目</strong></em>
 将个人所得税算法定义为宏。个人所得税计算公式为︰应纳税所得额sx税率–速算扣除数。不考虑不合理的输入或是溢出等特殊情况。税率如下表:</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318006.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318006.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162318006.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">

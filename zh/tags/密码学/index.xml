@@ -20,7 +20,16 @@
       <pubDate>Fri, 27 Sep 2024 12:24:23 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</guid>
       <description>&lt;h2 id=&#34;dvwa-brute-force-爆破&#34;&gt;DVWA Brute Force (爆破)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34;&gt;
+        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -135,7 +144,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;2、使用管理员admin登录，密码尝试123，提示错误&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-brute-force-爆破">DVWA Brute Force (爆破)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -249,7 +267,16 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>2、使用管理员admin登录，密码尝试123，提示错误</p>
-<p><img alt="image-20240516161258388" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png" 
+             alt="image-20240516161258388" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用Burp Suite抓包，将数据包发给Intruder（测试器），选择Sniper（狙击手）模式，选择password为有效载荷。</p>
 <blockquote>
 <p><strong>单字典(只有一个字典)</strong>
@@ -259,11 +286,47 @@
 1.Pitchfork：多个参数同时进行遍历，只是一个选字典1，一个选字典2（相当于50m赛跑同时出发，只是赛道不同，互不干扰。爆破次数取决于最短的字典长度）
 2.Cluster bomb：有点像两个嵌套的for循环，参数i和参数j，i=0，然后j要从0-10全部跑完，然后i=1，然后j再从0-10跑完，一对多，多次遍历</p>
 </blockquote>
-<p><img alt="image-20240516161616103" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png"></p>
-<p><img alt="image-20240430155738815" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png" 
+             alt="image-20240516161616103" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png" 
+             alt="image-20240430155738815" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>使用字典进行爆破，字典可以自己制作，也可以网上直接下载，等待片刻爆破完成，使用爆破出的密码就能登录。</p>
-<p><img alt="image-20240516173612338" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png"></p>
-<p><img alt="image-20240516173933317" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png" 
+             alt="image-20240516173612338" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png" 
+             alt="image-20240516173933317" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="medium">Medium</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -344,7 +407,16 @@
 </div>
 </div><p>2、密码验证方面，增加验证失败睡眠两秒的限制，这会加大爆破所需要的时间。但只要时间充足，爆破出密码不是问题。</p>
 <p>试了一下，果然很慢。</p>
-<p><img alt="image-20240516174443533" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png" 
+             alt="image-20240516174443533" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -440,20 +512,92 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>2、进入Position模块，选择Attacktype为Pitchfork模式，选择password和user_token为爆破对象</p>
-<p><img alt="image-20240605111002633" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png" 
+             alt="image-20240605111002633" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>进入Resource Pool模块，</p>
-<p><img alt="image-20240605111117373" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png" 
+             alt="image-20240605111117373" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>进入Options模块，找到Grep - Extract选项卡，添加一个正则表达式匹配返回的user_token</p>
-<p><img alt="image-20240605111153105" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png" 
+             alt="image-20240605111153105" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>点击Refetch response，从response中找到user_token并选中</p>
-<p><img alt="image-20240605111312704" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png"></p>
-<p><img alt="image-20240605111501473" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png" 
+             alt="image-20240605111312704" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png" 
+             alt="image-20240605111501473" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>载入字典</p>
-<p><img alt="image-20240605111405891" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png" 
+             alt="image-20240605111405891" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>第二个参数&quot;token&quot;选择从返回包匹配，填入当前token</p>
-<p><img alt="image-20240605111547847" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png" 
+             alt="image-20240605111547847" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>爆破成功，登录成功</p>
-<p><img alt="image-20240605110902881" loading="lazy" src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png" 
+             alt="image-20240605110902881" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -663,26 +807,31 @@
       <description>&lt;hr&gt;
 &lt;p&gt;相关阅读
 &lt;a href=&#34;https://ctf-wiki.org/&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;JYYHWVPIDCOZ
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
-&lt;a href=&#34;http://www.metools.info/code/affinecipher183.html&#34;&gt;仿射密码加密_仿射密码解密&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <p>相关阅读
 <a href="https://ctf-wiki.org/">CTF Wiki</a></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="题目描述">题目描述：</h3>
 <p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
 <h3 id="密文">密文：</h3>
@@ -698,7 +847,16 @@
 <h3 id="解题思路">解题思路：</h3>
 <p>1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
 <a href="http://www.metools.info/code/affinecipher183.html">仿射密码加密_仿射密码解密</a></p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。</p>
 <h3 id="flag">flag：</h3>
 <div class="highlight"><div class="chroma">

@@ -20,7 +20,16 @@
       <pubDate>Sat, 28 Sep 2024 12:23:57 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</guid>
       <description>&lt;h2 id=&#34;dvwacommand-injection命令注入&#34;&gt;DVWACommand Injection（命令注入）&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -93,7 +102,16 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;2、网页对参数没有任何过滤，可以使用&amp;quot;&amp;amp;“、”&amp;amp;&amp;amp;“、”|“、”||&amp;ldquo;逻辑连接符连接命令，直接执行命令。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwacommand-injection命令注入">DVWACommand Injection（命令注入）</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -217,7 +235,16 @@
 </span></span><span class="line"><span class="cl">192.168.90.127 | ipconfig
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240429163848470" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png" 
+             alt="image-20240429163848470" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>4、为了消除命令注入风险，需要对用户输入进行严格的过滤或转义。例如，可以使用escapeshellarg()函数对目标IP地址进行转义，如下所示：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -334,7 +361,16 @@
 </span></span><span class="line"><span class="cl">192.168.90.127 | ipconfig
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240429171008470" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png" 
+             alt="image-20240429171008470" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -434,7 +470,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">192.168.90.127 |ipconfig
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240429174030718" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png" 
+             alt="image-20240429174030718" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -562,7 +607,16 @@
       <pubDate>Tue, 24 Sep 2024 12:22:37 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwareflected-cross-site-scripting-反射型-xss&#34;&gt;DVWAReflected Cross Site Scripting (反射型 XSS)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -573,7 +627,16 @@
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
 &lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwareflected-cross-site-scripting-反射型-xss">DVWAReflected Cross Site Scripting (反射型 XSS)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -642,8 +705,26 @@
 </span></span><span class="line"><span class="cl">alert() 是JavaScript的一个内置函数，用于显示带有一条消息的对话框。用户必须点击确定按钮才能关闭这个对话框并继续操作页面。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240424173639685" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png"></p>
-<p><img alt="image-20240424173657851" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png" 
+             alt="image-20240424173639685" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png" 
+             alt="image-20240424173657851" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、 <strong>解决方案</strong> :</p>
 <ul>
 <li>
@@ -720,8 +801,26 @@
 </span></span><span class="line"><span class="cl">//绕过&lt;script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240424181634960" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png"></p>
-<p><img alt="image-20240424181648248" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png" 
+             alt="image-20240424181634960" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png" 
+             alt="image-20240424181648248" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -827,7 +926,16 @@
 </span></span><span class="line"><span class="cl"><span class="err">攻击原理：当这段</span><span class="n">SVG代码被嵌入到一个网页中</span><span class="err">，一旦</span><span class="n">SVG图形加载完成</span><span class="err">，</span><span class="n">onload事件就会触发</span><span class="err">，并执行</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="p">),</span> <span class="err">弹出一个包含</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="err">的警告框。实质上，这揭示了网页对用户输入数据处理不当，允许执行恶意脚本的风险。攻击者可以利用这一点，不仅限于弹窗，还可以执行任何</span><span class="n">JavaScript代码</span><span class="err">，实现更深层次的攻击，如窃取用户数据、操控页面内容、发起进一步的攻击等。</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425123935752" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png" 
+             alt="image-20240425123935752" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

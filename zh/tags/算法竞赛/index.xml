@@ -4114,7 +4114,16 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 <p><em><strong>（1）题目</strong></em>
 请编写一个简单程序，实现直角坐标（x，y）到极坐标 (r,θ)的转换。数学中，极坐标系是一个二维坐标系，其中平面上的每个点由一个夹角和一段相对中心点——极点（相当于我们较为熟知的直角坐标系中的原点）的距离来表示。PI=3.1415926</p>
 <p>其中：</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4258,7 +4267,16 @@ y = r × sin( θ )</p>
 <h3 id="mt1054-弓形弦长">MT1054 弓形弦长</h3>
 <p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，输入R和H，输出弓形弦长C。计算公式如下：</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4517,7 +4535,16 @@ y = r × sin( θ )</p>
 <h3 id="mt1058-弓形弦高">MT1058 弓形弦高</h3>
 <p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，输入R和C，按公式计算并输出弓形弦高H。</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4585,7 +4612,16 @@ y = r × sin( θ )</p>
 <p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，弧长为L,输入R、C、H和L，按公式计算并输出弓形面积F。
 F=1/2 * (R*L-C(R-H))</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4651,7 +4687,16 @@ F=1/2 * (R*L-C(R-H))</p>
 <p><em><strong>（1）题目</strong></em>
 请编写一个简单程序，输入半径和高度，计算输出圆锥的表面积。（PI是3.1415926）</p>
 <p>计算公式为：</p>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">

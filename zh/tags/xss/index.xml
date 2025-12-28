@@ -20,7 +20,16 @@
       <pubDate>Sun, 29 Sep 2024 12:23:38 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwa-dom-based-cross-site-scripting-dom型-xss&#34;&gt;DVWA DOM Based Cross Site Scripting (DOM型 XSS)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -31,7 +40,16 @@
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
 &lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-dom-based-cross-site-scripting-dom型-xss">DVWA DOM Based Cross Site Scripting (DOM型 XSS)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -69,7 +87,16 @@
 </span></span></span><span class="line"><span class="cl"><span class="err">//没有任何防御措施
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425141612735" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png" 
+             alt="image-20240425141612735" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、修改default，在URL拼接Payload</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -79,7 +106,16 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script&gt;alert(/XSS/)&lt;/script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425141658717" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png" 
+             alt="image-20240425141658717" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="medium">Medium</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -117,7 +153,16 @@
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>增加对&quot;&lt;script&quot;字符的过滤，查看前端代码</p>
-<p><img alt="image-20240425143147799" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png" 
+             alt="image-20240425143147799" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>2、构造闭合&quot;option&quot;和&quot;select&quot;标签，执行弹出&quot;/xss/&ldquo;的语句</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -127,8 +172,26 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;/optin&gt;&lt;/select&gt;&lt;img src = 1 onerror = alert(/xss/)&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240616160139823" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png"></p>
-<p><img alt="image-20240616161058852" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png" 
+             alt="image-20240616160139823" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png" 
+             alt="image-20240616161058852" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -186,8 +249,26 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">(空格)#&lt;script&gt;alert(/xss/)&lt;/script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240616161314789" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png"></p>
-<p><img alt="image-20240616161408461" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png" 
+             alt="image-20240616161314789" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png" 
+             alt="image-20240616161408461" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -215,7 +296,16 @@
       <pubDate>Tue, 24 Sep 2024 12:22:37 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwareflected-cross-site-scripting-反射型-xss&#34;&gt;DVWAReflected Cross Site Scripting (反射型 XSS)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -226,7 +316,16 @@
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
 &lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwareflected-cross-site-scripting-反射型-xss">DVWAReflected Cross Site Scripting (反射型 XSS)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -295,8 +394,26 @@
 </span></span><span class="line"><span class="cl">alert() 是JavaScript的一个内置函数，用于显示带有一条消息的对话框。用户必须点击确定按钮才能关闭这个对话框并继续操作页面。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240424173639685" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png"></p>
-<p><img alt="image-20240424173657851" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png" 
+             alt="image-20240424173639685" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png" 
+             alt="image-20240424173657851" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、 <strong>解决方案</strong> :</p>
 <ul>
 <li>
@@ -373,8 +490,26 @@
 </span></span><span class="line"><span class="cl">//绕过&lt;script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240424181634960" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png"></p>
-<p><img alt="image-20240424181648248" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png" 
+             alt="image-20240424181634960" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png" 
+             alt="image-20240424181648248" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -480,7 +615,16 @@
 </span></span><span class="line"><span class="cl"><span class="err">攻击原理：当这段</span><span class="n">SVG代码被嵌入到一个网页中</span><span class="err">，一旦</span><span class="n">SVG图形加载完成</span><span class="err">，</span><span class="n">onload事件就会触发</span><span class="err">，并执行</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="p">),</span> <span class="err">弹出一个包含</span><span class="o">/</span><span class="n">xss</span><span class="o">/</span><span class="err">的警告框。实质上，这揭示了网页对用户输入数据处理不当，允许执行恶意脚本的风险。攻击者可以利用这一点，不仅限于弹窗，还可以执行任何</span><span class="n">JavaScript代码</span><span class="err">，实现更深层次的攻击，如窃取用户数据、操控页面内容、发起进一步的攻击等。</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425123935752" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png" 
+             alt="image-20240425123935752" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -532,7 +676,16 @@
       <pubDate>Sun, 22 Sep 2024 12:21:39 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;在这里插入图片描述&#34; loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -543,7 +696,16 @@
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
 &lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2>
-<p><img alt="在这里插入图片描述" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -625,11 +787,47 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script&gt;alert(/XSS/)&lt;/script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425131132813" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png"></p>
-<p><img alt="image-20240425131249914" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
+             alt="image-20240425131132813" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
+             alt="image-20240425131249914" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>进入Home标签页，再回到XSS（Stored）页面，仍然可以成功，证明存储型XSS攻击成功</p>
-<p><img alt="image-20240425131430407" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png"></p>
-<p><img alt="image-20240425131343029" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png"></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
+             alt="image-20240425131430407" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
+             alt="image-20240425131343029" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>（如果需要删除数据库中存在的XSS代码，进入dvwa数据库中guestbook表，选择性删除数据。）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -743,7 +941,16 @@
 </span></span><span class="line"><span class="cl">//双写绕过
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425134449055" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
+             alt="image-20240425134449055" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="high">High</h3>
 <p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
@@ -813,7 +1020,16 @@
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">svg</span> <span class="n">onload</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img alt="image-20240425135425515" loading="lazy" src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png"></p>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
+             alt="image-20240425135425515" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <h3 id="impossible">Impossible</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
