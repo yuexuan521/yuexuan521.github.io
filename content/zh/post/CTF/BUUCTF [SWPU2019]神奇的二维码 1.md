@@ -1,0 +1,159 @@
+---
+title: "BUUCTF [SWPU2019]神奇的二维码 1"
+date: 2024-09-23 10:56:04
+category: "BUUCTF MISC"
+categories: 
+  - "CTF"
+tags:
+- "安全"
+- "CTF"
+- "笔记"
+- "网络安全"
+- "BUUCTF"
+- "Misc"
+---
+
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191955629.png)
+
+**BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
+
+---
+
+相关阅读
+[CTF Wiki](https://ctf-wiki.org/) 
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191957702.png)
+
+### 题目描述：
+
+得到的 flag 请包上 flag{} 提交。
+
+### 密文：
+
+下载附件，得到一个.png图片。
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191959891.png)
+
+---
+
+### 解题思路：
+
+1、使用QR research扫一下，得到“swpuctf{flag_is_not_here}”的提示。
+
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192001534.png)
+
+2、放到010Editor中看一下，没找到什么明显的特征。使用Kali中的binwalk工具进行检测，发现四个rar压缩包。
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192010435.png)
+
+使用binwalk加上“-e”参数，直接分离rar压缩包。
+
+```bash
+binwalk -e BitcoinPay.png
+#如果出现报错，可以尝试在命令后加上“--run-as=root”参数
+binwalk -e BitcoinPay.png --run-as=root
+```
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192012804.png)
+
+解压三个没有密码的压缩包，得到encode.txt、flag.doc、flag.jpg还有一个rar压缩包。有两个压缩包提示需要密码，暂时无法解压。
+
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192014974.png)
+
+3、先看encode.txt文件，打开发现是经过Base64加密的密文，使用在线工具解密，得到明文。
+
+[BASE64加密解密](https://base64.supfree.net/) 
+
+```bash
+YXNkZmdoamtsMTIzNDU2Nzg5MA==
+```
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192016585.png)
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192018005.png)
+
+```bash
+asdfghjkl1234567890
+```
+
+4、再看flag.doc文件，打开发现也是Base家族，不过这个要循环解密很多次。我是使用工具不断复制粘贴解出明文的，后面找到一个Python脚本可以更快的完成这个任务。
+
+```bash
+Vm0wd2QyUXlVWGxWV0d4V1YwZDRWMVl3WkRSV01WbDNXa1JTVjAxV2JETlhhMUpUVmpBeFYySkVUbGhoTVVwVVZtcEJlRll5U2tWVWJHaG9UVlZ3VlZadGNFSmxSbGw1VTJ0V1ZXSkhhRzlVVmxaM1ZsWmFjVkZ0UmxSTmJFcEpWbTEwYTFkSFNrZGpSVGxhVmpOU1IxcFZXbUZrUjA1R1UyMTRVMkpIZHpGV1ZFb3dWakZhV0ZOcmFHaFNlbXhXVm1wT1QwMHhjRlpYYlVaclVqQTFSMWRyV25kV01ERkZVbFJHVjFaRmIzZFdha1poVjBaT2NtRkhhRk5sYlhoWFZtMXdUMVF3TUhoalJscFlZbFZhY1ZadGRHRk5SbFowWlVaT1ZXSlZXVEpWYkZKSFZqRmFSbUl6WkZkaGExcG9WakJhVDJOdFJraGhSazVzWWxob1dGWnRNWGRVTVZGM1RVaG9hbEpzY0ZsWmJGWmhZMnhXY1ZGVVJsTk5XRUpIVmpKNFQxWlhTa2RqUmxwWFlsaFNNMVpxU2t0V1ZrcFpXa1prYUdFeGNGbFhhMVpoVkRKTmVGcElUbWhTTW5oVVdWUk9RMWRzV1hoWGJYUk9VakZHTlZaWE5VOWhiRXAwVld4c1dtSkdXbWhaTW5oWFl6RldjbHBHWkdsU2JrSmFWMnhXWVZReFdsaFRiRnBZVmtWd1YxbHJXa3RUUmxweFUydGFiRlpzV2xwWGExcHJZVWRGZUdOR2JGaGhNVnBvVmtSS1QyTXlUa1phUjJoVFRXNW9WVlpHWTNoaU1rbDRWMWhvWVZKRlNtRldiWGh6VFRGU1ZtRkhPV2hpUlhCNldUQmFjMWR0U2tkWGJXaGFUVzVvV0ZreFdrZFdWa3B6VkdzMVYySkdhM2hXYTFwaFZURlZlRmR1U2s1WFJYQnhWVzB4YjFZeFVsaE9WazVPVFZad2VGVXlkREJXTVZweVkwWndXR0V4Y0ROV2FrWkxWakpPU1dKR1pGZFNWWEJ2Vm10U1MxUXlUWGxVYTFwb1VqTkNWRmxZY0ZkWFZscFlZMFU1YVUxcmJEUldNV2h2V1ZaS1IxTnNaRlZXYkZwNlZHeGFZVmRGTlZaUFZtaFRUVWhDU2xac1pEUmpNV1IwVTJ0a1dHSlhhR0ZVVnpWdlYwWnJlRmRyWkZkV2EzQjZWa2R6TVZZd01WWmlla1pYWWxoQ1MxUldaRVpsUm1SWldrVTFWMVpzY0ZWWFYzUnJWVEZzVjFWc1dsaGlWVnBQVkZaYWQyVkdWWGxrUkVKWFRWWndlVmt3V25kWFIwVjRZMFJPV21FeVVrZGFWM2hIWTIxS1IxcEhiRmhTVlhCS1ZtMTBVMU14VlhoWFdHaFlZbXhhVmxsclpHOWpSbHB4VTIwNWJHSkhVbGxhVldNMVlWVXhjbUpFVWxkTmFsWlVWa2Q0YTFOR1ZuTlhiRlpYVFRGS05sWkhlR0ZXTWxKSVZXdG9hMUl5YUhCVmJHaENaREZhYzFwRVVtcE5WMUl3VlRKMGExZEhTbGhoUjBaVlZucFdkbFl3V25OT2JFcHpXa2R3YVZORlNrbFdNblJyWXpGVmVWTnVTbFJpVlZwWVZGYzFiMWRHYkhGVGExcHNVbTFTV2xkclZURldNVnB6WTBaV1dGWnNTa2hhUkVaYVpVZEtTVk5zYUdoTk1VcFdWbGN4TkdReVZrZFdXR3hyVWpCYWNGVnRlSGRsYkZsNVpVaGtXRkl3VmpSWk1GSlBWMjFGZVZWclpHRldNMmhJV1RJeFMxSXlSa2RoUmxKVFZsaENTMVp0TVRCVk1VMTRWbGhvV0ZkSGFGbFpiWGhoVm14c2NscEhPV3BTYkhCNFZrY3dOVll4V25OalJXaFlWa1UxZGxsV1ZYaGpNVTUxWTBaa1RtRnNXbFZXYTJRMFlURk9SMVp1VGxoaVJscFlWRlJHUzA1c1draGxSMFpYVFd4S1NWWlhkRzloTVVwMFlVWlNWVlpYYUVSVk1uaGhZekZ3UlZWdGNFNVdNVWwzVmxSS01HRXhaRWhUYkdob1VqQmFWbFp0ZUhkTk1XeFdWMjVrVTJKSVFraFdSM2hUVlRKRmVsRnFWbGRTTTJob1ZrUktSMWRHU2xsYVIzQlRWak5vV1ZkWGVHOVJNVkpIVlc1S1dHSkZjSE5WYlRGVFpXeHNWbGRzVG1oU1ZFWjZWVEkxYjFZeFdqWlJhbEpWWVRKU1NGVnFSbUZYVm5CSVlVWk9WMVpHV2xaV2JHTjRUa2RSZVZaclpGZFhSM2h5VldwQ1lXTkdWblJsU0dSc1lrWldOVnBWYUd0WFIwcEhZMFpvV2sxSGFFeFdha1poVW14a2NtVkdaRTVXYmtKSlYxUkplRk14U1hoalJXUmhVbFJXVDFWc2FFTlRNVnAwVFZSQ1ZrMVZNVFJXYkdodlYwWmtTR0ZHYkZwaVdHaG9WbXBHYzJNeGNFaFBWbVJUWWxob1lWZFVRbUZoTWtwSVUydG9WbUpIZUdoV2JHUk9UVlpzVjFaWWFGaFNiRnA1V1ZWYWExUnRSbk5YYkZaWFlUSlJNRlpFUms5VFJrcHlXa1pLYVZKdVFuZFdiWFJYVm0xUmVGZHVVbXBTVjFKWFZGWmFkMDFHVm5Sa1J6bFdVbXh3TUZsVldsTldWbHBZWVVWU1ZXSkdjR2hWTUdSWFUwWktkR05GTlZkTlZXd3pWbXhTUzAxSFJYaGFSV2hVWWtkb2IxVnFRbUZXYkZwMVkwWmthMkpHYkROV01qVlBWREpLUm1OSWNGaGhNbEl6V1ZaYVQxSnNUbkppUm1ST1lteEtlVmRZY0VkV2JWWlhWRzVXVkdKR1NuQldiRnAzVjFaYVIxbDZSbWxOVjFKSVdXdG9SMVpIUlhoalNFNVdZbFJHVkZZeWVHdGpiRnBWVW14a1RsWnVRalpYVkVKaFZqRmtSMWRZY0ZaaWEzQllWbXRXWVdWc1duRlNiR1JxVFZkU2VsbFZaSE5oVmxweVkwUmFWMDFYVVhkWFZtUlNaVlphY2xwR1pHbGlSWEJRVm0xNGExVXhXbk5WYkdoclUwZFNWRlJXV25OT1ZuQldZVWQwV0ZJd2NFaFpNRnB2VjJzeFNGVnVXbGROYWtaSFdsWmFWMk5zY0VoU2JHUk9UVzFvU2xZeFVrcGxSazE0VTFob2FsSlhVbWhWYkZKWFZERldjMkZGVGxSTlZuQXdWRlpTUTFack1WWk5WRkpYWWtkb2RsWXdXbXRUUjBaSFlrWndhVmRIYUc5V2JURTBZekpPYzJORmFGQldNMEpVV1d0b1EwNUdXbkpaTTJSUFZqQldOVlV5ZEd0aGJFcFlZVVpvV21KR1NrTlVWbHBoVjBkTmVtRkdhRk5pUm05NFYxUkNZV0V4VW5SU2JrNVlZWHBHV0ZsWGRFdGpiRlkyVW1zNVUwMVdjREZXVjNoUFlWWkplRk51V2xoV2JFcElXa1JHVDFZeFpISmhSM1JUVFVad2FGWnRNSGhWTVU1WFYyeG9hMUo2Ykc5VVZsWnpUbFpzVm1GRlRsZGlWWEJKV1ZWV1QxbFdTa1pYYldoYVpXdGFNMVZzV2xka1IwNUdUbFprVGxaWGQzcFdiWGhUVXpBeFNGTlliRk5oTWxKVldXMXpNVlpXYkhKYVJ6bFhZa1p3TUZwVmFHdFVhekZYWWtST1YwMXFWa3haYTFwTFpFWldkV0pIUmxOV01VbDZWMVphWVZsWFRuUlVhMXBwVW0xU2NGVnFSa1prTVdSWFZXdDBVMDFXYkRSV1J6VlhWbTFLUmxOc2FGWmlSa3BZVmpGYVlWSXhiRFpTYld4T1ZqRktTVmRYZEc5U01WcElVbGhvYWxORk5WZFpiRkpIVmtaWmVXVkhkR3BpUm5CV1ZXMTRhMVJzV25WUmFscFlWa1ZLYUZacVJtdFNNV1JaWTBaYWFXRXpRbGxXYlhSWFdWZFdjMWR1UmxOaVIxSnhWRlprVTJWc2JGWmFTRTVvVm14d2VWa3dVbUZXTURGWVZWaGtXRlp0VWxOYVZscGhZMnh3UjFwSGJHbFNXRUpSVm0weE5HRXhWWGhYYms1V1lrZG9jbFV3WkZOV1JsSlhWMjVPVDFadVFsZFpWV1F3VjBaSmQyTkZhRnBOUm5CMlZqSnplRk5IUmtabFJtUm9ZVEZ3YjFaWE1UUmhNazUwVm10a1lWSlVWbGhaYlhSTFUyeFplRlZyY0d4U2F6RTBWVEZvYjJGc1NsaFZiV2hXWWtaS1dGWkVSbGRqTWtaR1ZHeFNUbFp1UVhkV1JscFRVVEZhY2sxV1drNVdSa3BZV1d0a2IyUnNXWGRYYlhSVVVqQmFTRmxyV25kaFZtUklZVWM1VjJKVVJUQlpla3BQWXpKT1JtRkdRbGROTUVwVlYxZDBiMUV3TlVkWGJrcGFUVEpTVUZadGVITk9SbGw1VGxaT1YySlZjRWxaVlZwdlZqSkdjazVWT1ZWV2JIQm9WakJrVG1WdFJrZGhSazVwVW01Qk1WWXhXbGRaVjBWNFZXNVNVMkpyTlZsWmExcGhWMFpzVlZOc1NrNVNiVkpZVmpKME1HRnJNVmRUYWtaWFVucEdkbFpVU2t0U01rNUhZa1prVTJKRmNFMVhWM0JIVkRGWmVGcElTbWhTTTJoVVZGVmFkMkZHV25STlNHaFdUVlZzTkZaWE5VOVhSMHBXVjJ4a1ZtSllhRE5VVlZwaFYwZE9ObFpzYUdsU2JrSklWa2Q0VjFVeFdsaFRhMlJxVWpKb1YxUlZaRk5YUmxWM1YydDBhMUl3TlVkVWJGcHJWR3hhV0dRemNGZGlXR2hVVlhwQmVGTkdTbGxoUjBaVFZqSm9WbGRYZEd0aU1rbDRWbTVHVW1KVldsaFphMXAzVFZacmQxZHRkR2hOYTNCSVdXdFNUMVl3TVhGV2JFSlhVa1Z3VEZWdE1VOVRWMDVIWVVkb1RtSkZiRFpXTVZwaFdWWlJlRk51VGxWaWEzQndWVzB4YjFkR2JISlhibVJzVm0xU1dsa3dWbXRXTWtwWFVtcE9WVlpzV25wWlZWcExZMnMxV0U5V2NHaE5iV2hGVm1wR1lXRXhXWGhqUlZaU1lsaFNjRlp0ZEZwTlJscHhVMnBTVjAxV1ZqVlZNblJyWVd4T1JrNVdaRnBpUmtwSVZtdGFVMVl4WkhOWGJYaFhUVVJSZVZaWE1UUmhNVkp6VjI1V1VtRnNjRmxXYTFaTFlVWmFjVkp0ZEZOTlYxSXhWa2Q0VTJGRk1YUmhSemxYVmpOU1dGZFdaRTlqTVZwMVVteFNhRTB4U2xaV2JURTBVekF4UjJKR1dsaGhlbXh3VldwQ2QxZHNiRlpYYTJSWFRXdFdORmt3Wkc5WFJscDBWV3hPWVZac2NHaFpNbmgzVWpGd1NHSkhiRk5YUlVwU1ZtMHdlRTVIUlhoV1dHaFlWMGRvVjFsclpHOWpiRlYzV2taT1dGSnNTbGhYYTFKVFlrWmFjMk5HYkZWV2JGcHlWakJhUzJOdFNrVlViR1JwVjBWS1ZWWnFTbnBsUmtsNFZHNU9VbUpIVW05WlZFNURVMVprVlZOcVVtaE5helV3Vm0xMGExbFdTWGxoUnpsVlZrVktURlpYZUdGak1WWnlWRzFvVGxaWGR6QldWRVp2WXpGVmVWSlliR2hUUlVwWFdXeG9UbVZHYTNkWGJrNVhWbXRhTVZkclZURmhWa3AxVVZoa1YxSnNjRlJWVkVaaFkyc3hWMWRyTlZkU2EzQlpWbTB3ZUdJeVZuTlhiazVZWWxoU1ZWVnFSbUZUUmxsNVpVaGtWMDFWY0ZoWmFrNTNWMFphYzFkdGFGZGhhM0JRVm1wR1UyUldWbk5SYkdScFZtdHdWbFl4WkRCV01sRjRXa2hPV0dFeWFITlZhazVEVlVaYWRHVklUazlTYkd3MVZHeFZOV0ZIU2taalJteGFWbFp3ZWxacVNrWmxSbHBaWVVkR1UwMHlhRFpXYlhCSFdWWmtXRkpyWkdoU2F6VndWVzB3TlU1R1dYaFZhMDVhVmpCV05GWlhOVTlYUm1SSVpVYzVWbUV4V2pOV01GcHpWMGRTUm1SSGNHbFNiR3Q1Vmxjd2VFMUdXWGROVm1ScVVrVmFWMVJYTlc5U1JscHhVMnQwVkZacldqRlhhMXByWVZaa1IxTnNiRmRpVkVJMFZsY3hWMUl4Y0VsV2JFNXBVbGhDZDFadGVHRmtNa1pIVjI1U1RsTkhhRmRVVmxVeFYwWlplV1ZIT1doTlZXOHlXV3RqTlZaV1duTlhibkJWWWtad2VsWnRNVWRTYkZKeldrZHNWMWRGU2t0V01WcFhWakZSZUdKR1pGUmhNWEJaV1d4a2IxbFdjRmhrUjBaT1RWWmFlbFl5ZUd0aE1VbDNUbFZrVldKR2NISldSM2hoVjBkUmVtTkdaR2xYUjJoVlZsaHdRbVZHVGtkVWJHeHBVbXMxYjFSWGVFdFdiR1JZVFZod1RsWnNjRmhaYTJoUFZqSktWbGRzYUZwaE1YQXpWRlZhZDFadFJraGtSbFpvWld0YVdWZFVRbTlqTVZsM1RWaEdVMkV5YUdGV2FrNXZZVVpyZVUxVk9WTldhM0I2V1ZWa2IxUnNaRVpUYkVwWFlsaFNjbFJyV25OWFJsSjFWV3hXYUUxV2NGbFhWM1JyVlRGYVIxVnNWbFJpVkd4d1ZGWmFkMlZXV2xoa1JFSldUVVJHV0ZsclVsTldNVW8yVm14b1YySlVSa3hWYlhoUFl6SkdSMWR0YkZOaE0wSmFWbTF3UjFsWFJYaFhXR2hYWW10d2FGVnFUbE5VTVd4VlVtNWtWRlpzY0hoVk1uQlRWakF4VjFacVZsWmlSMmgyV1ZkNFQxSnJOVmRhUm5CcFVtdHdTVlp0ZEdGa01XUklWbXRzVldKSFVuQlZha1pMVG14YWNsa3phR2xOVmxZMFZqSjBZVmRIUm5OalJtaFhZVEZhZVZwVlduTldWa3B6WTBkNFUySldTbUZYVkVKaFdWZEdWMWRZYkdoU2JXaFpXV3RrVW1ReFpGZFhiazVYVFdzMVNGWXllRzloVmtsNFUyNW9WMUp0VVhkWFZscEtaVVpXV1dGR2FHbFhSa3AyVmxkd1IxbFhWbk5YV0d4cVVqQmFXRlJWVWtkWFZscFhZVWQwV0ZKc2NEQldWM2hQV1ZaYWMyTkhhRnBOYm1nelZXcEdkMU5IU2toaVJrNVlVbFZ3VTFadE1IZGxSVFZJVWxob1YxZEhhRmxXTUdSdlZqRnNjbHBIT1dwaVJsWXpWMnRhVDFkR1NuTlRiR2hYVFdwV2NsWkhlRXRrUjFKRlZHeG9hRTFXY0hsV2FrSmhVMjFSZVZScldtaFNia0pQVlcwMVEwMXNXbkZUYm5Cc1VtczFTRlp0TlZkWFIwcElWV3M1V21KVVJuWlpha1poWTFaR2RGSnNaRTVoZWxZMlYxUkNWMkl4VlhsVGEyaFdZa2RvVmxadGVHRk5NVnBZWlVkR2FrMVlRa3BYYTFwVFZHeGFWVkpVUWxkV1JWcDJXWHBHVm1WV1NsbGlSbHBwVmtkNFdGZFhlRzlpTVZKSFYyNUtXR0pWV25GVVYzUmhVakZhU0dWR1RsVmlSbkF4VlZkd1UxWXhXalpSYWxKV1lXdGFhRmt5YzNoV01XUnlUbFprVTJFelFscFdiVEIzWlVkSmVWWnVUbGhpYXpWWldXeG9VMVpXVm5GUmJVWlVWbTE0VjFZeU1VZFdWMHBHWTBSR1ZsWjZRVEZXYWtwTFZsWktWVkZzY0d4aE0wSlJWMWh3UjJReFRsZFVibEpyVW1zMVQxUlZWbmRXYkZsNFdrUkNXbFl4UmpOVWJGWnJWMGRLU0dGRk9WZGhNVnBNVmtSR1YyUkhWa2xVYXpsVFlrZDNNVlpIZUZaT1YwWklVMnRhYWxKdGVHRldiRnAzWkd4YWNWTnJaR3BoZWxaWVZsZDRhMVV4V25WUmFscFhZbGhvYUZWcVJtdFhSa3B5V2taV2FWSXhTblpXUmxKRFUyc3hjMWR1VW10U00xSlFWVzB4TkZkR1duTmhTRTVYVWpCV05Ga3dXbk5XTURGSVlVVlNWMDFHY0doWmVrWnJaRlp3UjFSck5WZGhNV3QzVm0xd1MwMUdVWGhYYmxKVVlURndWVmxyV25kV2JGcHpWMnRrVGsxV1draFZiRkp6VlZaV1ZVMUVhejA9
+```
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192019608.png)
+
+Python脚本如下：
+
+```python
+import re
+from base64 import b64decode
+
+def process_data(data):
+    try:
+        # 删除包含'flag'或汉字字符的部分
+        data = re.sub(r'flag|[一-龥]', '', data)
+        # 进行Base64解码
+        decoded_data = b64decode(data)
+        return decoded_data.decode(), True
+    except:
+        # 如果无法解码，返回原始数据和False表示无法继续解码
+        return data, False
+
+# 读取文本文件内容
+with open('flag.txt', 'r', encoding='utf-8') as file:
+    data = file.read()
+
+iterations = 0
+
+# 循环处理数据，直到无法继续解码
+while True:
+
+    data, can_decode = process_data(data)
+    iterations += 1
+# 如果无法继续解码，输出结果并结束循环
+    if not can_decode:
+        print("最终结果:", data)
+        print("循环次数:", iterations)
+        break
+```
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192021643.png)
+
+```bash
+comEON_YOuAreSOSoS0great
+```
+
+5、分别用解出的两个明文去解压两个需要密码的rar压缩包，得到两个文件夹。good文件夹内有一个.mp3文件，另一个文件夹内有一张出现过的图片flag.jpg。
+
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192023134.png)
+
+先看good.mp3文件，得到一个音频，放到Audacity看看。
+放大后看到一串音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。
+
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192025384.png)
+
+举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，分组之间用空格填充，转换为“-- — .-. … . … … …- . .-. -.-- …- . .-. -.-- . .- … -.–”
+
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192027123.png)
+
+```bash
+-- --- .-. ... . .. ... ...- . .-. -.-- ...- . .-. -.-- . .- ... -.--
+```
+
+使用在线网站，将莫尔斯电码转换为明文字符，将得到的明文转换为小写，作为flag值提交。
+[在线摩斯密码翻译器](https://www.lddgo.net/encrypt/morse) 
+[字母大小写转换工具
+](https://charactercalculator.com/zh-cn/case-converter/) 
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192028487.png)
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192030383.png)
+
+6、至于那两张重复的图片，似乎和开始的那个二维码一样，是烟雾弹。（这道题真是一堆东西，睡觉去了！@_@）
+
+ ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192031680.jpeg)
+
+### flag：
+
+```bash
+flag{morseisveryveryeasy}
+```
