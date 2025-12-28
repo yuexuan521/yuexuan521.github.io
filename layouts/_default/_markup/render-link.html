@@ -1,0 +1,9 @@
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- /* 逻辑判断：如果链接以 http 开头（代表是网络链接） 且 不包含你的域名 */ -}}
+  {{- if and (strings.HasPrefix .Destination "http") (not (strings.Contains .Destination "yuexuan521.github.io")) -}}
+      target="_blank" rel="noopener noreferrer"
+  {{- end -}}
+>
+  {{- .Text | safeHTML -}}
+</a>
