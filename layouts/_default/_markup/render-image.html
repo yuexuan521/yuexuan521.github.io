@@ -1,0 +1,10 @@
+<!-- 覆盖 Hugo 默认的图片渲染，包裹 Fancybox -->
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="{{ .Destination | safeURL }}">
+        <img src="{{ .Destination | safeURL }}" 
+             alt="{{ .Text }}" 
+             {{ with .Title}} title="{{ . }}"{{ end }} 
+             loading="lazy"
+        />
+    </a>
+</div>
