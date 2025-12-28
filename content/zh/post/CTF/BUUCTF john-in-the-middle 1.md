@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF john-in-the-middle 1"
-date: 2024-09-21 20:46:52
+date: 2024-06-21 20:46:52
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

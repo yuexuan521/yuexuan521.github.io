@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF Mysterious 1"
-date: 2024-09-21 20:20:58
+date: 2024-08-21 20:20:58
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [HBNIS2018]caesar 1"
-date: 2024-09-21 23:01:02
+date: 2024-07-21 23:01:02
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

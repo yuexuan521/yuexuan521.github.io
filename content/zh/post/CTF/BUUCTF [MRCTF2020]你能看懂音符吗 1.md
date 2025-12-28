@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [MRCTF2020]你能看懂音符吗 1"
-date: 2024-09-21 22:56:29
+date: 2024-05-21 22:56:29
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

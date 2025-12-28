@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [GUET-CTF2019]zips 1"
-date: 2024-09-21 20:14:36
+date: 2024-04-21 20:14:36
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

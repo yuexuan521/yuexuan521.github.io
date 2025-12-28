@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF [HBNIS2018]低个头 1"
-date: 2024-09-21 22:57:43
+date: 2024-08-21 22:57:43
 category: "BUUCTF MISC"
 categories: 
   - "CTF"

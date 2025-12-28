@@ -1,6 +1,6 @@
 ---
 title: "BUUCTF sqltest 1"
-date: 2024-09-21 20:47:49
+date: 2024-03-21 20:47:49
 category: "BUUCTF MISC"
 categories: 
   - "CTF"
