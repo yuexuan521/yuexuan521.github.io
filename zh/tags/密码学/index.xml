@@ -2670,14 +2670,14 @@ $$</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>[WUSTCTF2020]alison_likes_jojo 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf/wustctf2020alison_likes_jojo-1/</link>
-      <pubDate>Sat, 21 Sep 2024 20:22:28 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf/wustctf2020alison_likes_jojo-1/</guid>
+      <title>BUUCTF 从娃娃抓起 1</title>
+      <link>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E4%BB%8E%E5%A8%83%E5%A8%83%E6%8A%93%E8%B5%B7-1/</link>
+      <pubDate>Sat, 21 Sep 2024 20:19:09 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/post/ctf/buuctf-%E4%BB%8E%E5%A8%83%E5%A8%83%E6%8A%93%E8%B5%B7-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png&#34; 
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192608476.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192608476.png&#34; 
              alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
@@ -2690,8 +2690,8 @@ $$</p>
 &lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png&#34; 
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192610962.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192610962.png&#34; 
              alt=&#34;在这里插入图片描述&#34; 
               
              loading=&#34;lazy&#34;
@@ -2699,48 +2699,11 @@ $$</p>
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。
-感谢 Iven Huang 师傅供题。
-比赛平台： &lt;a href=&#34;https://ctfgame.w-ais.cn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ctfgame.w-ais.cn/&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件解压，得到两张jpg图片和一个文本文件。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、使用010 Editor打开图片，发现boki.jpg图片隐藏了一个ZIP文件。&lt;/p&gt;</description>
+&lt;p&gt;伟人的一句话，标志着一个时代的开始。那句熟悉的话，改变了许多人的一生，为中国三十年来计算机产业发展铺垫了道路。两种不同的汉字编码分别代表了汉字信息化道路上的两座伟大里程碑。请将你得到的话转为md5提交，md5统一为32位小写。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png" 
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192608476.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192608476.png" 
              alt="" 
               
              loading="lazy"
@@ -2753,8 +2716,8 @@ $$</p>
 <a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
 <p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png" 
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192610962.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192610962.png" 
              alt="在这里插入图片描述" 
               
              loading="lazy"
@@ -2762,166 +2725,102 @@ $$</p>
     </a>
 </div></p>
 <h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。
-感谢 Iven Huang 师傅供题。
-比赛平台： <a href="https://ctfgame.w-ais.cn/"target="_blank" rel="noopener noreferrer">https://ctfgame.w-ais.cn/</a></p>
+<p>伟人的一句话，标志着一个时代的开始。那句熟悉的话，改变了许多人的一生，为中国三十年来计算机产业发展铺垫了道路。两种不同的汉字编码分别代表了汉字信息化道路上的两座伟大里程碑。请将你得到的话转为md5提交，md5统一为32位小写。</p>
 <h3 id="密文">密文：</h3>
-<p>下载附件解压，得到两张jpg图片和一个文本文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0086</span> <span class="m">1562</span> <span class="m">2535</span> <span class="m">5174</span>
+</span></span><span class="line"><span class="cl">bnhn s wwy vffg vffg rrhy fhnv
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请将你得到的这句话转为md5提交，md5统一为32位小写。
+提交格式：flag{md5}</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3>
-<p>1、使用010 Editor打开图片，发现boki.jpg图片隐藏了一个ZIP文件。</p>
+<p>1、根据题目描述，在浏览器搜索“伟人的一句话，标志着一个时代的开始。”，可以找到“计算机普及要从娃娃抓起。”，但这不是flag。</p>
 <p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523173.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523173.png" 
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192612641.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192612641.png" 
              alt="在这里插入图片描述" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<p>在Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">binwalk boki.jpg 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523174.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523174.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tree ./output 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523175.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523175.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、尝试解压得到的压缩包，需要密码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523176.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523176.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>因为没有关于密码的提示，尝试用Ziperello进行6位纯数字爆破，得到密码888866。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523177.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523177.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>3、使用密码解压压缩包，得到beisi.txt文件，内容如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523178.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523178.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>尝试使用base64进行解密，并发现该密文为base64多重加密，最后得到的明文如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523179.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523179.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>4、目前还有一张图片和刚得到的“killerqueen”没有使用，看了题解才知道jljy图片应该使用outguess解密，而“killerqueen”就是解密密钥。</p>
-<p>在Kali中，使用outguess对jljy.jpg文件进行解密，导出隐写的内容到flag.txt。查看flag.txt文件，得到flag。</p>
+<p>2、根据题目“两种不同的汉字编码”的提示，结合两串密文，分别指中文电码和五笔编码。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">outguess -k <span class="s2">&#34;killerqueen&#34;</span> -r jljy.jpg flag.txt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">outguess：这是命令行工具的名字，用于进行隐写术操作，即将秘密信息嵌入到载体文件中。
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">-k <span class="s2">&#34;killerqueen&#34;</span>：这个选项表示使用的密钥或密码短语是<span class="s2">&#34;killerqueen&#34;</span>。
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">-r jljy.jpg：-r 参数指定的是源图像文件，即载体文件，在本例中是名为<span class="s2">&#34;jljy.jpg&#34;</span>的JPEG格式图片文件。
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">flag.txt：存放隐藏信息的文件。
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">0086</span> <span class="m">1562</span> <span class="m">2535</span> <span class="m">5174</span>
+</span></span><span class="line"><span class="cl">人    工   智   能
+</span></span><span class="line"><span class="cl">bnhn s  wwy vffg vffg rrhy fhnv
+</span></span><span class="line"><span class="cl">也   要  从   娃   娃    抓   起
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
+</div><p>明文：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">人工智能也要从娃娃抓起
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a href="https://dianma.bmcx.com/"target="_blank" rel="noopener noreferrer">中文电码查询</a></p>
+<blockquote>
+<p>中文电码表采用了四位阿拉伯数字作代号，从0001到9999按四位数顺序排列，用四位数字表示最多一万个汉字、字母和符号。汉字先按部首，后按笔划排列。字母和符号放到电码表的最尾。后来由于一万个汉字不足以应付户籍管理的要求，又有第二字面汉字的出现。在香港，两个字面都采用同一编码，由输入员人手选择字面；在台湾，第二字面的汉字会在开首补上“1”字，变成5个数字的编码。</p>
+</blockquote>
+<p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523180.png" 
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192614716.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192614716.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="http://wubi.118cha.com/109728.html"target="_blank" rel="noopener noreferrer">五笔编码查询</a></p>
+<blockquote>
+<p>五笔编码是一种汉字输入法的编码方式，由王永民在1983年发明，称为“五笔字型”，是中国大陆地区早期最流行的一种汉字输入法。它的基本原理是将汉字拆分成若干个字根（偏旁部首或笔画），然后根据这些字根在键盘上的分布位置进行编码。
+五笔编码把汉字分为三个层次：字根、键名字和成字字根。它使用26个英文字母键作为基本编码单元，通过击打不同的字母组合来输入汉字。每个汉字都可以通过最多四码的方式输入，前两码为该汉字的主要字根，后两码则是其他字根或识别码，以确保唯一性。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192616372.gif">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192616372.gif" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192618534.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192618534.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、将得到的字符串进行32位小写MD5加密，得到flag。
+<a href="http://www.ttmd5.com/hash.php?type=0"target="_blank" rel="noopener noreferrer">md5在线加密</a>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192620148.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192620148.png" 
              alt="在这里插入图片描述" 
               
              loading="lazy"
@@ -2934,7 +2833,7 @@ $$</p>
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>pretty_girl_alison_likes_jojo<span class="o">}</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>3b4b5dccd2c008fe7e2664bd1bc19292<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
