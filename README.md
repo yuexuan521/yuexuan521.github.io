@@ -26,7 +26,7 @@
 欢迎来到我的个人博客源代码仓库。这里记录了我的技术成长、生活感悟以及备考路上的点点滴滴。
 
 > **"The days are long but the decades are short."**
-> <br> —— 所有的努力，都是为了不负时光。
+> <br>
 
 本项目基于 **Hugo** 静态网站生成器构建，采用了简约优雅的 **PaperMod** 主题，并通过 **GitHub Actions** 自动部署。
 
@@ -52,9 +52,8 @@
 ## 📊 统计数据 | Statistics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yuexuan521&show_icons=true&theme=graywhite&hide_border=true&count_private=true" alt="yuexuan521 stats" />
-
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuexuan521&layout=compact&theme=graywhite&hide_border=true&langs_count=6" alt="languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=yuexuan521&show_icons=true&theme=graywhite&hide_border=true" height="165" alt="yuexuan521 stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuexuan521&layout=compact&theme=graywhite&hide_border=true&langs_count=6" height="165" alt="languages" />
 </div>
 
 ---
@@ -102,7 +101,9 @@ hugo server -D
 
 
 
-<img src="https://www.google.com/search?q=https://komarev.com/ghpvc/%3Fusername%3Dyuexuan521-blog%26label%3DTOTAL%2520VIEWS%26color%3D0e75b6%26style%3Dflat-square" alt="views">
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=yuexuan521.github.io&label=TOTAL%20VIEWS&color=0e75b6&style=flat-square" alt="views">
+</div>
 
 
 
