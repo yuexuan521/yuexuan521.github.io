@@ -8,7 +8,7 @@
       <img src="https://img.shields.io/website?url=https%3A%2F%2Fyuexuan521.github.io&up_message=online&down_message=offline&style=for-the-badge&logo=googlechrome&logoColor=white&label=Blog" alt="Website Status">
     </a>
 <a href="https://github.com/yuexuan521/yuexuan521.github.io/actions/workflows/gh-pages.yml">
-  <img src="https://img.shields.io/github/actions/workflow/status/yuexuan521/yuexuan521.github.io/gh-pages.yml?branch=main&style=for-the-badge&logo=github-actions&label=Build" alt="Build Status">
+  <img src="https://img.shields.io/github/actions/workflow/status/yuexuan521/yuexuan521.github.io/gh-pages.yml?branch=master&style=for-the-badge&logo=github-actions&label=Build" alt="Build Status">
 </a>
     </a>
     <img src="https://img.shields.io/github/repo-size/yuexuan521/yuexuan521.github.io?style=for-the-badge&color=orange" alt="Repo Size">
