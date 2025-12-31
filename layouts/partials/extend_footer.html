@@ -31,8 +31,9 @@
    Part 1: HTML 源码里的 Flag (CTF 风格)
 ============================================================
 */ -}}
-<div style="display: none;" id="ctf-hidden-flag" aria-hidden="true">
-<!-- 
+
+<!-- 这是一个伪装成脚本的文本块，Hugo 不会删除脚本内容 -->
+<script id="ctf-flag" type="text/plain" style="display: none;">
    _    _      _ _       _   _ _     _     _              
   | |  | |    | | |     | | | (_)   | |   | |             
   | |__| | ___| | | ___ | |_| |_ ___| |__ | | ___   __ _  
@@ -48,8 +49,7 @@
   FLAG{Welcome_to_Yuexuans_Cyber_Space_0x1}
   
   (Check the Console F12 for more fun)
--->
-</div>
+</script>
 {{- /* 
 ============================================================
    Part 2: 开发者工具控制台 (Console) 彩蛋
