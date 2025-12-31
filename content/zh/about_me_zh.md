@@ -35,7 +35,7 @@ toc = true
 > ----《采桑子·重阳》
 
 
-## <span class="section-num">0x4</span> 🔑 PGP Key
+## <span class="section-num">0x4</span> PGP Key
 
 
 这是我的 PGP 公钥指纹，用于身份验证或发送加密邮件。
