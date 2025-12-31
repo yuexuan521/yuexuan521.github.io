@@ -35,4 +35,12 @@ toc = true
 > ----《采桑子·重阳》
 
 
+## <span class="section-num">0x4</span> 🔑 PGP Key
 
+
+这是我的 PGP 公钥指纹，用于身份验证或发送加密邮件。
+
+- **Fingerprint**: `0xF41821C40B8FA1EDE7BBBA51C6AC2E30780098B1` (请替换为你真实的指纹)
+- **Public Key**: [下载我的公钥](/yuexuan_0x780098B1_public.asc) 
+
+> 如果你需要发送机密信息，请使用此公钥加密。
