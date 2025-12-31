@@ -137,6 +137,9 @@ params:
       url: "https://github.com/yuexuan521"   # 跳转链接。
     - name: email
       url: "mailto:yuexuan521@gmail.com"
+    # 新增 PGP 公钥
+    - name: pgp
+      url: "/yuexuan_0x780098B1_public.asc"  # 对应 static 目录下的文件名
     #- name: stackoverflow
     #  url: ""
     #- name: x
