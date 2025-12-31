@@ -39,6 +39,15 @@
 <p>一年一度秋风劲，不似春光。胜似春光，寥廓江天万里霜。 <br/></p>
 <p>&mdash;-《采桑子·重阳》</p>
 </blockquote>
+<h2 id="0x4--pgp-key"><span class="section-num">0x4</span> 🔑 PGP Key</h2>
+<p>这是我的 PGP 公钥指纹，用于身份验证或发送加密邮件。</p>
+<ul>
+<li><strong>Fingerprint</strong>: <code>0xF41821C40B8FA1EDE7BBBA51C6AC2E30780098B1</code> (请替换为你真实的指纹)</li>
+<li><strong>Public Key</strong>: <a href="/yuexuan_0x780098B1_public.asc">下载我的公钥</a></li>
+</ul>
+<blockquote>
+<p>如果你需要发送机密信息，请使用此公钥加密。</p>
+</blockquote>
 ]]></content:encoded>
     </item>
     <item>
