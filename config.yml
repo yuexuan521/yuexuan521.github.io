@@ -256,6 +256,6 @@ markup:
     - JSON # is necessary   # 生成 index.json (用于站内搜索，不可删除)。
 
 permalinks:
-  // 优化永久链接 Permalinks
+  # 优化永久链接 Permalinks
   post: "/posts/:filename/" 
   # 或者 "/posts/:slug/"
