@@ -25,8 +25,8 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema. # 环境标识。Production (生产环境) 会开启统计、压缩等；
   title: "YueXUan's Blog" # 首页显示的网站标题
-  description: "Know thyself." # 网站描述（用于 SEO 搜索结果摘要）用于 HTML meta description，对 SEO 极其重要。
-  keywords: [博客, Software, Life, Enginering] # 网站关键词。用于 SEO。
+  description: "关注网络安全、CTF Writeup、渗透测试与编程技术分享。" # 网站描述（用于 SEO 搜索结果摘要）用于 HTML meta description，对 SEO 极其重要。
+  keywords: [博客, Life, Enginering, CTF, 网络安全, Writeup, Web安全, Hugo, 渗透测试] # 网站关键词。用于 SEO。
   author: Yue Xuan # 显示在页面底部的作者名。
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"] # 默认的社交分享预览图 (OpenGraph Image)。当文章没有封面图时，分享到微信/推特显示这张图。
@@ -254,3 +254,8 @@ markup:
     - HTML                  # 生成 HTML 网页。
     - RSS                   # 生成 RSS 订阅源。
     - JSON # is necessary   # 生成 index.json (用于站内搜索，不可删除)。
+
+permalinks:
+  // 优化永久链接 Permalinks
+  post: "/posts/:filename/" 
+  # 或者 "/posts/:slug/"
