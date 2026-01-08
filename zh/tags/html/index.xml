@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 02 Apr 2023 12:10:52 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>牛客网Python入门103题练习|(04--列表（2）)</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</link>
       <pubDate>Sun, 02 Apr 2023 12:10:52 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</guid>
       <description>&lt;h2 id=&#34;np24淘汰排名最后的学生&#34;&gt;⭐NP24 淘汰排名最后的学生&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;某实验班实行末位淘汰制，期中考试需要淘汰末三位同学。现输入一行多个字符串表示按分数排名的该班级同学的名字（数量一定不少于三个），请你使用list将其封装为列表，然后使用三次pop函数，去掉末三位同学的名字，最后输出淘汰后的班级名字列表。&lt;/p&gt;</description>

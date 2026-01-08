@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 18 Aug 2025 08:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF [GKCTF 2021]签到 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</link>
       <pubDate>Mon, 18 Aug 2025 08:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E7%AD%BE%E5%88%B0-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34;&gt;
@@ -349,9 +349,9 @@
     </item>
     <item>
       <title>BUUCTF 丢失的MD5 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:50:10 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204941704.png&#34;&gt;
@@ -557,9 +557,9 @@
     </item>
     <item>
       <title>BUUCTF Alice与Bob 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-alice%E4%B8%8Ebob-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-alice%E4%B8%8Ebob-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:46:07 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-alice%E4%B8%8Ebob-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-alice%E4%B8%8Ebob-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png&#34;&gt;
@@ -749,9 +749,9 @@
     </item>
     <item>
       <title>BUUCTF 还原大师 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88-1/</link>
       <pubDate>Wed, 25 Sep 2024 20:41:34 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205125529.png&#34;&gt;
@@ -867,9 +867,9 @@
     </item>
     <item>
       <title>牛客网Python入门103题练习|【08--元组】</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</link>
       <pubDate>Fri, 18 Aug 2023 10:58:41 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</guid>
       <description>&lt;h2 id=&#34;np62-运动会双人项目&#34;&gt;⭐NP62 运动会双人项目&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;牛客运动会上有一项双人项目，因为报名成功以后双人成员不允许被修改，因此请使用元组（tuple）进行记录。先输入两个人的名字，请输出他们报名成功以后的元组。&lt;/p&gt;</description>
@@ -998,9 +998,9 @@
     </item>
     <item>
       <title>牛客网Python入门103题练习|【07--循环语句（2）】</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A52/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A52/</link>
       <pubDate>Sat, 29 Apr 2023 13:16:55 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A52/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A52/</guid>
       <description>&lt;h2 id=&#34;np552的次方数&#34;&gt;⭐NP55 2的次方数&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;在Python中， * 代表乘法运算， ** 代表次方运算。&lt;/p&gt;
@@ -1237,9 +1237,9 @@ Hi, LOLO! Welcome to Nowcoder!</p>
     </item>
     <item>
       <title>牛客网Python入门103题练习|【07--循环语句（1）】</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A51/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A51/</link>
       <pubDate>Thu, 27 Apr 2023 17:17:47 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A51/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_07--%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A51/</guid>
       <description>&lt;h2 id=&#34;np49字符列表的长度&#34;&gt;⭐NP49 字符列表的长度&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;创建一个依次包含字符串&amp;rsquo;P&amp;rsquo;、&amp;lsquo;y&amp;rsquo;、&amp;rsquo;t&amp;rsquo;、&amp;lsquo;h&amp;rsquo;、&amp;lsquo;o&amp;rsquo;和&amp;rsquo;n&amp;rsquo;的列表my_list，&lt;/p&gt;</description>
@@ -1440,9 +1440,9 @@ Happy Programmers&rsquo; Day to everyone!</p>
     </item>
     <item>
       <title>牛客网Python入门103题练习|(06--条件语句（1）)</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A51/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A51/</link>
       <pubDate>Sun, 23 Apr 2023 18:15:11 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A51/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A51/</guid>
       <description>&lt;h2 id=&#34;np43判断布尔值&#34;&gt;⭐NP43 判断布尔值&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;Python的条件语句依靠将运算结果转变成布尔值后进行判断，然后分支，如果我们直接判断布尔值会怎么样呢？输入布尔变量，使用条件语句判断，如果为真则输出&amp;quot;Hello World!&amp;quot;，否则输出&amp;quot;Erros!&amp;quot;。&lt;/p&gt;</description>
@@ -1557,9 +1557,9 @@ Congratulations, the user name Tuo Rui Chi is available!</p>
     </item>
     <item>
       <title>牛客网Python入门103题练习|(06--条件语句（2）)</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A52/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A52/</link>
       <pubDate>Sat, 22 Apr 2023 23:21:55 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A52/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_06--%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A52/</guid>
       <description>&lt;h2 id=&#34;np46菜品的价格&#34;&gt;⭐NP46 菜品的价格&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;牛客食堂今天准备了很多丰盛的午餐， &amp;lsquo;pizza&amp;rsquo;：10块钱一份，&amp;lsquo;rice&amp;rsquo; ：2块钱一份，&amp;lsquo;yogurt&amp;rsquo;：5块钱一份，剩下的其他菜品都是8块钱一份。牛牛在某窗口点餐，请你根据他输入的字符串，使用if-elif-else语句判断牛牛需要花费多少钱？&lt;/p&gt;</description>
@@ -1764,9 +1764,9 @@ Congratulations, the user name Tuo Rui Chi is available!</p>
     </item>
     <item>
       <title>牛客网Python入门103题练习|(05--运算符（2）)</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_05--%E8%BF%90%E7%AE%97%E7%AC%A62/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_05--%E8%BF%90%E7%AE%97%E7%AC%A62/</link>
       <pubDate>Tue, 04 Apr 2023 19:50:33 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_05--%E8%BF%90%E7%AE%97%E7%AC%A62/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_05--%E8%BF%90%E7%AE%97%E7%AC%A62/</guid>
       <description>&lt;h2 id=&#34;np37不低于与不超过&#34;&gt;⭐NP37 不低于与不超过&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;牛妹去游乐园，对于某项目，如果牛妹的身高k不超过某个标准x，就不需要收取额外费用，但是该项目有需要身高不低于y才可以保障安全。现依次输入三个数字k、x、y，牛妹想让你帮她比较一下，她的身高是否不超过x，是否不低于y。&lt;/p&gt;</description>

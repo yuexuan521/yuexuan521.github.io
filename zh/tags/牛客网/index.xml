@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Fri, 18 Aug 2023 10:58:41 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%89%9B%E5%AE%A2%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>牛客网Python入门103题练习|【08--元组】</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</link>
       <pubDate>Fri, 18 Aug 2023 10:58:41 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</guid>
       <description>&lt;h2 id=&#34;np62-运动会双人项目&#34;&gt;⭐NP62 运动会双人项目&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;牛客运动会上有一项双人项目，因为报名成功以后双人成员不允许被修改，因此请使用元组（tuple）进行记录。先输入两个人的名字，请输出他们报名成功以后的元组。&lt;/p&gt;</description>

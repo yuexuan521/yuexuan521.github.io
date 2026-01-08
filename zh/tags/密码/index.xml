@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Tue, 21 Oct 2025 13:21:08 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%AF%86%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF Rabbit 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-rabbit-1/</link>
       <pubDate>Tue, 21 Oct 2025 13:21:08 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rabbit-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-rabbit-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34;&gt;
@@ -190,9 +190,9 @@
     </item>
     <item>
       <title>BUUCTF password 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-password-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-password-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:54:09 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-password-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-password-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png&#34;&gt;
@@ -298,9 +298,9 @@
     </item>
     <item>
       <title>BUUCTF RSA 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rsa-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-rsa-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:51:59 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rsa-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-rsa-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png&#34;&gt;
@@ -440,9 +440,9 @@
     </item>
     <item>
       <title>BUUCTF 丢失的MD5 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:50:10 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204941704.png&#34;&gt;
@@ -648,9 +648,9 @@
     </item>
     <item>
       <title>BUUCTF Alice与Bob 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-alice%E4%B8%8Ebob-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-alice%E4%B8%8Ebob-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:46:07 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-alice%E4%B8%8Ebob-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-alice%E4%B8%8Ebob-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png&#34;&gt;
@@ -840,9 +840,9 @@
     </item>
     <item>
       <title>BUUCTF 大帝的密码武器 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:44:17 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png&#34;&gt;
@@ -1009,9 +1009,9 @@
     </item>
     <item>
       <title>BUUCTF rsarsa 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rsarsa-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-rsarsa-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:41:59 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-rsarsa-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-rsarsa-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204902472.png&#34;&gt;
@@ -1204,9 +1204,9 @@
     </item>
     <item>
       <title>BUUCTF Windows系统密码 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:39:47 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png&#34;&gt;
@@ -1356,9 +1356,9 @@
     </item>
     <item>
       <title>BUUCTF 信息化时代的步伐 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</link>
       <pubDate>Fri, 27 Sep 2024 10:36:54 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205011643.png&#34;&gt;
@@ -1453,9 +1453,9 @@
     </item>
     <item>
       <title>BUUCTF 萌萌哒的八戒 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E8%90%8C%E8%90%8C%E5%93%92%E7%9A%84%E5%85%AB%E6%88%92-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E8%90%8C%E8%90%8C%E5%93%92%E7%9A%84%E5%85%AB%E6%88%92-1/</link>
       <pubDate>Wed, 25 Sep 2024 21:47:31 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E8%90%8C%E8%90%8C%E5%93%92%E7%9A%84%E5%85%AB%E6%88%92-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E8%90%8C%E8%90%8C%E5%93%92%E7%9A%84%E5%85%AB%E6%88%92-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205117798.png&#34;&gt;

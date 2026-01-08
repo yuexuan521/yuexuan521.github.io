@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:41:12 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%AE%89%E5%85%A8%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Packet Tracer - Configuring a Zone-Based Policy Firewall (配置基于区域的策略防火墙 ZPF)</title>
-      <link>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
       <pubDate>Thu, 23 Jan 2025 12:41:12 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ccna%E6%80%9D%E7%A7%91%E5%AE%9E%E9%AA%8C/packet-tracer---configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
       <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;
 &lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
 &lt;p&gt;

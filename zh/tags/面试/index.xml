@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 02 Apr 2023 12:00:46 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>牛客网Python入门103题练习|(04--列表（1）)</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</link>
       <pubDate>Sun, 02 Apr 2023 12:00:46 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</guid>
       <description>&lt;h2 id=&#34;np16发送offer&#34;&gt;⭐NP16 发送offer&lt;/h2&gt;
 &lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
 &lt;p&gt;某公司在面试结束后，创建了一个依次包含字符串&amp;rsquo;Allen&amp;rsquo; 和 &amp;lsquo;Tom&amp;rsquo; 的列表offer_list，作为通过面试的名单。&lt;/p&gt;</description>

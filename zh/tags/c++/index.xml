@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 03 Mar 2025 09:30:02 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>码蹄杯语言基础：公式与计算（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Mon, 03 Mar 2025 09:30:02 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%85%AC%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址：https://www.matiji.net/exam/ojquestionlist&lt;/p&gt;
 &lt;h2 id=&#34;mt1041求圆面积和周长&#34;&gt;⭐MT1041求圆面积和周长&lt;/h2&gt;
 &lt;p&gt;请编写一个简单程序，输入半径，输出圆面积和周长。（PI是3.1415926）&lt;/p&gt;</description>
@@ -438,9 +438,9 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
     </item>
     <item>
       <title>码蹄杯语言基础：结构体（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Mon, 26 Jun 2023 16:41:19 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1565长者&#34;&gt;⭐MT1565长者&lt;/h2&gt;
 &lt;p&gt;输出结构体数组中年龄最大者的数据 ，请设计一个结构体， 信息包括名字，年龄 。输入5个人信息，然后再输出年龄最大的人的信息。&lt;/p&gt;
@@ -871,9 +871,9 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
     </item>
     <item>
       <title>码蹄杯语言基础：结构体（C语言）1</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80_1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80_1/</link>
       <pubDate>Mon, 26 Jun 2023 16:41:19 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80_1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84%E4%BD%93c%E8%AF%AD%E8%A8%80_1/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1558新生命&#34;&gt;⭐MT1558新生命&lt;/h2&gt;
 &lt;p&gt;狼群新生了一只尊贵的艾尔法狼，请设计一个结构体，管理它的信息，信息包括名字，年龄，性别。&lt;/p&gt;
@@ -1358,9 +1358,9 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
     </item>
     <item>
       <title>码蹄杯语言基础：指针（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%8C%87%E9%92%88c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%8C%87%E9%92%88c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 11 Jun 2023 09:45:58 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%8C%87%E9%92%88c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%8C%87%E9%92%88c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;
 Gitee代码仓库： &lt;a href=&#34;https://gitee.com/YueXuan521/c-language-practice/blob/master/%E7%A0%81%E8%B9%84%E6%9D%AF%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83/%E7%A0%81%E8%B9%84%E6%9D%AF%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83/practice.c&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;码蹄杯代码&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1515整型变量和它的指针&#34;&gt;⭐MT1515整型变量和它的指针&lt;/h2&gt;
@@ -1748,9 +1748,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：数组（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Fri, 09 Jun 2023 17:17:45 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%B0%E7%BB%84c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1381逆序输出数组&#34;&gt;⭐MT1381逆序输出数组&lt;/h2&gt;
 &lt;p&gt;定义一个长度为10的整型数组，输入10个数组元素的值，然后逆序输出他们&lt;/p&gt;
@@ -2583,9 +2583,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：函数（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Fri, 09 Jun 2023 17:05:12 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%87%BD%E6%95%B0c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1328用函数求和&#34;&gt;⭐MT1328用函数求和&lt;/h2&gt;
 &lt;p&gt;定义一个函数intadd(int x,int y) ，在主函数中输入两个整数a，b，调用add函数求a，b的和，再在主函数中输出和。&lt;/p&gt;
@@ -3079,9 +3079,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：循环结构（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Tue, 30 May 2023 16:25:24 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址：https://www.matiji.net/exam/ojquestionlist&lt;/p&gt;
 &lt;h2 id=&#34;mt1185while循环&#34;&gt;⭐MT1185while循环&lt;/h2&gt;
 &lt;p&gt;请编写一个简单程序，从小到大输出所有小于8的正整数和0（从0开始输出）。&lt;/p&gt;</description>
@@ -3484,9 +3484,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：选择结构（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 28 May 2023 16:56:02 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;h2 id=&#34;mt1109和10相比&#34;&gt;⭐MT1109和10相比&lt;/h2&gt;
 &lt;p&gt;请编写一个简单程序，输入一个整数，和10比较，输出比较结果&lt;/p&gt;
 &lt;p&gt;格式
@@ -4052,9 +4052,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：预处理命令（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4c%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4c%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 28 May 2023 16:42:09 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4c%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E9%A2%84%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4c%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;h2 id=&#34;mt1100带参数的宏&#34;&gt;⭐MT1100带参数的宏&lt;/h2&gt;
 &lt;p&gt;请编写一个简单程序，把f(x)=(x*x)定义成带参数的宏，计算f(9)/f(6)并输出结果。&lt;/p&gt;
 &lt;p&gt;格式
@@ -4276,9 +4276,9 @@ Gitee代码仓库： <a href="https://gitee.com/YueXuan521/c-language-practice/b
     </item>
     <item>
       <title>码蹄杯语言基础：基本输入输出（C语言）</title>
-      <link>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%9F%BA%E6%9C%AC%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BAc%E8%AF%AD%E8%A8%80/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%9F%BA%E6%9C%AC%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BAc%E8%AF%AD%E8%A8%80/</link>
       <pubDate>Sun, 21 May 2023 12:17:10 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/%E7%A0%81%E8%B9%84%E6%9D%AF/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%9F%BA%E6%9C%AC%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BAc%E8%AF%AD%E8%A8%80/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%A0%81%E8%B9%84%E6%9D%AF%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E5%9F%BA%E6%9C%AC%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BAc%E8%AF%AD%E8%A8%80/</guid>
       <description>&lt;p&gt;码蹄集网站地址： &lt;a href=&#34;https://www.matiji.net/exam/ojquestionlist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.matiji.net/exam/ojquestionlist&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;mt1001程序设计入门&#34;&gt;⭐MT1001程序设计入门&lt;/h2&gt;
 &lt;p&gt;欢迎来到程序设计的世界，请编写一个简单程序，输出2行字符，第一行为“This is my first program!”，第二行为“Coding is fun!”&lt;/p&gt;</description>

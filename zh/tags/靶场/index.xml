@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Sep 2024 12:23:22 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E9%9D%B6%E5%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络安全 DVWA通关指南 DVWA File Inclusion（文件包含）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
       <pubDate>Mon, 30 Sep 2024 12:23:22 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</guid>
       <description>&lt;h2 id=&#34;dvwa-file-inclusion文件包含&#34;&gt;DVWA File Inclusion（文件包含）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -317,9 +317,9 @@
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA Command Injection（命令注入）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</link>
       <pubDate>Sat, 28 Sep 2024 12:23:57 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</guid>
       <description>&lt;h2 id=&#34;dvwacommand-injection命令注入&#34;&gt;DVWACommand Injection（命令注入）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -904,9 +904,9 @@
     </item>
     <item>
       <title>网络安全 DVWA通关指南 Cross Site Request Forgery (CSRF)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</link>
       <pubDate>Thu, 26 Sep 2024 12:24:47 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
       <description>&lt;h2 id=&#34;dvwa-cross-site-request-forgery-csrf&#34;&gt;DVWA Cross Site Request Forgery (CSRF)&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -1581,9 +1581,9 @@
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA File Upload（文件上传）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-upload%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-upload%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
       <pubDate>Wed, 25 Sep 2024 12:22:56 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-upload%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-upload%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</guid>
       <description>&lt;h2 id=&#34;dvwa-file-upload文件上传&#34;&gt;DVWA File Upload（文件上传）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -2380,9 +2380,9 @@
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA Weak Session IDs（弱会话）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-weak-session-ids%E5%BC%B1%E4%BC%9A%E8%AF%9D/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-weak-session-ids%E5%BC%B1%E4%BC%9A%E8%AF%9D/</link>
       <pubDate>Sat, 21 Sep 2024 12:25:16 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-weak-session-ids%E5%BC%B1%E4%BC%9A%E8%AF%9D/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-weak-session-ids%E5%BC%B1%E4%BC%9A%E8%AF%9D/</guid>
       <description>&lt;h2 id=&#34;dvwa-weaksessionids弱会话&#34;&gt;DVWA WeakSessionIDs（弱会话）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;

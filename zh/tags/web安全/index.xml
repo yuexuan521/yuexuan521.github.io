@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Fri, 14 Mar 2025 15:51:54 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/web%E5%AE%89%E5%85%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BUUCTF [UTCTF2020]basic-forensics 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-utctf2020basic-forensics-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020basic-forensics-1/</link>
       <pubDate>Fri, 14 Mar 2025 15:51:54 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-utctf2020basic-forensics-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020basic-forensics-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34;&gt;
@@ -185,9 +185,9 @@ $$</p>
     </item>
     <item>
       <title>BUUCTF [GKCTF 2021]你知道apng吗 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</link>
       <pubDate>Sun, 19 Jan 2025 11:53:54 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34;&gt;
@@ -395,9 +395,9 @@ $$</p>
     </item>
     <item>
       <title>BUUCTF [SUCTF2018]followme 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf2018followme-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-suctf2018followme-1/</link>
       <pubDate>Mon, 16 Dec 2024 09:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-suctf2018followme-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-suctf2018followme-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png&#34;&gt;
@@ -563,9 +563,9 @@ $$</p>
     </item>
     <item>
       <title>BUUCTF [WUSTCTF2020]girlfriend 1</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-wustctf2020girlfriend-1/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020girlfriend-1/</link>
       <pubDate>Mon, 18 Nov 2024 12:58:09 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-wustctf2020girlfriend-1/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020girlfriend-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34;&gt;
@@ -759,9 +759,9 @@ $$</p>
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA File Inclusion（文件包含）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
       <pubDate>Mon, 30 Sep 2024 12:23:22 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-file-inclusion%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</guid>
       <description>&lt;h2 id=&#34;dvwa-file-inclusion文件包含&#34;&gt;DVWA File Inclusion（文件包含）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -1060,9 +1060,9 @@ $$</p>
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA DOM Based Cross Site Scripting (DOM型 XSS)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</link>
       <pubDate>Sun, 29 Sep 2024 12:23:38 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwa-dom-based-cross-site-scripting-dom型-xss&#34;&gt;DVWA DOM Based Cross Site Scripting (DOM型 XSS)&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -1336,9 +1336,9 @@ $$</p>
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA Command Injection（命令注入）</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</link>
       <pubDate>Sat, 28 Sep 2024 12:23:57 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-command-injection%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/</guid>
       <description>&lt;h2 id=&#34;dvwacommand-injection命令注入&#34;&gt;DVWACommand Injection（命令注入）&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -1923,9 +1923,9 @@ $$</p>
     </item>
     <item>
       <title>网络安全 DVWA通关指南 DVWA Brute Force (爆破)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</link>
       <pubDate>Fri, 27 Sep 2024 12:24:23 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</guid>
       <description>&lt;h2 id=&#34;dvwa-brute-force-爆破&#34;&gt;DVWA Brute Force (爆破)&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -2708,9 +2708,9 @@ $$</p>
     </item>
     <item>
       <title>网络安全 DVWA通关指南 Cross Site Request Forgery (CSRF)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</link>
       <pubDate>Thu, 26 Sep 2024 12:24:47 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-cross-site-request-forgery-csrf/</guid>
       <description>&lt;h2 id=&#34;dvwa-cross-site-request-forgery-csrf&#34;&gt;DVWA Cross Site Request Forgery (CSRF)&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
@@ -3385,9 +3385,9 @@ $$</p>
     </item>
     <item>
       <title>BUUCTF 凯撒？替换？呵呵!</title>
-      <link>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</link>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</link>
       <pubDate>Wed, 25 Sep 2024 21:49:16 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/ctf-writeups/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205018780.png&#34;&gt;

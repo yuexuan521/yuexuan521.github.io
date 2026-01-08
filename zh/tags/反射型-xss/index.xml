@@ -9,16 +9,16 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.153.5</generator>
+    <generator>Hugo -- 0.154.3</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Tue, 24 Sep 2024 12:22:37 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网络安全 DVWA通关指南 DVWA Reflected Cross Site Scripting (反射型 XSS)</title>
-      <link>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</link>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</link>
       <pubDate>Tue, 24 Sep 2024 12:22:37 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/post/dvwa%E9%9D%B6%E5%9C%BA/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</guid>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-reflected-cross-site-scripting-%E5%8F%8D%E5%B0%84%E5%9E%8B-xss/</guid>
       <description>&lt;h2 id=&#34;dvwareflected-cross-site-scripting-反射型-xss&#34;&gt;DVWAReflected Cross Site Scripting (反射型 XSS)&lt;/h2&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
