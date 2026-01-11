@@ -2,86 +2,90 @@
   <h2>Comments</h2>
   <div id="comments-giscus"></div>
 </section>
-<script type="text/javascript">
-// 1. 获取当前主题（针对 PaperMod 优化）
-function getCurrentTheme() {
-    // PaperMod 在 body 上添加 class="dark" 来标识深色模式
-    return document.body.classList.contains('dark') ? 'dark' : 'light';
-}
 
-// 2. 设置 Giscus 主题（核心修复：改用 postMessage）
-function setGiscusTheme(darkMode) {
-    const theme = darkMode ? "dark" : "light";
-    const iframe = document.querySelector('iframe.giscus-frame');
+<script>
+  // 1. 简化的获取主题函数 (只针对 PaperMod)
+  function getPaperModTheme() {
+      // PaperMod 这里的逻辑很简单：body 有 dark 类就是深色，没有就是浅色
+      return document.body.classList.contains('dark') ? 'dark' : 'light';
+  }
 
-    if (iframe) {
-        // 使用 Giscus 官方 API 发送消息，而不是重载 URL
-        iframe.contentWindow.postMessage({
-            giscus: {
-                setConfig: {
-                    theme: theme
-                }
-            }
-        }, 'https://giscus.app');
-    }
-}
+  // 2. 发送指令给 Giscus (无刷新切换)
+  function updateGiscusTheme() {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      const theme = getPaperModTheme();
+      
+      if (!iframe) {
+          console.warn('[Giscus] 未找到 iframe，跳过主题切换');
+          return;
+      }
 
-// 3. 加载评论（保持原样，微调初始参数）
-function loadComment(darkMode) {
-    const isChinese = "{{.Lang}}" == "zh";
-    const commentContainer = document.getElementById("comments-giscus");
+      console.log(`[Giscus] 正在切换主题为: ${theme}`);
+      
+      // 发送 postMessage
+      iframe.contentWindow.postMessage({
+          giscus: {
+              setConfig: {
+                  theme: theme
+              }
+          }
+      }, 'https://giscus.app');
+  }
 
-    if (commentContainer !== null) {
-        if (!commentContainer.hasAttribute('data-giscus-loaded')) {
-            console.log('Initial giscus load');
-            const commentScript = document.createElement("script");
-            commentScript.setAttribute("src", "https://giscus.app/client.js");
-            // ... 你的配置保持不变 ...
-            commentScript.setAttribute("data-repo", "{{ .Site.Params.giscus.repo }}");
-            commentScript.setAttribute("data-repo-id", "{{ .Site.Params.giscus.repoId }}");
-            commentScript.setAttribute("data-category", "{{ .Site.Params.giscus.category }}");
-            commentScript.setAttribute("data-category-id", "{{ .Site.Params.giscus.categoryId }}");
-            commentScript.setAttribute("data-mapping", "pathname");
-            commentScript.setAttribute("data-strict", "0");
-            commentScript.setAttribute("data-reactions-enabled", "1");
-            commentScript.setAttribute("data-emit-metadata", "0");
-            commentScript.setAttribute("data-input-position", "bottom");
-            
-            // 确保初始加载时颜色正确
-            commentScript.setAttribute("data-theme", darkMode ? "dark" : "light");
-            
-            commentScript.setAttribute("crossorigin", "anonymous");
-            commentScript.setAttribute("data-lang", isChinese ? "zh-CN" : "en");
-            commentScript.setAttribute("async", "true");
-            commentContainer.appendChild(commentScript);
-            commentContainer.setAttribute('data-giscus-loaded', 'true');
-        }
-    }
-}
+  // 3. 加载 Giscus 脚本
+  function loadGiscus() {
+      const container = document.getElementById("comments-giscus");
+      if (!container || container.hasAttribute('data-giscus-loaded')) return;
 
-// 4. 初始化逻辑
-// 获取当前状态
-let currentTheme = getCurrentTheme();
-// 加载评论区
-loadComment(currentTheme === 'dark');
+      const isChinese = "{{.Lang}}" == "zh";
+      const currentTheme = getPaperModTheme();
 
-// 5. 监听主题变化 (MutationObserver)
-const themeObserver = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-            const newTheme = getCurrentTheme();
-            if (newTheme !== currentTheme) {
-                currentTheme = newTheme;
-                // 当检测到变化时，调用修复后的设置函数
-                setGiscusTheme(currentTheme === 'dark');
-            }
-        }
-    });
-});
+      const script = document.createElement("script");
+      script.src = "https://giscus.app/client.js";
+      script.setAttribute("data-repo", "{{ .Site.Params.giscus.repo }}");
+      script.setAttribute("data-repo-id", "{{ .Site.Params.giscus.repoId }}");
+      script.setAttribute("data-category", "{{ .Site.Params.giscus.category }}");
+      script.setAttribute("data-category-id", "{{ .Site.Params.giscus.categoryId }}");
+      script.setAttribute("data-mapping", "pathname");
+      script.setAttribute("data-strict", "0");
+      script.setAttribute("data-reactions-enabled", "1");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "bottom");
+      script.setAttribute("data-theme", currentTheme); // 初始主题
+      script.setAttribute("data-lang", isChinese ? "zh-CN" : "en");
+      script.setAttribute("crossorigin", "anonymous");
+      script.setAttribute("async", "true");
+      
+      container.appendChild(script);
+      container.setAttribute('data-giscus-loaded', 'true');
+  }
 
-// 开始监听 body 的 class 变化
-themeObserver.observe(document.body, {
-    attributes: true,
-    attributeFilter: ['class']
-});
+  // 4. 执行初始化
+  loadGiscus();
+
+  // 5. 双重保险监听机制
+
+  // 保险一：直接监听右上角的切换按钮点击事件
+  const toggleBtn = document.querySelector("#theme-toggle");
+  if (toggleBtn) {
+      toggleBtn.addEventListener("click", () => {
+          // 延迟 200ms，等待 PaperMod 完成样式切换后再通知 Giscus
+          setTimeout(updateGiscusTheme, 200);
+      });
+  }
+
+  // 保险二：MutationObserver 监听 body class 变化
+  const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+              updateGiscusTheme();
+          }
+      });
+  });
+  
+  observer.observe(document.body, { 
+      attributes: true, 
+      attributeFilter: ['class'] 
+  });
+
 </script>
