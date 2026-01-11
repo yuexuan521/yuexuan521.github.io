@@ -1,77 +1,71 @@
-{{- /*只有在文章页面且开启评论时才显示*/ -}}
-{{- if .Param "comments" -}}
-<div class="comments">
-  <div class="title">
-    <span>Comments</span>
-    <span class="counter"><span class="remark42__counter" data-url="{{ .Permalink }}"></span></span>
-  </div>
+<section>
+  <h2>Comments</h2>
+  <div id="comments-giscus"></div>
+</section>
+<script type="text/javascript">
+function getCurrentTheme() {
+  return document.documentElement.getAttribute('data-theme') || document.body.classList.contains('dark') ? 'dark' : 'light';
+}
+
+function setGiscusTheme(darkMode=false) {
+      const theme = darkMode ? "dark" : "light";
+      var iframe = document.querySelector('.giscus-frame');
+
+      if (iframe) {
+	 var url = new URL(iframe.src);
+	 url.searchParams.set('theme', theme);
+	 iframe.src = url.toString();
+      }
+}
+
+function loadComment(darkMode=false) {
+  const isChinese = "{{.Lang}}" == "zh";
+  const commentContainer = document.getElementById("comments-giscus");
   
-  {{- /* 定义 Giscus 的容器 */ -}}
-  <script src="https://giscus.app/client.js"
-          data-repo="{{ site.Params.giscus.repo }}"
-          data-repo-id="{{ site.Params.giscus.repoId }}"
-          data-category="{{ site.Params.giscus.category }}"
-          data-category-id="{{ site.Params.giscus.categoryId }}"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="preferred_color_scheme" 
-          data-lang="zh-CN"
-          crossorigin="anonymous"
-          async>
-  </script>
-
-  {{- /* 下面是自动切换主题的核心 JS 代码 */ -}}
-  <script>
-    // 1. 定义两个主题对应的 Giscus 主题名
-    // 你可以在 https://giscus.app/zh-CN 找到更多主题名，比如 'noborder_dark', 'transparent_dark'
-    const giscusLight = 'light';
-    const giscusDark = 'dark_dimmed'; // 或者 'dark', 'transparent_dark' (配合你的深色背景)
-
-    // 2. 获取当前博客的主题状态
-    function getGiscusTheme() {
-        // PaperMod 在 body 上加了 class="dark" 来表示深色模式
-        return document.body.classList.contains('dark') ? giscusDark : giscusLight;
+  // Only proceed if container exists and visibility is not hidden
+  if (commentContainer !== null) {
+    if (!commentContainer.hasAttribute('data-giscus-loaded')) {
+      console.log('Initial giscus load');
+      const commentScript = document.createElement("script");
+      commentScript.setAttribute("src", "https://giscus.app/client.js");
+      commentScript.setAttribute("data-repo", "{{ .Site.Params.giscus.repo }}");
+      commentScript.setAttribute("data-repo-id", "{{ .Site.Params.giscus.repoId }}");
+      commentScript.setAttribute("data-category", "{{ .Site.Params.giscus.category }}");
+      commentScript.setAttribute("data-category-id", "{{ .Site.Params.giscus.categoryId }}");
+      commentScript.setAttribute("data-mapping", "pathname");
+      commentScript.setAttribute("data-strict", "0");
+      commentScript.setAttribute("data-reactions-enabled", "1");
+      commentScript.setAttribute("data-emit-metadata", "0");
+      commentScript.setAttribute("data-input-position", "bottom");
+      commentScript.setAttribute("data-theme", darkMode ? "dark" : "light");
+      commentScript.setAttribute("crossorigin", "anonymous");
+      commentScript.setAttribute("data-lang", isChinese ? "zh-CN": "en");
+      commentScript.setAttribute("async", "true");
+      commentContainer.appendChild(commentScript);
+      commentContainer.setAttribute('data-giscus-loaded', 'true');
     }
+  }
+}
 
-    // 3. 设置 Giscus 的主题 (发送消息给 iframe)
-    function setGiscusTheme() {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        
-        const theme = getGiscusTheme();
-        iframe.contentWindow.postMessage({
-            giscus: {
-                setConfig: {
-                    theme: theme
-                }
-            }
-        }, 'https://giscus.app');
-    }
+let currentTheme = getCurrentTheme();
+loadComment(currentTheme === 'dark');
 
-    // 4. 初始化：加载时先设置一次
-    // 这里的 trick 是等待 iframe 加载完毕后再发消息，或者直接利用 giscus 的 data-theme="preferred_color_scheme"
-    // 但为了保险，我们还是动态改一下
-    document.querySelector('script[src="https://giscus.app/client.js"]').setAttribute('data-theme', getGiscusTheme());
-
-    // 5. 监听：当用户点击右上角切换按钮时触发
-    const themeToggle = document.querySelector('#theme-toggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            // 给一点点延迟，等待 PaperMod 完成 class 的切换
-            setTimeout(setGiscusTheme, 200);
-        });
-    }
-
-    // 6. 监听：系统主题变化 (比如电脑从白天自动变黑夜)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        // 只有在用户选择了 "auto" 模式下才需要这个，不过加上也无妨
-        if (localStorage.getItem("pref-theme") === "auto" || !localStorage.getItem("pref-theme")) {
-             setTimeout(setGiscusTheme, 200);
+// Watch for theme changes
+const themeObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          const newTheme = getCurrentTheme();
+          if (newTheme !== currentTheme) {
+            currentTheme = newTheme;
+            setGiscusTheme(currentTheme === 'dark');
+          }
         }
     });
-  </script>
-</div>
-{{- end -}}
+});
+
+// Start observing the body element for class changes
+themeObserver.observe(document.body, { 
+    attributes: true, 
+    attributeFilter: ['class'] 
+});
+</script>
