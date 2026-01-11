@@ -3,69 +3,85 @@
   <div id="comments-giscus"></div>
 </section>
 <script type="text/javascript">
+// 1. 获取当前主题（针对 PaperMod 优化）
 function getCurrentTheme() {
-  return document.documentElement.getAttribute('data-theme') || document.body.classList.contains('dark') ? 'dark' : 'light';
+    // PaperMod 在 body 上添加 class="dark" 来标识深色模式
+    return document.body.classList.contains('dark') ? 'dark' : 'light';
 }
 
-function setGiscusTheme(darkMode=false) {
-      const theme = darkMode ? "dark" : "light";
-      var iframe = document.querySelector('.giscus-frame');
+// 2. 设置 Giscus 主题（核心修复：改用 postMessage）
+function setGiscusTheme(darkMode) {
+    const theme = darkMode ? "dark" : "light";
+    const iframe = document.querySelector('iframe.giscus-frame');
 
-      if (iframe) {
-	 var url = new URL(iframe.src);
-	 url.searchParams.set('theme', theme);
-	 iframe.src = url.toString();
-      }
-}
-
-function loadComment(darkMode=false) {
-  const isChinese = "{{.Lang}}" == "zh";
-  const commentContainer = document.getElementById("comments-giscus");
-  
-  // Only proceed if container exists and visibility is not hidden
-  if (commentContainer !== null) {
-    if (!commentContainer.hasAttribute('data-giscus-loaded')) {
-      console.log('Initial giscus load');
-      const commentScript = document.createElement("script");
-      commentScript.setAttribute("src", "https://giscus.app/client.js");
-      commentScript.setAttribute("data-repo", "{{ .Site.Params.giscus.repo }}");
-      commentScript.setAttribute("data-repo-id", "{{ .Site.Params.giscus.repoId }}");
-      commentScript.setAttribute("data-category", "{{ .Site.Params.giscus.category }}");
-      commentScript.setAttribute("data-category-id", "{{ .Site.Params.giscus.categoryId }}");
-      commentScript.setAttribute("data-mapping", "pathname");
-      commentScript.setAttribute("data-strict", "0");
-      commentScript.setAttribute("data-reactions-enabled", "1");
-      commentScript.setAttribute("data-emit-metadata", "0");
-      commentScript.setAttribute("data-input-position", "bottom");
-      commentScript.setAttribute("data-theme", darkMode ? "dark" : "light");
-      commentScript.setAttribute("crossorigin", "anonymous");
-      commentScript.setAttribute("data-lang", isChinese ? "zh-CN": "en");
-      commentScript.setAttribute("async", "true");
-      commentContainer.appendChild(commentScript);
-      commentContainer.setAttribute('data-giscus-loaded', 'true');
+    if (iframe) {
+        // 使用 Giscus 官方 API 发送消息，而不是重载 URL
+        iframe.contentWindow.postMessage({
+            giscus: {
+                setConfig: {
+                    theme: theme
+                }
+            }
+        }, 'https://giscus.app');
     }
-  }
 }
 
+// 3. 加载评论（保持原样，微调初始参数）
+function loadComment(darkMode) {
+    const isChinese = "{{.Lang}}" == "zh";
+    const commentContainer = document.getElementById("comments-giscus");
+
+    if (commentContainer !== null) {
+        if (!commentContainer.hasAttribute('data-giscus-loaded')) {
+            console.log('Initial giscus load');
+            const commentScript = document.createElement("script");
+            commentScript.setAttribute("src", "https://giscus.app/client.js");
+            // ... 你的配置保持不变 ...
+            commentScript.setAttribute("data-repo", "{{ .Site.Params.giscus.repo }}");
+            commentScript.setAttribute("data-repo-id", "{{ .Site.Params.giscus.repoId }}");
+            commentScript.setAttribute("data-category", "{{ .Site.Params.giscus.category }}");
+            commentScript.setAttribute("data-category-id", "{{ .Site.Params.giscus.categoryId }}");
+            commentScript.setAttribute("data-mapping", "pathname");
+            commentScript.setAttribute("data-strict", "0");
+            commentScript.setAttribute("data-reactions-enabled", "1");
+            commentScript.setAttribute("data-emit-metadata", "0");
+            commentScript.setAttribute("data-input-position", "bottom");
+            
+            // 确保初始加载时颜色正确
+            commentScript.setAttribute("data-theme", darkMode ? "dark" : "light");
+            
+            commentScript.setAttribute("crossorigin", "anonymous");
+            commentScript.setAttribute("data-lang", isChinese ? "zh-CN" : "en");
+            commentScript.setAttribute("async", "true");
+            commentContainer.appendChild(commentScript);
+            commentContainer.setAttribute('data-giscus-loaded', 'true');
+        }
+    }
+}
+
+// 4. 初始化逻辑
+// 获取当前状态
 let currentTheme = getCurrentTheme();
+// 加载评论区
 loadComment(currentTheme === 'dark');
 
-// Watch for theme changes
+// 5. 监听主题变化 (MutationObserver)
 const themeObserver = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
         if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-          const newTheme = getCurrentTheme();
-          if (newTheme !== currentTheme) {
-            currentTheme = newTheme;
-            setGiscusTheme(currentTheme === 'dark');
-          }
+            const newTheme = getCurrentTheme();
+            if (newTheme !== currentTheme) {
+                currentTheme = newTheme;
+                // 当检测到变化时，调用修复后的设置函数
+                setGiscusTheme(currentTheme === 'dark');
+            }
         }
     });
 });
 
-// Start observing the body element for class changes
-themeObserver.observe(document.body, { 
-    attributes: true, 
-    attributeFilter: ['class'] 
+// 开始监听 body 的 class 变化
+themeObserver.observe(document.body, {
+    attributes: true,
+    attributeFilter: ['class']
 });
 </script>
