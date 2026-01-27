@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>虚假的压缩包 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85/</link>
+    <description>Recent content in 虚假的压缩包 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 29 Sep 2025 08:15:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [GUET-CTF2019]虚假的压缩包 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</link>
+      <pubDate>Mon, 29 Sep 2025 08:15:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/YueXuan_521/article/details/134055375&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF zip伪加密 1&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/Demonslzh/article/details/130738368&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;RSA加密原理详解，以及RSA中的数论基础&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105367979#:~:text=%5BGUET-&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[GUET-CTF2019]虚假的压缩包&lt;/a&gt;
+&lt;a href=&#34;https://www.cnblogs.com/vuclw/p/15848284.html#:~:text=%E5%85%B6%E4%B8%AD%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%8E%8B&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF:[GUET-CTF2019]虚假的压缩包&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/YueXuan_521/article/details/134352467?spm=1001.2014.3001.5502&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/YueXuan_521/article/details/134055375"target="_blank" rel="noopener noreferrer">BUUCTF zip伪加密 1</a>
+<a href="https://blog.csdn.net/Demonslzh/article/details/130738368"target="_blank" rel="noopener noreferrer">RSA加密原理详解，以及RSA中的数论基础</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/105367979#:~:text=%5BGUET-"target="_blank" rel="noopener noreferrer">BUUCTF：[GUET-CTF2019]虚假的压缩包</a>
+<a href="https://www.cnblogs.com/vuclw/p/15848284.html#:~:text=%E5%85%B6%E4%B8%AD%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%8E%8B"target="_blank" rel="noopener noreferrer">BUUCTF:[GUET-CTF2019]虚假的压缩包</a>
+<a href="https://blog.csdn.net/YueXuan_521/article/details/134352467?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到两个压缩包：虚假的压缩包.zip和真实的压缩包.zip</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、先处理虚假的压缩包.zip，因为真实的压缩包.zip需要密码。虚假的压缩包.zip使用了伪加密，搜索 <code>50 4B 01 02</code> ，将文件头的第9位和第10位改为0。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压得到Key.txt文件，内容如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、猜测为RSA加密，解密脚本如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.mpz(n)#初始化一个大整数
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.mpfr(x)# 初始化一个高精度浮点数x
+</span></span></span><span class="line"><span class="cl"><span class="s2">d = gmpy2.invert(e,n) # 求逆元，de = 1 mod n
+</span></span></span><span class="line"><span class="cl"><span class="s2">C = gmpy2.powmod(M,e,n)# 幂取模，结果是 C = (M^e) mod n
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.is_prime(n) #素性检测
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.gcd(a,b)  #欧几里得算法，最大公约数
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.gcdext(a,b)  #扩展欧几里得算法
+</span></span></span><span class="line"><span class="cl"><span class="s2">gmpy2.iroot(x,n) #x开n次根
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">mpz</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">mpz</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">mpz</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">l</span> <span class="o">=</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">l</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">mpz</span><span class="p">(</span><span class="mi">26</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">q</span>
+</span></span><span class="line"><span class="cl"><span class="n">ans</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">来源</span><span class="p">:</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="o">.</span><span class="n">csdn</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">qq_24033605</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">details</span><span class="o">/</span><span class="mi">117158714</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行脚本，得到答案是 <code>5</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、解压真实的压缩包.zip，得到一张没卵用且会浪费你时间的图片.jpg和亦真亦假。</p>
+<p>解压密码： <code>答案是5</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用TweakPNG打开jpg图片，发现提示jpg图片CRC不对，应该是被修改宽高啦。（另外该图片应为png文件，png文件头89 50 4E 47）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用如下脚本，计算原文件宽高。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">struct</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">crcbp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;1.png&#34;</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>    <span class="c1">#打开图片!!!</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">crcbp</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span> <span class="o">+</span> \
+</span></span><span class="line"><span class="cl">            <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="n">crcbp</span><span class="p">[</span><span class="mi">24</span><span class="p">:</span><span class="mi">29</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">crc32</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">crc32</span> <span class="o">==</span> <span class="mh">0x1670BAE6</span><span class="p">):</span>    <span class="c1">#修改为图片当前CRC!!!</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hex:&#39;</span><span class="p">,</span> <span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">hex</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到图片的高应为 <code>242</code> ， <code>0xF2</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修改图片高度如下</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到图片
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、根据上面图片的提示，我们将亦真亦假文件的数据 <code>异或5</code> ，python脚本如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 打开文件进行读取</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">f1</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 初始化变量存储解密后的数据</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag_data</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 对每个字符进行异或操作</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tmp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span> <span class="o">^</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag_data</span> <span class="o">+=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">tmp</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 将解密后的数据写入新文件</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./flag.doc&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 使用 binascii.unhexlify 替代 decode(&#39;hex&#39;)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">f2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">flag_data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Decryption complete.&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到flag.doc文件，打开没有发现flag，全选改变字体颜色，得到flag。（word隐藏文字）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">FLAG<span class="o">{</span>_th2_7ru8_2iP_<span class="o">}</span>   
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>_th2_7ru8_2iP_<span class="o">}</span>   
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

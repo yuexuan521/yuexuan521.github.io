@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unravel on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/unravel/</link>
+    <description>Recent content in Unravel on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 30 Jun 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/unravel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [MRCTF2020]Unravel!! 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020unravel-1/</link>
+      <pubDate>Mon, 30 Jun 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020unravel-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191603745.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191603745.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109671882&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[MRCTF2020]Unravel!!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191605778.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191605778.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191603745.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191603745.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109671882"target="_blank" rel="noopener noreferrer">BUUCTF：[MRCTF2020]Unravel!!</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191605778.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191605778.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到Unravel文件夹，文件如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191607940.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191607940.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、先看Look_at_the_file_ending.wav文件，既然已经提示我们看文件结尾，就用010Editor打开，得到一串密文。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">key</span><span class="o">=</span><span class="n">U2FsdGVkX1</span><span class="o">/</span><span class="n">nSQN</span><span class="o">+</span><span class="n">hoHL8OwV9iJB</span><span class="o">/</span><span class="n">mSdKk5dmusulz4</span><span class="o">=</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191609317.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191609317.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>密文有点像Base64，尝试Base64解密，发现“ <code>Salted</code> ”头部，判断为AES加密，寻找密钥。</p>
+<p><a href="https://www.qqxiuzi.cn/bianma/base64.htm"target="_blank" rel="noopener noreferrer">Base64编码转换</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191611066.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191611066.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、接下来处理JM.png，在StegSolve看到“ <code>PK</code> ”头，存在隐藏ZIP压缩包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191612856.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191612856.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>用010 Editor打开，将压缩包的数据，提取保存为ZIP文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191615583.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191615583.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压得到aes.png文件，这应该就是AES的密钥。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Tokyo</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191617747.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191617747.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、进行AES解密，得到win-win.zip的解压密码： <code>CCGandGulu</code> 。</p>
+<p><a href="https://www.sojson.com/encrypt_aes.html"target="_blank" rel="noopener noreferrer">在线AES加密/解密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191618884.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191618884.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压win-win.zip，得到Ending.wav。这里要使用SilentEye进行解密，下载地址： <a href="https://achorein.github.io/silenteye/"target="_blank" rel="noopener noreferrer">https://achorein.github.io/silenteye/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191622063.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191622063.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到flag： <code>MRCTF{Th1s_is_the_3nd1n9}</code></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>Th1s_is_the_3nd1n9<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

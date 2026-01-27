@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>面试 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E9%9D%A2%E8%AF%95/</link>
+    <description>Recent content in 面试 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sun, 02 Apr 2023 12:00:46 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>牛客网Python入门103题练习|(04--列表（1）)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</link>
+      <pubDate>Sun, 02 Apr 2023 12:00:46 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A81/</guid>
+      <description>&lt;h2 id=&#34;np16发送offer&#34;&gt;⭐NP16 发送offer&lt;/h2&gt;
+&lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
+&lt;p&gt;某公司在面试结束后，创建了一个依次包含字符串&amp;rsquo;Allen&amp;rsquo; 和 &amp;lsquo;Tom&amp;rsquo; 的列表offer_list，作为通过面试的名单。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="np16发送offer">⭐NP16 发送offer</h2>
+<h3 id="描述">描述</h3>
+<p>某公司在面试结束后，创建了一个依次包含字符串&rsquo;Allen&rsquo; 和 &lsquo;Tom&rsquo; 的列表offer_list，作为通过面试的名单。</p>
+<p>请你依次对列表中的名字发送类似 &lsquo;Allen, you have passed our interview and will soon become a member of our company.&rsquo; 的句子。</p>
+<p>但由于Tom有了其他的选择，没有确认这个offer，HR选择了正好能够确认这个offer的Andy，所以请把列表offer_list中 &lsquo;Tom&rsquo; 的名字换成 &lsquo;Andy&rsquo; ，</p>
+<p>再依次发送类似 &lsquo;Andy, welcome to join us!&rsquo; 的句子。</p>
+<h4 id="输入描述">输入描述：</h4>
+<p>无</p>
+<h4 id="输出描述">输出描述：</h4>
+<p>按题目描述进行输出即可。</p>
+<p>Allen, you have passed our interview and will soon become a member of our company.
+Tom, you have passed our interview and will soon become a member of our company.</p>
+<p>Allen, welcome to join us!
+Andy, welcome to join us!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">offer_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Allen&#39;</span><span class="p">,</span><span class="s1">&#39;Tom&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">offer_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="s1">&#39;, you have passed our interview and will soon become a member of our company.&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">offer_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">offer_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Andy&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">offer_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="o">+</span><span class="s1">&#39;, welcome to join us!&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np17生成列表">⭐NP17 生成列表</h2>
+<h3 id="描述-1">描述</h3>
+<p>一串连续的数据用什么记录最合适，牛牛认为在Python中非列表（list）莫属了。现输入牛牛朋友们的名字，请使用list函数与split函数将它们封装成列表，再整个输出列表。</p>
+<h4 id="输入描述-1">输入描述：</h4>
+<p>输入一串字符串，它们之间通过空格间隔开。</p>
+<h4 id="输出描述-1">输出描述：</h4>
+<p>输出封装后的列表。</p>
+<h3 id="示例1">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NiuNiu NiuMei NiuNeng
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;NiuNiu&#39;, &#39;NiuMei&#39;, &#39;NiuNeng&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">str</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np18生成数字列表">⭐NP18 生成数字列表</h2>
+<h3 id="描述-2">描述</h3>
+<p>牛牛在牛客网系统录入了一连串数字，数字之间依靠逗号隔开，你能帮助他将这些数字存储在列表中吗，列表元素以int的形式。</p>
+<h4 id="输入描述-2">输入描述：</h4>
+<p>输入一行整数，数字之间以空格间隔。</p>
+<h4 id="输出描述-2">输出描述：</h4>
+<p>输出这些数字组成的完整列表。</p>
+<h3 id="示例1-1">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 2 3 4 5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[1, 2, 3, 4, 5]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np19列表的长度">⭐NP19 列表的长度</h2>
+<h3 id="描述-3">描述</h3>
+<p>牛牛学会了使用list函数与split函数将输入的连续字符串封装成列表，你能够帮他使用len函数统计一些公输入了多少字符串，列表中有多少元素吗？</p>
+<h4 id="输入描述-3">输入描述：</h4>
+<p>输入一行多个字符串，字符串之间通过空格间隔。</p>
+<h4 id="输出描述-3">输出描述：</h4>
+<p>输出列表的长度。</p>
+<h3 id="示例1-2">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NiuNiu NiuMei NiuNeng
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np20增加派对名单一">⭐NP20 增加派对名单（一）</h2>
+<h3 id="描述-4">描述</h3>
+<p>为庆祝驼瑞驰在牛爱网找到合适的对象，驼瑞驰通过输入的多个连续字符串创建了一个列表作为派对邀请名单，在检查的时候发现少了他最好的朋友“Allen”的名字，你能使用append函数将这个名字加到列表末尾吗？添加完成请输出完整列表。</p>
+<h4 id="输入描述-4">输入描述：</h4>
+<p>输入多个连续的字符串表示名字，以空格间隔。</p>
+<h4 id="输出描述-4">输出描述：</h4>
+<p>输出添加完Allen后的完整列表。</p>
+<h3 id="示例1-3">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Niuniu Niumei Lucy Niuneng
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;Niuniu&#39;, &#39;Niumei&#39;, &#39;Lucy&#39;, &#39;Niuneng&#39;, &#39;Allen&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Allen&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np21增加派对名单二">⭐NP21 增加派对名单（二）</h2>
+<h3 id="描述-5">描述</h3>
+<p>为庆祝驼瑞驰在牛爱网找到合适的对象，驼瑞驰通过输入的多个连续字符串创建了一个列表作为派对邀请名单，在检查的时候发现少了他最好的朋友“Allen”的名字，因为是最好的朋友，他想让这个名字出现在邀请列表的最前面，你能用insert函数帮他实现吗？请输出插入后的完整列表。</p>
+<h4 id="输入描述-5">输入描述：</h4>
+<p>输入多个连续的字符串表示名字，用空格间隔。</p>
+<h4 id="输出描述-5">输出描述：</h4>
+<p>输出插入名字后的完整列表。</p>
+<h3 id="示例1-4">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Niuniu Niumei Lucy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;Allen&#39;, &#39;Niuniu&#39;, &#39;Niumei&#39;, &#39;Lucy&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lst</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;Allen&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np22删除简历">⭐NP22 删除简历</h2>
+<h3 id="描述-6">描述</h3>
+<p>牛牛在各大互联网公司投入了简历，公司的名字通过字符串的形式在一行中输入，请用列表记录。现在牛牛已经确定了第一所公司的HR表露了不录用他的态度，请你使用del函数帮助牛牛从列表中删除第一个元素，然后输出列表。</p>
+<h4 id="输入描述-6">输入描述：</h4>
+<p>以字符串的形式输入公司名字，字符串之间以空格间隔。</p>
+<h4 id="输出描述-6">输出描述：</h4>
+<p>输出删除第一个元素后的完整列表。</p>
+<h3 id="示例1-5">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Baidu Meituan Nowcoder Huawei apple
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;Meituan&#39;, &#39;Nowcoder&#39;, &#39;Huawei&#39;, &#39;apple&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lst</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np23删除好友">⭐NP23 删除好友</h2>
+<h3 id="描述-7">描述</h3>
+<p>牛妹有一个坏习惯，一旦与朋友吵架了，她就要删除好友。现在输入一个行多个字符串表示牛妹的朋友，请把它们封装成列表，然后再输入与牛妹吵架的朋友的名字，请使用remove函数帮她从列表中删除这个好友，然后输出完整列表。</p>
+<h4 id="输入描述-7">输入描述：</h4>
+<p>第一行输入多个字符串表示朋友的名字，以空格间隔。</p>
+<p>第二行输入吵架的朋友的名字，必定是第一行中出现的名字。</p>
+<h4 id="输出描述-7">输出描述：</h4>
+<p>输出删除好友后的完整列表。</p>
+<h3 id="示例1-6">示例1</h3>
+<p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NiuNiu Niukele NiuNeng
+</span></span><span class="line"><span class="cl">NiuNiu
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;Niukele&#39;, &#39;NiuNeng&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">str1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">lst1</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst1</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

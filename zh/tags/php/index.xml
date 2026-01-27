@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Php on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/php/</link>
+    <description>Recent content in Php on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sun, 22 Sep 2024 12:21:39 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络安全 DVWA通关指南 DVWA Stored Cross Site Scripting (存储型 XSS)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</link>
+      <pubDate>Sun, 22 Sep 2024 12:21:39 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</guid>
+      <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
+&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<blockquote>
+<h3 id="xss跨站原理">XSS跨站原理</h3>
+<p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
+<p>浏览器同源策略：只有发布Cookie的网站才能读取Cookie。</p>
+<p>会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害</p>
+<h4 id="存储型">存储型</h4>
+<p>出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全</p>
+</blockquote>
+<h3 id="low">Low</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;btnSign&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;mtxMessage&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span>    <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;txtName&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//trim（去除首尾空白字符）
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize message input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$message</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize name input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$name</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Update database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;INSERT INTO guestbook ( comment, name ) VALUES ( &#39;</span><span class="si">$message</span><span class="s2">&#39;, &#39;</span><span class="si">$name</span><span class="s2">&#39; );&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">//mysql_close();
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">//输入一个名字和一段文本，然后网页会把把输入的信息加入到数据库中，同时服务器也会将服务器的内容回显到网页上。
+</span></span></span><span class="line"><span class="cl"><span class="err">//没有经过适当的HTML实体编码（如使用htmlspecialchars），存在XSS风险。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、前端代码对Name的长度有限制，在Message中输入payload</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script&gt;alert(/XSS/)&lt;/script&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
+             alt="image-20240425131132813" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
+             alt="image-20240425131249914" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>进入Home标签页，再回到XSS（Stored）页面，仍然可以成功，证明存储型XSS攻击成功</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
+             alt="image-20240425131430407" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
+             alt="image-20240425131343029" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>（如果需要删除数据库中存在的XSS代码，进入dvwa数据库中guestbook表，选择性删除数据。）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">mysql -uroot -proot
+</span></span><span class="line"><span class="cl">use dvwa;
+</span></span><span class="line"><span class="cl">select * from guestbook;
+</span></span><span class="line"><span class="cl">delete from guestbook where comment_id=2;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>解决方案：</strong></p>
+<ul>
+<li><strong>XSS防护</strong> ：在将用户输入的数据输出到网页前，应该使用 <code>htmlspecialchars</code> 函数（或类似的适当函数，依据上下文可能还包括其他措施）对数据进行转义，确保任何潜在的HTML标签和JavaScript代码被呈现为纯文本而非执行。</li>
+</ul>
+<p>修正示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="mi">1</span><span class="c1">// 假设从数据库获取数据后准备展示给用户
+</span></span></span><span class="line"><span class="cl"><span class="mi">2</span><span class="nv">$safeMessage</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span><span class="nv">$retrievedMessage</span><span class="p">,</span> <span class="nx">ENT_QUOTES</span><span class="p">,</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="mi">3</span><span class="nv">$safeName</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span><span class="nv">$retrievedName</span><span class="p">,</span> <span class="nx">ENT_QUOTES</span><span class="p">,</span> <span class="s1">&#39;UTF-8&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="mi">4</span>
+</span></span><span class="line"><span class="cl"><span class="mi">5</span><span class="k">echo</span> <span class="s2">&#34;Comment: </span><span class="si">$safeMessage</span><span class="s2">&lt;br&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="mi">6</span><span class="k">echo</span> <span class="s2">&#34;Name: </span><span class="si">$safeName</span><span class="s2">&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="medium">Medium</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;btnSign&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;mtxMessage&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$name</span>    <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;txtName&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Sanitize message input
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="o">=</span> <span class="nx">strip_tags</span><span class="p">(</span> <span class="nx">addslashes</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$message</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$message</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//htmlspecialchars()函数将特殊字符（如&lt;, &gt;, &amp;, &#34;, &#39;）转换为对应的HTML实体（如&amp;lt;, &amp;gt;, &amp;amp;, &amp;quot;, &amp;#039;），确保即使用户输入包含HTML或JavaScript代码，这些代码也会被浏览器解析为纯文本显示，而不是被执行。
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Sanitize name input
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$name</span> <span class="o">=</span> <span class="nx">str_replace</span><span class="p">(</span> <span class="s1">&#39;&lt;script&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$name</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$name</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$name</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Update database
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;INSERT INTO guestbook ( comment, name ) VALUES ( &#39;</span><span class="si">$message</span><span class="s2">&#39;, &#39;</span><span class="si">$name</span><span class="s2">&#39; );&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">//mysql_close();
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">//message参数对所有XSS都进行了过滤，但name参数只使用str_replace函数进行过滤，没有过滤大小写和双写
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、可以在Name参数输入Payload，因为存在长度限制，在开发者工具（按&quot;F12&quot;）修改对应的前端代码，就可以完整输入了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;sCriPt&gt;alert(/XSS/)&lt;/ScripT&gt;
+</span></span><span class="line"><span class="cl">//区分大小写
+</span></span><span class="line"><span class="cl">&lt;scr&lt;script&gt;ipt&gt;alert(/XSS/)&lt;/script&gt;
+</span></span><span class="line"><span class="cl">//双写绕过
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
+             alt="image-20240425134449055" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="high">High</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;btnSign&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;mtxMessage&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span>    <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;txtName&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize message input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">strip_tags</span><span class="p">(</span> <span class="nx">addslashes</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$message</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize name input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="nx">preg_replace</span><span class="p">(</span> <span class="s1">&#39;/&lt;(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$name</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$name</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Update database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;INSERT INTO guestbook ( comment, name ) VALUES ( &#39;</span><span class="si">$message</span><span class="s2">&#39;, &#39;</span><span class="si">$name</span><span class="s2">&#39; );&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">//mysql_close();
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">//依然是name参数存在XSS漏洞
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、使用其他标签绕过preg_replace函数检查</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="n">x</span> <span class="n">onerror</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">svg</span> <span class="n">onload</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
+             alt="image-20240425135425515" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="impossible">Impossible</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;btnSign&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;mtxMessage&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span>    <span class="o">=</span> <span class="nx">trim</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;txtName&#39;</span> <span class="p">]</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize message input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$message</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$message</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span> <span class="nv">$message</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitize name input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$name</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$name</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$name</span> <span class="o">=</span> <span class="nx">htmlspecialchars</span><span class="p">(</span> <span class="nv">$name</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Update database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;INSERT INTO guestbook ( comment, name ) VALUES ( :message, :name );&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:message&#39;</span><span class="p">,</span> <span class="nv">$message</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:name&#39;</span><span class="p">,</span> <span class="nv">$name</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,3569 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CCNA on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/categories/ccna/</link>
+    <description>Recent content in CCNA on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 16:37:23 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/categories/ccna/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packet Tracer - Configure and Verify a Site-to-Site IPsec VPN Using CLI（使用命令行界面配置和验证站点到站点IPsec VPN）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</link>
+      <pubDate>Thu, 23 Jan 2025 16:37:23 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</guid>
+      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;验证整个网络的连通性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置R1以支持与R3之间的站点到站点IPsec VPN。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
+&lt;p&gt;网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>验证整个网络的连通性。</p>
+</li>
+<li>
+<p>配置R1以支持与R3之间的站点到站点IPsec VPN。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。</p>
+<p><strong>ISAKMP阶段1策略参数</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>注意：加粗参数为默认值。只有非加粗参数需要明确配置。</p>
+<p><strong>IPsec阶段2策略参数</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png" 
+             alt="（此处未给出具体参数，请补充完整）" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>路由器已预先配置以下内容：</p>
+<p>· 控制台线路密码： <strong>ciscoconpa55</strong></p>
+<p>· vty线路密码： <strong>ciscovtypa55</strong></p>
+<p>· 启用密码： <strong>ciscoenpa55</strong></p>
+<p>· SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
+<p>· OSPF进程号 <strong>101</strong></p>
+<h3 id="第一部分在r1上配置ipsec参数">第一部分：在R1上配置IPsec参数</h3>
+<p><strong>步骤1：测试连通性。</strong></p>
+<p>从PC-A向PC-C发送ping请求。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：启用安全技术包。</strong></p>
+<p>a. 在R1上执行 <code>show version</code> 命令查看安全技术包许可证信息。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 如果未启用安全技术包，请使用以下命令启用该包。</p>
+<blockquote>
+<p>R1(config)# license boot module c1900 technology-package securityk9</p>
+</blockquote>
+<p>c. 接受最终用户许可协议。</p>
+<p>d. 保存运行配置并重新加载路由器以启用安全许可证。</p>
+<p>e. 使用 <code>show version</code> 命令验证是否已启用安全技术包。</p>
+<p><strong>步骤3：在R1上识别感兴趣流量。</strong></p>
+<p>配置 <strong>ACL 110</strong> ，将来自R1 LAN到R3 LAN的流量标识为“感兴趣”流量。当R1和R3之间的LAN之间存在流量时，这种感兴趣的流量会触发实施IPsec VPN。除了这些流量外，所有其他源自LAN的流量都不会被加密。由于存在隐式拒绝所有规则，因此无需配置deny ip any any语句。</p>
+<blockquote>
+<p>R1(config)# access-list 110 permit ip 192.168.1.0 0.0.0.255 192.168.3.0 0.0.0.255</p>
+</blockquote>
+<p><strong>步骤4：在R1上配置IKE阶段1 ISAKMP策略。</strong></p>
+<p>在R1上配置crypto ISAKMP策略 <strong>10</strong> 属性以及共享的crypto密钥 <strong>vpnpa55</strong> 。请参考ISAKMP阶段1表中特定的参数进行配置。默认值不需要配置，因此只需要配置加密方法、密钥交换方法和DH方法。</p>
+<p>注：当前Packet Tracer支持的最大DH组是组5。在生产网络中，您至少应配置DH 14。</p>
+<blockquote>
+<p>R1(config)# crypto isakmp policy 10
+R1(config-isakmp)# encryption aes 256
+R1(config-isakmp)# authentication pre-share
+R1(config-isakmp)# group 5
+R1(config-isakmp)# exit
+R1(config)# crypto isakmp key vpnpa55 address 10.2.2.2</p>
+</blockquote>
+<p><strong>步骤5：在R1上配置IKE阶段2 IPsec策略。</strong></p>
+<p>a. 创建名为VPN-SET的转换集，使用 <strong>esp-aes</strong> 和 <strong>esp-sha-hmac</strong> 。</p>
+<blockquote>
+<p>R1(config)# crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac</p>
+</blockquote>
+<p>b. 创建名为VPN-MAP的crypto映射，将所有阶段2参数绑定在一起。使用序列号10，并将其标识为ipsec-isakmp映射。</p>
+<blockquote>
+<p>R1(config)# crypto map VPN-MAP 10 ipsec-isakmp
+R1(config-crypto-map)# description VPN connection to R3
+R1(config-crypto-map)# set peer 10.2.2.2
+R1(config-crypto-map)# set transform-set VPN-SET
+R1(config-crypto-map)# match address 110
+R1(config-crypto-map)# exit</p>
+</blockquote>
+<p><strong>步骤6：配置接口上的crypto映射。</strong></p>
+<p>将VPN-MAP crypto映射绑定到 <strong>Serial 0/0/0</strong> 出站接口。</p>
+<blockquote>
+<p>R1(config)# interface s0/0/0
+R1(config-if)# crypto map VPN-MAP</p>
+</blockquote>
+<h3 id="第二部分在r3上配置ipsec参数">第二部分：在R3上配置IPsec参数</h3>
+<p><strong>步骤1：启用安全技术包。</strong></p>
+<p>a. 在R3上执行 <code>show version</code> 命令以验证是否已启用安全技术包许可证信息。</p>
+<p>b. 如果尚未启用安全技术包，则启用该包并重新加载R3。</p>
+<p><strong>步骤2：配置路由器R3以支持与R1的站点到站点VPN。</strong></p>
+<p>在R3上配置相应的参数。配置 <strong>ACL 110</strong> ，将来自R3 LAN到R1 LAN的流量标识为“感兴趣”流量。</p>
+<blockquote>
+<p>R3(config)# access-list 110 permit ip 192.168.3.0 0.0.0.255 192.168.1.0 0.0.0.255</p>
+</blockquote>
+<p><strong>步骤3：在R3上配置IKE阶段1 ISAKMP属性。</strong></p>
+<p>在R3上配置crypto ISAKMP策略 <strong>10</strong> 属性以及共享的crypto密钥 <strong>vpnpa55</strong> 。</p>
+<blockquote>
+<p>R3(config)# crypto isakmp policy 10
+R3(config-isakmp)# encryption aes 256
+R3(config-isakmp)# authentication pre-share
+R3(config-isakmp)# group 5
+R3(config-isakmp)# exit
+R3(config)# crypto isakmp key vpnpa55 address 10.1.1.2</p>
+</blockquote>
+<p><strong>步骤4：在R3上配置IKE阶段2 IPsec策略。</strong></p>
+<p>a. 创建名为VPN-SET的转换集，使用 <strong>esp-aes</strong> 和 <strong>esp-sha-hmac</strong> 。</p>
+<blockquote>
+<p>R3(config)# crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac</p>
+</blockquote>
+<p>b. 创建名为VPN-MAP的crypto映射，将所有阶段2参数绑定在一起。使用序列号 <strong>10</strong> ，并将其标识为ipsec-isakmp映射。</p>
+<blockquote>
+<p>R3(config)# crypto map VPN-MAP 10 ipsec-isakmp
+R3(config-crypto-map)# description VPN connection to R1
+R3(config-crypto-map)# set peer 10.1.1.2
+R3(config-crypto-map)# set transform-set VPN-SET
+R3(config-crypto-map)# match address 110
+R3(config-crypto-map)# exit</p>
+</blockquote>
+<p><strong>步骤5：配置接口上的crypto映射。</strong></p>
+<p>将VPN-MAP crypto映射绑定到 <strong>Serial 0/0/1</strong> 出站接口（注意：此操作不会被评估）。</p>
+<blockquote>
+<p>R3(config)# interface s0/0/1
+R3(config-if)# crypto map VPN-MAP</p>
+</blockquote>
+<h3 id="第三部分验证ipsec-vpn">第三部分：验证IPsec VPN</h3>
+<p><strong>步骤1：在出现感兴趣流量之前验证隧道。</strong></p>
+<p>在R1上执行 <code>show crypto ipsec sa</code> 命令。注意封装、加密、解封装和解密的包数量均设置为 <strong>0</strong> 。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：创建感兴趣流量。</strong></p>
+<p>从PC-A向PC-C发送ping请求。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在产生感兴趣流量后验证隧道。</strong></p>
+<p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量大于0，这表明IPsec VPN隧道正在工作。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤4：创建非感兴趣流量。</strong></p>
+<p>从PC-A向PC-B发送ping请求。注：从路由器R1向PC-C或R3向PC-A发送ping请求不属于感兴趣流量。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤5：再次验证隧道。</strong></p>
+<p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量没有改变，这证实了非感兴趣流量并未被加密。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤6：检查结果。</strong></p>
+<p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息以及已完成的必要组件验证。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<p><strong>R1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">crypto isakmp policy <span class="m">10</span>
+</span></span><span class="line"><span class="cl"> encr aes <span class="m">256</span>
+</span></span><span class="line"><span class="cl"> authentication pre-share
+</span></span><span class="line"><span class="cl"> group <span class="m">5</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">crypto isakmp key vpnpa55 address 10.2.2.2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">access-list <span class="m">110</span> permit ip 192.168.1.0 0.0.0.255 192.168.3.0 0.0.0.255
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">crypto map VPN-MAP <span class="m">10</span> ipsec-isakmp 
+</span></span><span class="line"><span class="cl"> description VPN connection to R3
+</span></span><span class="line"><span class="cl"> <span class="nb">set</span> peer 10.2.2.2
+</span></span><span class="line"><span class="cl"> <span class="nb">set</span> transform-set VPN-SET 
+</span></span><span class="line"><span class="cl"> match address <span class="m">110</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">interface Serial0/0/0
+</span></span><span class="line"><span class="cl"> crypto map VPN-MAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>R3:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">crypto isakmp policy <span class="m">10</span>
+</span></span><span class="line"><span class="cl"> encr aes <span class="m">256</span>
+</span></span><span class="line"><span class="cl"> authentication pre-share
+</span></span><span class="line"><span class="cl"> group <span class="m">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">crypto isakmp key vpnpa55 address 10.1.1.2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">access-list <span class="m">110</span> permit ip 192.168.3.0 0.0.0.255 192.168.1.0 0.0.0.255
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">crypto map VPN-MAP <span class="m">10</span> ipsec-isakmp 
+</span></span><span class="line"><span class="cl"> description VPN connection to R1
+</span></span><span class="line"><span class="cl"> <span class="nb">set</span> peer 10.1.1.2
+</span></span><span class="line"><span class="cl"> <span class="nb">set</span> transform-set VPN-SET 
+</span></span><span class="line"><span class="cl"> match address <span class="m">110</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">interface Serial0/0/1
+</span></span><span class="line"><span class="cl"> crypto map VPN-MAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configure Cisco Routers for Syslog, NTP, and SSH Operations（配置Cisco路由器以实现Syslog、NTP）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</link>
+      <pubDate>Thu, 23 Jan 2025 12:48:36 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</guid>
+      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;配置OSPF MD5身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置NTP服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标：</h3>
+<ul>
+<li>
+<p>配置OSPF MD5身份验证。</p>
+</li>
+<li>
+<p>配置NTP服务。</p>
+</li>
+<li>
+<p>设置路由器将消息记录到syslog服务器。</p>
+</li>
+<li>
+<p>配置R3路由器以支持SSH连接。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景：</h3>
+<p>在本练习中，您将配置OSPF MD5身份验证以实现安全的路由更新。</p>
+<p>NTP服务器是本次活动中主NTP服务器。您需要在NTP服务器和路由器上配置身份验证，并设置路由器允许软件时钟通过NTP与时间服务器同步。同时，您还需要配置路由器定期使用从NTP获取的时间更新硬件时钟。</p>
+<p>Syslog服务器在此活动提供消息记录功能。您需要配置路由器识别接收日志消息的远程主机（即Syslog服务器）。</p>
+<p>您需要在路由器上配置时间戳服务以便于记录日志。在使用Syslog监控网络时，在Syslog消息中显示正确的日期和时间至关重要。</p>
+<p>此外，您还将配置R3路由器，使其能够通过SSH而非Telnet进行安全管理。服务器已经预先配置好了相应的NTP和Syslog服务，NTP无需身份验证。路由器已预设了以下密码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">启用密码</span><span class="err">：</span><span class="n">ciscoenpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">vty线路密码</span><span class="err">：</span><span class="n">ciscovtypa55</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：请注意，在开发本活动所使用的Packet Tracer版本（v6.2）中，MD5是最强支持的加密方式。虽然MD5存在已知的安全漏洞，但在实际操作中应根据组织的安全需求选择合适的加密方法。在本活动中，安全要求指定使用MD5加密。</p>
+<hr>
+<h3 id="第一部分配置ospf-md5身份验证">第一部分：配置OSPF MD5身份验证</h3>
+<p><strong>步骤1：测试连通性。所有设备应能成功ping通所有其他IP地址。</strong></p>
+<p><strong>步骤2：为区域0内的所有路由器配置OSPF MD5身份验证。</strong></p>
+<p>针对区域0中的所有路由器设置OSPF MD5身份验证：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# router ospf 1
+</span></span><span class="line"><span class="cl">R1(config-router)# area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)#router ospf 1
+</span></span><span class="line"><span class="cl">R2(config-router)#area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#router ospf 1
+</span></span><span class="line"><span class="cl">R3(config-router)#area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：为区域0内的所有路由器配置MD5密钥。</strong></p>
+<p>在R1、R2和R3的串行接口上配置MD5密钥，对密钥1使用密码 <strong>MD5pa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# interface s0/0/0
+</span></span><span class="line"><span class="cl">R1(config-if)# ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)#interface Serial0/0/0
+</span></span><span class="line"><span class="cl">R2(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span><span class="line"><span class="cl">R2(config)#interface Serial0/0/1
+</span></span><span class="line"><span class="cl">R2(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#interface Serial0/0/1
+</span></span><span class="line"><span class="cl">R3(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：验证配置。</strong></p>
+<p>a. 使用命令 <code>show ip ospf interface</code> 验证MD5身份验证配置是否正确生效。</p>
+<p>b. 验证端到端的连通性，确保网络连接无误。</p>
+<h3 id="第二部分配置ntp">第二部分：配置NTP</h3>
+<p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
+<p>a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。</p>
+<p>b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：将R1、R2和R3配置为NTP客户端。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#ntp server 192.168.1.5 key 1
+</span></span><span class="line"><span class="cl">R2(config)#ntp server 192.168.1.5 key 1
+</span></span><span class="line"><span class="cl">R3(config)#ntp server 192.168.1.5 key 1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过执行命令 <code>show ntp status</code> 来验证客户端配置是否正确。</p>
+<p><strong>步骤3：配置路由器定期更新硬件时钟。</strong></p>
+<p>设置R1、R2和R3路由器定期从NTP同步的时间更新硬件时钟。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#ntp update-calendar
+</span></span><span class="line"><span class="cl">R2(config)#ntp update-calendar
+</span></span><span class="line"><span class="cl">R3(config)#ntp update-calendar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>退出全局配置模式，并使用命令 <code>show clock</code> 来验证硬件时钟是否已成功更新。</p>
+<p><strong>步骤4：在路由器上配置NTP身份验证。</strong></p>
+<p>在R1、R2和R3上使用密钥 <strong>1</strong> 和密码 <strong>NTPpa55</strong> 配置NTP身份验证。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R1(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R1(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R2(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R2(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R3(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R3(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤5：配置路由器对日志消息添加时间戳。</strong></p>
+<p>在路由器上配置日志记录的时间戳服务。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#service timestamps log datetime msec
+</span></span><span class="line"><span class="cl">R2(config)#service timestamps log datetime msec
+</span></span><span class="line"><span class="cl">R3(config)#service timestamps log datetime msec
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第三部分配置路由器将消息记录到syslog服务器">第三部分：配置路由器将消息记录到Syslog服务器</h3>
+<p><strong>步骤1：配置路由器以识别接收日志消息的远程主机（即Syslog服务器）。</strong></p>
+<p>路由器控制台将会显示一条消息，表明已经开始记录日志。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#logging 192.168.1.6
+</span></span><span class="line"><span class="cl">R2(config)#logging 192.168.1.6
+</span></span><span class="line"><span class="cl">R3(config)#logging 192.168.1.6
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：验证日志配置。</strong></p>
+<p>使用命令 <code>show logging</code> 来验证是否已启用日志记录功能。</p>
+<p><strong>步骤3：检查Syslog服务器的日志记录。</strong></p>
+<p>在Syslog服务器对话框的服务标签下，选择“Syslog服务”按钮。观察从路由器接收到的日志消息。</p>
+<p>注意：通过在路由器上执行命令可以生成服务器上的日志消息。例如，进入和退出全局配置模式会生成一个信息性配置消息。您可能需要点击其他服务，然后再点击Syslog以刷新消息显示界面。</p>
+<h3 id="第四部分配置r3以支持ssh连接">第四部分：配置R3以支持SSH连接</h3>
+<p><strong>步骤1：配置域名</strong>
+在R3上配置一个域名 <strong>ccnasecurity.com</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#ip domain-name ccnasecurity.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：配置R3上SSH服务器的登录用户</strong>
+创建一个用户名为 <strong>SSHadmin</strong> ，具有最高权限级别的用户ID，并设置秘密密码为 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# username SSHadmin privilege 15 secret ciscosshpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：配置R3上的入站vty线路</strong>
+要求使用本地用户账户进行强制登录和验证，只接受SSH连接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#line vty 0 4
+</span></span><span class="line"><span class="cl">R3(config-line)# login local
+</span></span><span class="line"><span class="cl">R3(config-line)# transport input ssh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：删除R3上的现有密钥对</strong>
+如有任何现有的RSA密钥对，应在路由器上将其删除。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#crypto key zeroize rsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：如果不存在任何密钥，您可能会收到此消息： <strong>% No Signature RSA Keys found in configuration.</strong></p>
+<p><strong>步骤5：为R3生成RSA加密密钥对</strong>
+路由器使用RSA密钥对进行SSH传输数据的身份验证和加密。配置RSA密钥时，选择模数为 <strong>1024</strong> （默认值为512，范围为360至2048）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># crypto key generate rsa</span>
+</span></span><span class="line"><span class="cl"><span class="n">The</span> <span class="n">name</span> <span class="k">for</span> <span class="n">the</span> <span class="n">keys</span> <span class="n">will</span> <span class="n">be</span><span class="p">:</span> <span class="n">R3</span><span class="o">.</span><span class="n">ccnasecurity</span><span class="o">.</span><span class="n">com</span>
+</span></span><span class="line"><span class="cl"><span class="n">Choose</span> <span class="n">the</span> <span class="n">size</span> <span class="n">of</span> <span class="n">the</span> <span class="n">key</span> <span class="n">modulus</span> <span class="ow">in</span> <span class="n">the</span> <span class="nb">range</span> <span class="n">of</span> <span class="mi">360</span> <span class="n">to</span> <span class="mi">2048</span> <span class="k">for</span> <span class="n">your</span>
+</span></span><span class="line"><span class="cl"><span class="n">General</span> <span class="n">Purpose</span> <span class="n">Keys</span><span class="o">.</span> <span class="n">Choosing</span> <span class="n">a</span> <span class="n">key</span> <span class="n">modulus</span> <span class="n">greater</span> <span class="n">than</span> <span class="mi">512</span> <span class="n">may</span> <span class="n">take</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="n">few</span> <span class="n">minutes</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">How</span> <span class="n">many</span> <span class="n">bits</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">modulus</span> <span class="p">[</span><span class="mi">512</span><span class="p">]:</span> <span class="mi">1024</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="n">Generating</span> <span class="mi">1024</span> <span class="n">bit</span> <span class="n">RSA</span> <span class="n">keys</span><span class="p">,</span> <span class="n">keys</span> <span class="n">will</span> <span class="n">be</span> <span class="n">non</span><span class="o">-</span><span class="n">exportable</span><span class="o">...</span><span class="p">[</span><span class="n">OK</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：在Packet Tracer中为R3生成RSA加密密钥对的命令与实验室中的有所不同。</p>
+<p><strong>步骤6：验证SSH配置</strong>
+使用 <code>show ip ssh</code> 命令查看当前设置，确保身份验证超时和重试次数保持默认值120和3。</p>
+<p><strong>步骤7：配置SSH超时和认证参数</strong>
+可以更改默认的SSH超时和认证参数使其更加严格。将超时时间设置为 <strong>90</strong> 秒，认证重试次数设为 <strong>2</strong> 次，版本设为 <strong>2</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#ip ssh version 2
+</span></span><span class="line"><span class="cl">R3(config)#ip ssh authentication-retries 2
+</span></span><span class="line"><span class="cl">R3(config)#ip ssh time-out 90
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再次执行 <code>show ip ssh</code> 命令确认这些值已更改。</p>
+<p><strong>步骤8：尝试从PC-C通过Telnet连接到R3</strong>
+打开PC-C的桌面，选择“命令提示符”图标。从PC-C输入命令通过Telnet连接到R3。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; telnet 192.168.3.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此连接应失败，因为R3已被配置为仅在其虚拟终端线上接受SSH连接。</p>
+<p><strong>步骤9：通过SSH从PC-C连接到R3</strong>
+打开PC-C的桌面，选择“命令提示符”图标。从PC-C输入命令通过SSH连接到R3。当提示输入密码时，请输入为管理员账户配置的密码 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l SSHadmin 192.168.3.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤10：通过R2使用SSH连接到R3</strong>
+为了对R3进行故障排查和维护，ISP的管理员必须使用SSH访问路由器CLI。在R2的CLI中，输入命令通过SSH版本2使用 <strong>SSHadmin</strong> 用户账户连接到R3。当提示输入密码时，请输入为管理员配置的密码 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2# ssh -v 2 -l SSHadmin 10.2.2.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤11：检查结果</strong>
+您的完成百分比应为100%。点击“检查结果”以查看反馈信息和已完成所需组件的验证情况。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># PART1</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART2</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 打开NTP服务器，配置NTP服务。</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART3</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART4</span>
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="n">version</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="nb">authentication-retries</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="nb">time-out</span> <span class="mf">90</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="nb">domain-name</span> <span class="n">ccnasecurity</span><span class="p">.</span><span class="py">com</span>
+</span></span><span class="line"><span class="cl"><span class="n">username</span> <span class="n">SSHadmin</span> <span class="n">privilege</span> <span class="mf">15</span> <span class="n">secret</span> <span class="n">ciscosshpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">crypto</span> <span class="n">key</span> <span class="n">zeroize</span> <span class="n">rsa</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">crypto</span> <span class="n">key</span> <span class="n">generate</span> <span class="n">rsa</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">line</span> <span class="n">vty</span> <span class="mf">0</span> <span class="mf">4</span>
+</span></span><span class="line"><span class="cl"> <span class="n">login</span> <span class="n">local</span>
+</span></span><span class="line"><span class="cl"> <span class="n">transport</span> <span class="n">input</span> <span class="n">ssh</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configure AAA Authentication on Cisco Routers（在思科路由器上配置 AAA 认证）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
+</li>
+<li>
+<p>从R1控制台和PC-A客户端验证本地AAA身份验证功能。</p>
+</li>
+<li>
+<p>配置基于服务器的AAA身份验证，采用TACACS+协议。</p>
+</li>
+<li>
+<p>从PC-B客户端验证基于服务器的AAA（TACACS+）身份验证。</p>
+</li>
+<li>
+<p>配置基于服务器的AAA身份验证，采用RADIUS协议。</p>
+</li>
+<li>
+<p>从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
+<p>您将在路由器R1上创建一个本地用户账户，并配置本地AAA以测试控制台和vty登录：</p>
+<ul>
+<li>
+<p>用户账户：Admin1，密码admin1pa55
+接下来，将配置路由器R2以支持通过TACACS+协议实现的基于服务器的身份验证。TACACS+服务器已经预先配置了以下信息：</p>
+</li>
+<li>
+<p>客户端：R2，关键字为tacacspa55</p>
+</li>
+<li>
+<p>用户账户：Admin2，密码admin2pa55
+最后，您将配置路由器R3以支持通过RADIUS协议实现的基于服务器的身份验证。RADIUS服务器已预先配置如下信息：</p>
+</li>
+<li>
+<p>客户端：R3，关键字为radiuspa55</p>
+</li>
+<li>
+<p>用户账户：Admin3，密码admin3pa55
+此外，路由器还预配置了以下内容：</p>
+</li>
+<li>
+<p>启用秘密密码：ciscoenpa55</p>
+</li>
+<li>
+<p>使用MD5认证的OSPF路由协议，密码为：MD5pa55
+注意：控制台和vty线路尚未预先配置。</p>
+</li>
+</ul>
+<p>注意：尽管IOS版本15.3使用了更为安全的加密哈希算法SCRYPT，但在Packet Tracer当前支持的IOS版本中仍使用MD5。请始终在您的设备上使用最安全的选项。</p>
+<hr>
+<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3>
+<p><strong>步骤1：测试连通性</strong></p>
+<ul>
+<li>
+<p>从PC-A向PC-B执行Ping操作。</p>
+</li>
+<li>
+<p>从PC-A向PC-C执行Ping操作。</p>
+</li>
+<li>
+<p>从PC-B向PC-C执行Ping操作。</p>
+</li>
+</ul>
+<p><strong>步骤2：在R1上配置本地用户名</strong></p>
+<ul>
+<li>在R1上配置一个名为 <strong>Admin1</strong> 的用户名，设置秘密密码为 <strong>admin1pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R1(config)# username Admin1 secret admin1pa55</p>
+</blockquote>
+<p><strong>步骤3：在R1上为控制台访问配置本地AAA认证</strong></p>
+<ul>
+<li>在R1上启用AAA功能，并配置控制台登录时使用本地数据库进行AAA身份验证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# aaa new-model
+R1(config)# aaa authentication login default local</p>
+</blockquote>
+<p><strong>步骤4：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>在R1上针对控制台登录启用AAA，并配置其使用默认方法列表进行AAA身份验证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# line console 0
+R1(config-line)# login authentication default</p>
+</blockquote>
+<p><strong>步骤5：验证AAA认证方法</strong></p>
+<ul>
+<li>使用本地数据库验证用户EXEC登录过程。</li>
+</ul>
+<p>通过以上配置后，可以在R1的控制台上用Admin1账户和对应的密码admin1pa55进行登录，验证本地AAA身份验证是否生效。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3>
+<p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
+a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
+b. 创建一个1024位的RSA加密密钥。</p>
+<blockquote>
+<p>R1(config)#ip domain-name ccnasecurity.com
+R1(config)# crypto key generate rsa</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">R1<span class="o">(</span>config<span class="o">)</span><span class="c1"># crypto key generate rsa</span>
+</span></span><span class="line"><span class="cl">The name <span class="k">for</span> the keys will be: R3.ccnasecurity.com
+</span></span><span class="line"><span class="cl">Choose the size of the key modulus in the range of <span class="m">360</span> to <span class="m">2048</span> <span class="k">for</span> your
+</span></span><span class="line"><span class="cl">General Purpose Keys. Choosing a key modulus greater than <span class="m">512</span> may take
+</span></span><span class="line"><span class="cl">a few minutes.
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">How many bits in the modulus <span class="o">[</span>512<span class="o">]</span>: <span class="m">1024</span>
+</span></span><span class="line"><span class="cl">% Generating <span class="m">1024</span> bit RSA keys, keys will be non-exportable...<span class="o">[</span>OK<span class="o">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：为R1上的vty线路配置命名列表AAA认证方法</strong></p>
+<ul>
+<li>配置名为 <strong>SSH-LOGIN</strong> 的命名列表，用于使用本地AAA进行登录认证。</li>
+</ul>
+<blockquote>
+<p>R1(config)# aaa authentication login SSH-LOGIN local</p>
+</blockquote>
+<p><strong>步骤3：配置vty线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置vty线路使用已定义的AAA方法，并只允许通过SSH进行远程访问。</li>
+</ul>
+<blockquote>
+<p>R1(config)# line vty 0 4
+R1(config-line)# transport input ssh
+R1(config-line)# login authentication SSH-LOGIN</p>
+</blockquote>
+<p><strong>步骤4：验证AAA认证方法</strong></p>
+<ul>
+<li>从PC-A的命令提示符处通过SSH连接到R1，验证SSH配置及AAA身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3>
+<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<ul>
+<li>为了备份目的，在R2上配置一个本地用户名 <strong>Admin2</strong> ，密码为 <strong>admin2pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R2(config)# username Admin2 secret admin2pa55</p>
+</blockquote>
+<p><strong>步骤2：验证TACACS+服务器配置</strong></p>
+<ul>
+<li>点击TACACS+ Server，查看“服务”选项卡中的AAA设置，确认存在针对R2的网络配置条目和针对Admin2的用户设置条目。</li>
+</ul>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在R2上配置TACACS+服务器详细信息</strong></p>
+<ul>
+<li>在R2上配置AAA TACACS+服务器IP地址和共享密钥。</li>
+</ul>
+<p>注意：尽管 <code>tacacs-server host</code> 和 <code>tacacs-server key</code> 命令已过时，但目前Packet Tracer暂不支持新命令 <code>tacacs server</code> 。此处依然使用旧命令进行配置。</p>
+<blockquote>
+<p>R2(config)# tacacs-server host 192.168.2.2
+R2(config)# tacacs-server key tacacspa55</p>
+</blockquote>
+<p><strong>步骤4：为R2的控制台访问配置AAA登录认证</strong></p>
+<ul>
+<li>启用R2上的AAA，并配置所有登录通过AAA TACACS+服务器进行认证，若服务器不可用，则使用本地数据库。</li>
+</ul>
+<blockquote>
+<p>R2(config)# aaa new-model
+R2(config)# aaa authentication login default group tacacs+ local</p>
+</blockquote>
+<p><strong>步骤5：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置控制台登录使用默认的AAA认证方法。</li>
+</ul>
+<blockquote>
+<p>R2(config)#line console 0
+R2(config-line)#login authentication default</p>
+</blockquote>
+<p>由于之前已经全局配置了AAA和TACACS+，此处不再需要单独配置console线路。</p>
+<p><strong>步骤6：验证AAA认证方法</strong></p>
+<ul>
+<li>通过AAA TACACS+服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R2并观察其是否成功通过TACACS+服务器进行身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3>
+<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<ul>
+<li>为了备份目的，在R3上配置一个本地用户名 <strong>Admin3</strong> ，密码为 <strong>admin3pa55</strong> 。</li>
+</ul>
+<blockquote>
+<p>R3(config)# username Admin3 secret admin3pa55</p>
+</blockquote>
+<p><strong>步骤2：验证RADIUS服务器配置</strong></p>
+<ul>
+<li>点击RADIUS服务器，并查看“服务”选项卡中的AAA设置。注意其中包含针对R3的网络配置条目和针对Admin3的用户设置条目。</li>
+</ul>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在R3上配置RADIUS服务器详细信息</strong></p>
+<ul>
+<li>在R3上配置AAA RADIUS服务器IP地址和共享密钥。</li>
+</ul>
+<p>注意：虽然 <code>radius-server host</code> 和 <code>radius-server key</code> 命令可能已过时，但当前Packet Tracer版本暂不支持新的 <code>radius server</code> 命令。此处仍使用旧命令进行配置。</p>
+<blockquote>
+<p>R3(config)# radius-server host 192.168.3.2
+R3(config)# radius-server key radiuspa55</p>
+</blockquote>
+<p><strong>步骤4：为R3的控制台访问配置AAA登录认证</strong></p>
+<ul>
+<li>启用R3上的AAA，并配置所有登录通过AAA RADIUS服务器进行认证，若服务器不可用，则使用本地数据库。</li>
+</ul>
+<blockquote>
+<p>R3(config)# aaa new-model
+R3(config)# aaa authentication login default group radius local</p>
+</blockquote>
+<p><strong>步骤5：配置控制台线路使用定义的AAA认证方法</strong></p>
+<ul>
+<li>配置控制台登录使用默认的AAA认证方法。</li>
+</ul>
+<blockquote>
+<p>R3(config)#line console 0
+R3(config-line)#login authentication default</p>
+</blockquote>
+<p>由于之前已经全局配置了AAA和RADIUS，此处不再需要单独配置console线路。</p>
+<p><strong>步骤6：验证AAA认证方法</strong></p>
+<ul>
+<li>通过AAA RADIUS服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R3并观察其是否成功通过RADIUS服务器进行身份验证。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></li>
+</ul>
+<p><strong>步骤7：检查结果</strong></p>
+<ul>
+<li>您的完成度应达到100%。点击“检查结果”以查看反馈和已完成所需组件的验证情况。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Layer 2 Security（第二层安全配置任务）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>确保将中心交换机（3560型号）设置为根桥。</p>
+</li>
+<li>
+<p>保护生成树协议参数以防止对STP的操控攻击。</p>
+</li>
+<li>
+<p>启用端口安全功能以防止CAM表溢出攻击。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
+<p>为了确保网络性能和安全性达到最优状态，管理员希望确定中心3560型号交换机作为根桥。为防止对生成树协议进行篡改攻击，管理员希望确保STP参数得到安全配置。针对CAM表溢出攻击的风险，网络管理员决定配置端口安全策略，限制每个交换机端口学习到的MAC地址数量。一旦学习到的MAC地址超过设定的限制，管理员希望建立机制自动关闭该端口。</p>
+<p>所有交换机设备已经预先配置了以下信息：</p>
+<ul>
+<li>
+<p>启用密码： <strong>ciscoenpa55</strong></p>
+</li>
+<li>
+<p>控制台密码： <strong>ciscoconpa55</strong></p>
+</li>
+<li>
+<p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
+</li>
+</ul>
+<h3 id="第一部分配置根桥">第一部分：配置根桥</h3>
+<p><strong>步骤1：确定当前的根桥。</strong></p>
+<p>从中心交换机（Central）发出 <code>show spanning-tree</code> 命令，以确定当前的根桥、查看正在使用的端口及其状态。</p>
+<blockquote>
+<p>Central#show spanning-tree</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">VLAN0001</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Spanning</span> <span class="n">tree</span> <span class="n">enabled</span> <span class="n">protocol</span> <span class="n">ieee</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Root</span> <span class="n">ID</span>    <span class="n">Priority</span>    <span class="mf">32769</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Address</span>     <span class="mf">0009</span><span class="p">.</span><span class="py">7C61</span><span class="p">.</span><span class="py">9058</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Cost</span>        <span class="mf">4</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Port</span>        <span class="mf">25</span><span class="p">(</span><span class="n">GigabitEthernet0</span><span class="p">/</span><span class="mf">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Hello</span> <span class="n">Time</span>  <span class="mf">2</span> <span class="n">sec</span>  <span class="n">Max</span> <span class="n">Age</span> <span class="mf">20</span> <span class="n">sec</span>  <span class="n">Forward</span> <span class="n">Delay</span> <span class="mf">15</span> <span class="n">sec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="n">Bridge</span> <span class="n">ID</span>  <span class="n">Priority</span>    <span class="mf">32769</span>  <span class="p">(</span><span class="n">priority</span> <span class="mf">32768</span> <span class="nb">sys-id</span><span class="n">-ext</span> <span class="mf">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Address</span>     <span class="n">00D0</span><span class="p">.</span><span class="py">D31C</span><span class="p">.</span><span class="py">634C</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Hello</span> <span class="n">Time</span>  <span class="mf">2</span> <span class="n">sec</span>  <span class="n">Max</span> <span class="n">Age</span> <span class="mf">20</span> <span class="n">sec</span>  <span class="n">Forward</span> <span class="n">Delay</span> <span class="mf">15</span> <span class="n">sec</span>
+</span></span><span class="line"><span class="cl">             <span class="n">Aging</span> <span class="n">Time</span>  <span class="mf">20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Interface</span>        <span class="n">Role</span> <span class="n">Sts</span> <span class="n">Cost</span>      <span class="n">Prio</span><span class="p">.</span><span class="py">Nbr</span> <span class="nb">Type
+</span></span></span><span class="line"><span class="cl"><span class="p">----------------</span> <span class="p">----</span> <span class="p">---</span> <span class="p">---------</span> <span class="p">--------</span> <span class="p">--------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="n">Gi0</span><span class="p">/</span><span class="mf">2</span>            <span class="n">Desg</span> <span class="n">FWD</span> <span class="mf">4</span>         <span class="mf">128.26</span>   <span class="n">P2p</span>
+</span></span><span class="line"><span class="cl"><span class="n">Gi0</span><span class="p">/</span><span class="mf">1</span>            <span class="n">Root</span> <span class="n">FWD</span> <span class="mf">4</span>         <span class="mf">128.25</span>   <span class="n">P2p</span>
+</span></span><span class="line"><span class="cl"><span class="n">Fa0</span><span class="p">/</span><span class="mf">1</span>            <span class="n">Desg</span> <span class="n">FWD</span> <span class="mf">19</span>        <span class="mf">128.1</span>    <span class="n">P2p</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>哪个交换机是当前的根桥？</p>
+<p>基于当前的根桥，请绘制由此得出的生成树拓扑结构。</p>
+<p><strong>步骤2：将Central设置为主根桥。</strong></p>
+<p>使用命令 <code>spanning-tree vlan 1 root primary</code> ，将 <strong>Central</strong> 设置为根桥。</p>
+<blockquote>
+<p>Central(config)#spanning-tree vlan 1 root primary</p>
+</blockquote>
+<p><strong>步骤3：将SW-1设置为备用根桥。</strong></p>
+<p>使用命令 <code>spanning-tree vlan 1 root secondary</code> ，将 <strong>SW-1</strong> 设置为备用根桥。</p>
+<blockquote>
+<p>SW-1(config)#spanning-tree vlan 1 root secondary</p>
+</blockquote>
+<p><strong>步骤4：验证生成树配置。</strong></p>
+<p>发出 <code>show spanning-tree</code> 命令来验证Central已成为根桥。</p>
+<p>在Central#提示符下执行了该命令后显示如下信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">VLAN0001</span>
+</span></span><span class="line"><span class="cl">   <span class="n">Spanning</span> <span class="n">tree</span> <span class="n">enabled</span> <span class="n">protocol</span> <span class="n">ieee</span>
+</span></span><span class="line"><span class="cl">   <span class="n">Root</span> <span class="n">ID</span>  <span class="n">Priority</span>      <span class="mf">24577</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Address</span>       <span class="n">00D0</span><span class="p">.</span><span class="py">D31C</span><span class="p">.</span><span class="py">634C</span>
+</span></span><span class="line"><span class="cl">          <span class="p">--&gt;&gt;</span>  <span class="n">This</span> <span class="n">bridge</span> <span class="n">is</span> <span class="n">the</span> <span class="n">root</span>  <span class="p">&lt;&lt;--</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Hello</span> <span class="n">Time</span>  <span class="mf">2</span> <span class="n">sec</span>  <span class="n">Max</span> <span class="n">Age</span>  <span class="mf">20</span> <span class="n">sec</span>   <span class="n">Forward</span> <span class="n">Delay</span>  <span class="mf">15</span> <span class="n">sec</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>根据上述信息，哪个交换机是当前的根桥？</p>
+<p>基于新的根桥设置，请绘制由此得出的生成树拓扑结构。</p>
+<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3>
+<p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
+<p>PortFast应在连接至单个工作站或服务器的接入端口上配置，以使它们更快地进入活动状态。在SW-A和SW-B的相连接入端口上使用 <code>spanning-tree portfast</code> 命令来启用 <strong>PortFast</strong> 。</p>
+<blockquote>
+<p>SW-A(config)#int range f0/1-4
+SW-A(config-if-range)#spanning-tree portfast</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#int range f0/1-4
+SW-B(config-if-range)#spanning-tree portfast</p>
+</blockquote>
+<p><strong>步骤2：在所有接入端口上启用BPDU防护。</strong></p>
+<p>BPDU guard是一项功能，可以有助于防止恶意交换机和在接入端口上的欺骗行为。在SW-A和SW-B的接入端口上启用BPDU防护。</p>
+<p>注解：为了防止STP报文（BPDU）操纵攻击，在接口配置模式下可以对每个单独端口使用命令 <code>spanning-tree bpduguard enable</code> 来启用BPDU防护；或者在全局配置模式下使用命令 <code>spanning-tree portfast bpduguard default</code> 来默认为所有启用PortFast的端口启用BPDU防护。针对本活动评分目的，请使用 <code>spanning-tree bpduguard enable</code> 命令。</p>
+<blockquote>
+<p>SW-A(config)#int range f0/1-4
+SW-A(config-if-range)#spanning-tree bpduguard enable</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#int range f0/1-4
+SW-B(config-if-range)#spanning-tree bpduguard enable</p>
+</blockquote>
+<p><strong>步骤3：启用根保护。</strong></p>
+<p>根保护可以在非根端口的所有交换机端口上启用，最好部署在连接到其他非根交换机的端口上。使用 <code>show spanning-tree</code> 命令确定每个交换机上根端口的位置。</p>
+<p>在SW-1上，在端口F0/23和F0/24上启用根保护。同样，在SW-2上，在端口F0/23和F0/24上也启用根保护。</p>
+<blockquote>
+<p>SW-1(config)#int range f0/23-24
+SW-1(config-if-range)#spanning-tree guard root</p>
+</blockquote>
+<blockquote>
+<p>SW-2(config)#int range f0/23-24
+SW-2(config-if-range)#spanning-tree guard root</p>
+</blockquote>
+<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3>
+<p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
+<p>此操作应在SW-A和SW-B的所有接入端口上执行。设置允许学习的MAC地址最大数量为 <strong>2</strong> ，允许动态学习MAC地址，并将违规处理方式设为 <strong>shutdown</strong> （关闭）。</p>
+<p>注解：只有当交换机端口配置为接入模式时，才能启用端口安全功能。</p>
+<blockquote>
+<p>SW-A(config)#interface range f0/1 - 22
+SW-A(config-if-range)#switchport mode access
+SW-A(config-if-range)#switchport port-security
+SW-A(config-if-range)#switchport port-security maximum 2
+SW-A(config-if-range)#switchport port-security violation shutdown
+SW-A(config-if-range)#switchport port-security mac-address sticky</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#interface range f0/1-22
+SW-B(config-if-range)#switchport mode access
+SW-B(config-if-range)#switchport port-security max
+SW-B(config-if-range)#switchport port-security maximum 2
+SW-B(config-if-range)#switchport port-security violation shutdown
+SW-B(config-if-range)#switchport port-security mac-address sticky</p>
+</blockquote>
+<p>为什么与其它交换机设备相连的端口不启用端口安全？</p>
+<p><strong>步骤2：验证端口安全配置。</strong></p>
+<p>a. 在SW-A上，输入命令 <code>show port-security interface f0/1</code> 来确认已成功配置了端口安全。</p>
+<blockquote>
+<p>SW-A#show port-security int f0/1
+<mark>Port Security : Enabled</mark>
+Port Status : Secure-up
+<mark>Violation Mode : Shutdown</mark>
+Aging Time : 0 mins
+Aging Type : Absolute
+SecureStatic Address Aging : Disabled
+<mark>Maximum MAC Addresses : 2</mark>
+Total MAC Addresses : 0
+Configured MAC Addresses : 0
+<mark>Sticky MAC Addresses : 0</mark>
+<mark>Last Source Address:Vlan : 0000.0000.0000:0</mark>
+Security Violation Count : 0</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">SW-A</span><span class="c"># show port-security interface f0/1</span>
+</span></span><span class="line"><span class="cl"><span class="n">端口安全</span>              <span class="err">:</span> <span class="n">已启用</span>
+</span></span><span class="line"><span class="cl"><span class="n">端口状态</span>                <span class="err">:</span> <span class="n">安全且已启动</span>
+</span></span><span class="line"><span class="cl"><span class="n">违规模式</span>             <span class="err">:</span> <span class="n">关闭端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">老化时间</span>                 <span class="err">:</span> <span class="n">0分钟</span>
+</span></span><span class="line"><span class="cl"><span class="n">老化类型</span>                 <span class="err">:</span> <span class="n">绝对时间</span>
+</span></span><span class="line"><span class="cl"><span class="n">静态安全MAC地址老化</span><span class="err">:</span> <span class="n">禁用</span>
+</span></span><span class="line"><span class="cl"><span class="n">最大MAC地址数</span>      <span class="err">:</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">总MAC地址数</span>        <span class="err">:</span> <span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">已配置MAC地址数</span>   <span class="err">:</span> <span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">粘性MAC地址数</span>       <span class="err">:</span> <span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">最近源地址</span><span class="err">:</span><span class="n">VLAN</span>   <span class="err">:</span> <span class="mf">0000.0000</span><span class="p">.</span><span class="mf">0000</span><span class="err">:</span><span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">安全违规计数</span>         <span class="err">:</span> <span class="mf">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 从C1向C2发送Ping请求，然后再次输入 <code>show port-security interface f0/1</code> 命令，以验证交换机是否已学会C1的MAC地址。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：禁用未使用的端口。</strong></p>
+<p>禁用当前所有未使用的端口。</p>
+<blockquote>
+<p>SW-A(config)#int range f0/5-22
+SW-A(config-if-range)#shutdown</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#int range f0/5-22
+SW-B(config-if-range)#shutdown</p>
+</blockquote>
+<p><strong>步骤4：检查结果。</strong></p>
+<p>您的完成度应为100%。点击“检查结果”查看反馈信息以及所需组件完成情况的验证。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<p><strong>Central:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">!</span> <span class="n">使Central成为Vlan1的根桥</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">vlan</span> <span class="mf">1</span> <span class="n">root</span> <span class="n">primary</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>SW-1:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">!</span> <span class="n">使SW</span><span class="p">-</span><span class="n">1成为Vlan1的次根桥</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">vlan</span> <span class="mf">1</span> <span class="n">root</span> <span class="n">secondary</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">进入f0</span><span class="p">/</span><span class="mf">23</span><span class="n">-f0</span><span class="p">/</span><span class="n">24端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">23</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">24</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">启用STP根防护功能</span><span class="err">，</span><span class="n">在此端口不接受拥有更优BID的BPDU报文</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">guard</span> <span class="n">root</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>SW-2:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">!</span> <span class="n">进入f0</span><span class="p">/</span><span class="mf">23</span><span class="n">-f0</span><span class="p">/</span><span class="n">24端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">23</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">24</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">启用STP根防护功能</span><span class="err">，</span><span class="n">在此端口不接受拥有更优BID的BPDU报文</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">guard</span> <span class="n">root</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>SW-A:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">!</span> <span class="n">选择接入的端口</span><span class="err">，</span><span class="n">F0</span><span class="p">/</span><span class="mf">1</span><span class="n">-F0</span><span class="p">/</span><span class="mf">4</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">1</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">4</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">让F0</span><span class="p">/</span><span class="mf">1</span><span class="n">-F0</span><span class="p">/</span><span class="n">4端口开启portfast</span><span class="err">（</span><span class="n">不参与生成树</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">portfast</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">为他们启用BPDU防护功能</span><span class="err">，</span><span class="n">在此端口不接受BPDU</span><span class="err">；</span><span class="n">收到BPDU</span><span class="err">，</span><span class="n">端口禁用</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">bpduguard</span> <span class="n">enable</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">开启access模式</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">mode</span> <span class="n">access</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">开启端口安全</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置最大Mac学习数为2</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="n">maximum</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置学习到的Mac地址将被保存</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="nb">mac-address</span> <span class="n">sticky</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置超过措施</span><span class="err">：</span><span class="n">关闭端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="n">violation</span> <span class="n">shutdown</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">进入不使用的端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">5</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">22</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">关闭</span>
+</span></span><span class="line"><span class="cl"><span class="n">shutdown</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>SW-B:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">!</span> <span class="n">选择接入的端口</span><span class="err">，</span><span class="n">F0</span><span class="p">/</span><span class="mf">1</span><span class="n">-F0</span><span class="p">/</span><span class="mf">4</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">1</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">4</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">让F0</span><span class="p">/</span><span class="mf">1</span><span class="n">-F0</span><span class="p">/</span><span class="n">4端口开启portfast</span><span class="err">（</span><span class="n">不参与生成树</span><span class="err">）</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">portfast</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">为他们开启BPDU</span>
+</span></span><span class="line"><span class="cl"><span class="nb">spanning-tree</span> <span class="n">bpduguard</span> <span class="n">enable</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">开启access模式</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">mode</span> <span class="n">access</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">开启端口安全</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置最大Mac学习数为2</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="n">maximum</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置学习到的Mac地址将被保存</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="nb">mac-address</span> <span class="n">sticky</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">设置超过措施</span><span class="err">：</span><span class="n">关闭端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="nb">port-security</span> <span class="n">violation</span> <span class="n">shutdown</span> 
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">进入不使用的端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">range</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">5</span> <span class="p">-</span> <span class="n">fastEthernet</span> <span class="mf">0</span><span class="p">/</span><span class="mf">22</span>
+</span></span><span class="line"><span class="cl"><span class="p">!</span> <span class="n">关闭</span>
+</span></span><span class="line"><span class="cl"><span class="n">shutdown</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configuring Extended ACLs - Scenario 1（配置扩展访问控制列表 - 场景1）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
+      <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
+&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
+<p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
+<h3 id="背景场景">背景/场景</h3>
+<p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
+<hr>
+<h3 id="第一部分配置应用并验证一个编号扩展访问控制列表">第一部分：配置、应用并验证一个编号扩展访问控制列表</h3>
+<p><strong>步骤 1：配置ACL以允许FTP和ICMP流量</strong></p>
+<p>a. 在R1的全局配置模式下，输入以下命令确定扩展访问列表的第一个有效编号。</p>
+<blockquote>
+<p>R1(config)# access-list ?
+&lt;1-99&gt; IP标准访问列表
+&lt;100-199&gt; IP扩展访问列表</p>
+</blockquote>
+<p>b. 向命令中添加数字100后跟问号。</p>
+<blockquote>
+<p>R1(config)# access-list 100 ?
+deny 拒绝指定的数据包
+permit 允许转发指定的数据包
+remark 访问列表条目注释</p>
+</blockquote>
+<p>c. 为了允许FTP流量，在“permit”后面输入问号。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit ?
+ahp 认证报头协议
+eigrp 思科 EIGRP 路由协议
+esp 封装安全负载
+gre 思科 GRE 隧道
+icmp Internet 控制消息协议
+ip 任意 Internet 协议
+ospf OSPF 路由协议
+tcp 传输控制协议
+udp 用户数据报协议</p>
+</blockquote>
+<p>d. 此ACL允许FTP和ICMP流量。虽然ICMP已列出，但FTP未列出，因为FTP使用TCP协议。因此，输入“tcp”进一步细化ACL帮助信息。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit tcp ?
+A.B.C.D 源地址
+any 任意源主机
+host 单个源主机</p>
+</blockquote>
+<p>e. 注意可以通过使用“host”关键字仅过滤PC1的流量，或者允许任何主机。在本例中，允许任何属于172.22.34.64/27网络地址范围内的设备。输入网络地址后跟问号。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit tcp 172.22.34.64 ?
+A.B.C.D 源通配符位</p>
+</blockquote>
+<p>f. 计算通配符掩码，通过计算子网掩码的二进制相反数。</p>
+<p>255.255.255.224 = 11111111.11111111.11111111.11100000
+0.0.0.31 = 00000000.00000000.00000000.00011111</p>
+<p>g. 输入通配符掩码后跟问号。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 ?
+A.B.C.D 目的地址
+any 任意目的主机
+eq 仅匹配给定端口号上的数据包
+gt 仅匹配具有较大端口号的数据包
+host 单个目的主机
+lt 仅匹配具有较小端口号的数据包
+neq 仅匹配非给定端口号上的数据包
+range 仅匹配端口号范围内的数据包</p>
+</blockquote>
+<p>h. 配置目标地址。在此场景中，我们正在为单个目标（即服务器）过滤流量。输入“host”关键字后跟服务器的IP地址。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 ?
+dscp 匹配具有给定 dscp 值的数据包
+eq 仅匹配给定端口号上的数据包
+established 已建立
+gt 仅匹配有更大端口号的数据包
+lt 仅匹配有更小端口号的数据包
+neq 仅匹配不具有给定端口号的数据包
+precedence 匹配具有给定优先级值的数据包
+range 仅匹配端口号范围内的数据包</p>
+</blockquote>
+<p>i. 注意其中一个选项是（回车）。换句话说，您可以按Enter键，该语句将允许所有TCP流量。然而，我们只允许FTP流量；因此，输入“eq”关键字后跟问号以显示可用选项。然后输入“ftp”并按Enter。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit tcp 172.22.34.64 0.0.0.31 host 172.22.34.62 eq ftp</p>
+</blockquote>
+<p>j. 创建第二个访问列表语句以允许从PC1到Server的ICMP（ping等）流量。注意，访问列表编号保持不变，并且不需要指定特定类型的ICMP流量。</p>
+<blockquote>
+<p>R1(config)# access-list 100 permit icmp 172.22.34.64 0.0.0.31 host 172.22.34.62
+&lt;0-65535&gt; 端口号
+ftp 文件传输协议 (21)
+pop3 邮局协议 v3 (110)
+smtp 简单邮件传输协议 (25)
+telnet Telnet (23)
+www 万维网（HTTP，80）</p>
+</blockquote>
+<p>k. 默认情况下，所有其他流量都将被拒绝。</p>
+<p><strong>步骤 2：在正确接口上应用ACL以过滤流量</strong></p>
+<p>从R1的角度看，ACL 100应用于与Gigabit Ethernet 0/0接口相连的网络中的入站流量。进入接口配置模式并应用ACL。</p>
+<blockquote>
+<p>R1(config)# interface gigabitEthernet 0/0
+R1(config-if)# ip access-group 100 in</p>
+</blockquote>
+<p><strong>步骤 3：验证ACL实现</strong></p>
+<p>a. 从PC1 ping Server。如果无法成功ping通，请先验证IP地址是否正确。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC1 FTP至Server。用户名和密码均为cisco。</p>
+<blockquote>
+<p>PC&gt; ftp 172.22.34.62</p>
+</blockquote>
+<p>c. 退出Server上的FTP服务。</p>
+<blockquote>
+<p>ftp&gt; quit</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>d. 从PC1 ping PC2。由于未明确允许此流量，目标主机应无法到达。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3>
+<p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
+<p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
+<blockquote>
+<p>R1(config)# ip access-list ?
+extended 扩展访问列表
+standard 标准访问列表</p>
+</blockquote>
+<p>b. 您可以配置命名的标准和扩展ACL。由于此访问列表需要过滤源和目标IP地址，因此必须是扩展类型。将名称设为 <strong>HTTP_ONLY</strong> （请注意，在Packet Tracer中评分时，名称区分大小写）。</p>
+<blockquote>
+<p>R1(config)# ip access-list extended HTTP_ONLY</p>
+</blockquote>
+<p>c. 提示符会改变。现在您处于扩展命名ACL配置模式。PC2 LAN上的所有设备都需要TCP访问权限。输入网络地址后跟问号。</p>
+<blockquote>
+<p>R1(config-ext-nacl)# permit tcp 172.22.34.96 ?
+A.B.C.D 源通配符位</p>
+</blockquote>
+<p>d. 另一种计算通配符的方法是从255.255.255.255减去子网掩码：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">= 0. 0. 0. 15</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15 ?</p>
+</blockquote>
+<p>e. 完成语句，指定服务器地址，并筛选www流量，如同第一部分操作一样。</p>
+<blockquote>
+<p>R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15 host 172.22.34.62 eq www</p>
+</blockquote>
+<p>f. 创建第二个访问列表语句，允许从PC2到Server的ICMP（ping等）流量。注意：提示符保持不变，此处无需指定特定类型的ICMP流量。</p>
+<blockquote>
+<p>R1(config-ext-nacl)# permit icmp 172.22.34.96 0.0.0.15 host 172.22.34.62</p>
+</blockquote>
+<p>g. 默认情况下，所有其他流量都将被拒绝。退出扩展命名ACL配置模式。</p>
+<p><strong>步骤 2：在正确接口上应用ACL以过滤流量</strong></p>
+<p>从R1的角度看，访问列表HTTP_ONLY应用于与Gigabit Ethernet 0/1接口相连的网络中的入站流量。进入接口配置模式并应用ACL。</p>
+<blockquote>
+<p>R1(config)# interface gigabitEthernet 0/1
+R1(config-if)# ip access-group HTTP_ONLY in</p>
+</blockquote>
+<p><strong>步骤 3：验证ACL实现</strong></p>
+<p>a. 从PC2 ping Server。如果ping成功，则继续进行下一步；如果不成功，请先验证IP地址是否正确。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC2通过FTP连接到Server。连接应该失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>c. 在PC2上打开网页浏览器，将Server的IP地址作为URL输入。连接应该成功建立。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Layer 2 VLAN Security（第二层VLAN安全配置任务）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在SW-1和SW-2之间建立新的冗余链路。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>在SW-1和SW-2之间建立新的冗余链路。</p>
+</li>
+<li>
+<p>在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。</p>
+</li>
+<li>
+<p>创建一个新的管理VLAN（VLAN 20）并将一台管理PC连接到该VLAN。</p>
+</li>
+<li>
+<p>实施ACL以防止外部用户访问管理VLAN。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>一家公司的网络当前使用两个独立的VLAN：VLAN 5和VLAN 10。此外，所有干线端口都已配置为本征VLAN 15。网络管理员希望在交换机SW-1和SW-2之间添加一条冗余链路。这条链路必须启用中继功能，并确保所有必要的安全设置到位。</p>
+<p>此外，网络管理员还希望将一台管理PC连接到交换机SW-A。管理员希望这台管理PC能够连接到所有交换机及路由器，但不希望任何其他设备能够连接到管理PC或这些交换机上。因此，管理员计划创建一个新的VLAN 20用于管理目的。</p>
+<p>所有设备已经预先配置了以下信息：</p>
+<ul>
+<li>
+<p>启用密码： <strong>ciscoenpa55</strong></p>
+</li>
+<li>
+<p>控制台密码： <strong>ciscoconpa55</strong></p>
+</li>
+<li>
+<p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
+</li>
+</ul>
+<h3 id="第一部分验证连通性">第一部分：验证连通性</h3>
+<p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：验证C2（VLAN 10）与D1（VLAN 5）之间的连通性。</strong>
+注：如果使用简易PDU GUI包，请确保ping两次以允许ARP过程完成。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3>
+<p><strong>步骤1：连接SW-1和SW-2。</strong></p>
+<p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：在SW-1和SW-2之间的链路上启用干线功能，包括所有干线安全机制。</strong></p>
+<p>已预先配置了所有现存干线接口的干线功能。新链接必须设置为干线，并包括所有干线安全机制。在SW-1和SW-2上，将端口设置为干线模式，将本征VLAN 15分配给干线端口，并禁用自动协商功能。</p>
+<blockquote>
+<p>SW-1(config)#interface f0/23
+SW-1(config-if)#switchport mode trunk
+SW-1(config-if)#switchport trunk native vlan 15
+SW-1(config-if)#switchport nonegotiate
+SW-1(config-if)#no shutdown</p>
+</blockquote>
+<blockquote>
+<p>SW-2(config)#interface f0/23
+SW-2(config-if)#switchport mode trunk
+SW-2(config-if)#switchport trunk native vlan 15
+SW-2(config-if)#switchport nonegotiate
+SW-2(config-if)#no shutdown</p>
+</blockquote>
+<h3 id="第三部分启用vlan-20作为管理vlan">第三部分：启用VLAN 20作为管理VLAN</h3>
+<p>网络管理员希望通过管理PC访问所有交换机和路由设备。出于安全原因，管理员希望确保所有受管设备都在一个独立的VLAN中。</p>
+<p><strong>步骤1：在SW-A上启用管理VLAN（VLAN 20）。</strong></p>
+<p>a. 在SW-A上启用VLAN 20。</p>
+<blockquote>
+<p>SW-A(config)#vlan 20
+SW-A(config-vlan)#exit</p>
+</blockquote>
+<p>b. 创建VLAN 20接口并在192.168.20.0/24网络内分配一个IP地址。</p>
+<blockquote>
+<p>SW-A(config)#interface vlan 20
+SW-A(config-if)#ip address 192.168.20.1 255.255.255.0</p>
+</blockquote>
+<p><strong>步骤2：在所有其他交换机上启用相同的管理VLAN。</strong></p>
+<p>a. 在SW-B、SW-1、SW-2和中央交换机上创建管理VLAN。</p>
+<blockquote>
+<p>Central(config)#vlan 20
+Central(config-vlan)#exit</p>
+</blockquote>
+<blockquote>
+<p>SW-1(config)#vlan 20
+SW-1(config-vlan)#exit</p>
+</blockquote>
+<blockquote>
+<p>SW-2(config)#vlan 20
+SW-2(config-vlan)#exit</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#vlan 20
+SW-B(config-vlan)#exit</p>
+</blockquote>
+<p>b. 在所有交换机上创建VLAN 20接口，并在192.168.20.0/24网络内分配一个IP地址。</p>
+<blockquote>
+<p>Central(config)#int vlan 20
+Central(config-if)#ip address 192.168.20.2 255.255.255.0</p>
+</blockquote>
+<blockquote>
+<p>SW-1(config)#int vlan 20
+SW-1(config-if)#ip address 192.168.20.3 255.255.255.0</p>
+</blockquote>
+<blockquote>
+<p>SW-2(config)#int vlan 20
+SW-2(config-if)#ip address 192.168.20.4 255.255.255.0</p>
+</blockquote>
+<blockquote>
+<p>SW-B(config)#int vlan 20
+SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
+</blockquote>
+<p><strong>步骤3：连接并配置管理PC。</strong></p>
+<p>将管理PC连接到SW-A的F0/1端口，并确保为其分配192.168.20.0/24网络内的可用IP地址。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤4：在SW-A上确保管理PC属于VLAN 20。</strong></p>
+<p>接口F0/1必须是VLAN 20的一部分。</p>
+<blockquote>
+<p>SW-A(config)#int f0/1
+SW-A(config-if)#switchport access vlan 20
+SW-A(config-if)#no shutdown</p>
+</blockquote>
+<p><strong>步骤5：验证管理PC与所有交换机之间的连通性</strong> 。</p>
+<p>管理PC应能成功ping通SW-A、SW-B、SW-1、SW-2和中央交换机。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
+             alt="请添加图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
+             alt="请添加图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3>
+<p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
+<p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
+<blockquote>
+<p>R1(config)#int g0/0.3
+R1(config-subif)#encapsulation dot1Q 20</p>
+</blockquote>
+<p>b. 分配192.168.20.0/24网络内的IP地址。</p>
+<blockquote>
+<p>R1(config)#int g0/0.3
+R1(config-subif)#ip address 192.168.20.100 255.255.255.0</p>
+</blockquote>
+<p>步骤2：验证管理PC与R1之间的连通性。</p>
+<p>务必在管理PC上配置默认网关以实现连通性。</p>
+<p><strong>步骤3：启用安全性。</strong></p>
+<p>虽然管理PC必须能够访问路由器，但其他任何PC都不应能够访问管理VLAN。</p>
+<p>a. 创建只允许管理PC访问路由器的ACL。</p>
+<blockquote>
+<p>R1(config)#access-list 101 deny ip any 192.168.20.0 0.0.0.255
+R1(config)#access-list 101 permit ip any any
+R1(config)#access-list 102 permit ip host 192.168.20.6 any</p>
+</blockquote>
+<p>b. 将ACL应用到适当的接口上。</p>
+<blockquote>
+<p>R1(config)#int g0/0.1
+R1(config-subif)#ip access-group 101 in
+R1(config-subif)#int g0/0.2
+R1(config-subif)#ip access-group 101 in</p>
+</blockquote>
+<blockquote>
+<p>R1(config)#line vty 0 4
+R1(config-line)#access-class 102 in</p>
+</blockquote>
+<p>注：可以有多种方式创建ACL来满足必要的安全要求。因此，该活动这一部分的评分基于正确的连通性需求。管理PC必须能够连接到所有交换机和路由器，而所有其他PC则不能连接到管理VLAN内的任何设备。</p>
+<p><strong>步骤4：验证安全性。</strong></p>
+<p>a. 验证只有管理PC可以访问路由器。使用SSH从管理PC通过用户名SSHadmin和密码ciscosshpa55登录R1。</p>
+<blockquote>
+<p>PC&gt; ssh -l SSHadmin 192.168.20.100</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从管理PC尝试ping SW-A、SW-B和R1，是否成功？请解释结果。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<blockquote>
+<p>VLAN20 中的设备不需要通过路由器进行路由，不受ACL的影响。</p>
+</blockquote>
+<p>c. 从D1尝试ping管理PC，是否成功？请解释结果。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<blockquote>
+<p>不同 VLAN 中的设备 ping VLAN20 中的设备，必须进行路由，而路由器具有阻止所有数据包访问 192.168.20.0 目标网络的 ACL。</p>
+</blockquote>
+<p><strong>步骤5：检查结果。</strong></p>
+<p>您的完成度应该为100%。点击“检查结果”查看反馈信息以及已完成的必要组件验证。</p>
+<p>如果所有组件都看似正确，但活动仍显示未完成，则可能是由于验证ACL操作的连通性测试出现问题。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<p><strong>Part 2:</strong></p>
+<p>SW-1、SW-2</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">连接SW</span><span class="p">-</span><span class="mf">1</span><span class="err">、</span><span class="n">SW</span><span class="p">-</span><span class="mf">2</span><span class="err">，</span><span class="n">使用交叉线路</span><span class="err">，</span><span class="n">要开端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">连接SW-A</span><span class="err">、</span><span class="n">PC</span><span class="err">，</span><span class="n">要开端口</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">f0</span><span class="p">/</span><span class="mf">23</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">mode</span> <span class="n">trunk</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">trunk</span> <span class="n">native</span> <span class="n">vlan</span> <span class="mf">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">nonegotiate</span>
+</span></span><span class="line"><span class="cl"><span class="n">no</span> <span class="n">shutdown</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Part 3：</strong></p>
+<p>SW-A：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">int</span> <span class="n">f0</span><span class="p">/</span><span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">access</span> <span class="n">vlan</span> <span class="mf">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">no</span> <span class="n">shutdown</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>SW-1：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">int</span> <span class="n">f0</span><span class="p">/</span><span class="mf">23</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">trunk</span> <span class="n">native</span> <span class="n">vlan</span> <span class="mf">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">mode</span> <span class="n">trunk</span> 
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">nonegotiate</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>SW-2:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">int</span> <span class="n">f0</span><span class="p">/</span><span class="mf">23</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">trunk</span> <span class="n">native</span> <span class="n">vlan</span> <span class="mf">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">mode</span> <span class="n">trunk</span> 
+</span></span><span class="line"><span class="cl"><span class="n">switchport</span> <span class="n">nonegotiate</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>SW-A、B、1、2、Central：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">vlan</span> <span class="mf">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">int</span> <span class="n">vlan</span> <span class="mf">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">address</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">20</span><span class="p">.</span><span class="py">XXX</span> <span class="mf">255.255</span><span class="p">.</span><span class="py">255</span><span class="p">.</span><span class="py">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Part 4:</strong></p>
+<p>R1：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">int</span> <span class="n">g0</span><span class="p">/</span><span class="mf">0.3</span>
+</span></span><span class="line"><span class="cl"><span class="n">encapsulation</span> <span class="n">dot1Q</span> <span class="mf">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">address</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">20</span><span class="p">.</span><span class="py">20</span> <span class="mf">255.255</span><span class="p">.</span><span class="py">255</span><span class="p">.</span><span class="py">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>R1：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">access-list</span> <span class="mf">101</span> <span class="n">deny</span> <span class="n">ip</span> <span class="n">any</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">20</span><span class="p">.</span><span class="py">0</span> <span class="mf">255.255</span><span class="p">.</span><span class="py">255</span><span class="p">.</span><span class="py">0</span>
+</span></span><span class="line"><span class="cl"><span class="nb">access-list</span> <span class="mf">101</span> <span class="n">permit</span> <span class="n">ip</span> <span class="n">any</span> <span class="n">any</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">access-list</span> <span class="mf">102</span> <span class="n">permit</span> <span class="n">ip</span> <span class="n">host</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">20</span><span class="p">.</span><span class="py">6</span> <span class="n">any</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">int</span> <span class="n">g0</span><span class="p">/</span><span class="mf">0.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="nb">access-group</span> <span class="mf">101</span> <span class="k">in</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">int</span> <span class="n">g0</span><span class="p">/</span><span class="mf">0.2</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="nb">access-group</span> <span class="mf">101</span> <span class="k">in</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">line</span> <span class="n">vty</span> <span class="mf">0</span> <span class="mf">4</span>
+</span></span><span class="line"><span class="cl"><span class="nb">access-class</span> <span class="mf">102</span> <span class="k">in</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>PC：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">ssh</span> <span class="n">-l</span> <span class="n">SSHadmin</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">20</span><span class="p">.</span><span class="py">20</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configure IOS Intrusion Prevention System (IPS) Using the CLI（使用CLI配置IOS入侵防御系统）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置日志记录功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改IPS签名规则。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证IPS配置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
+&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>启用IOS入侵防御系统（IPS）。</p>
+</li>
+<li>
+<p>配置日志记录功能。</p>
+</li>
+<li>
+<p>修改IPS签名规则。</p>
+</li>
+<li>
+<p>验证IPS配置。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
+<p>标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。</p>
+<p>服务器和PC已预先配置好。路由器也已经预先配置了以下内容：</p>
+<p>o 启用密码： <strong>ciscoenpa55</strong></p>
+<p>o 控制台密码： <strong>ciscoconpa55</strong></p>
+<p>o SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
+<p>o OSPF进程号101</p>
+<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3>
+<p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
+<p><strong>步骤1：启用安全技术包。</strong></p>
+<p>a. 在R1上，执行 <code>show version</code> 命令查看技术包许可证信息。</p>
+<p>b. 如果尚未启用“Security Technology”包，请使用以下命令启用该包：</p>
+<blockquote>
+<p>R1(config)# license boot module c1900 technology-package securityk9</p>
+</blockquote>
+<p>c. 接受最终用户许可协议。</p>
+<p>d. 保存运行配置，并重新加载路由器以启用安全许可证。</p>
+<blockquote>
+<p>R1#write
+Building configuration…
+[OK]
+R1#reload</p>
+</blockquote>
+<p>e. 使用 <code>show version</code> 命令验证是否已启用“Security Technology”包。</p>
+<p><strong>步骤2：验证网络连接性。</strong></p>
+<p>a. 从PC-C向PC-A发送ping请求。应能成功ping通。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC-A向PC-C发送ping请求。应能成功ping通。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在闪存中创建一个IOS IPS配置目录。</strong></p>
+<p>在R1上，使用 <code>mkdir</code> 命令在闪存中创建一个目录。将目录命名为ipsdir。</p>
+<blockquote>
+<p>R1#mkdir ipsdir
+Create directory filename [ipsdir]?
+Created dir flash:ipsdir</p>
+</blockquote>
+<p><strong>步骤4：配置IPS签名存储位置。</strong></p>
+<p>在R1上，将IPS签名存储位置配置为刚刚创建的目录。</p>
+<blockquote>
+<p>R1(config)#ip ips config location flash:ipsdir</p>
+</blockquote>
+<p><strong>步骤5：创建一个IPS规则。</strong></p>
+<p>在R1的全局配置模式下，使用 <code>ip ips name &quot;name&quot;</code> 命令创建一个IPS规则名称。将IPS规则命名为 <strong>iosips</strong> 。</p>
+<blockquote>
+<p>R1(config)#ip ips name iosips</p>
+</blockquote>
+<p><strong>步骤6：启用日志记录。</strong></p>
+<p>IOS IPS支持使用syslog发送事件通知。Syslog通知默认情况下是启用的。如果启用了loggingconsole，则会显示IPS的syslog消息。</p>
+<p>a. 如未启用syslog，则启用syslog。</p>
+<blockquote>
+<p>R1(config)#ip ips notify log</p>
+</blockquote>
+<p>b. 如有必要，从特权EXEC模式下使用 <code>clock set</code> 命令重置时钟。</p>
+<blockquote>
+<p>R1#clock set 19:31:59 6 jan 2024</p>
+</blockquote>
+<p>c. 使用 <code>show run</code> 命令验证路由器上的日志记录时间戳服务是否已启用。如果没有启用，则启用时间戳服务。</p>
+<blockquote>
+<p>R1(config)#service timestamps log datetime msec</p>
+</blockquote>
+<p>d. 将日志消息发送到位于IP地址192.168.1.50的syslog服务器。</p>
+<blockquote>
+<p>R1(config)#logging host 192.168.1.50</p>
+</blockquote>
+<p><strong>步骤7：配置IOS IPS使用签名类别。</strong></p>
+<p>使用 <code>retired true</code> 命令退休所有签名类别（签名发布内的所有签名）。使用 <code>retired false</code> 命令取消退休IOS_IPS Basic类别。</p>
+<blockquote>
+<p>R1(config)#ip ips signature-category
+R1(config-ips-category)#category all
+R1(config-ips-category-action)#retired true
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#category ios_ips basic
+R1(config-ips-category-action)#retired false
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#exit</p>
+</blockquote>
+<p><strong>步骤8：将IPS规则应用于接口。</strong></p>
+<p>在接口配置模式下，使用 <code>ip ips name &quot;direction&quot;</code> 命令将IPS规则应用于接口。将规则应用于R1的G0/1接口的出站方向。启用IPS后，控制台行将收到一些日志消息，表明IPS引擎正在初始化。</p>
+<blockquote>
+<p>R1(config)#int g0/1
+R1(config-if)#ip ips iosips out</p>
+</blockquote>
+<p>注：direction in表示IPS仅检查进入接口的流量。同样地，out表示IPS仅检查离开接口的流量。</p>
+<h3 id="第二部分修改签名">第二部分：修改签名</h3>
+<p><strong>步骤1：更改签名的事件动作。</strong></p>
+<p>取消退休echo request签名（签名ID 2004，子签名ID 0），启用它，并将签名动作更改为alert和drop。</p>
+<blockquote>
+<p>R1(config)#ip ips signature-definition
+R1(config-sigdef)#signature 2004 0
+R1(config-sigdef-sig)#status
+R1(config-sigdef-sig-status)#retired false
+R1(config-sigdef-sig-status)#enabled true
+R1(config-sigdef-sig-status)#exit
+R1(config-sigdef-sig)#engine
+R1(config-sigdef-sig-engine)#event-action produce-alert
+R1(config-sigdef-sig-engine)#event-action deny-packet-inline
+R1(config-sigdef-sig-engine)#exit
+R1(config-sigdef-sig)#exit
+R1(config-sigdef)#exit</p>
+</blockquote>
+<p><strong>步骤2：使用show命令验证IPS配置。</strong></p>
+<p>使用 <code>show ip ips all</code> 命令查看IPS配置状态摘要。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>iosips规则应用于哪些接口以及什么方向？</p>
+<p><strong>步骤3：验证IPS是否正常工作。</strong></p>
+<p>a. 从PC-C尝试ping PC-A。这些ping请求成功了吗？请解释原因。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC-A尝试ping PC-C。这些ping请求成功了吗？请解释原因。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤4：查看syslog消息。</strong></p>
+<p>a. 点击Syslog服务器。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 选择“服务”标签页。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>c. 在左侧导航菜单中，选择SYSLOG以查看日志文件。</p>
+<p><strong>步骤5：检查结果。</strong></p>
+<p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息及已完成的必要组件验证。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configuring ASA Basic Settings and Firewall Using CLI（使用CLI配置ASA基本设置和防火墙）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</link>
+      <pubDate>Thu, 23 Jan 2025 12:46:18 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;
+&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;验证连接并探索ASA设备&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用CLI配置ASA的基本设置和接口安全级别&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2>
+<h3 id="ip地址表">IP地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>验证连接并探索ASA设备</p>
+</li>
+<li>
+<p>使用CLI配置ASA的基本设置和接口安全级别</p>
+</li>
+<li>
+<p>使用CLI配置路由、地址转换和检查策略</p>
+</li>
+<li>
+<p>配置DHCP、AAA和SSH服务</p>
+</li>
+<li>
+<p>配置DMZ区域、静态NAT和访问控制列表（ACL）</p>
+</li>
+</ul>
+<h3 id="场景">场景</h3>
+<p>您的公司有一个地点通过ISP进行互联网接入。R1代表由ISP管理的CPE设备。R2代表一个互联网路由器中继节点。R3代表一个ISP，它连接着一家网络管理公司的管理员，该管理员受雇远程管理您的网络。ASA是一个边缘CPE安全设备，将内部企业网络和DMZ区域连接到ISP，并为内部主机提供NAT和DHCP服务。ASA将被配置以允许内部网络的管理员以及远程管理员对其进行管理。三层VLAN接口提供了对活动中创建的三个区域——Inside区域、Outside区域和DMZ区域的访问权限。ISP分配了公共IP地址空间209.165.200.224/29，将在ASA上用于地址转换。</p>
+<p>所有路由器和交换机设备已预先配置以下信息：</p>
+<ul>
+<li>
+<p>启用密码： <strong>ciscoenpa55</strong></p>
+</li>
+<li>
+<p>控制台密码： <strong>ciscoconpa55</strong></p>
+</li>
+<li>
+<p>管理员用户名及密码： <strong>admin/adminpa55</strong></p>
+</li>
+</ul>
+<p>注意：此Packet Tracer活动并不能替代ASA实验室练习。这个活动提供了额外的实践机会，模拟了大部分ASA 5505设备的配置过程。与真实的ASA 5505相比，在命令输出或部分尚未在Packet Tracer中支持的命令上可能存在细微差别。</p>
+<h3 id="第一部分验证连接和探索asa设备">第一部分：验证连接和探索ASA设备</h3>
+<p>注：此Packet Tracer活动开始时，有20%的评估项已被标记为已完成。这是为了确保您不会意外更改ASA的某些默认值。例如，默认情况下内部接口名称为“inside”，不应更改。点击“检查结果”查看哪些评估项已经被正确评分。</p>
+<p><strong>步骤1：验证网络连接性。</strong></p>
+<p>目前ASA尚未配置，但所有路由器、PC以及DMZ服务器都已配置完毕。请确认PC-C可以ping通任何路由器接口。请注意，此时PC-C无法ping通ASA、PC-B或DMZ服务器。</p>
+<p><strong>步骤2：确定ASA版本、接口及许可证信息。</strong></p>
+<p>使用 <code>show version</code> 命令来了解ASA设备的各种特性。</p>
+<p><strong>步骤3：确定文件系统及其闪存内存内容。</strong></p>
+<p>a. 进入特权EXEC模式。当前未设置密码，当提示输入密码时直接按回车键。</p>
+<p>b. 使用 <code>show file system</code> 命令显示ASA的文件系统，并确定支持哪些前缀。</p>
+<p>c. 使用 <code>show flash:</code> 或 <code>show disk0:</code> 命令来显示闪存内存的内容。</p>
+<h3 id="第二部分使用cli配置asa设置和接口安全">第二部分：使用CLI配置ASA设置和接口安全</h3>
+<p>提示：许多ASA CLI命令与Cisco IOS CLI中的命令相似，甚至相同。此外，在不同配置模式及子模式之间切换的过程本质上是相同的。</p>
+<p><strong>步骤1：配置主机名和域名。</strong></p>
+<p>a. 配置ASA主机名为 <strong>CCNAS-ASA</strong> 。</p>
+<p>b. 配置域名为 <strong>ccnasecurity.com</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ciscoasa(config)#hostname CCNAS-ASA
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)#domain-name ccnasecurity.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：配置启用模式密码。</strong></p>
+<p>使用 <code>enable password</code> 命令将特权EXEC模式密码更改为 <strong>ciscoenpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)#enable password ciscoenpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：设置日期和时间。</strong></p>
+<p>使用 <code>clock set</code> 命令手动设置日期和时间（此步骤不计入评分）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)#clock set 21:42:25 May 11 2023
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：配置内部和外部接口。</strong></p>
+<p>此时您只需配置VLAN 1（内部）和VLAN 2（外部）接口。VLAN 3（dmz）接口将在活动的第五部分进行配置。</p>
+<p>a. 为内部网络（192.168.1.0/24）配置逻辑VLAN 1接口，并将其安全级别设置为最高值 <strong>100</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# interface vlan 1
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# nameif inside
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# ip address 192.168.1.1 255.255.255.0
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# security-level 100
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 为外部网络（209.165.200.224/29）创建逻辑VLAN 2接口，将其安全级别设置为最低值 <strong>0</strong> ，并启用VLAN 2接口。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config-if)# interface vlan 2
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# nameif outside
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# ip address 209.165.200.226 255.255.255.248
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-if)# security-level 0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>c. 使用以下验证命令检查您的配置：</p>
+<ol>
+<li>使用 <code>show interface ip brief</code> 命令显示所有ASA接口的状态。注意：这个命令与IOS命令show ip interface brief不同。如果之前配置的任何物理或逻辑接口状态不是up/up，请根据需要排查问题后再继续。</li>
+</ol>
+<p>提示：大多数ASA show命令，包括ping、copy等，无需do命令即可在任意配置模式提示符下执行。</p>
+<ol>
+<li>
+<p>使用 <code>show ip address</code> 命令显示三层VLAN接口的信息。</p>
+</li>
+<li>
+<p>使用 <code>show switch vlan</code> 命令显示ASA上配置的内部和外部VLAN以及分配的端口。</p>
+</li>
+</ol>
+<p><strong>步骤5：测试到ASA的连接性。</strong></p>
+<p>a. 应该可以从PC-B成功ping通ASA内部接口地址（192.168.1.1）。如果无法ping通，请按需排查配置问题。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC-B尝试ping VLAN 2（外部）接口的IP地址209.165.200.226。理论上您不应该能ping通这个地址。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第三部分使用cli配置路由地址转换和检查策略">第三部分：使用CLI配置路由、地址转换和检查策略</h3>
+<p><strong>步骤1：为ASA配置静态默认路由。</strong></p>
+<p>在ASA外部接口上配置默认静态路由，以便ASA能够访问外部网络。</p>
+<p>a. 使用 <code>route</code> 命令创建一个“全零”默认路由，将其与ASA外部接口关联，并将R1 G0/0 IP地址（209.165.200.225）设置为最后手段网关。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# route outside 0.0.0.0 0.0.0.0 209.165.200.225
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 发出 <code>show route</code> 命令以验证静态默认路由是否存在于ASA路由表中。</p>
+<p>c. 验证ASA能否ping通R1 S0/0/0 IP地址10.1.1.1。如果无法ping通，请按需排查问题。</p>
+<p><strong>步骤2：使用PAT和网络对象配置地址转换。</strong></p>
+<p>a. 创建名为 <strong>inside-net</strong> 的网络对象，并使用subnet和nat命令为其分配属性。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# object network inside-net
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# subnet 192.168.1.0 255.255.255.0
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# nat (inside,outside) dynamic interface
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# end
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. ASA将配置拆分为定义要转换的网络的对象部分以及实际的nat命令参数。这些内容会在运行配置中的两个不同位置显示。使用 <code>show run</code> 命令显示NAT对象配置。</p>
+<p>c. 从PC-B尝试ping R1 G0/0接口IP地址209.165.200.225。这些ping请求应失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>d. 在ASA上发出 <code>show nat</code> 命令查看已翻译和未翻译的命中次数。请注意，来自PC-B的ping请求中有四个被翻译，四个未被翻译。外出的ping（echo请求）已被翻译并发送至目标。返回的echo响应由于防火墙策略而被阻止。您将在本部分活动的第3步配置默认检查策略以允许ICMP流量。</p>
+<p><strong>步骤3：修改默认MPF应用检查全局服务策略。</strong></p>
+<p>为了实现应用层检查和其他高级选项，Cisco ASA设备提供了MPF功能。</p>
+<p>Packet Tracer ASA设备默认没有MPF策略映射。作为修改，我们可以创建一个默认策略映射，用于对内部到外部的流量进行检查。正确配置后，只有由内部发起的流量才被允许回传到外部接口。您需要将ICMP添加到检查列表中。</p>
+<p>a. 使用以下命令创建类图、策略映射和服务策略，并在策略映射列表中添加ICMP流量的检查：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# class-map inspection_default
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-cmap)# match default-inspection-traffic
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-cmap)# exit
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)# policy-map global_policy
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-pmap)# class inspection_default
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-pmap-c)# inspect icmp
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-pmap-c)# exit
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)# service-policy global_policy global
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 从PC-B再次尝试ping R1 G0/0接口IP地址209.165.200.225。这次ping应该成功，因为现在ICMP流量正在被检查，合法的返回流量被允许通过。若ping失败，请排查您的配置。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第四部分配置dhcpaaa和ssh">第四部分：配置DHCP、AAA和SSH</h3>
+<p><strong>步骤1：配置ASA作为DHCP服务器。</strong></p>
+<p>a. 在ASA内部接口上配置DHCP地址池并启用它。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# dhcpd address 192.168.1.5-192.168.1.36 inside
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. （可选）指定给客户端提供的DNS服务器IP地址。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# dhcpd dns 209.165.201.2 interface inside
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>c. 在ASA内启用DHCP守护进程，使其监听内部接口上的DHCP客户端请求。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# dhcpd enable inside
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>d. 将PC-B从静态IP地址更改为DHCP客户端，并验证其是否接收到IP地址信息。如有必要，请解决任何问题。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：配置AAA以使用本地数据库进行身份验证。</strong></p>
+<p>a. 使用username命令定义一个名为admin的本地用户，并指定密码adminpa55。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# username admin password adminpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 配置AAA以使用本地ASA数据库进行SSH用户身份验证。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# aaa authentication ssh console LOCAL
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：配置远程访问ASA。</strong></p>
+<p>ASA可以配置为接受来自内部或外部网络的单个主机或范围内的主机连接。在此步骤中，外部网络的主机只能通过SSH与ASA通信。SSH会话可用于从内部网络访问ASA。</p>
+<p>a. 生成RSA密钥对，这是支持SSH连接所必需的。由于ASA设备已经有RSA密钥存在，当提示替换它们时请输入no。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# crypto key generate rsa modulus 1024
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 配置ASA以允许来自内部网络（192.168.1.0/24）和外部网络分支办公室远程管理主机（172.16.3.3）的任何主机通过SSH进行连接。设置SSH超时时间为10分钟（默认为5分钟）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# ssh 192.168.1.0 255.255.255.0 inside
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)# ssh 172.16.3.3 255.255.255.255 outside
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)# ssh timeout 10
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>c. 从PC-C通过SSH建立到ASA（209.165.200.226）的会话。如不成功，请排查问题。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 209.165.200.226
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>d. 从PC-B通过SSH建立到ASA（192.168.1.1）的会话。如不成功，请排查问题。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 192.168.1.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="第五部分配置dmz静态nat和acl">第五部分：配置DMZ、静态NAT和ACL</h3>
+<p>R1 G0/0接口与ASA的外部接口分别使用209.165.200.225和.226。您将使用公网地址209.165.200.227，并通过静态NAT提供对服务器的地址转换访问。</p>
+<p><strong>步骤1：在ASA上配置DMZ接口VLAN 3。</strong></p>
+<p>a. 配置DMZ VLAN 3，该VLAN将是公共访问Web服务器所在的位置。为它分配IP地址192.168.2.1/24，并命名为 <strong>dmz</strong> ，同时为其设置安全级别为 <strong>70</strong> 。由于服务器无需主动与内部用户通信，因此禁用到接口VLAN 1的转发。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config<span class="o">)</span><span class="c1"># interface vlan 3</span>
+</span></span><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># ip address 192.168.2.1 255.255.255.0</span>
+</span></span><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># no forward interface vlan 1</span>
+</span></span><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># nameif dmz</span>
+</span></span><span class="line"><span class="cl">INFO: Security level <span class="k">for</span> <span class="s2">&#34;dmz&#34;</span> <span class="nb">set</span> to <span class="m">0</span> by default.
+</span></span><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># security-level 70</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>b. 将ASA物理接口E0/2分配给DMZ VLAN 3并启用此接口。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># interface Ethernet0/2</span>
+</span></span><span class="line"><span class="cl">CCNAS-ASA<span class="o">(</span>config-if<span class="o">)</span><span class="c1"># switchport access vlan 3</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>c. 使用以下验证命令检查您的配置：</p>
+<ol>
+<li>
+<p>使用 <code>show interface ip brief</code> 命令显示所有ASA接口的状态。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+<li>
+<p>使用 <code>show ip address</code> 命令显示第3层VLAN接口的信息。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+<li>
+<p>使用 <code>show switch vlan</code> 命令显示ASA上的inside和outside VLAN配置以及分配的端口信息。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+</ol>
+<p><strong>步骤2：使用网络对象配置到DMZ服务器的静态NAT。</strong></p>
+<p>配置一个名为dmz-server的网络对象，并将其分配给DMZ服务器的静态IP地址（192.168.2.3）。在定义对象模式下，使用nat命令指定此对象用于使用静态NAT将DMZ地址翻译为外部地址，并指定公开翻译地址209.165.200.227。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# object network dmz-server
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# host 192.168.2.3
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# nat (dmz,outside) static 209.165.200.227
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config-network-object)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：配置ACL以允许从互联网访问DMZ服务器。</strong></p>
+<p>配置一个名为OUTSIDE-DMZ的命名访问列表，允许来自任何外部主机到DMZ服务器内部IP地址的TCP协议在端口80上进行通信。将访问列表应用到ASA的外部接口的“IN”方向。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CCNAS-ASA(config)# access-list OUTSIDE-DMZ permit tcp any host 192.168.2.3 eq 80
+</span></span><span class="line"><span class="cl">CCNAS-ASA(config)# access-group OUTSIDE-DMZ in interface outside
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：与IOS ACL不同，ASA ACL的permit语句必须允许对内部私有DMZ地址的访问。外部主机通过服务器的公共静态NAT地址访问服务器，ASA将其翻译成内部主机IP地址，然后应用ACL。</p>
+<p><strong>步骤4：测试对DMZ服务器的访问。</strong></p>
+<p>在创建Packet Tracer活动时，成功测试外部对DMZ Web服务器的访问功能并未实现；因此，不强制要求成功测试。</p>
+<p><strong>步骤5：检查结果。</strong></p>
+<p>完成百分比应为100%。点击“Check Results”查看反馈和已完成所需组件的验证。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<p><strong>第一部分：验证连接和探索ASA设备</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hostname CCNAS-ASA
+</span></span><span class="line"><span class="cl">domain-name ccnasecurity.com
+</span></span><span class="line"><span class="cl"><span class="nb">enable</span> password ciscoenpa55
+</span></span><span class="line"><span class="cl">clock <span class="nb">set</span> 10:38:00 <span class="m">22</span> dec <span class="m">2020</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第二部分：使用CLI配置ASA设置和接口安全</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">interface vlan <span class="m">1</span>
+</span></span><span class="line"><span class="cl">nameif inside
+</span></span><span class="line"><span class="cl">ip address 192.168.1.1 255.255.255.0
+</span></span><span class="line"><span class="cl">security-level <span class="m">100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">interface vlan <span class="m">2</span>
+</span></span><span class="line"><span class="cl">nameif outside
+</span></span><span class="line"><span class="cl">ip address 209.165.200.226 255.255.255.248
+</span></span><span class="line"><span class="cl">security-level <span class="m">0</span>
+</span></span><span class="line"><span class="cl">interface Ethernet0/0
+</span></span><span class="line"><span class="cl">switchport access vlan <span class="m">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">interface vlan <span class="m">3</span>
+</span></span><span class="line"><span class="cl">ip address 192.168.2.1 255.255.255.0
+</span></span><span class="line"><span class="cl">no forward interface vlan <span class="m">1</span>
+</span></span><span class="line"><span class="cl">nameif dmz
+</span></span><span class="line"><span class="cl">security-level <span class="m">70</span>
+</span></span><span class="line"><span class="cl">interface Ethernet0/2
+</span></span><span class="line"><span class="cl">switchport access vlan <span class="m">3</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第三部分：使用CLI配置路由、地址转换和检查策略</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">route outside 0.0.0.0 0.0.0.0 209.165.200.225
+</span></span><span class="line"><span class="cl">class-map inspection_default
+</span></span><span class="line"><span class="cl">match default-inspection-traffic
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">policy-map global_policy
+</span></span><span class="line"><span class="cl">class inspection_default
+</span></span><span class="line"><span class="cl">inspect icmp
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">service-policy global_policy global
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第四部分：配置DHCP、AAA和SSH</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dhcpd address 192.168.1.5-192.168.1.36 inside
+</span></span><span class="line"><span class="cl">dhcpd dns 209.165.201.2 interface inside
+</span></span><span class="line"><span class="cl">dhcpd <span class="nb">enable</span> inside
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">username admin password adminpa55
+</span></span><span class="line"><span class="cl">crypto key generate rsa modulus <span class="m">1024</span> <span class="c1">#no</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">aaa authentication ssh console LOCAL
+</span></span><span class="line"><span class="cl">ssh 192.168.1.0 255.255.255.0 inside
+</span></span><span class="line"><span class="cl">ssh 172.16.3.3 255.255.255.255 outside
+</span></span><span class="line"><span class="cl">ssh timeout <span class="m">10</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>第五部分：配置DMZ、静态NAT和ACL</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">object network dmz-server
+</span></span><span class="line"><span class="cl">host 192.168.2.3
+</span></span><span class="line"><span class="cl">nat <span class="o">(</span>dmz,outside<span class="o">)</span> static 209.165.200.227
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">object network inside-net
+</span></span><span class="line"><span class="cl">subnet 192.168.1.0 255.255.255.0
+</span></span><span class="line"><span class="cl">nat <span class="o">(</span>inside,outside<span class="o">)</span> dynamic interface
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">access-list OUTSIDE-DMZ permit icmp any host 192.168.2.3
+</span></span><span class="line"><span class="cl">access-list OUTSIDE-DMZ permit tcp any host 192.168.2.3 eq <span class="m">80</span>
+</span></span><span class="line"><span class="cl">access-group OUTSIDE-DMZ in interface outside
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Packet Tracer - Configuring a Zone-Based Policy Firewall (配置基于区域的策略防火墙 ZPF)</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
+      <pubDate>Thu, 23 Jan 2025 12:41:12 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在防火墙配置前验证设备之间的连通性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在路由器R3上配置基于区域的策略（ZPF）防火墙。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>在防火墙配置前验证设备之间的连通性。</p>
+</li>
+<li>
+<p>在路由器R3上配置基于区域的策略（ZPF）防火墙。</p>
+</li>
+<li>
+<p>使用ping、Telnet和网页浏览器验证ZPF防火墙功能。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>基于区域的策略（Zone-Based Policy，ZPF）防火墙是Cisco防火墙技术发展的最新成果。在本活动中，您将在边缘路由器R3上配置一个基本的ZPF防火墙，允许内部主机访问外部资源，并阻止外部主机访问内部资源。然后，从内部和外部主机验证防火墙的功能。</p>
+<p>路由器已预先配置了以下内容：</p>
+<ul>
+<li>
+<p>控制台密码： <strong>ciscoconpa55</strong></p>
+</li>
+<li>
+<p>vty线路密码： <strong>ciscovtypa55</strong></p>
+</li>
+<li>
+<p>启用密码： <strong>ciscoenpa55</strong></p>
+</li>
+<li>
+<p>主机名和IP地址配置</p>
+</li>
+<li>
+<p>静态路由配置</p>
+</li>
+</ul>
+<h3 id="第一部分验证基本网络连通性">第一部分：验证基本网络连通性</h3>
+<p>在配置基于区域的策略防火墙之前，验证网络连通性。</p>
+<p><strong>步骤1：从PC-A命令提示符，ping PC-C的192.168.3.3地址。</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从PC-C命令提示符，通过telnet连接到Router R2 S0/0/1接口的10.2.2.2地址。退出Telnet会话。</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：从PC-C打开一个网页浏览器访问PC-A服务器。</strong></p>
+<p>a. 点击桌面标签页并点击Web浏览器应用程序。将PC-A的IP地址 <strong>192.168.1.3</strong> 作为URL输入。此时应显示来自Web服务器的Packet Tracer欢迎页面。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 关闭PC-C上的浏览器。</p>
+<h3 id="第二部分在路由器r3上创建防火墙区域">第二部分：在路由器R3上创建防火墙区域</h3>
+<p>注意：对于所有配置任务，请确保使用指定的确切名称。</p>
+<p><strong>步骤1：创建内部区域。</strong></p>
+<p>使用 <strong>zone security</strong> 命令创建名为 <strong>IN-ZONE</strong> 的区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone security IN-ZONE
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：创建外部区域。</strong></p>
+<p>使用 <strong>zone security</strong> 命令创建名为 <strong>OUT-ZONE</strong> 的区域，并退出区域安全配置模式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone security OUT-ZONE
+</span></span><span class="line"><span class="cl">R3(config-sec-zone)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第三部分定义流量类别和访问列表">第三部分：定义流量类别和访问列表</h3>
+<p><strong>步骤1：创建定义内部流量的ACL。</strong></p>
+<p>使用 <code>access-list</code> 命令创建扩展ACL 101，允许来自192.168.3.0/24源网络的所有IP协议到任何目的地。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# access-list 101 permit ip 192.168.3.0 0.0.0.255 any
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：创建引用内部流量ACL的类映射。</strong></p>
+<p>使用带有match-all选项的 <code>class-map type inspect</code> 命令创建名为 <strong>IN-NET-CLASS-MAP</strong> 的类映射。使用 <code>match access-group</code> 命令匹配ACL 101。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# class-map type inspect match-all IN-NET-CLASS-MAP
+</span></span><span class="line"><span class="cl">R3(config-cmap)# match access-group 101
+</span></span><span class="line"><span class="cl">R3(config-cmap)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：虽然在本Packet Tracer练习中不支持，但可以通过match-any选项指定具体的协议（如HTTP、FTP等），以便对需要检查的流量类型提供更精确的控制。</p>
+<h3 id="第四部分指定防火墙策略">第四部分：指定防火墙策略</h3>
+<p><strong>步骤1：创建策略映射以确定如何处理匹配的流量。</strong></p>
+<p>使用 <code>policy-map type inspect</code> 命令并创建一个名为IN-2-OUT-PMAP的策略映射。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# policy-map type inspect IN-2-OUT-PMAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：指定inspect类型的类，并引用类映射IN-NET-CLASS-MAP。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap)# class type inspect IN-NET-CLASS-MAP
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：为该策略映射指定inspect操作。</strong></p>
+<p>使用inspect命令会调用基于上下文的访问控制（其他选项包括pass和drop）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap-c)# inspect
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">%No specific protocol configured in class IN-NET-CLASS-MAP for inspection. All protocols will be inspected.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>提示信息表示IN-NET-CLASS-MAP类没有配置特定协议进行检查，因此所有协议都将被检查。</p>
+<p>连续两次发出exit命令，退出config-pmap-c模式并返回到config模式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-pmap-c)# exit
+</span></span><span class="line"><span class="cl">R3(config-pmap)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第五部分应用防火墙策略">第五部分：应用防火墙策略</h3>
+<p><strong>步骤1：创建一对区域。</strong></p>
+<p>使用 <code>zone-pair security</code> 命令，创建一个名为 <strong>IN-2-OUT-ZPAIR</strong> 的区域对。指定在任务1中创建的源和目标区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# zone-pair security IN-2-OUT-ZPAIR source IN-ZONE destination OUT-ZONE
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：为两个区域之间的流量指定策略映射。</strong></p>
+<p>通过 <code>service-policy type inspect</code> 命令将策略映射及其关联操作附加到区域对，并引用之前创建的策略映射IN-2-OUT-PMAP。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config-sec-zone-pair)# service-policy type inspect IN-2-OUT-PMAP
+</span></span><span class="line"><span class="cl">R3(config-sec-zone-pair)# exit
+</span></span><span class="line"><span class="cl">R3(config)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：将接口分配给相应的安全区域。</strong></p>
+<p>在接口配置模式下，使用 <code>zone-member security</code> 命令将Fa0/1分配给IN-ZONE，将S0/0/1分配给OUT-ZONE。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# interface fa0/1
+</span></span><span class="line"><span class="cl">R3(config-if)# zone-member security IN-ZONE
+</span></span><span class="line"><span class="cl">R3(config-if)# exit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">R3(config)# interface s0/0/1
+</span></span><span class="line"><span class="cl">R3(config-if)# zone-member security OUT-ZONE
+</span></span><span class="line"><span class="cl">R3(config-if)# exit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：将运行配置复制到启动配置。</strong></p>
+<h3 id="第六部分从in-zone到out-zone测试防火墙功能">第六部分：从IN-ZONE到OUT-ZONE测试防火墙功能</h3>
+<p>验证配置基于区域的策略防火墙后，内部主机仍能访问外部资源。</p>
+<p><strong>步骤1：从内部PC-C，ping外部PC-A服务器。</strong></p>
+<p>从PC-C命令提示符，ping PC-A的192.168.1.3地址。ping操作应成功。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从内部PC-C，telnet到路由器R2 S0/0/1接口。</strong></p>
+<p>a. 从PC-C命令提示符，telnet到R2的10.2.2.2，并提供vty密码 <strong>ciscovtypa55</strong> 。Telnet会话应成功。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 在活动的Telnet会话中，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>源IP地址和端口号是什么？</p>
+<p>目标IP地址和端口号是什么？</p>
+<p><strong>步骤3：从PC-C退出R2上的Telnet会话并关闭命令提示符窗口。</strong></p>
+<p><strong>步骤4：从内部PC-C，打开一个网页浏览器访问PC-A服务器的网页。</strong></p>
+<p>在浏览器URL字段中输入服务器IP地址192.168.1.3，并点击“Go”。HTTP会话应成功。在HTTP会话活动期间，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。</p>
+<p>注：如果在您在R3上执行命令之前HTTP会话超时，您需要在PC-C上点击“Go”按钮来生成PC-C与PC-A之间的会话。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>源IP地址和端口号是什么？</p>
+<p>目标IP地址和端口号是什么？</p>
+<p><strong>步骤5：关闭PC-C上的浏览器。</strong></p>
+<h3 id="第七部分从out-zone到in-zone测试防火墙功能">第七部分：从OUT-ZONE到IN-ZONE测试防火墙功能</h3>
+<p>验证配置基于区域的策略防火墙后，外部主机无法访问内部资源。</p>
+<p><strong>步骤1：从PC-A服务器命令提示符，ping PC-C。</strong></p>
+<p>从PC-A命令提示符，ping PC-C的192.168.3.3地址。ping操作应失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：从路由器R2，ping PC-C。</strong></p>
+<p>从R2，ping PC-C的192.168.3.3地址。ping操作应失败。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：检查结果。</strong></p>
+<p>您的完成百分比应为100%。点击“CheckResults”查看反馈和已完成的必要组件验证。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

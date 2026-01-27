@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ssh on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/ssh/</link>
+    <description>Recent content in Ssh on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 12:48:36 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packet Tracer - Configure Cisco Routers for Syslog, NTP, and SSH Operations（配置Cisco路由器以实现Syslog、NTP）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</link>
+      <pubDate>Thu, 23 Jan 2025 12:48:36 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</guid>
+      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;配置OSPF MD5身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置NTP服务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标：</h3>
+<ul>
+<li>
+<p>配置OSPF MD5身份验证。</p>
+</li>
+<li>
+<p>配置NTP服务。</p>
+</li>
+<li>
+<p>设置路由器将消息记录到syslog服务器。</p>
+</li>
+<li>
+<p>配置R3路由器以支持SSH连接。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景：</h3>
+<p>在本练习中，您将配置OSPF MD5身份验证以实现安全的路由更新。</p>
+<p>NTP服务器是本次活动中主NTP服务器。您需要在NTP服务器和路由器上配置身份验证，并设置路由器允许软件时钟通过NTP与时间服务器同步。同时，您还需要配置路由器定期使用从NTP获取的时间更新硬件时钟。</p>
+<p>Syslog服务器在此活动提供消息记录功能。您需要配置路由器识别接收日志消息的远程主机（即Syslog服务器）。</p>
+<p>您需要在路由器上配置时间戳服务以便于记录日志。在使用Syslog监控网络时，在Syslog消息中显示正确的日期和时间至关重要。</p>
+<p>此外，您还将配置R3路由器，使其能够通过SSH而非Telnet进行安全管理。服务器已经预先配置好了相应的NTP和Syslog服务，NTP无需身份验证。路由器已预设了以下密码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">启用密码</span><span class="err">：</span><span class="n">ciscoenpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">vty线路密码</span><span class="err">：</span><span class="n">ciscovtypa55</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意：请注意，在开发本活动所使用的Packet Tracer版本（v6.2）中，MD5是最强支持的加密方式。虽然MD5存在已知的安全漏洞，但在实际操作中应根据组织的安全需求选择合适的加密方法。在本活动中，安全要求指定使用MD5加密。</p>
+<hr>
+<h3 id="第一部分配置ospf-md5身份验证">第一部分：配置OSPF MD5身份验证</h3>
+<p><strong>步骤1：测试连通性。所有设备应能成功ping通所有其他IP地址。</strong></p>
+<p><strong>步骤2：为区域0内的所有路由器配置OSPF MD5身份验证。</strong></p>
+<p>针对区域0中的所有路由器设置OSPF MD5身份验证：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# router ospf 1
+</span></span><span class="line"><span class="cl">R1(config-router)# area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)#router ospf 1
+</span></span><span class="line"><span class="cl">R2(config-router)#area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#router ospf 1
+</span></span><span class="line"><span class="cl">R3(config-router)#area 0 authentication message-digest
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：为区域0内的所有路由器配置MD5密钥。</strong></p>
+<p>在R1、R2和R3的串行接口上配置MD5密钥，对密钥1使用密码 <strong>MD5pa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# interface s0/0/0
+</span></span><span class="line"><span class="cl">R1(config-if)# ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)#interface Serial0/0/0
+</span></span><span class="line"><span class="cl">R2(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span><span class="line"><span class="cl">R2(config)#interface Serial0/0/1
+</span></span><span class="line"><span class="cl">R2(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#interface Serial0/0/1
+</span></span><span class="line"><span class="cl">R3(config-if)#ip ospf message-digest-key 1 md5 MD5pa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：验证配置。</strong></p>
+<p>a. 使用命令 <code>show ip ospf interface</code> 验证MD5身份验证配置是否正确生效。</p>
+<p>b. 验证端到端的连通性，确保网络连接无误。</p>
+<h3 id="第二部分配置ntp">第二部分：配置NTP</h3>
+<p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
+<p>a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。</p>
+<p>b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤2：将R1、R2和R3配置为NTP客户端。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#ntp server 192.168.1.5 key 1
+</span></span><span class="line"><span class="cl">R2(config)#ntp server 192.168.1.5 key 1
+</span></span><span class="line"><span class="cl">R3(config)#ntp server 192.168.1.5 key 1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过执行命令 <code>show ntp status</code> 来验证客户端配置是否正确。</p>
+<p><strong>步骤3：配置路由器定期更新硬件时钟。</strong></p>
+<p>设置R1、R2和R3路由器定期从NTP同步的时间更新硬件时钟。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#ntp update-calendar
+</span></span><span class="line"><span class="cl">R2(config)#ntp update-calendar
+</span></span><span class="line"><span class="cl">R3(config)#ntp update-calendar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>退出全局配置模式，并使用命令 <code>show clock</code> 来验证硬件时钟是否已成功更新。</p>
+<p><strong>步骤4：在路由器上配置NTP身份验证。</strong></p>
+<p>在R1、R2和R3上使用密钥 <strong>1</strong> 和密码 <strong>NTPpa55</strong> 配置NTP身份验证。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R1(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R1(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R2(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R2(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# ntp authenticate
+</span></span><span class="line"><span class="cl">R3(config)# ntp trusted-key 1
+</span></span><span class="line"><span class="cl">R3(config)# ntp authentication-key 1 md5 NTPpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤5：配置路由器对日志消息添加时间戳。</strong></p>
+<p>在路由器上配置日志记录的时间戳服务。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#service timestamps log datetime msec
+</span></span><span class="line"><span class="cl">R2(config)#service timestamps log datetime msec
+</span></span><span class="line"><span class="cl">R3(config)#service timestamps log datetime msec
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="第三部分配置路由器将消息记录到syslog服务器">第三部分：配置路由器将消息记录到Syslog服务器</h3>
+<p><strong>步骤1：配置路由器以识别接收日志消息的远程主机（即Syslog服务器）。</strong></p>
+<p>路由器控制台将会显示一条消息，表明已经开始记录日志。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R1(config)#logging 192.168.1.6
+</span></span><span class="line"><span class="cl">R2(config)#logging 192.168.1.6
+</span></span><span class="line"><span class="cl">R3(config)#logging 192.168.1.6
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：验证日志配置。</strong></p>
+<p>使用命令 <code>show logging</code> 来验证是否已启用日志记录功能。</p>
+<p><strong>步骤3：检查Syslog服务器的日志记录。</strong></p>
+<p>在Syslog服务器对话框的服务标签下，选择“Syslog服务”按钮。观察从路由器接收到的日志消息。</p>
+<p>注意：通过在路由器上执行命令可以生成服务器上的日志消息。例如，进入和退出全局配置模式会生成一个信息性配置消息。您可能需要点击其他服务，然后再点击Syslog以刷新消息显示界面。</p>
+<h3 id="第四部分配置r3以支持ssh连接">第四部分：配置R3以支持SSH连接</h3>
+<p><strong>步骤1：配置域名</strong>
+在R3上配置一个域名 <strong>ccnasecurity.com</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#ip domain-name ccnasecurity.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤2：配置R3上SSH服务器的登录用户</strong>
+创建一个用户名为 <strong>SSHadmin</strong> ，具有最高权限级别的用户ID，并设置秘密密码为 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)# username SSHadmin privilege 15 secret ciscosshpa55
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤3：配置R3上的入站vty线路</strong>
+要求使用本地用户账户进行强制登录和验证，只接受SSH连接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#line vty 0 4
+</span></span><span class="line"><span class="cl">R3(config-line)# login local
+</span></span><span class="line"><span class="cl">R3(config-line)# transport input ssh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤4：删除R3上的现有密钥对</strong>
+如有任何现有的RSA密钥对，应在路由器上将其删除。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#crypto key zeroize rsa
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：如果不存在任何密钥，您可能会收到此消息： <strong>% No Signature RSA Keys found in configuration.</strong></p>
+<p><strong>步骤5：为R3生成RSA加密密钥对</strong>
+路由器使用RSA密钥对进行SSH传输数据的身份验证和加密。配置RSA密钥时，选择模数为 <strong>1024</strong> （默认值为512，范围为360至2048）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># crypto key generate rsa</span>
+</span></span><span class="line"><span class="cl"><span class="n">The</span> <span class="n">name</span> <span class="k">for</span> <span class="n">the</span> <span class="n">keys</span> <span class="n">will</span> <span class="n">be</span><span class="p">:</span> <span class="n">R3</span><span class="o">.</span><span class="n">ccnasecurity</span><span class="o">.</span><span class="n">com</span>
+</span></span><span class="line"><span class="cl"><span class="n">Choose</span> <span class="n">the</span> <span class="n">size</span> <span class="n">of</span> <span class="n">the</span> <span class="n">key</span> <span class="n">modulus</span> <span class="ow">in</span> <span class="n">the</span> <span class="nb">range</span> <span class="n">of</span> <span class="mi">360</span> <span class="n">to</span> <span class="mi">2048</span> <span class="k">for</span> <span class="n">your</span>
+</span></span><span class="line"><span class="cl"><span class="n">General</span> <span class="n">Purpose</span> <span class="n">Keys</span><span class="o">.</span> <span class="n">Choosing</span> <span class="n">a</span> <span class="n">key</span> <span class="n">modulus</span> <span class="n">greater</span> <span class="n">than</span> <span class="mi">512</span> <span class="n">may</span> <span class="n">take</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="n">few</span> <span class="n">minutes</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="n">How</span> <span class="n">many</span> <span class="n">bits</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">modulus</span> <span class="p">[</span><span class="mi">512</span><span class="p">]:</span> <span class="mi">1024</span>
+</span></span><span class="line"><span class="cl"><span class="o">%</span> <span class="n">Generating</span> <span class="mi">1024</span> <span class="n">bit</span> <span class="n">RSA</span> <span class="n">keys</span><span class="p">,</span> <span class="n">keys</span> <span class="n">will</span> <span class="n">be</span> <span class="n">non</span><span class="o">-</span><span class="n">exportable</span><span class="o">...</span><span class="p">[</span><span class="n">OK</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注：在Packet Tracer中为R3生成RSA加密密钥对的命令与实验室中的有所不同。</p>
+<p><strong>步骤6：验证SSH配置</strong>
+使用 <code>show ip ssh</code> 命令查看当前设置，确保身份验证超时和重试次数保持默认值120和3。</p>
+<p><strong>步骤7：配置SSH超时和认证参数</strong>
+可以更改默认的SSH超时和认证参数使其更加严格。将超时时间设置为 <strong>90</strong> 秒，认证重试次数设为 <strong>2</strong> 次，版本设为 <strong>2</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R3(config)#ip ssh version 2
+</span></span><span class="line"><span class="cl">R3(config)#ip ssh authentication-retries 2
+</span></span><span class="line"><span class="cl">R3(config)#ip ssh time-out 90
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再次执行 <code>show ip ssh</code> 命令确认这些值已更改。</p>
+<p><strong>步骤8：尝试从PC-C通过Telnet连接到R3</strong>
+打开PC-C的桌面，选择“命令提示符”图标。从PC-C输入命令通过Telnet连接到R3。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; telnet 192.168.3.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此连接应失败，因为R3已被配置为仅在其虚拟终端线上接受SSH连接。</p>
+<p><strong>步骤9：通过SSH从PC-C连接到R3</strong>
+打开PC-C的桌面，选择“命令提示符”图标。从PC-C输入命令通过SSH连接到R3。当提示输入密码时，请输入为管理员账户配置的密码 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l SSHadmin 192.168.3.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤10：通过R2使用SSH连接到R3</strong>
+为了对R3进行故障排查和维护，ISP的管理员必须使用SSH访问路由器CLI。在R2的CLI中，输入命令通过SSH版本2使用 <strong>SSHadmin</strong> 用户账户连接到R3。当提示输入密码时，请输入为管理员配置的密码 <strong>ciscosshpa55</strong> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">R2# ssh -v 2 -l SSHadmin 10.2.2.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>步骤11：检查结果</strong>
+您的完成百分比应为100%。点击“检查结果”以查看反馈信息和已完成所需组件的验证情况。</p>
+<h3 id="实验脚本">实验脚本：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c"># PART1</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">router</span> <span class="n">ospf</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="mf">0</span> <span class="n">authentication</span> <span class="nb">message-digest</span>
+</span></span><span class="line"><span class="cl"><span class="n">interface</span> <span class="n">Serial0</span><span class="p">/</span><span class="mf">0</span><span class="p">/</span><span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ospf</span> <span class="nb">message-digest</span><span class="n">-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">MD5pa55</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART2</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 打开NTP服务器，配置NTP服务。</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">authentication-key</span> <span class="mf">1</span> <span class="n">md5</span> <span class="n">NTPpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">authenticate</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">trusted-key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="n">server</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">5</span> <span class="n">key</span> <span class="mf">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">ntp</span> <span class="nb">update-calendar</span>
+</span></span><span class="line"><span class="cl"><span class="n">service</span> <span class="n">timestamps</span> <span class="n">log</span> <span class="n">datetime</span> <span class="n">msec</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART3</span>
+</span></span><span class="line"><span class="cl"><span class="n">R1</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">R2</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">logging</span> <span class="mf">192.168</span><span class="p">.</span><span class="py">1</span><span class="p">.</span><span class="py">6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c"># PART4</span>
+</span></span><span class="line"><span class="cl"><span class="n">R3</span><span class="err">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="n">version</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="nb">authentication-retries</span> <span class="mf">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="n">ssh</span> <span class="nb">time-out</span> <span class="mf">90</span>
+</span></span><span class="line"><span class="cl"><span class="n">ip</span> <span class="nb">domain-name</span> <span class="n">ccnasecurity</span><span class="p">.</span><span class="py">com</span>
+</span></span><span class="line"><span class="cl"><span class="n">username</span> <span class="n">SSHadmin</span> <span class="n">privilege</span> <span class="mf">15</span> <span class="n">secret</span> <span class="n">ciscosshpa55</span>
+</span></span><span class="line"><span class="cl"><span class="n">crypto</span> <span class="n">key</span> <span class="n">zeroize</span> <span class="n">rsa</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">crypto</span> <span class="n">key</span> <span class="n">generate</span> <span class="n">rsa</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">line</span> <span class="n">vty</span> <span class="mf">0</span> <span class="mf">4</span>
+</span></span><span class="line"><span class="cl"> <span class="n">login</span> <span class="n">local</span>
+</span></span><span class="line"><span class="cl"> <span class="n">transport</span> <span class="n">input</span> <span class="n">ssh</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

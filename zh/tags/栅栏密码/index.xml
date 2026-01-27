@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>栅栏密码 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E6%A0%85%E6%A0%8F%E5%AF%86%E7%A0%81/</link>
+    <description>Recent content in 栅栏密码 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sat, 21 Sep 2024 20:10:52 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E6%A0%85%E6%A0%8F%E5%AF%86%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [XMAN2018排位赛]通行证 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-xman2018%E6%8E%92%E4%BD%8D%E8%B5%9B%E9%80%9A%E8%A1%8C%E8%AF%81-1/</link>
+      <pubDate>Sat, 21 Sep 2024 20:10:52 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-xman2018%E6%8E%92%E4%BD%8D%E8%B5%9B%E9%80%9A%E8%A1%8C%E8%AF%81-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。来源：https://github.com/hebtuerror404/CTF_competition_warehouse_2018&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。来源：https://github.com/hebtuerror404/CTF_competition_warehouse_2018</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">a2FuYmJyZ2doamx7emJfX19ffXZ0bGFsbg</span><span class="o">==</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、两个等号结尾，“=”符号作后缀填充，base64的典型特征。解码得到 <code>kanbbrgghjl{zb____}vtlaln</code>
+<a href="https://base64.supfree.net/"target="_blank" rel="noopener noreferrer">BASE64加密解密</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kanbbrgghjl<span class="o">{</span>zb____<span class="o">}</span>vtlaln
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、发现一对花括号，一般用来包括flag值，在这里位置不同，应尝试转换位置，使用栅栏密码。（没想到，这里使用栅栏加密，而不是解密，并且是W型栅栏加密）
+<a href="https://ctf.bugku.com/tool/railfence"target="_blank" rel="noopener noreferrer">栅栏加密/解密</a></p>
+<blockquote>
+<p>于篱笆密码法中， <a href="https://zh.wikipedia.org/wiki/%E6%98%8E%E6%96%87"target="_blank" rel="noopener noreferrer">明文</a> 由上至下顺序写上，当到达最低部时，再回头向上，一直重复直至整篇明文写完为止。然后，再往右顺序抄写一次。</p>
+<p>此例子中，其包含了三条篱笆及一段明文：‘WE ARE DISCOVERED. FLEE AT ONCE’。然后再按法抄下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">W . . . E . . . C . . . R . . . L . . . T . . . E
+</span></span><span class="line"><span class="cl">. E . R . D . S . O . E . E . F . E . A . O . C .
+</span></span><span class="line"><span class="cl">. . A . . . I . . . V . . . D . . . E . . . N . .
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>读取后再按 <a href="https://zh.wikipedia.org/wiki/%E6%9B%BF%E6%8D%A2%E5%BC%8F%E5%AF%86%E7%A0%81#%E7%B0%A1%E6%98%93%E6%9B%BF%E6%8F%9B%E5%AF%86%E7%A2%BC"target="_blank" rel="noopener noreferrer">传统</a> 分组：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">WECRL TEERD SOEEF EAOCA IVDEN
+</span></span></code></pre></td></tr></table>
+</div>
+</div></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kzna<span class="o">{</span>blnl_abj_lbh_trg_vg<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>当栏数为7时，符合flag形式“xxxx{xxxxxxxxx}”</p>
+<p>3、最后使用凯撒密码爆破脚本，移位数为13时，得到flag</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">13</span>  <span class="n">xman</span><span class="p">{</span><span class="n">oyay_now_you_get_it</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 编   者：玥轩</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 开发时间：2023/5/17 23:06</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">,</span> <span class="n">shift</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;移位解密函数&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plaintext</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">ciphertext</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span> <span class="c1"># 如果是字母，进行移位解密</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plaintext</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">shift</span> <span class="o">-</span> <span class="mi">65</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">65</span><span class="p">)</span> <span class="c1"># 大写字母移位解密</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plaintext</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">shift</span> <span class="o">-</span> <span class="mi">97</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">97</span><span class="p">)</span> <span class="c1"># 小写字母移位解密</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span> <span class="c1"># 如果不是字母，直接输出</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plaintext</span> <span class="o">+=</span> <span class="n">char</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">plaintext</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 加密密文和移位数</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="s1">&#39;kzna</span><span class="si">{blnl_abj_lbh_trg_vg}</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">shift</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="n">ciphertext</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 小写易于观察</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 枚举所有可能的移位数，输出所有解密结果</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plaintext</span> <span class="o">=</span> <span class="n">decrypt</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">plaintext</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、另一种解题思路，通过对base64解出的密文进行凯撒加密，寻找“x”和“f”开头的字符串（因为是flag的形式），再进行栅栏加密。原理都是相同的，且不要求解密顺序。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>oyay_now_you_get_it<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

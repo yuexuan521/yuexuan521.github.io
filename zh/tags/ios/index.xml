@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ios on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/ios/</link>
+    <description>Recent content in Ios on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 23 Jan 2025 12:46:59 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Packet Tracer - Configure IOS Intrusion Prevention System (IPS) Using the CLI（使用CLI配置IOS入侵防御系统）</title>
+      <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;
+&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置日志记录功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改IPS签名规则。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证IPS配置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
+&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2>
+<h3 id="地址表">地址表</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="目标">目标</h3>
+<ul>
+<li>
+<p>启用IOS入侵防御系统（IPS）。</p>
+</li>
+<li>
+<p>配置日志记录功能。</p>
+</li>
+<li>
+<p>修改IPS签名规则。</p>
+</li>
+<li>
+<p>验证IPS配置。</p>
+</li>
+</ul>
+<h3 id="背景场景">背景/场景</h3>
+<p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
+<p>标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。</p>
+<p>服务器和PC已预先配置好。路由器也已经预先配置了以下内容：</p>
+<p>o 启用密码： <strong>ciscoenpa55</strong></p>
+<p>o 控制台密码： <strong>ciscoconpa55</strong></p>
+<p>o SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
+<p>o OSPF进程号101</p>
+<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3>
+<p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
+<p><strong>步骤1：启用安全技术包。</strong></p>
+<p>a. 在R1上，执行 <code>show version</code> 命令查看技术包许可证信息。</p>
+<p>b. 如果尚未启用“Security Technology”包，请使用以下命令启用该包：</p>
+<blockquote>
+<p>R1(config)# license boot module c1900 technology-package securityk9</p>
+</blockquote>
+<p>c. 接受最终用户许可协议。</p>
+<p>d. 保存运行配置，并重新加载路由器以启用安全许可证。</p>
+<blockquote>
+<p>R1#write
+Building configuration…
+[OK]
+R1#reload</p>
+</blockquote>
+<p>e. 使用 <code>show version</code> 命令验证是否已启用“Security Technology”包。</p>
+<p><strong>步骤2：验证网络连接性。</strong></p>
+<p>a. 从PC-C向PC-A发送ping请求。应能成功ping通。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC-A向PC-C发送ping请求。应能成功ping通。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤3：在闪存中创建一个IOS IPS配置目录。</strong></p>
+<p>在R1上，使用 <code>mkdir</code> 命令在闪存中创建一个目录。将目录命名为ipsdir。</p>
+<blockquote>
+<p>R1#mkdir ipsdir
+Create directory filename [ipsdir]?
+Created dir flash:ipsdir</p>
+</blockquote>
+<p><strong>步骤4：配置IPS签名存储位置。</strong></p>
+<p>在R1上，将IPS签名存储位置配置为刚刚创建的目录。</p>
+<blockquote>
+<p>R1(config)#ip ips config location flash:ipsdir</p>
+</blockquote>
+<p><strong>步骤5：创建一个IPS规则。</strong></p>
+<p>在R1的全局配置模式下，使用 <code>ip ips name &quot;name&quot;</code> 命令创建一个IPS规则名称。将IPS规则命名为 <strong>iosips</strong> 。</p>
+<blockquote>
+<p>R1(config)#ip ips name iosips</p>
+</blockquote>
+<p><strong>步骤6：启用日志记录。</strong></p>
+<p>IOS IPS支持使用syslog发送事件通知。Syslog通知默认情况下是启用的。如果启用了loggingconsole，则会显示IPS的syslog消息。</p>
+<p>a. 如未启用syslog，则启用syslog。</p>
+<blockquote>
+<p>R1(config)#ip ips notify log</p>
+</blockquote>
+<p>b. 如有必要，从特权EXEC模式下使用 <code>clock set</code> 命令重置时钟。</p>
+<blockquote>
+<p>R1#clock set 19:31:59 6 jan 2024</p>
+</blockquote>
+<p>c. 使用 <code>show run</code> 命令验证路由器上的日志记录时间戳服务是否已启用。如果没有启用，则启用时间戳服务。</p>
+<blockquote>
+<p>R1(config)#service timestamps log datetime msec</p>
+</blockquote>
+<p>d. 将日志消息发送到位于IP地址192.168.1.50的syslog服务器。</p>
+<blockquote>
+<p>R1(config)#logging host 192.168.1.50</p>
+</blockquote>
+<p><strong>步骤7：配置IOS IPS使用签名类别。</strong></p>
+<p>使用 <code>retired true</code> 命令退休所有签名类别（签名发布内的所有签名）。使用 <code>retired false</code> 命令取消退休IOS_IPS Basic类别。</p>
+<blockquote>
+<p>R1(config)#ip ips signature-category
+R1(config-ips-category)#category all
+R1(config-ips-category-action)#retired true
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#category ios_ips basic
+R1(config-ips-category-action)#retired false
+R1(config-ips-category-action)#exit
+R1(config-ips-category)#exit</p>
+</blockquote>
+<p><strong>步骤8：将IPS规则应用于接口。</strong></p>
+<p>在接口配置模式下，使用 <code>ip ips name &quot;direction&quot;</code> 命令将IPS规则应用于接口。将规则应用于R1的G0/1接口的出站方向。启用IPS后，控制台行将收到一些日志消息，表明IPS引擎正在初始化。</p>
+<blockquote>
+<p>R1(config)#int g0/1
+R1(config-if)#ip ips iosips out</p>
+</blockquote>
+<p>注：direction in表示IPS仅检查进入接口的流量。同样地，out表示IPS仅检查离开接口的流量。</p>
+<h3 id="第二部分修改签名">第二部分：修改签名</h3>
+<p><strong>步骤1：更改签名的事件动作。</strong></p>
+<p>取消退休echo request签名（签名ID 2004，子签名ID 0），启用它，并将签名动作更改为alert和drop。</p>
+<blockquote>
+<p>R1(config)#ip ips signature-definition
+R1(config-sigdef)#signature 2004 0
+R1(config-sigdef-sig)#status
+R1(config-sigdef-sig-status)#retired false
+R1(config-sigdef-sig-status)#enabled true
+R1(config-sigdef-sig-status)#exit
+R1(config-sigdef-sig)#engine
+R1(config-sigdef-sig-engine)#event-action produce-alert
+R1(config-sigdef-sig-engine)#event-action deny-packet-inline
+R1(config-sigdef-sig-engine)#exit
+R1(config-sigdef-sig)#exit
+R1(config-sigdef)#exit</p>
+</blockquote>
+<p><strong>步骤2：使用show命令验证IPS配置。</strong></p>
+<p>使用 <code>show ip ips all</code> 命令查看IPS配置状态摘要。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>iosips规则应用于哪些接口以及什么方向？</p>
+<p><strong>步骤3：验证IPS是否正常工作。</strong></p>
+<p>a. 从PC-C尝试ping PC-A。这些ping请求成功了吗？请解释原因。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 从PC-A尝试ping PC-C。这些ping请求成功了吗？请解释原因。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>步骤4：查看syslog消息。</strong></p>
+<p>a. 点击Syslog服务器。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>b. 选择“服务”标签页。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>c. 在左侧导航菜单中，选择SYSLOG以查看日志文件。</p>
+<p><strong>步骤5：检查结果。</strong></p>
+<p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息及已完成的必要组件验证。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
