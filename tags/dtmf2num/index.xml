@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dtmf2num on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/dtmf2num/</link>
+    <description>Recent content in Dtmf2num on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 18 Nov 2024 12:58:09 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/dtmf2num/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [WUSTCTF2020]girlfriend 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-wustctf2020girlfriend-1/</link>
+      <pubDate>Mon, 18 Nov 2024 12:58:09 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-wustctf2020girlfriend-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105412940&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[WUSTCTF2020]girlfriend&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台：https://ctfgame.w-ais.cn/&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/105412940"target="_blank" rel="noopener noreferrer">BUUCTF：[WUSTCTF2020]girlfriend</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台：https://ctfgame.w-ais.cn/</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到attachment .zip压缩包，解压后得到girlfriend.zip压缩包。最后材料是girlfriend.wav和题目描述.txt。</p>
+<p>题目描述.txt内容如下：
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、尝试听girlfriend.wav音频文件，刚开始没有听出是手机键盘拨号声。后面看题解，得知是DTMF拨号音识别。
+<strong>Audacity显示</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用dtmf2num程序识别拨号内容
+<a href="https://link.csdn.net/?from_id=105412940&amp;target=http://aluigi.altervista.org/mytoolz/dtmf2num.zip"target="_blank" rel="noopener noreferrer">dtmf2num下载地址</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">dtmf2num.exe ..<span class="se">\资</span>料<span class="se">\g</span>irlfriend.wav
+</span></span><span class="line"><span class="cl">dtmf2num.exe 音频文件位置
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到如下的按键顺序、次数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">999*666*88*2*777*33*6*999*4*4444*777*555*333*777*444*33*66*3*7777
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、对应手机上九宫格输入，得到最后的字符串为 <code>YOUAREMYGIRLFRIENDS</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">YOUAREMYGIRLFRIENDS
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="m">999</span>     ---&gt;   y
+</span></span><span class="line"><span class="cl"><span class="m">666</span>     ---&gt;   o
+</span></span><span class="line"><span class="cl"><span class="m">88</span>      ---&gt;   u
+</span></span><span class="line"><span class="cl"><span class="m">2</span>       ---&gt;   a
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">33</span>      ---&gt;   e
+</span></span><span class="line"><span class="cl"><span class="m">6</span>       ---&gt;   m
+</span></span><span class="line"><span class="cl"><span class="m">999</span>     ---&gt;   y
+</span></span><span class="line"><span class="cl"><span class="m">4</span>       ---&gt;   g
+</span></span><span class="line"><span class="cl"><span class="m">4444</span>    ---&gt;   i
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">555</span>     ---&gt;   l
+</span></span><span class="line"><span class="cl"><span class="m">333</span>     ---&gt;   f
+</span></span><span class="line"><span class="cl"><span class="m">777</span>     ---&gt;   r
+</span></span><span class="line"><span class="cl"><span class="m">444</span>     ---&gt;   i
+</span></span><span class="line"><span class="cl"><span class="m">33</span>      ---&gt;   e
+</span></span><span class="line"><span class="cl"><span class="m">66</span>      ---&gt;   n
+</span></span><span class="line"><span class="cl"><span class="m">3</span>       ---&gt;   d
+</span></span><span class="line"><span class="cl"><span class="m">7777</span>    ---&gt;   s
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">youaremygirlfriends
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<p>大写提交不成功，切换小写</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>youaremygirlfriends<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

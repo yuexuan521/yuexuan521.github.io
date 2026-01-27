@@ -1,0 +1,2055 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Crypto on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/crypto/</link>
+    <description>Recent content in Crypto on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Tue, 21 Oct 2025 13:21:08 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF Rabbit 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-rabbit-1/</link>
+      <pubDate>Tue, 21 Oct 2025 13:21:08 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-rabbit-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+&lt;a href=&#34;http://www.jsons.cn/rabbitencrypt/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Rabbit在线工具&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解题思路">解题思路：</h3>
+<p>1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
+<a href="http://www.jsons.cn/rabbitencrypt/"target="_blank" rel="noopener noreferrer">Rabbit在线工具</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、得到flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Cute_Rabbit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="rabbit加解密算法">Rabbit加解密算法：</h3>
+<ol>
+<li>
+<p><strong>密钥 - 共享的绝密暗号</strong></p>
+<ul>
+<li>
+<p>你和你朋友事先约定好一个绝密暗号，比如 <strong>“巧克力蛋糕真好吃”</strong> 。这个暗号就是 <strong>“密钥”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，密钥是一串 128 位的数字（比如 <code>2B7E1516...</code> ），长度固定，是加解密的根本，绝对不能泄露。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>初始化向量 - 本次通信的页码</strong></p>
+<ul>
+<li>
+<p>为了更安全，你们决定每次通信都用密码本的不同页。于是你打电话告诉朋友：“今天我们用密码本的 <strong>第58页</strong> 开始。” 这个“第58页”就是 <strong>“初始化向量”</strong> 。</p>
+</li>
+<li>
+<p><strong>在 Rabbit 算法里，IV 是一串 64 位的数字。它的作用是确保即使用同一个密钥加密两份相同的内容，也会得到完全不同的密文。就像用同一个密码本，但从不同页开始，写出的密码也不同。</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Rabbit 机器的工作 - 生成“密码流”</strong></p>
+<ul>
+<li>
+<p>现在，你把密钥（“巧克力蛋糕真好吃”）和 IV（“第58页”）输入到一台叫做 <strong>Rabbit</strong> 的神奇机器里。</p>
+</li>
+<li>
+<p>这台机器会轰隆隆地运转起来，内部有很多齿轮和计数器（这就是算法的内部状态），根据你给的“暗号”和“页码”，它开始疯狂地吐出一长串、完全随机、没有规律的 <strong>“密码流”</strong> 。</p>
+</li>
+<li>
+<p>这个密码流就像： <code>X5j9!kLm@qR3tW#z...</code> （无穷无尽）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>加密 - 编写密码信</strong></p>
+<ul>
+<li>
+<p>现在你开始写原始信件（ <strong>明文</strong> ）： <code>“明天下午三点公园见”</code></p>
+</li>
+<li>
+<p>然后，你拿出 Rabbit 机器生成的“密码流”，将信上的每一个字和密码流上的每一个字符进行 <strong>“一对一混合”</strong> （在计算机里是做“异或”运算）。</p>
+</li>
+<li>
+<p>混合后，你原本清晰的信件就变成了一堆毫无意义的乱码（ <strong>密文</strong> ）： <code>“敨晑佢歮湤歮”</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>解密 - 还原密码信</strong></p>
+<ul>
+<li>
+<p>你的朋友收到了这堆乱码和你的电话通知（IV=“第58页”）。</p>
+</li>
+<li>
+<p>他也有同样的 Rabbit 机器，并且知道你们的共享暗号（密钥=“巧克力蛋糕真好吃”）。</p>
+</li>
+<li>
+<p>他把密钥和 IV 输入机器，机器会生成 <strong>一模一样</strong> 的“密码流”： <code>X5j9!kLm@qR3tW#z...</code></p>
+</li>
+<li>
+<p>他再用这个密码流和乱码（密文）进行 <strong>完全相同的“混合”操作</strong> ，神奇的事情发生了，乱码又变回了清晰的原信： <code>“明天下午三点公园见”</code> 。</p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>第三届“奇安信杯”网络安全技能竞赛 部分题目WriteUP</title>
+      <link>https://yuexuan521.github.io/posts/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</link>
+      <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</guid>
+      <description>&lt;hr&gt;
+&lt;h3 id=&#34;misc&#34;&gt;MISC&lt;/h3&gt;
+&lt;h4 id=&#34;gif&#34;&gt;GIF&lt;/h4&gt;
+&lt;p&gt;下载附件，解压得到test1.jpg。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34; 
+             alt=&#34;image-20241019112516253&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34; 
+             alt=&#34;image-20241019112337531&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<hr>
+<h3 id="misc">MISC</h3>
+<h4 id="gif">GIF</h4>
+<p>下载附件，解压得到test1.jpg。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png" 
+             alt="image-20241019112516253" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png" 
+             alt="image-20241019112337531" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>QR_Research扫码得到flag： <code>flag{255fb106-47a8-4932-a0e9-4a2567513db3}</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png" 
+             alt="image-20241019112840972" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="pyc">pyc</h4>
+<p>下载附件，解压得到test.pyc文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png" 
+             alt="image-20241019114034253" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用Uncompyle6工具对test.pyc文件反编译，得到test.py文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">// Uncompyle6安装与使用
+</span></span><span class="line"><span class="cl">// pip安装
+</span></span><span class="line"><span class="cl">pip install uncompyle6
+</span></span><span class="line"><span class="cl">// 在命令行中，uncompyle6加上需要反编译的文件参数即可，注意使用-o 选项输出到文件中
+</span></span><span class="line"><span class="cl">uncompyle6 -o test.py test.pyc
+</span></span><span class="line"><span class="cl">// 这会将test.pyc文件反编译，并输出到test.py文件中
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png" 
+             alt="image-20241019114406083" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png" 
+             alt="image-20241019114425933" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># uncompyle6 version 3.9.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Python bytecode version base 3.7.0 (3394)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Decompiled from: Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Embedded file name: /home/airevan/data/kalidata/work/靶场搭建/CTF/pyc是啥/test.py</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Compiled at: 2020-04-15 18:57:16</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Size of source mod 2**32: 336 bytes</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;&#39;ce}&#39;&#34;</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">&#34;&#39;dcd&#39;&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;&#39;affb&#39;&#34;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">&#34;&#39;-&#39;&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;&#39;c&#39;&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&#34;&#39;dd-&#39;&#34;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">5</span><span class="p">,</span> <span class="s2">&#34;&#39;ec-&#39;&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;&#39;-f&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;&#39;cb&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;&#39;flag{cc&#39;&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">flag</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flag</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flag</span><span class="p">[</span><span class="n">num</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;猜猜看，flag做过哪些处理&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将flag数组中的内容，逆序拼接得到flag： <code>flag{cc2cb772-f0ec-55dd-87c0-6affb7dcd9ce}</code> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;&#39;ce}&#39;&#34;</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">&#34;&#39;dcd&#39;&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;&#39;affb&#39;&#34;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="s2">&#34;&#39;-&#39;&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;&#39;c&#39;&#34;</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">&#34;&#39;dd-&#39;&#34;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl"> <span class="mi">5</span><span class="p">,</span> <span class="s2">&#34;&#39;ec-&#39;&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;&#39;-f&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;&#39;cb&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;&#39;flag{cc&#39;&#34;</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="seeyouagain">seeyouagain</h4>
+<p>下载附件，解压得到flag.png图片。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png" 
+             alt="image-20241019115057086" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>用010 Editor打开，提示CRC错误，粘贴到MarkDown中也无法显示，应该被修改宽高了。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png" 
+             alt="image-20241019115221034" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>显示失败
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png" 
+             alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用脚本，爆破flag.png图片宽高并修复文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png" 
+             alt="image-20241019115550428" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修复图片如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png" 
+             alt="unhex" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到flag的密码： <code>flag@abc</code> ，压缩包应该隐藏在图片中。用010 Editor打开修复后的图片，发现ZIP压缩包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png" 
+             alt="image-20241019120045868" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>另存为zip文件，使用密码解压得到flag.txt，内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmR</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW6</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbm</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbm</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaW7</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">RGFtbiB3aG8ga25ldyBhbGwgdGhlIHBsYW5lcyB3ZSBmbGV3
+</span></span><span class="line"><span class="cl"><span class="nv">R29vZCB0aGluZ3Mgd2XigJl2ZSBiZWVuIHRocm91Z2g</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhhdCBJ4oCZbGwgYmUgc3RhbmRpbmcgcmlnaHQgaGVyZW</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">VGFsa2luZyB0byB5b3UgYWJvdXQgYW5vdGhlciBwYXRo
+</span></span><span class="line"><span class="cl"><span class="nv">SSBrbm93IHdlIGxvdmVkIHRvIGhpdCB0aGUgcm9hZCBhbmQgbGF1Z2g</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">QnV0IHNvbWV0aGluZyB0b2xkIG1lIHRoYXQgaXQgd291bGRu4oCZdCBsYXN0
+</span></span><span class="line"><span class="cl"><span class="nv">SGFkIHRvIHN3aXRjaCB1cCBsb29rIGF0IHRoaW5ncyBkaWZmZXJlbnQgc2VlIHRoZSBiaWdnZXIgcGljdHVyZV</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhvc2Ugd2VyZSB0aGUgZGF5cyBoYXJkIHdvcmsgZm9yZXZlciBwYXlzIG5vdyBJIHNlZSB5b3UgaW4gYSBiZXR0ZXIgcGxhY2W</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">SG93IGNvdWxkIHdlIG5vdCB0YWxrIGFib3V0IGZhbWlseSB3aGVuIGZhbWlseeKAmXMgYWxsIHRoYXQgd2UgZ290P3</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">RXZlcnl0aGluZyBJIHdlbnQgdGhyb3VnaCB5b3Ugd2VyZSBzdGFuZGluZyB0aGVyZSBieSBteSBzaWRl
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIG5vdyB5b3UgZ29ubmEgYmUgd2l0aCBtZSBmb3IgdGhlIGxhc3QgcmlkZX</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmS</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW7</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbm</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbk</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaW5</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Rmlyc3QgeW91IGJvdGggZ28gb3V0IHlvdXIgd2F5
+</span></span><span class="line"><span class="cl">QW5kIHRoZSB2aWJlIGlzIGZlZWxpbmcgc3Ryb25n
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHdoYXTigJlzIHNtYWxsIHR1cm4gdG8gYSBmcmllbmRzaGlwIGEgZnJpZW5kc2hpcI</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VHVybiBpbnRvIGEgYm9uZCBhbmQgdGhhdCBib25kIHdpbGwgbmV2ZXIgYmUgYnJva2V</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHRoZSBsb3ZlIHdpbGwgbmV2ZXIgZ2V0IGxvc3Q</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHdoZW4gYnJvdGhlcmhvb2QgY29tZSBmaXJzdN</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhlbiB0aGUgbGluZSB3aWxsIG5ldmVyIGJlIGNyb3NzZWQgZXN0YWJsaXNoZWQgaXQgb24gb3VyIG93bp</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">V2hlbiB0aGF0IGxpbmUgaGFkIHRvIGJlIGRyYXdu
+</span></span><span class="line"><span class="cl">QW5kIHRoYXQgbGluZSBpcyB3aGF0IHdlIHJlYWNo
+</span></span><span class="line"><span class="cl">U28gcmVtZW1iZXIgbWUgd2hlbiBJ4oCZbSBnb25l
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SG93IGNvdWxkIHdlIG5vdCB0YWxrIGFib3V0IGZhbWlseSB3aGVuIGZhbWlseeKAmXMgYWxsIHRoYXQgd2UgZ290P4</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">RXZlcnl0aGluZyBJIHdlbnQgdGhyb3VnaCB5b3Ugd2VyZSBzdGFuZGluZyB0aGVyZSBieSBteSBzaWRl
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIG5vdyB5b3UgZ29ubmEgYmUgd2l0aCBtZSBmb3IgdGhlIGxhc3QgcmlkZV</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">U28gbGV0IHRoZSBsaWdodCBndWlkZSB5b3VyIHdheSBob2xkIGV2ZXJ5IG1lbW9yeY</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QXMgeW91IGdvIGFuZCBldmVyeSByb2FkIHlvdSB0YWtlIHdpbGwgYWx3YXlzIGxlYWQgeW91IGhvbWX</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmQ</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW7</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbh</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbj</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaW4</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmQ</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW4</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbs</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbl</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaW6</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">RGFtbiB3aG8ga25ldyBhbGwgdGhlIHBsYW5lcyB3ZSBmbGV3
+</span></span><span class="line"><span class="cl"><span class="nv">R29vZCB0aGluZ3Mgd2XigJl2ZSBiZWVuIHRocm91Z2g</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhhdCBJ4oCZbGwgYmUgc3RhbmRpbmcgcmlnaHQgaGVyZY</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">VGFsa2luZyB0byB5b3UgYWJvdXQgYW5vdGhlciBwYXRo
+</span></span><span class="line"><span class="cl"><span class="nv">SSBrbm93IHdlIGxvdmVkIHRvIGhpdCB0aGUgcm9hZCBhbmQgbGF1Z2j</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">QnV0IHNvbWV0aGluZyB0b2xkIG1lIHRoYXQgaXQgd291bGRu4oCZdCBsYXN0
+</span></span><span class="line"><span class="cl"><span class="nv">SGFkIHRvIHN3aXRjaCB1cCBsb29rIGF0IHRoaW5ncyBkaWZmZXJlbnQgc2VlIHRoZSBiaWdnZXIgcGljdHVyZQ</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhvc2Ugd2VyZSB0aGUgZGF5cyBoYXJkIHdvcmsgZm9yZXZlciBwYXlzIG5vdyBJIHNlZSB5b3UgaW4gYSBiZXR0ZXIgcGxhY2U</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">SG93IGNvdWxkIHdlIG5vdCB0YWxrIGFib3V0IGZhbWlseSB3aGVuIGZhbWlseeKAmXMgYWxsIHRoYXQgd2UgZ290P9</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">RXZlcnl0aGluZyBJIHdlbnQgdGhyb3VnaCB5b3Ugd2VyZSBzdGFuZGluZyB0aGVyZSBieSBteSBzaWRl
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIG5vdyB5b3UgZ29ubmEgYmUgd2l0aCBtZSBmb3IgdGhlIGxhc3QgcmlkZV</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmS</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW4</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbo</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbt</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaW6</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Rmlyc3QgeW91IGJvdGggZ28gb3V0IHlvdXIgd2F5
+</span></span><span class="line"><span class="cl">QW5kIHRoZSB2aWJlIGlzIGZlZWxpbmcgc3Ryb25n
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHdoYXTigJlzIHNtYWxsIHR1cm4gdG8gYSBmcmllbmRzaGlwIGEgZnJpZW5kc2hpcD</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VHVybiBpbnRvIGEgYm9uZCBhbmQgdGhhdCBib25kIHdpbGwgbmV2ZXIgYmUgYnJva2W</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHRoZSBsb3ZlIHdpbGwgbmV2ZXIgZ2V0IGxvc3R</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIHdoZW4gYnJvdGhlcmhvb2QgY29tZSBmaXJzdD</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VGhlbiB0aGUgbGluZSB3aWxsIG5ldmVyIGJlIGNyb3NzZWQgZXN0YWJsaXNoZWQgaXQgb24gb3VyIG93bn</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">V2hlbiB0aGF0IGxpbmUgaGFkIHRvIGJlIGRyYXdu
+</span></span><span class="line"><span class="cl">QW5kIHRoYXQgbGluZSBpcyB3aGF0IHdlIHJlYWNo
+</span></span><span class="line"><span class="cl">U28gcmVtZW1iZXIgbWUgd2hlbiBJ4oCZbSBnb25l
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SG93IGNvdWxkIHdlIG5vdCB0YWxrIGFib3V0IGZhbWlseSB3aGVuIGZhbWlseeKAmXMgYWxsIHRoYXQgd2UgZ290Pz</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">RXZlcnl0aGluZyBJIHdlbnQgdGhyb3VnaCB5b3Ugd2VyZSBzdGFuZGluZyB0aGVyZSBieSBteSBzaWRl
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIG5vdyB5b3UgZ29ubmEgYmUgd2l0aCBtZSBmb3IgdGhlIGxhc3QgcmlkZU</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">U28gbGV0IHRoZSBsaWdodCBndWlkZSB5b3VyIHdheSBob2xkIGV2ZXJ5IG1lbW9yeX</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QXMgeW91IGdvIGFuZCBldmVyeSByb2FkIHlvdSB0YWtlIHdpbGwgYWx3YXlzIGxlYWQgeW91IGhvbWX</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">SXTigJlzIGJlZW4gYSBsb25nIGRheSB3aXRob3V0IHlvdSBteSBmcmllbmR</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">QW5kIEnigJlsbCB0ZWxsIHlvdSBhbGwgYWJvdXQgaXQgd2hlbiBJIHNlZSB5b3UgYWdhaW4</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2XigJl2ZSBjb21lIGEgbG9uZyB3YXkgZnJvbSB3aGVyZSB3ZSBiZWdhbi</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">T2ggSeKAmWxsIHRlbGwgeW91IGFsbCBhYm91dCBpdCB3aGVuIEkgc2VlIHlvdSBhZ2Fpbg</span><span class="o">==</span>
+</span></span><span class="line"><span class="cl"><span class="nv">V2hlbiBJIHNlZSB5b3UgYWdhaQ</span><span class="o">==</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一眼Base64隐写，贴个解密脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">base64</span> <span class="o">=</span> <span class="s2">&#34;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">binstr</span><span class="o">=</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">strings</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;flag.txt&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="n">strings</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;==&#34;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">((</span><span class="n">base64</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="o">&amp;</span> <span class="mi">15</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 取倒数第3个字符，在base64找到对应的索引数（就是编码数），取低4位，再转换为二进制字符</span>
+</span></span><span class="line"><span class="cl">        <span class="n">binstr</span> <span class="o">=</span> <span class="n">binstr</span> <span class="o">+</span> <span class="s2">&#34;0&#34;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">4</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span> <span class="o">+</span> <span class="n">temp</span>  <span class="c1"># 二进制字符补高位0后，连接字符到binstr</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">i</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;=&#34;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">temp</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">((</span><span class="n">base64</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="o">&amp;</span> <span class="mi">3</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>  <span class="c1"># 取倒数第2个字符，在base64找到对应的索引数（就是编码数），取低2位，再转换为二进制字符</span>
+</span></span><span class="line"><span class="cl">        <span class="n">binstr</span> <span class="o">=</span> <span class="n">binstr</span> <span class="o">+</span> <span class="s2">&#34;0&#34;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp</span><span class="p">))</span> <span class="o">+</span> <span class="n">temp</span>  <span class="c1"># 二进制字符补高位0后，连接字符到binstr</span>
+</span></span><span class="line"><span class="cl"><span class="nb">str</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">binstr</span><span class="p">),</span> <span class="mi">8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">str</span> <span class="o">=</span> <span class="nb">str</span> <span class="o">+</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">binstr</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># 从左到右，每取8位转换为ascii字符，连接字符到字符串</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行得到flag： <code>flag{da6ac101b05b6974}</code> 。（要补个“}”）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png" 
+             alt="image-20241019120526730" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="crypto">CRYPTO</h3>
+<h4 id="base全家桶">base全家桶</h4>
+<p>下载附件，解压得到cipher.txt文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png" 
+             alt="image-20241018151311265" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>1、cipher.txt内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="m">3441344134363435344435323442344534423441343635353334353333323442343935413442353434393535354135333441344534353536353535333332353534413436344235363535353533323442344135413433353634443536344235353439344534343535353535343533344334423541344235363442344435333443344134413445343534373536353334453442354134363536343735333442344634393532343335363446353435333443344135323436353635353533333235373441344534373536343735343433344234413441343834353442353334423533344134453437343535373537353334373442354134363536343735333332353034413436344134353437353635333438344235413432353634393533353335333439354134433436344235353541353334423335343634353334353233323537343933353442343534373533333234423441344134333435344235333332353434413445344335353535353435333438343935363443353634463535333234383441344534453435343735363533343634413536344135353539353335333442344134413433353534463536353335343442343234363536353535313533353734413436344135363437353633323441344235413437343534423444353335363442344534333435353734453442343634423541343735363437353333323536344134363443343535373532344234383442344435413435353735333533344234393445343335353537353535413533344235323436343533343534343335363442353634423436343735333433344134423541343734363444353433323536343734413435343535353534353334463439353634363536344435353332343734413441344334353535353634423541344234453441353534463533353334423439344534423535333635363533353434423532343634363435353235333537343935363441353634373536353334443439354134363436344435323332353634373441343634353539353335333438343935363436353634373444353335373441344134363435353535363442353834413541343635353444353333323332343933353443343534463535354135333442354134363435344435343433343634423536344334353437353235333443344135363445343534423536333235343442344534363535353335363533343434423536344335363442353735333534344134453441343534443532344135353442344534413536344435333541353634413445343434353446353533323434344134413436353635353532353335373441353634423434343535363533343834413441343235353442353634423535344234453438353535333536353334363442354134373536344234443533344134413441343834353446353635333536344234413441353534353533333234463441344134423536344635353332353434413445343535353334353333323536343735413443343634373536343334433442344134343436344235323442353334423445344335353537353635333441344235413434353634443444353334433441343634453435344435323533344534423439354134363446353233323442343935413433353635333535333235343441343234353536344435323533353634373441344235343435353633323442344234413434343534423536344235373441344534443435353535373533343734423536343835363437353335413533344134353332353535393532344235303442353634453436343735333332333234393541343335353332353634333434343935413436353634443534343334363439333534413436343735343433344234423541343834353442353333323538344134453442343535373534353334373442353634413536343935353332343534413445344334353539353635333443344233353441353634393533353334463441343234333535353335363533344334423541343635353334353335333537344135363441353635353536353334423441354134333435344235343332353634423441344135353535353335333437344235413442353634353444353334383441344134433435353535363442353834423541344135353531353335333442343934453442353535373536353334433442353634363535333435323332343634423335344235363437353234423443344334413432353634443533333234453442344534363435353535333533343934393536343835363444353533323537344134453436343535353536344234363442344435413435333635333533344234413445344235343444353634413533344235323436353533343532344235363437353234413534343535363533343834433441343734353444353233323537343934453437343535373533353334353439353634363536343535333332353434413445343834353539353634423534344235413441353535373533333233323439353234433435333235363441353334413541343634353444353435333436344135363441343634373534353334433441343634453435344435323332353334373441343635353533353735333434344235413438353634443444353335353441344134323435344235363533344534423439354134363446353334413536343933353443343534463536353235333441344534363435353535323433343634413445344334353537353633323442344135413437353534423536344235383442344534343535353735363533343934423541343435363437353735333534344134413433353434353536344235413442344134363535353935333332353334393541344334353533353634333434343934453435353635353531333235363442333534423435353735363433344334433441343434363444353434423535343934453434343535373445344234443442353634343536343935313332344334413445344534353531353234423443344234443541343634463533353334463441344534423536343735363433353434393335343635363444353335333537344134363442353434353532344234423441354134373435344235373442353734423445343734353537344534423442344235413435353634373535333234463439333534363435353735363442353434423541344135353539353333323332343935413442353434393535333235343442333534363436344435333533353534393536344334343435353333323442344334413432353534423533333235353437344134433435353735333533344234423536344235363437353533323438344134453445343535373536353334363441353634413535353135333533344234413532343335363442353535333443344334323436353635353533353335363442343634413536343735333332344134413541343635363442353633323537344234453437343535373536353334373442353533323436343535353332353734413445343834353539353235333438344234413436353535393534343334423439353234433435333235353541353334413541343635353334353235333436344235363441353634373532333234413442354134373536344435323442353434373441344335353535353435333446343935363437353634443535333235373441344534373536353535323441353734423445344135353537353335333446344135323433353434443536353334423442344534363536343535323533343634373532344134353537353635333438344234413436353534423532333235333442344534353435353935333533343834393536343735363435344435333538344134363438343534443532344235383442344534413535343935333332333234393335344334353332353535413533344235323436343533343533343334363443343634433435353735373433344334423441343634363442344435333534343734393541343535333535353334443439353634363536343935333332353534413441344134353444353234423445344235323441353534443533353335373441344134343435344635353332353434413532343634353535353234333437344135363441353535373535333234383441344134343436344235353332353834423445343334353537353735333442344235413436353533323535333235363441344134363435343535323442344334423541344135353334353333323442344134413443343533363535333234423442354134353534344235343433343634413335344334363435353533323442344135413434343534443536344235333441344534343435353535343533344334393532343335363442344435333443344134413445343534463536344234433442354134363536353135333332344634393532344235363446353635333534344134363436353635353532343335363437344134423534343535373433344234393535354134363442353434423533344134453436343535373533353334373442354134313536343734443533353434413436344534353539353234423534344235353541343535373533333233323439353634433436344235353441353334423541343635343442353333323436344233353443343534373534343334443441344134333435344435343442353534413445344234353537353435333435343935363443353533343533333234453441344534433435343935363533344134423435354134353539353335333533343935413433353535333535353334433441354134363535333235373533343734413536344135363437353433323442344135413432353634423445353335363437344134373435344635333533343634423541343735363437353533323538344134353332353535373536343334363442353234363535353735333533333234393335343335353537353633323443344233353436353533343533343334363442333534413435353734443533344134423536344534353444353233323536343734413439343535353533353334373439353634343536344435333533353434413445344334353535353634423538344234443541343634463533344233323441344534423435353335363441353334423532343635343442353235333437344135363441353634373536344234413442354134363535343935323442353434373441343635353539353335333433344235363436353634373444353335363439333534363435353935323442353634423445344135353537353333323537344134453443343534463536344135333441343234363435333435343533343634423335344334363437353235333442344235413436343634443535344235343442344534363535353535353533343434423541343635363442353533323435344134363445343534443536353335363442344534413536344435333332343734413441344334353446353535413533344134413436343535353532353335373441344534433434343535363332344334413541343435353442353633323535344234453434353535373536344135333439354134343536343334443533353834413441343834353531353234423541344234413441353535313533333234423439344134423536353335363433343434413445343535363435353434333436343734413442353635353535333234423443344134343436344234453433353334373441343434353537353635333442344235413434353634373533333234423441344534453435344235323533344534423532343635363444353233323442344135323442353634423536343335343439333534353536344435333332353734413536344135343435353633323442344135413434353634443536344235333441344134433535353735343533344234423536344335363437353533323530344134413438343534373536343334363442354134413535353735333332344634393541344334353442353535333443344235413434353634353533353334363442333534433436343735333433344334413441343434363442353333323533343734413441353535373534353334363439353634443536343735353332343934413436344334353444353635333445344135363441353635313533353334373441343234333535333235363533344334423541343635343442353335333536344134453441353535373444353334413443344134363536343935333442353634413441344135353537353535333437343935353332343634373531333234373441344433323535353935323442353834423541344135353539353333323442343935413434343535373536353235333442353234363435333235373533343634423445344235363437353434423441344235413434343634443533344235343437344134423535353535333533344234393536343735363435353333323446344134453441343535353536344234453442344534413536344635333533344234393532343335353336353635333434343935323436343634353532333234363441353634423436343735323533344234423541343634363442353633323536343734413435343535353533353334353439354134363536344234443533353934413445343834353437353234423538344233353441353535333533333233323439354134423534343535363441353334423541343634353535353133323535343935363443343535373534353334433443344134363436344435343442353434373441343635353535353335333444343935353333343634423444353335353441344433323535344235363433344334423532343235353444353335323536344135323434343534463536353334343441344534363436353535323433343634413536344334353537353533323442344135413433343534423536344235353442344534363535353335353533343434423541343635353332353533323444344134413436343533343532344235303442344134363535353935333332354134433441343434353533353535413533344133353435353635353533333235373441333534433436343735363433344134373536343434363444353634423533343934453443343534463533353334433442353234333536344635333332344334413441343634353439353234423443344235323436353634373533353334463441353634333536344635363332353434393445343635363444353333323537343933353437353634353535333234423439354134383435344235333442353334413445343934353537353635333446343935413434353634353444353334433441343634433435353935323441353334423536344534363437353334423332343935413442343535373535354135333442333534353534344235343433343634393335344135363437353434423442344134413432353534423534344235343437344134383535353335343533344334393536344335363439353533323436344134363443343535393536344135353442344435413435333435333533343734413532343335353533353635333534344134413436353534423537353334363442333534413536343735333332344134433441343235363442353333323537344234453442343535353537353334373442353533323436343535353332353734393335344134353535353634333436344234453441353535313533353334423439354134433435333235353441353334423335343635353334353235333536344233353438343535373532333234433442354134343436344234453433353634373441344334353533344534423437343935363441353634353533333235373441344134453435344235363432353334383535333635343332334433443344</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>根据题目提示，使用Base16解密，得到一大串密文，后面应该还有多重Base加密。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png" 
+             alt="image-20241019110546923" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用多次Base16解密，再切换Base32解密，最后得到flag： <code>flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png" 
+             alt="image-20241019111111971" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="base6432">base64+32</h4>
+<p>下载附件，解压得到base64+32.html文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png" 
+             alt="image-20241019111251572" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>双击文件打开，页面内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTKLEYFUV2JGJHFGVJTKJAT2PI</span><span class="o">=</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png" 
+             alt="image-20241019111425315" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>根据题目提示，大致要使用Base64和Base32解密。</p>
+<p>先进行Base32解密，得到</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA</span><span class="o">==</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png" 
+             alt="image-20241019111649611" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>再进行Base64解密，得到经过URL编码的字符串。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">flag%7B6682ad1e-43cc-406d-af02-4c76ef64eb65%7D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png" 
+             alt="image-20241019111739307" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后进行URL解码，得到flag： <code>flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png" 
+             alt="image-20241019111918659" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="rsa">rsa</h4>
+<p>下载附件，解压得到enc.py文件，内容如下：（RSA真难，算不出来，(╯°□°）╯︵ ┻━┻）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#encoding=utf-8</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s2">&#34;flag{****************************************}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">1953100985460341348696462250270875098931515807146586756296095446519328460202594322688077959911801412881736536007030245814199784734114468379391959242638228445246656155129859794350223734103552981321896683545886584718379382489138858499065228901412805708175575610007278296746952620830529848517741610397035368508736304074009571123132231492002047409382240786830369954266084929667038697671614351425836882238175963587766360974168461069129309445949172255481878016805287109</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">flag</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;hex&#39;</span><span class="p">),</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">enc</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">enc</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#enc:13918498583187711998666755838620600252501421746177705797675741386419555268659248340583925718882522804400619337344828619986017381499273031894348961748605310196801608908443228886471436561910871970393654792610256941039839778929561020773500269100635445693772298294774989739148717590457962047296276704711649956298234247923598401019461221</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>1、属于RSA低加密指数攻击，贴一个脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Given ciphertext</span>
+</span></span><span class="line"><span class="cl"><span class="n">enc</span> <span class="o">=</span><span class="mi">13918498583187711998666755838620600252501421746177705797675741386419555268659248340583925718882522804400619337344828619986017381499273031894348961748605310196801608908443228886471436561910871970393654792610256941039839778929561020773500269100635445693772298294774989739148717590457962047296276704711649956298234247923598401019461221</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Compute the integer cube root of the ciphertext</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">m</span><span class="p">,</span> <span class="n">exact</span> <span class="o">=</span> <span class="n">gmpy2</span><span class="o">.</span><span class="n">iroot</span><span class="p">(</span><span class="n">enc</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Ensure that the cube root is exact</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="ow">not</span> <span class="n">exact</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Cube root is not exact,decryption failed.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Convert the integer back to bytes</span>
+</span></span><span class="line"><span class="cl"><span class="n">hex_m</span> <span class="o">=</span> <span class="nb">hex</span><span class="p">(</span><span class="n">m</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hex_m</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">hex_m</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="n">hex_m</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">hex_m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Print the recovered flag</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行得到flag： <code>flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png" 
+             alt="image-20241022205934149" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="web">WEB</h3>
+<hr>
+<p>相关阅读：</p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/134477406?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">BUUCTF [BJDCTF2020]鸡你太美 1</a></p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/133934621?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">BUUCTF 大白 1</a></p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/134591569?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">BUUCTF [ACTF新生赛2020]base64隐写 1</a></p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/134358887?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">Misc | bucket 第二届“奇安信”杯网络安全技能竞赛</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 摩丝 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E6%91%A9%E4%B8%9D-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:56:02 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E6%91%A9%E4%B8%9D-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205046211.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205046211.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;..&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.-..&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;---&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;...-&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-.--&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;---&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;..-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;摩尔斯电码简述&#34;&gt;摩尔斯电码简述：&lt;/h3&gt;
+&lt;p&gt;摩尔斯电码(Morse Code)是由美国人萨缪尔·摩尔斯在1836年发明的一种时通时断的且通过不同的排列顺序来表达不同英文字母、数字和标点符号的信号代码，摩尔斯电码主要由以下5种它的代码组成：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205046211.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205046211.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">..</span> <span class="o">.-..</span> <span class="o">---</span> <span class="o">...-</span> <span class="o">.</span> <span class="o">-.--</span> <span class="o">---</span> <span class="o">..-</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="摩尔斯电码简述">摩尔斯电码简述：</h3>
+<p>摩尔斯电码(Morse Code)是由美国人萨缪尔·摩尔斯在1836年发明的一种时通时断的且通过不同的排列顺序来表达不同英文字母、数字和标点符号的信号代码，摩尔斯电码主要由以下5种它的代码组成：</p>
+<p>1、点（.）
+2、划（-）
+3、每个字符间短的停顿（通常用空格表示停顿）
+4、每个词之间中等的停顿（通常用 / 划分）
+5、以及句子之间长的停顿</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205049682.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205049682.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>观察密文特征，以及提示，确定为莫尔斯编码。用在线工具直接解码，得到flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ILOVEYOU</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205051816.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205051816.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>在线工具：</strong> <a href="https://www.lddgo.net/encrypt/morse"target="_blank" rel="noopener noreferrer">在线摩斯密码翻译器</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF password 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-password-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:54:09 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-password-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204845519.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204845519.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;姓名&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;张三&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;生日&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;：&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;19900315&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;key格式为key&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xxxxxxxxxx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;flag的长度为十位，猜测为姓名的缩写“zs”，加上生日“19900315”，构成flag。&lt;/p&gt;
+&lt;h3 id=&#34;flag&#34;&gt;flag：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;flag&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;zs1990315&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204845519.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204845519.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">姓名</span><span class="err">：</span><span class="n">张三</span> 
+</span></span><span class="line"><span class="cl"><span class="n">生日</span><span class="err">：</span><span class="mi">19900315</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key格式为key</span><span class="p">{</span><span class="n">xxxxxxxxxx</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解题思路">解题思路：</h3>
+<p>flag的长度为十位，猜测为姓名的缩写“zs”，加上生日“19900315”，构成flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">flag</span><span class="p">{</span><span class="n">zs1990315</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF RSA 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-rsa-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:51:59 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-rsa-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;注意：得到的 flag 请 将 noxCTF 替换为 flag ，格式为 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;在一次RSA密钥对生成中&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;假设p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;473398607161&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4511491&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;17&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;求解出d作为flga提交&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;Python代码求解。或用工具求解，参考这篇文章 &lt;a href=&#34;https://blog.csdn.net/MikeCoke/article/details/105967809&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://blog.csdn.net/MikeCoke/article/details/105967809&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;gmpy2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;473398607161&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;q&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4511491&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;17&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;d&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gmpy2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;invert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;flag&#34;&gt;flag：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mi&#34;&gt;125631357777427553&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>注意：得到的 flag 请 将 noxCTF 替换为 flag ，格式为 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">在一次RSA密钥对生成中</span><span class="err">，</span><span class="n">假设p</span><span class="o">=</span><span class="mi">473398607161</span><span class="err">，</span><span class="n">q</span><span class="o">=</span><span class="mi">4511491</span><span class="err">，</span><span class="n">e</span><span class="o">=</span><span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="n">求解出d作为flga提交</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>Python代码求解。或用工具求解，参考这篇文章 <a href="https://blog.csdn.net/MikeCoke/article/details/105967809"target="_blank" rel="noopener noreferrer">https://blog.csdn.net/MikeCoke/article/details/105967809</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">gmpy2</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="mi">473398607161</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span> <span class="o">=</span> <span class="mi">4511491</span>
+</span></span><span class="line"><span class="cl"><span class="n">e</span> <span class="o">=</span> <span class="mi">17</span>
+</span></span><span class="line"><span class="cl"><span class="n">d</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">gmpy2</span><span class="o">.</span><span class="n">invert</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">q</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">125631357777427553</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF Alice与Bob 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-alice%E4%B8%8Ebob-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:46:07 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-alice%E4%B8%8Ebob-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;密码学历史中，有两位知名的杰出人物，Alice和Bob。他们的爱情经过置换和轮加密也难以混淆，即使是没有身份认证也可以知根知底。就像在数学王国中的素数一样，孤傲又热情。下面是一个大整数:98554799767,请分解为两个素数，分解后，小的放前面，大的放后面，合成一个新的数字，进行md5的32位小写哈希，提交答案。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>密码学历史中，有两位知名的杰出人物，Alice和Bob。他们的爱情经过置换和轮加密也难以混淆，即使是没有身份认证也可以知根知底。就像在数学王国中的素数一样，孤傲又热情。下面是一个大整数:98554799767,请分解为两个素数，分解后，小的放前面，大的放后面，合成一个新的数字，进行md5的32位小写哈希，提交答案。</p>
+<hr>
+<h3 id="解题过程">解题过程：</h3>
+<p>1、将大整数98554799767，分解为两个素数。
+请执行以下python代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">gcd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">PollardRho</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">f</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">),</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span> <span class="o">=</span> <span class="n">gcd</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">),</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">d</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">d</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">factorize</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span><span class="n">n</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span> <span class="o">=</span> <span class="n">PollardRho</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">factorize</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">+</span> <span class="n">factorize</span><span class="p">(</span><span class="n">n</span> <span class="o">//</span> <span class="n">f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">+=</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">98554799767</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">factorize</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到结果：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、小的放前面，大的放后面，合成一个新的数字。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[101999, 966233]
+</span></span><span class="line"><span class="cl">10999966233
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、对这个新数字，进行md5的32位小写哈希加密。
+在线解密网站： <a href="https://www.matools.com/md5"target="_blank" rel="noopener noreferrer">在线16位和32位大小写MD5加密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120902.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120902.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到结果</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">d450209323a847c8d01c6be47c81811a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>结束</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 大帝的密码武器 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:44:17 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;（下载题目，然后修改后缀名为.zip打开：）&lt;/p&gt;
+&lt;p&gt;公元前一百年，在罗马出生了一位对世界影响巨大的人物，他生前是罗马三巨头之一。他率先使用了一种简单的加密函，因此这种加密方法以他的名字命名。
+以下密文被解开后可以获得一个有意义的单词：FRPHEVGL
+你可以用这个相同的加密向量加密附件中的密文，作为答案进行提交。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>（下载题目，然后修改后缀名为.zip打开：）</p>
+<p>公元前一百年，在罗马出生了一位对世界影响巨大的人物，他生前是罗马三巨头之一。他率先使用了一种简单的加密函，因此这种加密方法以他的名字命名。
+以下密文被解开后可以获得一个有意义的单词：FRPHEVGL
+你可以用这个相同的加密向量加密附件中的密文，作为答案进行提交。</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ComeChina
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题步骤">解题步骤：</h3>
+<p>1、对题目中给出的密文进行凯撒解密（可以使用在线网站），执行以下Python代码
+在线网站： <a href="https://www.qqxiuzi.cn/bianma/kaisamima.php"target="_blank" rel="noopener noreferrer">凯撒密码加密解密</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">,</span> <span class="n">shift</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;移位解密函数&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plaintext</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">ciphertext</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span> <span class="c1"># 如果是字母，进行移位解密</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plaintext</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">shift</span> <span class="o">-</span> <span class="mi">65</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">65</span><span class="p">)</span> <span class="c1"># 大写字母移位解密</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">plaintext</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">((</span><span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">-</span> <span class="n">shift</span> <span class="o">-</span> <span class="mi">97</span><span class="p">)</span> <span class="o">%</span> <span class="mi">26</span> <span class="o">+</span> <span class="mi">97</span><span class="p">)</span> <span class="c1"># 小写字母移位解密</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span> <span class="c1"># 如果不是字母，直接输出</span>
+</span></span><span class="line"><span class="cl">            <span class="n">plaintext</span> <span class="o">+=</span> <span class="n">char</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">plaintext</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 加密密文和移位数</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="s1">&#39;FRPHEVGL&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">shift</span> <span class="o">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="n">ciphertext</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 枚举所有可能的移位数，输出所有解密结果</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">plaintext</span> <span class="o">=</span> <span class="n">decrypt</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">plaintext</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、得到26个结果。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、寻找有意义的单词，发现偏移量为13的结果为有意义的单词。可以通过翻译软件，快速找到有意义的单词。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、对密文进行偏移量为13的凯撒解密，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PbzrPuvan
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>结束</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF Windows系统密码 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:39:47 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-windows%E7%B3%BB%E7%BB%9F%E5%AF%86%E7%A0%81-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ctf:1002:06af9108f2e1fecf144e2e8adef09efd:a7fcb22a88038f35a8f39d503e7f0062:::
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;SUPPORT_388945a0:1001:aad3b435b51404eeaad3b435b51404ee:bef14eee40dffbc345eeb3f58e290d56:::
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;解题过程&#34;&gt;解题过程：&lt;/h3&gt;
+&lt;p&gt;1、统计密文长度，为32位，且符合md5加密特征，初步判断为md5加密。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、对密文依次进行解密，排除不正确的结果。
+&lt;strong&gt;在线解密网站：&lt;/strong&gt; &lt;a href=&#34;https://www.cmd5.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;md5在线解密&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+</span></span><span class="line"><span class="cl">ctf:1002:06af9108f2e1fecf144e2e8adef09efd:a7fcb22a88038f35a8f39d503e7f0062:::
+</span></span><span class="line"><span class="cl">Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+</span></span><span class="line"><span class="cl">SUPPORT_388945a0:1001:aad3b435b51404eeaad3b435b51404ee:bef14eee40dffbc345eeb3f58e290d56:::
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="解题过程">解题过程：</h3>
+<p>1、统计密文长度，为32位，且符合md5加密特征，初步判断为md5加密。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、对密文依次进行解密，排除不正确的结果。
+<strong>在线解密网站：</strong> <a href="https://www.cmd5.com/"target="_blank" rel="noopener noreferrer">md5在线解密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204926232.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204926232.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、最终得到结果</p>
+<h3 id="flag">flag:</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">good-luck
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="md5-简述">MD5 简述：</h3>
+<p>一般MD5值是32位由数字“0-9”和字母“a-f”所组成的字符串，字母大小写统一；如果出现这个范围以外的字符说明这可能是个错误的md5值，就没必要再拿去解密了。</p>
+<p>16位值是取的是8~24位。</p>
+<p><strong>​ 特征：</strong></p>
+<p>有固定长度，一般是32位或者16位</p>
+<p>由数字“0-9”和字母“a-f”组成</p>
+<p><strong>举例：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">明文</span><span class="err">：</span><span class="n">hello</span><span class="err">，</span><span class="n">world</span><span class="p">.</span><span class="na">123456</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">md5</span><span class="p">(</span><span class="n">hello</span><span class="err">，</span><span class="n">world</span><span class="p">.</span><span class="na">123456</span><span class="p">,</span><span class="n">32</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">5189503aae1b1c0a6fbf7ea9e3128ab0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nf">md5</span><span class="p">(</span><span class="n">hello</span><span class="err">，</span><span class="n">world</span><span class="p">.</span><span class="na">123456</span><span class="p">,</span><span class="n">16</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ae1b1c0a6fbf7ea9</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 信息化时代的步伐 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</link>
+      <pubDate>Fri, 27 Sep 2024 10:36:54 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205011643.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205011643.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;也许中国可以早早进入信息化时代，但是被清政府拒绝了。附件中是数十年后一位伟人说的话的密文。请翻译出明文(答案为一串中文！)&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205011643.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205011643.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>也许中国可以早早进入信息化时代，但是被清政府拒绝了。附件中是数十年后一位伟人说的话的密文。请翻译出明文(答案为一串中文！)</p>
+<h3 id="密文">密文：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">606046152623600817831216121621196386</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题步骤">解题步骤：</h3>
+<p>1、得到密文长度，为36位。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205013637.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205013637.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、题目说结果为中文，结合36（4x9）位的纯数字密文，猜测为中文电码解密。
+<a href="https://www.qqxiuzi.cn/bianma/dianbao.php"target="_blank" rel="noopener noreferrer">电报码在线翻译</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205015294.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205015294.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、最后，得到结果。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">计算机要从娃娃抓起
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="摩斯电码介绍">摩斯电码介绍</h3>
+<p>电报是一种通信方式，通过电报机将信息以电信号的形式发送和接收。电报最初是使用莫尔斯电码进行编码的，后来也有使用其它编码方式的。</p>
+<p>摩斯电码是一种用于电报通信的编码方式，由美国发明家莫尔斯在19世纪40年代发明。摩斯电码是一种字母、数字和标点符号的编码方式，采用点（.）和线（-）两种信号来表示不同的字符。其中点和线的组合代表不同的字符。例如，字母A表述为“·-”，字母B表示为“-···”等等。摩斯电码是一种高效且可靠的编码方式，适用于远距离的无线电通信。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205016943.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205016943.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>可见，摩尔斯电码只能用来传送字符数量少的语言，面对数量庞大的中文，则需要一次中间编码进行转换，这就是中文电码。通常是以1983年邮电部编写的《标准电码本（修订本）》为规范。中文电码表采用四位阿拉伯数字表示一个中文字符（汉字、字母和符号），从0001到9999顺序排列。汉字先按部首，后按笔画排列；字母和符号放到电码表的最后。发送中文电报时，先按照中文电码本将中文翻译为数字串，再以摩尔斯电码发送这组数字串。收报方先将电码翻译为数字串，再转译为中文即完成。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 凯撒？替换？呵呵!</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</link>
+      <pubDate>Wed, 25 Sep 2024 21:49:16 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E5%87%AF%E6%92%92%E6%9B%BF%E6%8D%A2%E5%91%B5%E5%91%B5/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205018780.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205018780.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205020932.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205020932.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;MTHJ{CUBCGXGUGXWREXIPOYAOEYFIGXWRXCHTKHFCOHCFDUCGTXZOHIXOEOWMEHZO}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题步骤&#34;&gt;解题步骤：&lt;/h3&gt;
+&lt;p&gt;1、根据题目提示与密文特征，猜测为凯撒加密。尝试后，发现不是普通的凯撒加密。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205022593.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205022593.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、经过分析发现没有规律，尝试暴力破解。首先，可以肯定MTHJ的明文为flag，利用在线工具 &lt;a href=&#34;https://quipqiup.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;quipqiup&lt;/a&gt; ，破解所有的可能。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205018780.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205018780.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205020932.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205020932.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">MTHJ{CUBCGXGUGXWREXIPOYAOEYFIGXWRXCHTKHFCOHCFDUCGTXZOHIXOEOWMEHZO}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h3 id="解题步骤">解题步骤：</h3>
+<p>1、根据题目提示与密文特征，猜测为凯撒加密。尝试后，发现不是普通的凯撒加密。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205022593.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205022593.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、经过分析发现没有规律，尝试暴力破解。首先，可以肯定MTHJ的明文为flag，利用在线工具 <a href="https://quipqiup.com/"target="_blank" rel="noopener noreferrer">quipqiup</a> ，破解所有的可能。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205025102.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205025102.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、
+第一步：输入密文（MTHJ{CUBCGXGUGXWREXIPOYAOEYFIGXWRXCHTKHFCOHCFDUCGTXZOHIXOEOWMEHZO}）
+第二步：输入提示（MTHJ=flag）
+第三步：点击Solve按钮，开始破解。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205027179.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205027179.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、选择第一个结果，去除空格，加上花括号，作为flag。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">flag{substitutioncipherdecryptionisalwayseasyjustlikeapieceofcake}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>结束</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

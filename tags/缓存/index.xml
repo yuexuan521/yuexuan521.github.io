@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>缓存 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/%E7%BC%93%E5%AD%98/</link>
+    <description>Recent content in 缓存 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sat, 31 May 2025 11:44:09 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/%E7%BC%93%E5%AD%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF 派大星的烦恼 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E7%83%A6%E6%81%BC-1/</link>
+      <pubDate>Sat, 31 May 2025 11:44:09 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E6%B4%BE%E5%A4%A7%E6%98%9F%E7%9A%84%E7%83%A6%E6%81%BC-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109678243&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：派大星的烦恼&lt;/a&gt;
+&lt;a href=&#34;https://www.cnblogs.com/WXjzc/p/16095984.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf 派大星的烦恼&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109678243"target="_blank" rel="noopener noreferrer">BUUCTF：派大星的烦恼</a>
+<a href="https://www.cnblogs.com/WXjzc/p/16095984.html"target="_blank" rel="noopener noreferrer">buuctf 派大星的烦恼</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到派大星的烦恼.bmp</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、用010Editor打开bmp文件，搜索 <code>0x22、0x44</code> 两种伤疤细胞。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>只有两种格式，可以尝试转换为二进制数据。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="s2">&#34;DD&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;&#34;D&#34;DD&#34;&#34;&#34;&#34;&#34;&#34;DD&#34;&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;DD&#34;&#34;D&#34;&#34;DDD&#34;&#34;D&#34;</span><span class="n">D</span><span class="s2">&#34;DD&#34;&#34;&#34;&#34;&#34;&#34;DD&#34;&#34;D&#34;&#34;&#34;&#34;DD&#34;</span><span class="n">D</span><span class="s2">&#34;D&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;&#34;D&#34;DD&#34;&#34;D&#34;&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;&#34;&#34;DDD&#34;&#34;&#34;&#34;D&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;D&#34;&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;D&#34;&#34;DD&#34;D&#34;D&#34;DD&#34;&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;D&#34;</span><span class="n">D</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;DD&#34;&#34;&#34;</span><span class="n">D</span><span class="s2">&#34;&#34;&#34;DD&#34;&#34;DD&#34;DD&#34;&#34;D&#34;D&#34;&#34;DD&#34;D&#34;D&#34;DD&#34;&#34;&#34;</span><span class="n">D</span><span class="s2">&#34;&#34;&#34;DD&#34;&#34;&#34;</span><span class="n">D</span><span class="s2">&#34;DD&#34;&#34;DD&#34;&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;D&#34;</span><span class="n">D</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;D&#34;DD&#34;&#34;DD&#34;&#34;DD&#34;&#34;&#34;&#34;&#34;</span><span class="n">DDD</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;</span><span class="n">DD</span><span class="s2">&#34;&#34;&#34;D&#34;&#34;DD&#34;&#34;
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、将 <code>&quot;</code> 对应0、 <code>D</code> 对应1，转换为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">0110110000101100000011000110110010011100101011000000110010000110101011000010110010001100000111000010110001000110001001101010110001100110101001100110110001000110011011001010011010101100010001100010110011000110101001100010110011001100000111001100110001001100</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>将二进制数据转换为ASCII文字，转换出一堆乱码，尝试逆序反转二进制数据再转ASCII文字。
+<a href="https://www.rapidtables.org/zh-CN/convert/number/ascii-hex-bin-dec-converter.html"target="_blank" rel="noopener noreferrer">ASCII，十六进制，二进制，十进制，Base64转换器</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>逆序反转数据：
+<a href="https://uutool.cn/txt-reverse/"target="_blank" rel="noopener noreferrer">文本逆序翻转工具
+</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="mi">0011001000110011001110000011001100110100011001010110001100110100011000100011010101100101001101100110001000110110011001010110011000110101011001000110001000110100001110000011000100110100001101010110000100110000001101010011100100110110001100000011010000110110</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>成功转换为ASCII： <code>23834ec4b5e6b6ef5db48145a0596046</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、用得到的ASCII文本提交flag(答案为32位的一串字符串) ，失败了。再将得到的ASCII文本进行逆序反转，得到flag： <code>6406950a54184bd5fe6b6e5b4ce43832</code> 。</p>
+<p>最后，贴个网上的脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;E:\Download\misc\派大星的烦恼.bmp&#34;</span><span class="p">,</span><span class="s2">&#34;rb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="n">fr</span><span class="o">.</span><span class="n">read</span><span class="p">()[</span><span class="mi">4000</span><span class="p">:</span><span class="mi">4256</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tmp</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="mi">34</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tmp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">fr</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tmp</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tmp</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">),</span><span class="mi">8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">t</span> <span class="o">=</span> <span class="n">t</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">w</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">b</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">w</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="nb">hex</span><span class="p">(</span><span class="n">v</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>6406950a54184bd5fe6b6e5b4ce43832<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [MRCTF2020]千层套路 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-mrctf2020%E5%8D%83%E5%B1%82%E5%A5%97%E8%B7%AF-1/</link>
+      <pubDate>Mon, 09 Dec 2024 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-mrctf2020%E5%8D%83%E5%B1%82%E5%A5%97%E8%B7%AF-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，得到attachment.zip文件&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到attachment.zip文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>用Bandizip打开attachment.zip文件，看到压缩包备注，密码均为四位数字</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>我开始使用Ziperello爆破0573.zip，得到密码0573。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用密码向下解压压缩包，得到0114.zip。至此，我明白每个压缩包的解压密码就是它的文件名，并且向下可能有1000层压缩。（从题目千层套路推测出）</p>
+<p>2、编写python脚本，进行自动解压（使用该脚本你可能需要删掉一批解压出的文件，再继续解压）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># @Author：YueXuan</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># @Date  ：2024/9/24 17:19</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">zipfile</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">extract_zip_with_filename_as_password</span><span class="p">(</span><span class="n">zip_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 检查文件是否存在</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">zip_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;File </span><span class="si">{</span><span class="n">zip_path</span><span class="si">}</span><span class="s2"> does not exist.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 获取ZIP文件名（不包含路径）</span>
+</span></span><span class="line"><span class="cl">    <span class="n">zip_filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">zip_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 获取不带扩展名的文件名</span>
+</span></span><span class="line"><span class="cl">    <span class="n">base_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">zip_filename</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 尝试使用文件名作为密码解压ZIP文件</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">zip_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">zip_ref</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">zip_ref</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">pwd</span><span class="o">=</span><span class="n">base_name</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Successfully extracted </span><span class="si">{</span><span class="n">zip_path</span><span class="si">}</span><span class="s2"> with password: </span><span class="si">{</span><span class="n">base_name</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1"># 检查解压后的文件是否还是ZIP文件</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">zip_ref</span><span class="o">.</span><span class="n">namelist</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_zip_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">is_zipfile</span><span class="p">(</span><span class="n">new_zip_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1"># 如果是ZIP文件，则递归调用函数继续解压</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">extract_zip_with_filename_as_password</span><span class="p">(</span><span class="n">new_zip_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Extracted file </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2"> is not a ZIP file.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">RuntimeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Failed to extract </span><span class="si">{</span><span class="n">zip_path</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用示例</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 假设你的ZIP文件位于当前目录下，名称为0573.zip</span>
+</span></span><span class="line"><span class="cl"><span class="n">zip_path</span> <span class="o">=</span> <span class="s2">&#34;0573.zip&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">extract_zip_with_filename_as_password</span><span class="p">(</span><span class="n">zip_path</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后得到qr.txt文件，打开如下所示</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、猜测为一系列的RGB颜色值，比如 (255, 255, 255)，这表示白色。编写脚本，绘制出这些数据所要表现的图像。脚本如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># @Author：YueXuan</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># @Date  ：2024/9/24 17:29</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">parse_rgb</span><span class="p">(</span><span class="n">rgb_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 去除括号并将字符串分割为列表</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rgb_values</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">rgb_str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">rgb_values</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">create_image_from_txt</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 打开文件并读取所有行</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lines</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 解析每一行的RGB值</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pixels</span> <span class="o">=</span> <span class="p">[</span><span class="n">parse_rgb</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 计算图像的宽度和高度</span>
+</span></span><span class="line"><span class="cl">    <span class="n">width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pixels</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">height</span> <span class="o">=</span> <span class="n">width</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 创建一个新图像</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 将像素放入图像中</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">index</span> <span class="o">=</span> <span class="n">row</span> <span class="o">*</span> <span class="n">width</span> <span class="o">+</span> <span class="n">col</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">pixels</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">image</span><span class="o">.</span><span class="n">putpixel</span><span class="p">((</span><span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">),</span> <span class="n">pixels</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 保存图像</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Image saved to </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">input_file</span> <span class="o">=</span> <span class="s2">&#34;qr.txt&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_file</span> <span class="o">=</span> <span class="s2">&#34;output_image.png&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">create_image_from_txt</span><span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="n">output_file</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到一个二维码图像，使用QR Research扫码，得到flag</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>ta01uyout1nreet1n0usandtimes<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [安洵杯 2019]吹着贝斯扫二维码 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E5%AE%89%E6%B4%B5%E6%9D%AF-2019%E5%90%B9%E7%9D%80%E8%B4%9D%E6%96%AF%E6%89%AB%E4%BA%8C%E7%BB%B4%E7%A0%81-1/</link>
+      <pubDate>Wed, 21 Feb 2024 20:18:10 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E5%AE%89%E6%B4%B5%E6%9D%AF-2019%E5%90%B9%E7%9D%80%E8%B4%9D%E6%96%AF%E6%89%AB%E4%BA%8C%E7%BB%B4%E7%A0%81-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">GNATOMJVIQZUKNJXGRCTGNRTGI3EMNZTGNBTKRJWGI2UIMRRGNBDEQZWGI3DKMSFGNCDMRJTII3TMNBQGM4TERRTGEZTOMRXGQYDGOBWGI2DCNBY
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看其他的无后缀文件，在010Editor中观察到jpg文件的文件头，猜测为jpg文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">JPEG <span class="o">(</span>jpg<span class="o">)</span> 　　文件头：FF D8 FF　　 文件尾：FF D9
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修改文件后缀为.jpg，发现是二维码的一部分，其他文件是一样的，共36个二维码碎片。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、二维码应该存在解开压缩包的线索。先将所有的无后缀文件改为.jpg文件，可以手动添加，也可以使用python脚本完成。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#coding=UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:</span><span class="se">\\</span><span class="s1">CTF</span><span class="se">\\</span><span class="s1">CTF_topic</span><span class="se">\\</span><span class="s1">吹着贝斯扫二维码&#39;</span>   <span class="c1"># 需要添加后缀的文件路径</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;D:</span><span class="se">\\</span><span class="s1">CTF</span><span class="se">\\</span><span class="s1">CTF_topic</span><span class="se">\\</span><span class="s1">吹着贝斯扫二维码&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s1">&#39;flag.zip&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">		<span class="k">continue</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">		<span class="n">oldname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="n">newname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">oldname</span><span class="p">,</span> <span class="n">newname</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后，使用Ps软件将所有二维码碎片组合起来，恢复原有的二维码，跟玩拼图一样。（但是真的很慢）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、扫描二维码，得到加密字符串的加密顺序，如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>加密顺序：base85 &raquo; base64 &raquo; base85 &raquo; rot13 &raquo; base16 &raquo; base32</p>
+<p>解密只需要按照加密顺序反转进行解密就可以啦</p>
+<p>解密顺序：base32 &raquo; base16 &raquo; rot13 &raquo; base85 &raquo; base64 &raquo; base85</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">GNATOMJVIQZUKNJXGRCTGNRTGI3EMNZTGNBTKRJWGI2UIMRRGNBDEQZWGI3DKMSFGNCDMRJTII3TMNBQGM4TERRTGEZTOMRXGQYDGOBWGI2DCNBY
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>base32</strong> <a href="https://the-x.cn/encodings/Base32.aspx"target="_blank" rel="noopener noreferrer">https://the-x.cn/encodings/Base32.aspx</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">3A715D3E574E36326F733C5E625D213B2C62652E3D6E3B7640392F3137274038624148
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>base16</strong> <a href="https://www.qqxiuzi.cn/bianma/base.php?type=16"target="_blank" rel="noopener noreferrer">https://www.qqxiuzi.cn/bianma/base.php?type=16</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:q<span class="o">]</span>&gt;WN62os&lt;^b<span class="o">]</span>!<span class="p">;</span>,be.<span class="o">=</span>n<span class="p">;</span>v@9/17<span class="err">&#39;</span>@8bAH
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>rot13</strong> <a href="https://lzltool.cn/Tools/Rot13"target="_blank" rel="noopener noreferrer">https://lzltool.cn/Tools/Rot13</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">:d<span class="o">]</span>&gt;JA62bf&lt;^o<span class="o">]</span>!<span class="p">;</span>,or.<span class="o">=</span>a<span class="p">;</span>i@9/17<span class="err">&#39;</span>@8oNU
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>base85</strong> <a href="http://www.atoolbox.net/Tool.php?Id=934"target="_blank" rel="noopener noreferrer">http://www.atoolbox.net/Tool.php?Id=934</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">PCtvdWU4VFJnQUByYy4mK1lraTA</span><span class="o">=</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>base64</strong> <a href="https://base64.supfree.net/"target="_blank" rel="noopener noreferrer">https://base64.supfree.net/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;+oue8TRgA@rc.<span class="p">&amp;</span>+Yki0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>base85</strong> （解密需使用ASCII85编码标准） <a href="http://www.hiencode.com/base85.html"target="_blank" rel="noopener noreferrer">http://www.hiencode.com/base85.html</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ThisIsSecret!233
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、得到明文，使用它解压压缩包，得到flag.txt文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>Qr_Is_MeAn1nGfuL<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

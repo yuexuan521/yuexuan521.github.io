@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pyc on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/pyc/</link>
+    <description>Recent content in Pyc on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sat, 21 Sep 2024 20:23:28 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/pyc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF 喵喵喵 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</link>
+      <pubDate>Sat, 21 Sep 2024 20:23:28 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E5%96%B5%E5%96%B5%E5%96%B5-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;喵喵喵，扫一扫 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，解压得到一张.png图片。
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、使用StegSolve工具，在RGB的0通道发现异常，猜测存在LSB隐写。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>喵喵喵，扫一扫 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到一张.png图片。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、使用StegSolve工具，在RGB的0通道发现异常，猜测存在LSB隐写。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>打开Analyse（分析）选项卡，使用DataExtract（数据提取）选项，进行分析。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>由PNG文件头可以看出隐写内容为PNG文件，按save Bin键保存为flag.png文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、文件无法查看，使用010Editor打开flag.png文件，可以看到PNG文件头有多余的字符。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PNG <span class="o">(</span>png<span class="o">)</span> 　　 文件头：89 <span class="m">50</span> 4E <span class="m">47</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>将多余的字符删除，保存文件查看，得到半张二维码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、使用010 Editor打开，提示CRC校验错误，认为图片被修改了宽高。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">binascii</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">struct</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">crcbp</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;repair.png&#34;</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>    <span class="c1">#打开图片（修改图片路径）</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2000</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">crcbp</span><span class="p">[</span><span class="mi">12</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span> <span class="o">+</span> \
+</span></span><span class="line"><span class="cl">            <span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s1">&#39;&gt;i&#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="n">crcbp</span><span class="p">[</span><span class="mi">24</span><span class="p">:</span><span class="mi">29</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">crc32</span> <span class="o">=</span> <span class="n">binascii</span><span class="o">.</span><span class="n">crc32</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xffffffff</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="p">(</span><span class="n">crc32</span> <span class="o">==</span> <span class="mh">0x9BF1293B</span><span class="p">):</span>    <span class="c1">#图片当前CRC（修改CRC）</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hex:&#39;</span><span class="p">,</span> <span class="nb">hex</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">hex</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到正确的宽高值。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修改图片中的宽高参数，然后保存图片查看。（从左到右依次是宽度、高度、CRC校验参数）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、使用QR research扫码，得到一个网址，下载一个压缩包flag.rar。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://pan.baidu.com/s/1pLT2J4f
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压得到flag.txt文件，打开如下。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>5、猜测存在NTFS文件流隐写，使用工具NtfsStreamsEditor或AlternateStreamView扫描文件所在的文件夹，发现隐藏文件。（这里使用NtfsStreamsEditor演示 ）
+<a href="https://www.nirsoft.net/utils/alternate_data_streams.html"target="_blank" rel="noopener noreferrer">AlternateStreamView(跳转页面后，向下滑动，下载对应的32或64位软件)</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>导出flag.pyc文件（pyc文件是由Python文件经过编译后所生成的文件），使用在线网站进行pyc文件的反编译。
+<a href="https://tool.lu/pyc/"target="_blank" rel="noopener noreferrer">据说这个网站可以，但我没有成功</a></p>
+<p>得到的Python代码如下。（加入注释方便理解）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># visit http://tool.lu/pyc/ for more information</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 定义一个名为encode的函数，它没有任何输入参数  </span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">encode</span><span class="p">():</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 明文，被&#39;*&#39;符号遮盖，实际内容未知  </span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;*************&#39;</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 创建一个空的列表ciphertext，用于存储加密后的字符  </span>
+</span></span><span class="line"><span class="cl">    <span class="n">ciphertext</span> <span class="o">=</span> <span class="p">[]</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 对明文字符串flag中的每个字符进行遍历，字符的索引从0开始到flag长度-1  </span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">flag</span><span class="p">)):</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 对当前字符进行异或操作，将字符的ASCII码与i进行异或  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">i</span> <span class="o">^</span> <span class="nb">ord</span><span class="p">(</span><span class="n">flag</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 如果当前字符的索引是偶数  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 对字符的ASCII码加10，转化为数字后存储在s中  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">s</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">+</span> <span class="mi">10</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 如果当前字符的索引是奇数  </span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">            <span class="c1"># 对字符的ASCII码减10，转化为数字后存储在s中  </span>
+</span></span><span class="line"><span class="cl">            <span class="n">s</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="mi">10</span>  
+</span></span><span class="line"><span class="cl">        <span class="c1"># 将转化后的字符添加到ciphertext列表中  </span>
+</span></span><span class="line"><span class="cl">        <span class="n">ciphertext</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 返回ciphertext列表的反向排列  </span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ciphertext</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="p">[</span>  
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;96&#39;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;65&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;93&#39;</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;123&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;91&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;97&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;22&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;93&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;70&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;102&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;94&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;132&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;46&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;112&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;64&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;97&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;88&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;80&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;82&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;137&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;90&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;109&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;99&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;112&#39;</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>手工编写解密脚本，代码如下。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;96&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;65&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;93&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;123&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;91&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;97&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;22&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;93&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;70&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;102&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;94&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;132&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;46&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;112&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;64&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;97&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;88&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;80&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;82&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;137&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;90&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;109&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;99&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;112&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ciphertext</span> <span class="o">=</span> <span class="n">ciphertext</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 反转字符串</span>
+</span></span><span class="line"><span class="cl"><span class="n">flag</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">)):</span>  <span class="c1"># 遍历数组</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># 偶数位减10，奇数位加10</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">ciphertext</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">^</span> <span class="n">i</span>  <span class="c1"># 将s对i进行异或操作</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flag</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># 连接字符</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行解密脚本，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>Y@e_Cl3veR_C1Ever!<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Outguess on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/outguess/</link>
+    <description>Recent content in Outguess on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sun, 21 Apr 2024 20:22:28 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/outguess/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[WUSTCTF2020]alison_likes_jojo 1</title>
+      <link>https://yuexuan521.github.io/posts/wustctf2020alison_likes_jojo-1/</link>
+      <pubDate>Sun, 21 Apr 2024 20:22:28 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/wustctf2020alison_likes_jojo-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台： &lt;a href=&#34;https://ctfgame.w-ais.cn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ctfgame.w-ais.cn/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件解压，得到两张jpg图片和一个文本文件。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、使用010 Editor打开图片，发现boki.jpg图片隐藏了一个ZIP文件。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523167.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523169.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢 Iven Huang 师傅供题。
+比赛平台： <a href="https://ctfgame.w-ais.cn/"target="_blank" rel="noopener noreferrer">https://ctfgame.w-ais.cn/</a></p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到两张jpg图片和一个文本文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523170.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523171.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523172.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、使用010 Editor打开图片，发现boki.jpg图片隐藏了一个ZIP文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523173.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523173.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">binwalk boki.jpg 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523174.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523174.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tree ./output 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523175.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523175.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、尝试解压得到的压缩包，需要密码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523176.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523176.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>因为没有关于密码的提示，尝试用Ziperello进行6位纯数字爆破，得到密码888866。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523177.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523177.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、使用密码解压压缩包，得到beisi.txt文件，内容如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523178.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523178.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>尝试使用base64进行解密，并发现该密文为base64多重加密，最后得到的明文如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523179.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523179.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、目前还有一张图片和刚得到的“killerqueen”没有使用，看了题解才知道jljy图片应该使用outguess解密，而“killerqueen”就是解密密钥。</p>
+<p>在Kali中，使用outguess对jljy.jpg文件进行解密，导出隐写的内容到flag.txt。查看flag.txt文件，得到flag。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">outguess -k <span class="s2">&#34;killerqueen&#34;</span> -r jljy.jpg flag.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">outguess：这是命令行工具的名字，用于进行隐写术操作，即将秘密信息嵌入到载体文件中。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-k <span class="s2">&#34;killerqueen&#34;</span>：这个选项表示使用的密钥或密码短语是<span class="s2">&#34;killerqueen&#34;</span>。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-r jljy.jpg：-r 参数指定的是源图像文件，即载体文件，在本例中是名为<span class="s2">&#34;jljy.jpg&#34;</span>的JPEG格式图片文件。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">flag.txt：存放隐藏信息的文件。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523180.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251224133523180.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>pretty_girl_alison_likes_jojo<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

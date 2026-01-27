@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SUCTF 2019 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/suctf-2019/</link>
+    <description>Recent content in SUCTF 2019 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 13 Oct 2025 08:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/suctf-2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [SUCTF 2019]Game 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-suctf-2019game-1/</link>
+      <pubDate>Mon, 13 Oct 2025 08:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-suctf-2019game-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;感谢菠萝吹雪师傅出题。&lt;/p&gt;
+&lt;p&gt;flag 请替换 SUCTF{} 为 flag{} 后提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，得到一张图片和一个网站源代码&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、在网站源代码index.html中，发现经过Base32加密后的密文： &lt;code&gt;ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===&lt;/code&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>感谢菠萝吹雪师傅出题。</p>
+<p>flag 请替换 SUCTF{} 为 flag{} 后提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，得到一张图片和一个网站源代码</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、在网站源代码index.html中，发现经过Base32加密后的密文： <code>ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://www.qqxiuzi.cn/bianma/base.php"target="_blank" rel="noopener noreferrer">Base32编码解码</a>
+使用在线网站进行解密，得到假的flag： <code>suctf{hAHaha_Fak3_F1ag}</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、转过方向，看看那张图片。发现存在LSB隐写，密文为： <code>U2FsdGVkX1+zHjSBeYPtWQVSwXzcVFZLu6Qm0To/KeuHg8vKAxFrVQ==</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://www.qqxiuzi.cn/bianma/base64.htm"target="_blank" rel="noopener noreferrer">Base64编码转换</a>
+密文与Base64编码非常相似，并且Base64解码后头部是&quot;Salted&quot;，猜测加密方式为AES或3DES。（根据U2FsdGVkX1开头，也有同样效果）</p>
+<blockquote>
+<p><strong>3DES</strong> (Triple DES): PKCS#5 的早期实现通常使用 3DES 加密算法。当使用 3DES 时，加密的数据块可能会以 “Salted” 开头，后面跟着一个随机生成的盐值，用于派生密钥。
+<strong>AES</strong> (Advanced Encryption Standard): 虽然 AES 通常不需要特定的前缀，但在某些实现中，如果使用 PKCS#5 或者类似的密码派生标准，也可能看到类似的前缀。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、加密方式是3DES，密钥为之前的假flag： <code>suctf{hAHaha_Fak3_F1ag}</code> ，解密得到flag
+<a href="https://www.sojson.com/encrypt_triple_des.html"target="_blank" rel="noopener noreferrer">TripleDes加密/解密</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">suctf<span class="o">{</span>U_F0und_1t<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>U_F0und_1t<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WEB on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/web/</link>
+    <description>Recent content in WEB on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sat, 21 Sep 2024 20:16:44 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [极客大挑战 2019]EasySQL 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98-2019easysql-1/</link>
+      <pubDate>Sat, 21 Sep 2024 20:16:44 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98-2019easysql-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_1.png&#34;&gt;
+        &lt;img src=&#34;./assets/1_1.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_2.png&#34;&gt;
+        &lt;img src=&#34;./assets/1_2.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;[极客大挑战 2019]EasySQL 1&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;1、根据题目提示，并且网站也存在输入框，尝试进行SQL注入。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;首先，判断提交方式，随机输入数据
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_3.png&#34;&gt;
+        &lt;img src=&#34;./assets/1_3.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_1.png">
+        <img src="./assets/1_1.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_2.png">
+        <img src="./assets/1_2.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>[极客大挑战 2019]EasySQL 1</p>
+<h3 id="密文">密文：</h3>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p><strong>1、根据题目提示，并且网站也存在输入框，尝试进行SQL注入。</strong></p>
+<p>首先，判断提交方式，随机输入数据
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_3.png">
+        <img src="./assets/1_3.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>提交数据出现在URL中，确定为GET提交方式</p>
+<p><strong>2、判断注入类型是字符型还是数字型</strong></p>
+<p>输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">1<span class="err">&#39;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_4.png">
+        <img src="./assets/1_4.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>查看是否有报错信息
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_5.png">
+        <img src="./assets/1_5.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">You have an error in your SQL syntax<span class="p">;</span> check the manual that corresponds to your MariaDB server version <span class="k">for</span> the right syntax to use near <span class="s1">&#39;1&#39;</span><span class="err">&#39;</span> at line <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>出现语法错误提示，确定为字符型注入</p>
+<p><strong>3、判断注入点</strong></p>
+<p>使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">1<span class="err">&#39;</span> or <span class="nv">1</span><span class="o">=</span>1#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果结果返回了全部的内容，可以判断存在注入点
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="./assets/1_6.png">
+        <img src="./assets/1_6.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>没想到这道题这么简单，仅仅判断注入点flag就出来了，连sqlmap都没用</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>60f94177-044e-40dd-8378-e49b803a8362<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
