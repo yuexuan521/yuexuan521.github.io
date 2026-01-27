@@ -150,7 +150,7 @@ params:
     #  url: ""
     #- name: csdn
     #  url: "https://yuexuan.blog.csdn.net/"
-defaultContentLanguageInSubdir: true # 【重要】是否将默认语言放在子目录。
+defaultContentLanguageInSubdir: false # 【重要】是否将默认语言放在子目录。
                                      # True = 访问首页自动跳转 /en/ 或 /zh/。
                                      # False = 默认语言直接显示在根目录，其他语言在子目录。
 copyright: "See this site's source code [here](https://github.com/yuexuan521/yuexuan521.github.io), licensed under GPLv3 ·"  # 页脚版权信息支持 Markdown。
