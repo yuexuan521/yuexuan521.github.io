@@ -150,7 +150,7 @@ params:
     #  url: ""
     #- name: csdn
     #  url: "https://yuexuan.blog.csdn.net/"
-defaultContentLanguageInSubdir: false # 【重要】是否将默认语言放在子目录。
+defaultContentLanguageInSubdir: true # 【重要】是否将默认语言放在子目录。
                                      # True = 访问首页自动跳转 /en/ 或 /zh/。
                                      # False = 默认语言直接显示在根目录，其他语言在子目录。
 copyright: "See this site's source code [here](https://github.com/yuexuan521/yuexuan521.github.io), licensed under GPLv3 ·"  # 页脚版权信息支持 Markdown。
@@ -159,7 +159,7 @@ languages: # 定义具体语言板块。
   en:
     languageName: "English"
     subtitle: "Yet Another Programming Blog"
-    weight: 2
+    weight: 1
     contentDir: 'content/en'
     menu:
       main:
@@ -183,58 +183,58 @@ languages: # 定义具体语言板块。
     languageName: "中文"
     subtitle: "博客残本"
     contentDir: 'content/zh'   # 指定中文文章必须放在 content/zh 文件夹里
-    weight: 1
+    weight: 2
     menu:
       main:
         - name: "归档"
-          url: /archives/
+          url: zh/archives/
           weight: 9            # 排序权重：数字越小越靠左/靠前
         - name: "搜索"
-          url: /search/
+          url: zh/search/
           weight: 10
         - name: "标签"
-          url: /tags/
+          url: zh/tags/
           weight: 30
         - name: "关于"
-          url: /about_me_zh/
+          url: zh/about_me_zh/
           weight: 40
         - name: RSS
-          url: "/index.xml"
+          url: "/zh/index.xml"
           weight: 50
         - identifier: series  # 父菜单的唯一标识 ID
           name: "系列 "         # 显示的名字
-          url: /categories/
+          url: /zh/categories/
           post: ' ▾'
           weight: 2
         - identifier: CTF_Writeup                        # 子菜单的唯一标识（不能相同）
           parent: series                                 # 【关键】指定父菜单是谁 (series)
           name: "CTF"                                    # 子菜单名字
-          url: /categories/CTF/                       # 分类页面（所有打 CTF 标签的文章，不能与post/下文件名相同）
+          url: /zh/categories/CTF/                       # 分类页面（所有打 CTF 标签的文章，不能与post/下文件名相同）
           weight: 1
         - identifier: YueXuan_Algorithm
           parent: series
           name: "玥轩算法"
-          url: /categories/玥轩算法/
+          url: /zh/categories/玥轩算法/
           weight: 2
         - identifier: DVWA
           parent: series
           name: "DVWA靶场"
-          url: /categories/DVWA靶场/
+          url: /zh/categories/DVWA靶场/
           weight: 3
         - identifier: CCNA_Lab
           parent: series
           name: "CCNA思科实验"
-          url: /categories/CCNA/
+          url: /zh/categories/CCNA/
           weight: 4
         - identifier: C_Algorithm
           parent: series
           name: "码蹄杯C语言"
-          url: /categories/码蹄杯/
+          url: /zh/categories/码蹄杯/
           weight: 5
         - identifier: Python_Algorithm
           parent: series
           name: "牛客网Python入门103题"
-          url: /categories/牛客网Python/
+          url: /zh/categories/牛客网Python/
           weight: 6
 
 markup:
