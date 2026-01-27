@@ -159,7 +159,7 @@ languages: # 定义具体语言板块。
   en:
     languageName: "English"
     subtitle: "Yet Another Programming Blog"
-    weight: 1
+    weight: 2
     contentDir: 'content/en'
     menu:
       main:
@@ -183,7 +183,7 @@ languages: # 定义具体语言板块。
     languageName: "中文"
     subtitle: "博客残本"
     contentDir: 'content/zh'   # 指定中文文章必须放在 content/zh 文件夹里
-    weight: 2
+    weight: 1
     menu:
       main:
         - name: "归档"
