@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AntSword on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/antsword/</link>
+    <description>Recent content in AntSword on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 10 Jun 2024 09:32:56 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/antsword/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国蚁剑 安装教程 2024年5月</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-2024%E5%B9%B45%E6%9C%88/</link>
+      <pubDate>Mon, 10 Jun 2024 09:32:56 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E4%B8%AD%E5%9B%BD%E8%9A%81%E5%89%91-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B-2024%E5%B9%B45%E6%9C%88/</guid>
+      <description>&lt;h2 id=&#34;2024511中国蚁剑安装教程&#34;&gt;2024/5/11中国蚁剑安装教程&lt;/h2&gt;
+&lt;p&gt;一、下载中国蚁剑的加载器和核心源码（两个都要用到）&lt;/p&gt;
+&lt;p&gt;github官方下载地址：https://github.com/AntSwordProject/&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="2024511中国蚁剑安装教程">2024/5/11中国蚁剑安装教程</h2>
+<p>一、下载中国蚁剑的加载器和核心源码（两个都要用到）</p>
+<p>github官方下载地址：https://github.com/AntSwordProject/</p>
+<p>参考文档： <a href="https://github.com/AntSwordProject/antSword/blob/master/README_CN.md"target="_blank" rel="noopener noreferrer">antSword/README_CN.md at master · AntSwordProject/antSword · GitHub</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png" 
+             alt="屏幕截图 2024-05-11 092201" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://github.com/AntSwordProject/antSword?tab=readme-ov-file"target="_blank" rel="noopener noreferrer">核心源码下载：</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png" 
+             alt="image-20240511093710574" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://github.com/AntSwordProject/AntSword-Loader"target="_blank" rel="noopener noreferrer">加载器下载：</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png" 
+             alt="image-20240511092300458" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>二、在完成两个文件的下载后，进行解压缩。接下来，到名为“AntSword-Loader-v4.0.3-win32-x64”的加载器文件夹，然后启动该文件夹内的AntSword.exe应用程序。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png" 
+             alt="image-20240511092358026" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>加载器页面：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png" 
+             alt="image-20240511092512504" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>三、假如依照指示，用户选定一个空白目录来进行初始化操作，系统将自动执行源代码的下载任务。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png" 
+             alt="image-20240511092646557" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>不过，我们已经将源代码下载好了，选择源代码的文件夹路径。文件夹内如下所示：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png" 
+             alt="image-20240511093202183" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>初始化进程完毕后，系统会自动重新启动。再次开启程序时，即可直接开始使用。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png" 
+             alt="image-20240511093323854" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>小问题：</p>
+<p>下载中国蚁剑的核心源码时，可能因为检测到病毒无法下载，或文件被防火墙删除。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png" 
+             alt="image-20240511095320246" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>前往“Windows防护中心”–&gt;“保护历史记录”，选择“操作”中的“还原”，就可以解决问题。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png" 
+             alt="image-20240511095656181" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

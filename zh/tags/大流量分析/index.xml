@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>大流量分析 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in 大流量分析 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 12 May 2025 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF 大流量分析（三） 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%B8%89-1/</link>
+      <pubDate>Mon, 12 May 2025 09:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%B8%89-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://www.cnblogs.com/yunqian2017/p/14298416.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF | 大流量分析 （一）（二）（三）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://www.cnblogs.com/yunqian2017/p/14298416.html"target="_blank" rel="noopener noreferrer">BUUCTF | 大流量分析 （一）（二）（三）</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，有很多pcap流量包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、寻找黑客留下的后门文件，对于php站点，通常成功上传木马后，会测试 <code>phpinfo()</code> 返回。</p>
+<p>所以，在流量包中搜索 <code>phpinfo()</code> ，过滤语句如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tcp</span> <span class="n">contains</span> <span class="s2">&#34;phpinfo()&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最终，在该流量包 <code>数据采集D_eth0_NS_20160809_172831.pcap</code> 发现 <code>phpinfo()</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>执行 <code>phpinfo()</code> 的文件是admin.bak.php，黑客预留的后门的文件名是 <code>admin.bak.php</code> 。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">GET</span> <span class="o">/</span><span class="n">admin</span><span class="o">.</span><span class="n">bak</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">a</span><span class="o">=</span><span class="k">assert</span><span class="o">&amp;</span><span class="n">b</span><span class="o">=</span><span class="n">phpinfo</span><span class="p">()</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>\<span class="n">r</span>\<span class="n">n</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>admin.bak.php<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 大流量分析（二） 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%BA%8C-1/</link>
+      <pubDate>Mon, 12 May 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%BA%8C-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/110494041&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：大流量分析（二）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/110494041"target="_blank" rel="noopener noreferrer">BUUCTF：大流量分析（二）</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，有很多pcap流量包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。</p>
+<blockquote>
+<p>邮件协议：POP、SMTP、IMAP</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>追踪TCP流，发现几个邮箱。（拥有同样后缀@t3sec.cc的邮箱，应该是公司员工的邮箱）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>往下查看流量，发现一段Base64编码的数据。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解码后，发现疑似钓鱼邮件，确认黑客使用的邮箱是： <code>xsser@live.cn</code> 。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">tPO80rrDoaMNCiAgICAgvPjT2rmry77N</span><span class="o">+</span><span class="n">MLnvNy5ubjEtq</span><span class="o">+</span><span class="n">jrLK</span><span class="o">/</span><span class="n">t9bTptPD0OjSqsn9vLajrL7J</span>
+</span></span><span class="line"><span class="cl"><span class="n">sOaxvm1haWyhom9hoaJjcm21yM</span><span class="o">+</span><span class="mi">1</span><span class="n">zbPW8LK9vavM5ru7o6zH67TzvNK1x8K8aHR0cDovLzExOC4x</span>
+</span></span><span class="line"><span class="cl"><span class="n">OTQuMTk2LjIzMjo4MDg0L2dldC5waHAgzO7QtNfUvLq1xNXKusXS1LHjxeS6z8</span><span class="o">+</span><span class="mi">1</span><span class="n">zbPJ</span><span class="o">/</span><span class="n">by2oaMN</span>
+</span></span><span class="line"><span class="cl"><span class="n">CiAgICDQu9C7tPO80qOhDQoNCg</span><span class="o">==</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">大家好</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl">     <span class="n">鉴于公司网络架构改动</span><span class="err">，</span><span class="n">部分应用需要升级</span><span class="err">，</span><span class="n">旧版本mail</span><span class="err">、</span><span class="n">oa</span><span class="err">、</span><span class="n">crm等系统逐步将替换</span><span class="err">，</span><span class="n">请大家登录http</span><span class="p">:</span><span class="o">//</span><span class="mf">118.194.196.232</span><span class="p">:</span><span class="mi">8084</span><span class="o">/</span><span class="n">get</span><span class="o">.</span><span class="n">php</span> <span class="n">填写自己的帐号以便配合系统升级</span><span class="err">。</span>
+</span></span><span class="line"><span class="cl">    <span class="n">谢谢大家</span><span class="err">！</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>xsser@live.cn<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF 大流量分析（一） 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%B8%80-1/</link>
+      <pubDate>Mon, 05 May 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90%E4%B8%80-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/wangjin7356/article/details/122525900&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF:大流量分析（一）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/wangjin7356/article/details/122525900"target="_blank" rel="noopener noreferrer">BUUCTF:大流量分析（一）</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，有很多pcap流量包</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、随便打开一个，一般黑客的攻击流量会很多，需要使用Wireshark统计功能。</p>
+<p>先统计IP，统计 → IPv4 Statistics → All Addresses</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>将IP出现数量Count进行排序，发现除了 <code>183.129.152.140</code> ，其它全部是内网IP。</p>
+<blockquote>
+<p>常见内网IP段：
+10.0.0.0 – 10.255.255.255
+172.16.0.0 – 172.31.255.255
+192.168.0.0 – 192.168.255.255</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、统计会话和端点，发现 <code>183.129.152.140</code> 的分组数，是除内网IP最多的。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>会话</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>端点</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后，确认黑客的攻击ip是 <code>183.129.152.140</code> 。</p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>183.129.152.140<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

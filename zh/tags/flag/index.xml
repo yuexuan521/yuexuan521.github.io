@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Flag on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/flag/</link>
+    <description>Recent content in Flag on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 16 Jun 2025 08:30:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/flag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [watevrCTF 2019]Evil Cuteness 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-watevrctf-2019evil-cuteness-1/</link>
+      <pubDate>Mon, 16 Jun 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-watevrctf-2019evil-cuteness-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192214992.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192214992.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;保存附件，得到attachment.jpg&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、习惯先在010Editor看一下，然后就发现“ &lt;code&gt;PK&lt;/code&gt; ”头，隐藏ZIP压缩包。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192214992.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192214992.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>保存附件，得到attachment.jpg</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、习惯先在010Editor看一下，然后就发现“ <code>PK</code> ”头，隐藏ZIP压缩包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192220599.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192220599.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>另存为ZIP压缩包，解压得到abc文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192222407.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192222407.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>打开它，得到flag。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">watevr</span><span class="p">{</span><span class="mi">7</span><span class="n">h475_4c7u4lly_r34lly_cu73_7h0u6h</span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192223473.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192223473.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192224665.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192224665.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>7h475_4c7u4lly_r34lly_cu73_7h0u6h<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [GUET-CTF2019]soul sipse 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019soul-sipse-1/</link>
+      <pubDate>Thu, 13 Mar 2025 11:23:36 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019soul-sipse-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/Aluxian_/article/details/121968033&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF 隐写工具Steghide&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109838676&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[GUET-CTF2019]soul sipse&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/Aluxian_/article/details/121968033"target="_blank" rel="noopener noreferrer">CTF 隐写工具Steghide</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109838676"target="_blank" rel="noopener noreferrer">BUUCTF：[GUET-CTF2019]soul sipse</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到out.wav</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、out.wav文件使用了Steghide工具进行隐写。</p>
+<blockquote>
+<p>Steghide支持以下图像格式：JPEG，BMP，WAV，AU文件。</p>
+</blockquote>
+<p>安装Steghide命令（Kali）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">apt-get install  steghide
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用Steghide查看out.wav文件，发现隐写了一个download.txt文件，提取出来是一条链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://share.weiyun.com/5wVTIN3
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">steghide</span> <span class="n">info</span> <span class="n">out</span><span class="p">.</span><span class="py">wav</span>
+</span></span><span class="line"><span class="cl"><span class="n">steghide</span> <span class="n">extract</span> <span class="n">-sf</span> <span class="n">out</span><span class="p">.</span><span class="py">wav</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cat </span><span class="n">download</span><span class="p">.</span><span class="py">txt</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>访问该链接，到腾讯微云下载一张图片GUET.png。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、图片无法打开，用010Editor打开，发现png文件头错误，修改为 <code>89 50 4E 47</code> ，保存可正常浏览。</p>
+<blockquote>
+<p>PNG (png) 文件头：89 50 4E 47</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>正常图片：
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、图片中的内容为，经过Unicode编码后的数据。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="se">\u</span>0034<span class="se">\u</span>0030<span class="se">\u</span>0037<span class="se">\u</span>0030<span class="se">\u</span>000d<span class="se">\u</span>000a<span class="se">\u</span>0031<span class="se">\u</span>0032<span class="se">\u</span>0033<span class="se">\u</span>0034<span class="se">\u</span>000d<span class="se">\u</span>000a
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Unicode解码：
+<a href="https://tool.chinaz.com/tools/unicode.aspx"target="_blank" rel="noopener noreferrer">Unicode编解码</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="m">4070</span>
+</span></span><span class="line"><span class="cl"><span class="m">1234</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后，将得到数据相加，得到flag： <code>5304</code> .</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">  <span class="mi">4070</span>
+</span></span><span class="line"><span class="cl"><span class="o">+</span> <span class="mi">1234</span>
+</span></span><span class="line"><span class="cl"><span class="o">-------</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">5304</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>5304<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="-玥轩--网络安全拓扑空间">🔒 玥轩 | 网络安全拓扑空间</h2>
+<h4 id="-攻防演化方程">🛡️ 攻防演化方程</h4>
+<p><code>#CTF_TOP10% | #misc | #密码学 | #漏洞宇宙</code></p>
+<hr>
+<h3 id="-安全算法素因子分解">🔑 安全算法素因子分解</h3>
+<p><strong>漏洞扫描定理</strong> ：</p>
+<p>$$
+\sqrt{61526} \approx 248 \quad \Rightarrow \quad \text{61,526次代码片分享构建248个攻防模型}
+$$</p>
+<p><strong>竞赛场博弈论</strong> ：</p>
+<p>$$
+\begin{cases} \text{CTF攻防矩阵} &amp; \nabla \cdot \vec{F} = \rho/\epsilon_0 \ \text{数模国赛优化解} &amp; \iint_{D} e^{x^2+y^2} , dx , dy \end{cases}
+$$</p>
+<hr>
+<h3 id="-云安全算子矩阵">🛰️ 云安全算子矩阵</h3>
+<p>$$
+\text{专家算子} = \begin{bmatrix} \text{阿里云} &amp; \otimes &amp; \text{乘风者计划} \ \text{华为云} &amp; \oplus &amp; \text{云享专家} \ \end{bmatrix}^{\mathrm{T}}
+$$</p>
+<hr>
+<h3 id="-安全协议证明体系">🧩 安全协议证明体系</h3>
+<p><strong>密码学引理</strong></p>
+<p>$$
+\mathbb{Z}_{p}^{*} \ni \alpha \xrightarrow{\text{ECDSA}} \sigma = (\gamma, \delta) \quad \Rightarrow \quad \text{云原生场景密钥演化}
+$$</p>
+<p><strong>威胁建模推论</strong></p>
+<p>$$
+\forall x \in \mathcal{V},\ \exists y \mid \mathop{\mathbb{P}}(X \leq \phi(y)) \geq 0.95 \quad \Rightarrow \quad \text{APT攻击概率收敛}
+$$</p>
+<hr>
+<h3 id="-尼采安全哲学">🌩️ 尼采安全哲学</h3>
+<p>$$
+\mathop{\text{lim}}_{t\to\infty} \frac{\partial \Psi}{\partial t} = \lambda \Psi \quad \text{其中} \ \Psi = \text{&ldquo;深自缄默→声震人间&rdquo;}
+$$</p>
+<hr>
+<h3 id="-安全信道协议">📡 安全信道协议</h3>
+<p>$$
+\begin{array}{ccc} \text{CTF Writeup库} &amp; \xleftrightarrow{\text{TLS1.3}} &amp; \text{漏洞星球} \ &amp; \Updownarrow &amp; \ \text{云安全智库} &amp; \xrightarrow{\text{AES-GCM}} &amp; \text{我的GitHub} \ \end{array}
+$$</p>
+<hr>
+<h4 id="-安全握手请求">🔗 安全握手请求</h4>
+<p>$$
+\text{Let’s } \mathop{\text{Handshake}} \left( \frac{\text{你}}{\text{我}} \right) \ni { \text{知乎|GitHub|阿里云} }
+$$</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

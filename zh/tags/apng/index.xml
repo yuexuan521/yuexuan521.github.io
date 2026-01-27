@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Apng on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/apng/</link>
+    <description>Recent content in Apng on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sun, 19 Jan 2025 11:53:54 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/apng/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [GKCTF 2021]你知道apng吗 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</link>
+      <pubDate>Sun, 19 Jan 2025 11:53:54 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_45556441/article/details/119801433&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf [GKCTF 2021]你知道apng吗 ＜apng图片格式的考察＞&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_29977871/article/details/128507643&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf-misc-[GKCTF 2021]你知道apng吗1&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/wangjin7356/article/details/123402038&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;你知道apng吗&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://blog.csdn.net/weixin_45556441/article/details/119801433"target="_blank" rel="noopener noreferrer">buuctf [GKCTF 2021]你知道apng吗 ＜apng图片格式的考察＞</a>
+<a href="https://blog.csdn.net/qq_29977871/article/details/128507643"target="_blank" rel="noopener noreferrer">buuctf-misc-[GKCTF 2021]你知道apng吗1</a>
+<a href="https://blog.csdn.net/wangjin7356/article/details/123402038"target="_blank" rel="noopener noreferrer">你知道apng吗</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>（flag由flag头包裹</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到girl.apng文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、根据题目 <code>你知道apng吗</code> ，搜索得到这是一种类似于GIF的动图文件。</p>
+<p><a href="https://www.bilibili.com/opus/301546385385594815"target="_blank" rel="noopener noreferrer">科普（APNG）</a></p>
+<blockquote>
+<p>APNG：我出身于PNG（便携式网络图形），我的使命就是淘汰GIF。我的全称是Animated Portable Network Graphics，我的本质是PNG的位图动画扩展，但未获PNG组织官方认可。我仍对原版PNG保持向下兼容，我的第1帧为标准PNG图像，剩余的动画和帧速等数据放在PNG扩展数据块，因此只支持原版PNG的软件会正确显示第1帧。Firefox与Chrome浏览器（59版本及以上）均可以直接打开我。</p>
+</blockquote>
+<p><a href="https://baike.baidu.com/item/APNG/3582613"target="_blank" rel="noopener noreferrer">APNG百度</a></p>
+<blockquote>
+<p>APNG（Animated Portable Network Graphics）是一个基于PNG（Portable Network Graphics）的位图动画格式，扩展方法类似主要用于网页的GIF 89a，仍对传统PNG保留向下兼容。第1帧是标准的单幅PNG图像，因此只支持原版PNG的软件能正常显示第1帧。剩余的动画帧和帧速数据储存在符合原版PNG标准的扩展数据块里。 APNG与Mozilla社区关系密切，格式标准文档就放在Mozilla网站。</p>
+</blockquote>
+<p>使用Firefox可以打开girl.apng，可以看到有多个二维码一闪而过。</p>
+<p>找到一个APNG在线查看工具： <a href="https://ezgif.com/split?err=expired"target="_blank" rel="noopener noreferrer">https://ezgif.com/split?err=expired</a> ，上传图片后，点击 <code>Split</code> ，得到每帧的图片。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p><code>1、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png" 
+             alt="请添加图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>2、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>3、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><code>4、</code>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>2、使用PS（或在线PS）处理第一张图片，选择 <code>编辑</code> –&gt; <code>变换</code> –&gt; <code>扭曲</code> ，此时扫码得到四分之一的flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>第二张图片使用StegSolve，查看其它的通道，找到可以识别的二维码。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>剩下两张可以直接扫码得到四分之一flag，最后得到完整flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>a3c7e4e5-9b9d-ad20-0327-288a235370ea<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

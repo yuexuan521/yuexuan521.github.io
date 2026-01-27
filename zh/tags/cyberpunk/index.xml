@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CyberPunk on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/cyberpunk/</link>
+    <description>Recent content in CyberPunk on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 23 Dec 2024 07:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/cyberpunk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [MRCTF2020]CyberPunk 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020cyberpunk-1/</link>
+      <pubDate>Mon, 23 Dec 2024 07:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020cyberpunk-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件解压，得到cyberpunk! .exe文件&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、一开始我以为是逆向的题目，直接打开IDA了，没什么成果才返回。实际上，运行程序，根据提示修改电脑的时间就可以得到flag。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。
+感谢天璇战队供题。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到cyberpunk! .exe文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、一开始我以为是逆向的题目，直接打开IDA了，没什么成果才返回。实际上，运行程序，根据提示修改电脑的时间就可以得到flag。</p>
+<p>开始运行程序，提示时间必须在2020年9月17日才可以。</p>
+<blockquote>
+<p><strong>《赛博朋克2077》宣布跳票！延期至9月17日</strong>
+我们今天有关于《赛博朋克2077》发行日期的重要消息想与大家分享。《赛博朋克2077》将不会在4月发布，我们将发布日期推迟到 <strong>2020年9月17日</strong> 。</p>
+<p>《赛博朋克2077》目前处于游戏已完成并且可玩的阶段，但仍有工作要做。夜之城规模庞大，这里充满了故事、内容和值得挖掘的地方。正由于它的庞大规模和复杂性，我们需要更多的时间来完成游戏测试、修复和完善。我们希望《赛博朋克2077》能够成为我们的最高成就，而延迟发行将会带来几个月的宝贵时间，让我们去完善游戏。</p>
+<p>我们真得很期待在夜之城与您相遇，感谢您一直以来的支持！</p>
+<p>创始人：Marcin lwinski</p>
+<p>工作室负责人：Adam Badowski</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修改完成后，需要重新启动程序，这时就会出现flag</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">MRCTF<span class="o">{</span>We1cOm3_70_cyber_security<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>We1cOm3_70_cyber_security<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

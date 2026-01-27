@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Android on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/android/</link>
+    <description>Recent content in Android on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Fri, 27 Sep 2024 12:24:23 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络安全 DVWA通关指南 DVWA Brute Force (爆破)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</link>
+      <pubDate>Fri, 27 Sep 2024 12:24:23 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-brute-force-%E7%88%86%E7%A0%B4/</guid>
+      <description>&lt;h2 id=&#34;dvwa-brute-force-爆破&#34;&gt;DVWA Brute Force (爆破)&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34;&gt;
+        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;参考文献&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;WEB 安全靶场通关指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;low&#34;&gt;Low&lt;/h3&gt;
+&lt;p&gt;1、分析网页源代码&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 检查是否存在&amp;#34;Login&amp;#34; GET 参数，这通常是提交登录表单后触发的动作
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;isset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Login&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 获取POST方式提交的用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 注意：这里应当使用 $_POST 而非 $_GET 来获取表单数据，因为登录通常涉及敏感信息，推荐使用 POST 方法
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 获取POST方式提交的密码，并使用md5函数对其进行哈希加密（注意：MD5已经不再安全，应使用更安全的加密算法如bcrypt）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$pass&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 同上，此处应改为 $_POST[&amp;#39;password&amp;#39;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$pass&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;md5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$pass&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 这里假设密码在数据库中是以MD5形式存储的
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 创建SQL查询语句，检查数据库中是否存在匹配的用户名和密码
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$query&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;SELECT * FROM `users` WHERE user = &amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;$user&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#39; AND password = &amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;$pass&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#39;;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 执行SQL查询，连接数据库并处理潜在错误
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_query&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;$query&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;or&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;die&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;pre&amp;gt;&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;is_object&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_connect_error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;s1&#34;&gt;&amp;#39;&amp;lt;/pre&amp;gt;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 检查查询结果是否成功且只有一条记录匹配（意味着用户名和密码正确）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_num_rows&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// 获取匹配用户的详细信息
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$row&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_fetch_assoc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// 提取用户头像URL
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$avatar&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$row&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;avatar&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// 登录成功，构造欢迎消息并显示用户头像
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;p&amp;gt;Welcome to the password protected area &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$user&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;lt;/p&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;img src=&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$avatar&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\&amp;#34;&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; /&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 显示用户的头像图片
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;c1&#34;&gt;// 登录失败，输出错误提示信息
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nv&#34;&gt;$html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;pre&amp;gt;&amp;lt;br /&amp;gt;Username and/or password incorrect.&amp;lt;/pre&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;c1&#34;&gt;// 关闭数据库连接
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;is_null&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;mysqli_close&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GLOBALS&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;___mysqli_ston&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;false&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$___mysqli_res&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 结束 if(isset($_GET[&amp;#39;Login&amp;#39;]))
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;2、使用管理员admin登录，密码尝试123，提示错误&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwa-brute-force-爆破">DVWA Brute Force (爆破)</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<p>参考文献</p>
+<ul>
+<li><a href="https://www.cnblogs.com/linfangnan/p/13994655.html#dvwa-%E9%9D%B6%E5%9C%BA"target="_blank" rel="noopener noreferrer">WEB 安全靶场通关指南</a></li>
+</ul>
+<hr>
+<h3 id="low">Low</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 检查是否存在&#34;Login&#34; GET 参数，这通常是提交登录表单后触发的动作
+</span></span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Login&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取POST方式提交的用户名
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span> <span class="c1">// 注意：这里应当使用 $_POST 而非 $_GET 来获取表单数据，因为登录通常涉及敏感信息，推荐使用 POST 方法
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 获取POST方式提交的密码，并使用md5函数对其进行哈希加密（注意：MD5已经不再安全，应使用更安全的加密算法如bcrypt）
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span> <span class="c1">// 同上，此处应改为 $_POST[&#39;password&#39;]
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span> <span class="c1">// 这里假设密码在数据库中是以MD5形式存储的
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 创建SQL查询语句，检查数据库中是否存在匹配的用户名和密码
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 执行SQL查询，连接数据库并处理潜在错误
+</span></span></span><span class="line"><span class="cl">    <span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> 
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> 
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;&lt;/pre&gt;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 检查查询结果是否成功且只有一条记录匹配（意味着用户名和密码正确）
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 获取匹配用户的详细信息
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$row</span> <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="c1">// 提取用户头像URL
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$avatar</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;avatar&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 登录成功，构造欢迎消息并显示用户头像
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;Welcome to the password protected area </span><span class="si">{</span><span class="nv">$user</span><span class="si">}</span><span class="s2">&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;img src=</span><span class="se">\&#34;</span><span class="si">{</span><span class="nv">$avatar</span><span class="si">}</span><span class="se">\&#34;</span><span class="s2"> /&gt;&#34;</span><span class="p">;</span> <span class="c1">// 显示用户的头像图片
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 登录失败，输出错误提示信息
+</span></span></span><span class="line"><span class="cl">        <span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;&lt;br /&gt;Username and/or password incorrect.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 关闭数据库连接
+</span></span></span><span class="line"><span class="cl">    <span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="c1">// 结束 if(isset($_GET[&#39;Login&#39;]))
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、使用管理员admin登录，密码尝试123，提示错误</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png" 
+             alt="image-20240516161258388" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用Burp Suite抓包，将数据包发给Intruder（测试器），选择Sniper（狙击手）模式，选择password为有效载荷。</p>
+<blockquote>
+<p><strong>单字典(只有一个字典)</strong>
+1.Sniper：按顺序一个一个参数依次遍历。
+2.Battering ram：每个参数同时遍历同一个字典，两个参数的值相同。</p>
+<p><strong>多字典(有多少参数就有多少字典）</strong>
+1.Pitchfork：多个参数同时进行遍历，只是一个选字典1，一个选字典2（相当于50m赛跑同时出发，只是赛道不同，互不干扰。爆破次数取决于最短的字典长度）
+2.Cluster bomb：有点像两个嵌套的for循环，参数i和参数j，i=0，然后j要从0-10全部跑完，然后i=1，然后j再从0-10跑完，一对多，多次遍历</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png" 
+             alt="image-20240516161616103" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png" 
+             alt="image-20240430155738815" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用字典进行爆破，字典可以自己制作，也可以网上直接下载，等待片刻爆破完成，使用爆破出的密码就能登录。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png" 
+             alt="image-20240516173612338" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png" 
+             alt="image-20240516173933317" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="medium">Medium</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Login&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise username input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$user</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise password input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check the database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get users details
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$row</span>    <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$avatar</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;avatar&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login successful
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;Welcome to the password protected area </span><span class="si">{</span><span class="nv">$user</span><span class="si">}</span><span class="s2">&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;img src=</span><span class="se">\&#34;</span><span class="si">{</span><span class="nv">$avatar</span><span class="si">}</span><span class="se">\&#34;</span><span class="s2"> /&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login failed
+</span></span></span><span class="line"><span class="cl">		<span class="nx">sleep</span><span class="p">(</span> <span class="mi">2</span> <span class="p">);</span> <span class="c1">// 当登录验证失败时界面将睡眠 2 秒
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;&lt;br /&gt;Username and/or password incorrect.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、密码验证方面，增加验证失败睡眠两秒的限制，这会加大爆破所需要的时间。但只要时间充足，爆破出密码不是问题。</p>
+<p>试了一下，果然很慢。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png" 
+             alt="image-20240516174443533" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="high">High</h3>
+<p>1、分析网页源代码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;Login&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise username input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$user</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$user</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise password input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check database
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$query</span>  <span class="o">=</span> <span class="s2">&#34;SELECT * FROM `users` WHERE user = &#39;</span><span class="si">$user</span><span class="s2">&#39; AND password = &#39;</span><span class="si">$pass</span><span class="s2">&#39;;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$result</span> <span class="o">=</span> <span class="nx">mysqli_query</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$query</span> <span class="p">)</span> <span class="k">or</span> <span class="k">die</span><span class="p">(</span> <span class="s1">&#39;&lt;pre&gt;&#39;</span> <span class="o">.</span> <span class="p">((</span><span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_error</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">:</span> <span class="p">((</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_connect_error</span><span class="p">())</span> <span class="o">?</span> <span class="nv">$___mysqli_res</span> <span class="o">:</span> <span class="k">false</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;&lt;/pre&gt;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="nv">$result</span> <span class="o">&amp;&amp;</span> <span class="nx">mysqli_num_rows</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get users details
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$row</span>    <span class="o">=</span> <span class="nx">mysqli_fetch_assoc</span><span class="p">(</span> <span class="nv">$result</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$avatar</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span><span class="s2">&#34;avatar&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login successful
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;Welcome to the password protected area </span><span class="si">{</span><span class="nv">$user</span><span class="si">}</span><span class="s2">&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;img src=</span><span class="se">\&#34;</span><span class="si">{</span><span class="nv">$avatar</span><span class="si">}</span><span class="se">\&#34;</span><span class="s2"> /&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login failed
+</span></span></span><span class="line"><span class="cl">		<span class="nx">sleep</span><span class="p">(</span> <span class="nx">rand</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;&lt;br /&gt;Username and/or password incorrect.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="p">((</span><span class="nx">is_null</span><span class="p">(</span><span class="nv">$___mysqli_res</span> <span class="o">=</span> <span class="nx">mysqli_close</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])))</span> <span class="o">?</span> <span class="k">false</span> <span class="o">:</span> <span class="nv">$___mysqli_res</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、进入Position模块，选择Attacktype为Pitchfork模式，选择password和user_token为爆破对象</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png" 
+             alt="image-20240605111002633" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>进入Resource Pool模块，</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png" 
+             alt="image-20240605111117373" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>进入Options模块，找到Grep - Extract选项卡，添加一个正则表达式匹配返回的user_token</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png" 
+             alt="image-20240605111153105" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>点击Refetch response，从response中找到user_token并选中</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png" 
+             alt="image-20240605111312704" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png" 
+             alt="image-20240605111501473" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>载入字典</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png" 
+             alt="image-20240605111405891" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>第二个参数&quot;token&quot;选择从返回包匹配，填入当前token</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png" 
+             alt="image-20240605111547847" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>爆破成功，登录成功</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png" 
+             alt="image-20240605110902881" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="impossible">Impossible</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="nx">php</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span> <span class="nx">isset</span><span class="p">(</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;Login&#39;</span> <span class="p">]</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check Anti-CSRF token
+</span></span></span><span class="line"><span class="cl">	<span class="nx">checkToken</span><span class="p">(</span> <span class="nv">$_REQUEST</span><span class="p">[</span> <span class="s1">&#39;user_token&#39;</span> <span class="p">],</span> <span class="nv">$_SESSION</span><span class="p">[</span> <span class="s1">&#39;session_token&#39;</span> <span class="p">],</span> <span class="s1">&#39;index.php&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise username input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;username&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$user</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$user</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$user</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Sanitise password input
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span> <span class="s1">&#39;password&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nx">stripslashes</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="p">((</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nx">is_object</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">]))</span> <span class="o">?</span> <span class="nx">mysqli_real_escape_string</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s2">&#34;___mysqli_ston&#34;</span><span class="p">],</span>  <span class="nv">$pass</span> <span class="p">)</span> <span class="o">:</span> <span class="p">((</span><span class="nx">trigger_error</span><span class="p">(</span><span class="s2">&#34;[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.&#34;</span><span class="p">,</span> <span class="nx">E_USER_ERROR</span><span class="p">))</span> <span class="o">?</span> <span class="s2">&#34;&#34;</span> <span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$pass</span> <span class="o">=</span> <span class="nx">md5</span><span class="p">(</span> <span class="nv">$pass</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Default values
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$total_failed_login</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$lockout_time</span>       <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$account_locked</span>     <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check the database (Check user information)
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT failed_login, last_login FROM users WHERE user = (:user) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$row</span> <span class="o">=</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check to see if the user has been locked out.
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;failed_login&#39;</span> <span class="p">]</span> <span class="o">&gt;=</span> <span class="nv">$total_failed_login</span> <span class="p">)</span> <span class="p">)</span>  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// User locked out.  Note, using this method would allow for user enumeration!
+</span></span></span><span class="line"><span class="cl">		<span class="c1">//$html .= &#34;&lt;pre&gt;&lt;br /&gt;This account has been locked due to too many incorrect logins.&lt;/pre&gt;&#34;;
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Calculate when the user would be allowed to login again
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$last_login</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;last_login&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last_login</span> <span class="o">=</span> <span class="nx">strtotime</span><span class="p">(</span> <span class="nv">$last_login</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$timeout</span>    <span class="o">=</span> <span class="nx">strtotime</span><span class="p">(</span> <span class="s2">&#34;</span><span class="si">{</span><span class="nv">$last_login</span><span class="si">}</span><span class="s2"> +</span><span class="si">{</span><span class="nv">$lockout_time</span><span class="si">}</span><span class="s2"> minutes&#34;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$timenow</span>    <span class="o">=</span> <span class="nx">strtotime</span><span class="p">(</span> <span class="s2">&#34;now&#34;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Check to see if enough time has passed, if it hasn&#39;t locked the account
+</span></span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span> <span class="nv">$timenow</span> <span class="o">&gt;</span> <span class="nv">$timeout</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">			<span class="nv">$account_locked</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Check the database (if username matches the password)
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;SELECT * FROM users WHERE user = (:user) AND password = (:password) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:password&#39;</span><span class="p">,</span> <span class="nv">$pass</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$row</span> <span class="o">=</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// If its a valid login...
+</span></span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span> <span class="p">(</span> <span class="nv">$data</span><span class="o">-&gt;</span><span class="na">rowCount</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span> <span class="nv">$account_locked</span> <span class="o">==</span> <span class="k">false</span> <span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Get users details
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$avatar</span>       <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;avatar&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$failed_login</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;failed_login&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$last_login</span>   <span class="o">=</span> <span class="nv">$row</span><span class="p">[</span> <span class="s1">&#39;last_login&#39;</span> <span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login successful
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;Welcome to the password protected area &lt;em&gt;</span><span class="si">{</span><span class="nv">$user</span><span class="si">}</span><span class="s2">&lt;/em&gt;&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;img src=</span><span class="se">\&#34;</span><span class="si">{</span><span class="nv">$avatar</span><span class="si">}</span><span class="se">\&#34;</span><span class="s2"> /&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Had the account been locked out since last login?
+</span></span></span><span class="line"><span class="cl">		<span class="k">if</span><span class="p">(</span> <span class="nv">$failed_login</span> <span class="o">&gt;=</span> <span class="nv">$total_failed_login</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;&lt;em&gt;Warning&lt;/em&gt;: Someone might of been brute forcing your account.&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;p&gt;Number of login attempts: &lt;em&gt;</span><span class="si">{</span><span class="nv">$failed_login</span><span class="si">}</span><span class="s2">&lt;/em&gt;.&lt;br /&gt;Last login attempt was at: &lt;em&gt;</span><span class="si">${</span><span class="nv">last_login</span><span class="si">}</span><span class="s2">&lt;/em&gt;.&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Reset bad login count
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;UPDATE users SET failed_login = &#34;0&#34; WHERE user = (:user) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// Login failed
+</span></span></span><span class="line"><span class="cl">		<span class="nx">sleep</span><span class="p">(</span> <span class="nx">rand</span><span class="p">(</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Give the user some feedback
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$html</span> <span class="o">.=</span> <span class="s2">&#34;&lt;pre&gt;&lt;br /&gt;Username and/or password incorrect.&lt;br /&gt;&lt;br/&gt;Alternative, the account has been locked because of too many failed logins.&lt;br /&gt;If this is the case, &lt;em&gt;please try again in </span><span class="si">{</span><span class="nv">$lockout_time</span><span class="si">}</span><span class="s2"> minutes&lt;/em&gt;.&lt;/pre&gt;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">// Update bad login count
+</span></span></span><span class="line"><span class="cl">		<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;UPDATE users SET failed_login = (failed_login + 1) WHERE user = (:user) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">// Set the last login time
+</span></span></span><span class="line"><span class="cl">	<span class="nv">$data</span> <span class="o">=</span> <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="s1">&#39;UPDATE users SET last_login = now() WHERE user = (:user) LIMIT 1;&#39;</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">bindParam</span><span class="p">(</span> <span class="s1">&#39;:user&#39;</span><span class="p">,</span> <span class="nv">$user</span><span class="p">,</span> <span class="nx">PDO</span><span class="o">::</span><span class="na">PARAM_STR</span> <span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nv">$data</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Generate Anti-CSRF token
+</span></span></span><span class="line"><span class="cl"><span class="nx">generateSessionToken</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

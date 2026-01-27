@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>UTCTF on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/utctf/</link>
+    <description>Recent content in UTCTF on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Fri, 14 Mar 2025 15:51:54 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/utctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [UTCTF2020]basic-forensics 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020basic-forensics-1/</link>
+      <pubDate>Fri, 14 Mar 2025 15:51:54 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020basic-forensics-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_24033605/article/details/117336177&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUU-MISC-[UTCTF2020]basic-forensics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;下载附件，是一张打不开的图片&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png&#34; 
+             alt=&#34;在这里插入图片描述&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、使用010Editor打开图片，发现似乎是一本书的数据&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://blog.csdn.net/qq_24033605/article/details/117336177"target="_blank" rel="noopener noreferrer">BUU-MISC-[UTCTF2020]basic-forensics</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，是一张打不开的图片</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、使用010Editor打开图片，发现似乎是一本书的数据</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>直接搜索关键词“flag”，就找到flag了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>fil3_ext3nsi0ns_4r3nt_r34l<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<h2 id="-玥轩-网络安全拓扑空间">🔒 玥轩 |网络安全拓扑空间</h2>
+<h4 id="-攻防演化方程">🛡️ 攻防演化方程</h4>
+<p><code>#CTF_TOP10% | #密码学 | #漏洞宇宙</code></p>
+<hr>
+<h3 id="-安全算法素因子分解">🔑 安全算法素因子分解</h3>
+<p><strong>漏洞扫描定理</strong> ：</p>
+<p>$$
+\sqrt{61526} \approx 248 \quad \Rightarrow \quad \text{61,526次代码片分享构建248个攻防模型}
+$$</p>
+<p><strong>竞赛场博弈论</strong> ：</p>
+<p>$$
+\begin{cases} \text{CTF攻防矩阵} &amp; \nabla \cdot \vec{F} = \rho/\epsilon_0 \ \text{数模国赛优化解} &amp; \iint_{D} e^{x^2+y^2} , dx , dy \end{cases}
+$$</p>
+<hr>
+<h3 id="-云安全算子矩阵">🛰️ 云安全算子矩阵</h3>
+<p>$$
+\text{专家算子} = \begin{bmatrix} \text{阿里云} &amp; \otimes &amp; \text{乘风者计划} \ \text{华为云} &amp; \oplus &amp; \text{云享专家} \ \end{bmatrix}^{\mathrm{T}}
+$$</p>
+<hr>
+<h3 id="-安全协议证明体系">🧩 安全协议证明体系</h3>
+<p><strong>密码学引理</strong></p>
+<p>$$
+\mathbb{Z}_{p}^{*} \ni \alpha \xrightarrow{\text{ECDSA}} \sigma = (\gamma, \delta) \quad \Rightarrow \quad \text{云原生场景密钥演化}
+$$</p>
+<p><strong>威胁建模推论</strong></p>
+<p>$$
+\forall x \in \mathcal{V},\ \exists y \mid \mathop{\mathbb{P}}(X \leq \phi(y)) \geq 0.95 \quad \Rightarrow \quad \text{APT攻击概率收敛}
+$$</p>
+<hr>
+<h3 id="-尼采安全哲学">🌩️ 尼采安全哲学</h3>
+<p>$$
+\mathop{\text{lim}}_{t\to\infty} \frac{\partial \Psi}{\partial t} = \lambda \Psi \quad \text{其中} \ \Psi = \text{&ldquo;深自缄默→声震人间&rdquo;}
+$$</p>
+<hr>
+<h3 id="-安全信道协议">📡 安全信道协议</h3>
+<p>$$
+\begin{array}{ccc} \text{CTF Writeup库} &amp; \xleftrightarrow{\text{TLS1.3}} &amp; \text{漏洞星球} \ &amp; \Updownarrow &amp; \ \text{云安全智库} &amp; \xrightarrow{\text{AES-GCM}} &amp; \text{我的GitHub} \ \end{array}
+$$</p>
+<hr>
+<h4 id="-安全握手请求">🔗 安全握手请求</h4>
+<p>$$
+\text{Let’s } \mathop{\text{Handshake}} \left( \frac{\text{你}}{\text{我}} \right) \ni { \text{知乎|GitHub|阿里云} }
+$$</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
