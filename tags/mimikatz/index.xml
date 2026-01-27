@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mimikatz on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/mimikatz/</link>
+    <description>Recent content in Mimikatz on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 30 Dec 2024 08:45:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/mimikatz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [安洵杯 2019]Attack 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E5%AE%89%E6%B4%B5%E6%9D%AF-2019attack-1/</link>
+      <pubDate>Mon, 30 Dec 2024 08:45:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E5%AE%89%E6%B4%B5%E6%9D%AF-2019attack-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
+&lt;a href=&#34;https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;amp;u_asig=0a472f9017274948088853311e0043#toc-24&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;安洵杯2019 官方Writeup(Web/Misc) - D0g3&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/weixin_66146598/article/details/125129282&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;[安洵杯 2019]Attack （详细解析）&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
+<a href="https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;u_asig=0a472f9017274948088853311e0043#toc-24"target="_blank" rel="noopener noreferrer">安洵杯2019 官方Writeup(Web/Misc) - D0g3</a>
+<a href="https://blog.csdn.net/weixin_66146598/article/details/125129282"target="_blank" rel="noopener noreferrer">[安洵杯 2019]Attack （详细解析）</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到Attack.pcap文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192329001.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192329001.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、打开流量包，根据题目提示，寻找攻击流量。首先，发现攻击者进行了目录扫描，在靠后位置发现上传一句话木马</p>
+<p><strong>目录扫描</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192330113.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192330113.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>上传一句话木马</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>往下分析，发现一组TCP流量疑似执行命令，请求流量经过base64混淆，返回流量使用ROT13加密</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192337801.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192337801.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>继续分析其他TCP流，发现目录下多出一个s3cret.zip文件。(据说，可以通过文件大小异常，推测文件中包含其他文件，使用foremost分离文件)</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192339966.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192339966.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192341804.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192341804.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在下一组流量中，找到zip压缩包的“PK”文件头，以及一个flag.txt文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192343482.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192343482.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、将以“50 4B 03 04”开头的zip文件数据，拿出来保存为zip文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192345626.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192345626.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192348223.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192348223.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>尝试解压，发现需要密码。根据压缩包hint提示，密码可能与administrator用户有关</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192350434.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192350434.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>继续分析流量，发现使用了procdump.exe这个工具，产生lsass.dmp文件</p>
+<blockquote>
+<p>Procdump工具一般用来抓取windows的lsass进程中的用户明文密码
+lsass是windows系统的一个进程，用于本地安全和登陆策略。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192352711.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192352711.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>接下来，攻击者下载了lsass.dmp文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192354293.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192354293.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>我们将lsass.dmp文件下载下来</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192356375.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192356375.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<blockquote>
+<p>Mimikatz 是一款功能强大的轻量级调试神器，通过它你可以提升进程权限注入进程读取进程内存，当然他最大的亮点就是他可以直接从 lsass.exe 进程中获取当前登录系统用户名的密码， lsass是微软Windows系统的安全机制它主要用于本地安全和登陆策略，通常我们在登陆系统时输入密码之后，密码便会储存在 lsass内存中，经过其 wdigest 和 tspkg 两个模块调用后，对其使用可逆的算法进行加密并存储在内存之中， 而 mimikatz 正是通过对lsass逆算获取到明文密码！也就是说只要你不重启电脑，就可以通过他获取到登陆密码，只限当前登陆系统！</p>
+</blockquote>
+<p>使用mimikatz获得该文件中administrator的密码，得到 <code>W3lc0meToD0g3</code>
+mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target="_blank" rel="noopener noreferrer">https://github.com/gentilkiwi/mimikatz/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">将lsass.dmp文件放到mimikatz.exe下目录
+</span></span><span class="line"><span class="cl">privilege::debug
+</span></span><span class="line"><span class="cl">sekurlsa::minidump lsass.dmp
+</span></span><span class="line"><span class="cl">sekurlsa::logonpasswords full
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192358227.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192358227.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、使用密码解压压缩包，得到flag.txt文件。（flag在文件底部，向下翻翻）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192400016.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192400016.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">D0g3<span class="o">{</span>3466b11de8894198af3636c5bd1efce2<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>3466b11de8894198af3636c5bd1efce2<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

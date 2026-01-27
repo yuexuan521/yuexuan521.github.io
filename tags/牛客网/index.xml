@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>牛客网 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/%E7%89%9B%E5%AE%A2%E7%BD%91/</link>
+    <description>Recent content in 牛客网 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Fri, 18 Aug 2023 10:58:41 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/%E7%89%9B%E5%AE%A2%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>牛客网Python入门103题练习|【08--元组】</title>
+      <link>https://yuexuan521.github.io/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</link>
+      <pubDate>Fri, 18 Aug 2023 10:58:41 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_08--%E5%85%83%E7%BB%84/</guid>
+      <description>&lt;h2 id=&#34;np62-运动会双人项目&#34;&gt;⭐NP62 运动会双人项目&lt;/h2&gt;
+&lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;
+&lt;p&gt;牛客运动会上有一项双人项目，因为报名成功以后双人成员不允许被修改，因此请使用元组（tuple）进行记录。先输入两个人的名字，请输出他们报名成功以后的元组。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="np62-运动会双人项目">⭐NP62 运动会双人项目</h2>
+<h3 id="描述">描述</h3>
+<p>牛客运动会上有一项双人项目，因为报名成功以后双人成员不允许被修改，因此请使用元组（tuple）进行记录。先输入两个人的名字，请输出他们报名成功以后的元组。</p>
+<h4 id="输入描述">输入描述：</h4>
+<p>第一行以字符串的形式输入第一个人的名字。</p>
+<p>第二行以字符串的形式输入第二个人的名字。</p>
+<h4 id="输出描述">输出描述：</h4>
+<p>直接输出两个名字组成的元组。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">((</span><span class="nb">input</span><span class="p">(),</span><span class="nb">input</span><span class="p">()))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np63修改报名名单">⭐NP63 修改报名名单</h2>
+<h3 id="描述-1">描述</h3>
+<p>牛牛和牛妹报名了牛客运动会的双人项目，但是由于比赛前一天牛妹身体不适，不能参加第二天的运动，于是想让牛可乐代替自己。</p>
+<p>请创建一个依次包含字符串&rsquo;Niuniu&rsquo;和&rsquo;Niumei&rsquo;的元组entry_form，并直接输出整个元组。</p>
+<p>然后尝试使用try- except代码块执行语句：entry-form[1] = &lsquo;Niukele&rsquo;，若是引发TypeError错误，请输出&rsquo;The entry form cannot be modified!&rsquo;。</p>
+<h4 id="输入描述-1">输入描述：</h4>
+<p>无</p>
+<h4 id="输出描述-1">输出描述：</h4>
+<p>第一行输出创建的元组整体。</p>
+<p>第二行若是修改失败，则输出错误信息。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">entry_form</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Niuniu&#39;</span><span class="p">,</span><span class="s1">&#39;Niumei&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">entry_form</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">entry_form</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Niukele&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The entry form cannot be modified!&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np64输出前三同学的成绩">⭐NP64 输出前三同学的成绩</h2>
+<h3 id="描述-2">描述</h3>
+<p>学校录入考试排名信息以后，为了防止修改，都会记录为Python元组。请你根据输入的字符串，使用tuple函数将它们作为考生姓名记录到元组中，并使用切片法输出前三名同学的名字。</p>
+<h4 id="输入描述-2">输入描述：</h4>
+<p>一行输入多个字符串表示考生的名字，以空格间隔。</p>
+<p>输入名字数可能少于3。</p>
+<h4 id="输出描述-2">输出描述：</h4>
+<p>截取输出该元组前三位的部分。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np65名单中出现过的人">⭐NP65 名单中出现过的人</h2>
+<h3 id="描述-3">描述</h3>
+<p>牛客网有一份秘密名单，[&lsquo;Tom&rsquo;, &lsquo;Tony&rsquo;, &lsquo;Allen&rsquo;, &lsquo;Cydin&rsquo;, &lsquo;Lucy&rsquo;, &lsquo;Anna&rsquo;]，请将它们创建为不可被修改的Python元组后，输出整个元组。</p>
+<p>对于牛牛输入的名字name，请使用成员运算检验它是否出现在这份秘密名单中，若是在名单中则输出&rsquo;Congratulations!&rsquo;，否则输出&rsquo;What a pity!&rsquo;.</p>
+<h4 id="输入描述-3">输入描述：</h4>
+<p>以字符串的形式输入一个名字，只包含大小写字母。</p>
+<h4 id="输出描述-3">输出描述：</h4>
+<p>第一行输出完整元组，第二行根据判断输出相应语句。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="s1">&#39;Tony&#39;</span><span class="p">,</span> <span class="s1">&#39;Allen&#39;</span><span class="p">,</span> <span class="s1">&#39;Cydin&#39;</span><span class="p">,</span> <span class="s1">&#39;Lucy&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Congratulations!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;What a pity!&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np66增加元组的长度">⭐NP66 增加元组的长度</h2>
+<h3 id="描述-4">描述</h3>
+<p>牛牛有一个元组，其中记录数字1-5，请创建该元组，并使用len函数获取该元组的长度。</p>
+<p>牛牛觉得这个元组太短了，想要在该元组后再连接一个6-10的元祖，请输出连接后的元组及长度。</p>
+<h4 id="输入描述-4">输入描述：</h4>
+<p>无</p>
+<h4 id="输出描述-4">输出描述：</h4>
+<p>第一行输出整体的原始元组。（带括号输出）</p>
+<p>第二行输出原始元组的长度。</p>
+<p>第三行输出连接后的整体元组。（带括号输出）</p>
+<p>第四行输出连接后的元组长度。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">t1</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">t2</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">11</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">t3</span> <span class="o">=</span> <span class="n">t1</span><span class="o">+</span><span class="n">t2</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">t3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t3</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

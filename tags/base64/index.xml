@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Base64 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/base64/</link>
+    <description>Recent content in Base64 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 05 Jun 2023 13:46:02 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/base64/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF 一眼就解密 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-%E4%B8%80%E7%9C%BC%E5%B0%B1%E8%A7%A3%E5%AF%86-1/</link>
+      <pubDate>Mon, 05 Jun 2023 13:46:02 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-%E4%B8%80%E7%9C%BC%E5%B0%B1%E8%A7%A3%E5%AF%86-1/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cobol&#34; data-lang=&#34;cobol&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;flag：Z&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;mxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;观察发现，密文字符串末尾有“=”，猜测为Base32/64加密。又因为密文中含有小写字母，排除Base32，使用Base64在线解密工具解密，获得flag。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cobol" data-lang="cobol"><span class="line"><span class="cl"><span class="c">flag：Z</span><span class="nv">mxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30</span><span class="o">=</span> <span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>观察发现，密文字符串末尾有“=”，猜测为Base32/64加密。又因为密文中含有小写字母，排除Base32，使用Base64在线解密工具解密，获得flag。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cobol" data-lang="cobol"><span class="line"><span class="cl"><span class="c">flag{T</span><span class="nv">HE_FLAG_OF_THIS_STRING</span><span class="err">}
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div style="text-align:center;"><img alt="" src="https://i-blog.csdnimg.cn/blog_migrate/77d05a5c47745bdcbd9dbaa753166f97.png"></div>
+<p><strong>简述：</strong></p>
+<p><strong>base32的编码表是由（A-Z、2-7）32个可见字符构成，“=”符号用作后缀填充。</strong></p>
+<p><strong>base64的编码表是由（A-Z、a-z、0-9、+、/）64个可见字符构成，“=”符号用作后缀填充。</strong></p>
+<p><strong>在线解密工具： <a href="https://www.qqxiuzi.cn/bianma/base64.htm"target="_blank" rel="noopener noreferrer">https://www.qqxiuzi.cn/bianma/base64.htm</a></strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

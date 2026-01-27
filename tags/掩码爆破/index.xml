@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>掩码爆破 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/%E6%8E%A9%E7%A0%81%E7%88%86%E7%A0%B4/</link>
+    <description>Recent content in 掩码爆破 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Sun, 21 Apr 2024 20:14:36 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/%E6%8E%A9%E7%A0%81%E7%88%86%E7%A0%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [GUET-CTF2019]zips 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-guet-ctf2019zips-1/</link>
+      <pubDate>Sun, 21 Apr 2024 20:14:36 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-guet-ctf2019zips-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png&#34; 
+             alt=&#34;image-20240521144712363&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
+&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
+&lt;p&gt;得到一个attachment.zip文件&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
+&lt;p&gt;1、解压attachment.zip，得到222.zip文件。尝试解压需要密码，使用Ziperello爆破密码，先尝试1~9位纯数字暴力破解，得到密码723456&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png" 
+             alt="image-20240521144712363" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>得到一个attachment.zip文件</p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、解压attachment.zip，得到222.zip文件。尝试解压需要密码，使用Ziperello爆破密码，先尝试1~9位纯数字暴力破解，得到密码723456</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191103382.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191103382.png" 
+             alt="屏幕截图 2024-05-19 164506" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、解压222.zip，得到111.zip文件。使用Ziperello打开111.zip文件，提示没有读取到加密文件，猜测存在zip伪加密。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191105384.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191105384.png" 
+             alt="屏幕截图 2024-05-19 164527" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191107184.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191107184.png" 
+             alt="屏幕截图 2024-05-19 164638" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://blog.csdn.net/qq_26187985/article/details/83654197"target="_blank" rel="noopener noreferrer">zip伪加密原理</a></p>
+<p><a href="https://blog.csdn.net/YueXuan_521/article/details/134055375?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171627454816800197088397%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=171627454816800197088397&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-134055375-null-null.nonecase&amp;utm_term=%E4%BC%AA%E5%8A%A0%E5%AF%86&amp;spm=1018.2226.3001.4450"target="_blank" rel="noopener noreferrer">zip伪加密例子</a></p>
+<p>使用010Editor打开111.zip文件，修改压缩源文件数据区和目录区的全局方式位标记，达到将伪压缩文件恢复到未加密的状态的目的。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png" 
+             alt="image-20240521151732976" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压得到一个zip压缩包和脚本文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png" 
+             alt="image-20240521152003008" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、尝试解压flag.zip需要密码。使用记事本打开setup.sh文件，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">zip -e --password<span class="o">=</span><span class="sb">`</span>python -c <span class="s2">&#34;print(__import__(&#39;time&#39;).time())&#34;</span><span class="sb">`</span> flag.zip flag
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<ol>
+<li>
+<p><code>#!/bin/bash</code> : 这是一个Shebang行，指定了该脚本应使用 <code>/bin/bash</code> 解释器执行。它是Unix/Linux系统中可执行脚本的标准起始行。</p>
+</li>
+<li>
+<p><code>zip -e --password=</code> : 这部分命令调用了 <code>zip</code> 程序来创建或更新一个ZIP归档文件，并使用 <code>-e</code> 选项指明需要对存档中的文件进行加密。</p>
+</li>
+<li>
+<p><code>python -c &quot;print(__import__('time').time())&quot;</code> : 这里嵌入了一个Python命令，用于执行一段Python代码。具体来说，它导入了 <code>time</code> 模块，并调用其 <code>time()</code> 函数来获取当前的Unix时间戳。这个时间值将作为接下来操作的密码。</p>
+</li>
+<li>
+<p><code>flag.zip flag</code> : 表示要创建或更新的ZIP文件名为 <code>flag.zip</code> ，并且要将当前目录下的一个名为 <code>flag</code> 的文件添加到此ZIP文件中。由于前面设置了 <code>-e</code> 和 <code>--password</code> ，所以在添加过程中会对 <code>flag</code> 文件进行加密，并使用由Python计算出的时间戳作为加密密码。</p>
+</li>
+</ol>
+</blockquote>
+<p>这段脚本是用Bash编写的，其主要功能是使用Python计算当前时间（以Unix时间戳形式表示，即从1970年1月1日00:00:00 UTC以来的秒数）并以此时间为密码来加密一个名为 <code>flag.zip</code> 的ZIP文件，其中包含一个名为 <code>flag</code> 的文件。</p>
+<p>截取其中的 <code>print(__import__('time').time())</code> python代码，在Python2环境下运行，得到时间戳格式（Python2与Python3得到的时间戳格式不一样）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1716272025.41
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png" 
+             alt="image-20240521153241328" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>当我们知道密码格式后就可以采用掩码爆破节约时间，使用Ziperello进行掩码爆破，首先定义掩码字符模板，再设置密码模板，选择起始密码就可以开始爆破。（这里我已经知道大致密码，所以为了节约时间，从1500000000.00开始）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png" 
+             alt="image-20240521153442653" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>得到密码1558080832.15</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png" 
+             alt="image-20240521152729804" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1558080832.15
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用密码解压flag.zip，得到flag文件，打开得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png" 
+             alt="image-20240521152847067" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>fkjabPqnLawhvuikfhgzyffj<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

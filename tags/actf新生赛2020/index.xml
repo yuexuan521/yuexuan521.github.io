@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ACTF新生赛2020 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/tags/actf%E6%96%B0%E7%94%9F%E8%B5%9B2020/</link>
+    <description>Recent content in ACTF新生赛2020 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Mon, 08 Sep 2025 08:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/tags/actf%E6%96%B0%E7%94%9F%E8%B5%9B2020/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [ACTF新生赛2020]明文攻击 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</link>
+      <pubDate>Mon, 08 Sep 2025 08:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://peiqi.wgpsec.org/ctf/misc/%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%A0%B4%E8%A7%A3/%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;明文攻击&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_46230755/article/details/112108707#:~:text=%5BACTF%E6%96%B0&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[ACTF新生赛2020]明文攻击&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_52974719/article/details/117084427&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Zip明文攻击细节问题及解决方案&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://peiqi.wgpsec.org/ctf/misc/%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%A0%B4%E8%A7%A3/%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB.html"target="_blank" rel="noopener noreferrer">明文攻击</a>
+<a href="https://blog.csdn.net/qq_46230755/article/details/112108707#:~:text=%5BACTF%E6%96%B0"target="_blank" rel="noopener noreferrer">BUUCTF：[ACTF新生赛2020]明文攻击</a>
+<a href="https://blog.csdn.net/qq_52974719/article/details/117084427"target="_blank" rel="noopener noreferrer">Zip明文攻击细节问题及解决方案</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件解压，得到tmp文件夹，下有none.zip，最后得到</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190622314.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190622314.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190623424.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190623424.jpeg" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、尝试解压res.zip，需要解压密码。看一下woo.jpg图片，发现数据中存在zip压缩包数据。（zip文件头：50 4B 03 04）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190624826.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190624826.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>文件头存在缺失，补全文件头，另存为zip文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190626656.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190626656.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压1.zip压缩包，得到flag.txt文件。（不是flag）</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190629298.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190629298.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、两个压缩包的CRC值相同，结合题目“明文攻击”，可以使用包含flag.txt的1.zip压缩包，对res.zip进行明文攻击。</p>
+<blockquote>
+<p><strong>明文攻击</strong> 是一种存在特定场景下爆破手段，大致原理是当你不知道一个zip的密码，但是你有zip中的一个已知文件（文件大小要大于12Byte）或者已经通过其他手段知道zip加密文件中的某些内容时，因为同一个zip压缩包里的所有文件都是使用同一个加密密钥来加密的，所以可以用已知文件来找加密密钥，利用密钥来解锁其他加密文件。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190630346.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190630346.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190631734.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190631734.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>使用ARCHPR进行明文攻击，5、6分钟后点击“停止”</p>
+<blockquote>
+<p>需要注意的是，明文攻击并不需要你太多时间，最多也就5,6分钟（师傅们的总结），一旦超过这个时间或感觉可以了点停止即可。</p>
+</blockquote>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190633480.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190633480.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>会弹出“加密密钥已成功恢复”提示框</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190635693.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190635693.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>点击取消，将无密码的文件另存下来</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190637817.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190637817.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>解压得到secret.txt文件，打开就是flag</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190640317.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190640317.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ACTF<span class="o">{</span>3te9_nbb_ahh8<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>3te9_nbb_ahh8<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [ACTF新生赛2020]music 1</title>
+      <link>https://yuexuan521.github.io/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020music-1/</link>
+      <pubDate>Sat, 28 Jun 2025 20:16:15 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020music-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/liuxunfei15/article/details/120441383&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;m4a文件格式分析&lt;/a&gt;
+&lt;a href=&#34;https://www.ruanyifeng.com/blog/2021/01/_xor.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;异或运算 XOR 教程&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109806994&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[ACTF新生赛2020]music&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/liuxunfei15/article/details/120441383"target="_blank" rel="noopener noreferrer">m4a文件格式分析</a>
+<a href="https://www.ruanyifeng.com/blog/2021/01/_xor.html"target="_blank" rel="noopener noreferrer">异或运算 XOR 教程</a>
+<a href="https://blog.csdn.net/mochu7777777/article/details/109806994"target="_blank" rel="noopener noreferrer">BUUCTF：[ACTF新生赛2020]music</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3>
+<p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3>
+<p>下载附件，解压得到tmp文件夹，内有vip.zip，解压得到vip.m4a文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3>
+<p>1、打开vip.m4a文件，发现该文件已损坏。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在010Editor中，也可以观察到文件数据的混乱。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、通过观察，参考 <a href="https://blog.csdn.net/liuxunfei15/article/details/120441383"target="_blank" rel="noopener noreferrer">m4a文件格式分析</a> 、 <a href="https://www.ruanyifeng.com/blog/2021/01/_xor.html"target="_blank" rel="noopener noreferrer">异或运算 XOR 教程</a> 两篇文章，我终于明白，vip.m4a文件数据经过对“ <code>A1</code> ”的异或运算，才呈现上面的样子。</p>
+<p>首先，通过对比m4a文件的ftyp（文件标识）和stsc（记录每个trunk的采样数），发现原来是“ <code>00</code> ”的数据变成了“ <code>A1</code> ”，ftyp：“ <code>66 74 79 70</code> ”变为“ <code>C7 D5 D8 D1</code> ”，stsc：“ <code>73 74 73 63</code> ”变为“ <code>D2 D5 D5 D2</code> ”。</p>
+<p>（感谢CSDN半岛铁盒博主的分享，另外周的《半岛铁盒》也很好听）</p>
+<p><strong>ftyp：</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>stsc：</strong>
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>同时，我了解到异或运算的一条运算规律： <strong>一个值与 0 的运算，总是等于其本身。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">x ^ <span class="nv">0</span> <span class="o">=</span> x
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>所以，当“ <code>A1</code> ”与 <code>0</code> 进行异或运算时，结果为“ <code>A1</code> ”。这就是为什么原来是“ <code>00</code> ”的数据变成了“ <code>A1</code> ”。</p>
+<p>从而得出， <strong>vip.m4a文件原数据经过了对“ <code>A1</code> ”的异或运算</strong> 。</p>
+<p>3、在010 Editor中，对整个文件进行对“ <code>A1</code> ”的异或运算，保存得到完好的vip.m4a文件。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png" 
+             alt="在这里插入图片描述" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>播放vip.m4a文件，将听到的字母记下来，得到： <code>actfabcdfghijk</code> ，flag为： <code>abcdfghijk</code></p>
+<h3 id="flag">flag：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>abcdfghijk<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
