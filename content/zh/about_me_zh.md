@@ -1,5 +1,5 @@
 +++
-title = "关于我"
+title = "关于YueXuan"
 date = 2025-11-29
 lastmod = 2025-11-29
 draft = false
