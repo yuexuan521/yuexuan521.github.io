@@ -1,9 +1,9 @@
 ```
 title: "上海电力大学专升本考试FAQ"
 date: 2025-09-22 17:15:56
-category: ""
+category: "专升本"
 categories: 
-  - ""
+  - "专升本"
 tags:
 - "上海电力大学"
 - "专升本"
