@@ -236,6 +236,11 @@ languages: # 定义具体语言板块。
           name: "牛客网Python入门103题"
           url: /zh/categories/牛客网Python/
           weight: 6
+        - identifier: SUEP_Exam 
+          parent: series
+          name: "专升本"
+          url: /zh/categories/专升本/
+          weight: 6
 
 markup:
   # https://github.com/adityatelange/hugo-PaperMod/issues/1386
