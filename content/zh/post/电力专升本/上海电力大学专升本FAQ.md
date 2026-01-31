@@ -1,5 +1,6 @@
 ```
 title: "上海电力大学专升本考试FAQ"
+draft: false
 date: 2025-09-22 17:15:56
 category: "专升本"
 categories: 
