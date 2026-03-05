@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuexuan521.github.io/zh/tags/github/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/hfish/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
@@ -27,7 +30,13 @@
     <loc>https://yuexuan521.github.io/zh/tags/%E8%9C%9C%E7%BD%90/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yuexuan521.github.io/zh/posts/%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%E5%9F%BA%E4%BA%8E-hfish--python--github-pages-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5%E6%BA%90/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/tags/%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
@@ -89,10 +98,10 @@
     <loc>https://yuexuan521.github.io/zh/tags/crc32/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/misc/</loc>

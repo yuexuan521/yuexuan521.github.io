@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>威胁情报 on 知识带给我们自由</title>
+    <link>https://yuexuan521.github.io/zh/tags/%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5/</link>
+    <description>Recent content in 威胁情报 on 知识带给我们自由</description>
+    <image>
+      <title>知识带给我们自由</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>zh</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实战指南：基于 HFish &#43; Python &#43; GitHub Pages 构建自动化威胁情报源</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%E5%9F%BA%E4%BA%8E-hfish--python--github-pages-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5%E6%BA%90/</link>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%E5%9F%BA%E4%BA%8E-hfish--python--github-pages-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5%E6%BA%90/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish API配置文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt&#34;&gt;威胁情报开源示例：ip_list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/yuexuan521/honeypot-blocklist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;honeypot-blocklist 项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;规划&#34;&gt;规划&lt;/h2&gt;
+&lt;p&gt;蜜罐（Honeypot）最核心的特点是：&lt;strong&gt;没有任何正常的业务流量会访问它&lt;/strong&gt;。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有&lt;strong&gt;极高的信噪比（高保真）&lt;/strong&gt;。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md"target="_blank" rel="noopener noreferrer">HFish API配置文档</a></p>
+<p><a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">威胁情报开源示例：ip_list</a></p>
+<p><a href="https://github.com/yuexuan521/honeypot-blocklist"target="_blank" rel="noopener noreferrer">honeypot-blocklist 项目地址</a></p>
+<h2 id="规划">规划</h2>
+<p>蜜罐（Honeypot）最核心的特点是：<strong>没有任何正常的业务流量会访问它</strong>。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有<strong>极高的信噪比（高保真）</strong>。</p>
+<p>蜜罐可以捕获攻击者的基础信息，将其转化为<strong>入侵指标（IOCs）</strong>：</p>
+<ul>
+<li><strong>攻击源 IP 地址</strong>：识别攻击者来自哪里（国家、ASN、代理池）。</li>
+<li><strong>恶意哈希值（File Hash）</strong>：上传的恶意软件的 MD5/SHA256。</li>
+<li><strong>恶意域名/URL</strong>：恶意软件回连的 C2（命令与控制）服务器地址。</li>
+<li><strong>用途</strong>：将这些数据实时同步给防火墙（FW）、WAF 或入侵检测系统（IDS），实现**“一处被攻，全网封禁”**。</li>
+</ul>
+<p>本文即是实现将Hifsh蜜罐获得的攻击信息，通过使用其自带的 API 接口进行自动化提取，并利用 GitHub/Gitee Pages 进行分发。（提取简单的攻击源 IP 地址为例）</p>
+<h3 id="架构设计">架构设计</h3>
+<ol>
+<li>
+<p><strong>数据源</strong>：部署在内网或公网的 HFish 蜜罐。</p>
+<p>部署教程：<a href="https://www.freebuf.com/articles/sectool/457499.html"target="_blank" rel="noopener noreferrer">云服务器搭建HFish蜜罐全流程 </a></p>
+</li>
+<li>
+<p><strong>处理中心</strong>：一个运行 Python 脚本的中间服务器（可以是 HFish 本机）。</p>
+</li>
+<li>
+<p><strong>发布平台</strong>：GitHub 或 Gitee（利用其 Pages 服务托管静态文本文件）。（ <a href="https://github.com/"target="_blank" rel="noopener noreferrer">GitHub</a> ）</p>
+</li>
+<li>
+<p><strong>最终产物</strong>：一个公网可访问的 URL（例如 <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt</a>）。</p>
+</li>
+</ol>
+<h2 id="第一步准备-hfish-api">第一步：准备 HFish API</h2>
+<p>HFish 提供了 API 用于获取攻击数据。</p>
+<ol>
+<li>登录 HFish 管理后台。</li>
+<li>进入 <strong>“系统设置” -&gt; “API 设置”</strong>。</li>
+<li>获取 <strong>API Key</strong> 和 <strong>管理端地址</strong>。
+<ul>
+<li><em>注意：如果你的 HFish 在内网，确保运行脚本的机器能访问到 HFish 的管理端口（默认 4433）。</em></li>
+</ul>
+</li>
+</ol>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
+             alt="image-20251227102507885" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2>
+<p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
+<p>在 HFish 服务器或能访问 HFish 的机器上创建 /root/generate_feed.py：（需修改HFISH_HOST、API_KEY、OUTPUT_TXT的值，第10行）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ipaddress</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib3</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ================= 配置区 =================</span>
+</span></span><span class="line"><span class="cl"><span class="n">HFISH_HOST</span> <span class="o">=</span> <span class="s2">&#34;https://IP:4433&#34;</span>                       <span class="o">//</span><span class="err">!!</span><span class="n">填写你的Hish网址</span><span class="err">!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">API_KEY</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>                                         <span class="o">//</span><span class="err">!!</span><span class="n">填写你的Hish</span> <span class="n">API</span> <span class="n">Key</span><span class="err">!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">OUTPUT_TXT</span> <span class="o">=</span> <span class="s2">&#34;/root/threat-feed/ip_list.txt&#34;</span>         <span class="o">//</span><span class="err">!!</span><span class="n">填写你保存文件的地址</span><span class="err">!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">TIME_WINDOW_HOURS</span> <span class="o">=</span> <span class="mi">24</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">LOCAL_WHITELIST</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span> <span class="s2">&#34;192.168.0.0/16&#34;</span><span class="p">,</span> <span class="s2">&#34;10.0.0.0/8&#34;</span><span class="p">,</span> <span class="s2">&#34;172.16.0.0/12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;8.8.8.8&#34;</span><span class="p">,</span> <span class="s2">&#34;1.1.1.1&#34;</span><span class="p">,</span> <span class="s2">&#34;60.204.200.232&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">WHITELIST_URLS</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;bing&#34;</span><span class="p">:</span> <span class="s2">&#34;https://www.bing.com/toolbox/bingbot.json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;github&#34;</span><span class="p">:</span> <span class="s2">&#34;https://api.github.com/meta&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># =========================================</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">WhitelistManager</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">ip</span> <span class="ow">in</span> <span class="n">LOCAL_WHITELIST</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">fetch_remote_whitelists</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[-] Fetching remote whitelists...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">WHITELIST_URLS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">data</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">prefixes</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="s2">&#34;prefixes&#34;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span> <span class="n">prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;ipv4Prefix&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;prefixes&#34;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">elif</span> <span class="s2">&#34;web&#34;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span> <span class="n">prefixes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;web&#34;</span><span class="p">,</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">prefixes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="n">p</span> <span class="ow">and</span> <span class="s2">&#34;.&#34;</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                            <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">is_whitelisted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">target</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="n">ip_str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">network</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">network</span><span class="p">:</span> <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_data</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">HFISH_HOST</span><span class="si">}</span><span class="s2">/api/v1/attack/ip?api_key=</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">end_time</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">start_time</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">TIME_WINDOW_HOURS</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_time</span> <span class="o">-</span> <span class="p">(</span><span class="n">TIME_WINDOW_HOURS</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;start_time&#34;</span><span class="p">:</span> <span class="n">start_time</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;end_time&#34;</span><span class="p">:</span> <span class="n">end_time</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;intranet&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;threat_label&#34;</span><span class="p">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">},</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[!] Request Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wl</span> <span class="o">=</span> <span class="n">WhitelistManager</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wl</span><span class="o">.</span><span class="n">fetch_remote_whitelists</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span> <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">raw_ips</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data_content</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] API Response Keys: </span><span class="si">{</span><span class="n">data_content</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;List Type&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="s1">&#39;attack_ip&#39;</span> <span class="ow">in</span> <span class="n">data_content</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span><span class="p">[</span><span class="s1">&#39;attack_ip&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="s1">&#39;list&#39;</span> <span class="ow">in</span> <span class="n">data_content</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span><span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[!] Error: Unknown dict structure in &#39;data&#39;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">data_content</span><span class="p">)</span> <span class="c1"># 打印出来看看</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[!] Error: No &#39;data&#39; field. keys: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Raw IPs found: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">raw_ips</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">clean_ips</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">raw_ips</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ip</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ip</span> <span class="o">=</span> <span class="n">item</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ip</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;source_ip&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ip&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;attack_ip&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">ip</span> <span class="ow">and</span> <span class="s2">&#34;.&#34;</span> <span class="ow">in</span> <span class="n">ip</span> <span class="ow">and</span> <span class="s2">&#34;attack_ip&#34;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="ow">not</span> <span class="n">wl</span><span class="o">.</span><span class="n">is_whitelisted</span><span class="p">(</span><span class="n">ip</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">clean_ips</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Final Unique IPs: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">clean_ips</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">OUTPUT_TXT</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;# HFish Threat Feed</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;# Updated: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">ip</span> <span class="ow">in</span> <span class="n">clean_ips</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">ip</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Saved to </span><span class="si">{</span><span class="n">OUTPUT_TXT</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第三步建立开源仓库-githubgitee">第三步：建立开源仓库 (GitHub/Gitee)</h2>
+<ol>
+<li>在 GitHub 上创建一个新仓库，例如 <code>honeypot-blocklist</code>。</li>
+<li>在你的服务器上安装 Git，并克隆该仓库。（<code>yourusername</code>改成你的用户名）</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 在服务器上操作
+</span></span><span class="line"><span class="cl">cd /root/
+</span></span><span class="line"><span class="cl">git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改上面的 Python 脚本配置，将输出路径指向这个 Git 目录。</p>
+<h2 id="第四步自动化更新与推送-shell--crontab">第四步：自动化更新与推送 (Shell + Crontab)</h2>
+<h3 id="1编写自动化-shell-脚本">1、编写自动化 Shell 脚本</h3>
+<p>编写一个 Shell 脚本 update_feed.sh，将“生成”和“推送”结合起来：</p>
+<ol>
+<li>
+<p>创建脚本文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>写入以下内容：（需修改git user.name和user.email，推荐 ✅使用 GitHub 提供的隐私邮箱）</p>
+<p><strong>GitHub隐私邮箱特点</strong>：既能保护你的真实邮箱不泄露，又能让 GitHub 识别出这是你的账号，给你的 GitHub 贡献墙（Contributions Graph）加“绿格子”。</p>
+<ol>
+<li>登录 GitHub，进入 <strong>Settings（设置）</strong> -&gt; <strong>Emails</strong>。</li>
+<li>勾选 <strong>&ldquo;Keep my email addresses private&rdquo;</strong>。</li>
+<li>你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。</li>
+</ol>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
+             alt="image-20251228221426661" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>配置方法：</strong>（修改5. 配置 Git 身份）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config user.name &#34;你的GitHub用户名&#34;
+</span></span><span class="line"><span class="cl">git config user.email &#34;12345678+你的用户名@users.noreply.github.com&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ================= 配置路径 =================</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PY_SCRIPT</span><span class="o">=</span><span class="s2">&#34;/root/generate_feed.py&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="s2">&#34;/root/threat-feed&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">LOG_FILE</span><span class="o">=</span><span class="s2">&#34;/var/log/hfish_feed.log&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ===========================================</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-----------------------------------------------------&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;[</span><span class="k">$(</span>date<span class="k">)</span><span class="s2">] Starting update process...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. 进入 Git 仓库目录 (这一步必须最先做)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="nv">$GIT_REPO</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;[Error] Cannot cd into </span><span class="nv">$GIT_REPO</span><span class="s2">&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 【新增】先拉取远程更新 (防止 Push 冲突)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 这一步会把你在 GitHub 网页上改的 README 同步到本地</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;[-] Pulling remote changes...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> git pull origin main &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] Git pull successful.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果 pull 失败（极少见），通常是因为冲突，记录日志但不退出，尝试强制覆盖</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Warn] Git pull failed (Conflict?). Will try to push anyway.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 执行 Python 提取 IP</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 注意：即使 git pull 失败了，我们也要生成新数据，因为数据才是核心</span>
+</span></span><span class="line"><span class="cl">/usr/bin/python3 <span class="nv">$PY_SCRIPT</span> &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 检查文件是否生成</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> ! -f <span class="s2">&#34;ip_list.txt&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Error] ip_list.txt missing. Python script failed?&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. 配置 Git 身份</span>
+</span></span><span class="line"><span class="cl">git config user.name <span class="s2">&#34;&#34;</span>                          //!!填写你的name和email!!
+</span></span><span class="line"><span class="cl">git config user.email <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. 提交并推送</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> git commit -m <span class="s2">&#34;Auto update: </span><span class="k">$(</span>date <span class="s2">&#34;+%Y-%m-%d %H:%M&#34;</span><span class="k">)</span><span class="s2">&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] Changes committed.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 尝试推送</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> git push origin main &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">         <span class="nb">echo</span> <span class="s2">&#34;[Success] Pushed to GitHub.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">         <span class="nb">echo</span> <span class="s2">&#34;[Error] Git Push failed. Retrying with --force...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># 如果普通推送失败，尝试强制推送 (慎用，但在这种只增不减的情报源场景下是可行的)</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># git push -f origin main &gt;&gt; $LOG_FILE 2&gt;&amp;1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] No changes detected. Nothing to push.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>赋予执行权限：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<hr>
+<h3 id="2配置-ssh-免密推送关键">2、配置 SSH 免密推送（关键！）</h3>
+<p>自动化脚本在后台运行时，无法输入 GitHub 的账号密码。你必须配置 <strong>SSH Key</strong>。</p>
+<ol>
+<li>
+<p><strong>检查是否已有 Key</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ls ~/.ssh/id_rsa.pub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>如果有文件，跳过第2步。</li>
+<li>如果没有（报错），执行第2步。</li>
+</ul>
+</li>
+<li>
+<p><strong>生成 Key</strong>（一路回车即可）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -b 4096 -C &#34;hfish-feed&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>获取公钥</strong>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>复制输出的内容（以 ssh-rsa 开头的一长串）。</li>
+</ul>
+</li>
+<li>
+<p><strong>上传到 GitHub</strong>：</p>
+<ul>
+<li>
+<p>打开 GitHub 仓库 -&gt; <strong>Settings</strong> -&gt; <strong>Deploy keys</strong> -&gt; <strong>Add deploy key</strong>。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
+             alt="image-20251230120117688" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+<li>
+<p><strong>Title</strong>: HFish Server</p>
+</li>
+<li>
+<p><strong>Key</strong>: 粘贴刚才的内容。</p>
+</li>
+<li>
+<p><strong>重要</strong>：勾选 <strong>Allow write access</strong>（允许写入权限），否则无法推送！</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
+             alt="image-20251230120223456" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>手动测试连接</strong>（必须做一次！）：
+在服务器执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>输入 yes 确认指纹。</li>
+<li>如果看到 Hi <code>&lt;username&gt;/&lt;repo&gt;!</code> You&rsquo;ve successfully authenticated&hellip;，说明通了。</li>
+</ul>
+</li>
+<li>
+<p><strong>修改仓库地址为 SSH</strong>（如果你之前是用 HTTPS clone 的）：
+进入目录检查：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /root/threat-feed
+</span></span><span class="line"><span class="cl">git remote -v
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>如果显示 <a href="https://github.com/"target="_blank" rel="noopener noreferrer">https://github.com/</a>&hellip;，请执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote set-url origin git@github.com:你的用户名/你的仓库名.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="3手动测试全流程">3、手动测试全流程</h3>
+<p>现在我们手动运行一次 Shell 脚本，看看能不能成功推送。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>检查结果：</strong></p>
+<ol>
+<li>看日志：tail -f /var/log/hfish_feed.log</li>
+<li>看 GitHub 网页：刷新你的仓库，看看 ip_list.txt 更新时间是不是变成了 &ldquo;Just now&rdquo;。</li>
+</ol>
+<hr>
+<h3 id="4设置定时任务-crontab">4、设置定时任务 (Crontab)</h3>
+<p>确认手动运行没问题后，最后一步是让它自动跑。我们设置为 <strong>每 2 小时更新一次</strong>（既保证新鲜度，又不浪费资源）。</p>
+<ol>
+<li>
+<p>编辑定时任务：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">crontab -e
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>在文件末尾添加一行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 每 2 小时的第 5 分钟执行一次 (错峰执行)
+</span></span><span class="line"><span class="cl">5 */2 * * * /bin/bash /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>保存退出（如果是 vim，按 Esc 输入 :wq 回车）。</p>
+</li>
+</ol>
+<hr>
+<h2 id="第五步开源给他人使用">第五步：开源给他人使用</h2>
+<p>现在，你的 GitHub 仓库中会有 ip_list.txt。你需要开启 <strong>GitHub Pages</strong> 功能（在仓库 Settings -&gt; Pages 中开启）。</p>
+<ol>
+<li>进入该仓库的 <strong>Settings</strong> (设置)。</li>
+<li>在左侧侧边栏找到 <strong>Pages</strong>。</li>
+<li>在 <strong>Build and deployment</strong> 下的 <strong>Source</strong> 选择 Deploy from a branch。</li>
+<li>在 <strong>Branch</strong> 处选择 main (或 master) 分支，文件夹选择 / (root)。</li>
+<li>点击 <strong>Save</strong>。</li>
+</ol>
+<p>一旦开启，你就得到了一个全球可访问的永久直链，例如：
+<a href="https://yourusername.github.io/honeypot-blocklist/ip_list.txt"target="_blank" rel="noopener noreferrer">https://yourusername.github.io/honeypot-blocklist/ip_list.txt</a></p>
+<p>等待 1-2 分钟后，GitHub 会生成页面，别人只需要订阅这个以 .txt 结尾的 URL 即可。</p>
+<p>别人可以这样使用我们的数据：</p>
+<ol>
+<li><strong>PaloAlto/Fortinet 防火墙</strong>：创建一个 &ldquo;External Dynamic List&rdquo;，填入你的 URL。</li>
+<li><strong>Linux 服务器</strong>：写个脚本 wget 你的文件并导入 ipset。</li>
+</ol>
+<p><strong>效果展示：</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
+             alt="image-20251230120659771" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
