@@ -9,11 +9,589 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.155.1</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Thu, 23 Jan 2025 16:37:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>云服务器搭建HFish蜜罐全流程 &amp; 报告导出无法打开问题解决方法 </title>
+      <link>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34;&gt;
+        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34; 
+             alt=&#34;image-20251106181020300&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hfish.net/#/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish蜜罐官网：https://hfish.net/#/&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png" 
+             alt="image-20251106181020300" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://hfish.net/#/"target="_blank" rel="noopener noreferrer">HFish蜜罐官网：https://hfish.net/#/</a></p>
+<h2 id="蜜罐基础知识">蜜罐基础知识</h2>
+<h3 id="蜜罐的定义">蜜罐的定义</h3>
+<p>蜜罐是一种主动防御的欺骗技术，其核心思想是通过部署虚假的主机、服务或信息作为诱饵，诱导攻击者实施攻击。在此过程中，蜜罐能够记录攻击行为、分析攻击手法与工具，并推断攻击者的意图，从而帮助防御方更清晰地识别威胁，并针对性地提升真实系统的安全防护能力。[<a href="https://baike.baidu.com/item/%e8%9c%9c%e7%bd%90%e6%8a%80%e6%9c%af/9165942"target="_blank" rel="noopener noreferrer">蜜罐技术_百度百科</a>]</p>
+<h3 id="蜜罐的优势">蜜罐的优势</h3>
+<ol>
+<li>误报率低，告警精准由于蜜罐本身不承载真实业务，正常情况下不应被访问，因此任何对其发起的连接或探测行为都具有较高的可疑性。相较于传统检测设备容易将正常业务请求误判为攻击的情况，蜜罐几乎不会产生误报，能够实现高度可信的安全告警。</li>
+<li>深度交互，信息全面蜜罐可模拟多种业务服务甚至对攻击做出合理响应，从而与攻击者进行深度交互。这使得蜜罐能够获取从初始探测到后续攻击链的完整数据，实现对攻击行为的全流程捕获。尤其在SSL加密通信或工业控制等特殊场景中，蜜罐可有效伪装为目标系统，获取非解密的原始攻击载荷。</li>
+<li>主动诱捕，生成威胁情报传统防护往往在攻击探测阶段即告结束，而蜜罐则能主动吸引攻击者深入交互，如诱使其上传恶意工具、连接C2服务器等。这些行为不仅被完整记录，还可进一步提取为高质量的本地威胁情报，赋能于IDS、防火墙等其他安全设备，实现对特定攻击手法（TTPs）的持续检测与预警。[<a href="https://xz.aliyun.com/news/13713"target="_blank" rel="noopener noreferrer">一篇文章带你搞懂蜜罐-先知社区</a>]</li>
+<li>部署灵活，扩展性强蜜罐通常以软件形态存在，无需调整现有网络结构，即可灵活部署于物理网络、云环境或边缘节点。其轻量化的特性使其能够作为探针广泛分布于网络末端，将安全事件统一上报至态势感知平台，实现对全网威胁的可视化监控。</li>
+</ol>
+<h3 id="蜜罐与威胁情报">蜜罐与威胁情报</h3>
+<p>蜜罐是高质量威胁情报的稳定来源。通过诱使攻击者暴露其攻击工具、基础设施与行为模式，结合其误报率低、信息详实的特性，蜜罐能够持续产出精准的私有威胁情报。这些情报可整合至本地安全分析平台，有效提升对新型攻击的预见性与防护能力。</p>
+<h2 id="安装hfish蜜罐">安装HFish蜜罐</h2>
+<p>如果部署的环境为Linux，且可以访问互联网，强烈建议使用一键部署脚本进行安装和配置，在使用一键脚本前，请先配置防火墙。</p>
+<p>其它版本（及无网环境）安装指南：<a href="https://hfish.net/#/quick-deploy"target="_blank" rel="noopener noreferrer">https://hfish.net/#/quick-deploy</a></p>
+<h3 id="配置防火墙">配置防火墙</h3>
+<p>以root权限运行以下命令，确保配置防火墙开启TCP/4433、TCP/4434</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">4433</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>   <span class="c1">#（用于web界面启动）</span>
+</span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">4434</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>   <span class="c1">#（用于节点与管理端通信）</span>
+</span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png" 
+             alt="image-20251106162714128" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>可能提示需要开启防火墙，使用如下命令：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png" 
+             alt="image-20251106162510856" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl status firewalld
+</span></span><span class="line"><span class="cl">systemctl start firewalld
+</span></span><span class="line"><span class="cl">systemctl status firewalld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png" 
+             alt="image-20251106162558843" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="一键部署hfish蜜罐">一键部署HFish蜜罐</h3>
+<p>以root权限运行以下一键部署命令，输入“1”，安装并运行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">bash &lt;(curl -sS -L https://hfish.net/webinstall.sh)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png" 
+             alt="image-20251106162834638" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>出现下面提示，表示成功安装。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png" 
+             alt="image-20251106163213209" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="安装mysql">安装MySQL</h2>
+<h3 id="使用-yum-安装">使用 yum 安装</h3>
+<p>首先，尝试一下直接使用 yum 安装 MySQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">yum install mysql-community-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中，会提示让我们确认，一律输入 <code>y</code> 按回车即可</p>
+<p>如果出现以下错误：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Loading mirror speeds from cached hostfile
+</span></span><span class="line"><span class="cl">没有可用软件包 mysql-community-server。
+</span></span><span class="line"><span class="cl">错误：无须任何处理
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>表示我们没有添加安装包的源信息，需要安装 MySQL rpm 源信息</p>
+<h3 id="安装-mysql-rpm-源信息">安装 MySQL rpm 源信息</h3>
+<p>打开 <a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/downloads/repo/yum/"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/downloads/repo/yum/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png" 
+             alt="image-20251106180042285" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>根据你的系统版本，选择对应的安装包，例如我的是CentOS 7.5，这个系统的Linux内核是 Linux 7，所以我选择了红框内的地址，大家依次类推。</p>
+<p>拼接下载地址头：<a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/get/</a>，得到以下地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"> CentOS 7
+</span></span><span class="line"><span class="cl"> http://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl"> CentOS 8
+</span></span><span class="line"><span class="cl"> http://dev.mysql.com/get/mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用 wget + 刚才拼接的地址，下载安装包源信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CentOS 7
+</span></span><span class="line"><span class="cl">wget  http://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl">CentOS 8
+</span></span><span class="line"><span class="cl">wget http://dev.mysql.com/get/mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>rpm 安装源信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CentOS 7
+</span></span><span class="line"><span class="cl">rpm -ivh mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl">CentOS 8
+</span></span><span class="line"><span class="cl">rpm -ivh mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="禁用-mysql-模块">禁用 MySQL 模块</h3>
+<p>如果还是出现错误，需要禁用默认启用的 MySQL 模块。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum module disable mysql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png" 
+             alt="image-20251106171221748" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="再次安装">再次安装</h3>
+<p>再尝试使用 yum 安装MySQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">yum install mysql-community-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中，会提示让我们确认，一律输入 <code>y</code> 按回车即可</p>
+<h3 id="检查安装是否成功">检查安装是否成功</h3>
+<p>检查一下刚才的安装是否成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">rpm -qa | grep mysql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">mysql-community-libs-compat-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-icu-data-files-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql80-community-release-el7-7.noarch
+</span></span><span class="line"><span class="cl">mysql-community-common-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-libs-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-server-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-client-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-client-plugins-8.0.33-1.el7.x86_64
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出类似以上内容，表示安装完成</p>
+<h3 id="登录和修改密码">登录和修改密码</h3>
+<p>我们安装的时候，并没有设置初始密码</p>
+<p>所以 mysql 在第一次启动的时候，会自动初始化一个密码</p>
+<p>通过以下这行代码，我们可以查看 mysql 自动初始化的密码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># 第一次启动后，可以查看mysql初始化密码
+</span></span><span class="line"><span class="cl">grep &#39;temporary password&#39; /var/log/mysqld.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">输出（root@localhost: 后面的是密码）：
+</span></span><span class="line"><span class="cl">2023-04-21T06:03:27.071550Z 6 [Note] [MY-010454] [Server] A temporary password
+</span></span><span class="line"><span class="cl">is generated for root@localhost: r2to%yZ%a)%s
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="登录">登录</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># 登录mysql，一定要注意：-p和&#39;密码&#39;之间是没有空格的
+</span></span><span class="line"><span class="cl">mysql -u root -p&#39;r2to%yZ%a)%s&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="修改-root-密码">修改 root 密码</h3>
+<p>注意了，默认的密码策略，需要：大写英文 + 特殊字符 + 数字</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;Root_123&#39;;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="创建需要的hfish数据库">创建需要的HFish数据库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CREATE DATABASE HFish001;
+</span></span><span class="line"><span class="cl">show databases;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png" 
+             alt="image-20251106172357982" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="登录web界面">登录Web界面</h2>
+<p>华为云服务器需要添加一条安全组规则，允许访问4433端口</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png" 
+             alt="image-20251106181213291" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>完成安装后，通过以下网址、账号密码登录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">登陆链接：https://[ip]:4433/web/
+</span></span><span class="line"><span class="cl">账号：admin
+</span></span><span class="line"><span class="cl">密码：HFish2021
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果管理端的IP是192.168.1.1，则登陆链接为：https://192.168.1.1:4433/web/</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：访问管理端的URL中必须有/web/目录
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png" 
+             alt="image-20251106175157010" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>初次配置需要选择数据库，端口默认3306，数据库名：HFish001，用户名密码为MySQL的数据库密码</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png" 
+             alt="image-20251106164928890" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>配置成功，等待重启</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png" 
+             alt="image-20251106172526860" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>看到下方的管理界面</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png" 
+             alt="image-20251106172711580" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="配置蜜罐服务">配置蜜罐服务</h2>
+<p>选择“节点管理”，可以配置蜜罐服务</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png" 
+             alt="image-20251107113140322" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>华为云服务器需要相应添加安全组规则，开放端口</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png" 
+             alt="image-20251107113313689" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>CentOS内的firewall也需要开放相应端口</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="err">安全组规则：</span><span class="mi">8080</span><span class="p">,</span><span class="mi">9215</span><span class="p">,</span><span class="mi">6379</span><span class="p">,</span><span class="mi">9200</span><span class="p">,</span><span class="mi">9000</span><span class="p">,</span><span class="mi">8081</span><span class="p">,</span><span class="mi">135</span><span class="p">,</span><span class="mi">139</span><span class="p">,</span><span class="mi">445</span><span class="p">,</span><span class="mi">1433</span><span class="p">,</span><span class="mi">3389</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">6379</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">9200</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">9000</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">8081</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">135</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">139</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">445</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">1433</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">3389</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>    <span class="o">//</span><span class="n">firewall批量添加端口</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>测试http://[ip]:[port]，相应的服务已经可以访问了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png" 
+             alt="image-20251107113512203" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>稍等片刻，就可以看到攻击者的记录了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png" 
+             alt="image-20251107113743753" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="其它配置">其它配置</h2>
+<h3 id="配置白名单">配置白名单</h3>
+<p>在系统配置内，选择“白名单配置”，填入自己的网段可以减少管理蜜罐时产生的误报</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png" 
+             alt="image-20251107114238724" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="数据大屏">数据大屏</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png" 
+             alt="image-20251109152230667" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>其它功能详见HFish蜜罐功能手册：[<a href="https://hfish.net/#/README"target="_blank" rel="noopener noreferrer">快速了解HFish</a>]</p>
+<h2 id="报告导出word无法打开问题解决">报告导出word无法打开问题解决</h2>
+<p>我在使用HFish蜜罐导出自动生成的周报时遇到问题，下载下来的word（.docx）文件无法打开，显示错误如下。网上修复的方法试了很多，最后找到一种真正有效的方法。</p>
+<p>可以在网站上预览：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png" 
+             alt="image-20251114220404344" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png" 
+             alt="image-20251114220427065" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>通过Word打开显示错误如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png" 
+             alt="image-20251114220224883" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png" 
+             alt="image-20251114220332844" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>我的Office版本为2021，2019版本也会遇到这个问题。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png" 
+             alt="562c9b288224fcba368ca2ae21f52afb" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="解决方法">解决方法：</h3>
+<p>使用WPS可以正常打开下载下来的。或者用WPS另存为.doc文件后，word也可以正常打开。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png" 
+             alt="image-20251116223834022" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Packet Tracer - Configure and Verify a Site-to-Site IPsec VPN Using CLI（使用命令行界面配置和验证站点到站点IPsec VPN）</title>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</link>

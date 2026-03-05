@@ -9,11 +9,589 @@
       <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.155.1</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>zh</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Fri, 05 Dec 2025 10:53:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>云服务器搭建HFish蜜罐全流程 &amp; 报告导出无法打开问题解决方法 </title>
+      <link>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <description>&lt;p&gt;闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34;&gt;
+        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34; 
+             alt=&#34;image-20251106181020300&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hfish.net/#/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish蜜罐官网：https://hfish.net/#/&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png" 
+             alt="image-20251106181020300" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><a href="https://hfish.net/#/"target="_blank" rel="noopener noreferrer">HFish蜜罐官网：https://hfish.net/#/</a></p>
+<h2 id="蜜罐基础知识">蜜罐基础知识</h2>
+<h3 id="蜜罐的定义">蜜罐的定义</h3>
+<p>蜜罐是一种主动防御的欺骗技术，其核心思想是通过部署虚假的主机、服务或信息作为诱饵，诱导攻击者实施攻击。在此过程中，蜜罐能够记录攻击行为、分析攻击手法与工具，并推断攻击者的意图，从而帮助防御方更清晰地识别威胁，并针对性地提升真实系统的安全防护能力。[<a href="https://baike.baidu.com/item/%e8%9c%9c%e7%bd%90%e6%8a%80%e6%9c%af/9165942"target="_blank" rel="noopener noreferrer">蜜罐技术_百度百科</a>]</p>
+<h3 id="蜜罐的优势">蜜罐的优势</h3>
+<ol>
+<li>误报率低，告警精准由于蜜罐本身不承载真实业务，正常情况下不应被访问，因此任何对其发起的连接或探测行为都具有较高的可疑性。相较于传统检测设备容易将正常业务请求误判为攻击的情况，蜜罐几乎不会产生误报，能够实现高度可信的安全告警。</li>
+<li>深度交互，信息全面蜜罐可模拟多种业务服务甚至对攻击做出合理响应，从而与攻击者进行深度交互。这使得蜜罐能够获取从初始探测到后续攻击链的完整数据，实现对攻击行为的全流程捕获。尤其在SSL加密通信或工业控制等特殊场景中，蜜罐可有效伪装为目标系统，获取非解密的原始攻击载荷。</li>
+<li>主动诱捕，生成威胁情报传统防护往往在攻击探测阶段即告结束，而蜜罐则能主动吸引攻击者深入交互，如诱使其上传恶意工具、连接C2服务器等。这些行为不仅被完整记录，还可进一步提取为高质量的本地威胁情报，赋能于IDS、防火墙等其他安全设备，实现对特定攻击手法（TTPs）的持续检测与预警。[<a href="https://xz.aliyun.com/news/13713"target="_blank" rel="noopener noreferrer">一篇文章带你搞懂蜜罐-先知社区</a>]</li>
+<li>部署灵活，扩展性强蜜罐通常以软件形态存在，无需调整现有网络结构，即可灵活部署于物理网络、云环境或边缘节点。其轻量化的特性使其能够作为探针广泛分布于网络末端，将安全事件统一上报至态势感知平台，实现对全网威胁的可视化监控。</li>
+</ol>
+<h3 id="蜜罐与威胁情报">蜜罐与威胁情报</h3>
+<p>蜜罐是高质量威胁情报的稳定来源。通过诱使攻击者暴露其攻击工具、基础设施与行为模式，结合其误报率低、信息详实的特性，蜜罐能够持续产出精准的私有威胁情报。这些情报可整合至本地安全分析平台，有效提升对新型攻击的预见性与防护能力。</p>
+<h2 id="安装hfish蜜罐">安装HFish蜜罐</h2>
+<p>如果部署的环境为Linux，且可以访问互联网，强烈建议使用一键部署脚本进行安装和配置，在使用一键脚本前，请先配置防火墙。</p>
+<p>其它版本（及无网环境）安装指南：<a href="https://hfish.net/#/quick-deploy"target="_blank" rel="noopener noreferrer">https://hfish.net/#/quick-deploy</a></p>
+<h3 id="配置防火墙">配置防火墙</h3>
+<p>以root权限运行以下命令，确保配置防火墙开启TCP/4433、TCP/4434</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">4433</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>   <span class="c1">#（用于web界面启动）</span>
+</span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">4434</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>   <span class="c1">#（用于节点与管理端通信）</span>
+</span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png" 
+             alt="image-20251106162714128" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>可能提示需要开启防火墙，使用如下命令：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png" 
+             alt="image-20251106162510856" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl status firewalld
+</span></span><span class="line"><span class="cl">systemctl start firewalld
+</span></span><span class="line"><span class="cl">systemctl status firewalld
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png" 
+             alt="image-20251106162558843" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="一键部署hfish蜜罐">一键部署HFish蜜罐</h3>
+<p>以root权限运行以下一键部署命令，输入“1”，安装并运行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">bash &lt;(curl -sS -L https://hfish.net/webinstall.sh)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png" 
+             alt="image-20251106162834638" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>出现下面提示，表示成功安装。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png" 
+             alt="image-20251106163213209" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="安装mysql">安装MySQL</h2>
+<h3 id="使用-yum-安装">使用 yum 安装</h3>
+<p>首先，尝试一下直接使用 yum 安装 MySQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">yum install mysql-community-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中，会提示让我们确认，一律输入 <code>y</code> 按回车即可</p>
+<p>如果出现以下错误：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Loading mirror speeds from cached hostfile
+</span></span><span class="line"><span class="cl">没有可用软件包 mysql-community-server。
+</span></span><span class="line"><span class="cl">错误：无须任何处理
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>表示我们没有添加安装包的源信息，需要安装 MySQL rpm 源信息</p>
+<h3 id="安装-mysql-rpm-源信息">安装 MySQL rpm 源信息</h3>
+<p>打开 <a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/downloads/repo/yum/"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/downloads/repo/yum/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png" 
+             alt="image-20251106180042285" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>根据你的系统版本，选择对应的安装包，例如我的是CentOS 7.5，这个系统的Linux内核是 Linux 7，所以我选择了红框内的地址，大家依次类推。</p>
+<p>拼接下载地址头：<a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/get/</a>，得到以下地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"> CentOS 7
+</span></span><span class="line"><span class="cl"> http://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl"> CentOS 8
+</span></span><span class="line"><span class="cl"> http://dev.mysql.com/get/mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用 wget + 刚才拼接的地址，下载安装包源信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CentOS 7
+</span></span><span class="line"><span class="cl">wget  http://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl">CentOS 8
+</span></span><span class="line"><span class="cl">wget http://dev.mysql.com/get/mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>rpm 安装源信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CentOS 7
+</span></span><span class="line"><span class="cl">rpm -ivh mysql80-community-release-el7-7.noarch.rpm
+</span></span><span class="line"><span class="cl">CentOS 8
+</span></span><span class="line"><span class="cl">rpm -ivh mysql84-community-release-el8-2.noarch.rpm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="禁用-mysql-模块">禁用 MySQL 模块</h3>
+<p>如果还是出现错误，需要禁用默认启用的 MySQL 模块。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum module disable mysql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png" 
+             alt="image-20251106171221748" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="再次安装">再次安装</h3>
+<p>再尝试使用 yum 安装MySQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">yum install mysql-community-server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中，会提示让我们确认，一律输入 <code>y</code> 按回车即可</p>
+<h3 id="检查安装是否成功">检查安装是否成功</h3>
+<p>检查一下刚才的安装是否成功</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">rpm -qa | grep mysql
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">mysql-community-libs-compat-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-icu-data-files-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql80-community-release-el7-7.noarch
+</span></span><span class="line"><span class="cl">mysql-community-common-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-libs-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-server-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-client-8.0.33-1.el7.x86_64
+</span></span><span class="line"><span class="cl">mysql-community-client-plugins-8.0.33-1.el7.x86_64
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出类似以上内容，表示安装完成</p>
+<h3 id="登录和修改密码">登录和修改密码</h3>
+<p>我们安装的时候，并没有设置初始密码</p>
+<p>所以 mysql 在第一次启动的时候，会自动初始化一个密码</p>
+<p>通过以下这行代码，我们可以查看 mysql 自动初始化的密码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># 第一次启动后，可以查看mysql初始化密码
+</span></span><span class="line"><span class="cl">grep &#39;temporary password&#39; /var/log/mysqld.log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">输出（root@localhost: 后面的是密码）：
+</span></span><span class="line"><span class="cl">2023-04-21T06:03:27.071550Z 6 [Note] [MY-010454] [Server] A temporary password
+</span></span><span class="line"><span class="cl">is generated for root@localhost: r2to%yZ%a)%s
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="登录">登录</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl"># 登录mysql，一定要注意：-p和&#39;密码&#39;之间是没有空格的
+</span></span><span class="line"><span class="cl">mysql -u root -p&#39;r2to%yZ%a)%s&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="修改-root-密码">修改 root 密码</h3>
+<p>注意了，默认的密码策略，需要：大写英文 + 特殊字符 + 数字</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;Root_123&#39;;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="创建需要的hfish数据库">创建需要的HFish数据库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CREATE DATABASE HFish001;
+</span></span><span class="line"><span class="cl">show databases;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png" 
+             alt="image-20251106172357982" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="登录web界面">登录Web界面</h2>
+<p>华为云服务器需要添加一条安全组规则，允许访问4433端口</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png" 
+             alt="image-20251106181213291" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>完成安装后，通过以下网址、账号密码登录</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">登陆链接：https://[ip]:4433/web/
+</span></span><span class="line"><span class="cl">账号：admin
+</span></span><span class="line"><span class="cl">密码：HFish2021
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果管理端的IP是192.168.1.1，则登陆链接为：https://192.168.1.1:4433/web/</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：访问管理端的URL中必须有/web/目录
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png" 
+             alt="image-20251106175157010" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>初次配置需要选择数据库，端口默认3306，数据库名：HFish001，用户名密码为MySQL的数据库密码</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png" 
+             alt="image-20251106164928890" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>配置成功，等待重启</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png" 
+             alt="image-20251106172526860" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>看到下方的管理界面</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png" 
+             alt="image-20251106172711580" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="配置蜜罐服务">配置蜜罐服务</h2>
+<p>选择“节点管理”，可以配置蜜罐服务</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png" 
+             alt="image-20251107113140322" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>华为云服务器需要相应添加安全组规则，开放端口</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png" 
+             alt="image-20251107113313689" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>CentOS内的firewall也需要开放相应端口</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="err">安全组规则：</span><span class="mi">8080</span><span class="p">,</span><span class="mi">9215</span><span class="p">,</span><span class="mi">6379</span><span class="p">,</span><span class="mi">9200</span><span class="p">,</span><span class="mi">9000</span><span class="p">,</span><span class="mi">8081</span><span class="p">,</span><span class="mi">135</span><span class="p">,</span><span class="mi">139</span><span class="p">,</span><span class="mi">445</span><span class="p">,</span><span class="mi">1433</span><span class="p">,</span><span class="mi">3389</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">6379</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">9200</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">9000</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">8081</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">135</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">139</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">445</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">1433</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">3389</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">add</span><span class="o">-</span><span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="o">/</span><span class="n">tcp</span> <span class="o">--</span><span class="n">permanent</span>    <span class="o">//</span><span class="n">firewall批量添加端口</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"> <span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>测试http://[ip]:[port]，相应的服务已经可以访问了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png" 
+             alt="image-20251107113512203" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>稍等片刻，就可以看到攻击者的记录了</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png" 
+             alt="image-20251107113743753" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="其它配置">其它配置</h2>
+<h3 id="配置白名单">配置白名单</h3>
+<p>在系统配置内，选择“白名单配置”，填入自己的网段可以减少管理蜜罐时产生的误报</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png" 
+             alt="image-20251107114238724" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="数据大屏">数据大屏</h3>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png" 
+             alt="image-20251109152230667" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>其它功能详见HFish蜜罐功能手册：[<a href="https://hfish.net/#/README"target="_blank" rel="noopener noreferrer">快速了解HFish</a>]</p>
+<h2 id="报告导出word无法打开问题解决">报告导出word无法打开问题解决</h2>
+<p>我在使用HFish蜜罐导出自动生成的周报时遇到问题，下载下来的word（.docx）文件无法打开，显示错误如下。网上修复的方法试了很多，最后找到一种真正有效的方法。</p>
+<p>可以在网站上预览：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png" 
+             alt="image-20251114220404344" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png" 
+             alt="image-20251114220427065" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>通过Word打开显示错误如下：</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png" 
+             alt="image-20251114220224883" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png" 
+             alt="image-20251114220332844" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>我的Office版本为2021，2019版本也会遇到这个问题。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png" 
+             alt="562c9b288224fcba368ca2ae21f52afb" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="解决方法">解决方法：</h3>
+<p>使用WPS可以正常打开下载下来的。或者用WPS另存为.doc文件后，word也可以正常打开。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png" 
+             alt="image-20251116223834022" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>2026上海电力大学专升本考试讲座讲义</title>
       <link>https://yuexuan521.github.io/zh/posts/2026%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%AC%E8%80%83%E8%AF%95%E8%AE%B2%E5%BA%A7%E8%AE%B2%E4%B9%89/</link>
@@ -2130,481 +2708,6 @@ Quoted-printable编码</a></p>
 <h3 id="联系方式">联系方式</h3>
 <p>如果有问题想要咨询我的话，请发邮件至：yuexuan521@gmail.com，我会在每周一查看邮箱。</p>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>BUUCTF [RCTF2019]draw 1</title>
-      <link>https://yuexuan521.github.io/zh/posts/buuctf-rctf2019draw-1/</link>
-      <pubDate>Mon, 15 Sep 2025 08:30:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/posts/buuctf-rctf2019draw-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
-&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105369804&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：[RCTF2019]draw&lt;/a&gt;
-&lt;a href=&#34;https://blog.rois.io/2019/06/06/rctf-2019-official-writeup/#:~:text=%E4%BD%BF%E7%94%A8Wire&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;RCTF 2019 Official Writeup&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;保存attachment.txt文件，内容如下：&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
-<a href="https://blog.csdn.net/mochu7777777/article/details/105369804"target="_blank" rel="noopener noreferrer">BUUCTF：[RCTF2019]draw</a>
-<a href="https://blog.rois.io/2019/06/06/rctf-2019-official-writeup/#:~:text=%E4%BD%BF%E7%94%A8Wire"target="_blank" rel="noopener noreferrer">RCTF 2019 Official Writeup</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存attachment.txt文件，内容如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cs pu lt <span class="m">90</span> fd <span class="m">500</span> rt <span class="m">90</span> pd fd <span class="m">100</span> rt <span class="m">90</span> repeat 18<span class="o">[</span>fd <span class="m">5</span> rt 10<span class="o">]</span> lt <span class="m">135</span> fd <span class="m">50</span> lt <span class="m">135</span> pu bk <span class="m">100</span> pd setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> repeat 18<span class="o">[</span>fd <span class="m">5</span> rt 10<span class="o">]</span> rt <span class="m">90</span> fd <span class="m">60</span> rt <span class="m">90</span> bk <span class="m">30</span> rt <span class="m">90</span> fd <span class="m">60</span> pu lt <span class="m">90</span> fd <span class="m">100</span> pd rt <span class="m">90</span> fd <span class="m">50</span> bk <span class="m">50</span> setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> lt <span class="m">90</span> fd <span class="m">50</span> rt <span class="m">90</span> fd <span class="m">50</span> pu fd <span class="m">50</span> pd fd <span class="m">25</span> bk <span class="m">50</span> fd <span class="m">25</span> rt <span class="m">90</span> fd <span class="m">50</span> pu setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> fd <span class="m">100</span> rt <span class="m">90</span> fd <span class="m">30</span> rt <span class="m">45</span> pd fd <span class="m">50</span> bk <span class="m">50</span> rt <span class="m">90</span> fd <span class="m">50</span> bk <span class="m">100</span> fd <span class="m">50</span> rt <span class="m">45</span> pu fd <span class="m">50</span> lt <span class="m">90</span> pd fd <span class="m">50</span> bk <span class="m">50</span> rt <span class="m">90</span> setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> fd <span class="m">50</span> pu lt <span class="m">90</span> fd <span class="m">100</span> pd fd <span class="m">50</span> rt <span class="m">90</span> fd <span class="m">25</span> bk <span class="m">25</span> lt <span class="m">90</span> bk <span class="m">25</span> rt <span class="m">90</span> fd <span class="m">25</span> setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> pu fd <span class="m">25</span> lt <span class="m">90</span> bk <span class="m">30</span> pd rt <span class="m">90</span> fd <span class="m">25</span> pu fd <span class="m">25</span> lt <span class="m">90</span> pd fd <span class="m">50</span> bk <span class="m">25</span> rt <span class="m">90</span> fd <span class="m">25</span> lt <span class="m">90</span> fd <span class="m">25</span> bk <span class="m">50</span> pu bk <span class="m">100</span> lt <span class="m">90</span> setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> fd <span class="m">100</span> pd rt <span class="m">90</span> arc <span class="m">360</span> <span class="m">20</span> pu rt <span class="m">90</span> fd <span class="m">50</span> pd arc <span class="m">360</span> <span class="m">15</span> pu fd <span class="m">15</span> setcolor pick <span class="o">[</span> red orange yellow green blue violet <span class="o">]</span> lt <span class="m">90</span> pd bk <span class="m">50</span> lt <span class="m">90</span> fd <span class="m">25</span> pu home bk <span class="m">100</span> lt <span class="m">90</span> fd <span class="m">100</span> pd arc <span class="m">360</span> <span class="m">20</span> pu home
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。</p>
-<p>Logo解释器： <a href="https://www.calormen.com/jslogo/"target="_blank" rel="noopener noreferrer">https://www.calormen.com/jslogo/</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>附一个类似的python代码：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">  1
-</span><span class="lnt">  2
-</span><span class="lnt">  3
-</span><span class="lnt">  4
-</span><span class="lnt">  5
-</span><span class="lnt">  6
-</span><span class="lnt">  7
-</span><span class="lnt">  8
-</span><span class="lnt">  9
-</span><span class="lnt"> 10
-</span><span class="lnt"> 11
-</span><span class="lnt"> 12
-</span><span class="lnt"> 13
-</span><span class="lnt"> 14
-</span><span class="lnt"> 15
-</span><span class="lnt"> 16
-</span><span class="lnt"> 17
-</span><span class="lnt"> 18
-</span><span class="lnt"> 19
-</span><span class="lnt"> 20
-</span><span class="lnt"> 21
-</span><span class="lnt"> 22
-</span><span class="lnt"> 23
-</span><span class="lnt"> 24
-</span><span class="lnt"> 25
-</span><span class="lnt"> 26
-</span><span class="lnt"> 27
-</span><span class="lnt"> 28
-</span><span class="lnt"> 29
-</span><span class="lnt"> 30
-</span><span class="lnt"> 31
-</span><span class="lnt"> 32
-</span><span class="lnt"> 33
-</span><span class="lnt"> 34
-</span><span class="lnt"> 35
-</span><span class="lnt"> 36
-</span><span class="lnt"> 37
-</span><span class="lnt"> 38
-</span><span class="lnt"> 39
-</span><span class="lnt"> 40
-</span><span class="lnt"> 41
-</span><span class="lnt"> 42
-</span><span class="lnt"> 43
-</span><span class="lnt"> 44
-</span><span class="lnt"> 45
-</span><span class="lnt"> 46
-</span><span class="lnt"> 47
-</span><span class="lnt"> 48
-</span><span class="lnt"> 49
-</span><span class="lnt"> 50
-</span><span class="lnt"> 51
-</span><span class="lnt"> 52
-</span><span class="lnt"> 53
-</span><span class="lnt"> 54
-</span><span class="lnt"> 55
-</span><span class="lnt"> 56
-</span><span class="lnt"> 57
-</span><span class="lnt"> 58
-</span><span class="lnt"> 59
-</span><span class="lnt"> 60
-</span><span class="lnt"> 61
-</span><span class="lnt"> 62
-</span><span class="lnt"> 63
-</span><span class="lnt"> 64
-</span><span class="lnt"> 65
-</span><span class="lnt"> 66
-</span><span class="lnt"> 67
-</span><span class="lnt"> 68
-</span><span class="lnt"> 69
-</span><span class="lnt"> 70
-</span><span class="lnt"> 71
-</span><span class="lnt"> 72
-</span><span class="lnt"> 73
-</span><span class="lnt"> 74
-</span><span class="lnt"> 75
-</span><span class="lnt"> 76
-</span><span class="lnt"> 77
-</span><span class="lnt"> 78
-</span><span class="lnt"> 79
-</span><span class="lnt"> 80
-</span><span class="lnt"> 81
-</span><span class="lnt"> 82
-</span><span class="lnt"> 83
-</span><span class="lnt"> 84
-</span><span class="lnt"> 85
-</span><span class="lnt"> 86
-</span><span class="lnt"> 87
-</span><span class="lnt"> 88
-</span><span class="lnt"> 89
-</span><span class="lnt"> 90
-</span><span class="lnt"> 91
-</span><span class="lnt"> 92
-</span><span class="lnt"> 93
-</span><span class="lnt"> 94
-</span><span class="lnt"> 95
-</span><span class="lnt"> 96
-</span><span class="lnt"> 97
-</span><span class="lnt"> 98
-</span><span class="lnt"> 99
-</span><span class="lnt">100
-</span><span class="lnt">101
-</span><span class="lnt">102
-</span><span class="lnt">103
-</span><span class="lnt">104
-</span><span class="lnt">105
-</span><span class="lnt">106
-</span><span class="lnt">107
-</span><span class="lnt">108
-</span><span class="lnt">109
-</span><span class="lnt">110
-</span><span class="lnt">111
-</span><span class="lnt">112
-</span><span class="lnt">113
-</span><span class="lnt">114
-</span><span class="lnt">115
-</span><span class="lnt">116
-</span><span class="lnt">117
-</span><span class="lnt">118
-</span><span class="lnt">119
-</span><span class="lnt">120
-</span><span class="lnt">121
-</span><span class="lnt">122
-</span><span class="lnt">123
-</span><span class="lnt">124
-</span><span class="lnt">125
-</span><span class="lnt">126
-</span><span class="lnt">127
-</span><span class="lnt">128
-</span><span class="lnt">129
-</span><span class="lnt">130
-</span><span class="lnt">131
-</span><span class="lnt">132
-</span><span class="lnt">133
-</span><span class="lnt">134
-</span><span class="lnt">135
-</span><span class="lnt">136
-</span><span class="lnt">137
-</span><span class="lnt">138
-</span><span class="lnt">139
-</span><span class="lnt">140
-</span><span class="lnt">141
-</span><span class="lnt">142
-</span><span class="lnt">143
-</span><span class="lnt">144
-</span><span class="lnt">145
-</span><span class="lnt">146
-</span><span class="lnt">147
-</span><span class="lnt">148
-</span><span class="lnt">149
-</span><span class="lnt">150
-</span><span class="lnt">151
-</span><span class="lnt">152
-</span><span class="lnt">153
-</span><span class="lnt">154
-</span><span class="lnt">155
-</span><span class="lnt">156
-</span><span class="lnt">157
-</span><span class="lnt">158
-</span><span class="lnt">159
-</span><span class="lnt">160
-</span><span class="lnt">161
-</span><span class="lnt">162
-</span><span class="lnt">163
-</span><span class="lnt">164
-</span><span class="lnt">165
-</span><span class="lnt">166
-</span><span class="lnt">167
-</span><span class="lnt">168
-</span><span class="lnt">169
-</span><span class="lnt">170
-</span><span class="lnt">171
-</span><span class="lnt">172
-</span><span class="lnt">173
-</span><span class="lnt">174
-</span><span class="lnt">175
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># @Author：YueXuan</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># @Date  ：2024/10/4 14:37</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 初始化画布</span>
-</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 创建一个海龟对象</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 设置速度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 开始绘制</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>  <span class="c1"># 向前走 500 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 重复绘制</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">18</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 绘制下一个图形</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">135</span><span class="p">)</span>  <span class="c1"># 向左转 135 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">135</span><span class="p">)</span>  <span class="c1"># 向左转 135 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向后走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 重复绘制</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">18</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>  <span class="c1"># 向前走 60 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># 向后走 30 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>  <span class="c1"># 向前走 60 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 绘制下一个图形</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># 向前走 30 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>  <span class="c1"># 向右转 45 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向后走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>  <span class="c1"># 向右转 45 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 绘制下一个图形</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向后走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向后走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 继续绘制</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># 向后走 30 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向后走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向后走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 绘制圆弧</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>  <span class="c1"># 绘制半径为 20 的圆</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向右转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向前走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>  <span class="c1"># 绘制半径为 15 的圆</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># 向前走 15 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">index</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)])</span>  <span class="c1"># 设置颜色</span>
-</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>  <span class="c1"># 向后走 50 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>  <span class="c1"># 向前走 25 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>  <span class="c1"># 返回原点</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向后走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>  <span class="c1"># 向左转 90 度</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>  <span class="c1"># 向前走 100 单位</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  <span class="c1"># 落笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>  <span class="c1"># 绘制半径为 20 的圆</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  <span class="c1"># 抬笔</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>  <span class="c1"># 返回原点</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 结束绘图</span>
-</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">done</span><span class="p">()</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>RCTF_HeyLogo<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
     </item>
   </channel>
 </rss>
