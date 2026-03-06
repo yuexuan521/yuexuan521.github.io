@@ -4,9 +4,29 @@
   <url>
     <loc>https://yuexuan521.github.io/zh/tags/github/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/github/"
+                />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/hfish/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/hfish/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/hfish/"
+                />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/post/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
@@ -98,10 +118,10 @@
     <loc>https://yuexuan521.github.io/zh/tags/crc32/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/misc/</loc>

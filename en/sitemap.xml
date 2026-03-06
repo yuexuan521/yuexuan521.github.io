@@ -2,11 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yuexuan521.github.io/en/about_me/</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <loc>https://yuexuan521.github.io/en/tags/cybersecurity/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/github/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/github/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/hfish/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/hfish/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/hfish/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/honeypot/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/en/</loc>
-    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -17,6 +46,31 @@
                 hreflang="en"
                 href="https://yuexuan521.github.io/en/"
                 />
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/posts/practical-guide-building-an-automated-threat-intelligence-feed-with-hfish--python--github-pages/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/server/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://yuexuan521.github.io/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/tags/threat-intelligence/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/en/about_me/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/en/archives/</loc>
     <xhtml:link
@@ -52,18 +106,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://yuexuan521.github.io/en/search/"
-                />
-  </url><url>
-    <loc>https://yuexuan521.github.io/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://yuexuan521.github.io/zh/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/tags/"
                 />
   </url>
 </urlset>

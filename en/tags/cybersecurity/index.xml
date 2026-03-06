@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cybersecurity on less but better</title>
+    <link>https://yuexuan521.github.io/en/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on less but better</description>
+    <image>
+      <title>less but better</title>
+      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.157.0</generator>
+    <language>en</language>
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
+    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yuexuan521.github.io/en/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Practical Guide: Building an Automated Threat Intelligence Feed with HFish &#43; Python &#43; GitHub Pages</title>
+      <link>https://yuexuan521.github.io/en/posts/practical-guide-building-an-automated-threat-intelligence-feed-with-hfish--python--github-pages/</link>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/en/posts/practical-guide-building-an-automated-threat-intelligence-feed-with-hfish--python--github-pages/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish API Configuration Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt&#34;&gt;Open-Source Threat Intelligence Example: ip_list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/yuexuan521/honeypot-blocklist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;honeypot-blocklist Project Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
+&lt;p&gt;The most essential characteristic of a honeypot is this: &lt;strong&gt;no legitimate business traffic should ever access it&lt;/strong&gt;. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an &lt;strong&gt;extremely high signal-to-noise ratio (high fidelity)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A honeypot can capture basic attacker information and convert it into &lt;strong&gt;Indicators of Compromise (IOCs)&lt;/strong&gt;:&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><a href="https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md"target="_blank" rel="noopener noreferrer">HFish API Configuration Documentation</a></p>
+<p><a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">Open-Source Threat Intelligence Example: ip_list</a></p>
+<p><a href="https://github.com/yuexuan521/honeypot-blocklist"target="_blank" rel="noopener noreferrer">honeypot-blocklist Project Repository</a></p>
+<h2 id="planning">Planning</h2>
+<p>The most essential characteristic of a honeypot is this: <strong>no legitimate business traffic should ever access it</strong>. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an <strong>extremely high signal-to-noise ratio (high fidelity)</strong>.</p>
+<p>A honeypot can capture basic attacker information and convert it into <strong>Indicators of Compromise (IOCs)</strong>:</p>
+<ul>
+<li><strong>Attacker source IP addresses</strong>: Identify where attackers come from (country, ASN, proxy pool).</li>
+<li><strong>Malicious file hashes (File Hash)</strong>: MD5/SHA256 of uploaded malware samples.</li>
+<li><strong>Malicious domains/URLs</strong>: Addresses of C2 (Command and Control) servers contacted by malware.</li>
+<li><strong>Purpose</strong>: Synchronize this data in real time to firewalls (FW), WAFs, or intrusion detection systems (IDS), enabling <strong>“attacked once, blocked everywhere.”</strong></li>
+</ul>
+<p>This article demonstrates how to automatically extract attack information obtained from the HFish honeypot through its built-in API, and distribute it via GitHub/Gitee Pages. (Using simple attacker source IP extraction as an example.)</p>
+<h3 id="architecture-design">Architecture Design</h3>
+<ol>
+<li>
+<p><strong>Data source</strong>: An HFish honeypot deployed on an internal or public network.</p>
+<p>Deployment tutorial: <a href="https://www.freebuf.com/articles/sectool/457499.html"target="_blank" rel="noopener noreferrer">Full Guide to Deploying an HFish Honeypot on a Cloud Server</a></p>
+</li>
+<li>
+<p><strong>Processing center</strong>: An intermediate server running a Python script (this can be the HFish host itself).</p>
+</li>
+<li>
+<p><strong>Publishing platform</strong>: GitHub or Gitee (using their Pages service to host static text files). ( <a href="https://github.com/"target="_blank" rel="noopener noreferrer">GitHub</a> )</p>
+</li>
+<li>
+<p><strong>Final output</strong>: A publicly accessible URL (for example: <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt%29">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt)</a>.</p>
+</li>
+</ol>
+<h2 id="step-1-prepare-the-hfish-api">Step 1: Prepare the HFish API</h2>
+<p>HFish provides an API for retrieving attack data.</p>
+<ol>
+<li>Log in to the HFish admin panel.</li>
+<li>Go to <strong>“System Settings” -&gt; “API Settings”</strong>.</li>
+<li>Obtain the <strong>API Key</strong> and <strong>admin panel address</strong>.
+<ul>
+<li><em>Note: If your HFish is deployed on an internal network, make sure the machine running the script can access the HFish admin port (default: 4433).</em></li>
+</ul>
+</li>
+</ol>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
+             alt="image-20251227102507885" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="step-2-write-the-automated-extraction-script-python">Step 2: Write the Automated Extraction Script (Python)</h2>
+<p>We need to write a Python script to perform the workflow: “fetch data -&gt; filter whitelist -&gt; format -&gt; write to file”.</p>
+<p>Create <code>/root/generate_feed.py</code> on the HFish server or a machine that can access HFish: (you need to modify the values of <code>HFISH_HOST</code>, <code>API_KEY</code>, and <code>OUTPUT_TXT</code> on line 10)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">ipaddress</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">urllib3</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ================= Configuration =================</span>
+</span></span><span class="line"><span class="cl"><span class="n">HFISH_HOST</span> <span class="o">=</span> <span class="s2">&#34;https://IP:4433&#34;</span>                       <span class="c1">#!!Fill in your HFish URL here!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">API_KEY</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>                                         <span class="c1">#!!Fill in your HFish API Key here!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">OUTPUT_TXT</span> <span class="o">=</span> <span class="s2">&#34;/root/threat-feed/ip_list.txt&#34;</span>         <span class="c1">#!!Fill in the path where you want to save the file!!</span>
+</span></span><span class="line"><span class="cl"><span class="n">TIME_WINDOW_HOURS</span> <span class="o">=</span> <span class="mi">24</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">LOCAL_WHITELIST</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span> <span class="s2">&#34;192.168.0.0/16&#34;</span><span class="p">,</span> <span class="s2">&#34;10.0.0.0/8&#34;</span><span class="p">,</span> <span class="s2">&#34;172.16.0.0/12&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;8.8.8.8&#34;</span><span class="p">,</span> <span class="s2">&#34;1.1.1.1&#34;</span><span class="p">,</span> <span class="s2">&#34;60.204.200.232&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">WHITELIST_URLS</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;bing&#34;</span><span class="p">:</span> <span class="s2">&#34;https://www.bing.com/toolbox/bingbot.json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;github&#34;</span><span class="p">:</span> <span class="s2">&#34;https://api.github.com/meta&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># =========================================</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">urllib3</span><span class="o">.</span><span class="n">disable_warnings</span><span class="p">(</span><span class="n">urllib3</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">InsecureRequestWarning</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">WhitelistManager</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">ip</span> <span class="ow">in</span> <span class="n">LOCAL_WHITELIST</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="n">ip</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">fetch_remote_whitelists</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[-] Fetching remote whitelists...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">WHITELIST_URLS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">resp</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">data</span> <span class="o">=</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">prefixes</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="s2">&#34;prefixes&#34;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span> <span class="n">prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;ipv4Prefix&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;prefixes&#34;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">elif</span> <span class="s2">&#34;web&#34;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span> <span class="n">prefixes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;web&#34;</span><span class="p">,</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">prefixes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="n">p</span> <span class="ow">and</span> <span class="s2">&#34;.&#34;</span> <span class="ow">in</span> <span class="n">p</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                            <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_network</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">is_whitelisted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ip_str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">target</span> <span class="o">=</span> <span class="n">ipaddress</span><span class="o">.</span><span class="n">ip_address</span><span class="p">(</span><span class="n">ip_str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">network</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">whitelist_cidrs</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">network</span><span class="p">:</span> <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">except</span><span class="p">:</span> <span class="k">pass</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">get_data</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">HFISH_HOST</span><span class="si">}</span><span class="s2">/api/v1/attack/ip?api_key=</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">end_time</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">start_time</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">TIME_WINDOW_HOURS</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">end_time</span> <span class="o">-</span> <span class="p">(</span><span class="n">TIME_WINDOW_HOURS</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;start_time&#34;</span><span class="p">:</span> <span class="n">start_time</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;end_time&#34;</span><span class="p">:</span> <span class="n">end_time</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;intranet&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;threat_label&#34;</span><span class="p">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">resp</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">},</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[!] Request Error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wl</span> <span class="o">=</span> <span class="n">WhitelistManager</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wl</span><span class="o">.</span><span class="n">fetch_remote_whitelists</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span> <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">raw_ips</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">in</span> <span class="n">result</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data_content</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] API Response Keys: </span><span class="si">{</span><span class="n">data_content</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;List Type&#39;</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data_content</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="s1">&#39;attack_ip&#39;</span> <span class="ow">in</span> <span class="n">data_content</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span><span class="p">[</span><span class="s1">&#39;attack_ip&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="s1">&#39;list&#39;</span> <span class="ow">in</span> <span class="n">data_content</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">raw_ips</span> <span class="o">=</span> <span class="n">data_content</span><span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[!] Error: Unknown dict structure in &#39;data&#39;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">data_content</span><span class="p">)</span> <span class="c1"># Print it out for inspection</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[!] Error: No &#39;data&#39; field. keys: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Raw IPs found: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">raw_ips</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">clean_ips</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">raw_ips</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ip</span> <span class="o">=</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ip</span> <span class="o">=</span> <span class="n">item</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ip</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;source_ip&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ip&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;attack_ip&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">ip</span> <span class="ow">and</span> <span class="s2">&#34;.&#34;</span> <span class="ow">in</span> <span class="n">ip</span> <span class="ow">and</span> <span class="s2">&#34;attack_ip&#34;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ip</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="ow">not</span> <span class="n">wl</span><span class="o">.</span><span class="n">is_whitelisted</span><span class="p">(</span><span class="n">ip</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="n">clean_ips</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Final Unique IPs: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">clean_ips</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">OUTPUT_TXT</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;# HFish Threat Feed</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;# Updated: </span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">ip</span> <span class="ow">in</span> <span class="n">clean_ips</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">ip</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;[-] Saved to </span><span class="si">{</span><span class="n">OUTPUT_TXT</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="o">~~~</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Step 3: Create an Open-Source Repository (GitHub/Gitee)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">1.</span> <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">repository</span> <span class="n">on</span> <span class="n">GitHub</span><span class="p">,</span> <span class="k">for</span> <span class="n">example</span> <span class="err">`</span><span class="n">honeypot</span><span class="o">-</span><span class="n">blocklist</span><span class="err">`</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="mf">2.</span> <span class="n">Install</span> <span class="n">Git</span> <span class="n">on</span> <span class="n">your</span> <span class="n">server</span> <span class="ow">and</span> <span class="n">clone</span> <span class="n">the</span> <span class="n">repository</span><span class="o">.</span> <span class="p">(</span><span class="n">replace</span> <span class="err">`</span><span class="n">yourusername</span><span class="err">`</span> <span class="k">with</span> <span class="n">your</span> <span class="n">actual</span> <span class="n">username</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run on the server</span>
+</span></span><span class="line"><span class="cl"><span class="n">cd</span> <span class="o">/</span><span class="n">root</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">yourusername</span><span class="o">/</span><span class="n">honeypot</span><span class="o">-</span><span class="n">blocklist</span><span class="o">.</span><span class="n">git</span> <span class="n">threat</span><span class="o">-</span><span class="n">feed</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Modify the Python script configuration above so that the output path points to this Git directory.</p>
+<h2 id="step-4-automate-updates-and-pushes-shell--crontab">Step 4: Automate Updates and Pushes (Shell + Crontab)</h2>
+<h3 id="1-write-the-automation-shell-script">1. Write the Automation Shell Script</h3>
+<p>Write a Shell script named <code>update_feed.sh</code> to combine “generate” and “push” into one workflow:</p>
+<ol>
+<li>
+<p>Create the script file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Add the following content: (you need to modify <code>git user.name</code> and <code>user.email</code>; ✅ using the privacy email provided by GitHub is recommended)</p>
+<p><strong>Benefits of GitHub privacy email</strong>: It protects your real email address from being exposed, while still allowing GitHub to recognize that this is your account and award “green squares” on your GitHub Contributions Graph.</p>
+<ol>
+<li>Log in to GitHub and go to <strong>Settings</strong> -&gt; <strong>Emails</strong>.</li>
+<li>Check <strong>&ldquo;Keep my email addresses private&rdquo;</strong>.</li>
+<li>You will see an email like this: <code>12345678+yourusername@users.noreply.github.com</code>.</li>
+</ol>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
+             alt="image-20251228221426661" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>Configuration method:</strong> (modify step 5, Configure Git identity)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config user.name &#34;Your GitHub username&#34;
+</span></span><span class="line"><span class="cl">git config user.email &#34;12345678+yourusername@users.noreply.github.com&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ================= Path Configuration =================</span>
+</span></span><span class="line"><span class="cl"><span class="nv">PY_SCRIPT</span><span class="o">=</span><span class="s2">&#34;/root/generate_feed.py&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">GIT_REPO</span><span class="o">=</span><span class="s2">&#34;/root/threat-feed&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">LOG_FILE</span><span class="o">=</span><span class="s2">&#34;/var/log/hfish_feed.log&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ======================================================</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;-----------------------------------------------------&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;[</span><span class="k">$(</span>date<span class="k">)</span><span class="s2">] Starting update process...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. Enter the Git repository directory (this must be done first)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="nv">$GIT_REPO</span> <span class="o">||</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">&#34;[Error] Cannot cd into </span><span class="nv">$GIT_REPO</span><span class="s2">&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span><span class="p">;</span> <span class="nb">exit</span> 1<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. [New] Pull remote updates first (to avoid push conflicts)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This will sync changes such as README edits made on the GitHub web page to the local repo</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;[-] Pulling remote changes...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> git pull origin main &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] Git pull successful.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># If pull fails (rare), it is usually due to conflicts; log it but do not exit, and still try to push</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Warn] Git pull failed (Conflict?). Will try to push anyway.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. Run Python to extract IPs</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Note: even if git pull fails, we still need to generate new data because the data is the core</span>
+</span></span><span class="line"><span class="cl">/usr/bin/python3 <span class="nv">$PY_SCRIPT</span> &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. Check whether the file was generated</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> ! -f <span class="s2">&#34;ip_list.txt&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Error] ip_list.txt missing. Python script failed?&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. Configure Git identity</span>
+</span></span><span class="line"><span class="cl">git config user.name <span class="s2">&#34;&#34;</span>                          //!!Fill in your name and email here!!
+</span></span><span class="line"><span class="cl">git config user.email <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. Commit and push</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> git commit -m <span class="s2">&#34;Auto update: </span><span class="k">$(</span>date <span class="s2">&#34;+%Y-%m-%d %H:%M&#34;</span><span class="k">)</span><span class="s2">&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] Changes committed.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Try to push</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> git push origin main &gt;&gt; <span class="nv">$LOG_FILE</span> 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">         <span class="nb">echo</span> <span class="s2">&#34;[Success] Pushed to GitHub.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">         <span class="nb">echo</span> <span class="s2">&#34;[Error] Git Push failed. Retrying with --force...&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># If a normal push fails, try force push (use with caution, but it is feasible in this append-only threat feed scenario)</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># git push -f origin main &gt;&gt; $LOG_FILE 2&gt;&amp;1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;[Info] No changes detected. Nothing to push.&#34;</span> &gt;&gt; <span class="nv">$LOG_FILE</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Grant execute permission:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<hr>
+<h3 id="2-configure-passwordless-ssh-push-critical">2. Configure Passwordless SSH Push (Critical!)</h3>
+<p>When the automation script runs in the background, it cannot manually enter a GitHub username or password. You must configure an <strong>SSH Key</strong>.</p>
+<ol>
+<li>
+<p><strong>Check whether a key already exists</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ls ~/.ssh/id_rsa.pub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>If the file exists, skip step 2.</li>
+<li>If not (you get an error), proceed with step 2.</li>
+</ul>
+</li>
+<li>
+<p><strong>Generate a key</strong> (just press Enter all the way through):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -b 4096 -C &#34;hfish-feed&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Get the public key</strong>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Copy the output content (the long string starting with <code>ssh-rsa</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Upload it to GitHub</strong>:</p>
+<ul>
+<li>
+<p>Open the GitHub repository -&gt; <strong>Settings</strong> -&gt; <strong>Deploy keys</strong> -&gt; <strong>Add deploy key</strong>.</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
+             alt="image-20251230120117688" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+<li>
+<p><strong>Title</strong>: HFish Server</p>
+</li>
+<li>
+<p><strong>Key</strong>: Paste the content you copied just now.</p>
+</li>
+<li>
+<p><strong>Important</strong>: Check <strong>Allow write access</strong>, otherwise pushing will fail!</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
+             alt="image-20251230120223456" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Manually test the connection</strong> (this must be done once!):
+Run on the server:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Type <code>yes</code> to confirm the fingerprint.</li>
+<li>If you see <code>Hi &lt;username&gt;/&lt;repo&gt;! You've successfully authenticated...</code>, it means the connection works.</li>
+</ul>
+</li>
+<li>
+<p><strong>Change the repository remote to SSH</strong> (if you cloned using HTTPS before):
+Enter the directory and check:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /root/threat-feed
+</span></span><span class="line"><span class="cl">git remote -v
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>If it shows <code>https://github.com/...</code>, run:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote set-url origin git@github.com:yourusername/your-repository-name.git
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="3-manually-test-the-full-workflow">3. Manually Test the Full Workflow</h3>
+<p>Now let’s run the Shell script manually once and see whether it can push successfully.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Check the results:</strong></p>
+<ol>
+<li>Check the log: <code>tail -f /var/log/hfish_feed.log</code></li>
+<li>Check the GitHub web page: refresh your repository and see whether the update time of <code>ip_list.txt</code> becomes <code>&quot;Just now&quot;</code>.</li>
+</ol>
+<hr>
+<h3 id="4-set-up-a-scheduled-task-crontab">4. Set Up a Scheduled Task (Crontab)</h3>
+<p>After confirming that the manual run works correctly, the final step is to let it run automatically. We will set it to <strong>update once every 2 hours</strong> (to keep the feed fresh without wasting resources).</p>
+<ol>
+<li>
+<p>Edit the scheduled tasks:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">crontab -e
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Add the following line at the end of the file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Run once at minute 5 every 2 hours (staggered execution)
+</span></span><span class="line"><span class="cl">5 */2 * * * /bin/bash /root/update_feed.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>Save and exit (if using <code>vim</code>, press Esc, type <code>:wq</code>, and press Enter).</p>
+</li>
+</ol>
+<hr>
+<h2 id="step-5-open-it-up-for-others-to-use">Step 5: Open It Up for Others to Use</h2>
+<p>Now, your GitHub repository will contain <code>ip_list.txt</code>. You need to enable <strong>GitHub Pages</strong> (turn it on in the repository’s Settings -&gt; Pages).</p>
+<ol>
+<li>Go to the repository <strong>Settings</strong>.</li>
+<li>Find <strong>Pages</strong> in the left sidebar.</li>
+<li>Under <strong>Build and deployment</strong>, choose <strong>Source</strong> as <code>Deploy from a branch</code>.</li>
+<li>Under <strong>Branch</strong>, choose the <code>main</code> (or <code>master</code>) branch, and select the folder <code>/ (root)</code>.</li>
+<li>Click <strong>Save</strong>.</li>
+</ol>
+<p>Once enabled, you will get a globally accessible permanent direct link, for example:
+<a href="https://yourusername.github.io/honeypot-blocklist/ip_list.txt"target="_blank" rel="noopener noreferrer">https://yourusername.github.io/honeypot-blocklist/ip_list.txt</a></p>
+<p>After waiting 1–2 minutes, GitHub will generate the page, and others only need to subscribe to this URL ending in <code>.txt</code>.</p>
+<p>Others can use our data like this:</p>
+<ol>
+<li><strong>Palo Alto / Fortinet firewalls</strong>: Create an &ldquo;External Dynamic List&rdquo; and fill in your URL.</li>
+<li><strong>Linux servers</strong>: Write a script to <code>wget</code> your file and import it into <code>ipset</code>.</li>
+</ol>
+<p><strong>Effect demonstration:</strong></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
+             alt="image-20251230120659771" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
