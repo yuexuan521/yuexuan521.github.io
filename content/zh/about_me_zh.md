@@ -11,7 +11,7 @@ toc = true
 
 ## <span class="section-num">0x1</span> 关于 
 
-YueXuan，信息安全专业大三在读。喜欢阅读、电影、听音乐。似乎不大喜欢出去玩。
+YueXuan，信息安全专业在读。喜欢阅读、电影、听音乐。似乎不大喜欢出去玩。
 
 
 
