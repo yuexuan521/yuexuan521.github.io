@@ -47,6 +47,19 @@
                 href="https://yuexuan521.github.io/en/"
                 />
   </url><url>
+    <loc>https://yuexuan521.github.io/en/post/</loc>
+    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://yuexuan521.github.io/zh/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/"
+                />
+  </url><url>
     <loc>https://yuexuan521.github.io/en/posts/practical-guide-building-an-automated-threat-intelligence-feed-with-hfish--python--github-pages/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
