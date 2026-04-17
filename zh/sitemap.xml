@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuexuan521.github.io/zh/categories/</loc>
+    <lastmod>2026-04-11T12:17:10+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://yuexuan521.github.io/zh/categories/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/posts/frp%E4%BA%8C%E7%BA%A7%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2026-04-11T12:17:10+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/post/</loc>
+    <lastmod>2026-04-11T12:17:10+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://yuexuan521.github.io/zh/post/"
+                />
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-04-11T12:17:10+00:00</lastmod>
+  </url><url>
+    <loc>https://yuexuan521.github.io/zh/</loc>
+    <lastmod>2026-04-11T12:17:10+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yuexuan521.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://yuexuan521.github.io/zh/"
+                />
+  </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/github/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
     <xhtml:link
@@ -26,19 +71,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://yuexuan521.github.io/zh/tags/hfish/"
-                />
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/post/</loc>
-    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://yuexuan521.github.io/zh/post/"
                 />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/</loc>
@@ -72,34 +104,8 @@
     <loc>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2026-03-05T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/</loc>
-    <lastmod>2026-03-05T12:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://yuexuan521.github.io/zh/"
-                />
-  </url><url>
     <loc>https://yuexuan521.github.io/zh/posts/2026%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%AC%E8%80%83%E8%AF%95%E8%AE%B2%E5%BA%A7%E8%AE%B2%E4%B9%89/</loc>
     <lastmod>2025-12-05T10:53:56+00:00</lastmod>
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/</loc>
-    <lastmod>2025-12-05T10:53:56+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yuexuan521.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://yuexuan521.github.io/zh/categories/"
-                />
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/faq/</loc>
     <lastmod>2025-12-05T10:53:56+00:00</lastmod>
@@ -128,10 +134,10 @@
     <loc>https://yuexuan521.github.io/zh/tags/crc32/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
-    <loc>https://yuexuan521.github.io/zh/tags/ctf/</loc>
+    <loc>https://yuexuan521.github.io/zh/categories/ctf/</loc>
     <lastmod>2025-11-20T09:01:00+00:00</lastmod>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/tags/misc/</loc>
@@ -1318,8 +1324,6 @@
   </url><url>
     <loc>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0/</loc>
     <lastmod>2023-03-19T14:22:44+00:00</lastmod>
-  </url><url>
-    <loc>https://yuexuan521.github.io/zh/posts/frp%E4%BA%8C%E7%BA%A7%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</loc>
   </url><url>
     <loc>https://yuexuan521.github.io/zh/archives/</loc>
     <xhtml:link

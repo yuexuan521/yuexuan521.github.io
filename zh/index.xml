@@ -12,8 +12,479 @@
     <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 12:17:10 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Frp二级隧道代理</title>
+      <link>https://yuexuan521.github.io/zh/posts/frp%E4%BA%8C%E7%BA%A7%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</link>
+      <pubDate>Sat, 11 Apr 2026 12:17:10 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/frp%E4%BA%8C%E7%BA%A7%E9%9A%A7%E9%81%93%E4%BB%A3%E7%90%86/</guid>
+      <description>&lt;h1 id=&#34;frp二级隧道代理&#34;&gt;Frp二级隧道代理&lt;/h1&gt;
+&lt;h2 id=&#34;实验目的&#34;&gt;【实验目的】&lt;/h2&gt;
+&lt;p&gt;通过使用frp代理工具进行二级隧道代理，成功代理到内网，了解并掌握二级隧道代理的原理，&lt;/p&gt;
+&lt;h2 id=&#34;知识点&#34;&gt;【知识点】&lt;/h2&gt;
+&lt;p&gt;FRP二级隧道代理&lt;/p&gt;
+&lt;h2 id=&#34;实验原理&#34;&gt;【实验原理】&lt;/h2&gt;
+&lt;p&gt;FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具，可用于内网穿透、安全访问和数据传输等场景。FRP由fatedier团队开发，采用Golang语言编写，支持跨平台部署和使用。FRP的原理是利用反向代理技术将公网请求转发至内网服务器上，并将内网服务器的响应再次转发至公网请求者。在实现内网穿透时，FRP能够将公网与内网之间的隔离突破，使得公网用户可以直接访问内网服务器上的资源，从而实现远程访问和管理。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="frp二级隧道代理">Frp二级隧道代理</h1>
+<h2 id="实验目的">【实验目的】</h2>
+<p>通过使用frp代理工具进行二级隧道代理，成功代理到内网，了解并掌握二级隧道代理的原理，</p>
+<h2 id="知识点">【知识点】</h2>
+<p>FRP二级隧道代理</p>
+<h2 id="实验原理">【实验原理】</h2>
+<p>FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具，可用于内网穿透、安全访问和数据传输等场景。FRP由fatedier团队开发，采用Golang语言编写，支持跨平台部署和使用。FRP的原理是利用反向代理技术将公网请求转发至内网服务器上，并将内网服务器的响应再次转发至公网请求者。在实现内网穿透时，FRP能够将公网与内网之间的隔离突破，使得公网用户可以直接访问内网服务器上的资源，从而实现远程访问和管理。</p>
+<h2 id="软件工具">【软件工具】</h2>
+<ul>
+<li>服务器：Windows Server 2008 1台；防火墙 1台；Centos 7 1台；Windows 10 2台；Windows 2016 1台；</li>
+<li>交换机/路由：交换机 4台；路由器 1台；</li>
+<li>软件：frp；SocksCap64</li>
+</ul>
+<h2 id="实验拓扑">【实验拓扑】</h2>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png" 
+             alt="17060609263421698388755596538b6905139c" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h2 id="实验预期">【实验预期】</h2>
+<p>1.配置一级隧道代理
+2.配置二级隧道代理，代理进入内网并绕过防火墙限制</p>
+<h2 id="实验步骤">【实验步骤】</h2>
+<h3 id="1一级隧道代理">1.一级隧道代理</h3>
+<h4 id="1登录攻击机2-windows">（1）登录攻击机2-Windows</h4>
+<p>单击上方菜单栏中的【环境申请】按钮启动实验拓扑，选择拓扑图中左下方的【攻击机2-Windows】，按右键，在弹出的菜单中选择【控制台】，登录【攻击机2-Windows】界面。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png" 
+             alt="17060609263421698388755596538b6905139c" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>依次双击打开桌面【工具】→【frp】文件夹。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png" 
+             alt="image-20240704091042415" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="2配置攻击机frp服务端">（2）配置攻击机frp服务端</h4>
+<p>双击打开【frps.ini】配置文件，输入以下参数内容并保存，编辑【frps.ini】配置文件配置本地服务端口7000。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[common]
+</span></span><span class="line"><span class="cl">server_port = 7000
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png" 
+             alt="image-20240704091204668" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在【frp】此文件夹空白处，右键弹出菜单，单击选择【在此处打开命令提示符】。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png" 
+             alt="image-20240703150700675" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在命令提示符窗口中，输入以下命令，开启本地服务端代理监听7000端口。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frps -c frps.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png" 
+             alt="image-20240704091726936" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="2上传frp并配置一级隧道frp的客户端">（2）上传frp并配置一级隧道frp的客户端</h4>
+<p>再次在【frp】此文件夹空白处，新建命令提示符终端，输入以下命令并按回车输入密码【Com.1234】，使用scp命令上传【frps】和【frpc】linux版的服务端和客户端文件至202.1.10.57的/bin目录。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">scp frps frpc test@202.1.10.57:/bin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png" 
+             alt="image-20240704091838895" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<blockquote>
+<p>注：由第六单元的6.2子任务，利用SUID方式提权添加test用户为root权限，密码为Com.1234。</p>
+</blockquote>
+<p>输入以下命令并按下回车，远程连接目标服务器的SSH202.1.10.57服务器，ssh用户名为【test】，密码为【Com.1234】。如下图所示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh test@202.1.10.57
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png" 
+             alt="image-20240704091936036" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>输入以下命令并按下回车，使用chmod命令给予【frps】和【frpc】两个文件执行权限。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">chmod +x frps
+</span></span><span class="line"><span class="cl">chmod +x frpc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png" 
+             alt="image-20240704092018660" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>输入以下命令并按下回车键，使用vim命令创建并编辑tmp根目录下的frpc.ini客户端配置文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /tmp/frpc.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png" 
+             alt="image-20240704092423911" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，分别配置攻击机的IP与监听端口、配置本地socks5代理端口1080、配置给由本地10080端口转发至本地10088端口，再由本地10088端口转发到攻击机。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[common]
+</span></span><span class="line"><span class="cl">server_addr = 67.220.91.68     
+</span></span><span class="line"><span class="cl">server_port = 7000
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">[socks5-1]
+</span></span><span class="line"><span class="cl">type = tcp
+</span></span><span class="line"><span class="cl">remote_port = 1080
+</span></span><span class="line"><span class="cl">plugin = socks5
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">[socks5-33]
+</span></span><span class="line"><span class="cl">type = tcp
+</span></span><span class="line"><span class="cl">local_ip = 127.0.0.1
+</span></span><span class="line"><span class="cl">local_port = 10080
+</span></span><span class="line"><span class="cl">remote_port = 10088
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png" 
+             alt="image-20240704092344933" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
+             alt="image-20240704092404953" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="3配置网站门户2的frp客户端">（3）配置网站门户2的frp客户端</h4>
+<p>输入以下命令并按下回车，执行frpc客户端与服务端连接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frpc -c /tmp/frpc.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png" 
+             alt="image-20240704092502129" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>frps服务端开始响应，连接成功。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png" 
+             alt="image-20240704092521050" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="2二级隧道代理">2.二级隧道代理</h3>
+<h4 id="1配置网站门户2的frp二级隧道服务端">（1）配置网站门户2的frp二级隧道服务端</h4>
+<p>桌面新建命令提示符终端，并远程连接目标服务器的SSH202.1.10.57服务器，输入以下命令并按下回车键，使用vim命令创建并编辑tmp根目录下的frps.ini客户端配置文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /tmp/frps.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png" 
+             alt="image-20240704093112709" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，配置本地服务端口7000。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[common]
+</span></span><span class="line"><span class="cl">bind_port = 7000
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png" 
+             alt="image-20240704092733236" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
+             alt="image-20240704092404953" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>输入ifconfig命令并按回车，得知门户网站2内网IP地址为【172.16.10.183】。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png" 
+             alt="image-20240704092945568" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>输入以下命令并按下回车，在网站门户2中开启frp服务端程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frps -c /tmp/frps.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png" 
+             alt="image-20240704093232221" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h4 id="2配置网站门户1的frp二级隧道客户端">（2）配置网站门户1的frp二级隧道客户端</h4>
+<p>双击打开在【工具】文件夹下的【frpc.ini】配置文件，输入以下参数内容并保存，编辑【frpc.ini】，分别配置反向连接门户网站2的服务端端口7000、使用socks5代理门户网站2的客户端端口10080。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[common]
+</span></span><span class="line"><span class="cl">server_addr = 172.16.10.183
+</span></span><span class="line"><span class="cl">server_port = 7000
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[socks5-2]
+</span></span><span class="line"><span class="cl">type = tcp
+</span></span><span class="line"><span class="cl">plugin = socks5
+</span></span><span class="line"><span class="cl">remote_port = 10080  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png" 
+             alt="image-20240704093504020" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>双击打开桌面上的远程桌面，单击【连接】按钮，连接目标202.1.10.34服务器。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png" 
+             alt="image-20240704093540426" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>输入【test】的用户，密码为【Com.1234】。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png" 
+             alt="image-20240704093606478" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>等待连接。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png">
+        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png" 
+             alt="image-20240704093619049" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>进入远程桌面窗口，关闭服务器管理器窗口，复制【工具】文件夹的【frpc.exe】和【frpc.ini】两个文件到目标远程的桌面。</p>
+<p>在桌面shift+右键弹出菜单，选择【在此处打开命令提示符】。</p>
+<p>输入命令并按回车，在网站门户1中开启frp客户端程序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frpc -c frpc.ini
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3配置攻击机的socks客户端代理">（3）配置攻击机的socks客户端代理</h4>
+<p>依次双击打开桌面上的【工具】→【SocksCap64-4.7】文件夹，并双击打开【SocksCap64.exe】socks代理客户端软件。</p>
+<blockquote>
+<p>注：打开SocksCap64.exe会有些慢。</p>
+</blockquote>
+<p>弹出socks代理客户端软件窗口后，双击【代理】图标按钮，进入socks代理配置界面。</p>
+<p>单击【+】按钮，配置【代理地址】为127.0.0.1，【端口】配置为10088，【代理类型】配置为SOCKS5，配置完成后，单击【保存】按钮。</p>
+<h4 id="4成功远程进入内网机器绕过防火墙限制">（4）成功远程进入内网机器绕过防火墙限制</h4>
+<p>双击【远程桌面连接*32】图标。</p>
+<p>弹出远程桌面连接窗口，单击【显示选项】按钮。</p>
+<p>分别在计算机配置【10.0.18.22:1111】,用户名为【xiaowang@zhida.com】，完成后按回车，进入输入密码窗口。</p>
+<blockquote>
+<p>注：在第八单元的8.2子任务中将LCX添加注册表启动项，由本地3389端口转发本地1111端口，绕过防火墙限制。</p>
+</blockquote>
+<p>弹出密码窗口，输入【Xw@A0107.】并按回车。</p>
+<p>等待目标远程连接。</p>
+<p>单击【是】按钮。</p>
+<p>弹出内网10.0.18.22窗口界面，成功使用frp多层代理，进入内网，绕过防火墙限制。</p>
+<blockquote>
+<p>注：若无法进行远程桌面连接，可在攻击机的frp服务端窗口多次按下回车即可。</p>
+</blockquote>
+<h2 id="实验结论">【实验结论】</h2>
+<p>通过上述操作，使用frp代理工具进行二级隧道代理，成功代理到内网，了解并掌握二级隧道代理的原理，符合实验预期。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>实战指南：基于 HFish &#43; Python &#43; GitHub Pages 构建自动化威胁情报源</title>
       <link>https://yuexuan521.github.io/zh/posts/%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%E5%9F%BA%E4%BA%8E-hfish--python--github-pages-%E6%9E%84%E5%BB%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5%E6%BA%90/</link>
@@ -2759,253 +3230,6 @@ Quoted-printable编码</a></p>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">suctf<span class="o">{</span>U_F0und_1t<span class="o">}</span>
 </span></span><span class="line"><span class="cl">flag<span class="o">{</span>U_F0und_1t<span class="o">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>BUUCTF USB 1</title>
-      <link>https://yuexuan521.github.io/zh/posts/buuctf-usb-1/</link>
-      <pubDate>Mon, 06 Oct 2025 12:09:55 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/posts/buuctf-usb-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
-&lt;a href=&#34;https://www.freebuf.com/column/199854.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF解题技能之压缩包分析基础篇&lt;/a&gt;
-&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109632626&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：USB&lt;/a&gt;
-&lt;a href=&#34;https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;(usb键盘隐写)buuctf:USB&lt;/a&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
-<hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
-<a href="https://www.freebuf.com/column/199854.html"target="_blank" rel="noopener noreferrer">CTF解题技能之压缩包分析基础篇</a>
-<a href="https://blog.csdn.net/mochu7777777/article/details/109632626"target="_blank" rel="noopener noreferrer">BUUCTF：USB</a>
-<a href="https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90"target="_blank" rel="noopener noreferrer">(usb键盘隐写)buuctf:USB</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>Do your konw usb?? 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到233.rar和key.ftm文件</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、解压233.rar，发现文件损坏，233.png没有解压出来，flag.txt文件中没有flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>用010Editor打开，提示文件的第三个块CRC报错，也就是233.rar的文件块。</p>
-<blockquote>
-<p>RAR是有四个文件块组成的，分别是分别是 <code>标记块</code> 、 <code>归档头部块</code> 、 <code>文件块</code> 、 <code>结束块</code> 。</p>
-</blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>检查发现是文件块的HEAD_TYPE出错，原数值应为0x74，而非0x7A。修改后即可成功解压。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>2、解压已修改后的文件，得到233.png</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>使用StegSolve打开图片，在Blue plane 0通道发现一个二维码</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>扫描二维码得到疑似flag的密文： <code>ci{v3erf_0tygidv2_fc0}</code> ，猜测为维吉尼亚密码。但缺少key值（密钥），暂时无法解密</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>3、回过头，key.ftm中应该就有我们要的key值</p>
-<blockquote>
-<p><strong>FTM</strong> 是FamiTracker，用于生产任天堂（NES）系统的音乐的音频节目创建的音频跟踪器模块。 它包括短的音频样本和一系列包含旋律音符。</p>
-</blockquote>
-<p>在010 Editor中搜索“key”关键字，发现隐藏zip压缩包，内部有key.pcap</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>将zip的数据另存为一个单独的zip文件，解压得到key.pcap。（或者使用WinRAR直接打开key.ftm）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>打开发现全部为USB的流量</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>使用隐写脚本USBUsbKeyboardDataHacker.py，得到内容 <code>aababacbbdbdccccdcdcdbbcccbcbbcbbaababaaaaaaaaaaaaaaaaaakey{xinan}</code> ，key值为 <code>xinan</code></p>
-<p><a href="https://github.com/WangYihang/UsbKeyboardDataHacker"target="_blank" rel="noopener noreferrer">https://github.com/WangYihang/UsbKeyboardDataHacker
-</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">python UsbKeyboardDataHacker.py /root/key.pcap
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>4、使用得到的key值，解密维吉尼亚密码，得到 <code>fa{i3eei_0llgvgn2_sc0}</code>
-<a href="https://www.qqxiuzi.cn/bianma/weijiniyamima.php"target="_blank" rel="noopener noreferrer">维吉尼亚密码加密解密</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<p>猜测明文又经过栅栏加密，解密得到 <code>flag{vig3ne2e_is_c00l}</code>
-<a href="https://www.qqxiuzi.cn/bianma/zhalanmima.php"target="_blank" rel="noopener noreferrer">栅栏密码加密解密</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png" 
-             alt="在这里插入图片描述" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>vig3ne2e_is_c00l<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
