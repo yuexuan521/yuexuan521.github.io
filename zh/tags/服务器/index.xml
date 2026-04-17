@@ -34,7 +34,7 @@
 <li><strong>攻击源 IP 地址</strong>：识别攻击者来自哪里（国家、ASN、代理池）。</li>
 <li><strong>恶意哈希值（File Hash）</strong>：上传的恶意软件的 MD5/SHA256。</li>
 <li><strong>恶意域名/URL</strong>：恶意软件回连的 C2（命令与控制）服务器地址。</li>
-<li><strong>用途</strong>：将这些数据实时同步给防火墙（FW）、WAF 或入侵检测系统（IDS），实现**“一处被攻，全网封禁”**。</li>
+<li><strong>用途</strong>：将这些数据实时同步给防火墙（FW）、WAF 或入侵检测系统（IDS），实现“一处被攻，全网封禁”。</li>
 </ul>
 <p>本文即是实现将Hifsh蜜罐获得的攻击信息，通过使用其自带的 API 接口进行自动化提取，并利用 GitHub/Gitee Pages 进行分发。（提取简单的攻击源 IP 地址为例）</p>
 <h3 id="架构设计">架构设计</h3>
