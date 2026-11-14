@@ -1,301 +1,174 @@
-<!-- Add heatmap section at the top -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Heatmap</title>
-    <style>
-	.heatmap-section {
-	    margin-bottom: 30px;
-	}
-
-	/* Default styles */
-	.heatmap-container {
-	    display: block;
-
-	}
-
-	/* For mobile phones and iPads */
-	@media only screen and (max-width: 1024px) {
-	    .heatmap-container {
-		display: none;
-
-	    }
-	}
-
-        /* Theme-specific color definitions */
-        :root {
-            --heatmap-bg-light: #fff;
-            --heatmap-colors-light-0: #c6e48b;
-            --heatmap-colors-light-1: #7bc96f;
-            --heatmap-colors-light-2: #239a3b;
-            --heatmap-colors-light-3: #196127;
-            --tooltip-bg-light: #fff;
-            --tooltip-textstyle-light: #1c1a1b;
-
-            --heatmap-bg-dark: #585c59;
-            --heatmap-colors-dark-0: #c6e48b;
-            --heatmap-colors-dark-1: #7bc96f;
-            --heatmap-colors-dark-2: #239a3b;
-            --heatmap-colors-dark-3: #196127;
-            
-            --tooltip-bg-dark: #585c59;
-            --tooltip-textstyle-dark: #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="heatmap-container">
-        <div>
-            <div style="display: flex; justify-content: center; align-items: center">
-                <p style="margin-right: 15px; margin-bottom: 0; padding: 8px">
-		  {{ i18n "article_activity" }}
-                </p>
-                <select id="yearSelector">
-                    <!-- Years will be dynamically added here -->
-                </select>
-            </div>
-            <div
-                id="heatmap"
-                style="
-                    display: block;
-                    height: 150px;
-                    width: 75%;
-                    padding: 2px;
-                    margin: 0 auto;
-                    text-align: center;
-                "
-            ></div>
-        </div>
+{{/* 文章日历热力图：仅返回片段，样式见 assets/css/extended/custom.css */}}
+<div class="heatmap-container">
+    <div class="heatmap-head">
+        <p class="heatmap-title">{{ i18n "article_activity" }}</p>
+        <select id="yearSelector" aria-label="选择年份"></select>
     </div>
+    <div id="heatmap"></div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
-    <script type="text/javascript">
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
+<script>
+    (function () {
         var myChart;
 
         function getCurrentTheme() {
-          return document.documentElement.getAttribute('data-theme') || document.body.classList.contains('dark') ? 'dark' : 'light';
+            var attr = document.documentElement.getAttribute("data-theme");
+            if (attr === "dark" || attr === "light") return attr;
+            return document.body.classList.contains("dark") ? "dark" : "light";
         }
 
-        function getThemeColors() {
-            if ('dark' === getCurrentTheme()) {
-                return [
-                    getCSSVariableValue('--heatmap-colors-dark-0'),
-                    getCSSVariableValue('--heatmap-colors-dark-1'),
-                    getCSSVariableValue('--heatmap-colors-dark-2'),
-                    getCSSVariableValue('--heatmap-colors-dark-3')
-                ];
-            } else {
-                return [
-                    getCSSVariableValue('--heatmap-colors-light-0'),
-                    getCSSVariableValue('--heatmap-colors-light-1'),
-                    getCSSVariableValue('--heatmap-colors-light-2'),
-                    getCSSVariableValue('--heatmap-colors-light-3')
-                ];
-            }
+        function cssVar(name) {
+            return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
         }
 
-        function getThemeBgColor(){
-          const currentTheme = getCurrentTheme();
-          return currentTheme === 'dark' 
-                          ? getCSSVariableValue('--heatmap-bg-dark') 
-                          : getCSSVariableValue('--heatmap-bg-light');
+        function themeColors() {
+            var suffix = getCurrentTheme() === "dark" ? "dark" : "light";
+            return [
+                cssVar("--heatmap-colors-" + suffix + "-0"),
+                cssVar("--heatmap-colors-" + suffix + "-1"),
+                cssVar("--heatmap-colors-" + suffix + "-2"),
+                cssVar("--heatmap-colors-" + suffix + "-3")
+            ];
         }
 
-        function getTooltipBgColor(){
-          const currentTheme = getCurrentTheme();
-          return currentTheme === 'dark' 
-                          ? getCSSVariableValue('--tooltip-bg-dark') 
-                          : getCSSVariableValue('--tooltip-bg-light');
+        function bgColor() {
+            return cssVar(getCurrentTheme() === "dark" ? "--heatmap-bg-dark" : "--heatmap-bg-light");
         }
 
-        function getTextStyleColor() {
-          const currentTheme = getCurrentTheme();
-          return currentTheme === 'dark' 
-                          ? getCSSVariableValue('--tooltip-textstyle-dark') 
-                          : getCSSVariableValue('--tooltip-textstyle-light');
-
+        function tooltipBg() {
+            return cssVar(getCurrentTheme() === "dark" ? "--tooltip-bg-dark" : "--tooltip-bg-light");
         }
 
-        function getCSSVariableValue(variableName) {
-            return getComputedStyle(document.documentElement)
-                .getPropertyValue(variableName).trim();
-        }
-
-        // Function to initialize or update chart based on theme
-        function initOrUpdateChart() {
-            // Dispose existing chart if it exists
-            if (myChart) {
-                myChart.dispose();
-            }
-
-            // Determine theme
-            const theme = getCurrentTheme();
-            const chartDom = document.getElementById('heatmap');
-            // Initialize chart with appropriate theme
-            myChart = echarts.init(chartDom, theme === 'dark' ? 'dark' : 'light');
-            // Reapply the option with theme-specific colors
-            option.visualMap.inRange.color = getThemeColors();
-            option.calendar.itemStyle.color = getThemeBgColor();
-            option.tooltip.backgroundColor = getTooltipBgColor();
-            option.tooltip.textStyle.color = getTextStyleColor();
-            myChart.setOption(option);
+        function tooltipText() {
+            return cssVar(getCurrentTheme() === "dark" ? "--tooltip-textstyle-dark" : "--tooltip-textstyle-light");
         }
 
         function populatePostData() {
-          var postsByDate = new Map();
-          var years = new Set();
-          {{ range ((where .Site.RegularPages "Type" "post"))  }}
-              var date = {{ .Date.Format "2006-01-02" }};
-              var year = {{ .Date.Format "2006" }};
-              years.add(year);
-              var postObj = new Map();
-              postObj.set("title", {{ .Title }});
-              postObj.set("link", {{ .RelPermalink }});
-              postObj.set("wordCount", {{ .WordCount }});
-              var wordCount = {{ .WordCount }};
-              var data = postsByDate.get(date);
-              if (data === undefined) {
-                  data = new Map();
-                  data.set("posts", []);
-                  data.set("totalWordCount", 0);
-              }
-              var posts = data.get("posts");
-              posts.push(postObj);
-              var totalWordCount = data.get("totalWordCount");
-              totalWordCount += wordCount;
-              data.set("totalWordCount", totalWordCount);
-              postsByDate.set(date, data);
-	    {{- end -}}
-
-          years = Array.from(years).sort().reverse();
-          return [postsByDate, years];
-        }
-
-        function getHeatmapData(year) {
-            var heatmapData = [];
-            for (const [date, data] of postsByDate.entries()) {
-                if (date.startsWith(year)) {
-                    heatmapData.push([date, data.get("totalWordCount")]);
+            var postsByDate = new Map();
+            var years = new Set();
+            {{- range (where .Site.RegularPages "Type" "post") }}
+            (function () {
+                var date = {{ .Date.Format "2006-01-02" | jsonify | safeJS }};
+                var year = {{ .Date.Format "2006" | jsonify | safeJS }};
+                years.add(year);
+                var data = postsByDate.get(date);
+                if (data === undefined) {
+                    data = { posts: [], totalWordCount: 0 };
                 }
-            }
-            return heatmapData;
+                data.posts.push({
+                    title: {{ .Title | jsonify | safeJS }},
+                    link: {{ .RelPermalink | jsonify | safeJS }},
+                    wordCount: {{ .WordCount }}
+                });
+                data.totalWordCount += {{ .WordCount }};
+                postsByDate.set(date, data);
+            })();
+            {{- end }}
+
+            return [postsByDate, Array.from(years).sort().reverse()];
         }
 
-        function updateHeatmap(year) {
-            option.calendar.range = year;
-            option.series.data = getHeatmapData(year);
+        function heatmapData(year) {
+            var out = [];
+            postsByDate.forEach(function (data, date) {
+                if (date.indexOf(year) === 0) out.push([date, data.totalWordCount]);
+            });
+            return out;
+        }
+
+        function initChart() {
+            if (myChart) myChart.dispose();
+            myChart = echarts.init(document.getElementById("heatmap"), getCurrentTheme() === "dark" ? "dark" : "light");
+            option.visualMap.inRange.color = themeColors();
+            option.calendar.itemStyle.color = bgColor();
+            option.calendar.itemStyle.borderColor = getCurrentTheme() === "dark" ? "#3a3a40" : "#ececea";
+            option.tooltip.backgroundColor = tooltipBg();
+            option.tooltip.textStyle.color = tooltipText();
             myChart.setOption(option);
         }
 
-        function renderYearSelector(years){
-          // Populate year selector
-          var yearSelector = document.getElementById('yearSelector');
-          years.forEach(year => {
-              var option = document.createElement('option');
-              option.value = year;
-              option.text = year;
-              yearSelector.appendChild(option);
-          });
+        var postsByDate, years, latestYear, option;
 
-          yearSelector.addEventListener('change', function() {
-              updateHeatmap(this.value);
-          });
+        function boot() {
+            var data = populatePostData();
+            postsByDate = data[0];
+            years = data[1];
+            latestYear = years.length ? years[0] : String(new Date().getFullYear());
+
+            option = {
+                backgroundColor: "transparent",
+                title: { show: false },
+                visualMap: {
+                    show: false, min: 0, max: 10000, type: "piecewise",
+                    inRange: { color: themeColors() }
+                },
+                calendar: {
+                    top: 20, left: 36, right: 36, bottom: 10,
+                    cellSize: ["auto", "auto"],
+                    range: latestYear,
+                    itemStyle: {
+                        color: bgColor(),
+                        borderWidth: 1,
+                        borderColor: getCurrentTheme() === "dark" ? "#3a3a40" : "#ececea"
+                    },
+                    yearLabel: { show: false },
+                    dayLabel: { firstDay: 1, nameMap: {{ .Lang | jsonify | safeJS }} },
+                    monthLabel: { nameMap: {{ .Lang | jsonify | safeJS }} },
+                    splitLine: { show: false }
+                },
+                tooltip: {
+                    hideDelay: 1000,
+                    enterable: true,
+                    textStyle: { color: tooltipText() },
+                    backgroundColor: tooltipBg(),
+                    formatter: function (params) {
+                        var thousandWordsText = {{ i18n "thousand_words" | jsonify | safeJS }};
+                        var date = params.data[0];
+                        var posts = postsByDate.get(date).posts;
+                        var html = date;
+                        posts.forEach(function (p) {
+                            var k = (p.wordCount / 1000).toFixed(1);
+                            html += '<br><a href="' + p.link + '" target="_blank">' + p.title + " | " + k + thousandWordsText + "</a>";
+                        });
+                        return html;
+                    }
+                },
+                series: {
+                    type: "heatmap",
+                    coordinateSystem: "calendar",
+                    calendarIndex: 0,
+                    data: heatmapData(latestYear)
+                }
+            };
+
+            var sel = document.getElementById("yearSelector");
+            years.forEach(function (y) {
+                var o = document.createElement("option");
+                o.value = y; o.text = y;
+                sel.appendChild(o);
+            });
+            sel.addEventListener("change", function () {
+                option.calendar.range = this.value;
+                option.series.data = heatmapData(this.value);
+                myChart.setOption(option);
+            });
+
+            initChart();
+
+            new MutationObserver(function (ms) {
+                ms.forEach(function (m) {
+                    if (m.type === "attributes" && m.attributeName === "data-theme") initChart();
+                });
+            }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+            window.addEventListener("resize", function () { if (myChart) myChart.resize(); });
         }
 
-
-        // Watch for theme changes
-        const observer = new MutationObserver((mutations) => {
-            mutations.forEach((mutation) => {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
-                    initOrUpdateChart();
-                }
-            });
-        });
-
-        // Start observing the body element for class changes
-        observer.observe(document.body, { 
-            attributes: true, 
-            attributeFilter: ['class'] 
-        });
-
-        var option;
-        const [postsByDate, years] = populatePostData();
-        const latestYear = years && years.length > 0 ? years[0]: new Date().getFullYear();
-
-        option = {
-            title: { show: false },
-            legend: { show: false },
-            visualMap: {
-                show: false,
-                min: 0,
-                max: 10000,
-                type: 'piecewise',
-                showLabel: false,
-                orient: 'horizontal',
-                left: 'center',
-                top: 0,
-                itemGap: 10,
-                inRange: {
-                    color: getThemeColors(),
-                },
-            },
-            calendar: {
-                top: 30,
-                left: 30,
-                right: 30,
-                cellSize: ['auto', 'auto'],
-                range: years[0],
-                itemStyle: {
-                    color: getThemeBgColor(),
-                    borderWidth: 0.5,
-                    borderColor: '#eee',
-                },
-                yearLabel: { show: false },
-                dayLabel: {
-                    firstDay: 1,
-                    nameMap: "{{.Lang}}"
-                },
-                monthLabel: {
-                    nameMap: "{{.Lang}}"
-                },
-                splitLine: {
-                    show: false,
-                },
-            },
-            tooltip: {
-                hideDelay: 1000,
-                enterable: true,
-                textStyle: {
-                  color: getTextStyleColor(),
-                },
-                backgroundColor: getTooltipBgColor(),
-                formatter: function (params) {
-                    const thousandWordsText = {{ i18n "thousand_words" }};
-                    const date = params.data[0];
-                    const posts = postsByDate.get(date).get("posts");
-                    var content = `${date}`;
-                    for (const [i, post] of posts.entries()) {
-                        content += "<br>";
-                        var link = post.get("link");
-                        var title = post.get("title");
-                        const thousandWords = (post.get("wordCount")/1000.0).toFixed(1);
-                        content += `<a href="${link}" target="_blank">${title} | ${thousandWords}${thousandWordsText}</a>`
-                    }
-                    return content;
-                }
-            },
-            series: {
-                type: 'heatmap',
-                coordinateSystem: 'calendar',
-                calendarIndex: 0,
-                data: getHeatmapData(latestYear)
-            }
-        };
-
-        renderYearSelector(years);
-
-        // Initial chart initialization
-        initOrUpdateChart();
-    </script>
-</body>
-</html>
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", boot);
+        } else {
+            boot();
+        }
+    })();
+</script>

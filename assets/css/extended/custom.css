@@ -229,3 +229,149 @@ main:focus {
 .post-content img {
     border-radius: 6px;
 }
+
+/* ==================================================================
+   文章日历热力图（原先整套 <style> 写在 partial 里、每页重复输出）
+   ================================================================== */
+:root {
+    --heatmap-bg-light: #ffffff;
+    --heatmap-colors-light-0: #c6e48b;
+    --heatmap-colors-light-1: #7bc96f;
+    --heatmap-colors-light-2: #239a3b;
+    --heatmap-colors-light-3: #196127;
+    --tooltip-bg-light: #ffffff;
+    --tooltip-textstyle-light: #1c1a1b;
+    --heatmap-bg-dark: #2b2b2f;
+    --heatmap-colors-dark-0: #1f4a2b;
+    --heatmap-colors-dark-1: #2f7a41;
+    --heatmap-colors-dark-2: #46a75a;
+    --heatmap-colors-dark-3: #7bd389;
+    --tooltip-bg-dark: #2b2b2f;
+    --tooltip-textstyle-dark: #ffffff;
+}
+
+.heatmap-container {
+    margin: 26px 0 6px;
+}
+
+.heatmap-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.heatmap-title {
+    margin: 0;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+#yearSelector {
+    font: inherit;
+    font-size: 13px;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--entry);
+    color: var(--primary);
+}
+
+#heatmap {
+    width: 100%;
+    height: 172px;
+}
+
+/* 手机上热力图不可读，直接收起 */
+@media only screen and (max-width: 1024px) {
+    .heatmap-container {
+        display: none;
+    }
+}
+
+/* ==================================================================
+   归档页：年份索引 + 按年折叠
+   ================================================================== */
+.archive-years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin: 26px 0 4px;
+}
+
+.archive-years a {
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background .15s, border-color .15s;
+}
+
+.archive-years a:hover {
+    background: var(--code-bg);
+    border-color: var(--tertiary);
+}
+
+.archive-years sup {
+    color: var(--secondary);
+    font-size: 11px;
+    margin-inline-start: 4px;
+}
+
+details.archive-year {
+    margin-top: 22px;
+    border-bottom: 1px solid var(--border);
+}
+
+details.archive-year:last-of-type {
+    border-bottom: none;
+}
+
+details.archive-year > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    user-select: none;
+}
+
+details.archive-year > summary::-webkit-details-marker {
+    display: none;
+}
+
+details.archive-year > summary::before {
+    content: "›";
+    display: inline-block;
+    color: var(--secondary);
+    font-weight: 400;
+    transition: transform .18s ease;
+}
+
+details.archive-year[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+details.archive-year > summary:hover::before {
+    color: var(--primary);
+}
+
+.archive-year-label {
+    letter-spacing: .01em;
+}
+
+/* 标签只留两个，其余收进 +N */
+.archive-tag-more {
+    font-size: 12px;
+    color: var(--secondary);
+    padding-inline-start: 2px;
+}

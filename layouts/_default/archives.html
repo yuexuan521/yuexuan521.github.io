@@ -41,30 +41,20 @@
 {{- if gt (len $highlightedPosts) 0 }}
 <div class="highlighted-posts">
   <div class="archive-month">
-    <h3 class="archive-month-header" id="">
-      <a class="archive-header-link" href="">
-        {{ i18n "highlighted_posts" }}
-      </a>
-      <sup class="archive-count">&nbsp;{{ len $highlightedPosts }}</sup>
+    <h3 class="archive-month-header">
+      {{ i18n "highlighted_posts" }}
+      <sup class="archive-count">{{ len $highlightedPosts }}</sup>
     </h3>
     <div class="archive-posts highlighted">
       {{- range $highlightedPosts }}
       <div class="archive-entry">
         <h3 class="archive-entry-title entry-hint-parent">
           {{- .Title | markdownify }}
-          {{- if .Draft }}
-          <span class="entry-hint" title="Draft">
-            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" fill="currentColor">
-              <path
-                d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-            </svg>
-          </span>
-          {{- end }}
         </h3>
         <div class="archive-meta">
           {{- partial "post_meta.html" . -}}
         </div>
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        <a class="entry-link" aria-label="阅读：{{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
       {{- end }}
     </div>
@@ -72,24 +62,30 @@
 </div>
 {{- end }}
 
-{{/* Regular archive listing */}}
-{{- range $pages.GroupByPublishDate "2006" }}
+{{/* 年份索引：点击后滚动到对应年份并展开 */}}
+{{- $yearGroups := $pages.GroupByPublishDate "2006" }}
+<nav class="archive-years" aria-label="年份索引">
+  {{- range $yearGroups }}
+  {{- if ne .Key "0001" }}
+  <a href="#y{{ .Key }}">{{ .Key }}<sup>{{ len .Pages }}</sup></a>
+  {{- end }}
+  {{- end }}
+</nav>
+
+{{/* 按年份折叠：仅当前年默认展开 */}}
+{{- range $yearGroups }}
 {{- if ne .Key "0001" }}
-<div class="archive-year">
-  {{- $year := replace .Key "0001" "" }}
-  <h2 class="archive-year-header" id="{{ $year }}">
-    <a class="archive-header-link" href="#{{ $year }}">
-      {{- $year -}}
-    </a>
-    <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
-  </h2>
+{{- $year := .Key }}
+<details class="archive-year" id="y{{ $year }}"{{ if eq $year (now.Format "2006") }} open{{ end }}>
+  <summary class="archive-year-header">
+    <span class="archive-year-label">{{ $year }}</span>
+    <sup class="archive-count">{{ len .Pages }}</sup>
+  </summary>
   {{- range .Pages.GroupByDate "January" }}
   <div class="archive-month">
-    <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
-      <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
-        {{- .Key -}}
-      </a>
-      <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+    <h3 class="archive-month-header">
+      {{- .Key -}}
+      <sup class="archive-count">{{ len .Pages }}</sup>
     </h3>
     <div class="archive-posts">
       {{- range .Pages }}
@@ -97,33 +93,42 @@
       <div class="archive-entry">
         <h3 class="archive-entry-title entry-hint-parent">
           {{- .Title | markdownify }}
-          {{- if .Draft }}
-          <span class="entry-hint" title="Draft">
-            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" fill="currentColor">
-              <path
-                d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-            </svg>
-          </span>
-          {{- end }}
         </h3>
         <div class="archive-meta">
           {{- partial "post_meta.html" . -}}
         </div>
-        {{- if .Params.tags }}
+        {{- with .Params.tags }}
         <div class="archive-tags">
-          {{- range .Params.tags }}
+          {{- range first 2 . }}
           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="archive-tag">{{ . }}</a>
           {{- end }}
+          {{- if gt (len .) 2 }}<span class="archive-tag-more">+{{ sub (len .) 2 }}</span>{{ end }}
         </div>
         {{- end }}
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        <a class="entry-link" aria-label="阅读：{{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
       {{- end }}
       {{- end }}
     </div>
   </div>
   {{- end }}
-</div>
+</details>
 {{- end }}
 {{- end }}
+
+<script>
+  /* 点击年份索引时展开对应年份，并处理直接带锚点访问 */
+  (function () {
+    function openTarget(hash) {
+      if (!hash) return;
+      var el = document.querySelector(hash);
+      if (el && el.tagName === "DETAILS") el.open = true;
+    }
+    document.querySelectorAll(".archive-years a").forEach(function (a) {
+      a.addEventListener("click", function () { openTarget(a.getAttribute("href")); });
+    });
+    window.addEventListener("hashchange", function () { openTarget(location.hash); });
+    openTarget(location.hash);
+  })();
+</script>
 {{- end }}{{/* end main */}}
