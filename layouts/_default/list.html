@@ -49,6 +49,8 @@
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
+{{- /* 首屏加一个分节标题，让卡片流与 hero 之间有语义台阶 */ -}}
+<h2 class="home-section-title">最近文章</h2>
 {{- end }}
 
 {{- $term := .Data.Term }}

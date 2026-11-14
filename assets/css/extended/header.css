@@ -101,6 +101,7 @@
     .logo a img,
     .logo a svg {
         height: 26px;
+        width: auto;
         margin-inline-end: 6px;
     }
 

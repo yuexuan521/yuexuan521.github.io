@@ -144,3 +144,88 @@ select:focus-visible {
 main:focus {
     outline: none;
 }
+
+/* ==================================================================
+   代码块：统一底色 + 恢复正文级对比度 + 可横向滚动
+   （原先代码文字用的是 --secondary 灰，行号与代码几乎同色）
+   ================================================================== */
+.post-content .highlight {
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 14px 16px;
+}
+
+.post-content .highlight pre,
+.post-content .highlight pre code,
+.post-content .highlight code {
+    color: var(--primary) !important;
+    background: transparent !important;
+}
+
+.post-content .highlight .lnt,
+.post-content .highlight .ln {
+    color: var(--faint, #9a9a9a) !important;
+    user-select: none;
+}
+
+.post-content .highlight::-webkit-scrollbar {
+    height: 8px;
+}
+
+.post-content .highlight::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 4px;
+}
+
+/* ==================================================================
+   分页按钮降权：黑底胶囊 → 描边按钮，与站内链接同一套语言
+   ================================================================== */
+.pagination a {
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    font-size: 13px;
+    line-height: 34px;
+    padding: 0 16px;
+    transition: background .15s, border-color .15s;
+}
+
+.pagination a:hover {
+    background: var(--code-bg);
+    border-color: var(--tertiary);
+}
+
+/* ==================================================================
+   首页分节标题
+   ================================================================== */
+.home-section-title {
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    color: var(--secondary);
+    margin: 4px 0 14px;
+    padding-left: 2px;
+}
+
+/* ==================================================================
+   页脚：12px 偏小，提到 13px
+   ================================================================== */
+.footer {
+    font-size: 13px;
+}
+
+/* ==================================================================
+   文章摘要：2 行 14px → 3 行 15px，减少半句截断
+   ================================================================== */
+.post-entry .entry-content,
+.first-entry .entry-content {
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-line-clamp: 3;
+}
+
+/* 正文配图圆角，弱化终端截图的硬边 */
+.post-content img {
+    border-radius: 6px;
+}

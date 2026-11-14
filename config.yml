@@ -1,7 +1,7 @@
 baseURL: https://yuexuan521.github.io  # 【关键】网站的网址。必须完全匹配，结尾不要带斜杠
 title: "less but better"  # 浏览器标签页显示的标题
 pagination:
-  pagerSize: 5 # 每页显示几篇文章。如果觉得太少，改成 10
+  pagerSize: 8 # 每页显示几篇文章。230+ 篇文章，5 篇/页要翻 46 页，8 篇更合适
 theme: PaperMod # 指定使用的主题。对应 themes/PaperMod 文件夹
 
 # 首页额外输出 JSON 索引，站内搜索（fastsearch.js 请求 ../index.json）依赖它
@@ -45,7 +45,8 @@ params:
   # --- 文章页面功能开关 (True=开启, False=关闭) ---
   ShowFullTextInRSS: true                # RSS 订阅源里是否显示全文。True=全文，False=只显示摘要。
   ShowReadingTime: true                  # 文章标题下显示“预计阅读时间” (例如: 5 min read)。
-  ShowShareButtons: true                 # 显示底部的分享按钮 (Twitter, Facebook等)
+  ShowShareButtons: true                 # 显示底部的分享按钮
+  ShareButtons: ["x", "telegram"]        # 只保留这两个；留空则显示全部 7 个
   ShowPostNavLinks: true                 # 显示“上一篇/下一篇”链接
   ShowBreadCrumbs: true                  # 显示面包屑导航 (主页 > post > 文章名)
   hideAuthor: true                       # 【重要】在文章标题下是否隐藏作者名。True=不显示作者。
@@ -73,8 +74,10 @@ params:
 
   label:
     text: "YueXuan"               # 左上角网站Logo旁边的文字 (通常显示网站名)。
-    icon: /apple-touch-icon.png   # 左上角文字旁边的图片 (比如你的头像)。
+    # icon: /apple-touch-icon.png # 位图 logo，深色模式下是黑块，已改用下面的矢量标
     iconHeight: 35                # 图标高度。
+    iconSVG: >-
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="35" height="35" fill="none" aria-hidden="true" style="vertical-align:-6px;margin-inline-end:8px"><rect x="4.5" y="4.5" width="55" height="55" rx="15" stroke="currentColor" stroke-width="5"/><path d="M20 23.5 L29 32 L20 40.5" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 41 H45" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
 
 # --- 模式 A: 个人资料模式 (当前被禁用) ---
   # profile-mode
