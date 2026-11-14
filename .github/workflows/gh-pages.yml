@@ -33,10 +33,11 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      # GitHub Pages 只认站点根目录的 /404.html；
-      # 本项目 defaultContentLanguageInSubdir = true，Hugo 只生成 /zh/404.html，
-      # 因此复制一份到根目录，否则线上会显示 GitHub 默认 404。
-      - name: Prepare root 404
+      # 1) GitHub Pages 只认站点根目录的 /404.html；本项目 defaultContentLanguageInSubdir = true，
+      #    Hugo 只生成 /zh/404.html，因此复制一份到根目录，否则线上会显示 GitHub 默认 404。
+      # 2) 英文站已收起（页面 noindex，且不在 sitemap 索引里），这里顺手删掉它的 sitemap，
+      #    避免被直接访问到一份只含未完成内容的清单。
+      - name: Prepare publish artifacts
         run: |
           if [ -f public/zh/404.html ]; then
             cp public/zh/404.html public/404.html
@@ -45,6 +46,8 @@ jobs:
             echo "::error::public/zh/404.html not found"
             exit 1
           fi
+          rm -f public/en/sitemap.xml
+          echo "en sitemap removed (if any)"
 
       - name: Deploy
         if: github.ref == 'refs/heads/master'
