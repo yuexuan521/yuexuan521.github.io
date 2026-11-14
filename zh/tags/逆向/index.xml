@@ -318,7 +318,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目配图：蓝发动漫少女，配文「刷题嘛~？一起呀」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -332,7 +332,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;BUUCTF 题目「喵喵喵 1」页面，含附件下载与 Flag 提交框&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -344,7 +344,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;下载得到的附件：一只橘白小猫的照片&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -356,38 +356,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;StegSolve 查看 Red plane 0，图片顶部出现异常条纹&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;打开Analyse（分析）选项卡，使用DataExtract（数据提取）选项，进行分析。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png" 
-             alt="" 
+             alt="题目配图：蓝发动漫少女，配文「刷题嘛~？一起呀」" 
               
              loading="lazy"
         />
@@ -401,7 +380,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png" 
-             alt="" 
+             alt="BUUCTF 题目「喵喵喵 1」页面，含附件下载与 Flag 提交框" 
               
              loading="lazy"
         />
@@ -413,7 +392,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png" 
-             alt="" 
+             alt="下载得到的附件：一只橘白小猫的照片" 
               
              loading="lazy"
         />
@@ -425,7 +404,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png" 
-             alt="" 
+             alt="StegSolve 查看 Red plane 0，图片顶部出现异常条纹" 
               
              loading="lazy"
         />
@@ -435,7 +414,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png" 
-             alt="" 
+             alt="StegSolve 查看 Green plane 0，顶部同样有异常条纹" 
               
              loading="lazy"
         />
@@ -445,7 +424,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png" 
-             alt="" 
+             alt="StegSolve 查看 Blue plane 0，顶部同样有异常条纹" 
               
              loading="lazy"
         />
@@ -456,7 +435,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png" 
-             alt="" 
+             alt="StegSolve 的 Extract Preview：勾选 RGB 的 0 位、BGR 顺序，右侧可见 PNG 文件头" 
               
              loading="lazy"
         />
@@ -467,7 +446,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png" 
-             alt="" 
+             alt="保存出的 flag.png 文件图标" 
               
              loading="lazy"
         />
@@ -486,7 +465,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png" 
-             alt="" 
+             alt="打开 flag.png 提示「似乎不支持此文件格式」" 
               
              loading="lazy"
         />
@@ -496,7 +475,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png" 
-             alt="" 
+             alt="010 Editor 查看文件头：开头是 FFFE 而非 PNG 标识" 
               
              loading="lazy"
         />
@@ -507,7 +486,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png" 
-             alt="" 
+             alt="删除多余字节后，文件以 89 50 4E 47（PNG 头）开头" 
               
              loading="lazy"
         />
@@ -517,7 +496,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png" 
-             alt="" 
+             alt="修复后得到的半张二维码" 
               
              loading="lazy"
         />
@@ -528,7 +507,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png" 
-             alt="" 
+             alt="010 Editor 报错：CRC Mismatch @ chunk[0]" 
               
              loading="lazy"
         />
@@ -572,7 +551,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png" 
-             alt="" 
+             alt="计算得到的宽高：280 × 280（0x118）" 
               
              loading="lazy"
         />
@@ -583,7 +562,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png" 
-             alt="" 
+             alt="十六进制中高亮的宽高字段 0x118，以及 CRC 校验值" 
               
              loading="lazy"
         />
@@ -593,7 +572,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png" 
-             alt="" 
+             alt="补全宽高后得到的完整二维码" 
               
              loading="lazy"
         />
@@ -612,7 +591,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png" 
-             alt="" 
+             alt="二维码解码结果：一个百度网盘链接" 
               
              loading="lazy"
         />
@@ -622,7 +601,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png" 
-             alt="" 
+             alt="网盘下载的压缩包，大小 766B" 
               
              loading="lazy"
         />
@@ -633,7 +612,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png" 
-             alt="" 
+             alt="解压后的 flag.txt，内容为「flag不在这里哦 你猜猜flag在哪里呢？ 找找看吧」" 
               
              loading="lazy"
         />
@@ -645,7 +624,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png" 
-             alt="" 
+             alt="NtfsStreamsEditor 在 flag.txt 中搜到附加数据流 flag.pyc" 
               
              loading="lazy"
         />
@@ -856,7 +835,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png" 
-             alt="" 
+             alt="运行解密脚本后输出 flag{Y@e_Cl3veR_C1Ever!}" 
               
              loading="lazy"
         />
