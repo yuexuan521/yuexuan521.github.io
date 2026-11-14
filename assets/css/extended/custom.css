@@ -429,12 +429,20 @@ details.archive-year > summary:hover::before {
 }
 
 .y404-mark {
-    color: var(--primary);
     margin-bottom: 20px;
+    line-height: 0;
 }
 
-.y404-mark svg {
+.y404-mark img {
     display: block;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+}
+
+/* 深色模式下图标本身是黑底，加一圈极淡描边避免和页面糊在一起 */
+[data-theme="dark"] .y404-mark img {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .12);
 }
 
 .y404-kicker {
