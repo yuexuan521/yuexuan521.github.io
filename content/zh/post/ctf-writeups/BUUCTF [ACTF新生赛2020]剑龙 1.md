@@ -6,12 +6,11 @@ categories:
   - "CTF"
 tags:
 - "数据库"
-- "安全"
 - "网络安全"
 - "CTF"
 - "BUUCTF"
-- "misc"
-- "stegosaurus"
+- "MISC"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png)

@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "数据库"
-- "缓存"
 - "BUUCTF"
 - "MISC"
 - "CTF"
 - "网络安全"
-- "安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png)

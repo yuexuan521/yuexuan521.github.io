@@ -6,10 +6,8 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "IDA"
 - "逆向"
 - "CTF"
-- "汇编"
 - "BUUCTF"
 - "MISC"
 ---

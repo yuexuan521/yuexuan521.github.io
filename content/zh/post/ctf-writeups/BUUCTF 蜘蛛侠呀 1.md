@@ -6,11 +6,11 @@ categories:
   - "CTF"
 tags:
 - "数据库"
-- "java"
+- "Java"
 - "开发语言"
 - "CTF"
 - "BUUCTF"
-- "misc"
+- "MISC"
 - "网络安全"
 ---
 

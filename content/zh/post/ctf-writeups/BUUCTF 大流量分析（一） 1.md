@@ -7,11 +7,10 @@ categories:
 tags:
 - "Wireshark"
 - "网络安全"
-- "安全"
-- "Misc"
+- "MISC"
 - "BUUCTF"
 - "CTF"
-- "大流量分析"
+- "流量分析"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png)

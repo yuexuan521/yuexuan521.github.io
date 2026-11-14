@@ -5,7 +5,7 @@ category: "牛客网Python入门103题"
 categories: 
   - "牛客网Python"
 tags:
-- "python"
+- "Python"
 ---
 
 代码学习应该多进行训练，以提高自身编程能力。

@@ -10,7 +10,7 @@ tags:
 - "BUUCTF"
 - "CTF"
 - "MISC"
-- "wireshark"
+- "Wireshark"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png)

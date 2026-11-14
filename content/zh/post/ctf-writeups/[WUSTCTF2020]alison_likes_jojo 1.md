@@ -6,9 +6,8 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "密码学"
-- "outguess"
+- "隐写"
 - "BUUCTF"
 - "MISC"
 - "CTF"

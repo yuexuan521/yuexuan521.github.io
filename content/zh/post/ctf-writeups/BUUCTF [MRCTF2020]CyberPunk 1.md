@@ -5,13 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
 - "网络安全"
 - "CTF"
 - "BUUCTF"
-- "misc"
-- "CyberPunk"
-- "windows"
+- "MISC"
+- "Windows"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png)

@@ -5,9 +5,8 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
-- "MISC"
 - "网络安全"
+- "MISC"
 - "笔记"
 - "CTF"
 - "BUUCTF"

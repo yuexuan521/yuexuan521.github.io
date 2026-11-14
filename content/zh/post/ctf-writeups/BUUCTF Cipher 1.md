@@ -6,12 +6,8 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "密码"
-- "crypto"
-- "ctf"
-- "安全"
-- "古典密码"
 - "密码学"
+- "CTF"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png)

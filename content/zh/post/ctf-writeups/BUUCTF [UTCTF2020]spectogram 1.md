@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "CTF"
 - "BUUCTF"
-- "Misc"
-- "spectogram"
-- "语谱图"
+- "MISC"
+- "音频隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png)

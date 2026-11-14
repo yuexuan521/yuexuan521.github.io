@@ -9,8 +9,6 @@ tags:
 - "CTF"
 - "MISC"
 - "网络安全"
-- "安全"
-- "greatescape"
 - "Wireshark"
 ---
 

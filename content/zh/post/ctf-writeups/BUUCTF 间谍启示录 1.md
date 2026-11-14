@@ -6,12 +6,11 @@ categories:
   - "CTF"
 tags:
 - "MISC"
-- "安全"
 - "网络安全"
 - "CTF"
 - "笔记"
 - "BUUCTF"
-- "隐藏文件"
+- "ZIP"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png)

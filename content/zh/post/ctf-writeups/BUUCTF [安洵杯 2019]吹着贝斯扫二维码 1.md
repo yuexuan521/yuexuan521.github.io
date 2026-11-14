@@ -5,12 +5,9 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "redis"
 - "数据库"
-- "缓存"
 - "BUUCTF"
 - "网络安全"
-- "安全"
 - "密码学"
 ---
 

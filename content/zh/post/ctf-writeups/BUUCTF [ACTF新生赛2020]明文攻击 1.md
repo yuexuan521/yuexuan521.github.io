@@ -7,10 +7,8 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "ACTF新生赛2020"
-- "明文攻击"
+- "密码学"
 - "网络安全"
-- "安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png)

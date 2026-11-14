@@ -7,11 +7,10 @@ categories:
 tags:
 - "BUUCTF"
 - "网络安全"
-- "安全"
 - "CTF"
-- "Misc"
-- "pyc"
-- "图片隐写"
+- "MISC"
+- "逆向"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192735332.png)

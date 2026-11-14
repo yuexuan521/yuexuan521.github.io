@@ -5,13 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "web安全"
-- "安全"
+- "Web安全"
 - "网络安全"
 - "BUUCTF"
 - "CTF"
 - "MISC"
-- "UTCTF"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png)

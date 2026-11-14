@@ -5,12 +5,10 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "xss"
-- "安全"
+- "Web安全"
 - "网络安全"
 - "DVWA"
-- "php"
+- "PHP"
 ---
 
 ## DVWAStored Cross Site Scripting (存储型 XSS)

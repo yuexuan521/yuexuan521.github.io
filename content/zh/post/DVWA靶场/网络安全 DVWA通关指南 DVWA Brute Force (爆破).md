@@ -5,11 +5,9 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "android"
-- "安全"
+- "Web安全"
+- "Android"
 - "网络安全"
-- "爆破"
 - "密码学"
 - "DVWA"
 ---

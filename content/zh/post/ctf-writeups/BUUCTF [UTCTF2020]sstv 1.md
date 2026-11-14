@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "CTF"
 - "BUUCTF"
 - "MISC"
-- "慢扫描电视"
-- "sstv"
+- "音频隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192148732.png)

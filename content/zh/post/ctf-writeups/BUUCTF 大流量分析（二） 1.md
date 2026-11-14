@@ -6,12 +6,11 @@ categories:
   - "CTF"
 tags:
 - "Wireshark"
-- "Misc"
+- "MISC"
 - "BUUCTF"
 - "CTF"
 - "网络安全"
-- "安全"
-- "大流量分析"
+- "流量分析"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png)

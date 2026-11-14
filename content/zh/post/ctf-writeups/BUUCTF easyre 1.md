@@ -7,9 +7,7 @@ categories:
 tags:
 - "网络安全"
 - "CTF"
-- "安全"
-- "IDA"
-- "Reverse"
+- "逆向"
 ---
 
 

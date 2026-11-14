@@ -5,9 +5,8 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "java"
+- "Java"
 - "数据库"
-- "缓存"
 - "网络安全"
 - "CTF"
 - "BUUCTF"

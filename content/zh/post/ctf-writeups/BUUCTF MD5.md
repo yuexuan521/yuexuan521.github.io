@@ -5,10 +5,9 @@ category: "BUUCTF Crypto"
 categories: 
   - "CTF"
 tags:
-- "密码"
-- "crypto"
+- "密码学"
 - "网络安全"
-- "ctf"
+- "CTF"
 ---
 
 密文：

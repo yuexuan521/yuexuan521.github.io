@@ -6,11 +6,10 @@ categories:
   - "CCNA"
 tags:
 - "服务器"
-- "asp.net"
+- "开发语言"
 - "数据库"
 - "运维"
 - "思科"
-- "Cisco"
 - "CCNA"
 ---
 

@@ -7,11 +7,9 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "SUCTF 2019"
+- "MISC"
 - "网络安全"
-- "安全"
-- "3DES"
+- "密码学"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png)

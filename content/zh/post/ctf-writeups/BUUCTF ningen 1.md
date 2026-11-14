@@ -6,10 +6,9 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "CTF"
 - "BUUCTF"
-- "图片隐写"
+- "隐写"
 - "笔记"
 ---
 

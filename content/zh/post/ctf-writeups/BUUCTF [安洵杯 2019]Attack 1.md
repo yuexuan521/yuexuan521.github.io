@@ -5,12 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
 - "网络安全"
 - "CTF"
-- "misc"
-- "wireshark"
-- "Mimikatz"
+- "MISC"
+- "Wireshark"
+- "渗透测试"
 - "BUUCTF"
 ---
 

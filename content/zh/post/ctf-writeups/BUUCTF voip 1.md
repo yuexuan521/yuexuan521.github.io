@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "RTP"
-- "voip"
+- "MISC"
+- "流量分析"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190329971.png)

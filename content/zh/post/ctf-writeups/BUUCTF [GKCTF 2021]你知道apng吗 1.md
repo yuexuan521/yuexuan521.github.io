@@ -7,11 +7,10 @@ categories:
 tags:
 - "CTF"
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "MISC"
-- "apng"
-- "web安全"
+- "隐写"
+- "Web安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png)

@@ -6,11 +6,9 @@ categories:
   - "CTF"
 tags:
 - "BUUCTF"
-- "GUET-CTF2019"
-- "虚假的压缩包"
-- "网络安全"
-- "安全"
 - "CTF"
+- "ZIP"
+- "网络安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png)

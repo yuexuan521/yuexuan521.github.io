@@ -5,12 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
 - "网络安全"
 - "CTF"
 - "BUUCTF"
-- "misc"
-- "010 Editor"
+- "MISC"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png)

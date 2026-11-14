@@ -5,13 +5,10 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "安全"
+- "Web安全"
 - "网络安全"
 - "DVWA"
 - "靶场"
-- "文件上传"
-- "木马"
 ---
 
 

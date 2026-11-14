@@ -6,9 +6,8 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "CTF"
-- "Misc"
+- "MISC"
 - "BUUCTF"
 ---
 

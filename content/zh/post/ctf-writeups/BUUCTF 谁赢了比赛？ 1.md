@@ -6,11 +6,9 @@ categories:
   - "CTF"
 tags:
 - "MISC"
-- "安全"
 - "网络安全"
 - "CTF"
 - "笔记"
-- "Misc"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193518927.png)

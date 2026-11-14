@@ -5,13 +5,10 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "csrf"
+- "Web安全"
 - "网络安全"
-- "安全"
 - "DVWA"
 - "靶场"
-- "DVWA通关指南"
 ---
 
 

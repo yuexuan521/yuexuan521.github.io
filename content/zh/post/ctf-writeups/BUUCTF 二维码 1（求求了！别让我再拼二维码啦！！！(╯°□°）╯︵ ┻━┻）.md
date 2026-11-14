@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "Qr_research"
-- "二维码"
+- "MISC"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png)

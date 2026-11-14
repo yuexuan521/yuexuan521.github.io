@@ -5,13 +5,12 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
 - "网络安全"
-- "dtmf2num"
+- "音频隐写"
 - "CTF"
-- "misc"
+- "MISC"
 - "BUUCTF"
-- "web安全"
+- "Web安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png)

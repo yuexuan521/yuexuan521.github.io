@@ -5,12 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "python"
+- "Python"
 - "开发语言"
 - "BUUCTF"
 - "CTF"
 - "MISC"
-- "GKCTF 2021"
 - "网络安全"
 ---
 

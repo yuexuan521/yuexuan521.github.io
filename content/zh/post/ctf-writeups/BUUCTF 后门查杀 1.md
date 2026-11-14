@@ -10,8 +10,7 @@ tags:
 - "BUUCTF"
 - "MISC"
 - "笔记"
-- "webshell"
-- "后门"
+- "Web安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192720667.png)

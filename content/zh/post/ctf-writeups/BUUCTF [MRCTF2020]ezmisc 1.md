@@ -6,7 +6,6 @@ categories:
   - "CTF"
 tags:
 - "MISC"
-- "安全"
 - "网络安全"
 - "CTF"
 - "笔记"

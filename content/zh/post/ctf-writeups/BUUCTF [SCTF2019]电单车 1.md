@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
 - "MISC"
-- "Audacity"
-- "PT224X信号"
+- "音频隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191805436.png)

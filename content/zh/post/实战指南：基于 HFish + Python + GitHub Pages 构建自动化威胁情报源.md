@@ -3,11 +3,10 @@ title: "实战指南：基于 HFish + Python + GitHub Pages 构建自动化威�
 date: 2026-03-05 12:00:00
 tags:
 - "威胁情报"
-- "HFish"
 - "蜜罐"
 - "服务器"
 - "网络安全"
-- "Github"
+- "开发语言"
 ---
 
 [HFish API配置文档](https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md)

@@ -5,13 +5,12 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "安全"
 - "网络安全"
 - "CTF"
-- "misc"
+- "MISC"
 - "BUUCTF"
-- "EXIF"
-- "wireshark"
+- "隐写"
+- "Wireshark"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193134440.png)

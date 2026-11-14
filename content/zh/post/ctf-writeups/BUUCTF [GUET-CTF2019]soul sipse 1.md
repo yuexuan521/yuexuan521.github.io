@@ -7,11 +7,8 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "flag"
-- "安全"
 - "网络安全"
-- "buuctf"
-- "Steghide"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png)

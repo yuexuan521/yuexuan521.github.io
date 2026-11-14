@@ -6,12 +6,9 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "Unravel"
-- "MRCTF2020"
+- "MISC"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191603745.png)

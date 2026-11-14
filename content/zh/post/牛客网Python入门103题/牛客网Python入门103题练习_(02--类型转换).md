@@ -5,7 +5,7 @@ category: "牛客网Python入门103题"
 categories: 
   - "牛客网Python"
 tags:
-- "c语言"
+- "C语言"
 ---
 
 ## ⭐NP7 小数化整数

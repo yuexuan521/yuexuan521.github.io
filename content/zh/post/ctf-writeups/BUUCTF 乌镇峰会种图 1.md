@@ -9,7 +9,6 @@ tags:
 - "笔记"
 - "密码学"
 - "BUUCTF"
-- "crypto"
 - "CTF"
 ---
 

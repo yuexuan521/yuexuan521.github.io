@@ -5,13 +5,12 @@ category: "CCNA思科实验"
 categories: 
   - "CCNA"
 tags:
-- "ios"
+- "iOS"
 - "智能路由器"
 - "网络"
 - "服务器"
 - "运维"
 - "网络安全"
-- "安全"
 ---
 
 

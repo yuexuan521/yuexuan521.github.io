@@ -5,13 +5,12 @@ category: "CCNA思科实验"
 categories: 
   - "CCNA"
 tags:
-- "ssh"
+- "运维"
 - "智能路由器"
 - "网络"
-- "运维"
 - "网络安全"
 - "服务器"
-- "cisco"
+- "思科"
 ---
 
 

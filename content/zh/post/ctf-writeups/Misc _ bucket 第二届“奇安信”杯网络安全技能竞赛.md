@@ -5,11 +5,9 @@ category: "“奇安信”杯网络安全技能竞赛"
 categories: 
   - "CTF"
 tags:
-- "web安全"
-- "安全"
-- "CTF"
+- "Web安全"
 - "网络安全"
-- "奇安信杯"
+- "CTF"
 ---
 
 

@@ -5,7 +5,7 @@ category: "牛客网Python入门103题"
 categories: 
   - "牛客网Python"
 tags:
-- "python"
+- "Python"
 ---
 
 ## ⭐NP10 牛牛最好的朋友们

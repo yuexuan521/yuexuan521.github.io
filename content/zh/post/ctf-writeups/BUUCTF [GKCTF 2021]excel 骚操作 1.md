@@ -5,13 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "excel"
+- "Office"
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "GKCTF 2021"
+- "MISC"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png)

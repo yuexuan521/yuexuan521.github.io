@@ -5,11 +5,10 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "SWPU2019"
-- "BUUCTF"
 - "CTF"
+- "BUUCTF"
 - "MISC"
-- "TTL隐写"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png)

@@ -6,12 +6,11 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
-- "lsb隐写"
+- "隐写"
 - "CTF"
 - "BUUCTF"
 - "MISC"
-- "摩斯密码"
+- "密码学"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192951217.png)

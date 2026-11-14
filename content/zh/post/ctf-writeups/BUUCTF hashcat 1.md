@@ -7,9 +7,8 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "Misc"
-- "hashcat"
-- "office2john"
+- "MISC"
+- "密码学"
 - "Office"
 - "网络安全"
 ---

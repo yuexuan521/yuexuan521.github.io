@@ -7,9 +7,8 @@ categories:
 tags:
 - "网络安全"
 - "CTF"
-- "安全"
-- "Misc"
-- "webshell"
+- "MISC"
+- "Web安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190351253.png)

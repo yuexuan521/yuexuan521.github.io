@@ -5,13 +5,11 @@ category: "BUUCTF MISC"
 categories: 
   - "CTF"
 tags:
-- "MRCTF2020"
+- "CTF"
 - "BUUCTF"
 - "网络安全"
-- "安全"
 - "密码学"
-- "Base64隐写"
-- "CTF"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png)

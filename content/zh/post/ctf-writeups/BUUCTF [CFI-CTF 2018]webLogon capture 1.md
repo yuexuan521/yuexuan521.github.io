@@ -8,10 +8,8 @@ tags:
 - "BUUCTF"
 - "CTF"
 - "网络安全"
-- "安全"
-- "CFI-CTF"
-- "wireshark"
-- "webLogon"
+- "Wireshark"
+- "流量分析"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png)

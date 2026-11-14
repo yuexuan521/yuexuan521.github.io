@@ -7,11 +7,9 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "Misc"
+- "MISC"
 - "网络安全"
-- "安全"
-- "零宽隐写"
-- "zero"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png)

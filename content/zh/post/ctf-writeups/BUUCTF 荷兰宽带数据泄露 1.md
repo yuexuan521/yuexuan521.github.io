@@ -7,9 +7,8 @@ categories:
 tags:
 - "网络安全"
 - "CTF"
-- "安全"
-- "Misc"
-- "路由"
+- "MISC"
+- "智能路由器"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193257943.png)

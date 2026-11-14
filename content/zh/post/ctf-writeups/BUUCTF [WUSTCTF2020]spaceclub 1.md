@@ -7,11 +7,9 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "安全"
 - "网络安全"
-- "spaceclub"
-- "WUSTCTF2020"
-- "ASCII"
+- "MISC"
+- "密码学"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png)

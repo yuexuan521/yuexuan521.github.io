@@ -5,11 +5,9 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "sql"
-- "安全"
+- "Web安全"
+- "SQL注入"
 - "网络安全"
-- "SQL盲注"
 - "DVWA"
 ---
 

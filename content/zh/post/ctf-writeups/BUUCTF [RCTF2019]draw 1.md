@@ -7,9 +7,7 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "RCTF2019"
-- "Logo语言"
-- "draw"
+- "开发语言"
 - "网络安全"
 - "MISC"
 ---

@@ -7,10 +7,8 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "misc"
+- "MISC"
 - "网络安全"
-- "安全"
-- "DDCTF2018"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png)

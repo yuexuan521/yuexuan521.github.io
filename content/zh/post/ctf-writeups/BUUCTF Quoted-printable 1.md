@@ -7,10 +7,6 @@ categories:
 tags:
 - "网络安全"
 - "CTF"
-- "密码"
-- "md5"
-- "Crypto"
-- "安全"
 - "密码学"
 ---
 

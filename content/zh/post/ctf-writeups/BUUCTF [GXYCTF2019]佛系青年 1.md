@@ -6,11 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "CTF"
-- "Misc"
+- "MISC"
 - "BUUCTF"
-- "与佛论禅"
+- "密码学"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png)

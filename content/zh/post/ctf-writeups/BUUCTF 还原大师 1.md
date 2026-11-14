@@ -5,12 +5,10 @@ category: "BUUCTF Crypto"
 categories: 
   - "CTF"
 tags:
-- "python"
+- "Python"
 - "开发语言"
 - "CTF"
 - "网络安全"
-- "密码"
-- "安全"
 - "密码学"
 ---
 

@@ -8,9 +8,8 @@ tags:
 - "BUUCTF"
 - "笔记"
 - "网络安全"
-- "安全"
 - "MISC"
-- "zip"
+- "ZIP"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png)

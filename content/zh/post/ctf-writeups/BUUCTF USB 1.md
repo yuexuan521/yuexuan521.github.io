@@ -7,10 +7,9 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "Misc"
+- "MISC"
 - "网络安全"
-- "USB"
-- "安全"
+- "流量分析"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png)

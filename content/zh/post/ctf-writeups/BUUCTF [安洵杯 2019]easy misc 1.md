@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "密码学"
 - "BUUCTF"
 - "CTF"
 - "MISC"
-- "安洵杯"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192401406.png)

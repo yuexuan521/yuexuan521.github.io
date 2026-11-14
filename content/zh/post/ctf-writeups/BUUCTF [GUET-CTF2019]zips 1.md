@@ -6,11 +6,8 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "密码学"
-- "zip"
-- "掩码爆破"
-- "zip伪加密"
+- "ZIP"
 - "BUUCTF"
 ---
 

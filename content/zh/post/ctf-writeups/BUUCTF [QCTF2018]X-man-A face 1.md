@@ -6,12 +6,9 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "QCTF2018"
-- "X-man-A face"
+- "MISC"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191711309.png)

@@ -7,10 +7,8 @@ categories:
 tags:
 - "网络"
 - "服务器"
-- "cisco"
 - "思科"
 - "CCNA"
-- "ACL"
 ---
 
 

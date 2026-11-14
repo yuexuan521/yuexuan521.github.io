@@ -6,12 +6,9 @@ categories:
   - "CTF"
 tags:
 - "BUUCTF"
-- "Crypto"
+- "密码学"
 - "网络安全"
 - "CTF"
-- "密码"
-- "安全"
-- "密码学"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204912131.png)

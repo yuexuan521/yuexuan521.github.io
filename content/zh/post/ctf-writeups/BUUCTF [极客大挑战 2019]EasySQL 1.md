@@ -7,10 +7,9 @@ categories:
 tags:
 - "CTF"
 - "网络安全"
-- "web安全"
+- "Web安全"
 - "SQL注入"
 - "BUUCTF"
-- "WEB"
 ---
 
 

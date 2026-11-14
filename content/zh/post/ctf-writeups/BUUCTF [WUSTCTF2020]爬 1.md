@@ -6,12 +6,11 @@ categories:
   - "CTF"
 tags:
 - "CTF"
-- "安全"
+- "网络安全"
 - "笔记"
 - "BUUCTF"
-- "网络安全"
-- "Misc"
-- "word"
+- "MISC"
+- "Office"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png)

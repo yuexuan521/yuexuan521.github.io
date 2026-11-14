@@ -7,11 +7,9 @@ categories:
 tags:
 - "1024程序员节"
 - "CTF"
-- "奇安信"
 - "网络安全"
-- "安全"
-- "Misc"
-- "crypto"
+- "MISC"
+- "密码学"
 ---
 
 

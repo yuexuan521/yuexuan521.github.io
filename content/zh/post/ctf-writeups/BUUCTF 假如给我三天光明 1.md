@@ -7,9 +7,8 @@ categories:
 tags:
 - "网络安全"
 - "CTF"
-- "安全"
-- "Misc"
-- "图片隐写"
+- "MISC"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192638057.png)

@@ -7,10 +7,8 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "DDCTF2018"
+- "MISC"
 - "网络安全"
-- "安全"
 - "密码学"
 ---
 

@@ -7,10 +7,9 @@ categories:
 tags:
 - "BUUCTF"
 - "CTF"
-- "misc"
-- "BSidesSF2019"
+- "MISC"
 - "流量分析"
-- "zippy"
+- "ZIP"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png)

@@ -5,13 +5,9 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "web安全"
-- "xss"
-- "安全"
+- "Web安全"
 - "网络安全"
 - "DVWA"
-- "反射型 XSS"
-- "网络攻击模型"
 ---
 
 

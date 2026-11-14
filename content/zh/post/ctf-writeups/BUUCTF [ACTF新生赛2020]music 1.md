@@ -7,11 +7,9 @@ categories:
 tags:
 - "网络安全"
 - "BUUCTF"
-- "安全"
 - "CTF"
-- "misc"
-- "music"
-- "ACTF新生赛2020"
+- "MISC"
+- "音频隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png)

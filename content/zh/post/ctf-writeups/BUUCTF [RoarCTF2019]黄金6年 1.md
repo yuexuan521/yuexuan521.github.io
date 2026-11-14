@@ -9,9 +9,8 @@ tags:
 - "笔记"
 - "BUUCTF"
 - "网络安全"
-- "安全"
-- "Misc"
-- "二维码"
+- "MISC"
+- "隐写"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191736799.png)

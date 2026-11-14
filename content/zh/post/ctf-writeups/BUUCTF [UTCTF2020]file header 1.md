@@ -6,12 +6,10 @@ categories:
   - "CTF"
 tags:
 - "网络安全"
-- "安全"
-- "web安全"
+- "Web安全"
 - "CTF"
 - "BUUCTF"
-- "UTCTF2020"
-- "Misc"
+- "MISC"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192112889.png)

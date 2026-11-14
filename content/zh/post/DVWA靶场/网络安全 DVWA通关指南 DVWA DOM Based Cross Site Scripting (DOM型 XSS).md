@@ -5,11 +5,9 @@ category: "DVWA靶场"
 categories: 
   - "DVWA靶场"
 tags:
-- "xss"
+- "Web安全"
 - "前端"
-- "web安全"
 - "网络安全"
-- "安全"
 - "DVWA"
 ---
 

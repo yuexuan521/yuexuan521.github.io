@@ -5,13 +5,10 @@ category: "BUUCTF Crypto"
 categories: 
   - "CTF"
 tags:
-- "python"
-- "密码"
-- "crypto"
-- "ctf"
-- "网络安全"
-- "安全"
+- "Python"
 - "密码学"
+- "CTF"
+- "网络安全"
 ---
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png)
