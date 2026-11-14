@@ -41,6 +41,8 @@ params:
   math: true # 【重要】开启 LaTeX 数学公式渲染 (KaTeX)。如果你写算法或数学公式，必须为 true。
   defaultTheme: auto # dark, light # 主题模式：auto (跟随系统), dark (强制深色), light (强制浅色)
   disableThemeToggle: false # 是否禁用右上角的“日/夜”切换按钮。false = 不禁用（显示按钮）
+  hiddenInLangSwitch: ["en"]         # 未完成的语种：中文站不显示它的切换入口（英文站仍可切回中文）
+  displayFullLangName: true      # 语言切换显示全名（中文 / English），而不是 En / Zh
   
   # --- 文章页面功能开关 (True=开启, False=关闭) ---
   ShowFullTextInRSS: true                # RSS 订阅源里是否显示全文。True=全文，False=只显示摘要。
@@ -231,17 +233,17 @@ languages: # 定义具体语言板块。
           weight: 3
         - identifier: CCNA_Lab
           parent: series
-          name: "CCNA思科实验"
+          name: "CCNA"
           url: /zh/categories/CCNA/
           weight: 4
         - identifier: C_Algorithm
           parent: series
-          name: "码蹄杯C语言"
+          name: "码蹄杯"
           url: /zh/categories/码蹄杯/
           weight: 5
         - identifier: Python_Algorithm
           parent: series
-          name: "牛客网Python入门103题"
+          name: "牛客网Python"
           url: /zh/categories/牛客网Python/
           weight: 6
         - identifier: SUEP_Exam 
@@ -252,7 +254,7 @@ languages: # 定义具体语言板块。
         - identifier: penetration_test
           parent: series
           name: "渗透测试"
-          url: /zh/categories/渗透测试1 /
+          url: /zh/categories/渗透测试/
           weight: 8
 
 markup:

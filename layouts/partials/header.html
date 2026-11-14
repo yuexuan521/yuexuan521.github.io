@@ -98,11 +98,19 @@
 
                 {{- $lang := .Lang}}
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
+                {{- /* 未完成的语种不放进切换器：中文站不显示 En，英文站仍可切回中文 */ -}}
+                {{- $hiddenLangs := site.Params.hiddenInLangSwitch | default slice }}
+                {{- $curHidden := in $hiddenLangs $lang }}
+                {{- $showLangs := slice }}
+                {{- range site.Home.Translations }}
+                    {{- if and (ne $.Lang .Lang) (or $curHidden (not (in $hiddenLangs .Lang))) }}
+                        {{- $showLangs = $showLangs | append . }}
+                    {{- end }}
+                {{- end }}
+                {{- with $showLangs }}
                 <ul class="lang-switch">
                     {{- if $separator }}<li>|</li>{{ end }}
                     {{- range . -}}
-                    {{- if ne $lang .Lang }}
                     <li>
                         <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
                             aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
@@ -113,7 +121,6 @@
                             {{- end -}}
                         </a>
                     </li>
-                    {{- end -}}
                     {{- end}}
                 </ul>
                 {{- end }}
