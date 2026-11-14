@@ -27,7 +27,7 @@ tags:
 [BUUCTF:[GUET-CTF2019]虚假的压缩包](https://www.cnblogs.com/vuclw/p/15848284.html#:~:text=%E5%85%B6%E4%B8%AD%E7%9C%9F%E5%AE%9E%E7%9A%84%E5%8E%8B) 
 [Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛](https://blog.csdn.net/YueXuan_521/article/details/134352467?spm=1001.2014.3001.5502) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 
 下载附件解压，得到两个压缩包：虚假的压缩包.zip和真实的压缩包.zip
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png)
 
 ---
 
@@ -45,11 +45,11 @@ tags:
 
 1、先处理虚假的压缩包.zip，因为真实的压缩包.zip需要密码。虚假的压缩包.zip使用了伪加密，搜索 `50 4B 01 02` ，将文件头的第9位和第10位改为0。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png)
 
 解压得到Key.txt文件，内容如下：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png)
 
 2、猜测为RSA加密，解密脚本如下：
 
@@ -80,19 +80,19 @@ print(ans)
 
 运行脚本，得到答案是 `5` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png)
 
 3、解压真实的压缩包.zip，得到一张没卵用且会浪费你时间的图片.jpg和亦真亦假。
 
 解压密码： `答案是5` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png)
 
 使用TweakPNG打开jpg图片，发现提示jpg图片CRC不对，应该是被修改宽高啦。（另外该图片应为png文件，png文件头89 50 4E 47）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png)
 
 使用如下脚本，计算原文件宽高。
 
@@ -114,14 +114,14 @@ for i in range(2000):
 
 得到图片的高应为 `242` ， `0xF2` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png)
 
 修改图片高度如下
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png)
 
 得到图片
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png)
 
 4、根据上面图片的提示，我们将亦真亦假文件的数据 `异或5` ，python脚本如下：
 
@@ -150,7 +150,7 @@ print("Decryption complete.")
 
 得到flag.doc文件，打开没有发现flag，全选改变字体颜色，得到flag。（word隐藏文字）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png)
 
 ### flag：
 

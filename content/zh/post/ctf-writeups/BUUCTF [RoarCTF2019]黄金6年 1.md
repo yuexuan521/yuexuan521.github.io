@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191738963.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191738963.png)
 
 ### 题目描述：
 
@@ -45,33 +45,33 @@ tags:
 key1:i
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191740591.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191740591.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191743186.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191743186.png)
 
 ```bash
 key2:want
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191745372.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191745372.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191747483.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191747483.png)
 
 ```bash
 key3:play
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191749090.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191749090.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191751386.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191751386.png)
 
 ```bash
 key4:ctf
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191753110.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191753110.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191755237.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191755237.png)
 
 连接起来，得到key（而不是flag）。
 
@@ -81,17 +81,17 @@ iwantplayctf
 
 2、提交flag无果后，开始尝试其他的方向。在010Editor中，在文件的最后发现一串经过Base64编码的字符串，解密的内容如下，感觉是rar压缩包的数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191757389.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191757389.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191759584.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191759584.png)
 
 使用在线网站，直接解密并另存为rar文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191801364.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191801364.png)
 
 3、使用之前得到的key作为密码，解压rar压缩包，得到flag.txt文件，打开文件得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191803558.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191803558.png)
 
 ### flag：
 

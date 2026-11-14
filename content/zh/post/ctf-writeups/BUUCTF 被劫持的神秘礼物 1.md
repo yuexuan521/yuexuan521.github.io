@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，得到一个名为gift.pcapng的wireshark流量包。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png)
 
 ---
 
@@ -40,14 +40,14 @@ tags:
 
 1、双击gift.pcapng文件，进入Wireshark中。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png)
 
 题目要求找到帐号密码，我们先将HTTP流量过滤出来看一下。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png)
 
 看到一个POST方法和两个GET方法，直奔POST方法的那条流量，追踪它的HTTP流，找到账号和密码。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png)
 
 ```bash
 name=admina&word=adminb
@@ -55,7 +55,7 @@ name=admina&word=adminb
 
 2、将帐号密码串在一起，使用在线网站对字符串进行32位小写MD5哈希加密，得到flag值。
 [MD5加密解密工具](https://www.sojson.com/md5/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png)
 
 ### flag：
 

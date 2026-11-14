@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192217527.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 保存附件，得到attachment.jpg
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192219080.jpeg)
 
 ---
 
@@ -41,11 +41,11 @@ tags:
 
 1、习惯先在010Editor看一下，然后就发现“ `PK` ”头，隐藏ZIP压缩包。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192220599.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192220599.png)
 
 另存为ZIP压缩包，解压得到abc文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192222407.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192222407.png)
 
 打开它，得到flag。
 
@@ -53,9 +53,9 @@ tags:
 watevr{7h475_4c7u4lly_r34lly_cu73_7h0u6h}
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192223473.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192223473.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192224665.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192224665.png)
 
 ### flag：
 

@@ -20,7 +20,7 @@ tags:
 
 ### 地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png)
 
 ### 目标
 
@@ -34,7 +34,7 @@ tags:
 
 **ISAKMP阶段1策略参数** 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png)
 
 注意：加粗参数为默认值。只有非加粗参数需要明确配置。
 
@@ -59,12 +59,12 @@ tags:
 **步骤1：测试连通性。** 
 
 从PC-A向PC-C发送ping请求。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png)
 
 **步骤2：启用安全技术包。** 
 
 a. 在R1上执行 `show version` 命令查看安全技术包许可证信息。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png)
 
 b. 如果未启用安全技术包，请使用以下命令启用该包。
 
@@ -169,27 +169,27 @@ b. 创建名为VPN-MAP的crypto映射，将所有阶段2参数绑定在一起。
 **步骤1：在出现感兴趣流量之前验证隧道。** 
 
 在R1上执行 `show crypto ipsec sa` 命令。注意封装、加密、解封装和解密的包数量均设置为 **0** 。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png)
 
 **步骤2：创建感兴趣流量。** 
 
 从PC-A向PC-C发送ping请求。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png)
 
 **步骤3：在产生感兴趣流量后验证隧道。** 
 
 在R1上重新执行 `show crypto ipsec sa` 命令。注意包的数量大于0，这表明IPsec VPN隧道正在工作。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png)
 
 **步骤4：创建非感兴趣流量。** 
 
 从PC-A向PC-B发送ping请求。注：从路由器R1向PC-C或R3向PC-A发送ping请求不属于感兴趣流量。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png)
 
 **步骤5：再次验证隧道。** 
 
 在R1上重新执行 `show crypto ipsec sa` 命令。注意包的数量没有改变，这证实了非感兴趣流量并未被加密。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png)
 
 **步骤6：检查结果。** 
 

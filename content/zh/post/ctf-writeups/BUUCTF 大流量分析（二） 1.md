@@ -24,7 +24,7 @@ tags:
 [CTF Wiki](https://ctf-wiki.org/) 
 [BUUCTF：大流量分析（二）](https://blog.csdn.net/mochu7777777/article/details/110494041) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，有很多pcap流量包。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png)
 
 ---
 
@@ -44,15 +44,15 @@ tags:
 
 > 邮件协议：POP、SMTP、IMAP
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png)
 
 追踪TCP流，发现几个邮箱。（拥有同样后缀@t3sec.cc的邮箱，应该是公司员工的邮箱）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png)
 
 往下查看流量，发现一段Base64编码的数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png)
 
 解码后，发现疑似钓鱼邮件，确认黑客使用的邮箱是： `xsser@live.cn` 。
 
@@ -69,7 +69,7 @@ CiAgICDQu9C7tPO80qOhDQoNCg==
     谢谢大家！
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png)
 
 ### flag：
 

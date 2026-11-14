@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ https://github.com/hebtuerror404/CTF_competition_warehouse_2018](https://github.
 ### 密文：
 
 下载附件，得到一个.txt文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191432302.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191432302.png)
 
 ---
 
@@ -50,7 +50,7 @@ lag格式：XXX 明文
 提交：直接提交明文（大写）
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191433585.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191433585.jpeg)
 
 ### flag：
 

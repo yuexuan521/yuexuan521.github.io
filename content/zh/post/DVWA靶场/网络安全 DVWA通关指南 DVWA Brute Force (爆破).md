@@ -18,7 +18,7 @@ tags:
 
 ## DVWA Brute Force (爆破)
 
-![在这里插入图片描述](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg)
+![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg)
 
 
 
@@ -92,7 +92,7 @@ if( isset( $_GET[ 'Login' ] ) ) {
 
 2、使用管理员admin登录，密码尝试123，提示错误
 
- ![image-20240516161258388](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png)
 
 使用Burp Suite抓包，将数据包发给Intruder（测试器），选择Sniper（狙击手）模式，选择password为有效载荷。
 
@@ -104,15 +104,15 @@ if( isset( $_GET[ 'Login' ] ) ) {
 > 1.Pitchfork：多个参数同时进行遍历，只是一个选字典1，一个选字典2（相当于50m赛跑同时出发，只是赛道不同，互不干扰。爆破次数取决于最短的字典长度）
 > 2.Cluster bomb：有点像两个嵌套的for循环，参数i和参数j，i=0，然后j要从0-10全部跑完，然后i=1，然后j再从0-10跑完，一对多，多次遍历
 
- ![image-20240516161616103](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png)
 
- ![image-20240430155738815](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png)
 
 使用字典进行爆破，字典可以自己制作，也可以网上直接下载，等待片刻爆破完成，使用爆破出的密码就能登录。
 
- ![image-20240516173612338](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png)
 
- ![image-20240516173933317](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png)
 
 ### Medium
 
@@ -161,7 +161,7 @@ if( isset( $_GET[ 'Login' ] ) ) {
 
 试了一下，果然很慢。
 
- ![image-20240516174443533](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png)
 
 ### High
 
@@ -216,33 +216,33 @@ generateSessionToken();
 
 2、进入Position模块，选择Attacktype为Pitchfork模式，选择password和user_token为爆破对象
 
- ![image-20240605111002633](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png)
 
 进入Resource Pool模块，
 
- ![image-20240605111117373](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png)
 
 进入Options模块，找到Grep - Extract选项卡，添加一个正则表达式匹配返回的user_token
 
- ![image-20240605111153105](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png)
 
 点击Refetch response，从response中找到user_token并选中
 
- ![image-20240605111312704](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png)
 
- ![image-20240605111501473](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png)
 
 载入字典
 
- ![image-20240605111405891](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png)
 
 第二个参数"token"选择从返回包匹配，填入当前token
 
- ![image-20240605111547847](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png)
 
 爆破成功，登录成功
 
- ![image-20240605110902881](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png)
+ ![](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png)
 
 ### Impossible
 

@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193007997.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193007997.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一张.jpg图片。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193009640.jpeg)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193009640.jpeg)
 
 ---
 
@@ -43,11 +43,11 @@ tags:
 MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193011225.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193011225.png)
 
 2、使用在线网站进行解密，得到flag。
 
-[Base32编码解码](https://www.qqxiuzi.cn/bianma/base.php)  ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193013271.png)
+[Base32编码解码](https://www.qqxiuzi.cn/bianma/base.php)  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193013271.png)
 
 ```bash
 "flag"经过Base32编码后是”MZWGCZY=”。

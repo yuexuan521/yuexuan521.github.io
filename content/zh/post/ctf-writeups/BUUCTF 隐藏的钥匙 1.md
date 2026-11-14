@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193629181.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193629181.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到一张.jpg图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193631074.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193631074.jpeg)
 
 ---
 
@@ -40,13 +40,13 @@ tags:
 
 1、使用StegSolve查看图片，点击File Format选项卡，但我的StegSolve到这一步就卡死了。无奈使用010 Editor查看图片，然后在浏览的过程中，我找到了经过base64编码的flag值。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193632955.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193632955.png)
 
 2、复制括号内的字符，用在线工具进行base64解码，得到flag。
 [BASE64加密解密
 ](https://base64.supfree.net/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193635193.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193635193.png)
 
 ### flag：
 

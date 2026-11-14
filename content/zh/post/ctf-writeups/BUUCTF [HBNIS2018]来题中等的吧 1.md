@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191437871.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191437871.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到一个.png图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191439482.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191439482.png)
 
 ---
 
@@ -43,7 +43,7 @@ tags:
 1、这个图片类似一段音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。
 举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，转换为“.- .-… .–. … .- .-… .- -…”。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191441020.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191441020.png)
 
 ```bash
 第一个红框代表“-”，第二个红框代表“.”，第三个红框代表“ ”（空格）。
@@ -55,9 +55,9 @@ tags:
 [字母大小写转换工具
 ](https://charactercalculator.com/zh-cn/case-converter/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191442583.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191442583.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191443965.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191443965.png)
 
 ### flag：
 

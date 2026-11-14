@@ -26,7 +26,7 @@ tags:
 [BuuCTF难题详解| Misc | [湖南省赛2019]Findme](https://blog.csdn.net/pone2233/article/details/107990787) 
 [[湖南省赛2019]Findme](https://www.cnblogs.com/zhoujiaff/p/17071345.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件，解压得到1.png、2.png、3.png、4.png、5.png。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png)
 
 ---
 
@@ -65,73 +65,73 @@ for i in range(2000):
 > 宽为 227， 高为 453， 新CRC值为 806611， 宽为 e3， 高为 1c5
 
 正确的图片显示如下，还是有问题。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png)
 
 用010Editor打开，发现struct PNG_CHUNK `chunk[2]` 、 `chunk[3]` 缺少 `IDAT` 标识。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png)
 
 添加 `IDAT` 标识，在struct PNG_CHUNK `chunk[2]` 下的 `union CTYPE type` 中的 `uint32 crc` ，添加值 `49444154h` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png)
 
 图片正常显示如下：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png)
 
 使用Stegsolve打开，在 `blue 2` 通道发现二维码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png)
 
 扫码二维码，得到 `ZmxhZ3s0X3` 。
 
 2、第二张图片2.png，用010 Editor打开，在文件尾发现 `7z` 开头的数据，提取出来再处理。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png)
 
 保存为7z文件后，无法正常解压。将文件数据中全部的 `7z` 替换为 `PK` ，保存为zip文件，可以正常解压。
 
 > 7z文件头： `37 7A BC AF 27 1C` 
 > zip文件头： `50 4B 03 04` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png)
 
 解压得到1000个文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png)
 
 将文件按照文件大小，从大到小排列，发现618.txt
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png)
 
 618.txt内容如下：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png)
 
 得到 `1RVcmVfc` 
 
 3、第三张图片3.png，用010 Editor打开，在struct PNG_CHUNK chunk[0、1、2、3、4、5、6、7]下的 `uint32 crc` ，全部隐藏了十六进制数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png)
 
 16进制转换文本： [https://www.sojson.com/hexadecimal.html](https://www.sojson.com/hexadecimal.html) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png)
 
 提取出来转换为ASCII字符，得到 `3RlZ30=` 
 
 4、第四张图片4.png，使用Kali中的exiftool查看4.png的EXIF信息。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png)
 
 在Artist下发现another part： `cExlX1BsY` 
 
 5、第五张图片5.png，用010 Editor打开，在最后发现 a gift。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png)
 
 得到 `Yzcllfc0lN` 
 
@@ -143,7 +143,7 @@ ZmxhZ3s0X3Yzcllfc0lNcExlX1BsY1RVcmVfc3RlZ30=
 
 解码得到flag： `flag{4_v3rY_sIMpLe_PlcTUre_steg}` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png)
 
 ### flag：
 

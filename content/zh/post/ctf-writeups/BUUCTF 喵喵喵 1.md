@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192737841.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一张.png图片。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192739417.png)
 
 ---
 
@@ -40,19 +40,19 @@ tags:
 
 1、使用StegSolve工具，在RGB的0通道发现异常，猜测存在LSB隐写。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192741960.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192743446.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192744838.png)
 
 打开Analyse（分析）选项卡，使用DataExtract（数据提取）选项，进行分析。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192746266.png)
 
 由PNG文件头可以看出隐写内容为PNG文件，按save Bin键保存为flag.png文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192748185.png)
 
 2、文件无法查看，使用010Editor打开flag.png文件，可以看到PNG文件头有多余的字符。
 
@@ -60,19 +60,19 @@ tags:
 PNG (png) 　　 文件头：89 50 4E 47
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192749567.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192751640.png)
 
 将多余的字符删除，保存文件查看，得到半张二维码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192753933.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192755739.png)
 
 3、使用010 Editor打开，提示CRC校验错误，认为图片被修改了宽高。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png)
 
 通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -94,13 +94,13 @@ for i in range(2000):
 
 得到正确的宽高值。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192759001.png)
 
 修改图片中的宽高参数，然后保存图片查看。（从左到右依次是宽度、高度、CRC校验参数）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192800383.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192802200.png)
 
 4、使用QR research扫码，得到一个网址，下载一个压缩包flag.rar。
 
@@ -108,18 +108,18 @@ for i in range(2000):
 https://pan.baidu.com/s/1pLT2J4f
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192803318.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192804972.png)
 
 解压得到flag.txt文件，打开如下。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192806317.png)
 
 5、猜测存在NTFS文件流隐写，使用工具NtfsStreamsEditor或AlternateStreamView扫描文件所在的文件夹，发现隐藏文件。（这里使用NtfsStreamsEditor演示 ）
 [AlternateStreamView(跳转页面后，向下滑动，下载对应的32或64位软件)](https://www.nirsoft.net/utils/alternate_data_streams.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192807749.png)
 
 导出flag.pyc文件（pyc文件是由Python文件经过编译后所生成的文件），使用在线网站进行pyc文件的反编译。
 [据说这个网站可以，但我没有成功](https://tool.lu/pyc/) 
@@ -228,7 +228,7 @@ print(flag)
 
 运行解密脚本，得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192809820.png)
 
 ### flag：
 

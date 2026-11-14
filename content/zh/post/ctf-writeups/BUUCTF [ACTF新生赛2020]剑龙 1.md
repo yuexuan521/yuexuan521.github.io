@@ -26,7 +26,7 @@ tags:
 [NewStar CTF](https://ns.openctf.net/learn/) 
 [BuuCTF难题详解| Misc | [ACTF新生赛2020]剑龙](https://blog.csdn.net/pone2233/article/details/108601733) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png)
 
 ---
 
@@ -43,7 +43,7 @@ tags:
 
 1、先看一下hint.zip压缩包，解压得到
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png)
 
 pwd.txt内容如下：
 
@@ -53,7 +53,7 @@ pwd.txt内容如下：
 
 [在线工具：https://toolwa.com/aaencode/](https://toolwa.com/aaencode/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png)
 
 2、剩下一张图片，再加上一个密码，确认使用steghide工具加密。
 
@@ -65,13 +65,13 @@ steghide下载地址： [https://sourceforge.net/projects/steghide/](https://sou
 steghide extract -sf hh.jpg -p welcom3!
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png)
 
 在hh.jpg的属性找到密钥： `@#$%^&%%$)` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png)
 
 解得如下信息：
 
@@ -80,23 +80,23 @@ think about stegosaurus
 ```
 
 DES加解密： [https://www.sojson.com/encrypt_des.html](https://www.sojson.com/encrypt_des.html) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png)
 
 3、搜索发现对应题目“剑龙”，但其实指的是stegosaurus pyc隐写工具。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png)
 
 O_O文件的确是一个pyc文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png)
 
 stegosaurus下载地址： [https://github.com/AngelKitty/stegosaurus](https://github.com/AngelKitty/stegosaurus) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png)
 
 运行脚本加上 `-x` 参数，得到flag： `flag{3teg0Sauru3_!1}` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png)
 
 ### flag：
 

@@ -20,7 +20,7 @@ tags:
 
 ### 地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png)
 
 ### 目标：
 
@@ -111,7 +111,7 @@ a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。
 
 b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png)
 
 **步骤2：将R1、R2和R3配置为NTP客户端。** 
 

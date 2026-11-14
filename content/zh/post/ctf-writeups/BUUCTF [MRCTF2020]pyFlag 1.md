@@ -25,7 +25,7 @@ tags:
 [CTF常见编码及加解密（超全）](https://www.cnblogs.com/ruoli-s/p/14206145.html#%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%BC%96%E7%A0%81) 
 [MRCTF2020 pyFlag](https://www.cnblogs.com/WXjzc/p/16096233.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191537295.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191537295.png)
 
 ### 题目描述：
 
@@ -36,11 +36,11 @@ tags:
 
 下载附件，解压得到三张图片：Furan.jpg、Miku.jpg、Setsuna.jpg。（出题人真是个二次元(╯°□°）╯︵ ┻━┻）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191538874.jpeg)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191538874.jpeg)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191540913.jpeg)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191540913.jpeg)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191542929.jpeg)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191542929.jpeg)
 
 ---
 
@@ -48,21 +48,21 @@ tags:
 
 1、先看第一张图片Furan.jpg，用010Editor找到文件末尾的ZIP压缩包数据，根据hint这只是第二部分的数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191544741.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191544741.png)
 
 以此类推，在另外两张图片找到剩下的两部分数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191547025.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191547025.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191549099.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191549099.png)
 
 拼接在一起保存为ZIP文件，解压需要密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191550968.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191550968.png)
 
 2、回去找密码，找了一圈什么都没有。用Ziperello尝试暴力破解，得到密码 `1234` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191552293.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191552293.png)
 
 解压压缩包，得到flag.txt和.hint.txt，内容分别如下：
 
@@ -93,7 +93,7 @@ G&eOhGcq(ZG(t2*H8M3dG&wXiGcq(ZG&wXyG(j~tG&eOdGcq+aG(t5oG(j~qG&eIeGcq+aG)6Q<G(j~r
 475532444B4E525549453244494E4A57475132544B514A54473432544F4E4A5547515A44474D4A5648415A54414E4257473434544B514A5647595A54514D5A5147553444474D5A5547453355434E5254475A42444B514A57494D3254534D5A5447555A444D4E5256494532444F4E4A57475A41544952425547343254454E534447595A544D524A5447415A55493D3D3D
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191554548.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191554548.png)
 
 接下来进行Base16解密，得到
 
@@ -103,7 +103,7 @@ G&eOhGcq(ZG(t2*H8M3dG&wXiGcq(ZG&wXyG(j~tG&eOdGcq+aG(t5oG(j~qG&eIeGcq+aG)6Q<G(j~r
 GU2DKNRUIE2DINJWGQ2TKQJTG42TONJUGQZDGMJVHAZTANBWG44TKQJVGYZTQMZQGU4DGMZUGE3UCNRTGZBDKQJWIM2TSMZTGUZDMNRVIE2DONJWGZATIRBUG42TENSDGYZTMRJTGAZUI===
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191556564.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191556564.png)
 
 典型的Base32密文特征，进行Base32解密，得到
 
@@ -113,7 +113,7 @@ GU2DKNRUIE2DINJWGQ2TKQJTG42TONJUGQZDGMJVHAZTANBWG44TKQJVGYZTQMZQGU4DGMZUGE3UCNRT
 54564A4456455A3757544231583046795A5638305833417A636B5A6C593352665A47566A4D47526C636E303D  
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191558565.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191558565.png)
 
 又是Base16，解密得到
 
@@ -121,13 +121,13 @@ GU2DKNRUIE2DINJWGQ2TKQJTG42TONJUGQZDGMJVHAZTANBWG44TKQJVGYZTQMZQGU4DGMZUGE3UCNRT
 TVJDVEZ7WTB1X0FyZV80X3AzckZlY3RfZGVjMGRlcn0=
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191600106.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191600106.png)
 
 最后是Base64解密，得到flag： `MRCTF{Y0u_Are_4_p3rFect_dec0der}` 。
 
 [BASE64加密解密](https://base64.supfree.net/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191601669.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191601669.png)
 
 官方WriteUP脚本:
 

@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191411447.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191411447.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，得到一个.txt文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191413497.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191413497.png)
 
 ---
 
@@ -40,7 +40,7 @@ tags:
 
 1、用浏览器搜索“caesar”，发现是“凯撒”的意思，再看题目描述，感觉是凯撒加密。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191414894.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191414894.png)
 
 2、使用Python脚本或者工具，对题目描述进行解密，下面提供一个Python脚本。
 
@@ -75,7 +75,7 @@ for i in range(26):
 
 运行脚本，找到有意义的文本，就是flag值。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191416753.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191416753.png)
 
 ### flag：
 

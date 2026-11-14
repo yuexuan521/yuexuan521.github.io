@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205031623.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205031623.png)
 
 ### 题目描述：
 
@@ -41,7 +41,7 @@ tags:
 
 1、结合题目，直接给出加密类型为变异凯撒，只是我们不知道加密规则是什么。但是结合凯撒加密的加密原理（文章末尾有凯撒加密原理），我们根据给出的加密密文和格式，找出它们的ASCII码值。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205032995.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205032995.jpeg)
 
 ```python
 ASCII码值
@@ -80,7 +80,7 @@ for i in txt:
 
 4、执行代码，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205034500.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205034500.png)
 
 ### flag：
 

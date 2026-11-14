@@ -15,7 +15,7 @@ tags:
 
 ## DVWAStored Cross Site Scripting (存储型 XSS)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg)
 
 
 
@@ -81,15 +81,15 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 <script>alert(/XSS/)</script>
 ```
 
- ![image-20240425131132813](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png)
 
- ![image-20240425131249914](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png)
 
 进入Home标签页，再回到XSS（Stored）页面，仍然可以成功，证明存储型XSS攻击成功
 
- ![image-20240425131430407](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png)
 
- ![image-20240425131343029](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png)
 
 （如果需要删除数据库中存在的XSS代码，进入dvwa数据库中guestbook表，选择性删除数据。）
 
@@ -157,7 +157,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 //双写绕过
 ```
 
- ![image-20240425134449055](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png)
 
 ### High
 
@@ -198,7 +198,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 <svg onload=alert(/XSS/)>
 ```
 
- ![image-20240425135425515](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png)
 
 ### Impossible
 

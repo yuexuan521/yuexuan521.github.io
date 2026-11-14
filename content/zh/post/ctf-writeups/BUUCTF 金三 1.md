@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png)
 
 ### 题目描述：
 
@@ -39,29 +39,29 @@ tags:
 
 在StegSolve中打开GIF图片
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png)
 
 打开逐帧查看
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png)
 
 在这里可以逐帧查看图片（理论上可以在这里看到逐帧的图片，但我这显示不出来）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png)
 
 3、找到三张带有flag的图片，拼在一起得到flag。(中间的那张图片“he11o”，中间是两个数字1)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp)
 
 #### 方法二：
 
 1、使用Photoshop打开GIF图片，也可以逐帧查看图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png)
 
 ### flag：
 

@@ -24,7 +24,7 @@ tags:
 [CTF Wiki](https://ctf-wiki.org/) 
 [buuctf-misc-key不在这里1](https://blog.csdn.net/qq_29977871/article/details/126004017) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，解压得到1564386056.png
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png)
 
 ---
 
@@ -46,11 +46,11 @@ tags:
 https://cn.bing.com/search?q=key%E4%B8%8D%E5%9C%A8%E8%BF%99%E9%87%8C&m=10210897103375566531005253102975053545155505050521025256555254995410298561015151985150375568&qs=n&form=QBRE&sp=-1&sc=0-38&sk=&cvid=2CE15329C18147CBA4C1CA97C8E1BB8C
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png)
 
 访问链接，没有找到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190000841.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190000841.png)
 
 2、注意到URL中，有一长串十进制数字： `10210897103375566531005253102975053545155505050521025256555254995410298561015151985150375568` ，将其转为ASCII
 
@@ -85,12 +85,12 @@ print(decoded_text)
 flag%7B5d45fa256372224f48746c6fb8e33b32%7D
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190002634.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190002634.png)
 
 3、再进行一次URL解码，得到flag。
 
 [在线urlencode编码、urldecode解码、url编码解码、百分号编码](http://web.chacuo.net/charseturlencode) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190003935.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190003935.png)
 
 ### flag：
 

@@ -26,7 +26,7 @@ tags:
 [NewStar CTF](https://ns.openctf.net/learn/) 
 [BUU-MISC-[UTCTF2020]basic-forensics](https://blog.csdn.net/qq_24033605/article/details/117336177) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件，是一张打不开的图片
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png)
 
 ---
 
@@ -44,11 +44,11 @@ tags:
 
 1、使用010Editor打开图片，发现似乎是一本书的数据
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png)
 
 直接搜索关键词“flag”，就找到flag了
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png)
 
 ### flag：
 

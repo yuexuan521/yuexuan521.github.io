@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png)
 
 ### 题目描述：
 
@@ -32,21 +32,21 @@ tags:
 
 下载附件，解压后得到一个.pcap文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png)
 
 ### 解题思路：
 
 1、双击文件，在wireshark打开。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png)
 
 2、分析题目，需要找到管理员登陆网站的流量，并从中找到登录密码。使用“http.request.method==POST”语句过滤流量包，得到一条登录流量。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png)
 
 3、分析这条流量，在数据包详细信息中找到登陆密码“password”，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png)
 
 ### flag：
 

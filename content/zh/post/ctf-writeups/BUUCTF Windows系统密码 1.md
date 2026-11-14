@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png)
 
 ### 题目描述：
 
@@ -38,12 +38,12 @@ SUPPORT_388945a0:1001:aad3b435b51404eeaad3b435b51404ee:bef14eee40dffbc345eeb3f58
 
 1、统计密文长度，为32位，且符合md5加密特征，初步判断为md5加密。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png)
 
 2、对密文依次进行解密，排除不正确的结果。
 **在线解密网站：** [md5在线解密](https://www.cmd5.com/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204926232.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204926232.png)
 
 3、最终得到结果
 

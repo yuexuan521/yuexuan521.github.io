@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png)
 
 ### 题目描述：
 
@@ -39,10 +39,10 @@ tags:
 
 > 注意：一般数据内容小于5Bytes(<=4Bytes)即可尝试通过爆破CRC32穷举数据内容
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png)
 
 2、使用CRC32爆破脚本尝试爆破第一个压缩包out0.zip，爆破成功得到文件内容 `z5Bz` ，根据题目提示，这是base64编码文件的一部分，需要将所有out*.zip压缩包的文件拼接才能拿到完整的文件
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png)
 
 编写Python脚本进行自动化爆破，借鉴其他人的脚本
 
@@ -84,7 +84,7 @@ f.close()
 z5BzAAANAAAAAAAAAKo+egCAIwBJAAAAVAAAAAKGNKv+a2MdSR0zAwABAAAAQ01UCRUUy91BT5UkSNPoj5hFEVFBRvefHSBCfG0ruGnKnygsMyj8SBaZHxsYHY84LEZ24cXtZ01y3k1K1YJ0vpK9HwqUzb6u9z8igEr3dCCQLQAdAAAAHQAAAAJi0efVT2MdSR0wCAAgAAAAZmxhZy50eHQAsDRpZmZpeCB0aGUgZmlsZSBhbmQgZ2V0IHRoZSBmbGFnxD17AEAHAA==
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png)
 
 3、使用在线工具进行解密，看到解出的明文中有如下提示信息：
 [Base64 在线解码、编码](https://the-x.cn/encodings/Base64.aspx) 
@@ -94,10 +94,10 @@ flag.txt
 fix the file and get the flag
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png)
 
 提示我们修复这个文件，可以拿到flag。文件尾与RAR文件尾一致（ `C4 3D 7B 00 40 07 00` ），可以确定为rar压缩包，但缺少文件头，需要补上缺失的文件头。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png)
 
 ```bash
 52 61 72 21 1A 07 00   # RAR文件头
@@ -105,10 +105,10 @@ C4 3D 7B 00 40 07 00   # RAR文件尾
 ```
 
 用010 Editor打开，补上文件头，另存为.rar文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png)
 
 最后在rar压缩包的注释中找到flag。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png)
 
 ### flag：
 

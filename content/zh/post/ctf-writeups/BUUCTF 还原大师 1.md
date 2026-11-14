@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205127717.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205127717.png)
 
 ### 题目描述：
 
@@ -58,7 +58,7 @@ for i in range(26):
 
 3、执行代码，得到正确的MD5码作为flag提交。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205129653.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205129653.png)
 
 ### flag：
 

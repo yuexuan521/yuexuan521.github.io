@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192228808.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192228808.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，得到一个.jpg图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192230913.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192230913.jpeg)
 
 ---
 
@@ -42,7 +42,7 @@ tags:
 
 1、得到一张图片，先查看它的属性。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192232727.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192232727.png)
 
 ```bash
 ⡇⡓⡄⡖⠂⠀⠂⠀⡋⡉⠔⠀⠔⡅⡯⡖⠔⠁⠔⡞⠔⡔⠔⡯⡽⠔⡕⠔⡕⠔⡕⠔⡕⠔⡕⡍=
@@ -51,7 +51,7 @@ tags:
 2、在备注发现一串字符，似乎是盲文，使用在线网站进行解密，得到flag。
 [盲文加解密在线网站](https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=mangwen) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192234429.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192234429.png)
 
 ### flag：
 

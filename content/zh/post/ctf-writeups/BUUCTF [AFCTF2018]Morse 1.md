@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842802.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842802.png)
 
 ### 题目描述：
 
@@ -42,20 +42,20 @@ tags:
 1、观察密文，我想大家不陌生，看一眼题目，直接确定摩斯密码。
 [摩斯密码加解密](https://rumkin.com/tools/cipher/morse-code/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842803.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842803.png)
 
 2、得到一次明显不是flag的东东，去除一下空格，看下字符串长度。
 [文本去除工具](http://www.esjson.com/delSpace.html) 
 [字符串长度计算](https://www.toolbaba.cn/d/dev_str_count) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842804.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842804.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842805.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842805.png)
 
 3、看字符长度，显然不是md5，尝试base32、64后，仍无法解出结果。最后，是通过Hex编码，得到明文。
 [Hex编码/解码](https://www.107000.com/T-Hex) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842806.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842806.png)
 
 ---
 

@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205001342.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205001342.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 key值：CTF{XXX}
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205002953.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205002953.jpeg)
 
 ---
 
@@ -41,7 +41,7 @@ key值：CTF{XXX}
 
 1、理解题目，出现“辛卯，癸巳，丙戌，辛未，庚辰，癸酉，己卯，癸巳。”这样的传统年份，同时，题目中出现“+甲子”的信息（古代人认为六十年为一个甲子），“+甲子”意味着+60，猜测与ASCII码有关。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205004510.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205004510.jpeg)
 
 古典密码学主要有两大基本方法：
 
@@ -51,12 +51,12 @@ key值：CTF{XXX}
 
 2、将“辛卯，癸巳，丙戌，辛未，庚辰，癸酉，己卯，癸巳。”与1、2、3、4…进行对照，得到“28，30，23，8，17，10，16，30，8”一串数字，加上一甲子，给数字+60，得到“88，90，83，68，77，70，76，90”，对照ASCII码表，得到“XZSDMFLZ”的字符串。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205006290.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205006290.png)
 
 3、接下来进行古典加密，对得到的字符串进行栏栅加密，分别进行2和4的解密。
 [栏栅密码加密解密](https://www.qqxiuzi.cn/bianma/zhalanmima.php) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205008126.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205008126.png)
 
 4、得到密文“XMZFSLDZ”，进行凯撒加密，执行下列Python代码（进行小写转换，便于识别有效结果）。
 
@@ -85,7 +85,7 @@ for i in range(26):
     print("%d %s"% (i, plaintext))
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205009726.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205009726.png)
 
 5、偏移量为5的字符串“shuangyu”，为有效结果，还原大写字母，作为结果。
 

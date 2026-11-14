@@ -25,7 +25,7 @@ tags:
 [Hello CTF](https://hello-ctf.com/HC_Start/) 
 [NewStar CTF](https://ns.openctf.net/learn/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件，得到attachment.zip文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png)
 
 ---
 
@@ -44,15 +44,15 @@ tags:
 
 1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png)
 
 用Bandizip打开attachment.zip文件，看到压缩包备注，密码均为四位数字
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png)
 
 我开始使用Ziperello爆破0573.zip，得到密码0573。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png)
 
 使用密码向下解压压缩包，得到0114.zip。至此，我明白每个压缩包的解压密码就是它的文件名，并且向下可能有1000层压缩。（从题目千层套路推测出）
 
@@ -103,7 +103,7 @@ extract_zip_with_filename_as_password(zip_path)
 
 最后得到qr.txt文件，打开如下所示
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png)
 
 3、猜测为一系列的RGB颜色值，比如 (255, 255, 255)，这表示白色。编写脚本，绘制出这些数据所要表现的图像。脚本如下：
 
@@ -151,9 +151,9 @@ if __name__ == "__main__":
 
 得到一个二维码图像，使用QR Research扫码，得到flag
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png)
 
 ### flag：
 

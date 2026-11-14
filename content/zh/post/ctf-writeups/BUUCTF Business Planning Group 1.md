@@ -27,7 +27,7 @@ tags:
 [BUUCTF：Business Planning Group](https://blog.csdn.net/mochu7777777/article/details/109824966) 
 [buuctf-misc-Business Planning Group1](https://blog.csdn.net/qq_29977871/article/details/126110785) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181742396.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181742396.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到challenge.png
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181743961.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181743961.png)
 
 ---
 
@@ -45,19 +45,19 @@ tags:
 
 > BPG（Better Portable Graphics，更好的可移植图形）是一种新的图像格式。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181746550.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181746550.png)
 
 2、将数据另存为1.bpg文件，下载能打开BPG文件的工具。
 
 下载地址： [https://bellard.org/bpg/](https://bellard.org/bpg/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181748762.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181748762.png)
 
 在CMD中，使用bpgview.exe打开1.bpg图片，得到如下图：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181750651.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181750651.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181752299.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181752299.png)
 
 3、提取图片中的字符串，应该是Base64编码。
 

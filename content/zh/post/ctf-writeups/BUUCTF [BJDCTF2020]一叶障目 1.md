@@ -21,7 +21,7 @@ tags:
 
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190653815.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190653815.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 1、在010Editor中打开，提示CRC校验错误，结合题目提示“一叶障目”，认为图片被修改了宽高。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190657303.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190657303.png)
 
 2、通过python脚本爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -60,15 +60,15 @@ for i in range(2000):
 
 得到正确的宽高值。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190659146.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190659146.png)
 
 3、修改图片中的宽高参数，然后保存图片。（红框左边为宽度，右边为高度）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190700528.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190700528.png)
 
 打开图片，找到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190702273.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190702273.png)
 
 ### flag：
 

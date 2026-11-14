@@ -25,7 +25,7 @@ tags:
 [BUUCTF：派大星的烦恼](https://blog.csdn.net/mochu7777777/article/details/109678243) 
 [buuctf 派大星的烦恼](https://www.cnblogs.com/WXjzc/p/16095984.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到派大星的烦恼.bmp
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp)
 
 ---
 
@@ -43,7 +43,7 @@ tags:
 
 1、用010Editor打开bmp文件，搜索 `0x22、0x44` 两种伤疤细胞。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png)
 
 只有两种格式，可以尝试转换为二进制数据。
 
@@ -60,7 +60,7 @@ tags:
 将二进制数据转换为ASCII文字，转换出一堆乱码，尝试逆序反转二进制数据再转ASCII文字。
 [ASCII，十六进制，二进制，十进制，Base64转换器](https://www.rapidtables.org/zh-CN/convert/number/ascii-hex-bin-dec-converter.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png)
 
 逆序反转数据：
 [文本逆序翻转工具
@@ -72,7 +72,7 @@ tags:
 
 成功转换为ASCII： `23834ec4b5e6b6ef5db48145a0596046` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png)
 
 3、用得到的ASCII文本提交flag(答案为32位的一串字符串) ，失败了。再将得到的ASCII文本进行逆序反转，得到flag： `6406950a54184bd5fe6b6e5b4ce43832` 。
 

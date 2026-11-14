@@ -21,7 +21,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192713854.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192713854.png)
 
 ### 题目描述：
 
@@ -29,7 +29,7 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192715500.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192715500.jpeg)
 
 ---
 
@@ -37,7 +37,7 @@ tags:
 
 1、这道题我尝试了很多方法，知道看了别人的wp才知道flag在我忽略的地方。将图片在010 Editor中打开，从上到下浏览一遍，发现最后的数据有些异常，由“0”和“1”组成。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192716926.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192716926.png)
 
 ```bash
 01101011011011110110010101101011011010100011001101110011
@@ -48,7 +48,7 @@ tags:
 2、将这串字符分成8个字符一组，先转成十进制数字，再转成ASCII码，就可以得到flag值。这里使用工具直接完成。（我感觉这个flag没什么规律）
 [转换工具](https://www.rapidtables.org/zh-CN/convert/number/ascii-hex-bin-dec-converter.html) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192718925.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192718925.png)
 
 ### flag：
 

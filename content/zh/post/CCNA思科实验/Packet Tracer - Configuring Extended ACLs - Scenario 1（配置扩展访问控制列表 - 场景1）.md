@@ -19,7 +19,7 @@ tags:
 
 ### 地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png)
 
 ### 目标
 
@@ -130,7 +130,7 @@ k. 默认情况下，所有其他流量都将被拒绝。
 **步骤 3：验证ACL实现** 
 
 a. 从PC1 ping Server。如果无法成功ping通，请先验证IP地址是否正确。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png)
 
 b. 从PC1 FTP至Server。用户名和密码均为cisco。
 
@@ -140,11 +140,11 @@ c. 退出Server上的FTP服务。
 
 > ftp> quit
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png)
 
 d. 从PC1 ping PC2。由于未明确允许此流量，目标主机应无法到达。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png)
 
 ### 第二部分：配置、应用并验证一个命名扩展访问控制列表
 
@@ -193,11 +193,11 @@ g. 默认情况下，所有其他流量都将被拒绝。退出扩展命名ACL�
 **步骤 3：验证ACL实现** 
 
 a. 从PC2 ping Server。如果ping成功，则继续进行下一步；如果不成功，请先验证IP地址是否正确。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png)
 
 b. 从PC2通过FTP连接到Server。连接应该失败。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png)
 
 c. 在PC2上打开网页浏览器，将Server的IP地址作为URL输入。连接应该成功建立。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png)
 

@@ -21,7 +21,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 下载附件，解压得到一个.wav音频文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png)
 
 ---
 
@@ -39,13 +39,13 @@ tags:
 
 1、得到一个音频文件，放到Audacity看看。看到有两条音轨，放大上面的那条音轨，看到这一串音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png)
 
 2、举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，转换为“… -… -.-. ----. …— … -… …- ----. -.-. -… ----- .---- —… —… …-. … …— . -… .---- --… -… --… ----- ----. …— ----. .---- ----. .---- -.-. ”。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png)
 
 ```bash
 第一个红框代表“-.”，第二个红框代表“ ”（空格）。
@@ -55,7 +55,7 @@ tags:
 3、使用在线网站，将莫尔斯电码转换为明文字符，得到flag值。
 [在线网站](https://rumkin.com/tools/cipher/morse-code/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png)
 
 ### flag：
 

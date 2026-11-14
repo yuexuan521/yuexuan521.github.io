@@ -25,7 +25,7 @@ tags:
 [BUUCTF：[WUSTCTF2020]spaceclub](https://blog.csdn.net/mochu7777777/article/details/107532402) 
 [[WUSTCTF2020]spaceclub](https://www.cnblogs.com/fishjumpriver/p/18119169) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 
 保存附件，得到attachment.txt
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png)
 
 ---
 
@@ -45,15 +45,15 @@ tags:
 
 1、打开文件，什么都没有？欧~~，有猫腻。(╯°□°）╯︵ ┻━┻
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png)
 
 放到SublimeText中，看得更清楚。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png)
 
 2、接下来就简单了，长的一行对应“ `0` ”，短的一行对应“ `1` ”，得到二进制数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png)
 
 合并数据，将二进制数据转换为ASCII字符串，得到flag： `wctf2020{h3re_1s_y0ur_fl@g_s1x_s1x_s1x}` 。
 
@@ -65,7 +65,7 @@ tags:
 
 [2进制到ASCII字符串在线转换工具](https://coding.tools/cn/binary-to-text) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png)
 
 贴一个网上找的脚本：
 

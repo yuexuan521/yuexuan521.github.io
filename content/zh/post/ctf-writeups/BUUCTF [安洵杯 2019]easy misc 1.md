@@ -27,7 +27,7 @@ tags:
 [安洵杯 2019/BUUCTF-easy misc](https://shawroot.hatenablog.com/entry/2020/01/02/%E5%AE%89%E6%B4%B5%E6%9D%AF_2019/BUUCTF-easy_misc) 
 [BUUCTF：[安洵杯 2019]easy misc](https://blog.csdn.net/mochu7777777/article/details/109669638) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192403948.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192403948.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 
 下载附件，解压得到
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192406059.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192406059.png)
 
 ---
 
@@ -45,7 +45,7 @@ tags:
 
 1、使用Bandzip打开decode.zip文件，得到关于密码的提示。（当时我真没想到这跟压缩包密码有关系）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192407449.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192407449.png)
 
 #### 计算步骤
 
@@ -95,7 +95,7 @@ $$
 2019456NNULLULL,
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192409464.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192409464.png)
 
 解压decode.zip文件，得到如下内容
 
@@ -130,17 +130,17 @@ z = AE7
 
 2、使用binwalk查看小姐姐.png，发现还有一张图片。（我的binwalk为什么会出问题，然后一不小心恢复快照，只能再装一个Kali了）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192411061.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192411061.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192413820.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192413820.png)
 
 用foremost提取图片，结果是两张一样的图片。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192415657.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192415657.png)
 
 猜测为盲水印，使用BlindWaterMark工具，解密得到如下内容：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192417778.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192417778.png)
 
 3、对11.txt进行字频统计，字符按照出现频率从大到小排列如下：
 
@@ -194,7 +194,7 @@ print(result)
 
 根据先前得到的decode.txt中的映射规则，得到字符串 `QW8obWdIWT9pMkF-sd5REtRQSQQWjVfXiE/WSFTajBtcw=` ，在这一步出现与官方WP不同的地方。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192419825.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192419825.png)
 
 最后没有问题会得到flag： `flag{have_a_good_day1}` 
 

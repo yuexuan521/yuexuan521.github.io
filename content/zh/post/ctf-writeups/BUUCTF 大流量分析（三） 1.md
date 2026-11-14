@@ -24,7 +24,7 @@ tags:
 [CTF Wiki](https://ctf-wiki.org/) 
 [BUUCTF | 大流量分析 （一）（二）（三）](https://www.cnblogs.com/yunqian2017/p/14298416.html) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，有很多pcap流量包。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png)
 
 ---
 
@@ -50,11 +50,11 @@ tcp contains "phpinfo()"
 
 最终，在该流量包 `数据采集D_eth0_NS_20160809_172831.pcap` 发现 `phpinfo()` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png)
 
 执行 `phpinfo()` 的文件是admin.bak.php，黑客预留的后门的文件名是 `admin.bak.php` 。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png)
 
 ```python
 GET /admin.bak.php?a=assert&b=phpinfo() HTTP/1.1\r\n

@@ -21,7 +21,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190353358.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190353358.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 下载附件，解压得到一个网站文件夹。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190355298.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190355298.png)
 
 ---
 
@@ -40,15 +40,15 @@ tags:
 1、使用工具扫描附件所给的文件夹，可以使用D盾、火绒安全之类的工具，这里我使用D盾。
 打开D盾，点击自定义扫描，选择附件给的网站文件夹，点击确定。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190358121.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190358121.png)
 
 检查出两个文件，我们来挨个查看。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190400155.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190400155.png)
 
 2、第一个文件没有flag，但我们在第二个文件中找到了Webshell中的密码，密码也符合md5的格式，这个就是flag值。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190402659.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190402659.png)
 
 ### flag：
 

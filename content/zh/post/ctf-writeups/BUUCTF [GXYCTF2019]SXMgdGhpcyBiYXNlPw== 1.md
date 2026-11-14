@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191209590.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191209590.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到flag.txt文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191211420.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191211420.png)
 
 ---
 
@@ -108,7 +108,7 @@ Sidhdm91ZSBqZSBtYXVkaXMsCt==
 VG91cyBjZXV4IHF1aSBzJ2FpbWVudA==
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191213500.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191213500.png)
 
 2、经过base64编码的数据很多，感觉不是普通的base64解密，尝试base64隐写，得到flag。
 使用如下Python脚本进行解密。
@@ -134,7 +134,7 @@ print(str)
 
 3、运行Python脚本，得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191215308.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191215308.png)
 
 ### flag：
 

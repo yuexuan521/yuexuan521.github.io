@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205120303.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205120303.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 解压是一张图片
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205121979.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205121979.jpeg)
 
 ---
 
@@ -42,7 +42,7 @@ tags:
 1、看图，观察密文特征，结合题目，判断为猪圈加密。直接使用在线工具。
 [猪圈密码解密工具](http://www.metools.info/code/c90.html) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205123446.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205123446.png)
 
 2、直接对应密文输入，解出密文，得到flag。
 

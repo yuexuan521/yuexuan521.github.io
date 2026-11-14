@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png)
 
 ### 题目描述：
 
@@ -40,7 +40,7 @@ U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
 1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
 [Rabbit在线工具](http://www.jsons.cn/rabbitencrypt/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png)
 
 2、得到flag。
 

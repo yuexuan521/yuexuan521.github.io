@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png)
 
 ### 题目描述：
 
@@ -45,7 +45,7 @@ Dncnoqqfliqrpgeklwmppu
 
 3、要求输入密钥，密钥提示是“公平的玩吧”一句，所指出的“playfair”密码，密钥为“playfair”。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204834115.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204834115.png)
 
 4、输入密文、密钥，得到明文为“itisnotaproblemhavefun”。
 

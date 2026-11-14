@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190208568.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190208568.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到一个rar压缩包。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190210601.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190210601.png)
 
 ---
 
@@ -44,15 +44,15 @@ tags:
 
 2、下载软件完成后，打开软件。在ARCHPR中打开压缩包，选择字符范围和密码长度，点击开始破解。（根据题目得知是四位纯数字密码）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190211965.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190211965.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190213522.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190213522.png)
 
 3、破解出的密码是8795，使用这个密码解压rar压缩包，得到一个flag.txt文件，打开得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190214825.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190214825.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190216200.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190216200.png)
 
 **flag：** 
 

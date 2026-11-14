@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204917942.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204917942.png)
 
 ### 题目描述：
 
@@ -40,7 +40,7 @@ tags:
 1、观察密文，尝试Base85、Base91等编码，均失败。
 2、结合题目，联想到UUencode编码，尝试后成功，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204919304.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204919304.png)
 
 [UUencode加解密](http://web.chacuo.net/charsetuuencode) 
 

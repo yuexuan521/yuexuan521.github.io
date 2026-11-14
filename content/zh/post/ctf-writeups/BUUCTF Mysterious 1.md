@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件，得到一个.exe文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png)
 
 ---
 
@@ -40,11 +40,11 @@ tags:
 
 1、双击执行文件，出现如下界面，随便输入一些内容，没有回显。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png)
 
 根据题目描述，本题应该与逆向存在关系，用记事本打开.exe文件，查看这个exe文件是32位还是64位程序。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png)
 
 > 第二行不远处有PE两个字母，再后面两个空格后第三个字符就是标记了，如果是字母L的话，就是32位应用程序，如果是d?就表示是64位应用程序。
 
@@ -52,19 +52,19 @@ tags:
 
 2、使用IDA打开exe文件，（在这一步之前可以使用查壳工具进行查壳），使用快捷键shift+F12查看字符串，寻找有用的信息。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png)
 
 双击 `well done` ，找到与flag相关的字符串，定位关键函数。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png)
 
 使用快捷键ctrl+x（交叉引用）查看那段函数调用了该字符串，点击“OK”，进入该段函数，查看相关汇编代码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png)
 
 使用快捷键F5查看该汇编代码的伪C代码。( “well done!” )
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png)
 
 ```c
 int __stdcall sub_401090(HWND hWnd, int a2, int a3, int a4)
@@ -133,13 +133,13 @@ int __stdcall sub_401090(HWND hWnd, int a2, int a3, int a4)
 
 输入的内容string必须小于等于6。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png)
 
 那么，当v4= `122` ，而String[3]、String[4]、String[5]分别对应ASCII字符 `x、y、z` 时，满足要求返回flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png)
 
 ### flag：
 

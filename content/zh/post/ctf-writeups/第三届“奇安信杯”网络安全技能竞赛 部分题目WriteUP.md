@@ -24,27 +24,27 @@ tags:
 
 下载附件，解压得到test1.jpg。
 
- ![image-20241019112516253](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png)
 
 用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。
 
- ![image-20241019112337531](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif)
 
 发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp)
 
 QR_Research扫码得到flag： `flag{255fb106-47a8-4932-a0e9-4a2567513db3}` 。
 
- ![image-20241019112840972](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png)
 
 #### pyc
 
 下载附件，解压得到test.pyc文件。
 
- ![image-20241019114034253](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png)
 
 使用Uncompyle6工具对test.pyc文件反编译，得到test.py文件。
 
@@ -57,9 +57,9 @@ uncompyle6 -o test.py test.pyc
 // 这会将test.pyc文件反编译，并输出到test.py文件中
 ```
 
- ![image-20241019114406083](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png)
 
- ![image-20241019114425933](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png)
 
 代码如下：
 
@@ -95,18 +95,18 @@ flag = ["'ce}'", 9, "'dcd'", 7, "'affb'", 6, "'-'", 0, "'c'", 7, 8, "'dd-'", 5,
 
 下载附件，解压得到flag.png图片。
 
- ![image-20241019115057086](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png)
 
 用010 Editor打开，提示CRC错误，粘贴到MarkDown中也无法显示，应该被修改宽高了。
 
- ![image-20241019115221034](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png)
 
 显示失败
  ![外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png)
 
 使用脚本，爆破flag.png图片宽高并修复文件。
 
- ![image-20241019115550428](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png)
 
 修复图片如下：
 
@@ -114,7 +114,7 @@ flag = ["'ce}'", 9, "'dcd'", 7, "'affb'", 6, "'-'", 0, "'c'", 7, 8, "'dd-'", 5,
 
 得到flag的密码： `flag@abc` ，压缩包应该隐藏在图片中。用010 Editor打开修复后的图片，发现ZIP压缩包。
 
- ![image-20241019120045868](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png)
 
 另存为zip文件，使用密码解压得到flag.txt，内容如下：
 
@@ -251,7 +251,7 @@ print(str)
 
 运行得到flag： `flag{da6ac101b05b6974}` 。（要补个“}”）
 
- ![image-20241019120526730](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png)
 
 ---
 
@@ -261,7 +261,7 @@ print(str)
 
 下载附件，解压得到cipher.txt文件。
 
- ![image-20241018151311265](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png)
 
 1、cipher.txt内容如下：
 
@@ -271,17 +271,17 @@ print(str)
 
 根据题目提示，使用Base16解密，得到一大串密文，后面应该还有多重Base加密。
 
- ![image-20241019110546923](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png)
 
 使用多次Base16解密，再切换Base32解密，最后得到flag： `flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}` 。
 
- ![image-20241019111111971](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png)
 
 #### base64+32
 
 下载附件，解压得到base64+32.html文件。
 
- ![image-20241019111251572](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png)
 
 双击文件打开，页面内容如下：
 
@@ -289,7 +289,7 @@ print(str)
 LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTKLEYFUV2JGJHFGVJTKJAT2PI=
 ```
 
- ![image-20241019111425315](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png)
 
 根据题目提示，大致要使用Base64和Base32解密。
 
@@ -299,7 +299,7 @@ LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTK
 ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA==
 ```
 
- ![image-20241019111649611](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png)
 
 再进行Base64解密，得到经过URL编码的字符串。
 
@@ -307,11 +307,11 @@ ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA==
 flag%7B6682ad1e-43cc-406d-af02-4c76ef64eb65%7D
 ```
 
- ![image-20241019111739307](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png)
 
 最后进行URL解码，得到flag： `flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}` 。
 
- ![image-20241019111918659](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png)
 
 #### rsa
 
@@ -353,7 +353,7 @@ print(flag)
 
 运行得到flag： `flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}` 。
 
- ![image-20241022205934149](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png)
 
 ### WEB
 

@@ -28,7 +28,7 @@ tags:
 [BUUCTF：greatescape](https://blog.51cto.com/u_16159500/6515299) 
 [buuctf-greatescape题目解析](https://blog.csdn.net/chinese_cabbage0/article/details/144456714) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 下载附件，解压得到 `greatescape.pcap` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png)
 
 ---
 
@@ -46,9 +46,9 @@ tags:
 
 1、过滤常见协议，如FTP、HTTP。在FTP协议中，查看TCP流，发现ssc.key文件，猜测为TLS密钥文件。（位置在 `tcp.stream eq 18` ）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png)
 
 在 `tcp.stream eq 19` ，可以找到ssc.key密钥文件数据，另存为ssc.key文件。
 
@@ -107,13 +107,13 @@ xmZSEXjNvG9grjxwR96vp1PK/4Bq1jo=
 -----END PRIVATE KEY-----
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png)
 
 2、在Wireshark中，通过“编辑 > 首选项 > Protocols > TLS”，点击“Edit”后添加Key File并输入ssc.key，最后确认即可完成TLS协议解密。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png)
 
 使用如下过滤语句，即可得到flag： `INS{OkThatWasWay2Easy}` 
 
@@ -121,7 +121,7 @@ xmZSEXjNvG9grjxwR96vp1PK/4Bq1jo=
 http contains "FLAG"
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png)
 
 ### flag：
 

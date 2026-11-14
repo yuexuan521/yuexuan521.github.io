@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204944216.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204944216.png)
 
 ### 密文：
 
@@ -43,15 +43,15 @@ for i in range(32,127):
 
 密文部分给了一串Python代码，发现一个语法错误
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204945731.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204945731.png)
 
 修改后
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204947594.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204947594.png)
 
 运行代码，报错
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204949995.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204949995.png)
 
 报错原因是：必须在哈希之前Unicode对象进行编码
 对代码进行修改，对字符进行（UTF-8）编码

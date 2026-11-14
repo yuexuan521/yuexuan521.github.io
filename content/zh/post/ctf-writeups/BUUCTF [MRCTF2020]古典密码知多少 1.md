@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg)
 
 ### 解题思路：
 
@@ -58,13 +58,13 @@ flag:CRYPTOFUN
 
 ***1.传统猪圈密码*** 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png)
 
 ***2.圣堂武士密码*** 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png)
 
 ***3.标准银河字母加密*** 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png)
 

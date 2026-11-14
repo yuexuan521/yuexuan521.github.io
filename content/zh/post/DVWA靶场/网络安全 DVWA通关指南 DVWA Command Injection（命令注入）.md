@@ -15,7 +15,7 @@ tags:
 
 ## DVWACommand Injection（命令注入）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg)
 
 
 
@@ -87,7 +87,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 | ipconfig
 ```
 
- ![image-20240429163848470](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png)
 
 4、为了消除命令注入风险，需要对用户输入进行严格的过滤或转义。例如，可以使用escapeshellarg()函数对目标IP地址进行转义，如下所示：
 
@@ -153,7 +153,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 | ipconfig
 ```
 
- ![image-20240429171008470](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png)
 
 ### High
 
@@ -209,7 +209,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 |ipconfig
 ```
 
- ![image-20240429174030718](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png)
 
 ### Impossible
 

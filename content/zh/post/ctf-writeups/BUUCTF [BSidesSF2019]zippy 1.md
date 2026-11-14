@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，得到attachment.pcapng文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png)
 
 ---
 
@@ -47,19 +47,19 @@ unzip -P supercomplexpassword flag.zip
 使用 unzip 工具来解压 flag.zip 文件。-P 选项后面跟的是解压密码 supercomplexpassword。
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png)
 
 其中，保存下来的flag.zip文件是解题的关键，解压密码 `supercomplexpassword` 也有用。
 
 2、在Kali中，使用foremost工具分离流量包中的flag.zip文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png)
 
 使用解压密码 `supercomplexpassword` 解压flag.zip文件，得到flag.txt文件，得到flag
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png)
 
 ### flag：
 

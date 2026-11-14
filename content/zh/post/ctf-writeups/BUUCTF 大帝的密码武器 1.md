@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png)
 
 ### 题目描述：
 
@@ -72,15 +72,15 @@ for i in range(26):
 
 2、得到26个结果。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png)
 
 3、寻找有意义的单词，发现偏移量为13的结果为有意义的单词。可以通过翻译软件，快速找到有意义的单词。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png)
 
 4、对密文进行偏移量为13的凯撒解密，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png)
 
 ### flag：
 

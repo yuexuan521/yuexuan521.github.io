@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件解压，得到cyberpunk! .exe文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png)
 
 ---
 
@@ -55,13 +55,13 @@ tags:
 > 
 > 工作室负责人：Adam Badowski
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png)
 
 修改完成后，需要重新启动程序，这时就会出现flag
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png)
 
 ### flag：
 

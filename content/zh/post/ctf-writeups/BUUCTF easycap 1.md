@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185831284.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185831284.png)
 
 ### 题目描述：
 
@@ -30,7 +30,7 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185832712.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185832712.png)
 
 ---
 
@@ -38,9 +38,9 @@ tags:
 
 1、这道题和它的名字一样，真的很easy。双击easycap.pcap文件，打开Wireshark。在Wireshark中，不管你追踪那个流量的TCP流，你都可以找到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185834098.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185834098.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185836174.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185836174.png)
 
 ### flag：
 

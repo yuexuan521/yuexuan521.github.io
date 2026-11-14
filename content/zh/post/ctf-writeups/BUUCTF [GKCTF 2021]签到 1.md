@@ -25,7 +25,7 @@ tags:
 [GKCTF X DASCTF应急挑战杯 签到题WP](https://www.freebuf.com/articles/web/278710.html) 
 [[GKCTF 2021]签到](https://www.cnblogs.com/fishjumpriver/p/18015798) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，得到tmpshell.pcapng文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png)
 
 ---
 
@@ -47,7 +47,7 @@ tags:
 tcp.stream eq 5
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png)
 
 将传输的数据复制下来，进行解密。
 
@@ -116,13 +116,13 @@ DN0QDN0QDlWazNXMx0Wbf9lRGRDNDN0ard0Rf9VZl1WbwADIdRampDKilvFIdRampDKilvVKpM2Y
 ==QIhM0QDN0Q
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png)
 
 2、在tmpshell.pcapng文件的其他流量上，也存在逆序的数据。
 例如：命令whoami，得到数据 `595852685a4331336433634b` 。
 经过解密，得到 `atad-www` ，逆序应为 `www-data` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png)
 
 所以，将上面的数据进行按行逆序输出。
 [文字倒序排列](https://www.qqxiuzi.cn/zh/daoxu/) 
@@ -131,7 +131,7 @@ DN0QDN0QDlWazNXMx0Wbf9lRGRDNDN0ard0Rf9VZl1WbwADIdRampDKilvFIdRampDKilvVKpM2Y
 cat flag | rev
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png)
 
 ```bash
 DQoNCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KIyAgICAgICAgIDIw

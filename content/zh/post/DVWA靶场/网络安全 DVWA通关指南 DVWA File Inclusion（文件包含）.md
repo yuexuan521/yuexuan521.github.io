@@ -17,7 +17,7 @@ tags:
 
 ## DVWA File Inclusion（文件包含）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg)
 
 
 
@@ -90,7 +90,7 @@ $file = $_GET[ 'page' ];
 
 没有任何过滤措施存在，同时使用GET方法传递参数。尝试查看file1.php文件
 
- ![image-20240517101641776](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png)
 
 2、在URL输入不存在的路径，提交出现报错信息，得到文件的绝对路径
 
@@ -112,7 +112,7 @@ Warning: include(): Failed opening 'iviirjgiegij' for inclusion (include_path='.
 
 成功访问到fi.php文件
 
- ![image-20240517102538336](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png)
 
 ## Medium
 
@@ -141,7 +141,7 @@ $file = str_replace( array( "../", "..\"" ), "", $file );
 
 拼接到URL中提交，绕过成功
 
- ![image-20240517103347816](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png)
 
 ## High
 
@@ -175,7 +175,7 @@ file:///D:\phpstudy_pro\WWW\DVWA-master\hackable\flags\fi.php
 
 拼接到URL中提交，包含文件成功
 
- ![image-20240517104929712](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png)
 
 ## Impossible
 

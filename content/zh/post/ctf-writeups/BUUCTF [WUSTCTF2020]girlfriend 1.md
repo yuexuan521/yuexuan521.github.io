@@ -24,7 +24,7 @@ tags:
 [CTF Wiki](https://ctf-wiki.org/) 
 [BUUCTF：[WUSTCTF2020]girlfriend](https://blog.csdn.net/mochu7777777/article/details/105412940) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 下载附件，得到attachment .zip压缩包，解压后得到girlfriend.zip压缩包。最后材料是girlfriend.wav和题目描述.txt。
 
 题目描述.txt内容如下：
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png)
 
 ---
 
@@ -45,7 +45,7 @@ tags:
 
 1、尝试听girlfriend.wav音频文件，刚开始没有听出是手机键盘拨号声。后面看题解，得知是DTMF拨号音识别。
 **Audacity显示** 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png)
 
 使用dtmf2num程序识别拨号内容
 [dtmf2num下载地址](https://link.csdn.net/?from_id=105412940&target=http://aluigi.altervista.org/mytoolz/dtmf2num.zip) 
@@ -55,7 +55,7 @@ dtmf2num.exe ..\资料\girlfriend.wav
 dtmf2num.exe 音频文件位置
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png)
 
 得到如下的按键顺序、次数
 
@@ -65,7 +65,7 @@ dtmf2num.exe 音频文件位置
 
 2、对应手机上九宫格输入，得到最后的字符串为 `YOUAREMYGIRLFRIENDS` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png)
 
 ```bash
 YOUAREMYGIRLFRIENDS

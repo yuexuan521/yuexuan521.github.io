@@ -1,9 +1,6 @@
 ---
 title: "实战指南：基于 HFish + Python + GitHub Pages 构建自动化威胁情报源"
 date: 2026-03-05 12:00:00
-category: ""
-categories: 
-  - ""
 tags:
 - "威胁情报"
 - "HFish"
@@ -53,7 +50,7 @@ HFish 提供了 API 用于获取攻击数据。
 3. 获取 **API Key** 和 **管理端地址**。
    - *注意：如果你的 HFish 在内网，确保运行脚本的机器能访问到 HFish 的管理端口（默认 4433）。*
 
-![image-20251227102507885](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png)
+![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png)
 
 ## 第二步：编写自动化提取脚本 (Python)
 
@@ -231,7 +228,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
    2. 勾选 **"Keep my email addresses private"**。
    3. 你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。
 
-   ![image-20251228221426661](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png)
+   ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png)
 
    **配置方法：**（修改5. 配置 Git 身份）
 
@@ -339,7 +336,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
 
    - 打开 GitHub 仓库 -> **Settings** -> **Deploy keys** -> **Add deploy key**。
 
-     ![image-20251230120117688](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png)
+     ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png)
 
    - **Title**: HFish Server
 
@@ -347,7 +344,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
 
    - **重要**：勾选 **Allow write access**（允许写入权限），否则无法推送！
 
-     ![image-20251230120223456](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png)
+     ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png)
 
 5. **手动测试连接**（必须做一次！）：
    在服务器执行：
@@ -437,4 +434,4 @@ https://yourusername.github.io/honeypot-blocklist/ip_list.txt
 
 **效果展示：**
 
-![image-20251230120659771](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png)
+![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png)

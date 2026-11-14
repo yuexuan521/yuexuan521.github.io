@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191038124.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191038124.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件得到一个.txt文本。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191039684.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191039684.png)
 
 ---
 
@@ -82,7 +82,7 @@ Ook. Ook? Ook.
 
 2、使用在线网站进行解密，得到flag值。
 [Ook！加密解密](https://www.splitbrain.org/services/ook) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191042731.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191042731.png)
 
 ### flag：
 

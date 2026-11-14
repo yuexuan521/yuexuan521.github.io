@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![image-20240521144712363](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png)
 
 ### 题目描述：
 
@@ -57,11 +57,11 @@ tags:
 
 使用010Editor打开111.zip文件，修改压缩源文件数据区和目录区的全局方式位标记，达到将伪压缩文件恢复到未加密的状态的目的。
 
- ![image-20240521151732976](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png)
 
 解压得到一个zip压缩包和脚本文件
 
- ![image-20240521152003008](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png)
 
 3、尝试解压flag.zip需要密码。使用记事本打开setup.sh文件，如下：
 
@@ -91,15 +91,15 @@ zip -e --password=`python -c "print(__import__('time').time())"` flag.zip flag
 1716272025.41
 ```
 
- ![image-20240521153241328](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png)
 
 当我们知道密码格式后就可以采用掩码爆破节约时间，使用Ziperello进行掩码爆破，首先定义掩码字符模板，再设置密码模板，选择起始密码就可以开始爆破。（这里我已经知道大致密码，所以为了节约时间，从1500000000.00开始）
 
- ![image-20240521153442653](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png)
 
 得到密码1558080832.15
 
- ![image-20240521152729804](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png)
 
 ```
 1558080832.15
@@ -107,7 +107,7 @@ zip -e --password=`python -c "print(__import__('time').time())"` flag.zip flag
 
 使用密码解压flag.zip，得到flag文件，打开得到flag。
 
- ![image-20240521152847067](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png)
 
 ### flag：
 

@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png)
 
 ### 密文：
 
@@ -40,7 +40,7 @@ tags:
 4、每个词之间中等的停顿（通常用 / 划分）
 5、以及句子之间长的停顿
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205049682.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205049682.jpeg)
 
 观察密文特征，以及提示，确定为莫尔斯编码。用在线工具直接解码，得到flag。
 
@@ -50,6 +50,6 @@ tags:
 ILOVEYOU
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205051816.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205051816.png)
 
 **在线工具：** [在线摩斯密码翻译器](https://www.lddgo.net/encrypt/morse) 

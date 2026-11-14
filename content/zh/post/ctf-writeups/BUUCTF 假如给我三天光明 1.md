@@ -21,7 +21,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192640137.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192640137.png)
 
 ### 题目描述：
 
@@ -29,9 +29,9 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192642131.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192642131.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192643531.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192643531.jpeg)
 
 ### 解题思路：
 
@@ -40,13 +40,13 @@ tags:
 1、由于我们从附件中拿到了一个zip压缩包和一张.jpg图片，尝试解压压缩包，发现需要密码。而观察题目所给的图片，发现其下方似乎有一种图案密码，尝试对密码进行破译。经过查找，这是一种盲文语言。
 [盲文](https://baike.baidu.com/item/%E7%9B%B2%E6%96%87/440901) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192645094.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192645094.png)
 
 2、我们依照盲文对照表进行翻译，得到明文kmdonowg。使用该明文解压压缩包，得到一个.wav的音频文件。通过Audacity工具和人耳辨认，判断该音频使用莫尔斯电码的形式隐藏了信息。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192647464.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192647464.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192649566.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192649566.png)
 
 ```bash
 第一个红框代表“-.”，第二个红框代表“ ”（空格）。
@@ -55,7 +55,7 @@ tags:
 
 3、将这些莫尔斯电码使用在线工具转换，得到flag值。（得到的flag转换为小写字母，才能提交成功）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192650967.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192650967.png)
 
 ### flag：
 

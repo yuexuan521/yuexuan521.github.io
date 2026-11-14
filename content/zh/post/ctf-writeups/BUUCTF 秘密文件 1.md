@@ -21,7 +21,7 @@ tags:
 
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193214117.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193214117.png)
 
 ### 题目描述：
 
@@ -30,14 +30,14 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个.pcapng文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193216064.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193216064.png)
 
 ---
 
 ### 解题思路：
 
 1、双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193217488.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193217488.png)
 
 追踪ftp流量，有出题者留下的话，并且发现流量中有flag.rar压缩包。
 
@@ -46,21 +46,21 @@ tags:
 翻译：你好，我知道你是黑客，想黑我，但你能找到flag在哪里吗？
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193219609.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193219609.png)
 
 2、使用Kali中的foremost工具，将rar压缩包从pcapng文件中提取出来。（wireshark 截取的流量中，会截取文件传输对应的流量，也就是说，这个流量包将包括 flag.rar压缩包）
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193221937.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193221937.png)
 
 尝试解压压缩包，需要密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193224234.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193224234.png)
 
 3、因为没有关于密码的提示，所以使用常用的4位纯数字进行破解。使用ARCHPR工具，选定参数，破解得到密码为1903。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193225617.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193225617.png)
 
 使用密码解压压缩包，得到txt文件，打开得到flag。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193227153.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193227153.png)
 
 ### flag：
 

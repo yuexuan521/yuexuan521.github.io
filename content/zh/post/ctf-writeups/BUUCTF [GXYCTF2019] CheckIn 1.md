@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png)
 
 ### 题目描述：
 
@@ -42,15 +42,15 @@ dikqTCpfRjA8fUBIMD5GNDkwMjNARkUwI0BFTg==
 v)*L*_F0<}@H0>F49023@FE0#@EN
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png)
 
 2、尝试了很多方法，都没有成功。最后，根据此密文的ASCII码值都处于33 ~ 126范围，确定为ROT47加密。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png)
 
 3、使用在线工具 [ROT47加解密](https://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php) ，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png)
 
 ### flag：
 

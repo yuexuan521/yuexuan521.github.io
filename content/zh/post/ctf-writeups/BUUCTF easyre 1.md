@@ -27,7 +27,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png)
 
 ---
 
@@ -43,11 +43,11 @@ tags:
 
 1、使用IDA pro打开exe文件，在反汇编窗口（IDA View-A），直接找到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png)
 
 也可以通过使用快捷键shift+F12：自动分析出参考字符串，找到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png)
 
 ### flag：
 

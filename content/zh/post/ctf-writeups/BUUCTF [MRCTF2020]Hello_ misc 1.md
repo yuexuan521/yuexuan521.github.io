@@ -25,7 +25,7 @@ tags:
 [神奇的 Base64 隐写](https://www.tr0y.wang/2017/06/14/Base64steg/) 
 [MRCTF复现](https://blog.csdn.net/weixin_44377940/article/details/105206585) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件解压，得到hello文件夹，两个文件
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191518410.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191518410.png)
 
 ---
 
@@ -44,21 +44,21 @@ tags:
 
 1、解压flag.rar需要密码，先处理try to restore it.png图片。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191520430.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191520430.png)
 
 盲猜LSB隐写，用StegSolve打开，在Red 0通道发现PNG图片数据。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191522008.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191522008.png)
 
 保存为png文件，得到：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191523571.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191523571.png)
 
 得到zip-passwd密码，但不是flag.rar的密码。
 
 2、用010Editor打开try to restore it.png图片，在文件尾找到 `PK` 文件头，提取出来保存为zip文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191525518.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191525518.png)
 
 使用刚得到的密码解压，得到out.txt，文件内容如下：
 
@@ -227,15 +227,15 @@ if __name__ == '__main__':
 
 解密得到 `rar-passwd:0ac1fe6b77be5dbe` ，rar压缩包的密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191527512.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191527512.png)
 
 3、用得到的密码解压flag.rar压缩包，得到flag文件夹下的fffflag.zip文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191528857.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191528857.png)
 
 然而它是一个doc文件，更改后缀打开。打开之后，全选内容更改字体颜色，得到一堆密文。（Where is the flag ?）
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191529916.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191529916.png)
 
 ```python
 MTEwMTEwMTExMTExMTEwMDExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAxMTEwMDAwMDAxMTExMTExMTExMDAxMTAx
@@ -256,7 +256,7 @@ python b64steg.py -f flag.txt -s output.txt
 
 得到
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191531572.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191531572.png)
 
 ```python
 110110111111110011110111111111111111111111111111101110000001111111111001101
@@ -269,7 +269,7 @@ python b64steg.py -f flag.txt -s output.txt
 
 4、全选数据，回到fffflag.doc文件中，粘贴进去。然后搜索“ `0` ”，见证奇迹的时刻，你得到了flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191533487.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191533487.png)
 
 ### flag：
 

@@ -21,7 +21,7 @@ tags:
 
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190720047.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190720047.png)
 
 ### 题目描述：
 
@@ -30,7 +30,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到6.gif和题目.txt文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190721666.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190721666.png)
 
 ---
 
@@ -42,7 +42,7 @@ tags:
 
 用010Editor或WinHex打开，可以发现gif文件缺少相应的gif文件头。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190724804.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190724804.png)
 
 ```bash
 gif的文件头: 47 49 46 38
@@ -50,16 +50,16 @@ gif的文件头: 47 49 46 38
 
 2、使用WinHex给gif文件加上gif的文件头，复制gif的文件头: “47 49 46 38“，将光标移动到数据最前端粘贴即可，然后保存文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190726599.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190726599.png)
 
 查看6.gif文件，已经可以正常打开啦。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190728401.gif)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190728401.gif)
 
 3、可以看到正常的gif图片不断闪动某些字符（疑似Base64加密过的密文），可以使用StegSolve或者Photoshop查看，我的StegSolve无法显示，这里使用Photoshop为例。
 [StegSolve的使用方法可以看这篇文章](https://blog.csdn.net/YueXuan_521/article/details/133816746?spm=1001.2014.3001.5502) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190730213.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190730213.png)
 
 查看不同图层的字符，记录下来，得到完整的密文。（是Base编码）
 
@@ -67,11 +67,11 @@ gif的文件头: 47 49 46 38
 Q1RGe3dhbmdfYmFvX3FpYW5nX2lzX3NhZH0=
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190731817.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190731817.png)
 
 使用在线工具对密文进行解密，得到flag。
 [BASE64加密解密](https://base64.supfree.net/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190733071.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190733071.png)
 
 ### flag：
 

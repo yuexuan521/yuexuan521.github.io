@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png)
 
 ### 题目描述：
 
@@ -32,28 +32,28 @@ tags:
 
 下载附件，解压得到ZIP压缩包。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png)
 
 ---
 
 ### 解题思路：
 
 1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png)
 
 解压出的png图片
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png)
 
 2、压缩包内有两个文件，而且已经解压出了一个文件，我猜测为zip压缩包明文攻击，但后面没有成功解出密码。看过别人的题解之后，发现原来是zip伪加密。
 通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png)
 
 保存文件，解压得到fo.txt文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png)
 
 ```bash
                                                                       _ooOoo_
@@ -96,13 +96,13 @@ tags:
 佛曰：遮等諳勝能礙皤藐哆娑梵迦侄羅哆迦梵者梵楞蘇涅侄室實真缽朋能。奢怛俱道怯都諳怖梵尼怯一罰心缽謹缽薩苦奢夢怯帝梵遠朋陀諳陀穆諳所呐知涅侄以薩怯想夷奢醯數羅怯諸
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png)
 
 **更正** 
 在线网站已经无法使用，可以下载这个工具进行解码。
 [https://github.com/qianxiao996/CTF-Tools](https://github.com/qianxiao996/CTF-Tools) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png)
 
 ### flag：
 

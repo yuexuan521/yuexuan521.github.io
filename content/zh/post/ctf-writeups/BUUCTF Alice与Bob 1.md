@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png)
 
 ### 题目描述：
 
@@ -80,7 +80,7 @@ print(factorize(n))
 
 得到结果：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png)
 
 2、小的放前面，大的放后面，合成一个新的数字。
 
@@ -92,7 +92,7 @@ print(factorize(n))
 3、对这个新数字，进行md5的32位小写哈希加密。
 在线解密网站： [在线16位和32位大小写MD5加密](https://www.matools.com/md5) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120902.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120902.png)
 
 得到结果
 

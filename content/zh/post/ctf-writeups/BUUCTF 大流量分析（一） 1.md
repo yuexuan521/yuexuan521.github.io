@@ -24,7 +24,7 @@ tags:
 [CTF Wiki](https://ctf-wiki.org/) 
 [BUUCTF:大流量分析（一）](https://blog.csdn.net/wangjin7356/article/details/122525900) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，有很多pcap流量包
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png)
 
 ---
 
@@ -44,7 +44,7 @@ tags:
 
 先统计IP，统计 → IPv4 Statistics → All Addresses
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png)
 
 将IP出现数量Count进行排序，发现除了 `183.129.152.140` ，其它全部是内网IP。
 
@@ -53,19 +53,19 @@ tags:
 > 172.16.0.0 – 172.31.255.255
 > 192.168.0.0 – 192.168.255.255
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png)
 
 2、统计会话和端点，发现 `183.129.152.140` 的分组数，是除内网IP最多的。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png)
 
 会话
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png)
 
 端点
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png)
 
 最后，确认黑客的攻击ip是 `183.129.152.140` 。
 

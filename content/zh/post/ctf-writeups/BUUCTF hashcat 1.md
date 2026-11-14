@@ -28,7 +28,7 @@ tags:
 
 [buuctf MISC - hashcat](https://blog.csdn.net/c868954104/article/details/134599989) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 下载附件，解压得到What kind of document is this_文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png)
 
 ---
 
@@ -50,11 +50,11 @@ tags:
 MS Office文件      文件头：D0 CF 11 E0
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png)
 
 但是MS Office文件包括MS Word/Excel/PPT三种文件，随便尝试一种文件，发现有密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png)
 
 2、结合题目 `hashcat` ，我们使用HashCat恢复MS Office文件（Excel、Word、PPT）密码。
 
@@ -68,11 +68,11 @@ CMD中打开，命令如下：
 python office2john.py "What kind of document is this_" > hash
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png)
 
 得到文件的hash值如下：
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png)
 
 去掉文件名 `What kind of document is this_:` ，保留 `$office$` 及之后的数据。（从 `$office$*2010*` 可以得到该文件使用的是 **Office2010** 版本，后面要用到！）
 
@@ -80,13 +80,13 @@ python office2john.py "What kind of document is this_" > hash
 $office$*2010*100000*128*16*265c4784621f00ddb85cc3a7227dade7*f0cc4179b2fcc2a2c5fa417566806249*b5ad5b66c0b84ba6e5d01f27ad8cffbdb409a4eddc4a87cd4dfbc46ad60160c9
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png)
 
 最后，使用HashCat根据hash值去解析密码。
 
 HashCat官方网站： [https://hashcat.net/hashcat/](https://hashcat.net/hashcat/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png)
 
 将hash文件放到hashcat文件夹下，CMD打开，命令如下：
 
@@ -114,7 +114,7 @@ hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O
 > ?b = 0x00 - 0xff
 
 出现下图所示内容，表示成功运行。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png)
 
 在上条命令的后面加上 `--show` 参数，显示密码为 `9919` 。
 
@@ -122,23 +122,23 @@ hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O
 hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O --show
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png)
 
 3、使用密码尝试Excel、Word、PPT文件，直到后缀为 `.ppt` 的PPT文件，才正常显示内容。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png)
 
 存在7张空白的幻灯片，全选之后，到“设计”选项卡，选择“设置背景格式”，选择黑色纯色填充。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png)
 
 在第七张幻灯片中，得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png)
 
 ### flag：
 

@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204904813.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204904813.png)
 
 ### 题目描述：
 
@@ -47,7 +47,7 @@ Use RSA to find the secret message
 
 1、打开RSATool，将Number Base 设置为十进制
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204906204.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204906204.png)
 
 2、算出N，N=Q * P，执行下列Python代码，得到结果
 
@@ -62,7 +62,7 @@ print(n)
 3、将Q、P、N的值，填入适当的位置，点击Calc.D按钮，算出D。
 （如果给出的是N和E的话，输入N和E，点击Factor N(分解)，得到P,Q,再重复第3步就能得到D了）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204908541.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204908541.png)
 
 4、得到D后，执行下列Python代码，最后得到明文。
 
@@ -79,7 +79,7 @@ M = pow(c, d, n)
 print(M)
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204910754.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204910754.png)
 
 ### flag:
 

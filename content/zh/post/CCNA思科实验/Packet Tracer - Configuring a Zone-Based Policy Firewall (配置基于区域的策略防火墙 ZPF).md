@@ -18,7 +18,7 @@ tags:
 
 ### 地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png)
 
 ### 目标
 
@@ -49,15 +49,15 @@ tags:
 在配置基于区域的策略防火墙之前，验证网络连通性。
 
 **步骤1：从PC-A命令提示符，ping PC-C的192.168.3.3地址。** 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png)
 
 **步骤2：从PC-C命令提示符，通过telnet连接到Router R2 S0/0/1接口的10.2.2.2地址。退出Telnet会话。** 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png)
 
 **步骤3：从PC-C打开一个网页浏览器访问PC-A服务器。** 
 
 a. 点击桌面标签页并点击Web浏览器应用程序。将PC-A的IP地址 **192.168.1.3** 作为URL输入。此时应显示来自Web服务器的Packet Tracer欢迎页面。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png)
 
 b. 关闭PC-C上的浏览器。
 
@@ -182,15 +182,15 @@ R3(config-if)# exit
 **步骤1：从内部PC-C，ping外部PC-A服务器。** 
 
 从PC-C命令提示符，ping PC-A的192.168.1.3地址。ping操作应成功。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png)
 
 **步骤2：从内部PC-C，telnet到路由器R2 S0/0/1接口。** 
 
 a. 从PC-C命令提示符，telnet到R2的10.2.2.2，并提供vty密码 **ciscovtypa55** 。Telnet会话应成功。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png)
 
 b. 在活动的Telnet会话中，在R3上执行命令 `show policy-map type inspect zone-pair sessions` 以查看已建立的会话。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png)
 
 源IP地址和端口号是什么？
 
@@ -203,7 +203,7 @@ b. 在活动的Telnet会话中，在R3上执行命令 `show policy-map type insp
 在浏览器URL字段中输入服务器IP地址192.168.1.3，并点击“Go”。HTTP会话应成功。在HTTP会话活动期间，在R3上执行命令 `show policy-map type inspect zone-pair sessions` 以查看已建立的会话。
 
 注：如果在您在R3上执行命令之前HTTP会话超时，您需要在PC-C上点击“Go”按钮来生成PC-C与PC-A之间的会话。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png)
 
 源IP地址和端口号是什么？
 
@@ -218,12 +218,12 @@ b. 在活动的Telnet会话中，在R3上执行命令 `show policy-map type insp
 **步骤1：从PC-A服务器命令提示符，ping PC-C。** 
 
 从PC-A命令提示符，ping PC-C的192.168.3.3地址。ping操作应失败。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png)
 
 **步骤2：从路由器R2，ping PC-C。** 
 
 从R2，ping PC-C的192.168.3.3地址。ping操作应失败。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png)
 
 **步骤3：检查结果。** 
 

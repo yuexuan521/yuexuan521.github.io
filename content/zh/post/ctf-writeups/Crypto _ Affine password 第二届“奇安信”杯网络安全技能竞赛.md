@@ -20,7 +20,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ JYYHWVPIDCOZ
 1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
 [仿射密码加密_仿射密码解密](http://www.metools.info/code/affinecipher183.html) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png)
 
 手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。
 

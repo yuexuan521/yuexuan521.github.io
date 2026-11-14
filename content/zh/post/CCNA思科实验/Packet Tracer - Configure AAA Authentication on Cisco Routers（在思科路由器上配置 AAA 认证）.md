@@ -20,7 +20,7 @@ tags:
 
 ### 地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png)
 
 ### 目标
 
@@ -100,7 +100,7 @@ tags:
 
 通过以上配置后，可以在R1的控制台上用Admin1账户和对应的密码admin1pa55进行登录，验证本地AAA身份验证是否生效。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png)
 
 ### 第二部分：在R1上配置本地AAA认证以实现vty线路访问
 
@@ -139,7 +139,7 @@ How many bits in the modulus [512]: 1024
 **步骤4：验证AAA认证方法** 
 
 - 从PC-A的命令提示符处通过SSH连接到R1，验证SSH配置及AAA身份验证。
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png)
+   ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png)
 
 ### 第三部分：在R2上配置基于TACACS+服务器的AAA认证
 
@@ -153,7 +153,7 @@ How many bits in the modulus [512]: 1024
 
 - 点击TACACS+ Server，查看“服务”选项卡中的AAA设置，确认存在针对R2的网络配置条目和针对Admin2的用户设置条目。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png)
 
 **步骤3：在R2上配置TACACS+服务器详细信息** 
 
@@ -183,7 +183,7 @@ How many bits in the modulus [512]: 1024
 **步骤6：验证AAA认证方法** 
 
 - 通过AAA TACACS+服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R2并观察其是否成功通过TACACS+服务器进行身份验证。
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png)
+   ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png)
 
 ### 第四部分：在R3上配置基于RADIUS服务器的AAA认证
 
@@ -197,7 +197,7 @@ How many bits in the modulus [512]: 1024
 
 - 点击RADIUS服务器，并查看“服务”选项卡中的AAA设置。注意其中包含针对R3的网络配置条目和针对Admin3的用户设置条目。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png)
 
 **步骤3：在R3上配置RADIUS服务器详细信息** 
 
@@ -227,7 +227,7 @@ How many bits in the modulus [512]: 1024
 **步骤6：验证AAA认证方法** 
 
 - 通过AAA RADIUS服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R3并观察其是否成功通过RADIUS服务器进行身份验证。
-   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png)
+   ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png)
 
 **步骤7：检查结果** 
 

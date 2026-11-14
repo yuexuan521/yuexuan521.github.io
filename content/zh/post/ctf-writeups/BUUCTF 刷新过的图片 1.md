@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192654710.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192654710.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到一个.jpg图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192656713.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192656713.jpeg)
 
 ---
 
@@ -49,7 +49,7 @@ git clone https://github.com/matthewgao/F5-steganography
 ```
 
 安装成功如下图：
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192658030.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192658030.png)
 
 出现错误参考这篇文章： [安装F5-steganography和使用，及解决java环境版本报错问题](https://blog.csdn.net/pythllc/article/details/128969843) 
 
@@ -59,22 +59,22 @@ git clone https://github.com/matthewgao/F5-steganography
 java Extract Misc.jpg 
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192700481.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192700481.png)
 
 查看output.txt文件，发现pk文件头，确认为zip压缩包，并且内部还有flag.txt文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192702635.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192702635.png)
 
 3、更改output.txt文件的后缀为.zip，尝试解压压缩包，需要密码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192705006.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192705006.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192706136.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192706136.png)
 
 因为题目没有关于密码的提示，猜测该zip压缩包为伪加密。
 通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192707781.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192707781.png)
 
 ```bash
 未加密：
@@ -100,7 +100,7 @@ ps:也不一定要09 00或00 00，只要是奇数都视为加密，而偶数则�
 
 保存文件，再次尝试解压，解压成功。打开flag.txt文件，获得flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192709798.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192709798.png)
 
 ### flag：
 

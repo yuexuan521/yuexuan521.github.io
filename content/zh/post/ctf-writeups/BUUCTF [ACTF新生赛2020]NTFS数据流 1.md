@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190505306.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190505306.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，得到一个.tar文件。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190507010.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190507010.png)
 
 ---
 
@@ -39,9 +39,9 @@ tags:
 
 1、解压.tar文件，再解压tmp文件夹下的flag.rar文件，得到500个.txt文件。随便看一个.txt文件，内容如下。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190508429.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190508429.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190509977.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190509977.png)
 
 2、结合题目提示，这是一道关于NTFS交换数据流的题目。
 [NTFS 交换数据流 实现隐藏文件](https://zhuanlan.zhihu.com/p/654643812) 
@@ -51,11 +51,11 @@ tags:
 [AlternateStreamView(跳转页面后，向下滑动，下载对应的32或64位软件)](https://www.nirsoft.net/utils/alternate_data_streams.html) 
 
 这里使用NtfsStreamsEditor
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190511060.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190511060.png)
 
 双击查看，得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190513128.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190513128.png)
 
 ### flag：
 

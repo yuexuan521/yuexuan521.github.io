@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191447781.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191447781.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到tmp文件夹，内有description.md
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191449203.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191449203.png)
 
 ---
 
@@ -41,7 +41,7 @@ tags:
 
 1、这是我本年度做过的最简单的MISC，oh不，是最简单的CTF题。打开description.md文件，得到flag： `INSA{Youre_sane_Good_for_you}` 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191450444.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191450444.png)
 
 然后，就结束啦！
 

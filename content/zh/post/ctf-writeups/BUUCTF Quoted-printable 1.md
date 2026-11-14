@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204849145.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204849145.png)
 
 ### 题目描述：
 
@@ -40,7 +40,7 @@ tags:
 1、观察密文，结合题目，直接确定为Quoted-printable编码。
 2、使用在线工具进行解密。 [在线工具](http://www.mxcz.net/tools/QuotedPrintable.aspx) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204851018.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204851018.png)
 
 3、得到flag，那你也很棒哦。
 

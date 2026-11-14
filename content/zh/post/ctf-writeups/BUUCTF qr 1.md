@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190200953.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190200953.png)
 
 ### 题目描述：
 
@@ -32,13 +32,13 @@ tags:
 
 下载附件，得到一张二维码图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190202908.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190202908.png)
 
 ### 解题思路：
 
 1、这是一道签到题，扫描二维码得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190204075.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190204075.png)
 
 ### flag：
 

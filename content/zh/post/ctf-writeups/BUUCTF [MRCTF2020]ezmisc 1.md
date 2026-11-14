@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191504883.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191504883.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到.png图片。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191506932.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191506932.png)
 
 从这里也可以看出图片经过修改，无法正常显示。
 
@@ -43,7 +43,7 @@ tags:
 
 1、在010Editor中打开，提示CRC校验错误，认为图片被修改了宽高，不符合CRC校验。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191508692.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191508692.png)
 
 通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -65,15 +65,15 @@ for i in range(2000):
 
 得到正确的宽高值。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191510156.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191510156.png)
 
 2、修改图片中的宽高参数，然后保存图片查看。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191511514.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191511514.png)
 
 查看图片，得到flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191513318.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191513318.png)
 
 ### flag：
 

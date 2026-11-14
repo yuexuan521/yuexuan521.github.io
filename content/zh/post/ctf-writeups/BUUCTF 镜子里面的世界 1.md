@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193602837.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193602837.png)
 
 ### 题目描述：
 
@@ -30,7 +30,7 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193604371.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193604371.png)
 
 ### 解题思路：
 
@@ -39,11 +39,11 @@ tags:
 
 2、将图片放到StegSolve中，然后打开Analyse（分析）选项卡，使用Data Extract（数据提取）选项，开始分析，得到提示信息。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193606492.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193606492.png)
 
 3、将提示的信息翻译过来，就找到了flag。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193608333.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193608333.png)
 
 ### flag：
 

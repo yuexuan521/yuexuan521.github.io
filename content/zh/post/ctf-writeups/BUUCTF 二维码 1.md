@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192525403.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192525403.png)
 
 ### 题目描述：
 
@@ -30,21 +30,21 @@ tags:
 
 ### 密文：
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192526985.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192526985.png)
 
 ### 解题思路：
 
 1、扫描二维码，得到信息“secret is here”，提交发现这个不是flag，但提示我们flag就在图片中。（可以使用QR research或者手机扫码）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192528433.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192528433.png)
 
 2、使用010 Editor查看图片，发现可能有pk开头的zip压缩包，zip的创始人名字简写为PK。（也可以通过修改后缀名为.txt，查看到隐藏文件4number.txt。或者，通过Linux的cat命令查看）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192529976.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192529976.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192532302.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192532302.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192533953.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192533953.png)
 
 （对第二点的补充：在使用010 Editer查看图片时，可通过分析png文件的格式，找到隐藏的zip压缩文件。）
 
@@ -52,7 +52,7 @@ tags:
 00 00 00 00 49 45 4E 44 AE 42 60 82      //为png文件的结尾数据块（IEND）
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192536316.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192536316.png)
 
 （我们发现在png文件的结尾后，还有一部分的数据，分析它的文件头，得到zip文件的信息。）
 
@@ -60,23 +60,23 @@ tags:
 50 4B 03 04     //是 ZIP 的文件头的重要标志
 ```
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192538500.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192538500.png)
 
 3、使用Kali中的binwalk工具进行检测，确实存在zip压缩包和4number.txt文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192540294.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192540294.png)
 
 4、使用Kali中的foremost工具，分离出QR_code.png中的压缩文件，使用ls命令查看，得到一个output目录，查看output目录下的文件，找到zip文件。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192542424.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192542424.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192543989.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192543989.png)
 
 5、解压zip文件需要密码，尝试几个常用的密码后还是不行。使用工具fcrackzip进行暴力破解，得到密码7639，正好对应之前4number.txt的文件名。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192546257.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192546257.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192548609.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192548609.png)
 
 ```bash
 参数解释：
@@ -88,9 +88,9 @@ tags:
 
 5、使用密码解压zip压缩包，得到4number.txt文件，打开文件得到flag。（注意：得到的 flag 请包上 flag{} 提交）
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192550528.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192550528.png)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192552480.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192552480.png)
 
 ### flag：
 

@@ -23,7 +23,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205054876.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205054876.png)
 
 ### 题目描述：
 
@@ -41,7 +41,7 @@ Administrator:500:806EDC27AA52E314AAD3B435B51404EE:F4AD50F57683D4260DFD48AA351A1
 
 1、有没有很熟悉的感觉，观察密文，尝试md5，得到结果。
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205056443.png)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205056443.png)
 
 ---
 

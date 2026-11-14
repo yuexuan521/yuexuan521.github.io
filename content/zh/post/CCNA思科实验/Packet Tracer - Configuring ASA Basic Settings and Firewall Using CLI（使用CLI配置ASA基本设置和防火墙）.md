@@ -20,7 +20,7 @@ tags:
 
 ### IP地址表
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png)
 
 ### 目标
 
@@ -134,10 +134,10 @@ c. 使用以下验证命令检查您的配置：
 **步骤5：测试到ASA的连接性。** 
 
 a. 应该可以从PC-B成功ping通ASA内部接口地址（192.168.1.1）。如果无法ping通，请按需排查配置问题。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png)
 
 b. 从PC-B尝试ping VLAN 2（外部）接口的IP地址209.165.200.226。理论上您不应该能ping通这个地址。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png)
 
 ### 第三部分：使用CLI配置路由、地址转换和检查策略
 
@@ -169,7 +169,7 @@ CCNAS-ASA(config-network-object)# end
 b. ASA将配置拆分为定义要转换的网络的对象部分以及实际的nat命令参数。这些内容会在运行配置中的两个不同位置显示。使用 `show run` 命令显示NAT对象配置。
 
 c. 从PC-B尝试ping R1 G0/0接口IP地址209.165.200.225。这些ping请求应失败。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png)
 
 d. 在ASA上发出 `show nat` 命令查看已翻译和未翻译的命中次数。请注意，来自PC-B的ping请求中有四个被翻译，四个未被翻译。外出的ping（echo请求）已被翻译并发送至目标。返回的echo响应由于防火墙策略而被阻止。您将在本部分活动的第3步配置默认检查策略以允许ICMP流量。
 
@@ -193,7 +193,7 @@ CCNAS-ASA(config)# service-policy global_policy global
 ```
 
 b. 从PC-B再次尝试ping R1 G0/0接口IP地址209.165.200.225。这次ping应该成功，因为现在ICMP流量正在被检查，合法的返回流量被允许通过。若ping失败，请排查您的配置。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png)
 
 ### 第四部分：配置DHCP、AAA和SSH
 
@@ -218,7 +218,7 @@ CCNAS-ASA(config)# dhcpd enable inside
 ```
 
 d. 将PC-B从静态IP地址更改为DHCP客户端，并验证其是否接收到IP地址信息。如有必要，请解决任何问题。
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png)
 
 **步骤2：配置AAA以使用本地数据库进行身份验证。** 
 
@@ -258,7 +258,7 @@ c. 从PC-C通过SSH建立到ASA（209.165.200.226）的会话。如不成功，�
 PC> ssh -l admin 209.165.200.226
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png)
 
 d. 从PC-B通过SSH建立到ASA（192.168.1.1）的会话。如不成功，请排查问题。
 
@@ -266,7 +266,7 @@ d. 从PC-B通过SSH建立到ASA（192.168.1.1）的会话。如不成功，请�
 PC> ssh -l admin 192.168.1.1
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png)
 
 ### 第五部分：配置DMZ、静态NAT和ACL
 
@@ -295,13 +295,13 @@ CCNAS-ASA(config-if)# switchport access vlan 3
 c. 使用以下验证命令检查您的配置：
 
 1. 使用 `show interface ip brief` 命令显示所有ASA接口的状态。
-    ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png)
+    ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png)
 
 2. 使用 `show ip address` 命令显示第3层VLAN接口的信息。
-    ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png)
+    ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png)
 
 3. 使用 `show switch vlan` 命令显示ASA上的inside和outside VLAN配置以及分配的端口信息。
-    ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png)
+    ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png)
 
 **步骤2：使用网络对象配置到DMZ服务器的静态NAT。** 
 

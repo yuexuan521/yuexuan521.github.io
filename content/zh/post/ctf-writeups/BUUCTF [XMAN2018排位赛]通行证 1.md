@@ -22,7 +22,7 @@ tags:
 
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png)
 
 ### 题目描述：
 
@@ -45,7 +45,7 @@ a2FuYmJyZ2doamx7emJfX19ffXZ0bGFsbg==
 kanbbrgghjl{zb____}vtlaln
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png)
 
 2、发现一对花括号，一般用来包括flag值，在这里位置不同，应尝试转换位置，使用栅栏密码。（没想到，这里使用栅栏加密，而不是解密，并且是W型栅栏加密）
 [栅栏加密/解密](https://ctf.bugku.com/tool/railfence) 
@@ -70,7 +70,7 @@ kanbbrgghjl{zb____}vtlaln
 kzna{blnl_abj_lbh_trg_vg}
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png)
 
 当栏数为7时，符合flag形式“xxxx{xxxxxxxxx}”
 
@@ -108,13 +108,13 @@ for i in range(26):
     print("%d %s"% (i, plaintext))
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png)
 
 4、另一种解题思路，通过对base64解出的密文进行凯撒加密，寻找“x”和“f”开头的字符串（因为是flag的形式），再进行栅栏加密。原理都是相同的，且不要求解密顺序。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png)
 
 ### flag：
 

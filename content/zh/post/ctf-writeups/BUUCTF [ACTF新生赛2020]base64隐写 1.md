@@ -22,7 +22,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454200.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454200.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到.zip文件，再次解压得到两个文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454201.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454201.png)
 
 ---
 
@@ -214,7 +214,7 @@ ZlFvPQ0=
 
 ```
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454202.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454202.png)
 
 2、结合题目提示和密文特征，猜测为Base64隐写，使用如下Python脚本进行解密。
 
@@ -239,7 +239,7 @@ print(str)
 
 运行脚本，得到flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454203.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454203.png)
 
 ### flag：
 

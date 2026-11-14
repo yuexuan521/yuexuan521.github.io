@@ -17,7 +17,7 @@ tags:
 
 ## DVWA DOM Based Cross Site Scripting (DOM型 XSS)
 
-![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg)
+![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg)
 
 
 
@@ -60,7 +60,7 @@ tags:
 //没有任何防御措施
 ```
 
- ![image-20240425141612735](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png)
 
 2、修改default，在URL拼接Payload
 
@@ -68,7 +68,7 @@ tags:
 <script>alert(/XSS/)</script>
 ```
 
- ![image-20240425141658717](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png)
 
 ### Medium
 
@@ -93,7 +93,7 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 
 增加对"<script"字符的过滤，查看前端代码
 
- ![image-20240425143147799](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png)
 
 2、构造闭合"option"和"select"标签，执行弹出"/xss/"的语句
 
@@ -101,9 +101,9 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 </optin></select><img src = 1 onerror = alert(/xss/)>
 ```
 
- ![image-20240616160139823](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png)
 
- ![image-20240616161058852](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png)
 
 ### High
 
@@ -138,9 +138,9 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 (空格)#<script>alert(/xss/)</script>
 ```
 
- ![image-20240616161314789](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png)
 
- ![image-20240616161408461](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png)
 
 ### Impossible
 

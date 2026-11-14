@@ -28,7 +28,7 @@ tags:
 [buuctf-misc-[GKCTF 2021]你知道apng吗1](https://blog.csdn.net/qq_29977871/article/details/128507643) 
 [你知道apng吗](https://blog.csdn.net/wangjin7356/article/details/123402038) 
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 下载附件，解压得到girl.apng文件。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png)
 
 ---
 
@@ -58,41 +58,41 @@ tags:
 
 找到一个APNG在线查看工具： [https://ezgif.com/split?err=expired](https://ezgif.com/split?err=expired) ，上传图片后，点击 `Split` ，得到每帧的图片。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png)
 
 ---
 
 `1、` 
- ![请添加图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png)
 
 `2、` 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png)
 
 `3、` 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png)
 
 `4、` 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png)
 
 ---
 
 2、使用PS（或在线PS）处理第一张图片，选择 `编辑` –> `变换` –> `扭曲` ，此时扫码得到四分之一的flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png)
 
 第二张图片使用StegSolve，查看其它的通道，找到可以识别的二维码。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png)
 
 剩下两张可以直接扫码得到四分之一flag，最后得到完整flag。
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png)
 
- ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png)
+ ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png)
 
 ### flag：
 
