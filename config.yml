@@ -4,6 +4,13 @@ pagination:
   pagerSize: 5 # 每页显示几篇文章。如果觉得太少，改成 10
 theme: PaperMod # 指定使用的主题。对应 themes/PaperMod 文件夹
 
+# 首页额外输出 JSON 索引，站内搜索（fastsearch.js 请求 ../index.json）依赖它
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 # --- 作者信息 (Global) ---
 author:
   name: Yue Xuan        # 全局默认作者名。如果文章没指定作者，就用这个。
