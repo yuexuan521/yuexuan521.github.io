@@ -197,7 +197,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -214,7 +214,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190257641.png" 
-             alt="" 
+             alt="文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」" 
               
              loading="lazy"
         />
@@ -231,7 +231,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png" 
-             alt="" 
+             alt="BUUCTF 题目「USB 1」页面，提示 Do your konw usb??，附件为 8c90b141-7….zip" 
               
              loading="lazy"
         />
@@ -243,7 +243,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png" 
-             alt="" 
+             alt="解压得到 233.rar、key.ftm 与一个同名文件夹" 
               
              loading="lazy"
         />
@@ -255,7 +255,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png" 
-             alt="" 
+             alt="WinRAR 诊断信息：文件头已损坏，233.png 无法解压" 
               
              loading="lazy"
         />
@@ -265,7 +265,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png" 
-             alt="" 
+             alt="flag.txt 内容只有一句「想要flag??????」" 
               
              loading="lazy"
         />
@@ -279,7 +279,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png" 
-             alt="" 
+             alt="010 Editor 打开 233.rar，文件头是 Rar!，底部报 Header CRC mismatch in block #3" 
               
              loading="lazy"
         />
@@ -290,7 +290,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png" 
-             alt="" 
+             alt="把偏移处的 CF 改成 00 修正文件头" 
               
              loading="lazy"
         />
@@ -300,7 +300,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png" 
-             alt="" 
+             alt="另一处 62 也改成 00，修正后 RAR 可正常识别" 
               
              loading="lazy"
         />
@@ -311,7 +311,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png" 
-             alt="" 
+             alt="修复后解出的 233.png，是一张湖边长椅与女子背影的风景照" 
               
              loading="lazy"
         />
@@ -322,23 +322,14 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png" 
-             alt="" 
+             alt="StegSolve 查看 Blue plane 0，浮现出一个二维码" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <p>扫描二维码得到疑似flag的密文： <code>ci{v3erf_0tygidv2_fc0}</code> ，猜测为维吉尼亚密码。但缺少key值（密钥），暂时无法解密</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png" 
-             alt="" 
-              
-             loading="lazy"
-        />
-    </a>
-</div></p>
+<p>![QR Research 解码得到 c<a href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png"target="_blank" rel="noopener noreferrer">V3erf_0tygidv2_fc0}</a></p>
 <p>3、回过头，key.ftm中应该就有我们要的key值</p>
 <blockquote>
 <p><strong>FTM</strong> 是FamiTracker，用于生产任天堂（NES）系统的音乐的音频节目创建的音频跟踪器模块。 它包括短的音频样本和一系列包含旋律音符。</p>
@@ -348,7 +339,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png" 
-             alt="" 
+             alt="十六进制里 50 4B 03 04 处发现 key.pcap，查找结果中多处命中 KEY" 
               
              loading="lazy"
         />
@@ -359,7 +350,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png" 
-             alt="" 
+             alt="解包得到的 key.pcap，37 KB" 
               
              loading="lazy"
         />
@@ -370,7 +361,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png" 
-             alt="" 
+             alt="Wireshark 打开 key.pcap，全是 USB URB_INTERRUPT in 包，底部显示 Leftover Capture Data" 
               
              loading="lazy"
         />
@@ -391,7 +382,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png" 
-             alt="" 
+             alt="Kali 运行 UsbKeyboardDataHacker.py，还原出按键串并以 akey{xinan} 结尾（红框）" 
               
              loading="lazy"
         />
@@ -403,7 +394,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png" 
-             alt="" 
+             alt="维吉尼亚密码工具：ci{v3erf_0tygidv2_fc0} 配密钥 xinan，解出 fa{i3eei_0llgvgn2_sc0}" 
               
              loading="lazy"
         />
@@ -415,7 +406,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png" 
-             alt="" 
+             alt="栅栏密码工具：每组 2 字，把上一步结果还原为 flag{vig3ne2e_is_c00l}" 
               
              loading="lazy"
         />
