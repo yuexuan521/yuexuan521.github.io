@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 12:21:39 +0000</lastBuildDate>
@@ -38,9 +38,7 @@
 &lt;blockquote&gt;
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
 &lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
-&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
-&lt;h4 id=&#34;存储型&#34;&gt;存储型&lt;/h4&gt;&lt;p&gt;出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">

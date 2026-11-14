@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 16:37:23 +0000</lastBuildDate>
@@ -368,12 +368,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;p&gt;配置NTP服务。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置R3路由器以支持SSH连接。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
@@ -886,21 +881,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置基于服务器的AAA身份验证，采用TACACS+协议。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;从PC-B客户端验证基于服务器的AAA（TACACS+）身份验证。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置基于服务器的AAA身份验证，采用RADIUS协议。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
@@ -1222,9 +1203,7 @@ R3(config-line)#login authentication default</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
@@ -1797,16 +1776,16 @@ A.B.C.D 源通配符位</p>
 </blockquote>
 <p>d. 另一种计算通配符的方法是从255.255.255.255减去子网掩码：</p>
 <table>
-	<thead>
-			<tr>
-					<th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td style="text-align: center">= 0. 0. 0. 15</td>
-			</tr>
-	</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">= 0. 0. 0. 15</td>
+      </tr>
+  </tbody>
 </table>
 <blockquote>
 <p>R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15 ?</p>
@@ -1882,15 +1861,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 &lt;p&gt;在SW-1和SW-2之间建立新的冗余链路。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;创建一个新的管理VLAN（VLAN 20）并将一台管理PC连接到该VLAN。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;实施ACL以防止外部用户访问管理VLAN。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
@@ -2570,15 +2541,7 @@ R1(config-sigdef)#exit</p>
 &lt;p&gt;使用CLI配置ASA的基本设置和接口安全级别&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置DHCP、AAA和SSH服务&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置DMZ区域、静态NAT和访问控制列表（ACL）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
@@ -3205,9 +3168,7 @@ R1(config-sigdef)#exit</p>
 &lt;p&gt;在路由器R3上配置基于区域的策略（ZPF）防火墙。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png">

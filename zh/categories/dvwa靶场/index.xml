@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Sep 2024 12:23:22 +0000</lastBuildDate>
@@ -36,38 +36,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;本地文件包含lfi&#34;&gt;本地文件包含(LFI)&lt;/h3&gt;&lt;p&gt;文件包含漏洞的产生原因是 PHP 语言在通过引入文件时，引用的文件名，用户可控，由于传入的文件名没有经过合理的校验，或者校验被绕过，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入。&lt;/p&gt;
-&lt;p&gt;当被包含的文件在服务器本地时，就形成的本地文件包含漏洞。&lt;/p&gt;
-&lt;h4 id=&#34;漏洞利用&#34;&gt;漏洞利用&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;利用条件：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;（1）include()等函数通过动态变量的方式引入包含文件； （2）用户能够控制该动态变量。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;远程文件包含rfl&#34;&gt;远程文件包含(RFL)&lt;/h3&gt;&lt;p&gt;服务器通过 PHP 的特性（函数）去包含任意文件时，由于要包含的这个文件来源过滤不严格，&lt;/p&gt;
-&lt;p&gt;从而可以去包含一个恶意文件，攻击者就可以远程构造一个特定的恶意文件达到攻击目的。&lt;/p&gt;
-&lt;h4 id=&#34;漏洞利用-1&#34;&gt;漏洞利用&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;条件：&lt;/strong&gt; &lt;code&gt;php.ini&lt;/code&gt; 中开启 &lt;code&gt;allow_url_include&lt;/code&gt; 、 &lt;code&gt;allow_url_fopen&lt;/code&gt; 选项。&lt;/p&gt;
-&lt;h3 id=&#34;修复建议&#34;&gt;修复建议&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;禁止远程文件包含 &lt;code&gt;allow_url_include=off&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置 &lt;code&gt;open_basedir=指定目录&lt;/code&gt; ，限制访问区域。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;过滤 &lt;code&gt;../&lt;/code&gt; 等特殊符号&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改Apache日志文件的存放地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;开启魔术引号 &lt;code&gt;magic_quotes_qpc=on&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;尽量不要使用动态变量调用文件，直接写要包含的文件。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;h3 id=&#34;本地文件包含lfi&#34;&gt;本地文件包含(LFI)&lt;/h3&gt;&lt;p&gt;文件包含漏洞的产生原因是 PHP 语言在通过引入文件时，引用的文件名，用户可控，由于传入的文件名没有经过合理的校验，或者校验被绕过，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-file-inclusion文件包含">DVWA File Inclusion（文件包含）</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg">
@@ -358,12 +327,7 @@
 &lt;blockquote&gt;
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
 &lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
-&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
-&lt;h4 id=&#34;dom型&#34;&gt;DOM型&lt;/h4&gt;&lt;p&gt;基于文档对象模型(Document Object Model)的一种漏洞；&lt;/p&gt;
-&lt;p&gt;DOM型与反射型类似，都需要攻击者诱使用户点击专门设计的URL；&lt;/p&gt;
-&lt;p&gt;Dom型 xss 是通过 url 传入参数去控制触发的；&lt;/p&gt;
-&lt;p&gt;Dom型返回页面源码中看不到输入的payload， 而是保存在浏览器的DOM中。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-dom-based-cross-site-scripting-dom型-xss">DVWA DOM Based Cross Site Scripting (DOM型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg">
@@ -778,38 +742,38 @@
 <p>注意逻辑连接符的区别</p>
 </blockquote>
 <table>
-	<thead>
-			<tr>
-					<th style="text-align: center">逻辑运算符</th>
-					<th style="text-align: center">逻辑功能</th>
-			</tr>
-	</thead>
-	<tbody>
-			<tr>
-					<td style="text-align: center">&amp;(并且)</td>
-					<td style="text-align: center">有false则false</td>
-			</tr>
-			<tr>
-					<td style="text-align: center"></td>
-					<td style="text-align: center">(或者)</td>
-			</tr>
-			<tr>
-					<td style="text-align: center">!(非)</td>
-					<td style="text-align: center">非false则true，非true则false</td>
-			</tr>
-			<tr>
-					<td style="text-align: center">^(异或)</td>
-					<td style="text-align: center">相同为false，不同为true</td>
-			</tr>
-			<tr>
-					<td style="text-align: center">&amp;&amp;(短路与)</td>
-					<td style="text-align: center">有false则false,若&amp;&amp;左边表达式或者值为false则右边不进行计算</td>
-			</tr>
-			<tr>
-					<td style="text-align: center"></td>
-					<td style="text-align: center"></td>
-			</tr>
-	</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: center">逻辑运算符</th>
+          <th style="text-align: center">逻辑功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">&amp;(并且)</td>
+          <td style="text-align: center">有false则false</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">(或者)</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">!(非)</td>
+          <td style="text-align: center">非false则true，非true则false</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">^(异或)</td>
+          <td style="text-align: center">相同为false，不同为true</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&amp;&amp;(短路与)</td>
+          <td style="text-align: center">有false则false,若&amp;&amp;左边表达式或者值为false则右边不进行计算</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"></td>
+          <td style="text-align: center"></td>
+      </tr>
+  </tbody>
 </table>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1988,20 +1952,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;CSRF是跨站请求伪造攻击，由客户端发起，是由于没有在执行关键操作时，进行 &lt;code&gt;是否由用户自愿发起的&lt;/code&gt; 确认攻击者通过用户的浏览器来注入额外的网络请求，来破坏一个网站会话的完整性。&lt;/p&gt;
-&lt;p&gt;比如某网站 &lt;strong&gt;用户信息修改&lt;/strong&gt; 功能，没有验证Referer也没添加Token，攻击者可以用HTML构造恶意代码提交POST请求，诱骗已经登陆的受害者点击，可以直接修改用户信息&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;修复建议&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;验证Referer&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;添加token&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;CSRF是跨站请求伪造攻击，由客户端发起，是由于没有在执行关键操作时，进行 &lt;code&gt;是否由用户自愿发起的&lt;/code&gt; 确认攻击者通过用户的浏览器来注入额外的网络请求，来破坏一个网站会话的完整性。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-cross-site-request-forgery-csrf">DVWA Cross Site Request Forgery (CSRF)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg">
@@ -2674,11 +2625,7 @@
 &lt;blockquote&gt;
 &lt;h3 id=&#34;修复建议&#34;&gt;修复建议&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;1、使用白名单限制可以上传的文件扩展名&lt;/p&gt;
-&lt;p&gt;2、注意0x00截断攻击（PHP更新到最新版本）&lt;/p&gt;
-&lt;p&gt;3、对上传后的文件统一随机命名，不允许用户控制扩展名&lt;/p&gt;
-&lt;p&gt;4、上传文件的存储目录禁用执行权限&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;2、注意0x00截断攻击（PHP更新到最新版本）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-file-upload文件上传">DVWA File Upload（文件上传）</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg">
@@ -3469,14 +3416,7 @@
 &lt;blockquote&gt;
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
 &lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
-&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
-&lt;h4 id=&#34;反射型&#34;&gt;反射型&lt;/h4&gt;&lt;p&gt;出现在搜索栏，用户登录等地方，常用来窃取客户端的Cookie进行钓鱼欺骗。(需要用户去点击)&lt;/p&gt;
-&lt;p&gt;想要窃取cookie要满足两个条件：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;1.用户点击攻击者构造的URL&lt;/p&gt;
-&lt;p&gt;2.访问被攻击的应用服务(即存在xss的网站)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwareflected-cross-site-scripting-反射型-xss">DVWAReflected Cross Site Scripting (反射型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg">
@@ -4965,9 +4905,7 @@
 &lt;blockquote&gt;
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
 &lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
-&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
-&lt;h4 id=&#34;存储型&#34;&gt;存储型&lt;/h4&gt;&lt;p&gt;出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">

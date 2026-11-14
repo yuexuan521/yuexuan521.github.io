@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 30 Dec 2024 08:45:00 +0000</lastBuildDate>
@@ -297,38 +297,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;本地文件包含lfi&#34;&gt;本地文件包含(LFI)&lt;/h3&gt;&lt;p&gt;文件包含漏洞的产生原因是 PHP 语言在通过引入文件时，引用的文件名，用户可控，由于传入的文件名没有经过合理的校验，或者校验被绕过，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入。&lt;/p&gt;
-&lt;p&gt;当被包含的文件在服务器本地时，就形成的本地文件包含漏洞。&lt;/p&gt;
-&lt;h4 id=&#34;漏洞利用&#34;&gt;漏洞利用&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;利用条件：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;（1）include()等函数通过动态变量的方式引入包含文件； （2）用户能够控制该动态变量。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;远程文件包含rfl&#34;&gt;远程文件包含(RFL)&lt;/h3&gt;&lt;p&gt;服务器通过 PHP 的特性（函数）去包含任意文件时，由于要包含的这个文件来源过滤不严格，&lt;/p&gt;
-&lt;p&gt;从而可以去包含一个恶意文件，攻击者就可以远程构造一个特定的恶意文件达到攻击目的。&lt;/p&gt;
-&lt;h4 id=&#34;漏洞利用-1&#34;&gt;漏洞利用&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;条件：&lt;/strong&gt; &lt;code&gt;php.ini&lt;/code&gt; 中开启 &lt;code&gt;allow_url_include&lt;/code&gt; 、 &lt;code&gt;allow_url_fopen&lt;/code&gt; 选项。&lt;/p&gt;
-&lt;h3 id=&#34;修复建议&#34;&gt;修复建议&lt;/h3&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;禁止远程文件包含 &lt;code&gt;allow_url_include=off&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置 &lt;code&gt;open_basedir=指定目录&lt;/code&gt; ，限制访问区域。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;过滤 &lt;code&gt;../&lt;/code&gt; 等特殊符号&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改Apache日志文件的存放地址&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;开启魔术引号 &lt;code&gt;magic_quotes_qpc=on&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;尽量不要使用动态变量调用文件，直接写要包含的文件。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;h3 id=&#34;本地文件包含lfi&#34;&gt;本地文件包含(LFI)&lt;/h3&gt;&lt;p&gt;文件包含漏洞的产生原因是 PHP 语言在通过引入文件时，引用的文件名，用户可控，由于传入的文件名没有经过合理的校验，或者校验被绕过，从而操作了预想之外的文件，就可能导致意外的文件泄露甚至恶意的代码注入。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwa-file-inclusion文件包含">DVWA File Inclusion（文件包含）</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg">

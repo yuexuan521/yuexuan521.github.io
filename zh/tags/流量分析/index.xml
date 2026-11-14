@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 20 Oct 2025 08:00:00 +0000</lastBuildDate>
@@ -752,8 +752,7 @@
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;邮件协议：POP、SMTP、IMAP&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;邮件协议：POP、SMTP、IMAP&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png">
@@ -1077,8 +1076,7 @@
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、根据题目得知，本题与VoIP有关。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;基于IP的语音传输&lt;/strong&gt; （英语：Voice over Internet Protocol，缩写为 &lt;strong&gt;VoIP&lt;/strong&gt; ）是一种语音通话技术，经由网际协议（IP）来达成语音通话与多媒体会议，也就是经由互联网来进行通信。其他非正式的名称有IP电话（IP telephony）、互联网电话（Internet telephony）、宽带电话（broadband telephony）以及宽带电话服务（broadband phone service）。
-VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互联网接入设备，通过蜂窝网络、Wi-Fi进行通话及发送短信。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互联网接入设备，通过蜂窝网络、Wi-Fi进行通话及发送短信。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190329971.png">

@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
@@ -2370,9 +2370,7 @@ $$</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">

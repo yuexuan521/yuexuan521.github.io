@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
@@ -48,7 +48,7 @@
 <p><strong>Publishing platform</strong>: GitHub or Gitee (using their Pages service to host static text files). ( <a href="https://github.com/"target="_blank" rel="noopener noreferrer">GitHub</a> )</p>
 </li>
 <li>
-<p><strong>Final output</strong>: A publicly accessible URL (for example: <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt</a>).</p>
+<p><strong>Final output</strong>: A publicly accessible URL (for example: <code>https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt</code>).</p>
 </li>
 </ol>
 <h2 id="step-1-prepare-the-hfish-api">Step 1: Prepare the HFish API</h2><p>HFish provides an API for retrieving attack data.</p>

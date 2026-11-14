@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 11:44:09 +0000</lastBuildDate>
@@ -579,9 +579,7 @@ $$</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
@@ -1012,18 +1010,6 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、先看一下hint.zip压缩包，解压得到&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34; 
              alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
@@ -1581,22 +1567,7 @@ SW-B(config-if-range)#shutdown</p>
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;SQL注入漏洞基本原理&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;
-&lt;p&gt;可能导致数据泄露或数据破坏，缺乏可审计性，甚至导致完全接管主机。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;根据注入技术分类有以下五种：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;布尔型盲注：根据返回页面判断条件真假&lt;/p&gt;
-&lt;p&gt;时间型盲注：用页面返回时间是否增加判断是否存在注入&lt;/p&gt;
-&lt;p&gt;基于错误的注入：页面会返回错误信息&lt;/p&gt;
-&lt;p&gt;联合查询注入：可以使用union的情况下&lt;/p&gt;
-&lt;p&gt;堆查询注入：可以同时执行多条语句&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;防御方法&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;使用参数化查询。&lt;/p&gt;
-&lt;p&gt;数据库服务器不会把参数的内容当作 &lt;code&gt;SQL&lt;/code&gt; 指令的一部分来拼接执行；&lt;/p&gt;
-&lt;p&gt;而是在数据库完成 &lt;code&gt;SQL&lt;/code&gt; 指令的编译后才套用参数运行(预编译)。&lt;/p&gt;
-&lt;p&gt;避免数据变成代码被执行，时刻分清代码和数据的界限。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg">

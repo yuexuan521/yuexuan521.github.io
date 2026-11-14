@@ -9,7 +9,7 @@
       <url>https://yuexuan521.github.io/og-default.png</url>
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.169.0</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 20 Nov 2025 09:01:00 +0000</lastBuildDate>
@@ -47,8 +47,7 @@
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意：一般数据内容小于5Bytes(&amp;lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;注意：一般数据内容小于5Bytes(&amp;lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png">
@@ -2618,18 +2617,6 @@ zip文件头： <code>50 4B 03 04</code></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、先看一下hint.zip压缩包，解压得到&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34; 
              alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
