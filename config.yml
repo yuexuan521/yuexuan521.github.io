@@ -74,10 +74,8 @@ params:
 
   label:
     text: "YueXuan"               # 左上角网站Logo旁边的文字 (通常显示网站名)。
-    # icon: /apple-touch-icon.png # 位图 logo，深色模式下是黑块，已改用下面的矢量标
+    icon: /apple-touch-icon.png   # 左上角文字旁边的图片 (比如你的头像)。
     iconHeight: 35                # 图标高度。
-    iconSVG: >-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="35" height="35" fill="none" aria-hidden="true" style="vertical-align:-6px;margin-inline-end:8px"><rect x="4.5" y="4.5" width="55" height="55" rx="15" stroke="currentColor" stroke-width="5"/><path d="M20 23.5 L29 32 L20 40.5" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 41 H45" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></svg>
 
 # --- 模式 A: 个人资料模式 (当前被禁用) ---
   # profile-mode
