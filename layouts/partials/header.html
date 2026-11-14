@@ -60,10 +60,10 @@
                             {{- $img = $img.Resize "x30" }}
                         {{- end }}
                     {{- end }}
-                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                    <img src="{{ $img.Permalink }}" alt=""
                         height="{{- site.Params.label.iconHeight | default "30" -}}">
                 {{- else }}
-                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
+                <img src="{{- site.Params.label.icon | absURL -}}" alt=""
                     height="{{- site.Params.label.iconHeight | default "30" -}}">
                 {{- end -}}
                 {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
@@ -74,7 +74,7 @@
             {{- end }}
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <button id="theme-toggle" accesskey="t" title="切换深浅色 (Alt + T)" aria-label="切换深浅色主题">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">

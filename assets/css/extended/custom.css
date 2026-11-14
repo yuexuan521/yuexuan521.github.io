@@ -75,3 +75,36 @@ kbd + kbd {
 
 
 
+
+/* ==================================================================
+   键盘可见焦点（无障碍）
+   主题在 :focus 上做了 outline:0，这里用 :focus-visible 补回，
+   只在键盘操作时显示，不影响鼠标点击的观感。
+   ================================================================== */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.post-entry:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* 输入框已有边框变化作为焦点反馈，不再叠加描边，避免出现双框 */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: none;
+}
+
+#theme-toggle:focus-visible,
+.top-link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.toc summary:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}

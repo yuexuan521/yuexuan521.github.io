@@ -1,9 +1,10 @@
 ---
-title: "Search" # in any language you want
+title: "搜索" # in any language you want
 layout: "search" # is necessary
 # url: "/search"
 # language: zh
-# description: "Description for Search"
+description: "在全部文章中检索关键词，支持标题、正文与标签。"
 summary: "search"
-placeholder: "placeholder text in search input box"
+placeholder: "输入关键词，搜索文章…"
+hideMeta: true
 ---

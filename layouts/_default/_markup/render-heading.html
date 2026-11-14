@@ -1,0 +1,21 @@
+{{- /*
+  标题渲染钩子：处理正文手写的 H1。
+
+  背景：页面标题已由模板渲染为唯一的 H1，部分文章正文又以 "# 标题" 开头，
+  会输出第二个 H1，既破坏语义层级，也在视觉上把标题重复一遍。
+
+  规则：
+  1. 与页面标题同文（忽略空白差异）的 H1 —— 直接跳过，避免重复；
+  2. 其余 H1 —— 降级为 H2，保留锚点与属性；
+  3. 锚点仍由 PaperMod 的 anchored_headings 统一补 "#" 链接。
+*/ -}}
+{{- $text := .Text | plainify | strings.TrimSpace -}}
+{{- $title := .Page.Title | strings.TrimSpace -}}
+{{- $isDup := and (eq .Level 1) (eq (replaceRE `\s+` "" $text) (replaceRE `\s+` "" $title)) -}}
+{{- if not $isDup -}}
+{{- $level := .Level -}}
+{{- if lt $level 2 -}}{{- $level = 2 -}}{{- end -}}
+{{- $class := "" -}}
+{{- with .Attributes.class -}}{{- $class = printf " class=%q" . -}}{{- end -}}
+<h{{ $level }} id="{{ .Anchor }}"{{ $class | safeHTMLAttr }}>{{ .Text }}</h{{ $level }}>
+{{- end -}}
