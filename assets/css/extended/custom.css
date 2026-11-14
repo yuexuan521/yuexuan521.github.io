@@ -108,3 +108,39 @@ select:focus-visible {
     outline-offset: 2px;
     border-radius: 4px;
 }
+
+/* ==================================================================
+   跳到正文（键盘用户）
+   ================================================================== */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 100;
+    padding: 10px 18px;
+    background: var(--primary);
+    color: var(--theme);
+    border-radius: 0 0 8px 0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* ==================================================================
+   移动端正文左右留白：14px 太贴边，收到 18px
+   ================================================================== */
+@media screen and (max-width: 768px) {
+    :root {
+        --gap: 18px;
+    }
+}
+
+/* 跳转目标获得焦点时不要出现整块描边 */
+main:focus {
+    outline: none;
+}

@@ -40,7 +40,7 @@
 {{- end }}
 
 <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="主导航">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
@@ -127,7 +127,7 @@
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             {{ if .HasChildren}}
             <li class="dropdown">
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                <a class="dropdown-toggle" href="{{ .URL | absLangURL }}" aria-haspopup="true" aria-expanded="false" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
                         {{- .Pre | markdownify}}

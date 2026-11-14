@@ -78,3 +78,63 @@
         console.log("%c" + message, styleContent);
     })();
 </script>
+{{- /* ============================================================
+   导航交互：触屏下拉 + 桌面目录自动展开
+   ============================================================ */ -}}
+<script>
+(function () {
+  "use strict";
+
+  /* 系列下拉：触屏点击展开，Esc 或点击外部关闭 */
+  var dd = document.querySelector(".dropdown");
+  if (dd) {
+    var trigger = dd.querySelector(".dropdown-toggle");
+    var panel = dd.querySelector(".dropdown-content");
+    if (trigger && panel) {
+      var setOpen = function (open) {
+        dd.classList.toggle("is-open", open);
+        trigger.setAttribute("aria-expanded", open ? "true" : "false");
+      };
+
+      trigger.addEventListener("click", function (e) {
+        var hoverable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        if (hoverable) return; // 桌面：悬停展开，点击照常跳转到分类总览
+        if (!dd.classList.contains("is-open")) {
+          e.preventDefault();
+          setOpen(true);
+        }
+      });
+
+      panel.addEventListener("click", function (e) {
+        if (e.target.closest("a")) setOpen(false);
+      });
+
+      document.addEventListener("click", function (e) {
+        if (!dd.contains(e.target)) setOpen(false);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && dd.classList.contains("is-open")) {
+          setOpen(false);
+          trigger.focus();
+        }
+      });
+    }
+  }
+
+  /* 桌面端展开目录，移动端保持收起（config 里 tocopen=false） */
+  var tocDetails = document.querySelector(".toc details");
+  if (tocDetails && window.matchMedia("(min-width: 1240px)").matches) {
+    tocDetails.open = true;
+  }
+
+  /* 跳到正文：部分浏览器不会把焦点移到 tabindex=-1 的目标，这里补一次 */
+  var skip = document.querySelector(".skip-link");
+  var mainEl = document.getElementById("main");
+  if (skip && mainEl) {
+    skip.addEventListener("click", function () {
+      mainEl.focus();
+    });
+  }
+})();
+</script>
