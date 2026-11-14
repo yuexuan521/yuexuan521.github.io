@@ -81,7 +81,7 @@ kzna{blnl_abj_lbh_trg_vg}
 ```
 
 ```python
-# 编   者：玥轩
+# 编   者：YueXuan
 # 开发时间：2023/5/17 23:06
 
 def decrypt(ciphertext, shift):

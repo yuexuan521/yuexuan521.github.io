@@ -24,7 +24,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema. # 环境标识。Production (生产环境) 会开启统计、压缩等；
-  title: "YueXUan's Blog" # 首页显示的网站标题
+  title: "YueXuan's Blog" # 首页显示的网站标题
   description: "关注网络安全、CTF Writeup、渗透测试与编程技术分享。" # 网站描述（用于 SEO 搜索结果摘要）用于 HTML meta description，对 SEO 极其重要。
   keywords: [博客, Life, Enginering, CTF, 网络安全, Writeup, Web安全, Hugo, 渗透测试] # 网站关键词。用于 SEO。
   author: Yue Xuan # 显示在页面底部的作者名。
@@ -213,8 +213,8 @@ languages: # 定义具体语言板块。
           weight: 1
         - identifier: YueXuan_Algorithm
           parent: series
-          name: "玥轩算法"
-          url: /zh/categories/玥轩算法/
+          name: "YueXuan算法"
+          url: /zh/categories/YueXuan算法/
           weight: 2
         - identifier: DVWA
           parent: series
