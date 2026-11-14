@@ -138,3 +138,53 @@
   }
 })();
 </script>
+
+{{- /* 搜索页：索引体积约 2 MB，首次搜索给一个进度提示 */ -}}
+<script>
+(function () {
+  "use strict";
+  var box = document.getElementById("searchbox");
+  var list = document.getElementById("searchResults");
+  if (!box || !list) return;
+
+  var hint = document.createElement("p");
+  hint.className = "search-status";
+  hint.setAttribute("role", "status");
+  hint.setAttribute("aria-live", "polite");
+  hint.textContent = "正在载入检索索引（约 2 MB），首次搜索请稍候…";
+  box.insertBefore(hint, list);
+
+  var done = false;
+  var finish = function () {
+    if (done) return;
+    done = true;
+    hint.classList.remove("is-visible");
+    setTimeout(function () { hint.remove(); }, 250);
+  };
+
+  /* 索引下载完成（含缓存命中）即收起 */
+  if (window.PerformanceObserver) {
+    try {
+      new PerformanceObserver(function (entries) {
+        entries.getEntries().forEach(function (e) {
+          if (e.name.indexOf("index.json") !== -1) finish();
+        });
+      }).observe({ type: "resource", buffered: true });
+    } catch (err) { /* 老浏览器忽略 */ }
+  }
+
+  /* 有结果渲染出来也说明索引可用 */
+  new MutationObserver(function () {
+    if (list.children.length) finish();
+  }).observe(list, { childList: true });
+
+  /* 慢于 800ms 才显示，避免一闪而过 */
+  setTimeout(function () {
+    if (!done) hint.classList.add("is-visible");
+  }, 800);
+
+  setTimeout(function () {
+    if (!done) hint.textContent = "索引仍在载入，网络较慢时可以稍等片刻…";
+  }, 12000);
+})();
+</script>

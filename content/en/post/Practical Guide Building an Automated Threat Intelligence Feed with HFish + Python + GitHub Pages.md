@@ -42,7 +42,7 @@ This article demonstrates how to automatically extract attack information obtain
 
 3. **Publishing platform**: GitHub or Gitee (using their Pages service to host static text files). ( [GitHub](https://github.com/) )
 
-4. **Final output**: A publicly accessible URL (for example: https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt).
+4. **Final output**: A publicly accessible URL (for example: `https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt`).
 
 ## Step 1: Prepare the HFish API
 

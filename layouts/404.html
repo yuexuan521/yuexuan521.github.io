@@ -1,0 +1,38 @@
+{{- define "main" }}
+{{- $isEN := eq .Lang "en" }}
+<section class="y404" aria-labelledby="y404-title">
+  <div class="y404-mark" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="58" height="58" fill="none" stroke="currentColor" stroke-width="4.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="4" width="56" height="56" rx="15" />
+      <path d="M18 24 L27 32 L18 40" />
+      <path d="M34 40 H46" />
+    </svg>
+  </div>
+
+  <p class="y404-kicker">ERROR 404</p>
+  <h1 id="y404-title" class="y404-title">
+    {{- if $isEN }}This page does not exist{{ else }}这条路走到头了{{ end -}}
+  </h1>
+
+  <blockquote class="y404-quote">
+    <p>There is nothing either good or bad, but thinking makes it so.</p>
+    <footer>
+      <cite>William Shakespeare · <em>Hamlet</em>, Act II, Scene II</cite>
+      {{- if not $isEN }}
+      <span class="y404-quote-cn">善恶本无定论，不过是念头使然。</span>
+      {{- end }}
+    </footer>
+  </blockquote>
+
+  <p class="y404-hint">
+    {{- if $isEN }}The link may be outdated, or the page has moved.{{ else }}链接可能已经过期，也可能这篇文章换了地址。{{ end -}}
+  </p>
+
+  <nav class="y404-links" aria-label="{{ if $isEN }}Recovery links{{ else }}可用入口{{ end }}">
+    <a class="y404-btn y404-btn-primary" href="{{ "" | relLangURL }}">{{ if $isEN }}Home{{ else }}返回首页{{ end }}</a>
+    <a class="y404-btn" href="{{ "archives/" | relLangURL }}">{{ if $isEN }}Archives{{ else }}翻归档{{ end }}</a>
+    <a class="y404-btn" href="{{ "search/" | relLangURL }}">{{ if $isEN }}Search{{ else }}搜一下{{ end }}</a>
+  </nav>
+</section>
+{{- end }}

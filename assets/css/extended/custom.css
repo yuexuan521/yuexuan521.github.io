@@ -419,3 +419,140 @@ details.archive-year > summary:hover::before {
 .footer-dot {
     color: var(--tertiary);
 }
+
+/* ==================================================================
+   404：终端标记 + 莎士比亚台词
+   ================================================================== */
+.y404 {
+    max-width: 620px;
+    margin: 64px auto 56px;
+}
+
+.y404-mark {
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.y404-mark svg {
+    display: block;
+}
+
+.y404-kicker {
+    margin: 0 0 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.y404-title {
+    margin: 0 0 30px;
+    font-size: 34px;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+}
+
+.y404-quote {
+    margin: 0 0 26px;
+    padding: 20px 24px 18px;
+    border-inline-start: 3px solid var(--primary);
+    border-radius: 0 10px 10px 0;
+    background: var(--code-bg);
+}
+
+.y404-quote p {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", "Songti SC", serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.72;
+    color: var(--primary);
+}
+
+.y404-quote cite {
+    font-style: normal;
+    font-size: 12.5px;
+    letter-spacing: .02em;
+    color: var(--secondary);
+}
+
+.y404-quote cite em {
+    font-style: italic;
+}
+
+.y404-quote-cn {
+    display: block;
+    margin-top: 7px;
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.y404-hint {
+    margin: 0 0 26px;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--secondary);
+}
+
+.y404-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.y404-btn {
+    padding: 8px 18px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background .15s, border-color .15s;
+}
+
+.y404-btn:hover {
+    background: var(--code-bg);
+    border-color: var(--tertiary);
+}
+
+.y404-btn-primary {
+    border-color: var(--primary);
+}
+
+.y404-btn-primary:hover {
+    background: var(--primary);
+    color: var(--theme);
+}
+
+@media only screen and (max-width: 640px) {
+    .y404 {
+        margin: 40px auto 36px;
+    }
+
+    .y404-title {
+        font-size: 26px;
+    }
+
+    .y404-quote {
+        padding: 16px 18px 14px;
+    }
+
+    .y404-quote p {
+        font-size: 17px;
+    }
+}
+
+/* 搜索页索引提示 */
+.search-status {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--secondary);
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.search-status.is-visible {
+    opacity: 1;
+}

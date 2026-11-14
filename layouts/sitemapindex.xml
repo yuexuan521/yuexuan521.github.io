@@ -1,0 +1,14 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- /* 英文站已收起（不生成 sitemap），索引里也不再列出它，避免指向 404 */ -}}
+  {{- range . }}
+  {{- if ne .Language.Lang "en" }}
+  <sitemap>
+    <loc>{{ .Home.Permalink }}sitemap.xml</loc>
+    {{- with .Lastmod }}
+    <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+    {{- end }}
+  </sitemap>
+  {{- end }}
+  {{- end }}
+</sitemapindex>

@@ -171,6 +171,12 @@ languages: # 定义具体语言板块。
     subtitle: "Yet Another Programming Blog"
     weight: 1
     contentDir: 'content/en'
+    # 英文站内容未完成（仅 2 篇），已从导航收起：页面标 noindex，且不生成 sitemap
+    disableKinds: ["sitemap"]
+    sitemap:
+      disable: true
+    cascade:
+      robotsNoIndex: true
     menu:
       main:
         - name: Archives

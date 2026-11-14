@@ -3,38 +3,52 @@ name: github pages
 on:
   push:
     branches:
-      - master  # ⚠️ 注意：如果你的主分支叫 master，请把这里改回 master
-  pull_request:
-  workflow_dispatch: # 允许你在 GitHub 网页上手动点击按钮触发部署
+      - master          # 只有 master 的提交会发布
+  workflow_dispatch:     # 允许在 Actions 页面手动触发（需选 master 分支）
+
+permissions:
+  contents: write
+
+# 同一时间只跑一个部署，新提交会取消排队中的旧任务
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # 赋予机器人写入仓库的权限
-    
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          submodules: true  # 下载主题
-          fetch-depth: 0    # 获取完整历史，用于生成文章的"最后修改时间"
+          submodules: true   # 主题 PaperMod 是子模块
+          fetch-depth: 0     # 完整历史，用于生成"最后修改时间"
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # 使用最新版 Hugo
-          extended: true         # 开启扩展版（PaperMod主题通常需要）
-
-      # 原来的 Generate Configuration 步骤已被删除，因为不需要了
+          hugo-version: '0.160.1'   # 与本地一致，避免产物漂移
+          extended: true
 
       - name: Build
         run: hugo --minify
 
+      # GitHub Pages 只认站点根目录的 /404.html；
+      # 本项目 defaultContentLanguageInSubdir = true，Hugo 只生成 /zh/404.html，
+      # 因此复制一份到根目录，否则线上会显示 GitHub 默认 404。
+      - name: Prepare root 404
+        run: |
+          if [ -f public/zh/404.html ]; then
+            cp public/zh/404.html public/404.html
+            echo "root 404 ready: $(wc -c < public/404.html) bytes"
+          else
+            echo "::error::public/zh/404.html not found"
+            exit 1
+          fi
+
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        # 仅在推送到主分支时才执行发布
-        if: github.ref == 'refs/heads/master' # ⚠️ 注意：如果你上面改了 master，这里也要改成 refs/heads/master
+        if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
