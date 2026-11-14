@@ -6,10 +6,10 @@
     <description>Recent content in Java on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 27 Jan 2025 09:17:18 +0000</lastBuildDate>
@@ -61,34 +61,31 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>将你获得的明显信息md5加密之后以flag{xxx}的格式提交。 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到out.pcap</p>
+<h3 id="题目描述">题目描述：</h3><p>将你获得的明显信息md5加密之后以flag{xxx}的格式提交。 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到out.pcap</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开out.pcap，发现大量ICMP报文，携带以 <code>$$START$$</code> 开头的数据，似乎是Base64数据。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、打开out.pcap，发现大量ICMP报文，携带以 <code>$$START$$</code> 开头的数据，似乎是Base64数据。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -98,7 +95,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -108,7 +105,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -118,7 +115,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -201,7 +198,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -212,7 +209,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -222,7 +219,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -233,7 +230,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -253,7 +250,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -290,7 +287,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -302,7 +299,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -337,8 +334,7 @@
 </span></span><span class="line"><span class="cl">            <span class="n">data</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">i</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -376,30 +372,38 @@ $$</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到attachment.zip文件&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到attachment.zip文件&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;用Bandizip打开attachment.zip文件，看到压缩包备注，密码均为四位数字&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png">
@@ -420,35 +424,32 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到attachment.zip文件</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到attachment.zip文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -459,7 +460,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -470,7 +471,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -569,7 +570,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -665,7 +666,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -675,14 +676,13 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>

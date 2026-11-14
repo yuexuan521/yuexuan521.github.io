@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 知识带给我们自由</title>
+    <title>标签 on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/tags/</link>
-    <description>Recent content in Tags on 知识带给我们自由</description>
+    <description>Recent content in 标签 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 12:17:10 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Github</title>
-      <link>https://yuexuan521.github.io/zh/tags/github/</link>
-      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HFish</title>
-      <link>https://yuexuan521.github.io/zh/tags/hfish/</link>
-      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/hfish/</guid>
+      <title>内网穿透</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Sat, 11 Apr 2026 12:17:10 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description></description>
     </item>
     <item>
@@ -33,6 +26,13 @@
       <link>https://yuexuan521.github.io/zh/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>开发语言</title>
+      <link>https://yuexuan521.github.io/zh/tags/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/</guid>
       <description></description>
     </item>
     <item>
@@ -71,17 +71,17 @@
       <description></description>
     </item>
     <item>
-      <title>上海专升本</title>
-      <link>https://yuexuan521.github.io/zh/tags/%E4%B8%8A%E6%B5%B7%E4%B8%93%E5%8D%87%E6%9C%AC/</link>
-      <pubDate>Fri, 05 Dec 2025 10:53:56 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/tags/%E4%B8%8A%E6%B5%B7%E4%B8%93%E5%8D%87%E6%9C%AC/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>专升本</title>
       <link>https://yuexuan521.github.io/zh/tags/%E4%B8%93%E5%8D%87%E6%9C%AC/</link>
       <pubDate>Fri, 05 Dec 2025 10:53:56 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/tags/%E4%B8%93%E5%8D%87%E6%9C%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BUUCTF</title>
+      <link>https://yuexuan521.github.io/zh/tags/buuctf/</link>
+      <pubDate>Thu, 20 Nov 2025 09:01:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/tags/buuctf/</guid>
       <description></description>
     </item>
   </channel>

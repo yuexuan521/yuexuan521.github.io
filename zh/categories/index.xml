@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Categories on 知识带给我们自由</title>
+    <title>分类 on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/categories/</link>
-    <description>Recent content in Categories on 知识带给我们自由</description>
+    <description>Recent content in 分类 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 11 Apr 2026 12:17:10 +0000</lastBuildDate>
@@ -57,11 +57,11 @@
       <description></description>
     </item>
     <item>
-      <title>玥轩算法</title>
-      <link>https://yuexuan521.github.io/zh/categories/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/</link>
+      <title>YueXuan算法</title>
+      <link>https://yuexuan521.github.io/zh/categories/yuexuan%E7%AE%97%E6%B3%95/</link>
       <pubDate>Sun, 19 Nov 2023 11:03:44 +0000</pubDate>
-      <guid>https://yuexuan521.github.io/zh/categories/%E7%8E%A5%E8%BD%A9%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
+      <guid>https://yuexuan521.github.io/zh/categories/yuexuan%E7%AE%97%E6%B3%95/</guid>
+      <description>算法竞赛与 C 语言练习的系列笔记。</description>
     </item>
     <item>
       <title>牛客网Python</title>

@@ -6,10 +6,10 @@
     <description>Recent content in CCNA on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:48:24 +0000</lastBuildDate>
@@ -19,39 +19,47 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置基于服务器的AAA身份验证，采用TACACS+协议。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从PC-B客户端验证基于服务器的AAA（TACACS+）身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置基于服务器的AAA身份验证，采用RADIUS协议。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
 </li>
@@ -71,8 +79,7 @@
 <p>从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
+<h3 id="背景场景">背景/场景</h3><p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
 <p>您将在路由器R1上创建一个本地用户账户，并配置本地AAA以测试控制台和vty登录：</p>
 <ul>
 <li>
@@ -103,8 +110,7 @@
 </ul>
 <p>注意：尽管IOS版本15.3使用了更为安全的加密哈希算法SCRYPT，但在Packet Tracer当前支持的IOS版本中仍使用MD5。请始终在您的设备上使用最安全的选项。</p>
 <hr>
-<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3>
-<p><strong>步骤1：测试连通性</strong></p>
+<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3><p><strong>步骤1：测试连通性</strong></p>
 <ul>
 <li>
 <p>从PC-A向PC-B执行Ping操作。</p>
@@ -148,14 +154,13 @@ R1(config-line)# login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3>
-<p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
+<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3><p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
 a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
 b. 创建一个1024位的RSA加密密钥。</p>
 <blockquote>
@@ -207,15 +212,14 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></li>
 </ul>
-<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3>
-<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
 <li>为了备份目的，在R2上配置一个本地用户名 <strong>Admin2</strong> ，密码为 <strong>admin2pa55</strong> 。</li>
 </ul>
@@ -230,7 +234,7 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -269,15 +273,14 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></li>
 </ul>
-<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3>
-<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
 <li>为了备份目的，在R3上配置一个本地用户名 <strong>Admin3</strong> ，密码为 <strong>admin3pa55</strong> 。</li>
 </ul>
@@ -292,7 +295,7 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -331,7 +334,7 @@ R3(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -349,19 +352,17 @@ R3(config-line)#login authentication default</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;
 &lt;/li&gt;
@@ -369,20 +370,20 @@ R3(config-line)#login authentication default</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2>
-<p>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
 </li>
@@ -393,8 +394,7 @@ R3(config-line)#login authentication default</p>
 <p>启用端口安全功能以防止CAM表溢出攻击。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
+<h3 id="背景场景">背景/场景</h3><p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
 <p>为了确保网络性能和安全性达到最优状态，管理员希望确定中心3560型号交换机作为根桥。为防止对生成树协议进行篡改攻击，管理员希望确保STP参数得到安全配置。针对CAM表溢出攻击的风险，网络管理员决定配置端口安全策略，限制每个交换机端口学习到的MAC地址数量。一旦学习到的MAC地址超过设定的限制，管理员希望建立机制自动关闭该端口。</p>
 <p>所有交换机设备已经预先配置了以下信息：</p>
 <ul>
@@ -408,8 +408,7 @@ R3(config-line)#login authentication default</p>
 <p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 </li>
 </ul>
-<h3 id="第一部分配置根桥">第一部分：配置根桥</h3>
-<p><strong>步骤1：确定当前的根桥。</strong></p>
+<h3 id="第一部分配置根桥">第一部分：配置根桥</h3><p><strong>步骤1：确定当前的根桥。</strong></p>
 <p>从中心交换机（Central）发出 <code>show spanning-tree</code> 命令，以确定当前的根桥、查看正在使用的端口及其状态。</p>
 <blockquote>
 <p>Central#show spanning-tree</p>
@@ -491,8 +490,7 @@ R3(config-line)#login authentication default</p>
 </div>
 </div><p>根据上述信息，哪个交换机是当前的根桥？</p>
 <p>基于新的根桥设置，请绘制由此得出的生成树拓扑结构。</p>
-<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3>
-<p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
+<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3><p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
 <p>PortFast应在连接至单个工作站或服务器的接入端口上配置，以使它们更快地进入活动状态。在SW-A和SW-B的相连接入端口上使用 <code>spanning-tree portfast</code> 命令来启用 <strong>PortFast</strong> 。</p>
 <blockquote>
 <p>SW-A(config)#int range f0/1-4
@@ -524,8 +522,7 @@ SW-1(config-if-range)#spanning-tree guard root</p>
 <p>SW-2(config)#int range f0/23-24
 SW-2(config-if-range)#spanning-tree guard root</p>
 </blockquote>
-<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3>
-<p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
+<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3><p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
 <p>此操作应在SW-A和SW-B的所有接入端口上执行。设置允许学习的MAC地址最大数量为 <strong>2</strong> ，允许动态学习MAC地址，并将违规处理方式设为 <strong>shutdown</strong> （关闭）。</p>
 <p>注解：只有当交换机端口配置为接入模式时，才能启用端口安全功能。</p>
 <blockquote>
@@ -599,7 +596,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -609,7 +606,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -627,8 +624,7 @@ SW-B(config-if-range)#shutdown</p>
 </blockquote>
 <p><strong>步骤4：检查结果。</strong></p>
 <p>您的完成度应为100%。点击“检查结果”查看反馈信息以及所需组件完成情况的验证。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>Central:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>Central:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -774,41 +770,36 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
-&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
+&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;第一部分配置应用并验证一个编号扩展访问控制列表&#34;&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;步骤 1：配置ACL以允许FTP和ICMP流量&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
+<h3 id="目标">目标</h3><p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
 <p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
-<h3 id="背景场景">背景/场景</h3>
-<p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
+<h3 id="背景场景">背景/场景</h3><p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
 <hr>
-<h3 id="第一部分配置应用并验证一个编号扩展访问控制列表">第一部分：配置、应用并验证一个编号扩展访问控制列表</h3>
-<p><strong>步骤 1：配置ACL以允许FTP和ICMP流量</strong></p>
+<h3 id="第一部分配置应用并验证一个编号扩展访问控制列表">第一部分：配置、应用并验证一个编号扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许FTP和ICMP流量</strong></p>
 <p>a. 在R1的全局配置模式下，输入以下命令确定扩展访问列表的第一个有效编号。</p>
 <blockquote>
 <p>R1(config)# access-list ?
@@ -901,7 +892,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -919,7 +910,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -930,14 +921,13 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3>
-<p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
+<h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
 <p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
 <blockquote>
 <p>R1(config)# ip access-list ?
@@ -955,16 +945,16 @@ A.B.C.D 源通配符位</p>
 </blockquote>
 <p>d. 另一种计算通配符的方法是从255.255.255.255减去子网掩码：</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: center">= 0. 0. 0. 15</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">= 0. 0. 0. 15</td>
+			</tr>
+	</tbody>
 </table>
 <blockquote>
 <p>R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15 ?</p>
@@ -990,7 +980,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1001,7 +991,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1012,7 +1002,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1025,37 +1015,41 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在SW-1和SW-2之间建立新的冗余链路。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2>
-<p>
+&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个新的管理VLAN（VLAN 20）并将一台管理PC连接到该VLAN。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实施ACL以防止外部用户访问管理VLAN。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>在SW-1和SW-2之间建立新的冗余链路。</p>
 </li>
@@ -1069,8 +1063,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <p>实施ACL以防止外部用户访问管理VLAN。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>一家公司的网络当前使用两个独立的VLAN：VLAN 5和VLAN 10。此外，所有干线端口都已配置为本征VLAN 15。网络管理员希望在交换机SW-1和SW-2之间添加一条冗余链路。这条链路必须启用中继功能，并确保所有必要的安全设置到位。</p>
+<h3 id="背景场景">背景/场景</h3><p>一家公司的网络当前使用两个独立的VLAN：VLAN 5和VLAN 10。此外，所有干线端口都已配置为本征VLAN 15。网络管理员希望在交换机SW-1和SW-2之间添加一条冗余链路。这条链路必须启用中继功能，并确保所有必要的安全设置到位。</p>
 <p>此外，网络管理员还希望将一台管理PC连接到交换机SW-A。管理员希望这台管理PC能够连接到所有交换机及路由器，但不希望任何其他设备能够连接到管理PC或这些交换机上。因此，管理员计划创建一个新的VLAN 20用于管理目的。</p>
 <p>所有设备已经预先配置了以下信息：</p>
 <ul>
@@ -1084,13 +1077,12 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 </li>
 </ul>
-<h3 id="第一部分验证连通性">第一部分：验证连通性</h3>
-<p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
+<h3 id="第一部分验证连通性">第一部分：验证连通性</h3><p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1100,7 +1092,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1112,7 +1104,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1122,20 +1114,19 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3>
-<p><strong>步骤1：连接SW-1和SW-2。</strong></p>
+<h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3><p><strong>步骤1：连接SW-1和SW-2。</strong></p>
 <p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1157,8 +1148,7 @@ SW-2(config-if)#switchport trunk native vlan 15
 SW-2(config-if)#switchport nonegotiate
 SW-2(config-if)#no shutdown</p>
 </blockquote>
-<h3 id="第三部分启用vlan-20作为管理vlan">第三部分：启用VLAN 20作为管理VLAN</h3>
-<p>网络管理员希望通过管理PC访问所有交换机和路由设备。出于安全原因，管理员希望确保所有受管设备都在一个独立的VLAN中。</p>
+<h3 id="第三部分启用vlan-20作为管理vlan">第三部分：启用VLAN 20作为管理VLAN</h3><p>网络管理员希望通过管理PC访问所有交换机和路由设备。出于安全原因，管理员希望确保所有受管设备都在一个独立的VLAN中。</p>
 <p><strong>步骤1：在SW-A上启用管理VLAN（VLAN 20）。</strong></p>
 <p>a. 在SW-A上启用VLAN 20。</p>
 <blockquote>
@@ -1211,7 +1201,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1221,7 +1211,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1240,7 +1230,7 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1250,14 +1240,13 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3>
-<p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
+<h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3><p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
 <p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
 <blockquote>
 <p>R1(config)#int g0/0.3
@@ -1299,7 +1288,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1310,7 +1299,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1324,7 +1313,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1336,8 +1325,7 @@ R1(config-line)#access-class 102 in</p>
 <p><strong>步骤5：检查结果。</strong></p>
 <p>您的完成度应该为100%。点击“检查结果”查看反馈信息以及已完成的必要组件验证。</p>
 <p>如果所有组件都看似正确，但活动仍显示未完成，则可能是由于验证ACL操作的连通性测试出现问题。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>Part 2:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>Part 2:</strong></p>
 <p>SW-1、SW-2</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

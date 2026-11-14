@@ -6,10 +6,10 @@
     <description>Recent content in 前端 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 29 Sep 2024 12:23:38 +0000</lastBuildDate>
@@ -19,12 +19,11 @@
       <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</link>
       <pubDate>Sun, 29 Sep 2024 12:23:38 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-dom-based-cross-site-scripting-dom%E5%9E%8B-xss/</guid>
-      <description>&lt;h2 id=&#34;dvwa-dom-based-cross-site-scripting-dom型-xss&#34;&gt;DVWA DOM Based Cross Site Scripting (DOM型 XSS)&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;dvwa-dom-based-cross-site-scripting-dom型-xss&#34;&gt;DVWA DOM Based Cross Site Scripting (DOM型 XSS)&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -37,14 +36,19 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
-&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="dvwa-dom-based-cross-site-scripting-dom型-xss">DVWA DOM Based Cross Site Scripting (DOM型 XSS)</h2>
-<p>
+&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
+&lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
+&lt;h4 id=&#34;dom型&#34;&gt;DOM型&lt;/h4&gt;&lt;p&gt;基于文档对象模型(Document Object Model)的一种漏洞；&lt;/p&gt;
+&lt;p&gt;DOM型与反射型类似，都需要攻击者诱使用户点击专门设计的URL；&lt;/p&gt;
+&lt;p&gt;Dom型 xss 是通过 url 传入参数去控制触发的；&lt;/p&gt;
+&lt;p&gt;Dom型返回页面源码中看不到输入的payload， 而是保存在浏览器的DOM中。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwa-dom-based-cross-site-scripting-dom型-xss">DVWA DOM Based Cross Site Scripting (DOM型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -57,18 +61,15 @@
 </ul>
 <hr>
 <blockquote>
-<h3 id="xss跨站原理">XSS跨站原理</h3>
-<p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
+<h3 id="xss跨站原理">XSS跨站原理</h3><p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
 <p>浏览器同源策略：只有发布Cookie的网站才能读取Cookie。</p>
 <p>会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害</p>
-<h4 id="dom型">DOM型</h4>
-<p>基于文档对象模型(Document Object Model)的一种漏洞；</p>
+<h4 id="dom型">DOM型</h4><p>基于文档对象模型(Document Object Model)的一种漏洞；</p>
 <p>DOM型与反射型类似，都需要攻击者诱使用户点击专门设计的URL；</p>
 <p>Dom型 xss 是通过 url 传入参数去控制触发的；</p>
 <p>Dom型返回页面源码中看不到输入的payload， 而是保存在浏览器的DOM中。</p>
 </blockquote>
-<h3 id="low">Low</h3>
-<p>1、分析网页源代码</p>
+<h3 id="low">Low</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -91,7 +92,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png" 
-             alt="image-20240425141612735" 
+             alt="" 
               
              loading="lazy"
         />
@@ -110,14 +111,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png" 
-             alt="image-20240425141658717" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="medium">Medium</h3>
-<p>1、分析网页源代码</p>
+<h3 id="medium">Medium</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -157,7 +157,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png" 
-             alt="image-20240425143147799" 
+             alt="" 
               
              loading="lazy"
         />
@@ -176,7 +176,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png" 
-             alt="image-20240616160139823" 
+             alt="" 
               
              loading="lazy"
         />
@@ -186,14 +186,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png" 
-             alt="image-20240616161058852" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="high">High</h3>
-<p>1、分析网页源代码</p>
+<h3 id="high">High</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -253,7 +252,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png" 
-             alt="image-20240616161314789" 
+             alt="" 
               
              loading="lazy"
         />
@@ -263,14 +262,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png" 
-             alt="image-20240616161408461" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="impossible">Impossible</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="impossible">Impossible</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -287,6 +285,345 @@
 </span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"># 大多数情况下浏览器都会对 URL 中的内容进行编码，这会阻止任何注入的 JavaScript 被执行。
 </span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
+    <item>
+      <title>牛客网Python入门103题练习|(04--列表（2）)</title>
+      <link>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</link>
+      <pubDate>Sun, 02 Apr 2023 12:10:52 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/%E7%89%9B%E5%AE%A2%E7%BD%91python%E5%85%A5%E9%97%A8103%E9%A2%98%E7%BB%83%E4%B9%A0_04--%E5%88%97%E8%A1%A82/</guid>
+      <description>&lt;h2 id=&#34;np24淘汰排名最后的学生&#34;&gt;⭐NP24 淘汰排名最后的学生&lt;/h2&gt;&lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;&lt;p&gt;某实验班实行末位淘汰制，期中考试需要淘汰末三位同学。现输入一行多个字符串表示按分数排名的该班级同学的名字（数量一定不少于三个），请你使用list将其封装为列表，然后使用三次pop函数，去掉末三位同学的名字，最后输出淘汰后的班级名字列表。&lt;/p&gt;
+&lt;h4 id=&#34;输入描述&#34;&gt;输入描述：&lt;/h4&gt;&lt;p&gt;输入一行多个字符串表示同学名字，最少不少于3个名字，以空格间隔。&lt;/p&gt;
+&lt;h4 id=&#34;输出描述&#34;&gt;输出描述：&lt;/h4&gt;&lt;p&gt;输出删除末三位后的完整列表。&lt;/p&gt;
+&lt;h3 id=&#34;示例1&#34;&gt;示例1&lt;/h3&gt;&lt;p&gt;输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NiuNiu Tom Tony Lucy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;输出：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&amp;#39;NiuNiu&amp;#39;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lst&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lst&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[:&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;np25有序的列表&#34;&gt;⭐NP25 有序的列表&lt;/h2&gt;&lt;h3 id=&#34;描述-1&#34;&gt;描述&lt;/h3&gt;&lt;p&gt;创建一个依次包含字符串&amp;rsquo;P&amp;rsquo;、&amp;lsquo;y&amp;rsquo;、&amp;rsquo;t&amp;rsquo;、&amp;lsquo;h&amp;rsquo;、&amp;lsquo;o&amp;rsquo;和&amp;rsquo;n&amp;rsquo;的列表my_list，先使用sorted函数对列表my_list进行临时排序，第一行输出排序后的完整列表，第二行输出原始的列表。再使用sort函数对列表my_list进行降序排序，第三行输出排序后完整的列表。&lt;/p&gt;
+&lt;h4 id=&#34;输入描述-1&#34;&gt;输入描述：&lt;/h4&gt;&lt;p&gt;无&lt;/p&gt;
+&lt;h4 id=&#34;输出描述-1&#34;&gt;输出描述：&lt;/h4&gt;&lt;p&gt;第一行输出临时排序后的列表；&lt;/p&gt;
+&lt;p&gt;第二行输出原始的列表；&lt;/p&gt;
+&lt;p&gt;第三行输出完成降序排序后的列表。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;P&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;h&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;o&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;n&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nowlist&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sorted&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nowlist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sort&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reverse&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;my_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;np26牛牛的反转列表&#34;&gt;⭐NP26 牛牛的反转列表&lt;/h2&gt;&lt;h3 id=&#34;描述-2&#34;&gt;描述&lt;/h3&gt;&lt;p&gt;牛牛有一个列表记录了各个朋友的喜欢的数字，num = [3, 5, 9, 0, 1, 9, 0, 3]，请你帮他创建列表，然后使用reverse函数将列表反转输出。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="np24淘汰排名最后的学生">⭐NP24 淘汰排名最后的学生</h2><h3 id="描述">描述</h3><p>某实验班实行末位淘汰制，期中考试需要淘汰末三位同学。现输入一行多个字符串表示按分数排名的该班级同学的名字（数量一定不少于三个），请你使用list将其封装为列表，然后使用三次pop函数，去掉末三位同学的名字，最后输出淘汰后的班级名字列表。</p>
+<h4 id="输入描述">输入描述：</h4><p>输入一行多个字符串表示同学名字，最少不少于3个名字，以空格间隔。</p>
+<h4 id="输出描述">输出描述：</h4><p>输出删除末三位后的完整列表。</p>
+<h3 id="示例1">示例1</h3><p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NiuNiu Tom Tony Lucy
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[&#39;NiuNiu&#39;]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np25有序的列表">⭐NP25 有序的列表</h2><h3 id="描述-1">描述</h3><p>创建一个依次包含字符串&rsquo;P&rsquo;、&lsquo;y&rsquo;、&rsquo;t&rsquo;、&lsquo;h&rsquo;、&lsquo;o&rsquo;和&rsquo;n&rsquo;的列表my_list，先使用sorted函数对列表my_list进行临时排序，第一行输出排序后的完整列表，第二行输出原始的列表。再使用sort函数对列表my_list进行降序排序，第三行输出排序后完整的列表。</p>
+<h4 id="输入描述-1">输入描述：</h4><p>无</p>
+<h4 id="输出描述-1">输出描述：</h4><p>第一行输出临时排序后的列表；</p>
+<p>第二行输出原始的列表；</p>
+<p>第三行输出完成降序排序后的列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;P&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">nowlist</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">nowlist</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">my_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np26牛牛的反转列表">⭐NP26 牛牛的反转列表</h2><h3 id="描述-2">描述</h3><p>牛牛有一个列表记录了各个朋友的喜欢的数字，num = [3, 5, 9, 0, 1, 9, 0, 3]，请你帮他创建列表，然后使用reverse函数将列表反转输出。</p>
+<h4 id="输入描述-2">输入描述：</h4><p>无</p>
+<h4 id="输出描述-2">输出描述：</h4><p>第一行输出创建好的原始的列表，第二行输出反转后的列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">lst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np27朋友们的喜好">⭐NP27 朋友们的喜好</h2><h3 id="描述-3">描述</h3><p>牛牛有一个name = [&lsquo;Niumei&rsquo;, &lsquo;YOLO&rsquo;, &lsquo;Niu Ke Le&rsquo;, &lsquo;Mona&rsquo;] 记录了他最好的朋友们的名字，请创建一个二维列表friends，使用append函数将name添加到friends的第一行。</p>
+<p>假如Niumei最喜欢吃pizza，最喜欢数字3，YOLO最喜欢吃fish， 最喜欢数字6，Niu Ke Le最喜欢吃potato，最喜欢数字0，Mona最喜欢吃beef，最喜欢数字3。</p>
+<p>请再次创建一个列表food依次记录朋友们最喜欢吃的食物，并将创建好的列表使用append函数添加到friends的第二行；</p>
+<p>然后再创建一个列表number依次记录朋友们最喜欢的颜色，并将创建好的列表使用append函数添加到friends的第三行。</p>
+<p>这样friends就是一个二维list，使用print函数直接打印这个二维list。</p>
+<h4 id="输入描述-3">输入描述：</h4><p>无</p>
+<h4 id="输出描述-3">输出描述：</h4><p>[[&lsquo;Niumei&rsquo;, &lsquo;YOLO&rsquo;, &lsquo;Niu Ke Le&rsquo;, &lsquo;Mona&rsquo;], [&lsquo;pizza&rsquo;, &lsquo;fish&rsquo;, &lsquo;potato&rsquo;, &lsquo;beef&rsquo;], [3, 6, 0, 3]]</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span>  <span class="p">[</span><span class="s1">&#39;Niumei&#39;</span><span class="p">,</span> <span class="s1">&#39;YOLO&#39;</span><span class="p">,</span> <span class="s1">&#39;Niu Ke Le&#39;</span><span class="p">,</span> <span class="s1">&#39;Mona&#39;</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl"><span class="n">food</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pizza&#39;</span><span class="p">,</span> <span class="s1">&#39;fish&#39;</span><span class="p">,</span> <span class="s1">&#39;potato&#39;</span><span class="p">,</span> <span class="s1">&#39;beef&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">number</span> <span class="o">=</span>  <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">friends</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">friends</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">friends</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">friends</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">friends</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np28密码游戏">⭐NP28 密码游戏</h2><h3 id="描述-4">描述</h3><p>牛牛和牛妹一起玩密码游戏，牛牛作为发送方会发送一个4位数的整数给牛妹，牛妹接收后将对密码进行破解。</p>
+<p>破解方案如下：每位数字都要加上3再除以9的余数代替该位数字，然后将第1位和第3位数字交换，第2位和第4位数字交换。</p>
+<p>请输出牛妹破解后的密码。</p>
+<h4 id="输入描述-4">输入描述：</h4><p>输入一个四位数的整数。</p>
+<h4 id="输出描述-4">输出描述：</h4><p>输出破解后的密码，以四位数的形式。</p>
+<h3 id="示例1-1">示例1</h3><p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1234
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">6745
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="备注">备注：</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">输入不会有前置0，但是输出要保持前置0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num</span> <span class="o">=</span> <span class="p">[(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">%</span><span class="mi">9</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">num</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}{</span><span class="n">num</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="si">}{</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}{</span><span class="n">num</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np29用列表实现栈">⭐NP29 用列表实现栈</h2><h3 id="描述-5">描述</h3><p>栈是一种先进后出的数据结构，类似我们生活中挤电梯，最后进入的肯定是先出来，现我们用Python的列表来模拟栈。假设初始的列表为 stack = [1, 2, 3, 4, 5]，请将其视作栈，使用pop函数弹出末尾两个元素，再使用append函数将输入元素加入到栈中，每次操作完成后都要输出整个列表。</p>
+<h4 id="输入描述-5">输入描述：</h4><p>输入要加入栈中的整数。</p>
+<h4 id="输出描述-5">输出描述：</h4><p>第一行输出第一次出栈后的列表；</p>
+<p>第二行输出第二次出栈后的列表；</p>
+<p>第三行输出元素入栈后的列表。</p>
+<h3 id="示例1-2">示例1</h3><p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[1, 2, 3, 4]
+</span></span><span class="line"><span class="cl">[1, 2, 3]
+</span></span><span class="line"><span class="cl">[1, 2, 3, 1]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">说明：
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">第一次弹出末尾元素5，第二次弹出末尾元素4，第三次加入新增元素1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np30用列表实现队列">⭐NP30 用列表实现队列</h2><h3 id="描述-6">描述</h3><p>队列是一种先进先出的数据结构，类似食堂排队打饭，先入队的元素当然要先出队，先请用Python列表模拟队列。现有一列表 queue = [1, 2, 3, 4, 5] 被视作队列，请使用pop函数连续两次取出队首元素，再使用append函数将输入元素添加到队尾，每次操作后都要输出完整的列表。</p>
+<h4 id="输入描述-6">输入描述：</h4><p>输入一个整数表示要添加到队列的元素。</p>
+<h4 id="输出描述-6">输出描述：</h4><p>第一行输出第一次取出队首后的列表；</p>
+<p>第二行输出第二次取出队首后的列表；</p>
+<p>第三行输出添加元素到队列后的列表。</p>
+<h3 id="示例1-3">示例1</h3><p>输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">8
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[2, 3, 4, 5]
+</span></span><span class="line"><span class="cl">[3, 4, 5]
+</span></span><span class="line"><span class="cl">[3, 4, 5, 8]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>说明：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">第一次弹出队首元素1，第二次弹出队首元素2，第三次加入数字8到队尾
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">queue</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">queue</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="np31团队分组">⭐NP31 团队分组</h2><h3 id="描述-7">描述</h3><p>创建一个列表group_list，其中依次包含字符串 &lsquo;Tom&rsquo;, &lsquo;Allen&rsquo;, &lsquo;Jane&rsquo;, &lsquo;William&rsquo;, &lsquo;Tony&rsquo; 表示这个小组成员的名字。现有三项任务需要他们去完成，根据不同任务的繁琐度和实际情况需要分别派2人、3人、2人来完成，他们决定通过对列表分片来分配任务。</p>
+<p>使用print()语句和切片来打印列表group_list的前两个元素表示去做第一个任务的人的名字，
+再使用print()语句和切片来打印列表group_list的中间三个元素表示去做第二个任务的人的名字，
+再使用print()语句和切片来打印列表group_list的后两个元素表示去做第三个任务的人的名字。</p>
+<h4 id="输入描述-7">输入描述：</h4><p>无</p>
+<h4 id="输出描述-7">输出描述：</h4><p>按照题意输出</p>
+<p>[&lsquo;Tom&rsquo;, &lsquo;Allen&rsquo;]</p>
+<p>[&lsquo;Allen&rsquo;, &lsquo;Jane&rsquo;, &lsquo;William&rsquo;]
+[&lsquo;William&rsquo;, &lsquo;Tony&rsquo;]</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">group_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="s1">&#39;Allen&#39;</span><span class="p">,</span> <span class="s1">&#39;Jane&#39;</span><span class="p">,</span> <span class="s1">&#39;William&#39;</span><span class="p">,</span> <span class="s1">&#39;Tony&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">group_list</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">group_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">group_list</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div>]]></content:encoded>
     </item>

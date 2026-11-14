@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Ios on 知识带给我们自由</title>
+    <title>IOS on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/tags/ios/</link>
-    <description>Recent content in Ios on 知识带给我们自由</description>
+    <description>Recent content in IOS on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:46:59 +0000</lastBuildDate>
@@ -19,20 +19,17 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
 &lt;/li&gt;
@@ -46,22 +43,19 @@
 &lt;p&gt;验证IPS配置。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
-&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;
+&lt;p&gt;标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>启用IOS入侵防御系统（IPS）。</p>
 </li>
@@ -75,16 +69,14 @@
 <p>验证IPS配置。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
+<h3 id="背景场景">背景/场景</h3><p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
 <p>标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。</p>
 <p>服务器和PC已预先配置好。路由器也已经预先配置了以下内容：</p>
 <p>o 启用密码： <strong>ciscoenpa55</strong></p>
 <p>o 控制台密码： <strong>ciscoconpa55</strong></p>
 <p>o SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 <p>o OSPF进程号101</p>
-<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3>
-<p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
+<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3><p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
 <p><strong>步骤1：启用安全技术包。</strong></p>
 <p>a. 在R1上，执行 <code>show version</code> 命令查看技术包许可证信息。</p>
 <p>b. 如果尚未启用“Security Technology”包，请使用以下命令启用该包：</p>
@@ -106,7 +98,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -117,7 +109,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -177,8 +169,7 @@ R1(config-ips-category)#exit</p>
 R1(config-if)#ip ips iosips out</p>
 </blockquote>
 <p>注：direction in表示IPS仅检查进入接口的流量。同样地，out表示IPS仅检查离开接口的流量。</p>
-<h3 id="第二部分修改签名">第二部分：修改签名</h3>
-<p><strong>步骤1：更改签名的事件动作。</strong></p>
+<h3 id="第二部分修改签名">第二部分：修改签名</h3><p><strong>步骤1：更改签名的事件动作。</strong></p>
 <p>取消退休echo request签名（签名ID 2004，子签名ID 0），启用它，并将签名动作更改为alert和drop。</p>
 <blockquote>
 <p>R1(config)#ip ips signature-definition
@@ -200,7 +191,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -213,7 +204,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -224,7 +215,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -236,7 +227,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -247,7 +238,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />

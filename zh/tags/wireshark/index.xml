@@ -6,10 +6,10 @@
     <description>Recent content in Wireshark on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 07 Jul 2025 08:00:00 +0000</lastBuildDate>
@@ -37,29 +37,37 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;保存附件，解压得到tmp文件夹，内有logon.pcapng。&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;保存附件，解压得到tmp文件夹，内有logon.pcapng。&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、没想到这道题这么简单。双击logon.pcapng文件，在Wireshark中打开，流量很少。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、没想到这道题这么简单。双击logon.pcapng文件，在Wireshark中打开，流量很少。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;直接追踪HTTP流，看一下内容。发现是登录流量，尝试登录三次，都失败了。但用户名和密码并没有变化，只是尝试登录了三次。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png">
@@ -78,34 +86,31 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存附件，解压得到tmp文件夹，内有logon.pcapng。</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>保存附件，解压得到tmp文件夹，内有logon.pcapng。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、没想到这道题这么简单。双击logon.pcapng文件，在Wireshark中打开，流量很少。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、没想到这道题这么简单。双击logon.pcapng文件，在Wireshark中打开，流量很少。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -116,7 +121,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190903449.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190903449.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -136,14 +141,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190906009.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190906009.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -177,14 +181,27 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，有很多pcap流量包。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、寻找黑客留下的后门文件，对于php站点，通常成功上传木马后，会测试 &lt;code&gt;phpinfo()&lt;/code&gt; 返回。&lt;/p&gt;
+&lt;p&gt;所以，在流量包中搜索 &lt;code&gt;phpinfo()&lt;/code&gt; ，过滤语句如下：&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png">
@@ -204,29 +221,26 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，有很多pcap流量包。</p>
+<h3 id="题目描述">题目描述：</h3><p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客预留的后门的文件名是什么？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，有很多pcap流量包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、寻找黑客留下的后门文件，对于php站点，通常成功上传木马后，会测试 <code>phpinfo()</code> 返回。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、寻找黑客留下的后门文件，对于php站点，通常成功上传木马后，会测试 <code>phpinfo()</code> 返回。</p>
 <p>所以，在流量包中搜索 <code>phpinfo()</code> ，过滤语句如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -241,7 +255,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -252,7 +266,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -266,8 +280,7 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">GET</span> <span class="o">/</span><span class="n">admin</span><span class="o">.</span><span class="n">bak</span><span class="o">.</span><span class="n">php</span><span class="err">?</span><span class="n">a</span><span class="o">=</span><span class="k">assert</span><span class="o">&amp;</span><span class="n">b</span><span class="o">=</span><span class="n">phpinfo</span><span class="p">()</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>\<span class="n">r</span>\<span class="n">n</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -301,14 +314,29 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，有很多pcap流量包。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;邮件协议：POP、SMTP、IMAP&lt;/p&gt;
+&lt;/blockquote&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png">
@@ -328,29 +356,26 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，有很多pcap流量包。</p>
+<h3 id="题目描述">题目描述：</h3><p>黑客对A公司发动了攻击，以下是一段时间内获取到的流量包，那黑客使用了哪个邮箱给员工发送了钓鱼邮件?（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，有很多pcap流量包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。</p>
 <blockquote>
 <p>邮件协议：POP、SMTP、IMAP</p>
 </blockquote>
@@ -358,7 +383,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -369,7 +394,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -380,7 +405,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -417,14 +442,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -458,14 +482,27 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，有很多pcap流量包&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、随便打开一个，一般黑客的攻击流量会很多，需要使用Wireshark统计功能。&lt;/p&gt;
+&lt;p&gt;先统计IP，统计 → IPv4 Statistics → All Addresses&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png">
@@ -485,35 +522,32 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，有很多pcap流量包</p>
+<h3 id="题目描述">题目描述：</h3><p>某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: <a href="https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g</a> 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，有很多pcap流量包</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、随便打开一个，一般黑客的攻击流量会很多，需要使用Wireshark统计功能。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、随便打开一个，一般黑客的攻击流量会很多，需要使用Wireshark统计功能。</p>
 <p>先统计IP，统计 → IPv4 Statistics → All Addresses</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -530,7 +564,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -541,7 +575,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -552,7 +586,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -563,15 +597,14 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <p>最后，确认黑客的攻击ip是 <code>183.129.152.140</code> 。</p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -628,34 +661,31 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到 <code>greatescape.pcap</code></p>
+<h3 id="题目描述">题目描述：</h3><p>注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到 <code>greatescape.pcap</code></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、过滤常见协议，如FTP、HTTP。在FTP协议中，查看TCP流，发现ssc.key文件，猜测为TLS密钥文件。（位置在 <code>tcp.stream eq 18</code> ）</p>
+<h3 id="解题思路">解题思路：</h3><p>1、过滤常见协议，如FTP、HTTP。在FTP协议中，查看TCP流，发现ssc.key文件，猜测为TLS密钥文件。（位置在 <code>tcp.stream eq 18</code> ）</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -665,7 +695,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -786,7 +816,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -796,7 +826,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -807,7 +837,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -826,14 +856,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -888,35 +917,32 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到Attack.pcap文件</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件解压，得到Attack.pcap文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192329001.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192329001.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开流量包，根据题目提示，寻找攻击流量。首先，发现攻击者进行了目录扫描，在靠后位置发现上传一句话木马</p>
+<h3 id="解题思路">解题思路：</h3><p>1、打开流量包，根据题目提示，寻找攻击流量。首先，发现攻击者进行了目录扫描，在靠后位置发现上传一句话木马</p>
 <p><strong>目录扫描</strong></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192330113.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192330113.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -927,7 +953,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -937,7 +963,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -948,7 +974,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192337801.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192337801.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -959,7 +985,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192339966.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192339966.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -969,7 +995,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192341804.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192341804.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -980,7 +1006,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192343482.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192343482.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -991,7 +1017,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192345626.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192345626.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1001,7 +1027,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192348223.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192348223.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1012,7 +1038,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192350434.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192350434.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1027,7 +1053,7 @@ lsass是windows系统的一个进程，用于本地安全和登陆策略。</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192352711.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192352711.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1038,7 +1064,7 @@ lsass是windows系统的一个进程，用于本地安全和登陆策略。</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192354293.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192354293.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1049,7 +1075,7 @@ lsass是windows系统的一个进程，用于本地安全和登陆策略。</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192356375.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192356375.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1078,7 +1104,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192358227.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192358227.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1089,14 +1115,13 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192400016.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192400016.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1133,29 +1158,70 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。来源： &lt;a href=&#34;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件得到attachment.pcapng文件&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。来源： &lt;a href=&#34;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/hebtuerror404/CTF_competition_warehouse_2018&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件得到attachment.pcapng文件&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&#34;方法一&#34;&gt;方法一：&lt;/h4&gt;&lt;p&gt;使用Wireshark，在分组字节流中查找包含 &lt;code&gt;ctf&lt;/code&gt; 的内容，可以找到flag&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h4 id=&#34;方法二&#34;&gt;方法二：&lt;/h4&gt;&lt;p&gt;将全部HTTP对象导出&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;发现大量的文件如下：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;搜索文件中的关键词，使用grep命令，查找到flag&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png">
@@ -1176,58 +1242,53 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。来源： <a href="https://github.com/hebtuerror404/CTF_competition_warehouse_2018"target="_blank" rel="noopener noreferrer">https://github.com/hebtuerror404/CTF_competition_warehouse_2018</a></p>
-<h3 id="密文">密文：</h3>
-<p>下载附件得到attachment.pcapng文件</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。来源： <a href="https://github.com/hebtuerror404/CTF_competition_warehouse_2018"target="_blank" rel="noopener noreferrer">https://github.com/hebtuerror404/CTF_competition_warehouse_2018</a></p>
+<h3 id="密文">密文：</h3><p>下载附件得到attachment.pcapng文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、有两种方法，先讲讲我的解题经过。我首先简单浏览了一下流量，发现有大量HTTP流量，并且似乎存在爆破行为。过滤出HTTP流量，查看到爆破密码的步骤，随便看一个就捡到了flag。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h4 id="方法一">方法一：</h4>
-<p>使用Wireshark，在分组字节流中查找包含 <code>ctf</code> 的内容，可以找到flag</p>
+<h4 id="方法一">方法一：</h4><p>使用Wireshark，在分组字节流中查找包含 <code>ctf</code> 的内容，可以找到flag</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h4 id="方法二">方法二：</h4>
-<p>将全部HTTP对象导出</p>
+<h4 id="方法二">方法二：</h4><p>将全部HTTP对象导出</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1238,7 +1299,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1257,14 +1318,13 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -1301,29 +1361,99 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;好多漂亮的壁纸，赶快挑一张吧！ 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件解压，得到pacap流量文件&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;好多漂亮的壁纸，赶快挑一张吧！ 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件解压，得到pacap流量文件&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、双击打开文件，简单浏览发现存在大量的图片，将全部图片导出分析&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击打开文件，简单浏览发现存在大量的图片，将全部图片导出分析&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;得到的图片如下：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;简单看了几张，没有什么有用的信息&lt;/p&gt;
+&lt;p&gt;2、使用Kali上的exiftool工具，批量分析图片，寻找flag&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193134440.png">
@@ -1344,34 +1474,31 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>好多漂亮的壁纸，赶快挑一张吧！ 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到pacap流量文件</p>
+<h3 id="题目描述">题目描述：</h3><p>好多漂亮的壁纸，赶快挑一张吧！ 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件解压，得到pacap流量文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、双击打开文件，简单浏览发现存在大量的图片，将全部图片导出分析</p>
+<h3 id="解题思路">解题思路：</h3><p>1、双击打开文件，简单浏览发现存在大量的图片，将全部图片导出分析</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1382,7 +1509,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1392,7 +1519,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1402,7 +1529,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1412,7 +1539,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1422,7 +1549,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1432,7 +1559,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1456,7 +1583,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193150869.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193150869.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1467,7 +1594,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193152693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193152693.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1482,7 +1609,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193154758.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193154758.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1492,14 +1619,13 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193156836.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193156836.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1532,14 +1658,36 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到一个.pcapng文件。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、通过在顶部过滤器输入“http”语句，将HTTP流量过滤出来。（也可以使用“http.request.method==POST”语句实现更精确的过滤）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png">
@@ -1558,33 +1706,30 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到一个.pcapng文件。</p>
+<h3 id="题目描述">题目描述：</h3><p>某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到一个.pcapng文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）</p>
+<h3 id="解题思路">解题思路：</h3><p>1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1595,7 +1740,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1606,7 +1751,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1617,7 +1762,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1627,14 +1772,13 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1667,14 +1811,48 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: &lt;a href=&#34;https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw&lt;/a&gt; 提取码: 31vk&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: &lt;a href=&#34;https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw&lt;/a&gt; 提取码: 31vk&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到一个名为gift.pcapng的wireshark流量包。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击gift.pcapng文件，进入Wireshark中。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;题目要求找到帐号密码，我们先将HTTP流量过滤出来看一下。
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;看到一个POST方法和两个GET方法，直奔POST方法的那条流量，追踪它的HTTP流，找到账号和密码。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193448672.png">
@@ -1693,34 +1871,31 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: <a href="https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw</a> 提取码: 31vk</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到一个名为gift.pcapng的wireshark流量包。</p>
+<h3 id="题目描述">题目描述：</h3><p>某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: <a href="https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw"target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw</a> 提取码: 31vk</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到一个名为gift.pcapng的wireshark流量包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、双击gift.pcapng文件，进入Wireshark中。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、双击gift.pcapng文件，进入Wireshark中。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1731,7 +1906,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1742,7 +1917,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1762,14 +1937,13 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>

@@ -6,10 +6,10 @@
     <description>Recent content in CCNA on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 16:37:23 +0000</lastBuildDate>
@@ -19,20 +19,17 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</link>
       <pubDate>Thu, 23 Jan 2025 16:37:23 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</guid>
-      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;验证整个网络的连通性。&lt;/p&gt;
 &lt;/li&gt;
@@ -40,22 +37,18 @@
 &lt;p&gt;配置R1以支持与R3之间的站点到站点IPsec VPN。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
-&lt;p&gt;网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>验证整个网络的连通性。</p>
 </li>
@@ -63,14 +56,13 @@
 <p>配置R1以支持与R3之间的站点到站点IPsec VPN。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。</p>
+<h3 id="背景场景">背景/场景</h3><p>网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。</p>
 <p><strong>ISAKMP阶段1策略参数</strong></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -94,14 +86,13 @@
 <p>· 启用密码： <strong>ciscoenpa55</strong></p>
 <p>· SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 <p>· OSPF进程号 <strong>101</strong></p>
-<h3 id="第一部分在r1上配置ipsec参数">第一部分：在R1上配置IPsec参数</h3>
-<p><strong>步骤1：测试连通性。</strong></p>
+<h3 id="第一部分在r1上配置ipsec参数">第一部分：在R1上配置IPsec参数</h3><p><strong>步骤1：测试连通性。</strong></p>
 <p>从PC-A向PC-C发送ping请求。
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -113,7 +104,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -162,8 +153,7 @@ R1(config-crypto-map)# exit</p>
 <p>R1(config)# interface s0/0/0
 R1(config-if)# crypto map VPN-MAP</p>
 </blockquote>
-<h3 id="第二部分在r3上配置ipsec参数">第二部分：在R3上配置IPsec参数</h3>
-<p><strong>步骤1：启用安全技术包。</strong></p>
+<h3 id="第二部分在r3上配置ipsec参数">第二部分：在R3上配置IPsec参数</h3><p><strong>步骤1：启用安全技术包。</strong></p>
 <p>a. 在R3上执行 <code>show version</code> 命令以验证是否已启用安全技术包许可证信息。</p>
 <p>b. 如果尚未启用安全技术包，则启用该包并重新加载R3。</p>
 <p><strong>步骤2：配置路由器R3以支持与R1的站点到站点VPN。</strong></p>
@@ -201,14 +191,13 @@ R3(config-crypto-map)# exit</p>
 <p>R3(config)# interface s0/0/1
 R3(config-if)# crypto map VPN-MAP</p>
 </blockquote>
-<h3 id="第三部分验证ipsec-vpn">第三部分：验证IPsec VPN</h3>
-<p><strong>步骤1：在出现感兴趣流量之前验证隧道。</strong></p>
+<h3 id="第三部分验证ipsec-vpn">第三部分：验证IPsec VPN</h3><p><strong>步骤1：在出现感兴趣流量之前验证隧道。</strong></p>
 <p>在R1上执行 <code>show crypto ipsec sa</code> 命令。注意封装、加密、解封装和解密的包数量均设置为 <strong>0</strong> 。
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -220,7 +209,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -232,7 +221,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -244,7 +233,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -256,7 +245,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -264,8 +253,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 </div></p>
 <p><strong>步骤6：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息以及已完成的必要组件验证。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>R1:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>R1:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -362,20 +350,17 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:36 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</guid>
-      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标：&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;配置OSPF MD5身份验证。&lt;/p&gt;
 &lt;/li&gt;
@@ -383,21 +368,23 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;p&gt;配置NTP服务。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置R3路由器以支持SSH连接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标：</h3>
-<ul>
+<h3 id="目标">目标：</h3><ul>
 <li>
 <p>配置OSPF MD5身份验证。</p>
 </li>
@@ -411,8 +398,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <p>配置R3路由器以支持SSH连接。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景：</h3>
-<p>在本练习中，您将配置OSPF MD5身份验证以实现安全的路由更新。</p>
+<h3 id="背景场景">背景/场景：</h3><p>在本练习中，您将配置OSPF MD5身份验证以实现安全的路由更新。</p>
 <p>NTP服务器是本次活动中主NTP服务器。您需要在NTP服务器和路由器上配置身份验证，并设置路由器允许软件时钟通过NTP与时间服务器同步。同时，您还需要配置路由器定期使用从NTP获取的时间更新硬件时钟。</p>
 <p>Syslog服务器在此活动提供消息记录功能。您需要配置路由器识别接收日志消息的远程主机（即Syslog服务器）。</p>
 <p>您需要在路由器上配置时间戳服务以便于记录日志。在使用Syslog监控网络时，在Syslog消息中显示正确的日期和时间至关重要。</p>
@@ -429,8 +415,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 </div>
 </div><p>注意：请注意，在开发本活动所使用的Packet Tracer版本（v6.2）中，MD5是最强支持的加密方式。虽然MD5存在已知的安全漏洞，但在实际操作中应根据组织的安全需求选择合适的加密方法。在本活动中，安全要求指定使用MD5加密。</p>
 <hr>
-<h3 id="第一部分配置ospf-md5身份验证">第一部分：配置OSPF MD5身份验证</h3>
-<p><strong>步骤1：测试连通性。所有设备应能成功ping通所有其他IP地址。</strong></p>
+<h3 id="第一部分配置ospf-md5身份验证">第一部分：配置OSPF MD5身份验证</h3><p><strong>步骤1：测试连通性。所有设备应能成功ping通所有其他IP地址。</strong></p>
 <p><strong>步骤2：为区域0内的所有路由器配置OSPF MD5身份验证。</strong></p>
 <p>针对区域0中的所有路由器设置OSPF MD5身份验证：</p>
 <div class="highlight"><div class="chroma">
@@ -502,15 +487,14 @@ R3(config-if)# crypto map VPN-MAP</p>
 </div><p><strong>步骤4：验证配置。</strong></p>
 <p>a. 使用命令 <code>show ip ospf interface</code> 验证MD5身份验证配置是否正确生效。</p>
 <p>b. 验证端到端的连通性，确保网络连接无误。</p>
-<h3 id="第二部分配置ntp">第二部分：配置NTP</h3>
-<p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
+<h3 id="第二部分配置ntp">第二部分：配置NTP</h3><p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
 <p>a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。</p>
 <p>b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -597,8 +581,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 </span></span><span class="line"><span class="cl">R3(config)#service timestamps log datetime msec
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="第三部分配置路由器将消息记录到syslog服务器">第三部分：配置路由器将消息记录到Syslog服务器</h3>
-<p><strong>步骤1：配置路由器以识别接收日志消息的远程主机（即Syslog服务器）。</strong></p>
+</div><h3 id="第三部分配置路由器将消息记录到syslog服务器">第三部分：配置路由器将消息记录到Syslog服务器</h3><p><strong>步骤1：配置路由器以识别接收日志消息的远程主机（即Syslog服务器）。</strong></p>
 <p>路由器控制台将会显示一条消息，表明已经开始记录日志。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -617,8 +600,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <p><strong>步骤3：检查Syslog服务器的日志记录。</strong></p>
 <p>在Syslog服务器对话框的服务标签下，选择“Syslog服务”按钮。观察从路由器接收到的日志消息。</p>
 <p>注意：通过在路由器上执行命令可以生成服务器上的日志消息。例如，进入和退出全局配置模式会生成一个信息性配置消息。您可能需要点击其他服务，然后再点击Syslog以刷新消息显示界面。</p>
-<h3 id="第四部分配置r3以支持ssh连接">第四部分：配置R3以支持SSH连接</h3>
-<p><strong>步骤1：配置域名</strong>
+<h3 id="第四部分配置r3以支持ssh连接">第四部分：配置R3以支持SSH连接</h3><p><strong>步骤1：配置域名</strong>
 在R3上配置一个域名 <strong>ccnasecurity.com</strong> 。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -738,8 +720,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 </div>
 </div><p><strong>步骤11：检查结果</strong>
 您的完成百分比应为100%。点击“检查结果”以查看反馈信息和已完成所需组件的验证情况。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="实验脚本">实验脚本：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -890,39 +871,47 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置基于服务器的AAA身份验证，采用TACACS+协议。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从PC-B客户端验证基于服务器的AAA（TACACS+）身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置基于服务器的AAA身份验证，采用RADIUS协议。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
 </li>
@@ -942,8 +931,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <p>从PC-C客户端验证基于服务器的AAA（RADIUS）身份验证。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
+<h3 id="背景场景">背景/场景</h3><p>网络拓扑图显示了路由器R1、R2和R3。目前，所有管理安全性都基于enable secret密码。您的任务是配置并测试本地及基于服务器的AAA解决方案。</p>
 <p>您将在路由器R1上创建一个本地用户账户，并配置本地AAA以测试控制台和vty登录：</p>
 <ul>
 <li>
@@ -974,8 +962,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 </ul>
 <p>注意：尽管IOS版本15.3使用了更为安全的加密哈希算法SCRYPT，但在Packet Tracer当前支持的IOS版本中仍使用MD5。请始终在您的设备上使用最安全的选项。</p>
 <hr>
-<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3>
-<p><strong>步骤1：测试连通性</strong></p>
+<h3 id="第一部分在r1上配置本地aaa认证以实现控制台访问">第一部分：在R1上配置本地AAA认证以实现控制台访问</h3><p><strong>步骤1：测试连通性</strong></p>
 <ul>
 <li>
 <p>从PC-A向PC-B执行Ping操作。</p>
@@ -1019,14 +1006,13 @@ R1(config-line)# login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3>
-<p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
+<h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3><p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
 a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
 b. 创建一个1024位的RSA加密密钥。</p>
 <blockquote>
@@ -1078,15 +1064,14 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></li>
 </ul>
-<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3>
-<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
 <li>为了备份目的，在R2上配置一个本地用户名 <strong>Admin2</strong> ，密码为 <strong>admin2pa55</strong> 。</li>
 </ul>
@@ -1101,7 +1086,7 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1140,15 +1125,14 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></li>
 </ul>
-<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3>
-<p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
+<h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
 <li>为了备份目的，在R3上配置一个本地用户名 <strong>Admin3</strong> ，密码为 <strong>admin3pa55</strong> 。</li>
 </ul>
@@ -1163,7 +1147,7 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1202,7 +1186,7 @@ R3(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1220,19 +1204,17 @@ R3(config-line)#login authentication default</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;
 &lt;/li&gt;
@@ -1240,20 +1222,20 @@ R3(config-line)#login authentication default</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2>
-<p>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
 </li>
@@ -1264,8 +1246,7 @@ R3(config-line)#login authentication default</p>
 <p>启用端口安全功能以防止CAM表溢出攻击。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
+<h3 id="背景场景">背景/场景</h3><p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
 <p>为了确保网络性能和安全性达到最优状态，管理员希望确定中心3560型号交换机作为根桥。为防止对生成树协议进行篡改攻击，管理员希望确保STP参数得到安全配置。针对CAM表溢出攻击的风险，网络管理员决定配置端口安全策略，限制每个交换机端口学习到的MAC地址数量。一旦学习到的MAC地址超过设定的限制，管理员希望建立机制自动关闭该端口。</p>
 <p>所有交换机设备已经预先配置了以下信息：</p>
 <ul>
@@ -1279,8 +1260,7 @@ R3(config-line)#login authentication default</p>
 <p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 </li>
 </ul>
-<h3 id="第一部分配置根桥">第一部分：配置根桥</h3>
-<p><strong>步骤1：确定当前的根桥。</strong></p>
+<h3 id="第一部分配置根桥">第一部分：配置根桥</h3><p><strong>步骤1：确定当前的根桥。</strong></p>
 <p>从中心交换机（Central）发出 <code>show spanning-tree</code> 命令，以确定当前的根桥、查看正在使用的端口及其状态。</p>
 <blockquote>
 <p>Central#show spanning-tree</p>
@@ -1362,8 +1342,7 @@ R3(config-line)#login authentication default</p>
 </div>
 </div><p>根据上述信息，哪个交换机是当前的根桥？</p>
 <p>基于新的根桥设置，请绘制由此得出的生成树拓扑结构。</p>
-<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3>
-<p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
+<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3><p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
 <p>PortFast应在连接至单个工作站或服务器的接入端口上配置，以使它们更快地进入活动状态。在SW-A和SW-B的相连接入端口上使用 <code>spanning-tree portfast</code> 命令来启用 <strong>PortFast</strong> 。</p>
 <blockquote>
 <p>SW-A(config)#int range f0/1-4
@@ -1395,8 +1374,7 @@ SW-1(config-if-range)#spanning-tree guard root</p>
 <p>SW-2(config)#int range f0/23-24
 SW-2(config-if-range)#spanning-tree guard root</p>
 </blockquote>
-<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3>
-<p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
+<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3><p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
 <p>此操作应在SW-A和SW-B的所有接入端口上执行。设置允许学习的MAC地址最大数量为 <strong>2</strong> ，允许动态学习MAC地址，并将违规处理方式设为 <strong>shutdown</strong> （关闭）。</p>
 <p>注解：只有当交换机端口配置为接入模式时，才能启用端口安全功能。</p>
 <blockquote>
@@ -1470,7 +1448,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1480,7 +1458,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1498,8 +1476,7 @@ SW-B(config-if-range)#shutdown</p>
 </blockquote>
 <p><strong>步骤4：检查结果。</strong></p>
 <p>您的完成度应为100%。点击“检查结果”查看反馈信息以及所需组件完成情况的验证。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>Central:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>Central:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1645,41 +1622,36 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
-&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
+&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;第一部分配置应用并验证一个编号扩展访问控制列表&#34;&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;步骤 1：配置ACL以允许FTP和ICMP流量&lt;/strong&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
+<h3 id="目标">目标</h3><p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
 <p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
-<h3 id="背景场景">背景/场景</h3>
-<p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
+<h3 id="背景场景">背景/场景</h3><p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
 <hr>
-<h3 id="第一部分配置应用并验证一个编号扩展访问控制列表">第一部分：配置、应用并验证一个编号扩展访问控制列表</h3>
-<p><strong>步骤 1：配置ACL以允许FTP和ICMP流量</strong></p>
+<h3 id="第一部分配置应用并验证一个编号扩展访问控制列表">第一部分：配置、应用并验证一个编号扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许FTP和ICMP流量</strong></p>
 <p>a. 在R1的全局配置模式下，输入以下命令确定扩展访问列表的第一个有效编号。</p>
 <blockquote>
 <p>R1(config)# access-list ?
@@ -1772,7 +1744,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1790,7 +1762,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1801,14 +1773,13 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3>
-<p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
+<h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
 <p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
 <blockquote>
 <p>R1(config)# ip access-list ?
@@ -1826,16 +1797,16 @@ A.B.C.D 源通配符位</p>
 </blockquote>
 <p>d. 另一种计算通配符的方法是从255.255.255.255减去子网掩码：</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: center">= 0. 0. 0. 15</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: center">255.255.255.255 – 255.255.255.240</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: center">= 0. 0. 0. 15</td>
+			</tr>
+	</tbody>
 </table>
 <blockquote>
 <p>R1(config-ext-nacl)# permit tcp 172.22.34.96 0.0.0.15 ?</p>
@@ -1861,7 +1832,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1872,7 +1843,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1883,7 +1854,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1896,37 +1867,41 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在SW-1和SW-2之间建立新的冗余链路。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2>
-<p>
+&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个新的管理VLAN（VLAN 20）并将一台管理PC连接到该VLAN。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实施ACL以防止外部用户访问管理VLAN。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>在SW-1和SW-2之间建立新的冗余链路。</p>
 </li>
@@ -1940,8 +1915,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <p>实施ACL以防止外部用户访问管理VLAN。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>一家公司的网络当前使用两个独立的VLAN：VLAN 5和VLAN 10。此外，所有干线端口都已配置为本征VLAN 15。网络管理员希望在交换机SW-1和SW-2之间添加一条冗余链路。这条链路必须启用中继功能，并确保所有必要的安全设置到位。</p>
+<h3 id="背景场景">背景/场景</h3><p>一家公司的网络当前使用两个独立的VLAN：VLAN 5和VLAN 10。此外，所有干线端口都已配置为本征VLAN 15。网络管理员希望在交换机SW-1和SW-2之间添加一条冗余链路。这条链路必须启用中继功能，并确保所有必要的安全设置到位。</p>
 <p>此外，网络管理员还希望将一台管理PC连接到交换机SW-A。管理员希望这台管理PC能够连接到所有交换机及路由器，但不希望任何其他设备能够连接到管理PC或这些交换机上。因此，管理员计划创建一个新的VLAN 20用于管理目的。</p>
 <p>所有设备已经预先配置了以下信息：</p>
 <ul>
@@ -1955,13 +1929,12 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 </li>
 </ul>
-<h3 id="第一部分验证连通性">第一部分：验证连通性</h3>
-<p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
+<h3 id="第一部分验证连通性">第一部分：验证连通性</h3><p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1971,7 +1944,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1983,7 +1956,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1993,20 +1966,19 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3>
-<p><strong>步骤1：连接SW-1和SW-2。</strong></p>
+<h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3><p><strong>步骤1：连接SW-1和SW-2。</strong></p>
 <p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2028,8 +2000,7 @@ SW-2(config-if)#switchport trunk native vlan 15
 SW-2(config-if)#switchport nonegotiate
 SW-2(config-if)#no shutdown</p>
 </blockquote>
-<h3 id="第三部分启用vlan-20作为管理vlan">第三部分：启用VLAN 20作为管理VLAN</h3>
-<p>网络管理员希望通过管理PC访问所有交换机和路由设备。出于安全原因，管理员希望确保所有受管设备都在一个独立的VLAN中。</p>
+<h3 id="第三部分启用vlan-20作为管理vlan">第三部分：启用VLAN 20作为管理VLAN</h3><p>网络管理员希望通过管理PC访问所有交换机和路由设备。出于安全原因，管理员希望确保所有受管设备都在一个独立的VLAN中。</p>
 <p><strong>步骤1：在SW-A上启用管理VLAN（VLAN 20）。</strong></p>
 <p>a. 在SW-A上启用VLAN 20。</p>
 <blockquote>
@@ -2082,7 +2053,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2092,7 +2063,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2111,7 +2082,7 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2121,14 +2092,13 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="请添加图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3>
-<p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
+<h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3><p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
 <p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
 <blockquote>
 <p>R1(config)#int g0/0.3
@@ -2170,7 +2140,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2181,7 +2151,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2195,7 +2165,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2207,8 +2177,7 @@ R1(config-line)#access-class 102 in</p>
 <p><strong>步骤5：检查结果。</strong></p>
 <p>您的完成度应该为100%。点击“检查结果”查看反馈信息以及已完成的必要组件验证。</p>
 <p>如果所有组件都看似正确，但活动仍显示未完成，则可能是由于验证ACL操作的连通性测试出现问题。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>Part 2:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>Part 2:</strong></p>
 <p>SW-1、SW-2</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2348,20 +2317,17 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
 &lt;/li&gt;
@@ -2375,22 +2341,19 @@ R1(config-line)#access-class 102 in</p>
 &lt;p&gt;验证IPS配置。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;
-&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;
+&lt;p&gt;标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>启用IOS入侵防御系统（IPS）。</p>
 </li>
@@ -2404,16 +2367,14 @@ R1(config-line)#access-class 102 in</p>
 <p>验证IPS配置。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
+<h3 id="背景场景">背景/场景</h3><p>您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。</p>
 <p>标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。</p>
 <p>服务器和PC已预先配置好。路由器也已经预先配置了以下内容：</p>
 <p>o 启用密码： <strong>ciscoenpa55</strong></p>
 <p>o 控制台密码： <strong>ciscoconpa55</strong></p>
 <p>o SSH用户名和密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 <p>o OSPF进程号101</p>
-<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3>
-<p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
+<h3 id="第一部分启用ios入侵防御系统ips">第一部分：启用IOS入侵防御系统（IPS）</h3><p>注意：在Packet Tracer中，路由器已经导入并安装了签名文件。它们是闪存中的默认xml文件。因此，不需要配置公钥和手动导入签名文件。</p>
 <p><strong>步骤1：启用安全技术包。</strong></p>
 <p>a. 在R1上，执行 <code>show version</code> 命令查看技术包许可证信息。</p>
 <p>b. 如果尚未启用“Security Technology”包，请使用以下命令启用该包：</p>
@@ -2435,7 +2396,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2446,7 +2407,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2506,8 +2467,7 @@ R1(config-ips-category)#exit</p>
 R1(config-if)#ip ips iosips out</p>
 </blockquote>
 <p>注：direction in表示IPS仅检查进入接口的流量。同样地，out表示IPS仅检查离开接口的流量。</p>
-<h3 id="第二部分修改签名">第二部分：修改签名</h3>
-<p><strong>步骤1：更改签名的事件动作。</strong></p>
+<h3 id="第二部分修改签名">第二部分：修改签名</h3><p><strong>步骤1：更改签名的事件动作。</strong></p>
 <p>取消退休echo request签名（签名ID 2004，子签名ID 0），启用它，并将签名动作更改为alert和drop。</p>
 <blockquote>
 <p>R1(config)#ip ips signature-definition
@@ -2529,7 +2489,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2542,7 +2502,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2553,7 +2513,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2565,7 +2525,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2576,7 +2536,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2592,20 +2552,17 @@ R1(config-sigdef)#exit</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:18 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;
-&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;验证连接并探索ASA设备&lt;/p&gt;
 &lt;/li&gt;
@@ -2613,21 +2570,26 @@ R1(config-sigdef)#exit</p>
 &lt;p&gt;使用CLI配置ASA的基本设置和接口安全级别&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2>
-<h3 id="ip地址表">IP地址表</h3>
-<p>
+&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置DHCP、AAA和SSH服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置DMZ区域、静态NAT和访问控制列表（ACL）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>验证连接并探索ASA设备</p>
 </li>
@@ -2644,8 +2606,7 @@ R1(config-sigdef)#exit</p>
 <p>配置DMZ区域、静态NAT和访问控制列表（ACL）</p>
 </li>
 </ul>
-<h3 id="场景">场景</h3>
-<p>您的公司有一个地点通过ISP进行互联网接入。R1代表由ISP管理的CPE设备。R2代表一个互联网路由器中继节点。R3代表一个ISP，它连接着一家网络管理公司的管理员，该管理员受雇远程管理您的网络。ASA是一个边缘CPE安全设备，将内部企业网络和DMZ区域连接到ISP，并为内部主机提供NAT和DHCP服务。ASA将被配置以允许内部网络的管理员以及远程管理员对其进行管理。三层VLAN接口提供了对活动中创建的三个区域——Inside区域、Outside区域和DMZ区域的访问权限。ISP分配了公共IP地址空间209.165.200.224/29，将在ASA上用于地址转换。</p>
+<h3 id="场景">场景</h3><p>您的公司有一个地点通过ISP进行互联网接入。R1代表由ISP管理的CPE设备。R2代表一个互联网路由器中继节点。R3代表一个ISP，它连接着一家网络管理公司的管理员，该管理员受雇远程管理您的网络。ASA是一个边缘CPE安全设备，将内部企业网络和DMZ区域连接到ISP，并为内部主机提供NAT和DHCP服务。ASA将被配置以允许内部网络的管理员以及远程管理员对其进行管理。三层VLAN接口提供了对活动中创建的三个区域——Inside区域、Outside区域和DMZ区域的访问权限。ISP分配了公共IP地址空间209.165.200.224/29，将在ASA上用于地址转换。</p>
 <p>所有路由器和交换机设备已预先配置以下信息：</p>
 <ul>
 <li>
@@ -2659,8 +2620,7 @@ R1(config-sigdef)#exit</p>
 </li>
 </ul>
 <p>注意：此Packet Tracer活动并不能替代ASA实验室练习。这个活动提供了额外的实践机会，模拟了大部分ASA 5505设备的配置过程。与真实的ASA 5505相比，在命令输出或部分尚未在Packet Tracer中支持的命令上可能存在细微差别。</p>
-<h3 id="第一部分验证连接和探索asa设备">第一部分：验证连接和探索ASA设备</h3>
-<p>注：此Packet Tracer活动开始时，有20%的评估项已被标记为已完成。这是为了确保您不会意外更改ASA的某些默认值。例如，默认情况下内部接口名称为“inside”，不应更改。点击“检查结果”查看哪些评估项已经被正确评分。</p>
+<h3 id="第一部分验证连接和探索asa设备">第一部分：验证连接和探索ASA设备</h3><p>注：此Packet Tracer活动开始时，有20%的评估项已被标记为已完成。这是为了确保您不会意外更改ASA的某些默认值。例如，默认情况下内部接口名称为“inside”，不应更改。点击“检查结果”查看哪些评估项已经被正确评分。</p>
 <p><strong>步骤1：验证网络连接性。</strong></p>
 <p>目前ASA尚未配置，但所有路由器、PC以及DMZ服务器都已配置完毕。请确认PC-C可以ping通任何路由器接口。请注意，此时PC-C无法ping通ASA、PC-B或DMZ服务器。</p>
 <p><strong>步骤2：确定ASA版本、接口及许可证信息。</strong></p>
@@ -2669,8 +2629,7 @@ R1(config-sigdef)#exit</p>
 <p>a. 进入特权EXEC模式。当前未设置密码，当提示输入密码时直接按回车键。</p>
 <p>b. 使用 <code>show file system</code> 命令显示ASA的文件系统，并确定支持哪些前缀。</p>
 <p>c. 使用 <code>show flash:</code> 或 <code>show disk0:</code> 命令来显示闪存内存的内容。</p>
-<h3 id="第二部分使用cli配置asa设置和接口安全">第二部分：使用CLI配置ASA设置和接口安全</h3>
-<p>提示：许多ASA CLI命令与Cisco IOS CLI中的命令相似，甚至相同。此外，在不同配置模式及子模式之间切换的过程本质上是相同的。</p>
+<h3 id="第二部分使用cli配置asa设置和接口安全">第二部分：使用CLI配置ASA设置和接口安全</h3><p>提示：许多ASA CLI命令与Cisco IOS CLI中的命令相似，甚至相同。此外，在不同配置模式及子模式之间切换的过程本质上是相同的。</p>
 <p><strong>步骤1：配置主机名和域名。</strong></p>
 <p>a. 配置ASA主机名为 <strong>CCNAS-ASA</strong> 。</p>
 <p>b. 配置域名为 <strong>ccnasecurity.com</strong> 。</p>
@@ -2755,7 +2714,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2766,14 +2725,13 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第三部分使用cli配置路由地址转换和检查策略">第三部分：使用CLI配置路由、地址转换和检查策略</h3>
-<p><strong>步骤1：为ASA配置静态默认路由。</strong></p>
+<h3 id="第三部分使用cli配置路由地址转换和检查策略">第三部分：使用CLI配置路由、地址转换和检查策略</h3><p><strong>步骤1：为ASA配置静态默认路由。</strong></p>
 <p>在ASA外部接口上配置默认静态路由，以便ASA能够访问外部网络。</p>
 <p>a. 使用 <code>route</code> 命令创建一个“全零”默认路由，将其与ASA外部接口关联，并将R1 G0/0 IP地址（209.165.200.225）设置为最后手段网关。</p>
 <div class="highlight"><div class="chroma">
@@ -2808,7 +2766,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2846,14 +2804,13 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第四部分配置dhcpaaa和ssh">第四部分：配置DHCP、AAA和SSH</h3>
-<p><strong>步骤1：配置ASA作为DHCP服务器。</strong></p>
+<h3 id="第四部分配置dhcpaaa和ssh">第四部分：配置DHCP、AAA和SSH</h3><p><strong>步骤1：配置ASA作为DHCP服务器。</strong></p>
 <p>a. 在ASA内部接口上配置DHCP地址池并启用它。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2886,7 +2843,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2948,7 +2905,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2967,14 +2924,13 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="第五部分配置dmz静态nat和acl">第五部分：配置DMZ、静态NAT和ACL</h3>
-<p>R1 G0/0接口与ASA的外部接口分别使用209.165.200.225和.226。您将使用公网地址209.165.200.227，并通过静态NAT提供对服务器的地址转换访问。</p>
+<h3 id="第五部分配置dmz静态nat和acl">第五部分：配置DMZ、静态NAT和ACL</h3><p>R1 G0/0接口与ASA的外部接口分别使用209.165.200.225和.226。您将使用公网地址209.165.200.227，并通过静态NAT提供对服务器的地址转换访问。</p>
 <p><strong>步骤1：在ASA上配置DMZ接口VLAN 3。</strong></p>
 <p>a. 配置DMZ VLAN 3，该VLAN将是公共访问Web服务器所在的位置。为它分配IP地址192.168.2.1/24，并命名为 <strong>dmz</strong> ，同时为其设置安全级别为 <strong>70</strong> 。由于服务器无需主动与内部用户通信，因此禁用到接口VLAN 1的转发。</p>
 <div class="highlight"><div class="chroma">
@@ -3014,7 +2970,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3027,7 +2983,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3040,7 +2996,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3081,8 +3037,7 @@ R1(config-sigdef)#exit</p>
 <p>在创建Packet Tracer活动时，成功测试外部对DMZ Web服务器的访问功能并未实现；因此，不强制要求成功测试。</p>
 <p><strong>步骤5：检查结果。</strong></p>
 <p>完成百分比应为100%。点击“Check Results”查看反馈和已完成所需组件的验证。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>第一部分：验证连接和探索ASA设备</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>第一部分：验证连接和探索ASA设备</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3232,20 +3187,17 @@ R1(config-sigdef)#exit</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
       <pubDate>Thu, 23 Jan 2025 12:41:12 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;
-&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在防火墙配置前验证设备之间的连通性。&lt;/p&gt;
 &lt;/li&gt;
@@ -3253,21 +3205,20 @@ R1(config-sigdef)#exit</p>
 &lt;p&gt;在路由器R3上配置基于区域的策略（ZPF）防火墙。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2>
-<h3 id="地址表">地址表</h3>
-<p>
+&lt;p&gt;使用ping、Telnet和网页浏览器验证ZPF防火墙功能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>在防火墙配置前验证设备之间的连通性。</p>
 </li>
@@ -3278,8 +3229,7 @@ R1(config-sigdef)#exit</p>
 <p>使用ping、Telnet和网页浏览器验证ZPF防火墙功能。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>基于区域的策略（Zone-Based Policy，ZPF）防火墙是Cisco防火墙技术发展的最新成果。在本活动中，您将在边缘路由器R3上配置一个基本的ZPF防火墙，允许内部主机访问外部资源，并阻止外部主机访问内部资源。然后，从内部和外部主机验证防火墙的功能。</p>
+<h3 id="背景场景">背景/场景</h3><p>基于区域的策略（Zone-Based Policy，ZPF）防火墙是Cisco防火墙技术发展的最新成果。在本活动中，您将在边缘路由器R3上配置一个基本的ZPF防火墙，允许内部主机访问外部资源，并阻止外部主机访问内部资源。然后，从内部和外部主机验证防火墙的功能。</p>
 <p>路由器已预先配置了以下内容：</p>
 <ul>
 <li>
@@ -3298,14 +3248,13 @@ R1(config-sigdef)#exit</p>
 <p>静态路由配置</p>
 </li>
 </ul>
-<h3 id="第一部分验证基本网络连通性">第一部分：验证基本网络连通性</h3>
-<p>在配置基于区域的策略防火墙之前，验证网络连通性。</p>
+<h3 id="第一部分验证基本网络连通性">第一部分：验证基本网络连通性</h3><p>在配置基于区域的策略防火墙之前，验证网络连通性。</p>
 <p><strong>步骤1：从PC-A命令提示符，ping PC-C的192.168.3.3地址。</strong>
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3316,7 +3265,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3328,15 +3277,14 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <p>b. 关闭PC-C上的浏览器。</p>
-<h3 id="第二部分在路由器r3上创建防火墙区域">第二部分：在路由器R3上创建防火墙区域</h3>
-<p>注意：对于所有配置任务，请确保使用指定的确切名称。</p>
+<h3 id="第二部分在路由器r3上创建防火墙区域">第二部分：在路由器R3上创建防火墙区域</h3><p>注意：对于所有配置任务，请确保使用指定的确切名称。</p>
 <p><strong>步骤1：创建内部区域。</strong></p>
 <p>使用 <strong>zone security</strong> 命令创建名为 <strong>IN-ZONE</strong> 的区域。</p>
 <div class="highlight"><div class="chroma">
@@ -3359,8 +3307,7 @@ R1(config-sigdef)#exit</p>
 </span></span><span class="line"><span class="cl">R3(config-sec-zone)# exit
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="第三部分定义流量类别和访问列表">第三部分：定义流量类别和访问列表</h3>
-<p><strong>步骤1：创建定义内部流量的ACL。</strong></p>
+</div><h3 id="第三部分定义流量类别和访问列表">第三部分：定义流量类别和访问列表</h3><p><strong>步骤1：创建定义内部流量的ACL。</strong></p>
 <p>使用 <code>access-list</code> 命令创建扩展ACL 101，允许来自192.168.3.0/24源网络的所有IP协议到任何目的地。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3385,8 +3332,7 @@ R1(config-sigdef)#exit</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>注：虽然在本Packet Tracer练习中不支持，但可以通过match-any选项指定具体的协议（如HTTP、FTP等），以便对需要检查的流量类型提供更精确的控制。</p>
-<h3 id="第四部分指定防火墙策略">第四部分：指定防火墙策略</h3>
-<p><strong>步骤1：创建策略映射以确定如何处理匹配的流量。</strong></p>
+<h3 id="第四部分指定防火墙策略">第四部分：指定防火墙策略</h3><p><strong>步骤1：创建策略映射以确定如何处理匹配的流量。</strong></p>
 <p>使用 <code>policy-map type inspect</code> 命令并创建一个名为IN-2-OUT-PMAP的策略映射。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3431,8 +3377,7 @@ R1(config-sigdef)#exit</p>
 </span></span><span class="line"><span class="cl">R3(config-pmap)# exit
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="第五部分应用防火墙策略">第五部分：应用防火墙策略</h3>
-<p><strong>步骤1：创建一对区域。</strong></p>
+</div><h3 id="第五部分应用防火墙策略">第五部分：应用防火墙策略</h3><p><strong>步骤1：创建一对区域。</strong></p>
 <p>使用 <code>zone-pair security</code> 命令，创建一个名为 <strong>IN-2-OUT-ZPAIR</strong> 的区域对。指定在任务1中创建的源和目标区域。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3479,15 +3424,14 @@ R1(config-sigdef)#exit</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>步骤4：将运行配置复制到启动配置。</strong></p>
-<h3 id="第六部分从in-zone到out-zone测试防火墙功能">第六部分：从IN-ZONE到OUT-ZONE测试防火墙功能</h3>
-<p>验证配置基于区域的策略防火墙后，内部主机仍能访问外部资源。</p>
+<h3 id="第六部分从in-zone到out-zone测试防火墙功能">第六部分：从IN-ZONE到OUT-ZONE测试防火墙功能</h3><p>验证配置基于区域的策略防火墙后，内部主机仍能访问外部资源。</p>
 <p><strong>步骤1：从内部PC-C，ping外部PC-A服务器。</strong></p>
 <p>从PC-C命令提示符，ping PC-A的192.168.1.3地址。ping操作应成功。
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3499,7 +3443,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3510,7 +3454,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3526,7 +3470,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3535,15 +3479,14 @@ R1(config-sigdef)#exit</p>
 <p>源IP地址和端口号是什么？</p>
 <p>目标IP地址和端口号是什么？</p>
 <p><strong>步骤5：关闭PC-C上的浏览器。</strong></p>
-<h3 id="第七部分从out-zone到in-zone测试防火墙功能">第七部分：从OUT-ZONE到IN-ZONE测试防火墙功能</h3>
-<p>验证配置基于区域的策略防火墙后，外部主机无法访问内部资源。</p>
+<h3 id="第七部分从out-zone到in-zone测试防火墙功能">第七部分：从OUT-ZONE到IN-ZONE测试防火墙功能</h3><p>验证配置基于区域的策略防火墙后，外部主机无法访问内部资源。</p>
 <p><strong>步骤1：从PC-A服务器命令提示符，ping PC-C。</strong></p>
 <p>从PC-A命令提示符，ping PC-C的192.168.3.3地址。ping操作应失败。
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -3555,7 +3498,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />

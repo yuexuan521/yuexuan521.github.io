@@ -6,14 +6,210 @@
     <description>Recent content in Office on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
-    <lastBuildDate>Mon, 28 Apr 2025 08:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 08:30:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUUCTF [GKCTF 2021]excel 骚操作 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021excel-%E9%AA%9A%E6%93%8D%E4%BD%9C-1/</link>
+      <pubDate>Mon, 23 Jun 2025 08:30:00 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021excel-%E9%AA%9A%E6%93%8D%E4%BD%9C-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://blog.csdn.net/qq_43871179/article/details/118310357&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;2021GKCTF Misc excel骚操作–详解&lt;/a&gt;
+&lt;a href=&#34;http://appserver.gs1cn.org/ancc2020h/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;中国编码APP下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;你真的了解excel吗（flag由flag头包裹&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到flag.xlsx文件&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、打开文件，hint： &lt;code&gt;我看见flag了，你呢？&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;随便点击几个地方，发现有的单元格有数字 &lt;code&gt;1&lt;/code&gt; ，而且不是均匀分布的。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://blog.csdn.net/qq_43871179/article/details/118310357"target="_blank" rel="noopener noreferrer">2021GKCTF Misc excel骚操作–详解</a>
+<a href="http://appserver.gs1cn.org/ancc2020h/"target="_blank" rel="noopener noreferrer">中国编码APP下载</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3><p>你真的了解excel吗（flag由flag头包裹</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到flag.xlsx文件</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3><p>1、打开文件，hint： <code>我看见flag了，你呢？</code></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>随便点击几个地方，发现有的单元格有数字 <code>1</code> ，而且不是均匀分布的。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>在这里，可以全选单元格，设置单元格格式中的数字类型为 <code>G/通用格式</code> ，就可以直观看到所有含数字 <code>1</code> 的单元格。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>再通过单元格 <code>条件格式</code> ，将单元格中所有数字等于 <code>1</code> 的单元格标黑，看它的图案。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>最后调整单元格行高为27，可以发现这是个“码”。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、这其实是一个叫 <strong>汉信码</strong> 的二维码，需要使用中国编码网的中国编码APP，扫码得到flag。</p>
+<p>下载地址： <a href="http://appserver.gs1cn.org/ancc2020h/"target="_blank" rel="noopener noreferrer">http://appserver.gs1cn.org/ancc2020h/</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>要想实现文中的隐藏效果，可以采取以下步骤：
+1、单元格输入数字
+2、单元格格式，数字选择自定义
+3、类型中输入；；；</p>
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>9ee0cb62-f443-4a72-e9a3-43c0b910757e<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
+    </item>
     <item>
       <title>BUUCTF hashcat 1</title>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-hashcat-1/</link>
@@ -39,16 +235,26 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到What kind of document is this_文件。&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到What kind of document is this_文件。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、文件名提示，需要确定文件类型。在010 Editor中打开，根据文件头 &lt;code&gt;D0 CF 11 E0&lt;/code&gt; 确定是MS Office文件。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png">
@@ -69,29 +275,26 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到What kind of document is this_文件。</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到What kind of document is this_文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、文件名提示，需要确定文件类型。在010 Editor中打开，根据文件头 <code>D0 CF 11 E0</code> 确定是MS Office文件。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、文件名提示，需要确定文件类型。在010 Editor中打开，根据文件头 <code>D0 CF 11 E0</code> 确定是MS Office文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -104,7 +307,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -115,7 +318,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -137,7 +340,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -148,7 +351,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -167,7 +370,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -179,7 +382,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -220,7 +423,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -239,7 +442,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -250,7 +453,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -260,7 +463,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -270,7 +473,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -281,7 +484,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -292,14 +495,13 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -307,8 +509,7 @@ Office2013：-m 9600</p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>okYOUWIN<span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="hashcat常用实例">HashCat常用实例</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="hashcat常用实例">HashCat常用实例</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -389,6 +590,201 @@ Office2013：-m 9600</p>
 </ul>
 </blockquote>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>BUUCTF [WUSTCTF2020]爬 1</title>
+      <link>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020%E7%88%AC-1/</link>
+      <pubDate>Fri, 01 Nov 2024 11:40:18 +0000</pubDate>
+      <guid>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020%E7%88%AC-1/</guid>
+      <description>&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;相关阅读
+&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
+&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
+&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到一个没有后缀的文件。
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、文件没有后缀，用010Editor看一下文件类型，是PDF文件。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Adobe Acrobat &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;pdf&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;， 文件头：25 &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;44&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;46&lt;/span&gt; 2D &lt;span class=&#34;m&#34;&gt;31&lt;/span&gt; 2E
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;修改文件后缀为.pdf，打开如下图所示。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、提示flag在图片的后面，但PDF文件是无法修改的。使用电脑上的Word打开PDF文件，转换为word文件进行编辑。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
+<hr>
+<p>相关阅读
+<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
+<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
+<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到一个没有后缀的文件。
+
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<hr>
+<h3 id="解题思路">解题思路：</h3><p>1、文件没有后缀，用010Editor看一下文件类型，是PDF文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Adobe Acrobat <span class="o">(</span>pdf<span class="o">)</span>， 文件头：25 <span class="m">50</span> <span class="m">44</span> <span class="m">46</span> 2D <span class="m">31</span> 2E
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>修改文件后缀为.pdf，打开如下图所示。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>2、提示flag在图片的后面，但PDF文件是无法修改的。使用电脑上的Word打开PDF文件，转换为word文件进行编辑。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>删除图片，得到一串十六进制的数据图片。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">0x77637466323032307b746831735f31735f405f7064665f616e645f7930755f63616e5f7573655f70686f7430736830707d
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<p>3、将这串十六进制数据转换为ASCII字符串，得到flag。</p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png" 
+             alt="" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{</span>th1s_1s_@_pdf_and_y0u_can_use_phot0sh0p<span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>]]></content:encoded>
     </item>
   </channel>
 </rss>

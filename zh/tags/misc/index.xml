@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Misc on 知识带给我们自由</title>
+    <title>MISC on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/tags/misc/</link>
-    <description>Recent content in Misc on 知识带给我们自由</description>
+    <description>Recent content in MISC on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 20 Nov 2025 09:01:00 +0000</lastBuildDate>
@@ -37,18 +37,18 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：一般数据内容小于5Bytes(&amp;lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容&lt;/p&gt;
+&lt;/blockquote&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png">
@@ -67,18 +67,15 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件</p>
+<h3 id="题目描述">题目描述：</h3><p>拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><hr>
+<h3 id="解题思路">解题思路：</h3><p>1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件</p>
 <blockquote>
 <p>注意：一般数据内容小于5Bytes(&lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容</p>
 </blockquote>
@@ -86,7 +83,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -97,7 +94,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -181,7 +178,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -203,7 +200,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -214,7 +211,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -235,7 +232,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -246,14 +243,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -286,29 +282,68 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件解压，得到流量分析.pcap和流量分析.txt&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件解压，得到流量分析.pcap和流量分析.txt&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、先看流量分析.txt，看hint二去pcap包里找 &lt;code&gt;“KEY”&lt;/code&gt; 。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、先看流量分析.txt，看hint二去pcap包里找 &lt;code&gt;“KEY”&lt;/code&gt; 。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;流量分析
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;200pt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;提示一：若感觉在中间某个容易出错的步骤，若有需要检验是否正确时，可以比较MD5: 90c490781f9c320cd1ba671fcb112d1c
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;提示二：注意补齐私钥格式
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-----BEGIN RSA PRIVATE KEY-----
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;XXXXXXX
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-----END RSA PRIVATE KEY-----
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;搜索 &lt;code&gt;“KEY”&lt;/code&gt; 。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp contains &lt;span class=&#34;s2&#34;&gt;&amp;#34;KEY&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;追踪TCP流，找到一句话提到了密钥，最后大部分是一张图片的base64数据。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png">
@@ -327,29 +362,26 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到流量分析.pcap和流量分析.txt</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件解压，得到流量分析.pcap和流量分析.txt</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、先看流量分析.txt，看hint二去pcap包里找 <code>“KEY”</code> 。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、先看流量分析.txt，看hint二去pcap包里找 <code>“KEY”</code> 。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -385,7 +417,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -396,7 +428,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -408,7 +440,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -418,7 +450,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -430,7 +462,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -441,7 +473,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -453,7 +485,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -501,7 +533,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -512,7 +544,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -523,7 +555,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -533,14 +565,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -575,29 +606,50 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到attachment.pcapng文件&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到attachment.pcapng文件&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、打开attachment.pcapng文件，流量很少，简单浏览发现执行了两条命令。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、打开attachment.pcapng文件，流量很少，简单浏览发现执行了两条命令。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nc -l -p &lt;span class=&#34;m&#34;&gt;4445&lt;/span&gt; &amp;gt; flag.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;使用 netcat 工具监听端口 &lt;span class=&#34;m&#34;&gt;4445&lt;/span&gt; 并将接收到的数据重定向到 flag.zip 文件。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;unzip -P supercomplexpassword flag.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;使用 unzip 工具来解压 flag.zip 文件。-P 选项后面跟的是解压密码 supercomplexpassword。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png">
@@ -616,29 +668,26 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到attachment.pcapng文件</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到attachment.pcapng文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开attachment.pcapng文件，流量很少，简单浏览发现执行了两条命令。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、打开attachment.pcapng文件，流量很少，简单浏览发现执行了两条命令。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -657,7 +706,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -669,7 +718,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -679,7 +728,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -690,14 +739,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -732,22 +780,20 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;感谢菠萝吹雪师傅出题。&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;感谢菠萝吹雪师傅出题。&lt;/p&gt;
 &lt;p&gt;flag 请替换 SUCTF{} 为 flag{} 后提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到一张图片和一个网站源代码&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到一张图片和一个网站源代码&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -757,15 +803,26 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、在网站源代码index.html中，发现经过Base32加密后的密文： &lt;code&gt;ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===&lt;/code&gt;&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、在网站源代码index.html中，发现经过Base32加密后的密文： &lt;code&gt;ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.qqxiuzi.cn/bianma/base.php&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Base32编码解码&lt;/a&gt;
+使用在线网站进行解密，得到假的flag： &lt;code&gt;suctf{hAHaha_Fak3_F1ag}&lt;/code&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png">
@@ -784,22 +841,20 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>感谢菠萝吹雪师傅出题。</p>
+<h3 id="题目描述">题目描述：</h3><p>感谢菠萝吹雪师傅出题。</p>
 <p>flag 请替换 SUCTF{} 为 flag{} 后提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到一张图片和一个网站源代码</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到一张图片和一个网站源代码</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -809,20 +864,19 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、在网站源代码index.html中，发现经过Base32加密后的密文： <code>ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===</code></p>
+<h3 id="解题思路">解题思路：</h3><p>1、在网站源代码index.html中，发现经过Base32加密后的密文： <code>ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===</code></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -834,7 +888,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -845,7 +899,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -861,7 +915,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -873,7 +927,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -883,14 +937,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -945,34 +998,31 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>Do your konw usb?? 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到233.rar和key.ftm文件</p>
+<h3 id="题目描述">题目描述：</h3><p>Do your konw usb?? 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件解压，得到233.rar和key.ftm文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190300928.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、解压233.rar，发现文件损坏，233.png没有解压出来，flag.txt文件中没有flag。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、解压233.rar，发现文件损坏，233.png没有解压出来，flag.txt文件中没有flag。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190302891.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -982,7 +1032,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190304627.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -996,7 +1046,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190306232.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1007,7 +1057,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190308479.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1017,7 +1067,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190310134.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1028,7 +1078,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190311759.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1039,7 +1089,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190315061.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1050,7 +1100,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1065,7 +1115,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190318757.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1076,7 +1126,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190320539.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1087,7 +1137,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190321587.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1108,7 +1158,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190323953.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1120,7 +1170,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190326705.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1132,14 +1182,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190328258.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1174,16 +1223,34 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;保存attachment.txt文件，内容如下：&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;保存attachment.txt文件，内容如下：&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cs pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;500&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; repeat 18&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;fd &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; rt 10&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;135&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;135&lt;/span&gt; pu bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; repeat 18&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;fd &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; rt 10&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt; pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;45&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;45&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; pu rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pd arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; pu home bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; pu home
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png">
@@ -1204,21 +1271,19 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存attachment.txt文件，内容如下：</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>保存attachment.txt文件，内容如下：</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1233,14 +1298,13 @@ Quoted-printable编码</a></p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。</p>
 <p>Logo解释器： <a href="https://www.calormen.com/jslogo/"target="_blank" rel="noopener noreferrer">https://www.calormen.com/jslogo/</a></p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1607,14 +1671,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1669,16 +1732,14 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存附件为attachment.txt文件。</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>保存附件为attachment.txt文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -1966,8 +2027,7 @@ Quoted-printable编码</a></p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、文件内的数据只有四种类型： <code>63、127、191、255</code> ，确定为 <strong>TTL隐写</strong> 。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、文件内的数据只有四种类型： <code>63、127、191、255</code> ，确定为 <strong>TTL隐写</strong> 。</p>
 <p>解密脚本如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2016,7 +2076,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2028,7 +2088,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2038,7 +2098,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2048,7 +2108,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2135,14 +2195,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2177,16 +2236,54 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;师傅们玩的开心~（flag由flag头包裹&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到tmpshell.pcapng文件&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;师傅们玩的开心~（flag由flag头包裹&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到tmpshell.pcapng文件&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、打开流量文件，照常追踪TCP数据流，到第五个流中发现flag相关信息。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp.stream eq &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;将传输的数据复制下来，进行解密。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;64306c455357644251306c6e51554e4a5a3046355355737764306c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154576c44546d39525241707154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7154586c4a616b31355357704e65556c7162314645616b46445357644251306c6e51554e4a5a32644554545a46524530325157704e5a3046365458524e524531305257704e436e5177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d644442705130354e65556c7154586c4a616b31355357704e65556b4b4e6b467154576442656b31305455524e644556715458644a616b38775a566f324d6d56774e557377643074795556645a64315a485a48593152556c3051576c4e4d5546355a4777316255733254545a7162475a7763573579555552304d464e4d64444254544170304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d6444425454485177553078304d464e4d537a42425357526159585a764e7a567462485a735130354e564530325255524e436e6f77655531334d464e4e6555467154545a524e327877596a647362584a5252484a7a5131706f516c68614d446c745647637751306c355655524a4d315a74596e4676656d3951567974736357563151303477553078304d464e4d64444254544851775530774b63336858576d786b4d5659354d544e6c4e325179576d684752324a7a576d31615a7a427363446c7064573569567974585a7a427363446c7064573569567974585a7a427363446c706457356956797458537a423354586876564531336230524e6555464454517045546a4252524534775555527356324636546c684e65444258596d593562464a48556b524f5245347759584a6b4d464a6d4f565a6162444658596e644252456c6b556d46746345524c61577832526b6c6b556d46746345524c61577832566b747754544a5a436a303955556c6f545442525245347755516f3d
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;首先，由十六进制数据转为字符串。（字符串以“ &lt;code&gt;=&lt;/code&gt; ”结尾，结合提示“ &lt;code&gt;cat+%2Ff14g%7Cbase64&lt;/code&gt; ”，推测要使用Base64解码）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png">
@@ -2207,29 +2304,26 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>师傅们玩的开心~（flag由flag头包裹</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到tmpshell.pcapng文件</p>
+<h3 id="题目描述">题目描述：</h3><p>师傅们玩的开心~（flag由flag头包裹</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到tmpshell.pcapng文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开流量文件，照常追踪TCP数据流，到第五个流中发现flag相关信息。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、打开流量文件，照常追踪TCP数据流，到第五个流中发现flag相关信息。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2242,7 +2336,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2373,7 +2467,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2386,7 +2480,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2406,7 +2500,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2474,8 +2568,7 @@ Quoted-printable编码</a></p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">flag<span class="o">{}</span>Welc0me_GkC4F_m1siCCCCCC!
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2508,39 +2601,59 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压得到ZIP压缩包。&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到ZIP压缩包。&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
 
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;解压出的png图片&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、压缩包内有两个文件，而且已经解压出了一个文件，我猜测为zip压缩包明文攻击，但后面没有成功解出密码。看过别人的题解之后，发现原来是zip伪加密。
+通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png">
@@ -2559,34 +2672,31 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到ZIP压缩包。</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到ZIP压缩包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
+<h3 id="解题思路">解题思路：</h3><p>1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2597,7 +2707,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2607,7 +2717,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2619,7 +2729,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2630,7 +2740,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2718,7 +2828,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2731,14 +2841,13 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -2789,16 +2898,14 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>保存附件为attachment.txt</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>保存附件为attachment.txt</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2818,8 +2925,7 @@ Quoted-printable编码</a></p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、观察密文，134个字符，猜测为十六进制的数据，先两位截取。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、观察密文，134个字符，猜测为十六进制的数据，先两位截取。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -3028,8 +3134,7 @@ Quoted-printable编码</a></p>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">flag</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>

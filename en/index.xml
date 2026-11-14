@@ -6,10 +6,10 @@
     <description>Recent content on less but better</description>
     <image>
       <title>less but better</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
@@ -22,14 +22,12 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish API Configuration Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt&#34;&gt;Open-Source Threat Intelligence Example: ip_list&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/yuexuan521/honeypot-blocklist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;honeypot-blocklist Project Repository&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
-&lt;p&gt;The most essential characteristic of a honeypot is this: &lt;strong&gt;no legitimate business traffic should ever access it&lt;/strong&gt;. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an &lt;strong&gt;extremely high signal-to-noise ratio (high fidelity)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;&lt;p&gt;The most essential characteristic of a honeypot is this: &lt;strong&gt;no legitimate business traffic should ever access it&lt;/strong&gt;. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an &lt;strong&gt;extremely high signal-to-noise ratio (high fidelity)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;A honeypot can capture basic attacker information and convert it into &lt;strong&gt;Indicators of Compromise (IOCs)&lt;/strong&gt;:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md"target="_blank" rel="noopener noreferrer">HFish API Configuration Documentation</a></p>
 <p><a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">Open-Source Threat Intelligence Example: ip_list</a></p>
 <p><a href="https://github.com/yuexuan521/honeypot-blocklist"target="_blank" rel="noopener noreferrer">honeypot-blocklist Project Repository</a></p>
-<h2 id="planning">Planning</h2>
-<p>The most essential characteristic of a honeypot is this: <strong>no legitimate business traffic should ever access it</strong>. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an <strong>extremely high signal-to-noise ratio (high fidelity)</strong>.</p>
+<h2 id="planning">Planning</h2><p>The most essential characteristic of a honeypot is this: <strong>no legitimate business traffic should ever access it</strong>. Therefore, any data entering a honeypot is essentially “suspicious” or “malicious” by nature. This gives honeypot-collected data an <strong>extremely high signal-to-noise ratio (high fidelity)</strong>.</p>
 <p>A honeypot can capture basic attacker information and convert it into <strong>Indicators of Compromise (IOCs)</strong>:</p>
 <ul>
 <li><strong>Attacker source IP addresses</strong>: Identify where attackers come from (country, ASN, proxy pool).</li>
@@ -38,8 +36,7 @@
 <li><strong>Purpose</strong>: Synchronize this data in real time to firewalls (FW), WAFs, or intrusion detection systems (IDS), enabling <strong>“attacked once, blocked everywhere.”</strong></li>
 </ul>
 <p>This article demonstrates how to automatically extract attack information obtained from the HFish honeypot through its built-in API, and distribute it via GitHub/Gitee Pages. (Using simple attacker source IP extraction as an example.)</p>
-<h3 id="architecture-design">Architecture Design</h3>
-<ol>
+<h3 id="architecture-design">Architecture Design</h3><ol>
 <li>
 <p><strong>Data source</strong>: An HFish honeypot deployed on an internal or public network.</p>
 <p>Deployment tutorial: <a href="https://www.freebuf.com/articles/sectool/457499.html"target="_blank" rel="noopener noreferrer">Full Guide to Deploying an HFish Honeypot on a Cloud Server</a></p>
@@ -51,11 +48,10 @@
 <p><strong>Publishing platform</strong>: GitHub or Gitee (using their Pages service to host static text files). ( <a href="https://github.com/"target="_blank" rel="noopener noreferrer">GitHub</a> )</p>
 </li>
 <li>
-<p><strong>Final output</strong>: A publicly accessible URL (for example: <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt%29">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt)</a>.</p>
+<p><strong>Final output</strong>: A publicly accessible URL (for example: <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt</a>).</p>
 </li>
 </ol>
-<h2 id="step-1-prepare-the-hfish-api">Step 1: Prepare the HFish API</h2>
-<p>HFish provides an API for retrieving attack data.</p>
+<h2 id="step-1-prepare-the-hfish-api">Step 1: Prepare the HFish API</h2><p>HFish provides an API for retrieving attack data.</p>
 <ol>
 <li>Log in to the HFish admin panel.</li>
 <li>Go to <strong>“System Settings” -&gt; “API Settings”</strong>.</li>
@@ -75,8 +71,7 @@
         />
     </a>
 </div></p>
-<h2 id="step-2-write-the-automated-extraction-script-python">Step 2: Write the Automated Extraction Script (Python)</h2>
-<p>We need to write a Python script to perform the workflow: “fetch data -&gt; filter whitelist -&gt; format -&gt; write to file”.</p>
+<h2 id="step-2-write-the-automated-extraction-script-python">Step 2: Write the Automated Extraction Script (Python)</h2><p>We need to write a Python script to perform the workflow: “fetch data -&gt; filter whitelist -&gt; format -&gt; write to file”.</p>
 <p>Create <code>/root/generate_feed.py</code> on the HFish server or a machine that can access HFish: (you need to modify the values of <code>HFISH_HOST</code>, <code>API_KEY</code>, and <code>OUTPUT_TXT</code> on line 10)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -375,9 +370,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Modify the Python script configuration above so that the output path points to this Git directory.</p>
-<h2 id="step-4-automate-updates-and-pushes-shell--crontab">Step 4: Automate Updates and Pushes (Shell + Crontab)</h2>
-<h3 id="1-write-the-automation-shell-script">1. Write the Automation Shell Script</h3>
-<p>Write a Shell script named <code>update_feed.sh</code> to combine “generate” and “push” into one workflow:</p>
+<h2 id="step-4-automate-updates-and-pushes-shell--crontab">Step 4: Automate Updates and Pushes (Shell + Crontab)</h2><h3 id="1-write-the-automation-shell-script">1. Write the Automation Shell Script</h3><p>Write a Shell script named <code>update_feed.sh</code> to combine “generate” and “push” into one workflow:</p>
 <ol>
 <li>
 <p>Create the script file:</p>
@@ -549,8 +542,7 @@
 </div></li>
 </ol>
 <hr>
-<h3 id="2-configure-passwordless-ssh-push-critical">2. Configure Passwordless SSH Push (Critical!)</h3>
-<p>When the automation script runs in the background, it cannot manually enter a GitHub username or password. You must configure an <strong>SSH Key</strong>.</p>
+<h3 id="2-configure-passwordless-ssh-push-critical">2. Configure Passwordless SSH Push (Critical!)</h3><p>When the automation script runs in the background, it cannot manually enter a GitHub username or password. You must configure an <strong>SSH Key</strong>.</p>
 <ol>
 <li>
 <p><strong>Check whether a key already exists</strong>:</p>
@@ -674,8 +666,7 @@ Enter the directory and check:</p>
 </li>
 </ol>
 <hr>
-<h3 id="3-manually-test-the-full-workflow">3. Manually Test the Full Workflow</h3>
-<p>Now let’s run the Shell script manually once and see whether it can push successfully.</p>
+<h3 id="3-manually-test-the-full-workflow">3. Manually Test the Full Workflow</h3><p>Now let’s run the Shell script manually once and see whether it can push successfully.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -690,8 +681,7 @@ Enter the directory and check:</p>
 <li>Check the GitHub web page: refresh your repository and see whether the update time of <code>ip_list.txt</code> becomes <code>&quot;Just now&quot;</code>.</li>
 </ol>
 <hr>
-<h3 id="4-set-up-a-scheduled-task-crontab">4. Set Up a Scheduled Task (Crontab)</h3>
-<p>After confirming that the manual run works correctly, the final step is to let it run automatically. We will set it to <strong>update once every 2 hours</strong> (to keep the feed fresh without wasting resources).</p>
+<h3 id="4-set-up-a-scheduled-task-crontab">4. Set Up a Scheduled Task (Crontab)</h3><p>After confirming that the manual run works correctly, the final step is to let it run automatically. We will set it to <strong>update once every 2 hours</strong> (to keep the feed fresh without wasting resources).</p>
 <ol>
 <li>
 <p>Edit the scheduled tasks:</p>
@@ -722,8 +712,7 @@ Enter the directory and check:</p>
 </li>
 </ol>
 <hr>
-<h2 id="step-5-open-it-up-for-others-to-use">Step 5: Open It Up for Others to Use</h2>
-<p>Now, your GitHub repository will contain <code>ip_list.txt</code>. You need to enable <strong>GitHub Pages</strong> (turn it on in the repository’s Settings -&gt; Pages).</p>
+<h2 id="step-5-open-it-up-for-others-to-use">Step 5: Open It Up for Others to Use</h2><p>Now, your GitHub repository will contain <code>ip_list.txt</code>. You need to enable <strong>GitHub Pages</strong> (turn it on in the repository’s Settings -&gt; Pages).</p>
 <ol>
 <li>Go to the repository <strong>Settings</strong>.</li>
 <li>Find <strong>Pages</strong> in the left sidebar.</li>
@@ -757,25 +746,19 @@ Enter the directory and check:</p>
       <link>https://yuexuan521.github.io/en/about_me/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/en/about_me/</guid>
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;
-&lt;p&gt;Third-year Information Security undergraduate.
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;&lt;p&gt;Third-year Information Security undergraduate.
 Interests: Reading, Movies, Music. I prefer the quiet of staying indoors.&lt;/p&gt;
-&lt;h2 id=&#34;about-this-Blog&#34;&gt;About this Blog&lt;/h2&gt;
-&lt;p&gt;Focused on Cybersecurity and Technology.
+&lt;h2 id=&#34;about-this-Blog&#34;&gt;About this Blog&lt;/h2&gt;&lt;p&gt;Focused on Cybersecurity and Technology.
 Content includes CTF Write-ups, technical research, and occasional personal thoughts.&lt;/p&gt;
-&lt;h2 id=&#34;Contact&#34;&gt;Contact&lt;/h2&gt;
-&lt;p&gt;📧 &lt;a href=&#34;https://www.google.com/url?sa=E&amp;amp;q=mailto%3Ayuexuan521@gmail.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;yuexuan521@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;Contact&#34;&gt;Contact&lt;/h2&gt;&lt;p&gt;📧 &lt;a href=&#34;https://www.google.com/url?sa=E&amp;amp;q=mailto%3Ayuexuan521@gmail.com&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;yuexuan521@gmail.com&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Simple is Beautiful &lt;br/&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-      <content:encoded><![CDATA[<h2 id="about-me">About me</h2>
-<p>Third-year Information Security undergraduate.
+      <content:encoded><![CDATA[<h2 id="about-me">About me</h2><p>Third-year Information Security undergraduate.
 Interests: Reading, Movies, Music. I prefer the quiet of staying indoors.</p>
-<h2 id="about-this-Blog">About this Blog</h2>
-<p>Focused on Cybersecurity and Technology.
+<h2 id="about-this-Blog">About this Blog</h2><p>Focused on Cybersecurity and Technology.
 Content includes CTF Write-ups, technical research, and occasional personal thoughts.</p>
-<h2 id="Contact">Contact</h2>
-<p>📧 <a href="https://www.google.com/url?sa=E&amp;q=mailto%3Ayuexuan521@gmail.com"target="_blank" rel="noopener noreferrer">yuexuan521@gmail.com</a></p>
+<h2 id="Contact">Contact</h2><p>📧 <a href="https://www.google.com/url?sa=E&amp;q=mailto%3Ayuexuan521@gmail.com"target="_blank" rel="noopener noreferrer">yuexuan521@gmail.com</a></p>
 <blockquote>
 <p>Simple is Beautiful <br/></p>
 </blockquote>

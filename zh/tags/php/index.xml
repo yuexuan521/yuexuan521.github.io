@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Php on 知识带给我们自由</title>
+    <title>PHP on 知识带给我们自由</title>
     <link>https://yuexuan521.github.io/zh/tags/php/</link>
-    <description>Recent content in Php on 知识带给我们自由</description>
+    <description>Recent content in PHP on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 12:21:39 +0000</lastBuildDate>
@@ -19,12 +19,11 @@
       <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</link>
       <pubDate>Sun, 22 Sep 2024 12:21:39 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</guid>
-      <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -37,14 +36,16 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;
-&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2>
-<p>
+&lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
+&lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
+&lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;
+&lt;h4 id=&#34;存储型&#34;&gt;存储型&lt;/h4&gt;&lt;p&gt;出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -57,15 +58,12 @@
 </ul>
 <hr>
 <blockquote>
-<h3 id="xss跨站原理">XSS跨站原理</h3>
-<p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
+<h3 id="xss跨站原理">XSS跨站原理</h3><p>当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;</p>
 <p>浏览器同源策略：只有发布Cookie的网站才能读取Cookie。</p>
 <p>会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害</p>
-<h4 id="存储型">存储型</h4>
-<p>出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全</p>
+<h4 id="存储型">存储型</h4><p>出现在留言、评论、博客日志等交互处，直接影响Web服务器自身安全</p>
 </blockquote>
-<h3 id="low">Low</h3>
-<p>1、分析网页源代码</p>
+<h3 id="low">Low</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -135,7 +133,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
-             alt="image-20240425131132813" 
+             alt="" 
               
              loading="lazy"
         />
@@ -145,7 +143,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
-             alt="image-20240425131249914" 
+             alt="" 
               
              loading="lazy"
         />
@@ -156,7 +154,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
-             alt="image-20240425131430407" 
+             alt="" 
               
              loading="lazy"
         />
@@ -166,7 +164,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
-             alt="image-20240425131343029" 
+             alt="" 
               
              loading="lazy"
         />
@@ -210,8 +208,7 @@
 </span></span><span class="line"><span class="cl"><span class="mi">6</span><span class="k">echo</span> <span class="s2">&#34;Name: </span><span class="si">$safeName</span><span class="s2">&#34;</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="medium">Medium</h3>
-<p>1、分析网页源代码</p>
+</div><h3 id="medium">Medium</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -289,14 +286,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
-             alt="image-20240425134449055" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="high">High</h3>
-<p>1、分析网页源代码</p>
+<h3 id="high">High</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -368,14 +364,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
-             alt="image-20240425135425515" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="impossible">Impossible</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="impossible">Impossible</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2

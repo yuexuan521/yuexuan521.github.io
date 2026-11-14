@@ -6,10 +6,10 @@
     <description>Recent content in 威胁情报 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
@@ -22,13 +22,19 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish API配置文档&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt&#34;&gt;威胁情报开源示例：ip_list&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/yuexuan521/honeypot-blocklist&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;honeypot-blocklist 项目地址&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;规划&#34;&gt;规划&lt;/h2&gt;
-&lt;p&gt;蜜罐（Honeypot）最核心的特点是：&lt;strong&gt;没有任何正常的业务流量会访问它&lt;/strong&gt;。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有&lt;strong&gt;极高的信噪比（高保真）&lt;/strong&gt;。&lt;/p&gt;</description>
+&lt;h2 id=&#34;规划&#34;&gt;规划&lt;/h2&gt;&lt;p&gt;蜜罐（Honeypot）最核心的特点是：&lt;strong&gt;没有任何正常的业务流量会访问它&lt;/strong&gt;。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有&lt;strong&gt;极高的信噪比（高保真）&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;蜜罐可以捕获攻击者的基础信息，将其转化为&lt;strong&gt;入侵指标（IOCs）&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;攻击源 IP 地址&lt;/strong&gt;：识别攻击者来自哪里（国家、ASN、代理池）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恶意哈希值（File Hash）&lt;/strong&gt;：上传的恶意软件的 MD5/SHA256。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;恶意域名/URL&lt;/strong&gt;：恶意软件回连的 C2（命令与控制）服务器地址。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;用途&lt;/strong&gt;：将这些数据实时同步给防火墙（FW）、WAF 或入侵检测系统（IDS），实现“一处被攻，全网封禁”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文即是实现将Hifsh蜜罐获得的攻击信息，通过使用其自带的 API 接口进行自动化提取，并利用 GitHub/Gitee Pages 进行分发。（提取简单的攻击源 IP 地址为例）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="https://github.com/hacklcx/HFish/blob/master/docs/6-4-api.md"target="_blank" rel="noopener noreferrer">HFish API配置文档</a></p>
 <p><a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">威胁情报开源示例：ip_list</a></p>
 <p><a href="https://github.com/yuexuan521/honeypot-blocklist"target="_blank" rel="noopener noreferrer">honeypot-blocklist 项目地址</a></p>
-<h2 id="规划">规划</h2>
-<p>蜜罐（Honeypot）最核心的特点是：<strong>没有任何正常的业务流量会访问它</strong>。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有<strong>极高的信噪比（高保真）</strong>。</p>
+<h2 id="规划">规划</h2><p>蜜罐（Honeypot）最核心的特点是：<strong>没有任何正常的业务流量会访问它</strong>。因此，凡是进入蜜罐的数据，本质上都是“可疑”或“恶意”的。这使得蜜罐收集到的数据具有<strong>极高的信噪比（高保真）</strong>。</p>
 <p>蜜罐可以捕获攻击者的基础信息，将其转化为<strong>入侵指标（IOCs）</strong>：</p>
 <ul>
 <li><strong>攻击源 IP 地址</strong>：识别攻击者来自哪里（国家、ASN、代理池）。</li>
@@ -37,8 +43,7 @@
 <li><strong>用途</strong>：将这些数据实时同步给防火墙（FW）、WAF 或入侵检测系统（IDS），实现“一处被攻，全网封禁”。</li>
 </ul>
 <p>本文即是实现将Hifsh蜜罐获得的攻击信息，通过使用其自带的 API 接口进行自动化提取，并利用 GitHub/Gitee Pages 进行分发。（提取简单的攻击源 IP 地址为例）</p>
-<h3 id="架构设计">架构设计</h3>
-<ol>
+<h3 id="架构设计">架构设计</h3><ol>
 <li>
 <p><strong>数据源</strong>：部署在内网或公网的 HFish 蜜罐。</p>
 <p>部署教程：<a href="https://www.freebuf.com/articles/sectool/457499.html"target="_blank" rel="noopener noreferrer">云服务器搭建HFish蜜罐全流程 </a></p>
@@ -53,8 +58,7 @@
 <p><strong>最终产物</strong>：一个公网可访问的 URL（例如 <a href="https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt">https://yuexuan521.github.io/honeypot-blocklist/ip_list.txt</a>）。</p>
 </li>
 </ol>
-<h2 id="第一步准备-hfish-api">第一步：准备 HFish API</h2>
-<p>HFish 提供了 API 用于获取攻击数据。</p>
+<h2 id="第一步准备-hfish-api">第一步：准备 HFish API</h2><p>HFish 提供了 API 用于获取攻击数据。</p>
 <ol>
 <li>登录 HFish 管理后台。</li>
 <li>进入 <strong>“系统设置” -&gt; “API 设置”</strong>。</li>
@@ -68,14 +72,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
-             alt="image-20251227102507885" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2>
-<p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
+<h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2><p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
 <p>在 HFish 服务器或能访问 HFish 的机器上创建 /root/generate_feed.py：（需修改HFISH_HOST、API_KEY、OUTPUT_TXT的值，第10行）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -351,8 +354,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">main</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="第三步建立开源仓库-githubgitee">第三步：建立开源仓库 (GitHub/Gitee)</h2>
-<ol>
+</div><h2 id="第三步建立开源仓库-githubgitee">第三步：建立开源仓库 (GitHub/Gitee)</h2><ol>
 <li>在 GitHub 上创建一个新仓库，例如 <code>honeypot-blocklist</code>。</li>
 <li>在你的服务器上安装 Git，并克隆该仓库。（<code>yourusername</code>改成你的用户名）</li>
 </ol>
@@ -369,9 +371,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改上面的 Python 脚本配置，将输出路径指向这个 Git 目录。</p>
-<h2 id="第四步自动化更新与推送-shell--crontab">第四步：自动化更新与推送 (Shell + Crontab)</h2>
-<h3 id="1编写自动化-shell-脚本">1、编写自动化 Shell 脚本</h3>
-<p>编写一个 Shell 脚本 update_feed.sh，将“生成”和“推送”结合起来：</p>
+<h2 id="第四步自动化更新与推送-shell--crontab">第四步：自动化更新与推送 (Shell + Crontab)</h2><h3 id="1编写自动化-shell-脚本">1、编写自动化 Shell 脚本</h3><p>编写一个 Shell 脚本 update_feed.sh，将“生成”和“推送”结合起来：</p>
 <ol>
 <li>
 <p>创建脚本文件：</p>
@@ -396,7 +396,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
-             alt="image-20251228221426661" 
+             alt="" 
               
              loading="lazy"
         />
@@ -543,8 +543,7 @@
 </div></li>
 </ol>
 <hr>
-<h3 id="2配置-ssh-免密推送关键">2、配置 SSH 免密推送（关键！）</h3>
-<p>自动化脚本在后台运行时，无法输入 GitHub 的账号密码。你必须配置 <strong>SSH Key</strong>。</p>
+<h3 id="2配置-ssh-免密推送关键">2、配置 SSH 免密推送（关键！）</h3><p>自动化脚本在后台运行时，无法输入 GitHub 的账号密码。你必须配置 <strong>SSH Key</strong>。</p>
 <ol>
 <li>
 <p><strong>检查是否已有 Key</strong>：</p>
@@ -595,7 +594,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
-             alt="image-20251230120117688" 
+             alt="" 
               
              loading="lazy"
         />
@@ -614,7 +613,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
-             alt="image-20251230120223456" 
+             alt="" 
               
              loading="lazy"
         />
@@ -668,8 +667,7 @@
 </li>
 </ol>
 <hr>
-<h3 id="3手动测试全流程">3、手动测试全流程</h3>
-<p>现在我们手动运行一次 Shell 脚本，看看能不能成功推送。</p>
+<h3 id="3手动测试全流程">3、手动测试全流程</h3><p>现在我们手动运行一次 Shell 脚本，看看能不能成功推送。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -684,8 +682,7 @@
 <li>看 GitHub 网页：刷新你的仓库，看看 ip_list.txt 更新时间是不是变成了 &ldquo;Just now&rdquo;。</li>
 </ol>
 <hr>
-<h3 id="4设置定时任务-crontab">4、设置定时任务 (Crontab)</h3>
-<p>确认手动运行没问题后，最后一步是让它自动跑。我们设置为 <strong>每 2 小时更新一次</strong>（既保证新鲜度，又不浪费资源）。</p>
+<h3 id="4设置定时任务-crontab">4、设置定时任务 (Crontab)</h3><p>确认手动运行没问题后，最后一步是让它自动跑。我们设置为 <strong>每 2 小时更新一次</strong>（既保证新鲜度，又不浪费资源）。</p>
 <ol>
 <li>
 <p>编辑定时任务：</p>
@@ -716,8 +713,7 @@
 </li>
 </ol>
 <hr>
-<h2 id="第五步开源给他人使用">第五步：开源给他人使用</h2>
-<p>现在，你的 GitHub 仓库中会有 ip_list.txt。你需要开启 <strong>GitHub Pages</strong> 功能（在仓库 Settings -&gt; Pages 中开启）。</p>
+<h2 id="第五步开源给他人使用">第五步：开源给他人使用</h2><p>现在，你的 GitHub 仓库中会有 ip_list.txt。你需要开启 <strong>GitHub Pages</strong> 功能（在仓库 Settings -&gt; Pages 中开启）。</p>
 <ol>
 <li>进入该仓库的 <strong>Settings</strong> (设置)。</li>
 <li>在左侧侧边栏找到 <strong>Pages</strong>。</li>
@@ -738,7 +734,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
-             alt="image-20251230120659771" 
+             alt="" 
               
              loading="lazy"
         />

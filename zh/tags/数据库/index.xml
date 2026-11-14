@@ -6,10 +6,10 @@
     <description>Recent content in 数据库 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 31 May 2025 11:44:09 +0000</lastBuildDate>
@@ -39,14 +39,26 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到派大星的烦恼.bmp&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、用010Editor打开bmp文件，搜索 &lt;code&gt;0x22、0x44&lt;/code&gt; 两种伤疤细胞。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png">
@@ -67,34 +79,31 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到派大星的烦恼.bmp</p>
+<h3 id="题目描述">题目描述：</h3><p>派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到派大星的烦恼.bmp</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、用010Editor打开bmp文件，搜索 <code>0x22、0x44</code> 两种伤疤细胞。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、用010Editor打开bmp文件，搜索 <code>0x22、0x44</code> 两种伤疤细胞。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -124,7 +133,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -146,7 +155,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -204,8 +213,7 @@
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -262,34 +270,31 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>将你获得的明显信息md5加密之后以flag{xxx}的格式提交。 注意：得到的 flag 请包上 flag{} 提交</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到out.pcap</p>
+<h3 id="题目描述">题目描述：</h3><p>将你获得的明显信息md5加密之后以flag{xxx}的格式提交。 注意：得到的 flag 请包上 flag{} 提交</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到out.pcap</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、打开out.pcap，发现大量ICMP报文，携带以 <code>$$START$$</code> 开头的数据，似乎是Base64数据。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、打开out.pcap，发现大量ICMP报文，携带以 <code>$$START$$</code> 开头的数据，似乎是Base64数据。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -299,7 +304,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -309,7 +314,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -319,7 +324,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -402,7 +407,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -413,7 +418,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -423,7 +428,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -434,7 +439,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -454,7 +459,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -491,7 +496,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -503,7 +508,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -538,8 +543,7 @@
 </span></span><span class="line"><span class="cl">            <span class="n">data</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">binascii</span><span class="o">.</span><span class="n">unhexlify</span><span class="p">(</span><span class="n">i</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -557,19 +561,17 @@ $$</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-&lt;ul&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;
 &lt;/li&gt;
@@ -577,20 +579,20 @@ $$</p>
 &lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2>
-<p>
+&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="目标">目标</h3>
-<ul>
+<h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
 </li>
@@ -601,8 +603,7 @@ $$</p>
 <p>启用端口安全功能以防止CAM表溢出攻击。</p>
 </li>
 </ul>
-<h3 id="背景场景">背景/场景</h3>
-<p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
+<h3 id="背景场景">背景/场景</h3><p>最近网络遭受了一系列攻击。因此，网络管理员已指派您负责配置第二层安全措施。</p>
 <p>为了确保网络性能和安全性达到最优状态，管理员希望确定中心3560型号交换机作为根桥。为防止对生成树协议进行篡改攻击，管理员希望确保STP参数得到安全配置。针对CAM表溢出攻击的风险，网络管理员决定配置端口安全策略，限制每个交换机端口学习到的MAC地址数量。一旦学习到的MAC地址超过设定的限制，管理员希望建立机制自动关闭该端口。</p>
 <p>所有交换机设备已经预先配置了以下信息：</p>
 <ul>
@@ -616,8 +617,7 @@ $$</p>
 <p>SSH用户名及密码： <strong>SSHadmin / ciscosshpa55</strong></p>
 </li>
 </ul>
-<h3 id="第一部分配置根桥">第一部分：配置根桥</h3>
-<p><strong>步骤1：确定当前的根桥。</strong></p>
+<h3 id="第一部分配置根桥">第一部分：配置根桥</h3><p><strong>步骤1：确定当前的根桥。</strong></p>
 <p>从中心交换机（Central）发出 <code>show spanning-tree</code> 命令，以确定当前的根桥、查看正在使用的端口及其状态。</p>
 <blockquote>
 <p>Central#show spanning-tree</p>
@@ -699,8 +699,7 @@ $$</p>
 </div>
 </div><p>根据上述信息，哪个交换机是当前的根桥？</p>
 <p>基于新的根桥设置，请绘制由此得出的生成树拓扑结构。</p>
-<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3>
-<p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
+<h3 id="第二部分防止stp攻击">第二部分：防止STP攻击</h3><p><strong>步骤1：在所有接入端口上启用PortFast。</strong></p>
 <p>PortFast应在连接至单个工作站或服务器的接入端口上配置，以使它们更快地进入活动状态。在SW-A和SW-B的相连接入端口上使用 <code>spanning-tree portfast</code> 命令来启用 <strong>PortFast</strong> 。</p>
 <blockquote>
 <p>SW-A(config)#int range f0/1-4
@@ -732,8 +731,7 @@ SW-1(config-if-range)#spanning-tree guard root</p>
 <p>SW-2(config)#int range f0/23-24
 SW-2(config-if-range)#spanning-tree guard root</p>
 </blockquote>
-<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3>
-<p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
+<h3 id="第三部分配置端口安全并禁用未使用端口">第三部分：配置端口安全并禁用未使用端口</h3><p><strong>步骤1：在连接到主机设备的所有端口上配置基本端口安全。</strong></p>
 <p>此操作应在SW-A和SW-B的所有接入端口上执行。设置允许学习的MAC地址最大数量为 <strong>2</strong> ，允许动态学习MAC地址，并将违规处理方式设为 <strong>shutdown</strong> （关闭）。</p>
 <p>注解：只有当交换机端口配置为接入模式时，才能启用端口安全功能。</p>
 <blockquote>
@@ -807,7 +805,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -817,7 +815,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -835,8 +833,7 @@ SW-B(config-if-range)#shutdown</p>
 </blockquote>
 <p><strong>步骤4：检查结果。</strong></p>
 <p>您的完成度应为100%。点击“检查结果”查看反馈信息以及所需组件完成情况的验证。</p>
-<h3 id="实验脚本">实验脚本：</h3>
-<p><strong>Central:</strong></p>
+<h3 id="实验脚本">实验脚本：</h3><p><strong>Central:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1003,14 +1000,36 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到
+
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、先看一下hint.zip压缩包，解压得到&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png">
@@ -1032,34 +1051,31 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压得到
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压得到
 
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、先看一下hint.zip压缩包，解压得到</p>
+<h3 id="解题思路">解题思路：</h3><p>1、先看一下hint.zip压缩包，解压得到</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1075,7 +1091,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1096,7 +1112,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1106,7 +1122,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1117,7 +1133,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1137,7 +1153,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1148,7 +1164,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1159,7 +1175,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1170,7 +1186,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1181,14 +1197,13 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1223,30 +1238,38 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，得到attachment.zip文件&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到attachment.zip文件&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;用Bandizip打开attachment.zip文件，看到压缩包备注，密码均为四位数字&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191656514.png">
@@ -1267,35 +1290,32 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191658566.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，得到attachment.zip文件</p>
+<h3 id="密文">密文：</h3><p>下载附件，得到attachment.zip文件</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191700604.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、解压attachment.zip文件，得到0573.zip文件，向下解压需要密码。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191701942.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1306,7 +1326,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191703718.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1317,7 +1337,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191705286.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1416,7 +1436,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191707210.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1512,7 +1532,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191708324.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1522,14 +1542,13 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191709367.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -1544,12 +1563,11 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</link>
       <pubDate>Fri, 20 Sep 2024 12:25:03 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-sql-injectionsql%E6%B3%A8%E5%85%A5/</guid>
-      <description>&lt;h2 id=&#34;dvwasqlinjection&#34;&gt;DVWASQLInjection&lt;/h2&gt;
-&lt;p&gt;
+      <description>&lt;h2 id=&#34;dvwasqlinjection&#34;&gt;DVWASQLInjection&lt;/h2&gt;&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1563,13 +1581,27 @@ SW-B(config-if-range)#shutdown</p>
 &lt;hr&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;SQL注入漏洞基本原理&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2>
-<p>
+&lt;p&gt;Web应用程序对用户输入的数据校验处理不严或者根本没有校验，致使用户可以拼接执行SQL命令。&lt;/p&gt;
+&lt;p&gt;可能导致数据泄露或数据破坏，缺乏可审计性，甚至导致完全接管主机。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;根据注入技术分类有以下五种：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;布尔型盲注：根据返回页面判断条件真假&lt;/p&gt;
+&lt;p&gt;时间型盲注：用页面返回时间是否增加判断是否存在注入&lt;/p&gt;
+&lt;p&gt;基于错误的注入：页面会返回错误信息&lt;/p&gt;
+&lt;p&gt;联合查询注入：可以使用union的情况下&lt;/p&gt;
+&lt;p&gt;堆查询注入：可以同时执行多条语句&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;防御方法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用参数化查询。&lt;/p&gt;
+&lt;p&gt;数据库服务器不会把参数的内容当作 &lt;code&gt;SQL&lt;/code&gt; 指令的一部分来拼接执行；&lt;/p&gt;
+&lt;p&gt;而是在数据库完成 &lt;code&gt;SQL&lt;/code&gt; 指令的编译后才套用参数运行(预编译)。&lt;/p&gt;
+&lt;p&gt;避免数据变成代码被执行，时刻分清代码和数据的界限。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      <content:encoded><![CDATA[<h2 id="dvwasqlinjection">DVWASQLInjection</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1599,15 +1631,14 @@ SW-B(config-if-range)#shutdown</p>
 <p>而是在数据库完成 <code>SQL</code> 指令的编译后才套用参数运行(预编译)。</p>
 <p>避免数据变成代码被执行，时刻分清代码和数据的界限。</p>
 </blockquote>
-<h3 id="low">Low</h3>
-<p><strong>一、判断提交方式</strong></p>
+<h3 id="low">Low</h3><p><strong>一、判断提交方式</strong></p>
 <p>在User ID中输入数字1，提交后发现，在URL地址栏出现了提交的参数，由此可以判断提交方式为get方式。</p>
 <p>提问：get和post提交方式对SQL注入的实施有什么影响？</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png" 
-             alt="image-20240408153605723" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1619,7 +1650,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png" 
-             alt="image-20240411212414415" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1639,7 +1670,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png" 
-             alt="image-20240411213036653" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1663,7 +1694,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png" 
-             alt="image-20240411214439810" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1673,7 +1704,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png" 
-             alt="image-20240411214409610" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1683,7 +1714,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png" 
-             alt="image-20240411214320827" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1705,7 +1736,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png" 
-             alt="image-20240411214816515" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1740,7 +1771,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png" 
-             alt="image-20240411220050884" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1765,7 +1796,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png" 
-             alt="image-20240411221106229" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1785,7 +1816,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png" 
-             alt="image-20240412083706100" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1806,7 +1837,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png" 
-             alt="image-20240412083801374" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1827,7 +1858,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png" 
-             alt="image-20240412084253957" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1837,7 +1868,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png" 
-             alt="image-20240412111534464" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1856,7 +1887,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png" 
-             alt="image-20240412103446366" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1866,7 +1897,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png" 
-             alt="image-20240412103645411" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1876,7 +1907,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png" 
-             alt="image-20240412104023272" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1895,7 +1926,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png" 
-             alt="image-20240412104144581" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1914,7 +1945,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png" 
-             alt="image-20240412104236250" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1933,7 +1964,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png" 
-             alt="image-20240412104324776" 
+             alt="" 
               
              loading="lazy"
         />
@@ -1952,7 +1983,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png" 
-             alt="image-20240603085905398" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2075,13 +2106,12 @@ SW-B(config-if-range)#shutdown</p>
 </span></span><span class="line"><span class="cl">?&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="medium">Medium</h3>
-<p>1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致</p>
+</div><h3 id="medium">Medium</h3><p>1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png" 
-             alt="image-20240412094734133" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2091,7 +2121,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png" 
-             alt="image-20240412095237028" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2101,7 +2131,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png" 
-             alt="image-20240412094536046" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2112,7 +2142,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png" 
-             alt="image-20240412095327893" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2122,7 +2152,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png" 
-             alt="image-20240412095418437" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2132,7 +2162,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png" 
-             alt="image-20240412095516476" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2142,7 +2172,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png" 
-             alt="image-20240412095727503" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2165,7 +2195,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png" 
-             alt="image-20240412095859327" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2175,7 +2205,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png" 
-             alt="image-20240412095934153" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2217,7 +2247,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png" 
-             alt="image-20240412101400469" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2239,7 +2269,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png" 
-             alt="image-20240412101948084" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2249,7 +2279,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png" 
-             alt="image-20240412102504354" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2259,7 +2289,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png" 
-             alt="image-20240412102654211" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2278,7 +2308,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png" 
-             alt="image-20240412102804247" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2297,7 +2327,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png" 
-             alt="image-20240412102914074" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2309,7 +2339,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png" 
-             alt="image-20240603112004596" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2330,7 +2360,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png" 
-             alt="image-20240603101812626" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2349,7 +2379,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png" 
-             alt="image-20240603102226671" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2427,13 +2457,12 @@ SW-B(config-if-range)#shutdown</p>
 </span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="high">High</h3>
-<p>1、点击链接弹出小窗，提交1，使用BurpSuite抓包。</p>
+</div><h3 id="high">High</h3><p>1、点击链接弹出小窗，提交1，使用BurpSuite抓包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png" 
-             alt="image-20240603092627559" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2443,7 +2472,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png" 
-             alt="image-20240603092835322" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2454,7 +2483,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png" 
-             alt="image-20240603093053482" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2473,7 +2502,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png" 
-             alt="image-20240603093607403" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2493,7 +2522,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png" 
-             alt="image-20240603100335290" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2512,7 +2541,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png" 
-             alt="image-20240603101120077" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2572,8 +2601,7 @@ SW-B(config-if-range)#shutdown</p>
 </span></span><span class="line"><span class="cl"><span class="cp">?&gt;</span><span class="err">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="impossible">Impossible</h3>
-<div class="highlight"><div class="chroma">
+</div><h3 id="impossible">Impossible</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -2670,29 +2698,45 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。&lt;/p&gt;
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;
-&lt;p&gt;1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GNATOMJVIQZUKNJXGRCTGNRTGI3EMNZTGNBTKRJWGI2UIMRRGNBDEQZWGI3DKMSFGNCDMRJTII3TMNBQGM4TERRTGEZTOMRXGQYDGOBWGI2DCNBY
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看其他的无后缀文件，在010Editor中观察到jpg文件的文件头，猜测为jpg文件。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png">
@@ -2711,34 +2755,31 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>得到的 flag 请包上 flag{} 提交。</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。</p>
+<h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
+<h3 id="密文">密文：</h3><p>下载附件解压，得到很多没有后缀的文件和一个ZIP压缩包。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、首先，查看ZIP压缩包，发现有密码，并且在压缩包的注释找到疑似被加密的压缩包密码，初步解密失败。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2765,7 +2806,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2776,7 +2817,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2816,7 +2857,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2827,7 +2868,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2857,7 +2898,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2876,7 +2917,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2895,7 +2936,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2914,7 +2955,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2933,7 +2974,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2952,7 +2993,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2962,7 +3003,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -2973,14 +3014,13 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>

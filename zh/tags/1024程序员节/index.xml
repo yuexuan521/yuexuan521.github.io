@@ -6,10 +6,10 @@
     <description>Recent content in 1024程序员节 on 知识带给我们自由</description>
     <image>
       <title>知识带给我们自由</title>
-      <url>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yuexuan521.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://yuexuan521.github.io/og-default.png</url>
+      <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
-    <generator>Hugo -- 0.160.1</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 24 Oct 2024 17:11:45 +0000</lastBuildDate>
@@ -20,14 +20,12 @@
       <pubDate>Thu, 24 Oct 2024 17:11:45 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E7%AC%AC%E4%B8%89%E5%B1%8A%E5%A5%87%E5%AE%89%E4%BF%A1%E6%9D%AF%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E7%AB%9E%E8%B5%9B-%E9%83%A8%E5%88%86%E9%A2%98%E7%9B%AEwriteup/</guid>
       <description>&lt;hr&gt;
-&lt;h3 id=&#34;misc&#34;&gt;MISC&lt;/h3&gt;
-&lt;h4 id=&#34;gif&#34;&gt;GIF&lt;/h4&gt;
-&lt;p&gt;下载附件，解压得到test1.jpg。&lt;/p&gt;
+&lt;h3 id=&#34;misc&#34;&gt;MISC&lt;/h3&gt;&lt;h4 id=&#34;gif&#34;&gt;GIF&lt;/h4&gt;&lt;p&gt;下载附件，解压得到test1.jpg。&lt;/p&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34; 
-             alt=&#34;image-20241019112516253&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -38,7 +36,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34; 
-             alt=&#34;image-20241019112337531&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -48,7 +46,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -56,14 +54,12 @@
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
-<h3 id="misc">MISC</h3>
-<h4 id="gif">GIF</h4>
-<p>下载附件，解压得到test1.jpg。</p>
+<h3 id="misc">MISC</h3><h4 id="gif">GIF</h4><p>下载附件，解压得到test1.jpg。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png" 
-             alt="image-20241019112516253" 
+             alt="" 
               
              loading="lazy"
         />
@@ -74,7 +70,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png" 
-             alt="image-20241019112337531" 
+             alt="" 
               
              loading="lazy"
         />
@@ -84,7 +80,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -95,7 +91,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -106,19 +102,18 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png" 
-             alt="image-20241019112840972" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h4 id="pyc">pyc</h4>
-<p>下载附件，解压得到test.pyc文件。</p>
+<h4 id="pyc">pyc</h4><p>下载附件，解压得到test.pyc文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png" 
-             alt="image-20241019114034253" 
+             alt="" 
               
              loading="lazy"
         />
@@ -147,7 +142,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png" 
-             alt="image-20241019114406083" 
+             alt="" 
               
              loading="lazy"
         />
@@ -157,7 +152,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png" 
-             alt="image-20241019114425933" 
+             alt="" 
               
              loading="lazy"
         />
@@ -217,13 +212,12 @@
 </span></span><span class="line"><span class="cl"> <span class="mi">5</span><span class="p">,</span> <span class="s2">&#34;&#39;ec-&#39;&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;&#39;-f&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">&#34;&#39;cb&#39;&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;&#39;flag{cc&#39;&#34;</span><span class="p">]</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="seeyouagain">seeyouagain</h4>
-<p>下载附件，解压得到flag.png图片。</p>
+</div><h4 id="seeyouagain">seeyouagain</h4><p>下载附件，解压得到flag.png图片。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png" 
-             alt="image-20241019115057086" 
+             alt="" 
               
              loading="lazy"
         />
@@ -234,7 +228,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png" 
-             alt="image-20241019115221034" 
+             alt="" 
               
              loading="lazy"
         />
@@ -256,7 +250,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png" 
-             alt="image-20241019115550428" 
+             alt="" 
               
              loading="lazy"
         />
@@ -278,7 +272,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png" 
-             alt="image-20241019120045868" 
+             alt="" 
               
              loading="lazy"
         />
@@ -549,21 +543,19 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png" 
-             alt="image-20241019120526730" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
 <hr>
-<h3 id="crypto">CRYPTO</h3>
-<h4 id="base全家桶">base全家桶</h4>
-<p>下载附件，解压得到cipher.txt文件。</p>
+<h3 id="crypto">CRYPTO</h3><h4 id="base全家桶">base全家桶</h4><p>下载附件，解压得到cipher.txt文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png" 
-             alt="image-20241018151311265" 
+             alt="" 
               
              loading="lazy"
         />
@@ -583,7 +575,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png" 
-             alt="image-20241019110546923" 
+             alt="" 
               
              loading="lazy"
         />
@@ -594,19 +586,18 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png" 
-             alt="image-20241019111111971" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h4 id="base6432">base64+32</h4>
-<p>下载附件，解压得到base64+32.html文件。</p>
+<h4 id="base6432">base64+32</h4><p>下载附件，解压得到base64+32.html文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png" 
-             alt="image-20241019111251572" 
+             alt="" 
               
              loading="lazy"
         />
@@ -625,7 +616,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png" 
-             alt="image-20241019111425315" 
+             alt="" 
               
              loading="lazy"
         />
@@ -645,7 +636,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png" 
-             alt="image-20241019111649611" 
+             alt="" 
               
              loading="lazy"
         />
@@ -664,7 +655,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png" 
-             alt="image-20241019111739307" 
+             alt="" 
               
              loading="lazy"
         />
@@ -675,14 +666,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png" 
-             alt="image-20241019111918659" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h4 id="rsa">rsa</h4>
-<p>下载附件，解压得到enc.py文件，内容如下：（RSA真难，算不出来，(╯°□°）╯︵ ┻━┻）</p>
+<h4 id="rsa">rsa</h4><p>下载附件，解压得到enc.py文件，内容如下：（RSA真难，算不出来，(╯°□°）╯︵ ┻━┻）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -753,14 +743,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png" 
-             alt="image-20241022205934149" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="web">WEB</h3>
-<hr>
+<h3 id="web">WEB</h3><hr>
 <p>相关阅读：</p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/134477406?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">BUUCTF [BJDCTF2020]鸡你太美 1</a></p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/133934621?spm=1001.2014.3001.5502"target="_blank" rel="noopener noreferrer">BUUCTF 大白 1</a></p>
@@ -791,16 +780,36 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;
-&lt;p&gt;黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;
-&lt;p&gt;下载附件，解压后得到一个.pcap文件。&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)&lt;/p&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压后得到一个.pcap文件。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击文件，在wireshark打开。&lt;/p&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png&#34; 
+             alt=&#34;&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;2、分析题目，需要找到管理员登陆网站的流量，并从中找到登录密码。使用“http.request.method==POST”语句过滤流量包，得到一条登录流量。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png">
@@ -819,33 +828,30 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="题目描述">题目描述：</h3>
-<p>黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)</p>
-<h3 id="密文">密文：</h3>
-<p>下载附件，解压后得到一个.pcap文件。</p>
+<h3 id="题目描述">题目描述：</h3><p>黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)</p>
+<h3 id="密文">密文：</h3><p>下载附件，解压后得到一个.pcap文件。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="解题思路">解题思路：</h3>
-<p>1、双击文件，在wireshark打开。</p>
+<h3 id="解题思路">解题思路：</h3><p>1、双击文件，在wireshark打开。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -856,7 +862,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -867,14 +873,13 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
     </a>
 </div></p>
-<h3 id="flag">flag：</h3>
-<div class="highlight"><div class="chroma">
+<h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
@@ -894,7 +899,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png&#34; 
-             alt=&#34;在这里插入图片描述&#34; 
+             alt=&#34;&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -909,7 +914,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204951651.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -923,7 +928,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204954303.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204954303.jpeg" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -936,7 +941,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204956121.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204956121.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
@@ -946,7 +951,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204957839.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204957839.png" 
-             alt="在这里插入图片描述" 
+             alt="" 
               
              loading="lazy"
         />
