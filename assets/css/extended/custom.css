@@ -375,3 +375,47 @@ details.archive-year > summary:hover::before {
     color: var(--secondary);
     padding-inline-start: 2px;
 }
+
+/* ==================================================================
+   页脚：两行结构
+   ================================================================== */
+.footer {
+    line-height: 1.9;
+    padding-top: 18px;
+    padding-bottom: 22px;
+}
+
+.footer-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.footer-line a {
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s;
+}
+
+.footer-line a:hover {
+    border-bottom-color: var(--tertiary);
+}
+
+.footer-meta {
+    font-size: 12px;
+    color: var(--faint, #9a9a9a);
+    margin-top: 2px;
+}
+
+.footer-meta a {
+    color: var(--secondary);
+}
+
+.footer-dot {
+    color: var(--tertiary);
+}
