@@ -25,7 +25,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压得到的 test1.jpg，打开后是一整片黑色画面&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -36,30 +36,19 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;010 Editor 打开 test1.jpg，文件头显示 GIF89a&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <h3 id="misc">MISC</h3><h4 id="gif">GIF</h4><p>下载附件，解压得到test1.jpg。</p>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png" 
-             alt="" 
+             alt="解压得到的 test1.jpg，打开后是一整片黑色画面" 
               
              loading="lazy"
         />
@@ -70,7 +59,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png" 
-             alt="" 
+             alt="010 Editor 打开 test1.jpg，文件头显示 GIF89a" 
               
              loading="lazy"
         />
@@ -80,7 +69,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif" 
-             alt="" 
+             alt="原文配图已失效（源站返回占位图）" 
               
              loading="lazy"
         />
@@ -91,7 +80,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp" 
-             alt="" 
+             alt="原文配图已失效（源站返回占位图）" 
               
              loading="lazy"
         />
@@ -102,7 +91,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png" 
-             alt="" 
+             alt="原文配图已失效（源站返回占位图）" 
               
              loading="lazy"
         />
@@ -113,7 +102,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png" 
-             alt="" 
+             alt="解压出的 test.pyc 文件" 
               
              loading="lazy"
         />
@@ -142,7 +131,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png" 
-             alt="" 
+             alt="uncompile6 将 test.pyc 反编译为 test.py，提示 Successfully decompiled" 
               
              loading="lazy"
         />
@@ -152,7 +141,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png" 
-             alt="" 
+             alt="目录中同时存在 test.py 与 test.pyc" 
               
              loading="lazy"
         />
@@ -217,7 +206,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png" 
-             alt="" 
+             alt="附件 flag.png 的缩略图，画面是车内两个人" 
               
              loading="lazy"
         />
@@ -228,7 +217,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png" 
-             alt="" 
+             alt="010 Editor 提示 CRC Mismatch @ chunk[0]" 
               
              loading="lazy"
         />
@@ -239,7 +228,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png" 
-             alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传" 
+             alt="原文配图已失效（显示「图片转存失败」占位图）" 
               
              loading="lazy"
         />
@@ -250,7 +239,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png" 
-             alt="" 
+             alt="Deformed-Image-Restorer 爆破宽高成功：1372×863，新 CRC 为 633607721" 
               
              loading="lazy"
         />
@@ -261,7 +250,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png" 
-             alt="unhex" 
+             alt="修复后的 flag.png 正常显示，底部写着 The Password of zipFile is flag@abc" 
               
              loading="lazy"
         />
@@ -272,7 +261,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png" 
-             alt="" 
+             alt="010 Editor 中图片尾部可见 IEND 与 flag.txt，说明后面附了 ZIP" 
               
              loading="lazy"
         />
@@ -543,7 +532,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png" 
-             alt="" 
+             alt="脚本运行输出 flag{da6ac101b05b6974，还需补一个右花括号" 
               
              loading="lazy"
         />
@@ -555,7 +544,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png" 
-             alt="" 
+             alt="附件 cipher.txt，12 KB 文本" 
               
              loading="lazy"
         />
@@ -575,7 +564,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png" 
-             alt="" 
+             alt="CyberChef 对密文做 Base16 解码，结果仍是一大串十六进制" 
               
              loading="lazy"
         />
@@ -586,7 +575,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png" 
-             alt="" 
+             alt="CyberChef 继续 Base16 再切 Base32，得到 flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}" 
               
              loading="lazy"
         />
@@ -597,7 +586,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png" 
-             alt="" 
+             alt="附件 base64&#43;32.html" 
               
              loading="lazy"
         />
@@ -616,7 +605,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png" 
-             alt="" 
+             alt="浏览器打开 base64&#43;32.html，页面正文是一串 Base64" 
               
              loading="lazy"
         />
@@ -636,7 +625,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png" 
-             alt="" 
+             alt="CyberChef 对页面内容做 Base64 解码" 
               
              loading="lazy"
         />
@@ -655,7 +644,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png" 
-             alt="" 
+             alt="再次 Base64 解码，得到 URL 编码形式的 flag%7B&hellip;%7D" 
               
              loading="lazy"
         />
@@ -666,7 +655,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png" 
-             alt="" 
+             alt="URL 解码后得到 flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}" 
               
              loading="lazy"
         />
@@ -743,7 +732,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png" 
-             alt="" 
+             alt="终端输出 b&rsquo;flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}&rsquo;，退出码 0" 
               
              loading="lazy"
         />

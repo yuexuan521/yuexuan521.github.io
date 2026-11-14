@@ -2274,7 +2274,7 @@ $$</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2292,7 +2292,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png" 
-             alt="" 
+             alt="文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」" 
               
              loading="lazy"
         />
@@ -2310,7 +2310,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png" 
-             alt="" 
+             alt="BUUCTF 题目「[湖南省赛2019]Findme 1」页面，附件为 attachment.zip" 
               
              loading="lazy"
         />
@@ -2322,7 +2322,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png" 
-             alt="" 
+             alt="解压出的 1.png 到 5.png，其中 1.png 尺寸明显异常" 
               
              loading="lazy"
         />
@@ -2371,7 +2371,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png" 
-             alt="" 
+             alt="1.png 打开后只剩一条极窄的横条，说明高度被改过" 
               
              loading="lazy"
         />
@@ -2382,7 +2382,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png" 
-             alt="" 
+             alt="010 Editor 中 chunk[2]、chunk[3] 缺少 IDAT 标识（红框处）" 
               
              loading="lazy"
         />
@@ -2393,7 +2393,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png" 
-             alt="" 
+             alt="在 chunk[2] 的 CTYPE 处补回 IDAT（49444154）" 
               
              loading="lazy"
         />
@@ -2404,7 +2404,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png" 
-             alt="" 
+             alt="修复后的 1.png 正常显示，是一张套娃照片" 
               
              loading="lazy"
         />
@@ -2415,7 +2415,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png" 
-             alt="" 
+             alt="原文配图已失效（源站返回占位图）" 
               
              loading="lazy"
         />
@@ -2425,7 +2425,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png" 
-             alt="" 
+             alt="原文配图已失效（源站返回占位图）" 
               
              loading="lazy"
         />
@@ -2437,7 +2437,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png" 
-             alt="" 
+             alt="2.png 尾部 IEND 之后跟着 50 4B 03 04 与 0.txt 等文件名，说明附了 ZIP" 
               
              loading="lazy"
         />
@@ -2452,7 +2452,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png" 
-             alt="" 
+             alt="解压后得到 0.txt 至 15.txt 等大量文本文件" 
               
              loading="lazy"
         />
@@ -2463,7 +2463,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png" 
-             alt="" 
+             alt="十六进制中成片出现 50 4B 03 04（PK 头）" 
               
              loading="lazy"
         />
@@ -2474,7 +2474,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png" 
-             alt="" 
+             alt="Kali 终端按大小排序，618.txt 大小为 21 字节" 
               
              loading="lazy"
         />
@@ -2484,7 +2484,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png" 
-             alt="" 
+             alt="文件列表中 618.txt 被红框标出" 
               
              loading="lazy"
         />
@@ -2495,7 +2495,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png" 
-             alt="" 
+             alt="618.txt 的内容：You find it: 1RVcmVfc" 
               
              loading="lazy"
         />
@@ -2507,7 +2507,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png" 
-             alt="" 
+             alt="010 Editor 中多处 CRC 字段被红框标出" 
               
              loading="lazy"
         />
@@ -2518,7 +2518,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png" 
-             alt="" 
+             alt="在线进制转换：33526C5A33303D 转成 3RIZ30=" 
               
              loading="lazy"
         />
@@ -2530,7 +2530,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png" 
-             alt="" 
+             alt="exiftool 查看 4.png，Artist 字段写着 another part:cExlX1BsY" 
               
              loading="lazy"
         />
@@ -2542,7 +2542,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png" 
-             alt="" 
+             alt="5.png 尾部 IEND 之后写着 a gift:Yzcllfc0lN" 
               
              loading="lazy"
         />
@@ -2563,7 +2563,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png" 
-             alt="" 
+             alt="Base64 解码得到 flag{4_v3rY_sIMpLe_PlcTUre_steg}" 
               
              loading="lazy"
         />
