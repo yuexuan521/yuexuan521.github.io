@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [ctf 粽子的来历](https://blog.csdn.net/weixin_43790779/article/details/104160841)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png)
+ ![题目页「粽子的来历 1」：要找 DBAPP 标记，答案是 32 位小写 md5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到四个DOC文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193248131.png)
+ ![四个 Word 文件：我是A.doc、我是B.doc、我是C.doc、我是D.doc，22–26 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193248131.png)
 
 ---
 
@@ -43,21 +43,21 @@ tags:
 
 1、在010 Editor中打开文件，每个文件的相近位置都出现类似信息，将这些数据修改成“ `FF` ”，文件就可以正常浏览。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193249498.png)
+ ![十六进制视图，红框标出 IComeFrom 与 QihooDP，左侧对应 49 43 6F 6D 65 46 72 6F 6D](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193249498.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193251686.png)
+ ![大片 FF FF 中间有一段被橙色高亮，正是被改过的位置](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193251686.png)
 
 打开文件，里面是一首离骚，四个文件内容相同。但是通过对比四个文件，发现有些段落的间距不同。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193253068.png)
+ ![离骚全文，从「帝高阳之苗裔兮」到「来吾道夫先路」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193253068.png)
 
 2、文本的段间距有两种格式：1.5倍行距和单倍行距。1.5倍行距代表“ `1` ”，单倍行距代表“ `0` ”，得到字符串： `100100100001` 。（我是C.doc文件的数据是正确的）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193255012.png)
+ ![离骚每行末尾都标着一个 0 或 1，最后一行汇总成 100100100001](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193255012.png)
 
 将这串字符串进行MD5加密，得到flag： `d473ee3def34bd022f8e5233036b3345` 。(答案为正确值(不包括数字之间的空格)的小写32位md5值)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193256611.png)
+ ![MD5 工具：100100100001 → d473ee3def34bd022f8e5233036b3345](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193256611.png)
 
 附一个脚本：
 
