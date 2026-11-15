@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181740317.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181740317.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -27,7 +27,7 @@ tags:
 - [buuctf-misc-Business Planning Group1](https://blog.csdn.net/qq_29977871/article/details/126110785)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181742396.png)
+ ![题目页「Business Planning Group 1」，看图即可，把 bsides_delhi{} 换成 flag{}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181742396.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到challenge.png
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181743961.png)
+ ![challenge.png 是一张金刚狼的低多边形插画](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181743961.png)
 
 ---
 
@@ -45,19 +45,19 @@ tags:
 
 > BPG（Better Portable Graphics，更好的可移植图形）是一种新的图像格式。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181746550.png)
+ ![010 Editor 里 PNG 的 IEND（AE 42 60 82）之后还接着一段 BPG 数据](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181746550.png)
 
 2、将数据另存为1.bpg文件，下载能打开BPG文件的工具。
 
 下载地址： [https://bellard.org/bpg/](https://bellard.org/bpg/) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181748762.png)
+ ![BPG 官网，红框标出 Windows 版 bpg-0.9.8-win64.zip 的下载链接](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181748762.png)
 
 在CMD中，使用bpgview.exe打开1.bpg图片，得到如下图：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181750651.png)
+ ![cmd 列出 bpg 目录，红框标出 1.bpg 与 bpgview.exe，末尾执行 bpgview.exe 1.bpg](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181750651.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181752299.png)
+ ![bpgview 打开 1.bpg，画面是红色夜魔侠，底部一行 base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228181752299.png)
 
 3、提取图片中的字符串，应该是Base64编码。
 

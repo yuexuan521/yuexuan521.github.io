@@ -12,7 +12,7 @@ tags:
 - "隐写"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [CTF-Misc-二维码（二）撕破的二维码](https://blog.csdn.net/qq_45163122/article/details/106124042)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png)
+ ![题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 保存附件，得到860c6e1a-a433-4a70-bfd0-5a318e758705.jpg
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg)
+ ![桌上摆着 9 块撕碎的二维码碎片，按 3×3 排布](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg)
 
 ---
 
@@ -44,15 +44,15 @@ tags:
 
 首先，将所有二维码碎片截取出来。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png)
+ ![拼图界面里把九块碎片拖成 3×3](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png)
 
 最后，用PS拼在一起。（糟糕的手艺活）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png)
+ ![九块碎片拼合后恢复成完整二维码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png)
 
 2、得到二维码后，用QR_Research一直扫不出来，转用手机夸克扫出来，flag: `flag{7bf116c8ec2545708781fd4a0dda44e5}` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg)
+ ![搜索结果页，红框圈出 flag{7bf116c8ec2545708781fd4a0dda44e5}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg)
 
 发现我拼的二维码，用什么在线网站都扫不出来，真是我拼的差吗？(╯°□°）╯︵ ┻━┻）
 

@@ -12,7 +12,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [buuctf 派大星的烦恼](https://www.cnblogs.com/WXjzc/p/16095984.html)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png)
+ ![题目页「派大星的烦恼 1」：16 位位图，0x22 与 0x44 是伤疤、0xf0 是赘肉，答案是 32 位字符串](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到派大星的烦恼.bmp
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp)
+ ![一张纯洋红色的图片，底部有一条隐约的条纹](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp)
 
 ---
 
@@ -43,7 +43,7 @@ tags:
 
 1、用010Editor打开bmp文件，搜索 `0x22、0x44` 两种伤疤细胞。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png)
+ ![010 Editor 里全是 F0 的行与 22、44 组成的行交替出现](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png)
 
 只有两种格式，可以尝试转换为二进制数据。
 
@@ -60,7 +60,7 @@ tags:
 将二进制数据转换为ASCII文字，转换出一堆乱码，尝试逆序反转二进制数据再转ASCII文字。
 [ASCII，十六进制，二进制，十进制，Base64转换器](https://www.rapidtables.org/zh-CN/convert/number/ascii-hex-bin-dec-converter.html) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png)
+ ![在线转换工具三栏：ASCII 乱码、十六进制 6C 2C 0C 6C… 与二进制 0110110000110000…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png)
 
 逆序反转数据：
 [文本逆序翻转工具
@@ -72,7 +72,7 @@ tags:
 
 成功转换为ASCII： `23834ec4b5e6b6ef5db48145a0596046` 。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png)
+ ![ASCII 栏填入 23834ec4b5e6b6ef5db48145a0596046，正好 32 位](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png)
 
 3、用得到的ASCII文本提交flag(答案为32位的一串字符串) ，失败了。再将得到的ASCII文本进行逆序反转，得到flag： `6406950a54184bd5fe6b6e5b4ce43832` 。
 
