@@ -1295,7 +1295,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 通关指南封面：灰底上的 DVWA 标志&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1314,7 +1314,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg" 
-             alt="" 
+             alt="DVWA 通关指南封面：灰底上的 DVWA 标志" 
               
              loading="lazy"
         />
@@ -1351,7 +1351,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png" 
-             alt="" 
+             alt="地址栏为 ?id=1&amp;Submit=Submit，页面回显 ID:1、First name: admin" 
               
              loading="lazy"
         />
@@ -1363,7 +1363,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png" 
-             alt="" 
+             alt="输入单引号后页面报 SQL syntax 错误，说明存在注入点" 
               
              loading="lazy"
         />
@@ -1383,7 +1383,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png" 
-             alt="" 
+             alt="输入 1&rsquo; or 1=1# 后一次回显出全部 5 个用户" 
               
              loading="lazy"
         />
@@ -1407,7 +1407,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png" 
-             alt="" 
+             alt="输入 1&rsquo; order by 1#，回显正常" 
               
              loading="lazy"
         />
@@ -1417,7 +1417,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png" 
-             alt="" 
+             alt="输入 1&rsquo; order by 2#，回显同样正常" 
               
              loading="lazy"
         />
@@ -1427,7 +1427,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png" 
-             alt="" 
+             alt="order by 3# 报 Unknown column &lsquo;3&rsquo;，据此确定只有 2 列" 
               
              loading="lazy"
         />
@@ -1449,7 +1449,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png" 
-             alt="" 
+             alt="union select 1,database() 回显出当前库名 dvwa" 
               
              loading="lazy"
         />
@@ -1484,7 +1484,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png" 
-             alt="" 
+             alt="直接 union 查表名报 Illegal mix of collations" 
               
              loading="lazy"
         />
@@ -1509,7 +1509,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png" 
-             alt="" 
+             alt="改用 information_schema.tables 查出 guestbook 与 users 两张表" 
               
              loading="lazy"
         />
@@ -1529,7 +1529,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png" 
-             alt="" 
+             alt="查 users 表字段，红框标出 user 与 password 两列" 
               
              loading="lazy"
         />
@@ -1550,7 +1550,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png" 
-             alt="" 
+             alt="未加 0x 前缀的同类查询再次报 collations 错误" 
               
              loading="lazy"
         />
@@ -1571,7 +1571,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png" 
-             alt="" 
+             alt="union select user,password from users 回显账号与 32 位 MD5" 
               
              loading="lazy"
         />
@@ -1581,7 +1581,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png" 
-             alt="" 
+             alt="在线 MD5 查询：5f4dcc3b3baa765d61d8327deb882cf99 解出 password" 
               
              loading="lazy"
         />
@@ -1600,7 +1600,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png" 
-             alt="" 
+             alt="地址栏显示 id=1&amp;Submit=Submit#（红框），页面正常回显" 
               
              loading="lazy"
         />
@@ -1610,7 +1610,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png" 
-             alt="" 
+             alt="Firefox 网络面板，红框标出 Cookie 里的 PHPSESSID 与 security=low" 
               
              loading="lazy"
         />
@@ -1620,7 +1620,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png" 
-             alt="" 
+             alt="sqlmap 识别后端为 MySQL 5.6，并提示连接被目标强制关闭后重试" 
               
              loading="lazy"
         />
@@ -1639,7 +1639,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png" 
-             alt="" 
+             alt="sqlmap 列出 5 个数据库：dvwa、information_schema、mysql、performance_schema、sys" 
               
              loading="lazy"
         />
@@ -1658,7 +1658,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png" 
-             alt="" 
+             alt="sqlmap 列出 dvwa 库的 2 张表：guestbook、users" 
               
              loading="lazy"
         />
@@ -1677,7 +1677,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png" 
-             alt="" 
+             alt="sqlmap 列出 users 表的 8 个字段及类型" 
               
              loading="lazy"
         />
@@ -1696,7 +1696,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png" 
-             alt="" 
+             alt="sqlmap dump 出 users 表的 5 条账号密码，并附上解出的明文" 
               
              loading="lazy"
         />
@@ -1824,7 +1824,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png" 
-             alt="" 
+             alt="Edge 设置 → 系统，红框标出「打开计算机的代理设置」" 
               
              loading="lazy"
         />
@@ -1834,7 +1834,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png" 
-             alt="" 
+             alt="Windows 手动代理改为 127.0.0.1:8888" 
               
              loading="lazy"
         />
@@ -1844,7 +1844,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png" 
-             alt="" 
+             alt="Burp 添加代理监听，Bind port 填 8888（红框）" 
               
              loading="lazy"
         />
@@ -1855,7 +1855,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png" 
-             alt="" 
+             alt="DVWA 下拉框选中 4 号用户" 
               
              loading="lazy"
         />
@@ -1865,7 +1865,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png" 
-             alt="" 
+             alt="Burp 拦截到 POST 请求，红框为 id=4&amp;Submit=Submit" 
               
              loading="lazy"
         />
@@ -1875,7 +1875,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png" 
-             alt="" 
+             alt="Burp 右键菜单里选择 Send to Repeater" 
               
              loading="lazy"
         />
@@ -1885,7 +1885,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png" 
-             alt="" 
+             alt="Repeater 中把 id 改为 1，页面回显 Pablo" 
               
              loading="lazy"
         />
@@ -1908,7 +1908,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png" 
-             alt="" 
+             alt="Repeater 提交 id=4 order by 1#，页面正常返回" 
               
              loading="lazy"
         />
@@ -1918,7 +1918,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png" 
-             alt="" 
+             alt="Repeater 提交 order by 3#，响应报 Unknown column &lsquo;3&rsquo;" 
               
              loading="lazy"
         />
@@ -1960,7 +1960,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png" 
-             alt="" 
+             alt="Repeater 提交 union select 1,database()，红框回显 dvwa" 
               
              loading="lazy"
         />
@@ -1982,7 +1982,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png" 
-             alt="" 
+             alt="直接写 &lsquo;dvwa&rsquo; 被引号转义，响应报语法错误" 
               
              loading="lazy"
         />
@@ -1992,7 +1992,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png" 
-             alt="" 
+             alt="Burp Decoder 把 dvwa 转成 ASCII Hex：6476776a" 
               
              loading="lazy"
         />
@@ -2002,7 +2002,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png" 
-             alt="" 
+             alt="用 0x6476776a 代替 &lsquo;dvwa&rsquo;，成功查出 guestbook 与 users（红框）" 
               
              loading="lazy"
         />
@@ -2021,7 +2021,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png" 
-             alt="" 
+             alt="同样用 0x6476776a 查字段，红框标出 user、password" 
               
              loading="lazy"
         />
@@ -2040,7 +2040,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png" 
-             alt="" 
+             alt="Repeater 里 union select user,password，响应只回显一列 MD5（红框）" 
               
              loading="lazy"
         />
@@ -2052,7 +2052,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png" 
-             alt="" 
+             alt="记事本里保存的原始请求头，其中 security=medium" 
               
              loading="lazy"
         />
@@ -2073,7 +2073,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png" 
-             alt="" 
+             alt="sqlmap 在 medium 级别下同样列出 5 个数据库" 
               
              loading="lazy"
         />
@@ -2092,7 +2092,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png" 
-             alt="" 
+             alt="sqlmap dump 出 users 表 5 条记录" 
               
              loading="lazy"
         />
@@ -2175,7 +2175,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png" 
-             alt="" 
+             alt="点击 here to change your ID，弹出输入 Session ID 的小窗" 
               
              loading="lazy"
         />
@@ -2185,7 +2185,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png" 
-             alt="" 
+             alt="Burp 拦截 session-input.php 的 POST 请求，Cookie 中 security=high" 
               
              loading="lazy"
         />
@@ -2196,7 +2196,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png" 
-             alt="" 
+             alt="改包后页面按 Session ID 回显出 admin" 
               
              loading="lazy"
         />
@@ -2215,7 +2215,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png" 
-             alt="" 
+             alt="high 级别下用 1&rsquo; union select user,password 仍能拿到整列 MD5" 
               
              loading="lazy"
         />
@@ -2235,7 +2235,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png" 
-             alt="" 
+             alt="sqlmap 列出 6 个数据库，比之前多出 pikachu" 
               
              loading="lazy"
         />
@@ -2254,7 +2254,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png" 
-             alt="" 
+             alt="sqlmap dump users 表，结果与前一级别一致" 
               
              loading="lazy"
         />
