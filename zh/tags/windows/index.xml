@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -39,7 +39,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -52,7 +52,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出 attachment (1).zip 与 cyberpunk!.exe&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -60,15 +60,12 @@
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、一开始我以为是逆向的题目，直接打开IDA了，没什么成果才返回。实际上，运行程序，根据提示修改电脑的时间就可以得到flag。&lt;/p&gt;
-&lt;p&gt;开始运行程序，提示时间必须在2020年9月17日才可以。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;《赛博朋克2077》宣布跳票！延期至9月17日&lt;/strong&gt;
-我们今天有关于《赛博朋克2077》发行日期的重要消息想与大家分享。《赛博朋克2077》将不会在4月发布，我们将发布日期推迟到 &lt;strong&gt;2020年9月17日&lt;/strong&gt; 。&lt;/p&gt;</description>
+&lt;p&gt;开始运行程序，提示时间必须在2020年9月17日才可以。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -84,7 +81,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png" 
-             alt="" 
+             alt="题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -97,7 +94,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png" 
-             alt="" 
+             alt="解压出 attachment (1).zip 与 cyberpunk!.exe" 
               
              loading="lazy"
         />
@@ -118,7 +115,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png" 
-             alt="" 
+             alt="程序提示要等到 2020.9.17，当前时间显示月 9、日 27" 
               
              loading="lazy"
         />
@@ -129,7 +126,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png" 
-             alt="" 
+             alt="Windows 日期和时间设置，红框标出 2020年9月17日 与「更改」按钮" 
               
              loading="lazy"
         />
@@ -139,7 +136,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png" 
-             alt="" 
+             alt="改完日期再运行，输出 MRCTF{We1c0m3_70_cyber_security}" 
               
              loading="lazy"
         />

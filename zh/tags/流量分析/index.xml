@@ -458,7 +458,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -474,7 +474,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［CFI-CTF 2018］webLogon capture 1」，附件 attachment.tar&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -486,30 +486,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出 ._logon.pcapng（1 KB）与 logon.pcapng（6 KB）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、没想到这道题这么简单。双击logon.pcapng文件，在Wireshark中打开，流量很少。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;直接追踪HTTP流，看一下内容。发现是登录流量，尝试登录三次，都失败了。但用户名和密码并没有变化，只是尝试登录了三次。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190856167.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -525,7 +512,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190858220.png" 
-             alt="" 
+             alt="题目页「［CFI-CTF 2018］webLogon capture 1」，附件 attachment.tar" 
               
              loading="lazy"
         />
@@ -537,7 +524,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190859752.png" 
-             alt="" 
+             alt="解压出 ._logon.pcapng（1 KB）与 logon.pcapng（6 KB）" 
               
              loading="lazy"
         />
@@ -549,7 +536,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190901506.png" 
-             alt="" 
+             alt="Wireshark 里共 10 个包，POST /auth/login/ 与 401 UNAUTHORIZED 交替出现" 
               
              loading="lazy"
         />
@@ -560,7 +547,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190903449.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190903449.png" 
-             alt="" 
+             alt="跟踪 TCP 流，红框标出 {&ldquo;email&rdquo;:&ldquo;test@example&rdquo;,&ldquo;password&rdquo;:&quot;%20%43%46…&quot;} 与 401 响应" 
               
              loading="lazy"
         />
@@ -580,7 +567,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190906009.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190906009.png" 
-             alt="" 
+             alt="URL 解码工具把 %20%43%46%49%7b… 解成 CFI{1ns3cur3_10g0n}" 
               
              loading="lazy"
         />
