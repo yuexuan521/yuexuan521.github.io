@@ -14,13 +14,13 @@ Python学完以后可以在牛客刷题，牛客的python在线编程做的非�
 
 牛客网地址： [https://www.nowcoder.com/](https://www.nowcoder.com/) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213718351.png)
+ ![牛客网首页，红框标出顶部导航里的「题库」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213718351.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213720736.png)
+ ![题库页面上方，「在线编程」标签被红框标出](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213720736.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213723623.png)
+ ![在线编程页，红框标出题目分类里的 Python 标签](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213723623.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213726320.png)
+ ![Python 专题页，红框标出「python入门」，下方列出 NP1–NP5 等题目](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228213726320.png)
 
 每个专题都会做成·一篇文章，最后将组成一个专栏。如果有感兴趣的小伙伴，请关注我吧！！！
 
