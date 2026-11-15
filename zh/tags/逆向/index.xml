@@ -211,7 +211,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -227,7 +227,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「easyre 1」，附件 easyre.zip，提示「非常简单的逆向」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -238,30 +238,19 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出的 easyre.exe，93 KB&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、使用IDA pro打开exe文件，在反汇编窗口（IDA View-A），直接找到flag。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;也可以通过使用快捷键shift+F12：自动分析出参考字符串，找到flag。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、使用IDA pro打开exe文件，在反汇编窗口（IDA View-A），直接找到flag。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -277,7 +266,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png" 
-             alt="" 
+             alt="题目页「easyre 1」，附件 easyre.zip，提示「非常简单的逆向」" 
               
              loading="lazy"
         />
@@ -288,7 +277,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png" 
-             alt="" 
+             alt="解压出的 easyre.exe，93 KB" 
               
              loading="lazy"
         />
@@ -300,7 +289,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png" 
-             alt="" 
+             alt="IDA 反汇编，红框标出 flag{this_Is_a_EaSyRe}，另一分支输出 sorry,you can&rsquo;t get flag" 
               
              loading="lazy"
         />
@@ -311,7 +300,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png" 
-             alt="" 
+             alt="IDA 的 Strings 窗口，第一行就是 flag{this_Is_a_EaSyRe}" 
               
              loading="lazy"
         />

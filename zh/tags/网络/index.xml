@@ -3001,7 +3001,7 @@ R1(config-sigdef)#exit</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -3017,7 +3017,7 @@ R1(config-sigdef)#exit</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［GXYCTF2019］CheckIn 1」，附件 attachment.txt&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -3045,18 +3045,17 @@ R1(config-sigdef)#exit</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Base64 解码：dikqTCpf… 解出乱码 v)L_F0}@H0F49023@FE0#@EN&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、尝试了很多方法，都没有成功。最后，根据此密文的ASCII码值都处于33 ~ 126范围，确定为ROT47加密。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -3072,7 +3071,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png" 
-             alt="" 
+             alt="题目页「［GXYCTF2019］CheckIn 1」，附件 attachment.txt" 
               
              loading="lazy"
         />
@@ -3100,7 +3099,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png" 
-             alt="" 
+             alt="Base64 解码：dikqTCpf… 解出乱码 v)L_F0}@H0F49023@FE0#@EN" 
               
              loading="lazy"
         />
@@ -3111,7 +3110,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png" 
-             alt="" 
+             alt="字符与 ASCII 码互转工具，把上式转成 118;41;42;76;42;95;70;…" 
               
              loading="lazy"
         />
@@ -3122,7 +3121,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png" 
-             alt="" 
+             alt="ROT47 转换后得到 GXY{You_kNow_much_about_Rot}" 
               
              loading="lazy"
         />

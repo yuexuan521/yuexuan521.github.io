@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -42,18 +42,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［UTCTF2020］basic-forensics 1」，附件 attachment.jpeg&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -72,7 +71,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png" 
-             alt="" 
+             alt="题目页「［UTCTF2020］basic-forensics 1」，附件 attachment.jpeg" 
               
              loading="lazy"
         />
@@ -84,7 +83,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png" 
-             alt="" 
+             alt="资源管理器里的 attachment.jpeg，大小 2,335 KB" 
               
              loading="lazy"
         />
@@ -96,7 +95,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png" 
-             alt="" 
+             alt="用 Notepad&#43;&#43; 打开这张 jpeg，内容竟是古腾堡电子书《堂吉诃德》的前言" 
               
              loading="lazy"
         />
@@ -107,7 +106,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png" 
-             alt="" 
+             alt="第 2055 行找到 utflag{fil3_ext3nsi0ns_4r3nt_r34l}，底部查找结果列出 15 处 flag" 
               
              loading="lazy"
         />

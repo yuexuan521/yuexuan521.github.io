@@ -1739,7 +1739,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1757,7 +1757,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［RCTF2019］draw 1」，附件 attachment.txt&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1769,27 +1769,17 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Logo 绘图指令文本，含 cs、pu、lt、fd、setcolor pick 等命令&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cs pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;500&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; repeat 18&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;fd &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; rt 10&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;135&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;135&lt;/span&gt; pu bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; repeat 18&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;fd &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt; rt 10&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt; pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;45&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;45&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;30&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pu bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; pu rt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; pd arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; pu fd &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt; setcolor pick &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; red orange yellow green blue violet &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; pd bk &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; pu home bk &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; lt &lt;span class=&#34;m&#34;&gt;90&lt;/span&gt; fd &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; pd arc &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;20&lt;/span&gt; pu home
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1807,7 +1797,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png" 
-             alt="" 
+             alt="题目页「［RCTF2019］draw 1」，附件 attachment.txt" 
               
              loading="lazy"
         />
@@ -1819,7 +1809,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png" 
-             alt="" 
+             alt="Logo 绘图指令文本，含 cs、pu、lt、fd、setcolor pick 等命令" 
               
              loading="lazy"
         />
@@ -1840,7 +1830,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png" 
-             alt="" 
+             alt="Logo 解释器把指令渲染成残缺的 RCTF_HexLogo 字样" 
               
              loading="lazy"
         />
@@ -2207,7 +2197,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png" 
-             alt="" 
+             alt="Python Turtle 画出旋转 90 度的字样，要转过来才能读" 
               
              loading="lazy"
         />
