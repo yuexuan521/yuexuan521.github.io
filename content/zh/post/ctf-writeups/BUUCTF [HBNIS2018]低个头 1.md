@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「[HBNIS2018]低个头 1」，附 GitHub 来源与 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
+ ![题目页「［HBNIS2018］低个头 1」，附 GitHub 来源与 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
 
 ### 题目描述：
 

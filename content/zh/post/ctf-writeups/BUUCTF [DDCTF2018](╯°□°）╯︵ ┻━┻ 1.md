@@ -25,7 +25,7 @@ tags:
 - [［DDCTF2018］(╯°□°）╯︵ ┻━┻](https://www.cnblogs.com/fishjumpriver/p/17833337.html)
 
 
- ![BUUCTF「[DDCTF2018](╯°□°）╯︵ ┻━┻ 1」题目页，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png)
+ ![BUUCTF「［DDCTF2018］(╯°□°）╯︵ ┻━┻ 1」题目页，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png)
 
 ### 题目描述：
 

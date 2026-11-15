@@ -79,7 +79,7 @@ print(factorize(n))
 
 得到结果：
 
-![Python 跑出分解结果 [101999, 966233]](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png)
+![Python 跑出分解结果 ［101999, 966233］](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png)
 
 2、小的放前面，大的放后面，合成一个新的数字。
 

@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「[GUET-CTF2019]KO 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191038124.png)
+![题目页「［GUET-CTF2019］KO 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191038124.png)
 
 ### 题目描述：
 

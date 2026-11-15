@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「[INSHack2017]sanity 1」，附件 attachment.tar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191447781.png)
+ ![题目页「［INSHack2017］sanity 1」，附件 attachment.tar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191447781.png)
 
 ### 题目描述：
 
