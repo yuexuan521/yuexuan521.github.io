@@ -13,7 +13,7 @@ tags:
 - "隐写"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 - [BUUCTF之misc ［UTCTF2020］File Carving](https://blog.csdn.net/m0_62107966/article/details/126806622)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png)
+ ![题目页「［UTCTF2020］File Carving 1」，附件 attachment.p…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 保存附件，一张attachment.png图片
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192059647.png)
+ ![格里菲斯天文台的昼景照片](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192059647.png)
 
 ---
 
@@ -44,11 +44,11 @@ tags:
 
 1、根据题目，似乎和文件有关，先在010Editor看一下，然后发现ZIP压缩包。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192101734.png)
+ ![十六进制 1:F300h，红框 50 4B 03 04，右侧可见 hidden_binaryUT](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192101734.png)
 
 另存为zip文件，解压得到hidden_binary文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192104292.png)
+ ![分离出的 hidden_binary 文件，大小 17 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192104292.png)
 
 2、用kali中的file命令确定hidden_binary的文件格式为ELF文件，在kali中执行得到flag： `utflag{2fbe9adc2ad89c71da48cabe90a121c0}` 。
 
@@ -59,9 +59,9 @@ file hidden_binary
 ./hidden_binary  
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192105460.png)
+ ![kali 里 file hidden_binary：ELF 64-bit LSB pie executable, x86-64, dynamically linked](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192105460.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192107291.png)
+ ![直接运行 ./hidden_binary，输出 Ah, you found me! 与 utflag{2fbe9adc2ad89c71da48cabe90a121c0}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192107291.png)
 
 另一种方法：使用 `strings` 命令来查看文件中包含的所有可打印字符串。
 
@@ -78,10 +78,10 @@ a48cabe9H
 0a121c0}H
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192108873.png)
+ ![strings hidden_binary | grep "flag" 命中 utflag{2H…，全量 strings 里能看到它被拆成多行](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192108873.png)
 
 另一种方法：直接在010 Editor中搜索flag，找到后再进行处理。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192110924.png)
+ ![十六进制 1180h 处给出完整 utflag{2fbe9adc2ad89c71da48cabe90a121c0}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192110924.png)
 
 ### flag：
 
