@@ -71,7 +71,7 @@ PNG (png) 　　 文件头：89 50 4E 47
 
 3、使用010 Editor打开，提示CRC校验错误，认为图片被修改了宽高。
 
- ![010 Editor 报错：CRC Mismatch @ chunk[0]](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png)
+ ![010 Editor 报错：CRC Mismatch @ chunk［0］](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192757367.png)
 
 通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 

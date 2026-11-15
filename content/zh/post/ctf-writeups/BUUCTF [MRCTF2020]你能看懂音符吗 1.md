@@ -21,7 +21,7 @@ tags:
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
 
- ![BUUCTF 题目「[MRCTF2020]你能看懂音符吗 1」页面，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191626117.png)
+ ![BUUCTF 题目「［MRCTF2020］你能看懂音符吗 1」页面，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191626117.png)
 
 ### 题目描述：
 

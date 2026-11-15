@@ -25,7 +25,7 @@ tags:
 [BuuCTF难题详解| Misc | [湖南省赛2019]Findme](https://blog.csdn.net/pone2233/article/details/107990787) 
 [[湖南省赛2019]Findme](https://www.cnblogs.com/zhoujiaff/p/17071345.html) 
 
- ![BUUCTF 题目「[湖南省赛2019]Findme 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png)
+ ![BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png)
 
 ### 题目描述：
 
@@ -68,11 +68,11 @@ for i in range(2000):
 
 用010Editor打开，发现struct PNG_CHUNK `chunk[2]` 、 `chunk[3]` 缺少 `IDAT` 标识。
 
- ![010 Editor 中 chunk[2]、chunk[3] 缺少 IDAT 标识（红框处）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png)
+ ![010 Editor 中 chunk［2］、chunk［3］ 缺少 IDAT 标识（红框处）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png)
 
 添加 `IDAT` 标识，在struct PNG_CHUNK `chunk[2]` 下的 `union CTYPE type` 中的 `uint32 crc` ，添加值 `49444154h` 
 
- ![在 chunk[2] 的 CTYPE 处补回 IDAT（49444154）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png)
+ ![在 chunk［2］ 的 CTYPE 处补回 IDAT（49444154）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png)
 
 图片正常显示如下：
 

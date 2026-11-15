@@ -97,7 +97,7 @@ flag = ["'ce}'", 9, "'dcd'", 7, "'affb'", 6, "'-'", 0, "'c'", 7, 8, "'dd-'", 5,
 
 用010 Editor打开，提示CRC错误，粘贴到MarkDown中也无法显示，应该被修改宽高了。
 
- ![010 Editor 提示 CRC Mismatch @ chunk[0]](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png)
+ ![010 Editor 提示 CRC Mismatch @ chunk［0］](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png)
 
 显示失败
  ![原文配图已失效（显示「图片转存失败」占位图）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png)

@@ -59,7 +59,7 @@ FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具�
 server_port = 7000
 ```
 
-![选中 frps.ini，记事本内容为 [common] server_port=7000（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png)
+![选中 frps.ini，记事本内容为 ［common］ server_port=7000（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png)
 
 在【frp】此文件夹空白处，右键弹出菜单，单击选择【在此处打开命令提示符】。
 
@@ -129,7 +129,7 @@ local_port = 10080
 remote_port = 10088
 ```
 
-![frpc.ini 内容：[common] 指向 67.220.91.68:7000，[socks5-1] 用 remote_port 1080，[socks5-33] 映射本地 10080 到 10088](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png)
+![frpc.ini 内容：［common］ 指向 67.220.91.68:7000，［socks5-1］ 用 remote_port 1080，［socks5-33］ 映射本地 10080 到 10088](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png)
 
 编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。
 
@@ -168,7 +168,7 @@ vim /tmp/frps.ini
 bind_port = 7000
 ```
 
-![frps.ini 内容为 [common] bind_port = 7000](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png)
+![frps.ini 内容为 ［common］ bind_port = 7000](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png)
 
 编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。
 
@@ -201,7 +201,7 @@ plugin = socks5
 remote_port = 10080  
 ```
 
-![frpc.ini 改为指向 172.16.10.183:7000，[socks5-2] 的 remote_port 为 10080](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png)
+![frpc.ini 改为指向 172.16.10.183:7000，［socks5-2］ 的 remote_port 为 10080](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png)
 
 双击打开桌面上的远程桌面，单击【连接】按钮，连接目标202.1.10.34服务器。
 

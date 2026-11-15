@@ -20,7 +20,7 @@ tags:
 
 相关阅读
 [CTF Wiki](https://ctf-wiki.org/) 
- ![BUUCTF 题目「[SWPU2019]神奇的二维码 1」页面，附件为 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191957702.png)
+ ![BUUCTF 题目「［SWPU2019］神奇的二维码 1」页面，附件为 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191957702.png)
 
 ### 题目描述：
 

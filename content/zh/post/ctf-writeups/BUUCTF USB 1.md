@@ -68,7 +68,7 @@ Do your konw usb?? 注意：得到的 flag 请包上 flag{} 提交
 
 扫描二维码得到疑似flag的密文： `ci{v3erf_0tygidv2_fc0}` ，猜测为维吉尼亚密码。但缺少key值（密钥），暂时无法解密
 
- ![QR Research 解码得到 c[V3erf_0tygidv2_fc0}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png)
+ ![QR Research 解码得到 c［V3erf_0tygidv2_fc0}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png)
 
 3、回过头，key.ftm中应该就有我们要的key值
 

