@@ -1563,7 +1563,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1583,7 +1583,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -1713,7 +1713,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331832.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331832.png" 
-             alt="" 
+             alt="File Upload 页面选中 1.php 上传，提示 ../../hackable/uploads/1.php successfully uploaded!" 
               
              loading="lazy"
         />
@@ -1750,7 +1750,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331835.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331835.png" 
-             alt="" 
+             alt="中国蚁剑的数据管理里新增一条 http://127.0.0.1/DVWA-master/&hellip; 的记录" 
               
              loading="lazy"
         />
@@ -1762,7 +1762,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331836.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331836.png" 
-             alt="" 
+             alt="蚁剑文件列表打开 uploads 目录，1.php 大小 32 b（红框）" 
               
              loading="lazy"
         />
@@ -1933,7 +1933,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331837.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331837.png" 
-             alt="" 
+             alt="上传被拒：We can only accept JPEG or PNG images." 
               
              loading="lazy"
         />
@@ -1944,7 +1944,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331838.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331838.png" 
-             alt="" 
+             alt="Burp 拦截 multipart 请求，红框 filename=&ldquo;1.php&rdquo;" 
               
              loading="lazy"
         />
@@ -1963,7 +1963,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331839.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331839.png" 
-             alt="" 
+             alt="同一请求里红框标出 Content-Type 被改成 image/png" 
               
              loading="lazy"
         />
@@ -1974,7 +1974,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331840.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331840.png" 
-             alt="" 
+             alt="改包后上传成功，提示 ../../hackable/uploads/1.php successfully uploaded!" 
               
              loading="lazy"
         />
@@ -2149,7 +2149,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331841.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331841.png" 
-             alt="" 
+             alt="目录里并排的 muma.php 与 muma.png（图片马）" 
               
              loading="lazy"
         />
@@ -2177,7 +2177,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png" 
-             alt="" 
+             alt="010 Editor 里 muma.png 末尾追加 &lt;?php @eval($_POST[&#39;123&#39;]);?&gt;（红框）" 
               
              loading="lazy"
         />
@@ -2188,7 +2188,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331844.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331844.png" 
-             alt="" 
+             alt="上传 1.png 成功，提示 ../../hackable/uploads/1.png successfully uploaded!" 
               
              loading="lazy"
         />
@@ -2207,7 +2207,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331845.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331845.png" 
-             alt="" 
+             alt="用 file:/// 包含上传的 1.png，页面输出一堆乱码，说明 PHP 被当文本读取" 
               
              loading="lazy"
         />

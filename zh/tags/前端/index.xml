@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -43,7 +43,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -87,7 +87,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png" 
-             alt="" 
+             alt="DOM XSS 页面，地址栏 default=English（红框），下方是语言下拉框与 Select 按钮" 
               
              loading="lazy"
         />
@@ -106,7 +106,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png" 
-             alt="" 
+             alt="地址栏换成 default=，页面弹出 /XSS/" 
               
              loading="lazy"
         />
@@ -152,7 +152,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png" 
-             alt="" 
+             alt="开发者工具里 select 元素被插入了 script 标签（红框）" 
               
              loading="lazy"
         />
@@ -171,7 +171,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png" 
-             alt="" 
+             alt="用 /option&gt;&ndash;&gt;  闭合标签，弹窗同时把语言列表渲染出来" 
               
              loading="lazy"
         />
@@ -181,7 +181,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png" 
-             alt="" 
+             alt="开发者工具里 option value 内被注入 %3C/option%3E… 与 img onerror（红框）" 
               
              loading="lazy"
         />
@@ -247,7 +247,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png" 
-             alt="" 
+             alt="地址栏 default=English#，弹窗照样触发（红框）" 
               
              loading="lazy"
         />
@@ -257,7 +257,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png" 
-             alt="" 
+             alt="开发者工具里 option value 变成 English#%3Cscript%3E…（红框）" 
               
              loading="lazy"
         />

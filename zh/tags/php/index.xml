@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -43,7 +43,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -131,7 +131,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
-             alt="" 
+             alt="Stored XSS 页面，Name 填 12、Message 填 " 
               
              loading="lazy"
         />
@@ -141,7 +141,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
-             alt="" 
+             alt="提交后立即弹出 /XSS/" 
               
              loading="lazy"
         />
@@ -152,7 +152,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
-             alt="" 
+             alt="左侧菜单的 Home 与 XSS (Stored) 被红框标出" 
               
              loading="lazy"
         />
@@ -162,7 +162,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
-             alt="" 
+             alt="重新打开页面，弹窗依旧触发，说明脚本已经存进数据库" 
               
              loading="lazy"
         />
@@ -284,7 +284,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
-             alt="" 
+             alt="开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)" 
               
              loading="lazy"
         />
@@ -362,7 +362,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
-             alt="" 
+             alt="改用  绕过长度限制，红框仍标着 maxlength" 
               
              loading="lazy"
         />

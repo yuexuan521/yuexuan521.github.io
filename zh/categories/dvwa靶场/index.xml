@@ -312,7 +312,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -332,7 +332,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -376,7 +376,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png" 
-             alt="" 
+             alt="DOM XSS 页面，地址栏 default=English（红框），下方是语言下拉框与 Select 按钮" 
               
              loading="lazy"
         />
@@ -395,7 +395,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png" 
-             alt="" 
+             alt="地址栏换成 default=，页面弹出 /XSS/" 
               
              loading="lazy"
         />
@@ -441,7 +441,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png" 
-             alt="" 
+             alt="开发者工具里 select 元素被插入了 script 标签（红框）" 
               
              loading="lazy"
         />
@@ -460,7 +460,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png" 
-             alt="" 
+             alt="用 /option&gt;&ndash;&gt;  闭合标签，弹窗同时把语言列表渲染出来" 
               
              loading="lazy"
         />
@@ -470,7 +470,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png" 
-             alt="" 
+             alt="开发者工具里 option value 内被注入 %3C/option%3E… 与 img onerror（红框）" 
               
              loading="lazy"
         />
@@ -536,7 +536,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png" 
-             alt="" 
+             alt="地址栏 default=English#，弹窗照样触发（红框）" 
               
              loading="lazy"
         />
@@ -546,7 +546,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png" 
-             alt="" 
+             alt="开发者工具里 option value 变成 English#%3Cscript%3E…（红框）" 
               
              loading="lazy"
         />
@@ -2610,7 +2610,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2630,7 +2630,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -2760,7 +2760,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331832.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331832.png" 
-             alt="" 
+             alt="File Upload 页面选中 1.php 上传，提示 ../../hackable/uploads/1.php successfully uploaded!" 
               
              loading="lazy"
         />
@@ -2797,7 +2797,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331835.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331835.png" 
-             alt="" 
+             alt="中国蚁剑的数据管理里新增一条 http://127.0.0.1/DVWA-master/&hellip; 的记录" 
               
              loading="lazy"
         />
@@ -2809,7 +2809,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331836.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331836.png" 
-             alt="" 
+             alt="蚁剑文件列表打开 uploads 目录，1.php 大小 32 b（红框）" 
               
              loading="lazy"
         />
@@ -2980,7 +2980,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331837.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331837.png" 
-             alt="" 
+             alt="上传被拒：We can only accept JPEG or PNG images." 
               
              loading="lazy"
         />
@@ -2991,7 +2991,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331838.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331838.png" 
-             alt="" 
+             alt="Burp 拦截 multipart 请求，红框 filename=&ldquo;1.php&rdquo;" 
               
              loading="lazy"
         />
@@ -3010,7 +3010,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331839.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331839.png" 
-             alt="" 
+             alt="同一请求里红框标出 Content-Type 被改成 image/png" 
               
              loading="lazy"
         />
@@ -3021,7 +3021,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331840.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331840.png" 
-             alt="" 
+             alt="改包后上传成功，提示 ../../hackable/uploads/1.php successfully uploaded!" 
               
              loading="lazy"
         />
@@ -3196,7 +3196,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331841.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331841.png" 
-             alt="" 
+             alt="目录里并排的 muma.php 与 muma.png（图片马）" 
               
              loading="lazy"
         />
@@ -3224,7 +3224,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png" 
-             alt="" 
+             alt="010 Editor 里 muma.png 末尾追加 &lt;?php @eval($_POST[&#39;123&#39;]);?&gt;（红框）" 
               
              loading="lazy"
         />
@@ -3235,7 +3235,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331844.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331844.png" 
-             alt="" 
+             alt="上传 1.png 成功，提示 ../../hackable/uploads/1.png successfully uploaded!" 
               
              loading="lazy"
         />
@@ -3254,7 +3254,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331845.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331845.png" 
-             alt="" 
+             alt="用 file:/// 包含上传的 1.png，页面输出一堆乱码，说明 PHP 被当文本读取" 
               
              loading="lazy"
         />
@@ -4890,7 +4890,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -4910,7 +4910,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -4998,7 +4998,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
-             alt="" 
+             alt="Stored XSS 页面，Name 填 12、Message 填 " 
               
              loading="lazy"
         />
@@ -5008,7 +5008,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
-             alt="" 
+             alt="提交后立即弹出 /XSS/" 
               
              loading="lazy"
         />
@@ -5019,7 +5019,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
-             alt="" 
+             alt="左侧菜单的 Home 与 XSS (Stored) 被红框标出" 
               
              loading="lazy"
         />
@@ -5029,7 +5029,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
-             alt="" 
+             alt="重新打开页面，弹窗依旧触发，说明脚本已经存进数据库" 
               
              loading="lazy"
         />
@@ -5151,7 +5151,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
-             alt="" 
+             alt="开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)" 
               
              loading="lazy"
         />
@@ -5229,7 +5229,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
-             alt="" 
+             alt="改用  绕过长度限制，红框仍标着 maxlength" 
               
              loading="lazy"
         />
