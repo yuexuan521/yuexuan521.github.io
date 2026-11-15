@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193600848.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193600848.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193602837.png)
+![题目页「镜子里面的世界 1」，附件 a74988d1-9…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193602837.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 ### 密文：
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193604371.png)
+![一张放大镜图片，镜片里写着 Look very closely ;)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193604371.png)
 
 ### 解题思路：
 
@@ -40,11 +40,11 @@ tags:
 
 2、将图片放到StegSolve中，然后打开Analyse（分析）选项卡，使用Data Extract（数据提取）选项，开始分析，得到提示信息。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193606492.png)
+![Stegsolve 的 Extract Preview：Bit Planes 勾选 RGB 的 0 位，右侧预览出一段英文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193606492.png)
 
 3、将提示的信息翻译过来，就找到了flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193608333.png)
+![Google 翻译：the secret key is : st3g0_saurus_wr3cks 译成中文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193608333.png)
 
 ### flag：
 

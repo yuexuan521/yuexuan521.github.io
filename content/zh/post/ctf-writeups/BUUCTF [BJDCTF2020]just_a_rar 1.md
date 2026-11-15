@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190641317.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190641317.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190643420.png)
+ ![题目页「［BJDCTF2020］just_a_rar 1」，附 GitHub 来源与 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190643420.png)
 
 ### 题目描述：
 
@@ -31,18 +31,18 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个.rar压缩包。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190645009.png)
+ ![压缩包里的 4位数.rar，大小 95 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190645009.png)
 
 ---
 
 ### 解题思路：
 
 1、根据压缩包的名字提示我们使用4位纯数字进行破解。使用ARCHPR工具，选定参数，破解得到密码为5790。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190646365.png)
+ ![Advanced Archive Password Recovery 统计：总计口令 2,021、文件口令 2016、十六进制 32 30 31 36](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190646365.png)
 
 用密码解压rar压缩包，得到一张名为flag的jpg图片。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190647915.jpeg)
+![一张黑白插画，画的是海贼王里的青雉 KUZAN](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190647915.jpeg)
 
 2、使用010Editor打开图片，查阅数据时，发现flag。（flag中的“W”要注意大写！）
 
