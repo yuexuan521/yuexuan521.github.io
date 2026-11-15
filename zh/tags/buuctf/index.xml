@@ -769,7 +769,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -785,7 +785,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［BSidesSF2019］zippy 1」，附件 attachment.p…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -797,7 +797,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;attachment.pcapng，大小 4 KB，显示为 Wireshark capture&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -823,7 +823,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;跟踪 TCP 流，可见 nc -lp 4445 &amp;gt; flag.zip 与 unzip -P supercomplexpassword flag.zip，inflating: flag.txt&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -833,7 +833,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -849,7 +849,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png" 
-             alt="" 
+             alt="题目页「［BSidesSF2019］zippy 1」，附件 attachment.p…" 
               
              loading="lazy"
         />
@@ -861,7 +861,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png" 
-             alt="" 
+             alt="attachment.pcapng，大小 4 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -887,7 +887,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png" 
-             alt="" 
+             alt="跟踪 TCP 流，可见 nc -lp 4445 &gt; flag.zip 与 unzip -P supercomplexpassword flag.zip，inflating: flag.txt" 
               
              loading="lazy"
         />
@@ -899,7 +899,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png" 
-             alt="" 
+             alt="kali 里跑 foremost attachment.pcapng，输出 |foundat=flag.txtUT" 
               
              loading="lazy"
         />
@@ -909,7 +909,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png" 
-             alt="" 
+             alt="cd output/zip 后 ls，得到 00000002.zip" 
               
              loading="lazy"
         />
@@ -920,7 +920,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png" 
-             alt="" 
+             alt="记事本打开 flag.txt，内容是 CTF{this flag is your flag}" 
               
              loading="lazy"
         />
@@ -2424,7 +2424,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2444,7 +2444,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［SWPU2019］Network 1」，附件 attachment.txt&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2454,7 +2454,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2474,7 +2474,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png" 
-             alt="" 
+             alt="题目页「［SWPU2019］Network 1」，附件 attachment.txt" 
               
              loading="lazy"
         />
@@ -2818,7 +2818,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png" 
-             alt="" 
+             alt="010 Editor 打开 result.txt，红框标出 50 4B 03 04 与 61 67 2E 74 78 74，即 ZIP 头和 ag.txt" 
               
              loading="lazy"
         />
@@ -2830,7 +2830,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png" 
-             alt="" 
+             alt="同一文件更靠前的偏移，红框标出 00 00 加密标志位" 
               
              loading="lazy"
         />
@@ -2840,7 +2840,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png" 
-             alt="" 
+             alt="0x171A0h 附近，红框的 00 00 与 50 4B 并列，右侧能看到 flag.txt" 
               
              loading="lazy"
         />
@@ -2850,7 +2850,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png" 
-             alt="" 
+             alt="0x2E3C0h 附近又出现 00 00 与 50 4B、flag.txt" 
               
              loading="lazy"
         />
@@ -2937,7 +2937,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png" 
-             alt="" 
+             alt="程序输出 最终结果: {189ff9e5b743ae95f940a6ccc6dbd9ab}，循环次数 30" 
               
              loading="lazy"
         />

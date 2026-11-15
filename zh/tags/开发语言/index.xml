@@ -1234,7 +1234,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1252,50 +1252,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［GKCTF 2021］签到 1」，flag 由 flag 头包裹，附件 tmpshell.pca…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;师傅们玩的开心~（flag由flag头包裹&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到tmpshell.pcapng文件&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、打开流量文件，照常追踪TCP数据流，到第五个流中发现flag相关信息。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp.stream eq &lt;span class=&#34;m&#34;&gt;5&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;将传输的数据复制下来，进行解密。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1313,7 +1280,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png" 
-             alt="" 
+             alt="题目页「［GKCTF 2021］签到 1」，flag 由 flag 头包裹，附件 tmpshell.pca…" 
               
              loading="lazy"
         />
@@ -1325,7 +1292,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png" 
-             alt="" 
+             alt="tmpshell.pcapng，大小 33 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -1345,7 +1312,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png" 
-             alt="" 
+             alt="跟踪 TCP 流 eq 5，红框 QER1=cat%2FF14g%7Cbase64，即 URL 编码的 cat /F14g|base64，响应是一大段 base64" 
               
              loading="lazy"
         />
@@ -1476,7 +1443,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png" 
-             alt="" 
+             alt="响应正文的 base64，末尾红框标出 ==QHm0QDN0Q" 
               
              loading="lazy"
         />
@@ -1489,7 +1456,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png" 
-             alt="" 
+             alt="跟踪 eq 3，红框 QER1=whoami，返回 595852685a43313364336334b，即 base64 的 root" 
               
              loading="lazy"
         />
@@ -1509,7 +1476,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png" 
-             alt="" 
+             alt="cat flag | rev 的输出，同样以 ==QHm0QDN0Q 结尾" 
               
              loading="lazy"
         />

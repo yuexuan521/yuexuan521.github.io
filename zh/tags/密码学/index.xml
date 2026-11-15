@@ -1738,7 +1738,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1756,7 +1756,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［WUSTCTF2020］spaceclub 1」，附件 attachment.txt&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1766,7 +1766,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1784,7 +1784,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png" 
-             alt="" 
+             alt="题目页「［WUSTCTF2020］spaceclub 1」，附件 attachment.txt" 
               
              loading="lazy"
         />
@@ -1798,7 +1798,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png" 
-             alt="" 
+             alt="记事本打开 attachment.txt，看上去一片空白" 
               
              loading="lazy"
         />
@@ -1810,7 +1810,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png" 
-             alt="" 
+             alt="全选后才在左侧看到一条蓝色底纹，说明内容其实是大量空格" 
               
              loading="lazy"
         />
@@ -1821,7 +1821,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png" 
-             alt="" 
+             alt="编辑器里带行号 1–37，各行长度明显不同" 
               
              loading="lazy"
         />
@@ -1832,7 +1832,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png" 
-             alt="" 
+             alt="纯 0/1 文本，状态栏显示行 15、列 2、共 623 个字符" 
               
              loading="lazy"
         />
@@ -1853,7 +1853,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png" 
-             alt="" 
+             alt="2 进制转 ASCII 在线工具，输出 wctf2020{h3re_1s_y0ur_fl@g_s1x_s1x_s1x}" 
               
              loading="lazy"
         />
