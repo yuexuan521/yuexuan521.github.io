@@ -40,8 +40,10 @@ tags:
 ### 解题思路：
 
 1、根据题目提示，我们要暴力破解压缩包密码。刚开始，我尝试使用RARP工具破解，但RARP工具没有给出正确的密码，让我误以为这道题可能是rar伪加密。最后，我下载了另一个rar压缩包破解工具ARCHPR，使用该工具成功破解出密码。
-[参考这篇文章下载https://blog.csdn.net/weixin_45489253/article/details/108152688](https://blog.csdn.net/weixin_45489253/article/details/108152688) 
-[下载地址http://www.ddooo.com/softdown/176170.htm](http://www.ddooo.com/softdown/176170.htm) 
+
+- [参考这篇文章下载https://blog.csdn.net/weixin_45489253/article/details/108152688](https://blog.csdn.net/weixin_45489253/article/details/108152688)
+- [下载地址http://www.ddooo.com/softdown/176170.htm](http://www.ddooo.com/softdown/176170.htm)
+
 
 2、下载软件完成后，打开软件。在ARCHPR中打开压缩包，选择字符范围和密码长度，点击开始破解。（根据题目得知是四位纯数字密码）
 

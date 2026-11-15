@@ -44,8 +44,10 @@ tags:
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842803.png)
 
 2、得到一次明显不是flag的东东，去除一下空格，看下字符串长度。
-[文本去除工具](http://www.esjson.com/delSpace.html) 
-[字符串长度计算](https://www.toolbaba.cn/d/dev_str_count) 
+
+- [文本去除工具](http://www.esjson.com/delSpace.html)
+- [字符串长度计算](https://www.toolbaba.cn/d/dev_str_count)
+
 
 ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842804.png)
 

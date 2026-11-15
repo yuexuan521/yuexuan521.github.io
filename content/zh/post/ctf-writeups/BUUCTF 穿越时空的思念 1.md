@@ -76,8 +76,10 @@ F029BD6F5
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193239277.png)
 
 4、两段明文字符有重复，将第一段转换为小写字母，作为flag值。（符合题目的要求：小写的32位字符）
-[字母大小写转换工具](https://charactercalculator.com/zh-cn/case-converter/) 
-[在线文本字符数统计工具](https://uutool.cn/str-count/) 
+
+- [字母大小写转换工具](https://charactercalculator.com/zh-cn/case-converter/)
+- [在线文本字符数统计工具](https://uutool.cn/str-count/)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193240862.png)
 
