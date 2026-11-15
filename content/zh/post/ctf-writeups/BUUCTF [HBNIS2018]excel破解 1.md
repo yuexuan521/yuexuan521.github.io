@@ -12,7 +12,7 @@ tags:
 - "BUUCTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191418846.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191418846.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191421329.png)
+ ![题目页「［HBNIS2018］excel破解 1」，附 GitHub 来源与 attachment.xls](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191421329.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ https://github.com/hebtuerror404/CTF_competition_warehouse_2018](https://github.
 ### 密文：
 
 下载附件，得到一个attachment.xls文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191422914.png)
+ ![attachment.xls 文件图标](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191422914.png)
 
 ---
 
@@ -41,11 +41,11 @@ https://github.com/hebtuerror404/CTF_competition_warehouse_2018](https://github.
 
 1、双击.xls文件，提示需要密码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191423980.png)
+ ![Excel 打开时弹窗提示「attachment.xls 有密码保护」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191423980.png)
 
 2、使用010Editor查看该文件，查找文本“flag”，一条一条地看下来，找到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191425383.png)
+ ![010 Editor 十六进制视图，右侧可见 flag is here CTF{office_easy_cracked}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191425383.png)
 
 第一次做的时候没有仔细看，结果没找到flag，后面看别人的题解才发现自己错过了flag。
 

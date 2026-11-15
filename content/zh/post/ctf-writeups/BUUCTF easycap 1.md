@@ -12,7 +12,7 @@ tags:
 - "Wireshark"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185829179.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185829179.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185831284.png)
+![题目页「easycap 1」，附件 876932b1-5…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185831284.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 ### 密文：
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185832712.png)
+![easycap.pcap 文件，大小 7 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185832712.png)
 
 ---
 
@@ -39,9 +39,9 @@ tags:
 
 1、这道题和它的名字一样，真的很easy。双击easycap.pcap文件，打开Wireshark。在Wireshark中，不管你追踪那个流量的TCP流，你都可以找到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185834098.png)
+![Wireshark 右键菜单里选择 Follow → TCP Stream](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185834098.png)
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185836174.png)
+![跟踪 TCP 流窗口里直接显示 FLAG:385b87afc8671dee07550290d16a8071](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185836174.png)
 
 ### flag：
 

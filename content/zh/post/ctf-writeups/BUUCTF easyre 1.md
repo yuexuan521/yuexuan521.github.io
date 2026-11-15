@@ -12,7 +12,7 @@ tags:
 
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607601.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -27,7 +27,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png)
+![题目页「easyre 1」，附件 easyre.zip，提示「非常简单的逆向」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607602.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 ### 密文：
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png)
+![解压出的 easyre.exe，93 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607603.png)
 
 ---
 
@@ -43,11 +43,11 @@ tags:
 
 1、使用IDA pro打开exe文件，在反汇编窗口（IDA View-A），直接找到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png)
+![IDA 反汇编，红框标出 flag{this_Is_a_EaSyRe}，另一分支输出 sorry,you can't get flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607604.png)
 
 也可以通过使用快捷键shift+F12：自动分析出参考字符串，找到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png)
+![IDA 的 Strings 窗口，第一行就是 flag{this_Is_a_EaSyRe}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251218085607605.png)
 
 ### flag：
 

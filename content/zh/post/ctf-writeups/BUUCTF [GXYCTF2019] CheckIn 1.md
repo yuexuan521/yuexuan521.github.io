@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455660.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png)
+![题目页「［GXYCTF2019］CheckIn 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455661.png)
 
 ### 题目描述：
 
@@ -42,15 +42,15 @@ dikqTCpfRjA8fUBIMD5GNDkwMjNARkUwI0BFTg==
 v)*L*_F0<}@H0>F49023@FE0#@EN
 ```
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png)
+![Base64 解码：dikqTCpf… 解出乱码 v)*L*_F0<}@H0>F49023@FE0#@EN](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455662.png)
 
 2、尝试了很多方法，都没有成功。最后，根据此密文的ASCII码值都处于33 ~ 126范围，确定为ROT47加密。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png)
+![字符与 ASCII 码互转工具，把上式转成 118;41;42;76;42;95;70;…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455663.png)
 
 3、使用在线工具 [ROT47加解密](https://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php) ，得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png)
+![ROT47 转换后得到 GXY{You_kNow_much_about_Rot}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251215172455664.png)
 
 ### flag：
 
