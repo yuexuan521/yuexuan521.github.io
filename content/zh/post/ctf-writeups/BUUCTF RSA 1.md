@@ -11,7 +11,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204858546.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png)
+ ![BUUCTF「RSA 1」题目页，提示把 noxCTF 换成 flag，附件 70a2f2f0-d4…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204900414.png)
 
 ### 题目描述：
 

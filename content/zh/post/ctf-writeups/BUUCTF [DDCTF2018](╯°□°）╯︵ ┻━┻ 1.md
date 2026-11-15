@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190907404.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [［DDCTF2018］(╯°□°）╯︵ ┻━┻](https://www.cnblogs.com/fishjumpriver/p/17833337.html)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png)
+ ![BUUCTF「[DDCTF2018](╯°□°）╯︵ ┻━┻ 1」题目页，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png)
 
 ### 题目描述：
 

@@ -10,7 +10,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204846945.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204846945.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204849145.png)
+ ![BUUCTF「Quoted-printable 1」题目页，附件 8114846c-d…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204849145.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 1、观察密文，结合题目，直接确定为Quoted-printable编码。
 2、使用在线工具进行解密。 [在线工具](http://www.mxcz.net/tools/QuotedPrintable.aspx) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204851018.png)
+![Quoted-Printable 解码工具：一串 =E9=82=A3… 解出「那你也很棒哦」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204851018.png)
 
 3、得到flag，那你也很棒哦。
 

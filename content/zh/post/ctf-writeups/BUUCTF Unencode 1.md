@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204912131.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204912131.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204917942.png)
+ ![BUUCTF「Unencode 1」题目页，附件 e414b69a-53…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204917942.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ tags:
 1、观察密文，尝试Base85、Base91等编码，均失败。
 2、结合题目，联想到UUencode编码，尝试后成功，得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204919304.png)
+![UUencode 解码工具：89FQA9WMD… 解出 flag{dsdasdsa99877LLLKK}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204919304.png)
 
 [UUencode加解密](http://web.chacuo.net/charsetuuencode) 
 
