@@ -23,33 +23,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置日志记录功能。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改IPS签名规则。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;验证IPS配置。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;
-&lt;p&gt;标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="" 
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C" 
               
              loading="lazy"
         />
@@ -98,7 +82,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="" 
+             alt="PC-C ping 192.168.1.2 通，25% 丢包" 
               
              loading="lazy"
         />
@@ -109,7 +93,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.2 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -191,7 +175,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="" 
+             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips" 
               
              loading="lazy"
         />
@@ -204,7 +188,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="" 
+             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）" 
               
              loading="lazy"
         />
@@ -215,7 +199,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.2 仍通，25% 丢包" 
               
              loading="lazy"
         />
@@ -227,7 +211,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="" 
+             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24" 
               
              loading="lazy"
         />
@@ -238,7 +222,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="" 
+             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录" 
               
              loading="lazy"
         />

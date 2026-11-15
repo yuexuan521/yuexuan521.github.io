@@ -345,26 +345,17 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标：&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;配置OSPF MD5身份验证。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置NTP服务。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;设置路由器将消息记录到syslog服务器。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
-             alt="" 
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C" 
               
              loading="lazy"
         />
@@ -480,7 +471,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
-             alt="" 
+             alt="PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月" 
               
              loading="lazy"
         />
@@ -861,7 +852,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1/R2/R3 各接口，TACACS&amp;#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -869,15 +860,12 @@ R3(config-if)# crypto map VPN-MAP</p>
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;从R1控制台和PC-A客户端验证本地AAA身份验证功能。&lt;/p&gt;</description>
+&lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
-             alt="" 
+             alt="地址规划表：R1/R2/R3 各接口，TACACS&#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C" 
               
              loading="lazy"
         />
@@ -978,7 +966,7 @@ R1(config-line)# login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
-             alt="" 
+             alt="登录提示输入 Username: Admin1，密码通过后进入 R1&gt;" 
               
              loading="lazy"
         />
@@ -1036,7 +1024,7 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
-             alt="" 
+             alt="PC 上执行 ssh -l Admin1 192.168.1.1，登录后进入 R1&gt;" 
               
              loading="lazy"
         />
@@ -1058,7 +1046,7 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
-             alt="" 
+             alt="TACACS&#43; Server 的 AAA 配置：客户端 R2 192.168.2.1、密钥 tacacspa55，用户 Admin2/admin2pa55" 
               
              loading="lazy"
         />
@@ -1097,7 +1085,7 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
-             alt="" 
+             alt="登录时输入 Username: Admin2，认证通过进入 R2&gt;" 
               
              loading="lazy"
         />
@@ -1119,7 +1107,7 @@ R2(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
-             alt="" 
+             alt="RADIUS Server 的 AAA 配置：客户端 R3 192.168.3.1、密钥 radiuspa55，用户 Admin3/admin3pa55" 
               
              loading="lazy"
         />
@@ -1158,7 +1146,7 @@ R3(config-line)#login authentication default</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
-             alt="" 
+             alt="登录时输入 Username: Admin3，认证通过进入 R3&gt;" 
               
              loading="lazy"
         />
@@ -1180,7 +1168,7 @@ R3(config-line)#login authentication default</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1188,18 +1176,12 @@ R3(config-line)#login authentication default</p>
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;保护生成树协议参数以防止对STP的操控攻击。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;启用端口安全功能以防止CAM表溢出攻击。&lt;/p&gt;</description>
+&lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="" 
+             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4" 
               
              loading="lazy"
         />
@@ -1418,7 +1400,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="" 
+             alt="C1 ping 10.1.1.11 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -1428,7 +1410,7 @@ Security Violation Count : 0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="" 
+             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址" 
               
              loading="lazy"
         />
@@ -1596,22 +1578,19 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
-&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;第一部分配置应用并验证一个编号扩展访问控制列表&#34;&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;步骤 1：配置ACL以允许FTP和ICMP流量&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="" 
+             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98" 
               
              loading="lazy"
         />
@@ -1714,7 +1693,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="" 
+             alt="PC ping 172.22.34.62 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -1732,7 +1711,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="" 
+             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出" 
               
              loading="lazy"
         />
@@ -1743,7 +1722,7 @@ R1(config-if)# ip access-group 100 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="" 
+             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）" 
               
              loading="lazy"
         />
@@ -1802,7 +1781,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="" 
+             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包" 
               
              loading="lazy"
         />
@@ -1813,7 +1792,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="" 
+             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP" 
               
              loading="lazy"
         />
@@ -1824,7 +1803,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="" 
+             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页" 
               
              loading="lazy"
         />
@@ -2277,33 +2256,17 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;启用IOS入侵防御系统（IPS）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置日志记录功能。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改IPS签名规则。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;验证IPS配置。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;您的任务是在R1上启用IPS，扫描进入192.168.1.0网络的流量。&lt;/p&gt;
-&lt;p&gt;标记为“Syslog”的服务器用于接收和记录IPS消息。您需要配置路由器以识别该syslog服务器，并将日志消息发送到该服务器。在使用syslog监控网络时，在syslog消息中显示正确的时间和日期至关重要。因此，请设置时钟并为路由器上的日志记录功能配置时间戳服务。最后，启用IPS以产生警报并在线路上丢弃ICMP回显应答数据包。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="" 
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C" 
               
              loading="lazy"
         />
@@ -2352,7 +2315,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="" 
+             alt="PC-C ping 192.168.1.2 通，25% 丢包" 
               
              loading="lazy"
         />
@@ -2363,7 +2326,7 @@ R1#reload</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.2 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -2445,7 +2408,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="" 
+             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips" 
               
              loading="lazy"
         />
@@ -2458,7 +2421,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="" 
+             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）" 
               
              loading="lazy"
         />
@@ -2469,7 +2432,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.2 仍通，25% 丢包" 
               
              loading="lazy"
         />
@@ -2481,7 +2444,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="" 
+             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24" 
               
              loading="lazy"
         />
@@ -2492,7 +2455,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="" 
+             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录" 
               
              loading="lazy"
         />

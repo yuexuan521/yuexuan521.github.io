@@ -2724,7 +2724,7 @@ $$</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志：灰底上的白色 DVWA 字样与绿色弧线&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2742,7 +2742,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg" 
-             alt="" 
+             alt="DVWA 标志：灰底上的白色 DVWA 字样与绿色弧线" 
               
              loading="lazy"
         />
@@ -2858,7 +2858,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png" 
-             alt="" 
+             alt="CSRF 页面，地址栏为 password_new=111&amp;password_conf=111&amp;Change=Change#，页面提示 Password Changed." 
               
              loading="lazy"
         />
@@ -2869,7 +2869,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png" 
-             alt="" 
+             alt="浏览器地址栏里显示构造好的整串 URL" 
               
              loading="lazy"
         />
@@ -2879,7 +2879,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png" 
-             alt="" 
+             alt="新标签页访问同一 URL，同样提示 Password Changed." 
               
              loading="lazy"
         />
@@ -2890,7 +2890,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png" 
-             alt="" 
+             alt="在线短网址生成器把 CSRF 链接转成 https://3mw.cn/2uuc" 
               
              loading="lazy"
         />
@@ -2991,7 +2991,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png" 
-             alt="" 
+             alt="参数改成 222 后页面提示 That request didn&rsquo;t look correct." 
               
              loading="lazy"
         />
@@ -3002,7 +3002,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png" 
-             alt="" 
+             alt="Edge 设置 → 系统和性能，红框标出「打开计算机的代理设置」" 
               
              loading="lazy"
         />
@@ -3012,7 +3012,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png" 
-             alt="" 
+             alt="网络和 Internet 的代理设置：127.0.0.1:8888，并取消勾选「请勿将代理服务器用于本地(Intranet)地址」" 
               
              loading="lazy"
         />
@@ -3022,7 +3022,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png" 
-             alt="" 
+             alt="Burp 添加代理监听，Bind port 填 8888（红框）" 
               
              loading="lazy"
         />
@@ -3033,7 +3033,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png" 
-             alt="" 
+             alt="Burp 拦截到 GET 请求，红框标出 Referer 指向 dvwa 的 CSRF 页面" 
               
              loading="lazy"
         />
@@ -3044,7 +3044,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png" 
-             alt="" 
+             alt="同一请求的原始头，Cookie 中 security=medium" 
               
              loading="lazy"
         />
@@ -3054,7 +3054,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png" 
-             alt="" 
+             alt="Burp 右键菜单里选择 Send to Repeater（红条）" 
               
              loading="lazy"
         />
@@ -3065,7 +3065,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png" 
-             alt="" 
+             alt="请求头里的 Referer 被改成 dvwa（红框）" 
               
              loading="lazy"
         />
@@ -3075,7 +3075,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png" 
-             alt="" 
+             alt="Repeater 发送后，响应页面显示 Password Changed." 
               
              loading="lazy"
         />
@@ -3163,7 +3163,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png" 
-             alt="" 
+             alt="high 级别下的请求带 user_token，红框标出 token 值" 
               
              loading="lazy"
         />
@@ -3174,7 +3174,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png" 
-             alt="" 
+             alt="high 级别页面提示 CSRF token is incorrect（红框）" 
               
              loading="lazy"
         />
@@ -3208,7 +3208,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png" 
-             alt="" 
+             alt="dvwa 弹窗显示一段十六进制字符串 8f16e033…，可用于构造 token" 
               
              loading="lazy"
         />
@@ -3219,7 +3219,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png" 
-             alt="" 
+             alt="Repeater 里的 user_token 仍是旧值（红框），security=high" 
               
              loading="lazy"
         />
@@ -3230,7 +3230,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png" 
-             alt="" 
+             alt="同步 token 后重放，响应页面显示 Password Changed." 
               
              loading="lazy"
         />
@@ -3242,7 +3242,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png" 
-             alt="" 
+             alt="Burp Extender 的 BApp Store，红框标出已安装的 CSRF Token Tracker" 
               
              loading="lazy"
         />
@@ -3253,7 +3253,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png" 
-             alt="" 
+             alt="CSRF Token Tracker 的配置：勾选同步规则，Host 填 dvwa，Name 填 user_token（红框）" 
               
              loading="lazy"
         />
@@ -3275,7 +3275,7 @@ $$</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png" 
-             alt="" 
+             alt="Firefox 中经短链触发的请求，响应页面显示 Password Changed." 
               
              loading="lazy"
         />
