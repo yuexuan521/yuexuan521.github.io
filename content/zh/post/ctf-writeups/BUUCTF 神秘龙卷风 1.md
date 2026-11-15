@@ -12,7 +12,7 @@ tags:
 - "ZIP"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193158696.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png)
+![题目页「神秘龙卷风 1」：科学家用四位数字命名，解密后是一串外星人代码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193200847.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到一个.rar压缩包。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png)
+![神秘龙卷风.rar，显示为 RAR 压缩文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193202425.png)
 
 ---
 
@@ -41,15 +41,15 @@ tags:
 
 1、解压压缩包需要密码，根据题目得知密码为四位纯数字，在RARP中打开压缩包，选择字符范围和密码长度，点击开始破解。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png)
+![RAR Password Unlocker 3.2：密码长度 4–4、字符集只勾 0-9，日志显示「恢复成功，密码是：5463」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193203655.png)
 
 得到压缩包密码为5463。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png)
+![弹窗「密码已恢复」，文件的密码是 5463](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193205887.png)
 
 2、解压压缩包，得到神秘龙卷风.txt文件。打开后，显示内容如下：
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png)
+![Brainfuck 代码排版成一只龙卷风的形状，整屏都是 +/-/./> 符号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193207460.png)
 
 内容由“+”、“.”、“>”三种符号组成，我刚开始认为这是一种密文，经过搜索，确认这是一种名为“Brainfuck”的计算机语言。
 [Brainfuck](https://baike.baidu.com/item/Brainfuck) 
@@ -57,7 +57,7 @@ tags:
 3、结合题目提示的“代码”，我找到一个brainfuck 在线工具可以运行brainfuck代码。将记事本中的代码复制到在线工具中，运行得到flag。
 [Brainfuck 在线工具](https://www.w3cschool.cn/tryrun/runcode?lang=brainfuck) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png)
+![brainfuck 在线工具执行，得到 flag{e4bbef8bdf9743f8f5b727a9f6332a8}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193209294.png)
 
 ### flag：
 
