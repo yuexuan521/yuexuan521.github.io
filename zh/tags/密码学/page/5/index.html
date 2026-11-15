@@ -17,10 +17,6 @@ CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
 flag： 1 n1_2hen-d3_hu1-mi-ma_a</p></div><footer class=entry-footer><span title='2024-09-25 20:43:44 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>152 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF old-fashion 1" href=https://yuexuan521.github.io/zh/posts/buuctf-old-fashion-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 还原大师 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：我们得到了一串神秘字符串：TASC?O3RJMV?WDJKX?ZM,问号部分是未知大写字母，为了确定这个神秘字符串，我们通过了其他途径获得了这个字串的32位MD5码。但是我们获得它的32位MD5码也是残缺不全，E903???4DAB???08???51?80??8A?,请猜出神秘字符串的原本模样，并且提交这个字串的32位MD5码作为答案。 注意：得到的 flag 请包上 flag{} 提交
-解题思路：1、仔细阅读题目，明白我们需要还原完整的MD5码，作为flag提交。
-2、缺失的字符为大写字母，可以通过枚举来筛选出正确的MD5码。
-设计程序：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 import hashlib Cipertext = "TASC?O3RJMV?WDJKX?ZM" for i in range(26): temp1 = Cipertext.replace("?", chr(65 + i), 1) for j in range(26): temp2 = temp1.replace("?", chr(65 + j), 1) for z in range(26): temp3 = temp2.replace("?", chr(65 + z), 1) Plaintext = hashlib.md5(temp3.encode("UTF-8")).hexdigest().upper() if Plaintext[0:4] == "E903": print(Plaintext) 3、执行代码，得到正确的MD5码作为flag提交。
 ...</p></div><footer class=entry-footer><span title='2024-09-25 20:41:34 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>363 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 还原大师 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%BF%98%E5%8E%9F%E5%A4%A7%E5%B8%88-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF Cipher 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：还能提示什么呢？公平的玩吧（密钥自己找） Dncnoqqfliqrpgeklwmppu 注意：得到的 flag 请包上 flag{} 提交, flag{小写字母}

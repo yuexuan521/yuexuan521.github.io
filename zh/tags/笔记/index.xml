@@ -2564,7 +2564,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;奇安信杯「Crypto | Affine password」题目：明文经 y=3x&amp;#43;9 加密成 JYYHWV…，要求提交大写明文&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2581,18 +2581,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
-&lt;a href=&#34;http://www.metools.info/code/affinecipher183.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;仿射密码加密_仿射密码解密&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。&lt;/p&gt;</description>
+&lt;a href=&#34;http://www.metools.info/code/affinecipher183.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;仿射密码加密_仿射密码解密&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <p>相关阅读</p>
 <ul>
@@ -2602,7 +2591,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png" 
-             alt="" 
+             alt="奇安信杯「Crypto | Affine password」题目：明文经 y=3x&#43;9 加密成 JYYHWV…，要求提交大写明文" 
               
              loading="lazy"
         />
@@ -2624,7 +2613,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png" 
-             alt="" 
+             alt="仿射密码工具：a=3、b=9，输入 JYYHWV… 解密得到 AFFINECRYPTO" 
               
              loading="lazy"
         />
