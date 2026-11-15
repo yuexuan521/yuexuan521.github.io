@@ -1168,7 +1168,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1186,7 +1186,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［SUCTF2018］followme 1」，附 GitHub 来源与 attachment.p…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1198,7 +1198,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;attachment.pcapng，17,838 KB，显示为 Wireshark capture&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1210,51 +1210,17 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Wireshark 过滤 http，多条 POST /build/index.php?action=login&amp;amp;_=…，下方表单里 password 值在 ASCII 区红框标出 SUCTF{password_is_not_weak}&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h4 id=&#34;方法一&#34;&gt;方法一：&lt;/h4&gt;&lt;p&gt;使用Wireshark，在分组字节流中查找包含 &lt;code&gt;ctf&lt;/code&gt; 的内容，可以找到flag&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h4 id=&#34;方法二&#34;&gt;方法二：&lt;/h4&gt;&lt;p&gt;将全部HTTP对象导出&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;发现大量的文件如下：&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;搜索文件中的关键词，使用grep命令，查找到flag&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191840322.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1272,7 +1238,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191842332.png" 
-             alt="" 
+             alt="题目页「［SUCTF2018］followme 1」，附 GitHub 来源与 attachment.p…" 
               
              loading="lazy"
         />
@@ -1284,7 +1250,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191844026.png" 
-             alt="" 
+             alt="attachment.pcapng，17,838 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -1296,7 +1262,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191845264.png" 
-             alt="" 
+             alt="Wireshark 过滤 http，多条 POST /build/index.php?action=login&amp;_=…，下方表单里 password 值在 ASCII 区红框标出 SUCTF{password_is_not_weak}" 
               
              loading="lazy"
         />
@@ -1307,7 +1273,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191847456.png" 
-             alt="" 
+             alt="搜索框里输入 ctf，命中 100408 条，红框高亮 SUCTF{password_is_not_weak}" 
               
              loading="lazy"
         />
@@ -1318,7 +1284,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191849628.png" 
-             alt="" 
+             alt="文件 → 导出 → HTTP 对象列表，列出 robots.txt、jquery.js 等，红框是「Save All」" 
               
              loading="lazy"
         />
@@ -1329,7 +1295,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191851559.png" 
-             alt="" 
+             alt="记事本打开 login%3f_=6975b9a9f7a359d322e…，内容是 name=admin&amp;password=asdasdasd&amp;referer=…" 
               
              loading="lazy"
         />
@@ -1348,7 +1314,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191853095.png" 
-             alt="" 
+             alt="kali 里 grep -r -i &ldquo;ctf&rdquo; 命中的结果，红框标出 SUCTF{password_is_not_weak}" 
               
              loading="lazy"
         />

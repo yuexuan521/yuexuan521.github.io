@@ -1395,7 +1395,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1413,7 +1413,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1425,7 +1425,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出的文件就叫「爬」，没有扩展名&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1445,29 +1445,17 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;修改文件后缀为.pdf，打开如下图所示。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、提示flag在图片的后面，但PDF文件是无法修改的。使用电脑上的Word打开PDF文件，转换为word文件进行编辑。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1485,7 +1473,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png" 
-             alt="" 
+             alt="题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip" 
               
              loading="lazy"
         />
@@ -1497,7 +1485,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png" 
-             alt="" 
+             alt="解压出的文件就叫「爬」，没有扩展名" 
               
              loading="lazy"
         />
@@ -1517,7 +1505,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png" 
-             alt="" 
+             alt="十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot" 
               
              loading="lazy"
         />
@@ -1528,7 +1516,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png" 
-             alt="" 
+             alt="PDF 里的图片是一块金色「爬」字标志牌，页脚写着「Flag 被图片覆盖住了」" 
               
              loading="lazy"
         />
@@ -1539,7 +1527,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png" 
-             alt="" 
+             alt="用 Word 打开该 PDF，红框标出左侧「打开」与「这台电脑」" 
               
              loading="lazy"
         />
@@ -1558,7 +1546,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png" 
-             alt="" 
+             alt="图片上层还压着一行 0x7763746632303230…70686f7430736830707d" 
               
              loading="lazy"
         />
@@ -1569,7 +1557,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png" 
-             alt="" 
+             alt="十六进制转 ASCII：wctf2020{th1s_1s_@_pdf_and_y0u_can_use_phot0sh0p}" 
               
              loading="lazy"
         />
