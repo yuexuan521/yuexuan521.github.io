@@ -18,7 +18,7 @@ tags:
 
 ## PacketTracer - 第二层VLAN安全配置任务
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png)
+ ![实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png)
 
 ### 目标
 
@@ -48,16 +48,16 @@ tags:
 
 **步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。** 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png)
+ ![C2 ping 192.168.10.2 通，TTL=128，0% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png)
+ ![C3 ping 192.168.10.1 通，0% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png)
 
 **步骤2：验证C2（VLAN 10）与D1（VLAN 5）之间的连通性。** 
 注：如果使用简易PDU GUI包，请确保ping两次以允许ARP过程完成。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png)
+ ![C2 ping 192.168.5.2 通，TTL=127](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png)
+ ![D1 ping 192.168.10.1，首个包超时，丢包率 25%](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png)
 
 ### 第二部分：在SW-1和SW-2之间创建冗余链路
 
@@ -65,7 +65,7 @@ tags:
 
 使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png)
+![拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png)
 
 **步骤2：在SW-1和SW-2之间的链路上启用干线功能，包括所有干线安全机制。** 
 
@@ -133,9 +133,9 @@ b. 在所有交换机上创建VLAN 20接口，并在192.168.20.0/24网络内分�
 
 将管理PC连接到SW-A的F0/1端口，并确保为其分配192.168.20.0/24网络内的可用IP地址。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png)
+![拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png)
+ ![C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png)
 
 **步骤4：在SW-A上确保管理PC属于VLAN 20。** 
 
@@ -149,9 +149,9 @@ b. 在所有交换机上创建VLAN 20接口，并在192.168.20.0/24网络内分�
 
 管理PC应能成功ping通SW-A、SW-B、SW-1、SW-2和中央交换机。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png)
+ ![C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png)
+ ![C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png)
 
 ### 第四部分：使管理PC能够访问路由器R1
 
@@ -199,15 +199,15 @@ a. 验证只有管理PC可以访问路由器。使用SSH从管理PC通过用户�
 
 > PC> ssh -l SSHadmin 192.168.20.100
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png)
+ ![在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png)
 
 b. 从管理PC尝试ping SW-A、SW-B和R1，是否成功？请解释结果。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png)
+ ![配置生效后 C1 ping .1、.5、.100 全部 0% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png)
 
 > VLAN20 中的设备不需要通过路由器进行路由，不受ACL的影响。
 
 c. 从D1尝试ping管理PC，是否成功？请解释结果。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png)
+ ![D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png)
 
 > 不同 VLAN 中的设备 ping VLAN20 中的设备，必须进行路由，而路由器具有阻止所有数据包访问 192.168.20.0 目标网络的 ACL。
 
