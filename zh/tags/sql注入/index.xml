@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -187,7 +187,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -351,7 +351,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png" 
-             alt="" 
+             alt="SQL Injection (Blind) 页面，输入 1 后提示 User ID exists in the database." 
               
              loading="lazy"
         />
@@ -374,7 +374,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png" 
-             alt="" 
+             alt="输入 1&rsquo; and 1=1# 仍提示 exists，说明单引号注入成立" 
               
              loading="lazy"
         />
@@ -393,7 +393,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png" 
-             alt="" 
+             alt="输入 1&rsquo; and 1=2# 提示 MISSING，布尔真假可由回显区分" 
               
              loading="lazy"
         />
@@ -421,7 +421,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png" 
-             alt="" 
+             alt="用 length(substr((select …))) 构造 payload，页面提示 MISSING" 
               
              loading="lazy"
         />
@@ -440,7 +440,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png" 
-             alt="" 
+             alt="同一条 payload 换条件后提示 exists，可据此逐位推断" 
               
              loading="lazy"
         />
@@ -459,7 +459,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png" 
-             alt="" 
+             alt="用 substr((select …)) 猜字符，回显 exists" 
               
              loading="lazy"
         />
@@ -501,7 +501,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png" 
-             alt="" 
+             alt="Burp 抓到 id=1&rsquo; and sleep(3)#，响应 32 millis，没有产生延时" 
               
              loading="lazy"
         />
@@ -520,7 +520,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png" 
-             alt="" 
+             alt="去掉引号改成 id=1 and sleep(3)#，响应 3053 millis，时间盲注成立" 
               
              loading="lazy"
         />
@@ -551,7 +551,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png" 
-             alt="" 
+             alt="id=1&rsquo; and if(…,sleep(3),1)# 同样延时到 3036 millis" 
               
              loading="lazy"
         />
@@ -597,7 +597,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png" 
-             alt="" 
+             alt="sqlmap 识别后端为 MySQL &gt;= 5.0，并列出 5 个数据库" 
               
              loading="lazy"
         />
@@ -616,7 +616,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png" 
-             alt="" 
+             alt="sqlmap 列出 dvwa 库的 guestbook 与 users 两张表" 
               
              loading="lazy"
         />
@@ -635,7 +635,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png" 
-             alt="" 
+             alt="sqlmap 列出 users 表的 8 个字段及类型" 
               
              loading="lazy"
         />
@@ -654,7 +654,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png" 
-             alt="" 
+             alt="sqlmap dump 出 5 条账号密码，并附上解出的明文" 
               
              loading="lazy"
         />
@@ -728,7 +728,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png" 
-             alt="" 
+             alt="medium 级别下输入框变成下拉框，选中 1" 
               
              loading="lazy"
         />
@@ -738,7 +738,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png" 
-             alt="" 
+             alt="Burp 拦截 POST sql_blind/，请求体为 id=1&amp;Submit=Submit，security=medium" 
               
              loading="lazy"
         />
@@ -757,7 +757,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png" 
-             alt="" 
+             alt="改包为 id=1&rsquo; and ascii(substr((select version()),1,1)) = 53#，响应提示 exists（红框）" 
               
              loading="lazy"
         />
@@ -806,7 +806,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png" 
-             alt="" 
+             alt="改用 if(ascii(&hellip;)=53, sleep(3), 1) 判断，响应 3043 millis" 
               
              loading="lazy"
         />
@@ -983,7 +983,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png" 
-             alt="" 
+             alt="sqlmap 运行中提示 HTTP error 404 (Not Found) 185 次" 
               
              loading="lazy"
         />
@@ -1002,7 +1002,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png" 
-             alt="" 
+             alt="sqlmap 列出 5 个可用数据库" 
               
              loading="lazy"
         />
@@ -1020,7 +1020,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png" 
-             alt="" 
+             alt="sqlmap 列出 dvwa 库的 2 张表：guestbook、users" 
               
              loading="lazy"
         />
@@ -1038,7 +1038,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png" 
-             alt="" 
+             alt="sqlmap 列出 users 表的 8 个字段" 
               
              loading="lazy"
         />
