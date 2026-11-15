@@ -72,7 +72,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
-             alt="" 
+             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框" 
               
              loading="lazy"
         />
@@ -396,7 +396,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
-             alt="" 
+             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」" 
               
              loading="lazy"
         />
@@ -594,7 +594,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
-             alt="" 
+             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮" 
               
              loading="lazy"
         />
@@ -613,7 +613,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
-             alt="" 
+             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问" 
               
              loading="lazy"
         />
@@ -734,7 +734,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
-             alt="" 
+             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表" 
               
              loading="lazy"
         />
@@ -752,7 +752,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34;&gt;
         &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -764,7 +764,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png" 
-             alt="" 
+             alt="云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit" 
               
              loading="lazy"
         />
@@ -798,7 +798,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png" 
-             alt="" 
+             alt="firewall-cmd 放行 4433、4434 端口并 reload，均返回 success" 
               
              loading="lazy"
         />
@@ -809,7 +809,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png" 
-             alt="" 
+             alt="执行 firewall-cmd 时报错 FirewallD is not running" 
               
              loading="lazy"
         />
@@ -831,7 +831,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png" 
-             alt="" 
+             alt="systemctl 启动 firewalld 后，状态变为 active (running)" 
               
              loading="lazy"
         />
@@ -850,7 +850,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png" 
-             alt="" 
+             alt="执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1" 
               
              loading="lazy"
         />
@@ -861,7 +861,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png" 
-             alt="" 
+             alt="安装完成输出 install hfish success! 与 install hfish finished!" 
               
              loading="lazy"
         />
@@ -896,7 +896,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png" 
-             alt="" 
+             alt="MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包" 
               
              loading="lazy"
         />
@@ -961,7 +961,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png" 
-             alt="" 
+             alt="执行 yum module disable mysql 并确认，输出 Complete!" 
               
              loading="lazy"
         />
@@ -1064,7 +1064,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png" 
-             alt="" 
+             alt="在 mysql 中建库 HFish001，随后 show databases 确认已存在" 
               
              loading="lazy"
         />
@@ -1075,7 +1075,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png" 
-             alt="" 
+             alt="云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0" 
               
              loading="lazy"
         />
@@ -1107,7 +1107,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png" 
-             alt="" 
+             alt="HFish 登录页，包含账号、密码与验证码输入框" 
               
              loading="lazy"
         />
@@ -1118,7 +1118,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png" 
-             alt="" 
+             alt="HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等" 
               
              loading="lazy"
         />
@@ -1129,7 +1129,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png" 
-             alt="" 
+             alt="提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点" 
               
              loading="lazy"
         />
@@ -1140,7 +1140,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png" 
-             alt="" 
+             alt="HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数" 
               
              loading="lazy"
         />
@@ -1151,7 +1151,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png" 
-             alt="" 
+             alt="节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态" 
               
              loading="lazy"
         />
@@ -1162,7 +1162,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png" 
-             alt="" 
+             alt="云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」" 
               
              loading="lazy"
         />
@@ -1190,7 +1190,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png" 
-             alt="" 
+             alt="仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐" 
               
              loading="lazy"
         />
@@ -1201,7 +1201,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png" 
-             alt="" 
+             alt="攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录" 
               
              loading="lazy"
         />
@@ -1212,7 +1212,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png" 
-             alt="" 
+             alt="系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24" 
               
              loading="lazy"
         />
@@ -1222,7 +1222,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png" 
-             alt="" 
+             alt="攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件" 
               
              loading="lazy"
         />
@@ -1235,7 +1235,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png" 
-             alt="" 
+             alt="报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成" 
               
              loading="lazy"
         />
@@ -1245,7 +1245,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png" 
-             alt="" 
+             alt="报告正文首页：HFish 分析报告的概述与核心摘要" 
               
              loading="lazy"
         />
@@ -1256,7 +1256,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png" 
-             alt="" 
+             alt="Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复" 
               
              loading="lazy"
         />
@@ -1266,7 +1266,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png" 
-             alt="" 
+             alt="Word 报错弹窗：在试图打开文件时遇到错误" 
               
              loading="lazy"
         />
@@ -1277,7 +1277,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png" 
-             alt="" 
+             alt="产品信息：Microsoft Office 家庭和学生版 2021" 
               
              loading="lazy"
         />
@@ -1288,7 +1288,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png" 
-             alt="" 
+             alt="WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)" 
               
              loading="lazy"
         />

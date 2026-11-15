@@ -26,13 +26,12 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png&#34; 
-             alt=&#34;屏幕截图 2024-05-11 092201&#34; 
+             alt=&#34;GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/AntSwordProject/antSword?tab=readme-ov-file&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;核心源码下载：&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="2024511中国蚁剑安装教程">2024/5/11中国蚁剑安装教程</h2><p>一、下载中国蚁剑的加载器和核心源码（两个都要用到）</p>
 <p>github官方下载地址：https://github.com/AntSwordProject/</p>
 <p>参考文档： <a href="https://github.com/AntSwordProject/antSword/blob/master/README_CN.md"target="_blank" rel="noopener noreferrer">antSword/README_CN.md at master · AntSwordProject/antSword · GitHub</a></p>
@@ -40,7 +39,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png" 
-             alt="屏幕截图 2024-05-11 092201" 
+             alt="GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器" 
               
              loading="lazy"
         />
@@ -51,7 +50,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png" 
-             alt="" 
+             alt="antSword 仓库页点开 Code 菜单，红框为 Download ZIP" 
               
              loading="lazy"
         />
@@ -62,7 +61,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png" 
-             alt="" 
+             alt="AntSword-Loader 的 README，红框圈出各操作系统的下载地址与 MD5 表格" 
               
              loading="lazy"
         />
@@ -73,7 +72,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png" 
-             alt="" 
+             alt="AntSword-Loader-v4.0.3-win32-x64 目录，红框为 AntSword.exe（91,784 KB）" 
               
              loading="lazy"
         />
@@ -84,7 +83,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png" 
-             alt="" 
+             alt="中国蚁剑加载器启动界面，提示「请选择蚁剑工作目录」，下方是初始化按钮" 
               
              loading="lazy"
         />
@@ -95,7 +94,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png" 
-             alt="" 
+             alt="加载器正在下载… 7.48 Mb，界面变暗" 
               
              loading="lazy"
         />
@@ -106,7 +105,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png" 
-             alt="" 
+             alt="Application 目录结构：.github、modules、source、views、static 等" 
               
              loading="lazy"
         />
@@ -117,7 +116,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png" 
-             alt="" 
+             alt="中国蚁剑主界面，数据管理为空，右侧只有默认分类" 
               
              loading="lazy"
         />
@@ -129,7 +128,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png" 
-             alt="" 
+             alt="浏览器下载列表：安装包已被删除，antSword-master.zip 提示检测到病毒无法下载" 
               
              loading="lazy"
         />
@@ -140,7 +139,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png" 
-             alt="" 
+             alt="Windows 安全中心保护历史记录，显示已阻止 Backdoor:PHP/Remoteshell.E" 
               
              loading="lazy"
         />
