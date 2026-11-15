@@ -13,7 +13,7 @@ tags:
 
 ## DVWACommand Injection（命令注入）
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg)
+![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg)
 
 
 
@@ -85,7 +85,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 | ipconfig
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png)
+ ![输入 192.168.90.127&ipconfig 后，页面先回显 ping 结果，再输出 Windows IP 配置](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png)
 
 4、为了消除命令注入风险，需要对用户输入进行严格的过滤或转义。例如，可以使用escapeshellarg()函数对目标IP地址进行转义，如下所示：
 
@@ -151,7 +151,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 | ipconfig
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png)
+ ![输入 192.168.90.127 & ipconfig（中间带空格）同样能执行后面的命令](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png)
 
 ### High
 
@@ -207,7 +207,7 @@ if (isset($_POST['Submit'])) {
 192.168.90.127 |ipconfig
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png)
+ ![输入框只填 ipconfig 提交，直接回显整段 Windows IP 配置](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png)
 
 ### Impossible
 
