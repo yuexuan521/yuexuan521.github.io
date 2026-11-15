@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：派大星的烦恼](https://blog.csdn.net/mochu7777777/article/details/109678243) 
-[buuctf 派大星的烦恼](https://www.cnblogs.com/WXjzc/p/16095984.html) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：派大星的烦恼](https://blog.csdn.net/mochu7777777/article/details/109678243)
+- [buuctf 派大星的烦恼](https://www.cnblogs.com/WXjzc/p/16095984.html)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png)
 

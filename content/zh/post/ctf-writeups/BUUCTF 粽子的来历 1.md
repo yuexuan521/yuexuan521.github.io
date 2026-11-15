@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[CTF比赛中，你见过哪些奇怪的或者脑洞大开的misc?](https://www.zhihu.com/question/345032936) 
-[ctf 粽子的来历](https://blog.csdn.net/weixin_43790779/article/details/104160841) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [CTF比赛中，你见过哪些奇怪的或者脑洞大开的misc?](https://www.zhihu.com/question/345032936)
+- [ctf 粽子的来历](https://blog.csdn.net/weixin_43790779/article/details/104160841)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png)
 

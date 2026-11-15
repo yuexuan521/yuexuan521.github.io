@@ -19,12 +19,14 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[Hello CTF](https://hello-ctf.com/HC_Start/) 
-[NewStar CTF](https://ns.openctf.net/learn/) 
-[[BUUCTF] greatescape解析](https://blog.csdn.net/weixin_66146598/article/details/125131129) 
-[BUUCTF：greatescape](https://blog.51cto.com/u_16159500/6515299) 
-[buuctf-greatescape题目解析](https://blog.csdn.net/chinese_cabbage0/article/details/144456714) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [Hello CTF](https://hello-ctf.com/HC_Start/)
+- [NewStar CTF](https://ns.openctf.net/learn/)
+- [［BUUCTF］ greatescape解析](https://blog.csdn.net/weixin_66146598/article/details/125131129)
+- [BUUCTF：greatescape](https://blog.51cto.com/u_16159500/6515299)
+- [buuctf-greatescape题目解析](https://blog.csdn.net/chinese_cabbage0/article/details/144456714)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png)
 

@@ -19,8 +19,10 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[CTF-Misc-二维码（二）撕破的二维码](https://blog.csdn.net/qq_45163122/article/details/106124042) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [CTF-Misc-二维码（二）撕破的二维码](https://blog.csdn.net/qq_45163122/article/details/106124042)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png)
 

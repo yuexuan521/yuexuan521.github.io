@@ -18,9 +18,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[CTF常见编码及加解密（超全）](https://www.cnblogs.com/ruoli-s/p/14206145.html#%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%BC%96%E7%A0%81) 
-[MRCTF2020 pyFlag](https://www.cnblogs.com/WXjzc/p/16096233.html) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [CTF常见编码及加解密（超全）](https://www.cnblogs.com/ruoli-s/p/14206145.html#%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%BC%96%E7%A0%81)
+- [MRCTF2020 pyFlag](https://www.cnblogs.com/WXjzc/p/16096233.html)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191537295.png)
 

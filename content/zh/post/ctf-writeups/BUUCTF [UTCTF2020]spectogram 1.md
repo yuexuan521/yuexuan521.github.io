@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[语谱图（一） Spectrogram 的定义与机理](https://blog.csdn.net/chumingqian/article/details/123019808) 
-[BUUCTF:[UTCTF2020]spectogram](https://www.cnblogs.com/vuclw/p/15848478.html) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [语谱图（一） Spectrogram 的定义与机理](https://blog.csdn.net/chumingqian/article/details/123019808)
+- [BUUCTF:［UTCTF2020］spectogram](https://www.cnblogs.com/vuclw/p/15848478.html)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png)
 

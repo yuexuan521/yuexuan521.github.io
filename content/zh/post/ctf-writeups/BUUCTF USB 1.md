@@ -19,10 +19,12 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[CTF解题技能之压缩包分析基础篇](https://www.freebuf.com/column/199854.html) 
-[BUUCTF：USB](https://blog.csdn.net/mochu7777777/article/details/109632626) 
-[(usb键盘隐写)buuctf:USB](https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [CTF解题技能之压缩包分析基础篇](https://www.freebuf.com/column/199854.html)
+- [BUUCTF：USB](https://blog.csdn.net/mochu7777777/article/details/109632626)
+- [(usb键盘隐写)buuctf:USB](https://www.cnblogs.com/Dreamerwd/p/15159027.html#:~:text=%E5%85%88%E6%8A%8A%E5%8E%8B%E7%BC%A9%E5%8C%85%E6%8F%90)
+
 
  ![BUUCTF 题目「USB 1」页面，提示 Do your konw usb??，附件为 8c90b141-7….zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190259617.png)
 

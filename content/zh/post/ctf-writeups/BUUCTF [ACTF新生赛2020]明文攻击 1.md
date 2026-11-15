@@ -18,10 +18,12 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[明文攻击](https://peiqi.wgpsec.org/ctf/misc/%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%A0%B4%E8%A7%A3/%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB.html) 
-[BUUCTF：[ACTF新生赛2020]明文攻击](https://blog.csdn.net/qq_46230755/article/details/112108707#:~:text=%5BACTF%E6%96%B0) 
-[Zip明文攻击细节问题及解决方案](https://blog.csdn.net/qq_52974719/article/details/117084427) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [明文攻击](https://peiqi.wgpsec.org/ctf/misc/%E5%8E%8B%E7%BC%A9%E5%8C%85%E7%A0%B4%E8%A7%A3/%E6%98%8E%E6%96%87%E6%94%BB%E5%87%BB.html)
+- [BUUCTF：［ACTF新生赛2020］明文攻击](https://blog.csdn.net/qq_46230755/article/details/112108707#:~:text=%5BACTF%E6%96%B0)
+- [Zip明文攻击细节问题及解决方案](https://blog.csdn.net/qq_52974719/article/details/117084427)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png)
 

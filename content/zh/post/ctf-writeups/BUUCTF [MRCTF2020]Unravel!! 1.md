@@ -18,8 +18,10 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：[MRCTF2020]Unravel!!](https://blog.csdn.net/mochu7777777/article/details/109671882) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：［MRCTF2020］Unravel!!](https://blog.csdn.net/mochu7777777/article/details/109671882)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191605778.png)
 

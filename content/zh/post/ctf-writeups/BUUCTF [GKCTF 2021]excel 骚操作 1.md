@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[2021GKCTF Misc excel骚操作–详解](https://blog.csdn.net/qq_43871179/article/details/118310357) 
-[中国编码APP下载](http://appserver.gs1cn.org/ancc2020h/) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [2021GKCTF Misc excel骚操作–详解](https://blog.csdn.net/qq_43871179/article/details/118310357)
+- [中国编码APP下载](http://appserver.gs1cn.org/ancc2020h/)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png)
 

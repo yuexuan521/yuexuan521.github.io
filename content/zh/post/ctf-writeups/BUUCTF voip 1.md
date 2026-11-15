@@ -19,8 +19,10 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[buuctf-voip两种解题思路酷软BUZZ再现](https://blog.csdn.net/weixin_34979095/article/details/142429105) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [buuctf-voip两种解题思路酷软BUZZ再现](https://blog.csdn.net/weixin_34979095/article/details/142429105)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190333154.png)
 

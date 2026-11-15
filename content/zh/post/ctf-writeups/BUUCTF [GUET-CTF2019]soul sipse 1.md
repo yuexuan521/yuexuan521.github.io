@@ -18,9 +18,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[CTF 隐写工具Steghide](https://blog.csdn.net/Aluxian_/article/details/121968033) 
-[BUUCTF：[GUET-CTF2019]soul sipse](https://blog.csdn.net/mochu7777777/article/details/109838676) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [CTF 隐写工具Steghide](https://blog.csdn.net/Aluxian_/article/details/121968033)
+- [BUUCTF：［GUET-CTF2019］soul sipse](https://blog.csdn.net/mochu7777777/article/details/109838676)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png)
 

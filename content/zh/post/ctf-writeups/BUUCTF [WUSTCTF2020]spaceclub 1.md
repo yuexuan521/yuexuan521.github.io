@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：[WUSTCTF2020]spaceclub](https://blog.csdn.net/mochu7777777/article/details/107532402) 
-[[WUSTCTF2020]spaceclub](https://www.cnblogs.com/fishjumpriver/p/18119169) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：［WUSTCTF2020］spaceclub](https://blog.csdn.net/mochu7777777/article/details/107532402)
+- [［WUSTCTF2020］spaceclub](https://www.cnblogs.com/fishjumpriver/p/18119169)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png)
 

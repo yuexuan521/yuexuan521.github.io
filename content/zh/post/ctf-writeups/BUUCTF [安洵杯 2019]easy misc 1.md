@@ -19,11 +19,13 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[Hello CTF](https://hello-ctf.com/HC_Start/) 
-[NewStar CTF](https://ns.openctf.net/learn/) 
-[安洵杯 2019/BUUCTF-easy misc](https://shawroot.hatenablog.com/entry/2020/01/02/%E5%AE%89%E6%B4%B5%E6%9D%AF_2019/BUUCTF-easy_misc) 
-[BUUCTF：[安洵杯 2019]easy misc](https://blog.csdn.net/mochu7777777/article/details/109669638) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [Hello CTF](https://hello-ctf.com/HC_Start/)
+- [NewStar CTF](https://ns.openctf.net/learn/)
+- [安洵杯 2019/BUUCTF-easy misc](https://shawroot.hatenablog.com/entry/2020/01/02/%E5%AE%89%E6%B4%B5%E6%9D%AF_2019/BUUCTF-easy_misc)
+- [BUUCTF：［安洵杯 2019］easy misc](https://blog.csdn.net/mochu7777777/article/details/109669638)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192403948.png)
 

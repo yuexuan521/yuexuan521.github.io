@@ -20,9 +20,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：[UTCTF2020]File Carving](https://blog.csdn.net/mochu7777777/article/details/109855105) 
-[BUUCTF之misc [UTCTF2020]File Carving](https://blog.csdn.net/m0_62107966/article/details/126806622) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：［UTCTF2020］File Carving](https://blog.csdn.net/mochu7777777/article/details/109855105)
+- [BUUCTF之misc ［UTCTF2020］File Carving](https://blog.csdn.net/m0_62107966/article/details/126806622)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png)
 

@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[使用HackCube-Special分析固定码信号](https://www.freebuf.com/articles/wireless/191534.html) 
-[[SCTF2019]电单车](https://blog.csdn.net/weixin_49656607/article/details/120323952) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [使用HackCube-Special分析固定码信号](https://www.freebuf.com/articles/wireless/191534.html)
+- [［SCTF2019］电单车](https://blog.csdn.net/weixin_49656607/article/details/120323952)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191807528.png)
 

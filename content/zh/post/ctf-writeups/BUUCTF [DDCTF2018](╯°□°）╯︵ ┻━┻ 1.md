@@ -19,9 +19,11 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：[DDCTF2018](╯°□°）╯︵ ┻━┻](https://blog.csdn.net/mochu7777777/article/details/105324802#:~:text=DDCTF2) 
-[[DDCTF2018](╯°□°）╯︵ ┻━┻](https://www.cnblogs.com/fishjumpriver/p/17833337.html) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：［DDCTF2018］(╯°□°）╯︵ ┻━┻](https://blog.csdn.net/mochu7777777/article/details/105324802#:~:text=DDCTF2)
+- [［DDCTF2018］(╯°□°）╯︵ ┻━┻](https://www.cnblogs.com/fishjumpriver/p/17833337.html)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190909389.png)
 

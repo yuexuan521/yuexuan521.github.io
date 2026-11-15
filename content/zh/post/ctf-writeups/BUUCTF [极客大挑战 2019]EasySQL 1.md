@@ -23,7 +23,9 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+
  ![](./assets/1_2.png)
 
 ### 题目描述：

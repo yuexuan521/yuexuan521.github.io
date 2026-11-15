@@ -19,11 +19,13 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[Hello CTF](https://hello-ctf.com/HC_Start/) 
-[NewStar CTF](https://ns.openctf.net/learn/) 
-[BuuCTF难题详解| Misc | [湖南省赛2019]Findme](https://blog.csdn.net/pone2233/article/details/107990787) 
-[[湖南省赛2019]Findme](https://www.cnblogs.com/zhoujiaff/p/17071345.html) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [Hello CTF](https://hello-ctf.com/HC_Start/)
+- [NewStar CTF](https://ns.openctf.net/learn/)
+- [BuuCTF难题详解| Misc | ［湖南省赛2019］Findme](https://blog.csdn.net/pone2233/article/details/107990787)
+- [［湖南省赛2019］Findme](https://www.cnblogs.com/zhoujiaff/p/17071345.html)
+
 
  ![BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png)
 

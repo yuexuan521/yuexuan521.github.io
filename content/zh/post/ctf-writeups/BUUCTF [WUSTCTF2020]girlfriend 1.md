@@ -20,8 +20,10 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[BUUCTF：[WUSTCTF2020]girlfriend](https://blog.csdn.net/mochu7777777/article/details/105412940) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [BUUCTF：［WUSTCTF2020］girlfriend](https://blog.csdn.net/mochu7777777/article/details/105412940)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png)
 

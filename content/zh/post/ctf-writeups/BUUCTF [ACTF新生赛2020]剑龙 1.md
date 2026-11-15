@@ -20,10 +20,12 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[Hello CTF](https://hello-ctf.com/HC_Start/) 
-[NewStar CTF](https://ns.openctf.net/learn/) 
-[BuuCTF难题详解| Misc | [ACTF新生赛2020]剑龙](https://blog.csdn.net/pone2233/article/details/108601733) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [Hello CTF](https://hello-ctf.com/HC_Start/)
+- [NewStar CTF](https://ns.openctf.net/learn/)
+- [BuuCTF难题详解| Misc | ［ACTF新生赛2020］剑龙](https://blog.csdn.net/pone2233/article/details/108601733)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png)
 

@@ -19,8 +19,10 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[buuctf-misc-key不在这里1](https://blog.csdn.net/qq_29977871/article/details/126004017) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [buuctf-misc-key不在这里1](https://blog.csdn.net/qq_29977871/article/details/126004017)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png)
 

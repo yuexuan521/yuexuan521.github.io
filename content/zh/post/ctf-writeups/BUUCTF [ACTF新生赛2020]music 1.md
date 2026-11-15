@@ -19,10 +19,12 @@ tags:
 ---
 
 相关阅读
-[CTF Wiki](https://ctf-wiki.org/) 
-[m4a文件格式分析](https://blog.csdn.net/liuxunfei15/article/details/120441383) 
-[异或运算 XOR 教程](https://www.ruanyifeng.com/blog/2021/01/_xor.html) 
-[BUUCTF：[ACTF新生赛2020]music](https://blog.csdn.net/mochu7777777/article/details/109806994) 
+
+- [CTF Wiki](https://ctf-wiki.org/)
+- [m4a文件格式分析](https://blog.csdn.net/liuxunfei15/article/details/120441383)
+- [异或运算 XOR 教程](https://www.ruanyifeng.com/blog/2021/01/_xor.html)
+- [BUUCTF：［ACTF新生赛2020］music](https://blog.csdn.net/mochu7777777/article/details/109806994)
+
 
  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png)
 
