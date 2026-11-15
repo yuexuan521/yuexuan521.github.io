@@ -461,7 +461,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -478,32 +478,18 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「大流量分析（一）1」：问黑客攻击 IP，附网盘链接与提取码 9jva&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，有很多pcap流量包&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、随便打开一个，一般黑客的攻击流量会很多，需要使用Wireshark统计功能。&lt;/p&gt;
-&lt;p&gt;先统计IP，统计 → IPv4 Statistics → All Addresses&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客对A公司发动了攻击，以下是一段时间内我们获取到的流量包，那黑客的攻击ip是多少？（答案加上flag{}）附件链接: &lt;a href=&#34;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://pan.baidu.com/s/1EgLI37y6m9btzwIWZYDL9g&lt;/a&gt; 提取码: 9jva 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -520,7 +506,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png" 
-             alt="" 
+             alt="题目页「大流量分析（一）1」：问黑客攻击 IP，附网盘链接与提取码 9jva" 
               
              loading="lazy"
         />
@@ -532,7 +518,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png" 
-             alt="" 
+             alt="解压目录里 10 个 pcap 文件，每个约 488 MB" 
               
              loading="lazy"
         />
@@ -545,7 +531,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png" 
-             alt="" 
+             alt="统计 → IPv4 Statistics → All Addresses，红框 183.129.152.140，共 196601 个包" 
               
              loading="lazy"
         />
@@ -562,7 +548,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png" 
-             alt="" 
+             alt="统计菜单里红框标出「会话(C)」与「端点(E)」" 
               
              loading="lazy"
         />
@@ -573,7 +559,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png" 
-             alt="" 
+             alt="统计 → Conversations → IPv4，红框 183.129.152.140 与 172.16.61.206、.199 的大量会话" 
               
              loading="lazy"
         />
@@ -584,7 +570,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png" 
-             alt="" 
+             alt="同一会话窗口，A→B 与 B→A 的包数、字节数对比" 
               
              loading="lazy"
         />
@@ -595,7 +581,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png" 
-             alt="" 
+             alt="端点窗口里红框同样是 183.129.152.140" 
               
              loading="lazy"
         />
