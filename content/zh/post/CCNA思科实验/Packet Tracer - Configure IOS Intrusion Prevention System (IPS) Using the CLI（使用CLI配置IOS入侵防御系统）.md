@@ -19,7 +19,7 @@ tags:
 
 ### 地址表
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png)
+ ![地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png)
 
 ### 目标
 
@@ -73,10 +73,10 @@ e. 使用 `show version` 命令验证是否已启用“Security Technology”包
 **步骤2：验证网络连接性。** 
 
 a. 从PC-C向PC-A发送ping请求。应能成功ping通。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png)
+ ![PC-C ping 192.168.1.2 通，25% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png)
 
 b. 从PC-A向PC-C发送ping请求。应能成功ping通。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png)
+ ![PC-A ping 192.168.3.2 通，0% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png)
 
 **步骤3：在闪存中创建一个IOS IPS配置目录。** 
 
@@ -162,27 +162,27 @@ d. 将日志消息发送到位于IP地址192.168.1.50的syslog服务器。
 **步骤2：使用show命令验证IPS配置。** 
 
 使用 `show ip ips all` 命令查看IPS配置状态摘要。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png)
+ ![R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png)
 
 iosips规则应用于哪些接口以及什么方向？
 
 **步骤3：验证IPS是否正常工作。** 
 
 a. 从PC-C尝试ping PC-A。这些ping请求成功了吗？请解释原因。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png)
+ ![PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png)
 
 b. 从PC-A尝试ping PC-C。这些ping请求成功了吗？请解释原因。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png)
+ ![PC-A ping 192.168.3.2 仍通，25% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png)
 
 **步骤4：查看syslog消息。** 
 
 a. 点击Syslog服务器。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png)
+![实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png)
 
 b. 选择“服务”标签页。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png)
+![Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png)
 
 c. 在左侧导航菜单中，选择SYSLOG以查看日志文件。
 
