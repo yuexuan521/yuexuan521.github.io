@@ -1909,7 +1909,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185953208.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185953208.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1926,7 +1926,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「key不在这里 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1938,7 +1938,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;一张黑白二维码，纹路非常密&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1958,18 +1958,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;QR Research 解码，内容是一个 cn.bing.com 搜索链接，版本 13、纠错 H&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;访问链接，没有找到flag。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185953208.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185953208.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1986,7 +1985,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185955261.png" 
-             alt="" 
+             alt="题目页「key不在这里 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -1998,7 +1997,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185956619.png" 
-             alt="" 
+             alt="一张黑白二维码，纹路非常密" 
               
              loading="lazy"
         />
@@ -2018,7 +2017,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185958216.png" 
-             alt="" 
+             alt="QR Research 解码，内容是一个 cn.bing.com 搜索链接，版本 13、纠错 H" 
               
              loading="lazy"
         />
@@ -2029,7 +2028,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190000841.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190000841.png" 
-             alt="" 
+             alt="浏览器打开该链接，搜索词是「key不在这里」，结果定位到 CSDN 那篇文章" 
               
              loading="lazy"
         />
@@ -2099,7 +2098,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190002634.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190002634.png" 
-             alt="" 
+             alt="终端输出 flag%7B5d45fa256372224f48746c6fb8e33b32%7D" 
               
              loading="lazy"
         />
@@ -2111,7 +2110,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190003935.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190003935.png" 
-             alt="" 
+             alt="URL 解码工具解出 flag{5d45fa256372224f48746c6fb8e33b32}" 
               
              loading="lazy"
         />
