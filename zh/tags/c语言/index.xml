@@ -3816,7 +3816,7 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png" 
-             alt="级数通项公式：Σ (−1)^(j−1)·2^j / ([2^j&#43;(−1)^j][2^(j&#43;1)&#43;(−1)^(j&#43;1)])" 
+             alt="级数通项公式：Σ (−1)^(j−1)·2^j / (［2^j&#43;(−1)^j］［2^(j&#43;1)&#43;(−1)^(j&#43;1)］)" 
               
              loading="lazy"
         />

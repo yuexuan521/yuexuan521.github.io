@@ -217,7 +217,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png" 
-             alt="010 Editor 提示 CRC Mismatch @ chunk[0]" 
+             alt="010 Editor 提示 CRC Mismatch @ chunk［0］" 
               
              loading="lazy"
         />

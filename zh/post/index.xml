@@ -79,7 +79,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png" 
-             alt="选中 frps.ini，记事本内容为 [common] server_port=7000（红框）" 
+             alt="选中 frps.ini，记事本内容为 ［common］ server_port=7000（红框）" 
               
              loading="lazy"
         />
@@ -235,7 +235,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png" 
-             alt="frpc.ini 内容：[common] 指向 67.220.91.68:7000，[socks5-1] 用 remote_port 1080，[socks5-33] 映射本地 10080 到 10088" 
+             alt="frpc.ini 内容：［common］ 指向 67.220.91.68:7000，［socks5-1］ 用 remote_port 1080，［socks5-33］ 映射本地 10080 到 10088" 
               
              loading="lazy"
         />
@@ -316,7 +316,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png" 
-             alt="frps.ini 内容为 [common] bind_port = 7000" 
+             alt="frps.ini 内容为 ［common］ bind_port = 7000" 
               
              loading="lazy"
         />
@@ -390,7 +390,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png" 
-             alt="frpc.ini 改为指向 172.16.10.183:7000，[socks5-2] 的 remote_port 为 10080" 
+             alt="frpc.ini 改为指向 172.16.10.183:7000，［socks5-2］ 的 remote_port 为 10080" 
               
              loading="lazy"
         />
@@ -3342,7 +3342,16 @@ Quoted-printable编码</a></p>
     </a>
 </div></p>
 <p>扫描二维码得到疑似flag的密文： <code>ci{v3erf_0tygidv2_fc0}</code> ，猜测为维吉尼亚密码。但缺少key值（密钥），暂时无法解密</p>
-<p>![QR Research 解码得到 c<a href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png"target="_blank" rel="noopener noreferrer">V3erf_0tygidv2_fc0}</a></p>
+<p>
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png">
+        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190316521.png" 
+             alt="QR Research 解码得到 c［V3erf_0tygidv2_fc0}" 
+              
+             loading="lazy"
+        />
+    </a>
+</div></p>
 <p>3、回过头，key.ftm中应该就有我们要的key值</p>
 <blockquote>
 <p><strong>FTM</strong> 是FamiTracker，用于生产任天堂（NES）系统的音乐的音频节目创建的音频跟踪器模块。 它包括短的音频样本和一系列包含旋律音符。</p>

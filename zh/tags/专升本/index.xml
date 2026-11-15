@@ -534,7 +534,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png" 
-             alt="选择题 4：数组 A[i,j] 每个元素 3 字节，列主存时 A[5,8] 的首地址为 BA&#43;180" 
+             alt="选择题 4：数组 A［i,j］ 每个元素 3 字节，列主存时 A［5,8］ 的首地址为 BA&#43;180" 
               
              loading="lazy"
         />
