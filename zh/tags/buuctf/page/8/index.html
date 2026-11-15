@@ -12,9 +12,6 @@
 <a href=/zh/tags/buuctf/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 丢失的MD5 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 密文： 1 2 3 4 5 6 7 8 9 import hashlib for i in range(32,127): for j in range(32,127): for k in range(32,127): m=hashlib.md5() m.update('TASC'+chr(i)+'O3RJMV'+chr(j)+'WDJKX'+chr(k)+'ZM') des=m.hexdigest() if 'e9032' in des and 'da' in des and '911513' in des: print des 解题思路：密文部分给了一串Python代码，发现一个语法错误
-修改后
-运行代码，报错
-报错原因是：必须在哈希之前Unicode对象进行编码 对代码进行修改，对字符进行（UTF-8）编码
 ...</p></div><footer class=entry-footer><span title='2024-09-27 10:50:10 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>185 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 丢失的MD5 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 大帝的密码武器 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：（下载题目，然后修改后缀名为.zip打开：）

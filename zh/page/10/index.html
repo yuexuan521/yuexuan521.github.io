@@ -31,9 +31,6 @@ CTF Wiki 题目描述：注意：得到的 flag 请 将 noxCTF 替换为 flag �
 1 2 3 4 5 6 import gmpy2 p = 473398607161 q = 4511491 e = 17 d = int(gmpy2.invert(e, (p-1)*(q-1))) print(d) flag： 1 125631357777427553</p></div><footer class=entry-footer><span title='2024-09-27 10:51:59 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>155 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF RSA 1" href=https://yuexuan521.github.io/zh/posts/buuctf-rsa-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 丢失的MD5 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 密文： 1 2 3 4 5 6 7 8 9 import hashlib for i in range(32,127): for j in range(32,127): for k in range(32,127): m=hashlib.md5() m.update('TASC'+chr(i)+'O3RJMV'+chr(j)+'WDJKX'+chr(k)+'ZM') des=m.hexdigest() if 'e9032' in des and 'da' in des and '911513' in des: print des 解题思路：密文部分给了一串Python代码，发现一个语法错误
-修改后
-运行代码，报错
-报错原因是：必须在哈希之前Unicode对象进行编码 对代码进行修改，对字符进行（UTF-8）编码
 ...</p></div><footer class=entry-footer><span title='2024-09-27 10:50:10 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>185 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 丢失的MD5 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF Alice与Bob 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：密码学历史中，有两位知名的杰出人物，Alice和Bob。他们的爱情经过置换和轮加密也难以混淆，即使是没有身份认证也可以知根知底。就像在数学王国中的素数一样，孤傲又热情。下面是一个大整数:98554799767,请分解为两个素数，分解后，小的放前面，大的放后面，合成一个新的数字，进行md5的32位小写哈希，提交答案。

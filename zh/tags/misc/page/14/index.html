@@ -32,7 +32,6 @@ CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。 感谢 Iven Hu
 CTF Wiki 题目描述：小明经常喜欢在文件中藏一些秘密。时间久了便忘记了，你能帮小明找到该文件中的秘密吗？
 密文：下载附件，解压得到JPEG图片。
 解题思路：1、根据题目提示，寻找文件中的秘密。在这里，我发现给到的文件是一张JPEG图片，使用StegSolve工具，查看图片文件格式。直接找到flag。（用WinHex也可以找到flag） 具体流程可以查看这篇文章： https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502
-2、将这段字符复制到word或记事本替换掉“.”，清除字符串里的空格，整理出flag。 清除空格在线工具
 ...</p></div><footer class=entry-footer><span title='2024-03-24 22:44:51 +0000 UTC'>三月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>240 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 文件中的秘密 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%A7%98%E5%AF%86-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [ACTF新生赛2020]NTFS数据流 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
@@ -49,7 +48,6 @@ CTF Wiki 题目描述：网站遭受到攻击了，还好我们获取到了全�
 相关阅读
 CTF Wiki 题目描述：下载附件，解压得到一个.jpg图片。
 密文： 解题思路：1、这道题我尝试了很多方法，知道看了别人的wp才知道flag在我忽略的地方。将图片在010 Editor中打开，从上到下浏览一遍，发现最后的数据有些异常，由“0”和“1”组成。
-1 2 3 01101011011011110110010101101011011010100011001101110011 字符共计：56 个 数量为8的倍数 2、将这串字符分成8个字符一组，先转成十进制数字，再转成ASCII码，就可以得到flag值。这里使用工具直接完成。（我感觉这个flag没什么规律） 转换工具
 ...</p></div><footer class=entry-footer><span title='2024-02-24 16:37:44 +0000 UTC'>二月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>229 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 另外一个世界 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C-1/></a></article><footer class=page-footer><nav class=pagination aria-label=分页导航><a class=prev href=https://yuexuan521.github.io/zh/tags/misc/page/13/>«&nbsp;上一页&nbsp;
 </a><a class=next href=https://yuexuan521.github.io/zh/tags/misc/page/15/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><div class=footer-line><span>&copy; 2026 YueXuan</span>
 <span class=footer-dot>·</span>
