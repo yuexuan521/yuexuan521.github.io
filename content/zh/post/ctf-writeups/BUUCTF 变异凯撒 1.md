@@ -10,7 +10,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205029283.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205029283.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205031623.png)
+ ![题目页「变异凯撒 1」，附件 e072b2d9-7…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205031623.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ tags:
 
 1、结合题目，直接给出加密类型为变异凯撒，只是我们不知道加密规则是什么。但是结合凯撒加密的加密原理（文章末尾有凯撒加密原理），我们根据给出的加密密文和格式，找出它们的ASCII码值。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205032995.jpeg)
+![ASCII 码对照表，列出 0 到 127 的控制字符与可见字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205032995.jpeg)
 
 ```python
 ASCII码值
@@ -78,7 +78,7 @@ for i in txt:
 
 4、执行代码，得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205034500.png)
+![程序输出 flag{Caesar_variation}，进程已结束，退出代码 0](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205034500.png)
 
 ### flag：
 

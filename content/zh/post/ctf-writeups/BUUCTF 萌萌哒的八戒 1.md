@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205117798.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205117798.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205120303.png)
+ ![题目页「萌萌哒的八戒 1」，附件 76ad2edd-8e…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205120303.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 解压是一张图片
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205121979.jpeg)
+![一只戴警帽的小猪玩偶照片](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205121979.jpeg)
 
 ---
 
@@ -41,7 +41,7 @@ tags:
 1、看图，观察密文特征，结合题目，判断为猪圈加密。直接使用在线工具。
 [猪圈密码解密工具](http://www.metools.info/code/c90.html) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205123446.png)
+![猪圈密码工具：加密内容是一串方框符号，解密得到 whenthepigwanttoeat](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205123446.png)
 
 2、直接对应密文输入，解出密文，得到flag。
 

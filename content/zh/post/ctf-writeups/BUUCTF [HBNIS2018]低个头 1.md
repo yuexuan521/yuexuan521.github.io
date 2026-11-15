@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191427262.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191427262.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
+ ![题目页「[HBNIS2018]低个头 1」，附 GitHub 来源与 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191430231.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ https://github.com/hebtuerror404/CTF_competition_warehouse_2018](https://github.
 ### 密文：
 
 下载附件，得到一个.txt文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191432302.png)
+ ![题目文字：密文 EWAZX RTY TGB IJN IO KL，要求提交大写明文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191432302.png)
 
 ---
 
@@ -51,7 +51,7 @@ lag格式：XXX 明文
 提交：直接提交明文（大写）
 ```
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191433585.jpeg)
+![键盘示意图，红线沿 QWERTY 与 ZXCV 行连出字母位置，提示看键盘下一行](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191433585.jpeg)
 
 ### flag：
 

@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454199.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454199.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454200.png)
+ ![题目页「[ACTF新生赛2020]base64隐写 1」，附件 attachment.tar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454200.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到.zip文件，再次解压得到两个文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454201.png)
+ ![解压出 ._近在眼前.zip、ComeOn!.txt、hint.jpeg 与 近在眼前.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454201.png)
 
 ---
 
@@ -215,7 +215,7 @@ ZlFvPQ0=
 
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454202.png)
+ ![ComeOn!.txt 里整页的 base64 字符串](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454202.png)
 
 2、结合题目提示和密文特征，猜测为Base64隐写，使用如下Python脚本进行解密。
 
@@ -240,7 +240,7 @@ print(str)
 
 运行脚本，得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454203.png)
+ ![终端输出 ACTF{6aseb4_f33!}，后面跟一长串 NULL](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173454203.png)
 
 ### flag：
 

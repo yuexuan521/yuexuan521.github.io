@@ -12,7 +12,7 @@ tags:
 - "BUUCTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190158456.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190158456.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190200953.png)
+![题目页「qr 1」，提示「这是一个二维码」，附件 1abe854d-47…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190200953.png)
 
 ### 题目描述：
 
@@ -33,13 +33,13 @@ tags:
 
 下载附件，得到一张二维码图片。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190202908.png)
+![一张黑白的二维码图片](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190202908.png)
 
 ### 解题思路：
 
 1、这是一道签到题，扫描二维码得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190204075.png)
+![QR Research 解码结果：欢迎参加本次比赛，密码为 Flag{878865ce73370a4ce607d21ca01b5e59}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190204075.png)
 
 ### flag：
 
