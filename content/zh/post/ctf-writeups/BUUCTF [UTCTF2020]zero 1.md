@@ -12,7 +12,7 @@ tags:
 - "隐写"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [零宽度字符隐写](https://lazzzaro.github.io/2020/05/24/misc-%E9%9B%B6%E5%AE%BD%E5%BA%A6%E5%AD%97%E7%AC%A6%E9%9A%90%E5%86%99/index.html)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png)
+ ![题目页「［UTCTF2020］zero 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 保存附件，内容如下：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png)
+ ![attachment.txt 是 Lorem ipsum 文本，行内夹着一个个红色小方块](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png)
 
 ---
 
@@ -50,17 +50,17 @@ tags:
 ​​​​​​​Lorem ipsum​​​​​​​ dolor ‌‌‌‌‍﻿‍‍sit​​​​​​​​ amet​​​​​​​​​‌‌‌‌‍﻿‍‌, consectetur ​​​​​​​adipiscing​​​​​​​‌‌‌‌‍‬‍‬ elit​​​​​​​.‌‌‌‌‍‬﻿‌​​​​​​​‌‌‌‌‍‬‌‍ Phasellus quis​​​​​​​ tempus​​​​​​ ante, ​​​​​​​​nec vehicula​​​​​​​​​​​​​​​​ mi​​​​​​​​. ​​​​​​​‌‌‌‌‍‬‍﻿Aliquam nec​​​​​​​​​‌‌‌‌‍﻿‬﻿ nisi ut neque​​​​​​​ interdum auctor​​​​​​​.‌‌‌‌‍﻿‍﻿ Aliquam felis ‌‌‌‌‍‬‬‌orci​​​​​​​, vestibulum ‌‌‌‌‍﻿‬‍sit ​​​​​​​amet​​​​​​​​​ ante‌‌‌‌‍‌﻿‬ at​​​​​​​, consectetur‌‌‌‌‍‌﻿﻿ lobortis eros​​​​​​​​​.‌‌‌‌‍‍‍‌ ‌‌‌‌‍‌‌‌​​​​​​​Orci varius​​​​​​​ ​​​​​​​natoque ‌‌‌‌‍﻿‌﻿penatibus et ‌‌‌‌‍‬‌﻿​​​​​​​magnis‌‌‌‌‌﻿‌‍‌‌‌‌‌﻿‌‍ dis ​​​​​​​‌‌‌‌‍‍﻿﻿parturient montes, ​​​​​​​nascetur ridiculus ‌‌‌‌‌﻿‍‌​​​​​​​​​​​​​​‌‌‌‌‌﻿‬‍mus. In finibus‌‌‌‌‌﻿‌‬ magna​​​​​​‌‌‌‌‌﻿‍﻿ mauris, quis‌‌‌‌‍‬‌‍ auctor ‌‌‌‌‍‬‌‍libero congue quis. ‌‌‌‌‍‬‬‬Duis‌‌‌‌‍‬‌‬ sagittis consequat urna non tristique. Pellentesque eu lorem ‌‌‌‌‍﻿‌‍id‌‌‌‌‍‬‬﻿ quam vestibulum ultricies vel ac purus‌‌‌‌‌﻿‌‍.‌‌‌‌‌﻿‍‌‌‌‌‌‍﻿﻿‍
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png)
+ ![隐藏字符被可视化出来：ZWSP、ZWNJ、ZWJ、BSP 交替重复出现](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png)
 
 （在Linux的vim编辑器中也可以看到）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png)
+ ![全文都是 %e2%80%8b、%e2%80%8c、%e2%80%8d、%ef%bb%bf 这类零宽字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png)
 
 2、使用在线解密网站，得到flag： `utflag{whyNOT@sc11_4927aajbqk14}` 。
 
 零宽度字符隐写： [https://330k.github.io/misc_tools/unicode_steganography.html](https://330k.github.io/misc_tools/unicode_steganography.html) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png)
+ ![在线文本隐写工具解码出 utflag{YW0NBUc11_4927aajbqk14}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png)
 
 ### flag：
 

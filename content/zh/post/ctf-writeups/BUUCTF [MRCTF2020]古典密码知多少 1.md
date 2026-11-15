@@ -10,7 +10,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033670.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png)
+![题目页「［MRCTF2020］古典密码知多少 1」，附件 attachment…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033672.png)
 
 ### 题目描述：
 
@@ -30,7 +30,7 @@ tags:
 
 ### 密文：
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg)
+![手绘的方框、三角、菱形符号，并附一句 maybe you can buy some fence~ all are uppercase letters](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033673.jpeg)
 
 ### 解题思路：
 
@@ -57,13 +57,13 @@ flag:CRYPTOFUN
 
 ***1.传统猪圈密码*** 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png)
+![猪圈密码字母表：九宫格 A–I、J–R，X 形 S/T/U/V 与 W/X/Y/Z，示例给出 A 与 Z](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033674.png)
 
 ***2.圣堂武士密码*** 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png)
+![猪圈密码的变体图形，带十字的四边形按 A–Q、X–Y 排布](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033675.png)
 
 ***3.标准银河字母加密*** 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png)
+![The Standard Galactic Alphabet，符号与 A–Z 一一对照](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216093033676.png)
 
