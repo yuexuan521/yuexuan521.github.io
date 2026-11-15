@@ -10,42 +10,42 @@
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E4%B8%93%E5%8D%87%E6%9C%AC/ title=专升本><span>专升本
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/ title=渗透测试><span>渗透测试</span></a></div></li><li><a href=https://yuexuan521.github.io/zh/archives/ title=归档><span>归档</span></a></li><li><a href=https://yuexuan521.github.io/zh/search/ title=搜索><span>搜索</span></a></li><li><a href=https://yuexuan521.github.io/zh/tags/ title=标签><span>标签</span></a></li><li><a href=https://yuexuan521.github.io/zh/about_me_zh/ title=关于><span>关于</span></a></li><li><a href=https://yuexuan521.github.io/zh/index.xml title=RSS><span>RSS</span></a></li></ul></nav></header><main class=main id=main tabindex=-1><header class=page-header><div class=breadcrumbs><a href=https://yuexuan521.github.io/zh/>主页</a>&nbsp;»&nbsp;<a href=https://yuexuan521.github.io/zh/tags/>标签</a></div><h1>BUUCTF
 <a href=/zh/tags/buuctf/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF zip 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交
 密文： 解题思路：1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件
 注意：一般数据内容小于5Bytes(&lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容
 ...</p></div><footer class=entry-footer><span title='2025-11-20 09:01:00 +0000 UTC'>十一月 20, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>678 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF zip 1" href=https://yuexuan521.github.io/zh/posts/buuctf-zip-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [DDCTF2018]流量分析 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：下载附件解压，得到流量分析.pcap和流量分析.txt
 解题思路：1、先看流量分析.txt，看hint二去pcap包里找 “KEY” 。
 1 2 3 4 5 6 7 8 流量分析 200pt 提示一：若感觉在中间某个容易出错的步骤，若有需要检验是否正确时，可以比较MD5: 90c490781f9c320cd1ba671fcb112d1c 提示二：注意补齐私钥格式 -----BEGIN RSA PRIVATE KEY----- XXXXXXX -----END RSA PRIVATE KEY----- 搜索 “KEY” 。
 1 tcp contains "KEY" 追踪TCP流，找到一句话提到了密钥，最后大部分是一张图片的base64数据。
 ...</p></div><footer class=entry-footer><span title='2025-11-11 15:24:51 +0000 UTC'>十一月 11, 2025</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>461 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [DDCTF2018]流量分析 1" href=https://yuexuan521.github.io/zh/posts/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF Rabbit 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
 密文： 1 U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI 解题思路：1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。 Rabbit在线工具
 2、得到flag。
 flag： 1 Cute_Rabbit Rabbit加解密算法： 密钥 - 共享的绝密暗号
 ...</p></div><footer class=entry-footer><span title='2025-10-21 13:21:08 +0000 UTC'>十月 21, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>822 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF Rabbit 1" href=https://yuexuan521.github.io/zh/posts/buuctf-rabbit-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [BSidesSF2019]zippy 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：下载附件，得到attachment.pcapng文件
 解题思路：1、打开attachment.pcapng文件，流量很少，简单浏览发现执行了两条命令。
 1 2 3 4 nc -l -p 4445 > flag.zip 使用 netcat 工具监听端口 4445 并将接收到的数据重定向到 flag.zip 文件。 unzip -P supercomplexpassword flag.zip 使用 unzip 工具来解压 flag.zip 文件。-P 选项后面跟的是解压密码 supercomplexpassword。 ...</p></div><footer class=entry-footer><span title='2025-10-20 08:00:00 +0000 UTC'>十月 20, 2025</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>307 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [BSidesSF2019]zippy 1" href=https://yuexuan521.github.io/zh/posts/buuctf-bsidessf2019zippy-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [SUCTF 2019]Game 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：感谢菠萝吹雪师傅出题。
+相关阅读
+CTF Wiki 题目描述：感谢菠萝吹雪师傅出题。
 flag 请替换 SUCTF{} 为 flag{} 后提交。
 密文：下载附件，得到一张图片和一个网站源代码
 解题思路：1、在网站源代码index.html中，发现经过Base32加密后的密文： ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===
 Base32编码解码 使用在线网站进行解密，得到假的flag： suctf{hAHaha_Fak3_F1ag}
 ...</p></div><footer class=entry-footer><span title='2025-10-13 08:00:00 +0000 UTC'>十月 13, 2025</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>436 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [SUCTF 2019]Game 1" href=https://yuexuan521.github.io/zh/posts/buuctf-suctf-2019game-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF USB 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki CTF解题技能之压缩包分析基础篇 BUUCTF：USB (usb键盘隐写)buuctf:USB
-...</p></div><footer class=entry-footer><span title='2025-10-06 12:09:55 +0000 UTC'>十月 6, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>714 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF USB 1" href=https://yuexuan521.github.io/zh/posts/buuctf-usb-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [GUET-CTF2019]虚假的压缩包 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki BUUCTF zip伪加密 1 RSA加密原理详解，以及RSA中的数论基础 BUUCTF：[GUET-CTF2019]虚假的压缩包 BUUCTF:[GUET-CTF2019]虚假的压缩包 Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛
-...</p></div><footer class=entry-footer><span title='2025-09-29 08:15:00 +0000 UTC'>九月 29, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>956 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [GUET-CTF2019]虚假的压缩包 1" href=https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [RCTF2019]draw 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki BUUCTF：[RCTF2019]draw RCTF 2019 Official Writeup
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki CTF解题技能之压缩包分析基础篇 BUUCTF：USB (usb键盘隐写)buuctf:USB ...</p></div><footer class=entry-footer><span title='2025-10-06 12:09:55 +0000 UTC'>十月 6, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>714 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF USB 1" href=https://yuexuan521.github.io/zh/posts/buuctf-usb-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [GUET-CTF2019]虚假的压缩包 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
+相关阅读
+CTF Wiki BUUCTF zip伪加密 1 RSA加密原理详解，以及RSA中的数论基础 BUUCTF：［GUET-CTF2019］虚假的压缩包 BUUCTF:［GUET-CTF2019］虚假的压缩包 Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛 ...</p></div><footer class=entry-footer><span title='2025-09-29 08:15:00 +0000 UTC'>九月 29, 2025</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>956 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [GUET-CTF2019]虚假的压缩包 1" href=https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019%E8%99%9A%E5%81%87%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%8C%85-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [RCTF2019]draw 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
+相关阅读
+CTF Wiki BUUCTF：［RCTF2019］draw RCTF 2019 Official Writeup 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：保存attachment.txt文件，内容如下：
 1 cs pu lt 90 fd 500 rt 90 pd fd 100 rt 90 repeat 18[fd 5 rt 10] lt 135 fd 50 lt 135 pu bk 100 pd setcolor pick [ red orange yellow green blue violet ] repeat 18[fd 5 rt 10] rt 90 fd 60 rt 90 bk 30 rt 90 fd 60 pu lt 90 fd 100 pd rt 90 fd 50 bk 50 setcolor pick [ red orange yellow green blue violet ] lt 90 fd 50 rt 90 fd 50 pu fd 50 pd fd 25 bk 50 fd 25 rt 90 fd 50 pu setcolor pick [ red orange yellow green blue violet ] fd 100 rt 90 fd 30 rt 45 pd fd 50 bk 50 rt 90 fd 50 bk 100 fd 50 rt 45 pu fd 50 lt 90 pd fd 50 bk 50 rt 90 setcolor pick [ red orange yellow green blue violet ] fd 50 pu lt 90 fd 100 pd fd 50 rt 90 fd 25 bk 25 lt 90 bk 25 rt 90 fd 25 setcolor pick [ red orange yellow green blue violet ] pu fd 25 lt 90 bk 30 pd rt 90 fd 25 pu fd 25 lt 90 pd fd 50 bk 25 rt 90 fd 25 lt 90 fd 25 bk 50 pu bk 100 lt 90 setcolor pick [ red orange yellow green blue violet ] fd 100 pd rt 90 arc 360 20 pu rt 90 fd 50 pd arc 360 15 pu fd 15 setcolor pick [ red orange yellow green blue violet ] lt 90 pd bk 50 lt 90 fd 25 pu home bk 100 lt 90 fd 100 pd arc 360 20 pu home 解题思路：1、从题目和文本的数据可以看出，要画出什么东西。数据是Logo语言代码，使用任意Logo语言解释器就可以运行代码，得到flag。
 ...</p></div><footer class=entry-footer><span title='2025-09-15 08:30:00 +0000 UTC'>九月 15, 2025</span>&nbsp;·&nbsp;<span>4 分钟</span>&nbsp;·&nbsp;<span>1649 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [RCTF2019]draw 1" href=https://yuexuan521.github.io/zh/posts/buuctf-rctf2019draw-1/></a></article><footer class=page-footer><nav class=pagination aria-label=分页导航><a class=next href=https://yuexuan521.github.io/zh/tags/buuctf/page/2/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><div class=footer-line><span>&copy; 2026 YueXuan</span>

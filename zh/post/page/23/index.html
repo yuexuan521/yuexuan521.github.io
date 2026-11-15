@@ -10,48 +10,48 @@
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E4%B8%93%E5%8D%87%E6%9C%AC/ title=专升本><span>专升本
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/ title=渗透测试><span>渗透测试</span></a></div></li><li><a href=https://yuexuan521.github.io/zh/archives/ title=归档><span>归档</span></a></li><li><a href=https://yuexuan521.github.io/zh/search/ title=搜索><span>搜索</span></a></li><li><a href=https://yuexuan521.github.io/zh/tags/ title=标签><span>标签</span></a></li><li><a href=https://yuexuan521.github.io/zh/about_me_zh/ title=关于><span>关于</span></a></li><li><a href=https://yuexuan521.github.io/zh/index.xml title=RSS><span>RSS</span></a></li></ul></nav></header><main class=main id=main tabindex=-1><header class=page-header><div class=breadcrumbs><a href=https://yuexuan521.github.io/zh/>主页</a></div><h1>文章
 <a href=/zh/post/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1><div class=post-description>全部技术笔记与实战记录。</div></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>[WUSTCTF2020]alison_likes_jojo 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。 感谢 Iven Huang 师傅供题。 比赛平台： https://ctfgame.w-ais.cn/
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。 感谢 Iven Huang 师傅供题。 比赛平台： https://ctfgame.w-ais.cn/
 密文：下载附件解压，得到两张jpg图片和一个文本文件。
 解题思路：1、使用010 Editor打开图片，发现boki.jpg图片隐藏了一个ZIP文件。
 ...</p></div><footer class=entry-footer><span title='2024-04-21 20:22:28 +0000 UTC'>四月 21, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>697 字</span></footer><a class=entry-link aria-label="阅读：[WUSTCTF2020]alison_likes_jojo 1" href=https://yuexuan521.github.io/zh/posts/wustctf2020alison_likes_jojo-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [GUET-CTF2019]zips 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：得到一个attachment.zip文件
 解题思路：1、解压attachment.zip，得到222.zip文件。尝试解压需要密码，使用Ziperello爆破密码，先尝试1~9位纯数字暴力破解，得到密码723456
 2、解压222.zip，得到111.zip文件。使用Ziperello打开111.zip文件，提示没有读取到加密文件，猜测存在zip伪加密。
 ...</p></div><footer class=entry-footer><span title='2024-04-21 20:14:36 +0000 UTC'>四月 21, 2024</span>&nbsp;·&nbsp;<span>3 分钟</span>&nbsp;·&nbsp;<span>1006 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [GUET-CTF2019]zips 1" href=https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019zips-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 文件中的秘密 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：小明经常喜欢在文件中藏一些秘密。时间久了便忘记了，你能帮小明找到该文件中的秘密吗？
+相关阅读
+CTF Wiki 题目描述：小明经常喜欢在文件中藏一些秘密。时间久了便忘记了，你能帮小明找到该文件中的秘密吗？
 密文：下载附件，解压得到JPEG图片。
 解题思路：1、根据题目提示，寻找文件中的秘密。在这里，我发现给到的文件是一张JPEG图片，使用StegSolve工具，查看图片文件格式。直接找到flag。（用WinHex也可以找到flag） 具体流程可以查看这篇文章： https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502
 2、将这段字符复制到word或记事本替换掉“.”，清除字符串里的空格，整理出flag。 清除空格在线工具
 ...</p></div><footer class=entry-footer><span title='2024-03-24 22:44:51 +0000 UTC'>三月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>240 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 文件中的秘密 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%A7%98%E5%AF%86-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 基础破解 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：给你一个压缩包，你并不能获得什么，因为他是四位数字加密的哈哈哈哈哈哈哈。。。不对= =我说了什么了不得的东西。。
+相关阅读
+CTF Wiki 题目描述：给你一个压缩包，你并不能获得什么，因为他是四位数字加密的哈哈哈哈哈哈哈。。。不对= =我说了什么了不得的东西。。
 密文：下载附件解压，发现一个rar压缩包。
 解题思路：1、尝试解压rar压缩包，找到flag.txt文件，似乎flag就在里面，但需要解压密码。
 2、根据题目的提示，密码是四位数字。我们使用RARP来暴力破解这个rar压缩包，选择密码长度和字符集，可以大大减少破解所需要的时间。
 ...</p></div><footer class=entry-footer><span title='2024-03-24 22:43:42 +0000 UTC'>三月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>294 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 基础破解 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E5%9F%BA%E7%A1%80%E7%A0%B4%E8%A7%A3-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [ACTF新生赛2020]NTFS数据流 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：下载附件，得到一个.tar文件。 解题思路：1、解压.tar文件，再解压tmp文件夹下的flag.rar文件，得到500个.txt文件。随便看一个.txt文件，内容如下。
 2、结合题目提示，这是一道关于NTFS交换数据流的题目。 NTFS 交换数据流 实现隐藏文件
 ...</p></div><footer class=entry-footer><span title='2024-03-21 20:49:16 +0000 UTC'>三月 21, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>324 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [ACTF新生赛2020]NTFS数据流 1" href=https://yuexuan521.github.io/zh/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020ntfs%E6%95%B0%E6%8D%AE%E6%B5%81-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF sqltest 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：网站遭受到攻击了，还好我们获取到了全部网络流量。 链接: https://pan.baidu.com/s/1AdQXVGKb6rkzqMLkSnGGBQ 提取码: 34uu 注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：网站遭受到攻击了，还好我们获取到了全部网络流量。 链接: https://pan.baidu.com/s/1AdQXVGKb6rkzqMLkSnGGBQ 提取码: 34uu 注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，得到一个.pcapng文件，双击在Wireshark中打开，内容如下。
 解题思路：1、根据题目提示，认为网络攻击类型为SQL注入，过滤出http的流量。
 随便看一条流量的追踪流，确认为SQL注入。
 按如下步骤，将所有HTTP请求导出为CSV文件。
 ...</p></div><footer class=entry-footer><span title='2024-03-21 20:47:49 +0000 UTC'>三月 21, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>428 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF sqltest 1" href=https://yuexuan521.github.io/zh/posts/buuctf-sqltest-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 另外一个世界 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：下载附件，解压得到一个.jpg图片。
+相关阅读
+CTF Wiki 题目描述：下载附件，解压得到一个.jpg图片。
 密文： 解题思路：1、这道题我尝试了很多方法，知道看了别人的wp才知道flag在我忽略的地方。将图片在010 Editor中打开，从上到下浏览一遍，发现最后的数据有些异常，由“0”和“1”组成。
 1 2 3 01101011011011110110010101101011011010100011001101110011 字符共计：56 个 数量为8的倍数 2、将这串字符分成8个字符一组，先转成十进制数字，再转成ASCII码，就可以得到flag值。这里使用工具直接完成。（我感觉这个flag没什么规律） 转换工具
 ...</p></div><footer class=entry-footer><span title='2024-02-24 16:37:44 +0000 UTC'>二月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>229 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 另外一个世界 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E5%8F%A6%E5%A4%96%E4%B8%80%E4%B8%AA%E4%B8%96%E7%95%8C-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 菜刀666 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：流量分析，你能找到flag吗 注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：流量分析，你能找到flag吗 注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，解压得到一个.pcapng文件。 解题思路：1、双击文件，打开wireshark。根据题目提示，我们过滤出POST数据包。（菜刀一般使用POST上传）
 1 http.request.method==POST 简单看了几个数据包之后，发现有个数据包不太正常。
 追踪流看一下，发现和前面几个数据包不同，有很长一串16进制字符串。 ...</p></div><footer class=entry-footer><span title='2024-02-23 10:59:54 +0000 UTC'>二月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>661 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 菜刀666 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%8F%9C%E5%88%80666-1/></a></article><footer class=page-footer><nav class=pagination aria-label=分页导航><a class=prev href=https://yuexuan521.github.io/zh/post/page/22/>«&nbsp;上一页&nbsp;

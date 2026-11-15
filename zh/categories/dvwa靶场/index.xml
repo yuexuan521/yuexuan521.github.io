@@ -581,7 +581,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -661,7 +661,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229035.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -793,7 +793,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229036.png" 
-             alt="" 
+             alt="输入 192.168.90.127&amp;ipconfig 后，页面先回显 ping 结果，再输出 Windows IP 配置" 
               
              loading="lazy"
         />
@@ -918,7 +918,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229037.png" 
-             alt="" 
+             alt="输入 192.168.90.127 &amp; ipconfig（中间带空格）同样能执行后面的命令" 
               
              loading="lazy"
         />
@@ -1026,7 +1026,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165229038.png" 
-             alt="" 
+             alt="输入框只填 ipconfig 提交，直接回显整段 Windows IP 配置" 
               
              loading="lazy"
         />
@@ -3401,7 +3401,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -3421,7 +3421,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -3496,7 +3496,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png" 
-             alt="" 
+             alt="XSS Reflected 页面，输入框里填了 " 
               
              loading="lazy"
         />
@@ -3506,7 +3506,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png" 
-             alt="" 
+             alt="提交后地址栏带上 payload，页面弹出对话框显示 /XSS/" 
               
              loading="lazy"
         />
@@ -3591,7 +3591,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png" 
-             alt="" 
+             alt="输入改成 &lt;scr" 
               
              loading="lazy"
         />
@@ -3601,7 +3601,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png" 
-             alt="" 
+             alt="这种嵌套写法仍然弹出 /XSS/，说明过滤被绕过" 
               
              loading="lazy"
         />
@@ -3715,7 +3715,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png" 
-             alt="" 
+             alt="换成  同样触发弹窗，页面回显 Hello" 
               
              loading="lazy"
         />

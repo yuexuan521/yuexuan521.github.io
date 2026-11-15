@@ -10,44 +10,44 @@
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E4%B8%93%E5%8D%87%E6%9C%AC/ title=专升本><span>专升本
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/ title=渗透测试><span>渗透测试</span></a></div></li><li><a href=https://yuexuan521.github.io/zh/archives/ title=归档><span>归档</span></a></li><li><a href=https://yuexuan521.github.io/zh/search/ title=搜索><span>搜索</span></a></li><li><a href=https://yuexuan521.github.io/zh/tags/ title=标签><span>标签</span></a></li><li><a href=https://yuexuan521.github.io/zh/about_me_zh/ title=关于><span>关于</span></a></li><li><a href=https://yuexuan521.github.io/zh/index.xml title=RSS><span>RSS</span></a></li></ul></nav></header><main class=main id=main tabindex=-1><header class=page-header><div class=breadcrumbs><a href=https://yuexuan521.github.io/zh/>主页</a>&nbsp;»&nbsp;<a href=https://yuexuan521.github.io/zh/tags/>标签</a></div><h1>BUUCTF
 <a href=/zh/tags/buuctf/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 丢失的MD5 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-密文： 1 2 3 4 5 6 7 8 9 import hashlib for i in range(32,127): for j in range(32,127): for k in range(32,127): m=hashlib.md5() m.update('TASC'+chr(i)+'O3RJMV'+chr(j)+'WDJKX'+chr(k)+'ZM') des=m.hexdigest() if 'e9032' in des and 'da' in des and '911513' in des: print des 解题思路：密文部分给了一串Python代码，发现一个语法错误
+相关阅读
+CTF Wiki 密文： 1 2 3 4 5 6 7 8 9 import hashlib for i in range(32,127): for j in range(32,127): for k in range(32,127): m=hashlib.md5() m.update('TASC'+chr(i)+'O3RJMV'+chr(j)+'WDJKX'+chr(k)+'ZM') des=m.hexdigest() if 'e9032' in des and 'da' in des and '911513' in des: print des 解题思路：密文部分给了一串Python代码，发现一个语法错误
 修改后
 运行代码，报错
 报错原因是：必须在哈希之前Unicode对象进行编码 对代码进行修改，对字符进行（UTF-8）编码
 ...</p></div><footer class=entry-footer><span title='2024-09-27 10:50:10 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>185 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 丢失的MD5 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E4%B8%A2%E5%A4%B1%E7%9A%84md5-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 大帝的密码武器 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：（下载题目，然后修改后缀名为.zip打开：）
+相关阅读
+CTF Wiki 题目描述：（下载题目，然后修改后缀名为.zip打开：）
 公元前一百年，在罗马出生了一位对世界影响巨大的人物，他生前是罗马三巨头之一。他率先使用了一种简单的加密函，因此这种加密方法以他的名字命名。 以下密文被解开后可以获得一个有意义的单词：FRPHEVGL 你可以用这个相同的加密向量加密附件中的密文，作为答案进行提交。
 ...</p></div><footer class=entry-footer><span title='2024-09-27 10:44:17 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>515 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 大帝的密码武器 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E5%A4%A7%E5%B8%9D%E7%9A%84%E5%AF%86%E7%A0%81%E6%AD%A6%E5%99%A8-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 信息化时代的步伐 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：也许中国可以早早进入信息化时代，但是被清政府拒绝了。附件中是数十年后一位伟人说的话的密文。请翻译出明文(答案为一串中文！)
+相关阅读
+CTF Wiki 题目描述：也许中国可以早早进入信息化时代，但是被清政府拒绝了。附件中是数十年后一位伟人说的话的密文。请翻译出明文(答案为一串中文！)
 密文： 1 606046152623600817831216121621196386 解题步骤：1、得到密文长度，为36位。
 2、题目说结果为中文，结合36（4x9）位的纯数字密文，猜测为中文电码解密。 电报码在线翻译
 ...</p></div><footer class=entry-footer><span title='2024-09-27 10:36:54 +0000 UTC'>九月 27, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>627 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 信息化时代的步伐 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E4%BF%A1%E6%81%AF%E5%8C%96%E6%97%B6%E4%BB%A3%E7%9A%84%E6%AD%A5%E4%BC%90-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 萌萌哒的八戒 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：萌萌哒的八戒原来曾经是猪村的村长，从远古时期，猪村就有一种神秘的代码。请从附件中找出代码，看看萌萌哒的猪八戒到底想说啥
+相关阅读
+CTF Wiki 题目描述：萌萌哒的八戒原来曾经是猪村的村长，从远古时期，猪村就有一种神秘的代码。请从附件中找出代码，看看萌萌哒的猪八戒到底想说啥
 密文：解压是一张图片
 解题步骤：1、看图，观察密文特征，结合题目，判断为猪圈加密。直接使用在线工具。 猪圈密码解密工具
 2、直接对应密文输入，解出密文，得到flag。
 flag: 1 whenthepigwanttoeat</p></div><footer class=entry-footer><span title='2024-09-25 21:47:31 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>155 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 萌萌哒的八戒 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%90%8C%E8%90%8C%E5%93%92%E7%9A%84%E5%85%AB%E6%88%92-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF Unencode 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
 密文： 1 89FQA9WMD&lt;V1A&lt;V1S83DY.#&lt;W3$Q,2TM] 解题思路：1、观察密文，尝试Base85、Base91等编码，均失败。 2、结合题目，联想到UUencode编码，尝试后成功，得到flag。
 UUencode加解密
 ...</p></div><footer class=entry-footer><span title='2024-09-25 21:41:03 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>563 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF Unencode 1" href=https://yuexuan521.github.io/zh/posts/buuctf-unencode-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [AFCTF2018]Morse 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文： 1 -..../.----/-..../-..../-..../...--/--.../....-/-..../-..../--.../-.../...--/.----/--.../...--/..---/--.../--.../....-/...../..-./--.../...--/...--/-----/...../..-./...--/...--/...--/....-/...--/...../--.../----./--.../-.. 解题思路：1、观察密文，我想大家不陌生，看一眼题目，直接确定摩斯密码。 摩斯密码加解密
 2、得到一次明显不是flag的东东，去除一下空格，看下字符串长度。 文本去除工具 字符串长度计算
 ...</p></div><footer class=entry-footer><span title='2024-09-25 21:37:33 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>209 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [AFCTF2018]Morse 1" href=https://yuexuan521.github.io/zh/posts/buuctf-afctf2018morse-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF old-fashion 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
 密文： 1 Os drnuzearyuwn, y jtkjzoztzoes douwlr oj y ilzwex eq lsdexosa kn pwodw tsozj eq ufyoszlbz yrl rlufydlx pozw douwlrzlbz, ydderxosa ze y rlatfyr jnjzli; mjy gfbmw vla xy wbfnsy symmyew (mjy vrwm qrvvrf), hlbew rd symmyew, mebhsymw rd symmyew, vbomgeyw rd mjy lxrzy, lfk wr dremj. Mjy eyqybzye kyqbhjyew mjy myom xa hyedrevbfn lf bfzyewy wgxwmbmgmbrf. Wr mjy dsln bw f1_2jyf-k3_jg1-vb-vl_l 解题思路：1、观察密文特征，词频分析，使用爆破工具，工具 quipqiup 。
 2、得到flag。（注意：得到的 flag 请包上 flag{} 提交）
 flag： 1 n1_2hen-d3_hu1-mi-ma_a</p></div><footer class=entry-footer><span title='2024-09-25 20:43:44 +0000 UTC'>九月 25, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>152 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF old-fashion 1" href=https://yuexuan521.github.io/zh/posts/buuctf-old-fashion-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 被嗅探的流量 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？
+相关阅读
+CTF Wiki 题目描述：某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？
 密文：下载附件，解压得到一个.pcapng文件。
 解题思路：1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）
 2、通过在顶部过滤器输入“http”语句，将HTTP流量过滤出来。（也可以使用“http.request.method==POST”语句实现更精确的过滤）

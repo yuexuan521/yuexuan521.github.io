@@ -31,12 +31,24 @@
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;相关阅读
-&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;
-&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;
-&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;
-&lt;a href=&#34;https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;amp;u_asig=0a472f9017274948088853311e0043#toc-24&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;安洵杯2019 官方Writeup(Web/Misc) - D0g3&lt;/a&gt;
-&lt;a href=&#34;https://blog.csdn.net/weixin_66146598/article/details/125129282&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;[安洵杯 2019]Attack （详细解析）&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;相关阅读&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;amp;u_asig=0a472f9017274948088853311e0043#toc-24&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;安洵杯2019 官方Writeup(Web/Misc) - D0g3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_66146598/article/details/125129282&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;［安洵杯 2019］Attack （详细解析）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png&#34;&gt;
+        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png&#34; 
+             alt=&#34;BUUCTF 题目「［安洵杯 2019］Attack 1」页面，附件为 attachment.zip&#34; 
+              
+             loading=&#34;lazy&#34;
+        /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png">
@@ -49,12 +61,14 @@
 </div></p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
-<p>相关阅读
-<a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a>
-<a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a>
-<a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a>
-<a href="https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;u_asig=0a472f9017274948088853311e0043#toc-24"target="_blank" rel="noopener noreferrer">安洵杯2019 官方Writeup(Web/Misc) - D0g3</a>
-<a href="https://blog.csdn.net/weixin_66146598/article/details/125129282"target="_blank" rel="noopener noreferrer">[安洵杯 2019]Attack （详细解析）</a></p>
+<p>相关阅读</p>
+<ul>
+<li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
+<li><a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a></li>
+<li><a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></li>
+<li><a href="https://xz.aliyun.com/t/6911?time__1311=n4%2bxnD0DgDuAG=DOzNDsA3xCTWk8DcAgBmoD&amp;u_atoken=125653dce1d42cc643b337d1c883f99f&amp;u_asig=0a472f9017274948088853311e0043#toc-24"target="_blank" rel="noopener noreferrer">安洵杯2019 官方Writeup(Web/Misc) - D0g3</a></li>
+<li><a href="https://blog.csdn.net/weixin_66146598/article/details/125129282"target="_blank" rel="noopener noreferrer">［安洵杯 2019］Attack （详细解析）</a></li>
+</ul>
 <p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png">

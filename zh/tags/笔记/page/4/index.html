@@ -10,39 +10,40 @@
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E4%B8%93%E5%8D%87%E6%9C%AC/ title=专升本><span>专升本
 </span></a><a href=https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/ title=渗透测试><span>渗透测试</span></a></div></li><li><a href=https://yuexuan521.github.io/zh/archives/ title=归档><span>归档</span></a></li><li><a href=https://yuexuan521.github.io/zh/search/ title=搜索><span>搜索</span></a></li><li><a href=https://yuexuan521.github.io/zh/tags/ title=标签><span>标签</span></a></li><li><a href=https://yuexuan521.github.io/zh/about_me_zh/ title=关于><span>关于</span></a></li><li><a href=https://yuexuan521.github.io/zh/index.xml title=RSS><span>RSS</span></a></li></ul></nav></header><main class=main id=main tabindex=-1><header class=page-header><div class=breadcrumbs><a href=https://yuexuan521.github.io/zh/>主页</a>&nbsp;»&nbsp;<a href=https://yuexuan521.github.io/zh/tags/>标签</a></div><h1>笔记
 <a href=/zh/tags/%E7%AC%94%E8%AE%B0/index.xml title=RSS aria-label=RSS><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [SUCTF2018]single dog 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。来源： https://github.com/hebtuerror404/CTF_competition_warehouse_2018 密文：下载附件，得到一张.jpg图片。 解题思路：1、看了一下注释，没什么东西。放到010Editor中看一下，找到“pk”文件头，猜测隐藏了zip压缩包。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。来源： https://github.com/hebtuerror404/CTF_competition_warehouse_2018 密文：下载附件，得到一张.jpg图片。 解题思路：1、看了一下注释，没什么东西。放到010Editor中看一下，找到“pk”文件头，猜测隐藏了zip压缩包。
 使用Kali中的binwalk工具进行检测，确认存在zip压缩包和flag.txt文件。使用Kali中的foremost工具，分离出misc.jpg中的压缩文件，查看output目录下的文件，解压zip文件，得到1.txt文件（如果提示错误尝试删除原有的output目录，再执行foremost）。
 ...</p></div><footer class=entry-footer><span title='2024-09-21 22:55:18 +0000 UTC'>九月 21, 2024</span>&nbsp;·&nbsp;<span>7 分钟</span>&nbsp;·&nbsp;<span>3383 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [SUCTF2018]single dog 1" href=https://yuexuan521.github.io/zh/posts/buuctf-suctf2018single-dog-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [UTCTF2020]docx 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：下载附件，得到一个.docx文件。 解题思路：1、打开文件，内容如下，没有flag。
 使用010Editor打开.docx文件，发现存在PK文件的文件头，确认为zip文件。（office的文件似乎都是zip压缩包，通过某种技术呈现为我们看到的样子） （ZIPArchive(zip)，文件头：50 4B 03 04）
 ...</p></div><footer class=entry-footer><span title='2024-09-21 20:41:56 +0000 UTC'>九月 21, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>245 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [UTCTF2020]docx 1" href=https://yuexuan521.github.io/zh/posts/buuctf-utctf2020docx-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 间谍启示录 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：在城际公路的小道上，罪犯G正在被警方追赶。警官X眼看他正要逃脱，于是不得已开枪击中了罪犯G。罪犯G情急之下将一个物体抛到了前方湍急的河流中，便头一歪突然倒地。警官X接近一看，目标服毒身亡。数分钟后，警方找到了罪犯遗失物体，是一个U盘，可惜警方只来得及复制镜像，U盘便报废了。警方现在拜托你在这个镜像中找到罪犯似乎想隐藏的秘密。 注意：得到的 flag 请包上 flag{} 提交
+相关阅读
+CTF Wiki 题目描述：在城际公路的小道上，罪犯G正在被警方追赶。警官X眼看他正要逃脱，于是不得已开枪击中了罪犯G。罪犯G情急之下将一个物体抛到了前方湍急的河流中，便头一歪突然倒地。警官X接近一看，目标服毒身亡。数分钟后，警方找到了罪犯遗失物体，是一个U盘，可惜警方只来得及复制镜像，U盘便报废了。警方现在拜托你在这个镜像中找到罪犯似乎想隐藏的秘密。 注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，得到一个.iso文件。 解题思路：1、用Bandzip打开.iso文件，看到内部有很多文件。（010Editor也可以看到）
 使用foremost分离文件，在output目录中找到四个文件。（可以直接解压.iso文件，会得到很多文件）
 ...</p></div><footer class=entry-footer><span title='2024-09-21 20:39:36 +0000 UTC'>九月 21, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>472 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 间谍启示录 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E9%97%B4%E8%B0%8D%E5%90%AF%E7%A4%BA%E5%BD%95-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF zip伪加密 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：下载附件，得到一个zip压缩包。
+相关阅读
+CTF Wiki 题目描述：下载附件，得到一个zip压缩包。
 密文： 解题思路：1、刚开始尝试解压，看到了flag.txt文件，但需要解压密码。结合题目，确认这是zip伪加密，不需要浪费时间寻找密码了。将文件在010 Editor中打开，分析它的文件格式，修改相关参数。
 zip伪加密原理 2、通过修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），达到将伪压缩文件恢复到未加密的状态的目的。将下方的两个“09 00”修改为“00 00”，保存文件完成还原。
 ...</p></div><footer class=entry-footer><span title='2024-08-24 22:48:07 +0000 UTC'>八月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>441 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF zip伪加密 1" href=https://yuexuan521.github.io/zh/posts/buuctf-zip%E4%BC%AA%E5%8A%A0%E5%AF%86-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF wireshark 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)
+相关阅读
+CTF Wiki 题目描述：黑客通过wireshark抓到管理员登陆网站的一段流量包（管理员的密码即是答案)
 密文：下载附件，解压后得到一个.pcap文件。
 解题思路：1、双击文件，在wireshark打开。
 2、分析题目，需要找到管理员登陆网站的流量，并从中找到登录密码。使用“http.request.method==POST”语句过滤流量包，得到一条登录流量。
 ...</p></div><footer class=entry-footer><span title='2024-08-24 22:42:44 +0000 UTC'>八月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>228 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF wireshark 1" href=https://yuexuan521.github.io/zh/posts/buuctf-wireshark-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [BJDCTF2020]藏藏藏 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：来源：https://github.com/BjdsecCA/BJDCTF2020
+相关阅读
+CTF Wiki 题目描述：来源：https://github.com/BjdsecCA/BJDCTF2020
 密文：下载附件，解压得到一张.jpg图片和一个.txt文件。 解题思路：1、一张图片，典型的图片隐写。在010Editor中找到PK文件头，确认隐藏zip压缩包。放到Kali中，使用binwalk检测，也确认图片中有zip压缩包。（第一个“藏”） 使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。 尝试解压压缩包，得到一个.docx文件。 ...</p></div><footer class=entry-footer><span title='2024-08-23 22:47:52 +0000 UTC'>八月 23, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>424 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [BJDCTF2020]藏藏藏 1" href=https://yuexuan521.github.io/zh/posts/buuctf-bjdctf2020%E8%97%8F%E8%97%8F%E8%97%8F-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 秘密文件 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki 题目描述：深夜里，Hack偷偷的潜入了某公司的内网，趁着深夜偷走了公司的秘密文件，公司的网络管理员通过通过监控工具成功的截取Hack入侵时数据流量，但是却无法分析出Hack到底偷走了什么机密文件，你能帮帮管理员分析出Hack到底偷走了什么机密文件吗？
+相关阅读
+CTF Wiki 题目描述：深夜里，Hack偷偷的潜入了某公司的内网，趁着深夜偷走了公司的秘密文件，公司的网络管理员通过通过监控工具成功的截取Hack入侵时数据流量，但是却无法分析出Hack到底偷走了什么机密文件，你能帮帮管理员分析出Hack到底偷走了什么机密文件吗？
 密文：下载附件，解压得到一个.pcapng文件。 解题思路：1、双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。 追踪ftp流量，有出题者留下的话，并且发现流量中有flag.rar压缩包。
 1 2 原文：HI, i know you are a hacker who is trying to hack me ,but can u find where is the flag？ 翻译：你好，我知道你是黑客，想黑我，但你能找到flag在哪里吗？ ...</p></div><footer class=entry-footer><span title='2024-08-23 11:03:30 +0000 UTC'>八月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>511 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 秘密文件 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E7%A7%98%E5%AF%86%E6%96%87%E4%BB%B6-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [HBNIS2018]excel破解 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
-相关阅读 CTF Wiki
-题目描述：得到的 flag 请包上 flag{} 提交。来源： https://github.com/hebtuerror404/CTF_competition_warehouse_2018
+相关阅读
+CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。来源： https://github.com/hebtuerror404/CTF_competition_warehouse_2018
 密文：下载附件，得到一个attachment.xls文件。 解题思路：1、双击.xls文件，提示需要密码。
 2、使用010Editor查看该文件，查找文本“flag”，一条一条地看下来，找到flag。
 ...</p></div><footer class=entry-footer><span title='2024-08-22 20:35:18 +0000 UTC'>八月 22, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>177 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [HBNIS2018]excel破解 1" href=https://yuexuan521.github.io/zh/posts/buuctf-hbnis2018excel%E7%A0%B4%E8%A7%A3-1/></a></article><footer class=page-footer><nav class=pagination aria-label=分页导航><a class=prev href=https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/page/3/>«&nbsp;上一页&nbsp;
