@@ -1305,26 +1305,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;验证整个网络的连通性。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置R1以支持与R3之间的站点到站点IPsec VPN。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
-             alt="" 
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关" 
               
              loading="lazy"
         />
@@ -1344,7 +1335,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
-             alt="" 
+             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55" 
               
              loading="lazy"
         />
@@ -1356,7 +1347,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png" 
-             alt="（此处未给出具体参数，请补充完整）" 
+             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp" 
               
              loading="lazy"
         />
@@ -1374,7 +1365,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms" 
               
              loading="lazy"
         />
@@ -1386,7 +1377,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
-             alt="" 
+             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation" 
               
              loading="lazy"
         />
@@ -1479,7 +1470,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
-             alt="" 
+             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立" 
               
              loading="lazy"
         />
@@ -1491,7 +1482,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
-             alt="" 
+             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）" 
               
              loading="lazy"
         />
@@ -1503,7 +1494,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
-             alt="" 
+             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE" 
               
              loading="lazy"
         />
@@ -1515,7 +1506,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
-             alt="" 
+             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms" 
               
              loading="lazy"
         />
@@ -1527,7 +1518,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
-             alt="" 
+             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3" 
               
              loading="lazy"
         />
@@ -3132,23 +3123,17 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;在SW-1和SW-2之间建立新的冗余链路。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在新连接的SW-1和SW-2之间的干线链路上启用中继并配置安全措施。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="" 
+             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20" 
               
              loading="lazy"
         />
@@ -3187,7 +3172,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="" 
+             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包" 
               
              loading="lazy"
         />
@@ -3197,7 +3182,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="" 
+             alt="C3 ping 192.168.10.1 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -3209,7 +3194,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="" 
+             alt="C2 ping 192.168.5.2 通，TTL=127" 
               
              loading="lazy"
         />
@@ -3219,7 +3204,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="" 
+             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%" 
               
              loading="lazy"
         />
@@ -3231,7 +3216,7 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="" 
+             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联" 
               
              loading="lazy"
         />
@@ -3306,7 +3291,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="" 
+             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）" 
               
              loading="lazy"
         />
@@ -3316,7 +3301,7 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="" 
+             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100" 
               
              loading="lazy"
         />
@@ -3335,7 +3320,7 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="" 
+             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%" 
               
              loading="lazy"
         />
@@ -3345,7 +3330,7 @@ SW-A(config-if)#no shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="" 
+             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包" 
               
              loading="lazy"
         />
@@ -3393,7 +3378,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="" 
+             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#" 
               
              loading="lazy"
         />
@@ -3404,7 +3389,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="" 
+             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包" 
               
              loading="lazy"
         />
@@ -3418,7 +3403,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="" 
+             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断" 
               
              loading="lazy"
         />
@@ -3809,26 +3794,17 @@ R1(config-sigdef)#exit</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;验证连接并探索ASA设备&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;使用CLI配置ASA的基本设置和接口安全级别&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;使用CLI配置路由、地址转换和检查策略&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png" 
-             alt="" 
+             alt="地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C" 
               
              loading="lazy"
         />
@@ -3959,7 +3935,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png" 
-             alt="" 
+             alt="PC-B ping 网关 192.168.1.1 通，0% 丢包" 
               
              loading="lazy"
         />
@@ -3970,7 +3946,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png" 
-             alt="" 
+             alt="PC-B ping 209.165.200.226（ASA Outside）全部超时，丢包 100%" 
               
              loading="lazy"
         />
@@ -4011,7 +3987,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png" 
-             alt="" 
+             alt="PC-B ping 209.165.200.225（R1）同样全部超时" 
               
              loading="lazy"
         />
@@ -4049,7 +4025,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png" 
-             alt="" 
+             alt="配置 NAT 后 PC-B 再 ping 209.165.200.225，已通，TTL=254" 
               
              loading="lazy"
         />
@@ -4088,7 +4064,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png" 
-             alt="" 
+             alt="PC-B 通过 DHCP 获得 192.168.1.5，网关 192.168.1.1，DNS 209.165.201.2" 
               
              loading="lazy"
         />
@@ -4150,7 +4126,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png" 
-             alt="" 
+             alt="PC-C 用 ssh -l admin 209.165.200.226 登录 ASA，进入 CCNAS-ASA&gt;" 
               
              loading="lazy"
         />
@@ -4169,7 +4145,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png" 
-             alt="" 
+             alt="PC-B 用 ssh -l admin 192.168.1.1 从内网登录 ASA" 
               
              loading="lazy"
         />
@@ -4215,7 +4191,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png" 
-             alt="" 
+             alt="ASA 上 show interface ip brief：Vlan1 192.168.1.1、Vlan2 209.165.200.226、Vlan3 192.168.2.1" 
               
              loading="lazy"
         />
@@ -4228,7 +4204,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png" 
-             alt="" 
+             alt="ASA 上 show ip address：inside/outside/dmz 三个接口的地址与掩码" 
               
              loading="lazy"
         />
@@ -4241,7 +4217,7 @@ R1(config-sigdef)#exit</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png" 
-             alt="" 
+             alt="ASA 上 show switch vlan：VLAN1 inside、VLAN2 outside、VLAN3 dmz 及各自成员端口" 
               
              loading="lazy"
         />

@@ -23,26 +23,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;验证整个网络的连通性。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置R1以支持与R3之间的站点到站点IPsec VPN。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;背景场景&#34;&gt;背景/场景&lt;/h3&gt;&lt;p&gt;网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
-             alt="" 
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关" 
               
              loading="lazy"
         />
@@ -62,7 +53,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
-             alt="" 
+             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55" 
               
              loading="lazy"
         />
@@ -74,7 +65,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png" 
-             alt="（此处未给出具体参数，请补充完整）" 
+             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp" 
               
              loading="lazy"
         />
@@ -92,7 +83,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
-             alt="" 
+             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms" 
               
              loading="lazy"
         />
@@ -104,7 +95,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
-             alt="" 
+             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation" 
               
              loading="lazy"
         />
@@ -197,7 +188,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
-             alt="" 
+             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立" 
               
              loading="lazy"
         />
@@ -209,7 +200,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
-             alt="" 
+             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）" 
               
              loading="lazy"
         />
@@ -221,7 +212,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
-             alt="" 
+             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE" 
               
              loading="lazy"
         />
@@ -233,7 +224,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
-             alt="" 
+             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms" 
               
              loading="lazy"
         />
@@ -245,7 +236,7 @@ R3(config-if)# crypto map VPN-MAP</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
-             alt="" 
+             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3" 
               
              loading="lazy"
         />
