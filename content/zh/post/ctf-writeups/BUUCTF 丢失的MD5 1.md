@@ -12,7 +12,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204941704.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204941704.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204944216.png)
+ ![题目页「丢失的MD5 1」，附件 17292421-ac…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204944216.png)
 
 ### 密文：
 
@@ -43,15 +43,15 @@ for i in range(32,127):
 
 密文部分给了一串Python代码，发现一个语法错误
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204945731.png)
+![三层循环的爆破脚本，用 chr(i)、chr(j)、chr(k) 补出缺失字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204945731.png)
 
 修改后
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204947594.png)
+![同一段脚本，print(des) 被高亮，输出补全后的 MD5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204947594.png)
 
 运行代码，报错
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204949995.png)
+![运行报错 TypeError: Strings must be encoded before hashing，Python 3 需先 encode](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204949995.png)
 
 报错原因是：必须在哈希之前Unicode对象进行编码
 对代码进行修改，对字符进行（UTF-8）编码

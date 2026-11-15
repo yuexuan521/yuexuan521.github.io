@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205036313.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png)
+ ![题目页「大帝的密码武器 1」，附件 zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205038483.png)
 
 ### 题目描述：
 
@@ -71,15 +71,15 @@ for i in range(26):
 
 2、得到26个结果。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png)
+![凯撒偏移 0 到 25 的结果，第 13 行高亮 security](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205040570.png)
 
 3、寻找有意义的单词，发现偏移量为13的结果为有意义的单词。可以通过翻译软件，快速找到有意义的单词。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png)
+![Google 翻译界面，左侧列表里的 security 被译成「保安」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205042425.png)
 
 4、对密文进行偏移量为13的凯撒解密，得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png)
+![另一种偏移列表，第 0 行是 ComeChina](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205044350.png)
 
 ### flag：
 

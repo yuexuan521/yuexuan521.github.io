@@ -12,7 +12,7 @@ tags:
 - "笔记"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193029240.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png)
+![题目页「文件中的秘密 1」，附件 e184eefc-20…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193031339.png)
 
 ### 题目描述：
 
@@ -33,19 +33,19 @@ tags:
 
 下载附件，解压得到JPEG图片。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg)
+![路飞竖大拇指的插画](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193032942.jpeg)
 
 ### 解题思路：
 
 1、根据题目提示，寻找文件中的秘密。在这里，我发现给到的文件是一张JPEG图片，使用StegSolve工具，查看图片文件格式。直接找到flag。（用WinHex也可以找到flag）
 具体流程可以查看这篇文章： [https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502](https://blog.csdn.net/YueXuan_521/article/details/133817677?spm=1001.2014.3001.5502) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193035480.png)
+![File Format Analysis 弹窗，显示出 f.l.a.g.{ 与 8.7.0.c.5.a.7.2. 这类带点的字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193035480.png)
 
 2、将这段字符复制到word或记事本替换掉“.”，清除字符串里的空格，整理出flag。
 [清除空格在线工具](http://www.esjson.com/delSpace.html) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193036956.png)
+![去空格工具处理后得到 flag{870c5a72806115cb5439345d8b014396}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193036956.png)
 
 ### flag：
 

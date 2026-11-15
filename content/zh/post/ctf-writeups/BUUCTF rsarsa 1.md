@@ -10,7 +10,7 @@ tags:
 - "CTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204902472.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204902472.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204904813.png)
+ ![题目页「rsarsa 1」，附件 10bacfa1-be…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204904813.png)
 
 ### 题目描述：
 
@@ -46,7 +46,7 @@ Use RSA to find the secret message
 
 1、打开RSATool，将Number Base 设置为十进制
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204906204.png)
+![RSA-Tool 2 界面：Keysize 256、E=10001，已填入两段大素数 P 和 Q](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204906204.png)
 
 2、算出N，N=Q * P，执行下列Python代码，得到结果
 
@@ -61,7 +61,7 @@ print(n)
 3、将Q、P、N的值，填入适当的位置，点击Calc.D按钮，算出D。
 （如果给出的是N和E的话，输入N和E，点击Factor N(分解)，得到P,Q,再重复第3步就能得到D了）
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204908541.png)
+![同一界面，红框标出 Calc. D 按钮，用来算出私钥 d](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204908541.png)
 
 4、得到D后，执行下列Python代码，最后得到明文。
 
@@ -78,7 +78,7 @@ M = pow(c, d, n)
 print(M)
 ```
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204910754.png)
+![程序跑出的结果 5577446633554466577768879988](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204910754.png)
 
 ### flag:
 

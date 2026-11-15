@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193005917.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193005917.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193007997.png)
+ ![题目页「我吃三明治 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193007997.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一张.jpg图片。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193009640.jpeg)
+ ![一张三明治的照片，作为隐写载体](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193009640.jpeg)
 
 ---
 
@@ -44,11 +44,11 @@ tags:
 MZWGCZ33GZTDCNZZG5SDIMBYGBRDEOLCGY2GIYJVHA4TONZYGA2DMM3FGMYH2
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193011225.png)
+ ![十六进制视图，红框标出 FF D9 之后紧跟 MZWGCZ33GZTD…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193011225.png)
 
 2、使用在线网站进行解密，得到flag。
 
-[Base32编码解码](https://www.qqxiuzi.cn/bianma/base.php)  ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193013271.png)
+[Base32编码解码](https://www.qqxiuzi.cn/bianma/base.php)  ![Base32 解码得到 flag{6f1797d4080b29b64da5897780463e30}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193013271.png)
 
 ```bash
 "flag"经过Base32编码后是”MZWGCZY=”。
