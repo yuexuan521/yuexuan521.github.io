@@ -49,7 +49,7 @@ HFish 提供了 API 用于获取攻击数据。
 3. 获取 **API Key** 和 **管理端地址**。
    - *注意：如果你的 HFish 在内网，确保运行脚本的机器能访问到 HFish 的管理端口（默认 4433）。*
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png)
+![HFish 系统配置 → API 配置，红框标出 api_key 输入框](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png)
 
 ## 第二步：编写自动化提取脚本 (Python)
 
@@ -227,7 +227,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
    2. 勾选 **"Keep my email addresses private"**。
    3. 你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。
 
-   ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png)
+   ![GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png)
 
    **配置方法：**（修改5. 配置 Git 身份）
 
@@ -335,7 +335,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
 
    - 打开 GitHub 仓库 -> **Settings** -> **Deploy keys** -> **Add deploy key**。
 
-     ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png)
+     ![仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png)
 
    - **Title**: HFish Server
 
@@ -343,7 +343,7 @@ git clone https://github.com/yourusername/honeypot-blocklist.git threat-feed
 
    - **重要**：勾选 **Allow write access**（允许写入权限），否则无法推送！
 
-     ![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png)
+     ![部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png)
 
 5. **手动测试连接**（必须做一次！）：
    在服务器执行：
@@ -433,4 +433,4 @@ https://yourusername.github.io/honeypot-blocklist/ip_list.txt
 
 **效果展示：**
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png)
+![浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png)

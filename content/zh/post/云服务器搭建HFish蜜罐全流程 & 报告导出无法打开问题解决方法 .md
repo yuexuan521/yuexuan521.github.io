@@ -9,7 +9,7 @@ tags:
 
 闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png)
+![云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png)
 
 [HFish蜜罐官网：https://hfish.net/#/](https://hfish.net/#/)
 
@@ -46,11 +46,11 @@ firewall-cmd --add-port=4434/tcp --permanent   #（用于节点与管理端通�
 firewall-cmd --reload
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png)
+![firewall-cmd 放行 4433、4434 端口并 reload，均返回 success](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png)
 
 可能提示需要开启防火墙，使用如下命令：
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png)
+![执行 firewall-cmd 时报错 FirewallD is not running](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png)
 
 ```
 systemctl status firewalld
@@ -58,7 +58,7 @@ systemctl start firewalld
 systemctl status firewalld
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png)
+![systemctl 启动 firewalld 后，状态变为 active (running)](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png)
 
 ### 一键部署HFish蜜罐
 
@@ -68,11 +68,11 @@ systemctl status firewalld
 bash <(curl -sS -L https://hfish.net/webinstall.sh)
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png)
+![执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png)
 
 出现下面提示，表示成功安装。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png)
+![安装完成输出 install hfish success! 与 install hfish finished!](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png)
 
 
 
@@ -102,7 +102,7 @@ Loading mirror speeds from cached hostfile
 
 打开 [http://dev.mysql.com/downloads/repo/yum/](https://link.zhihu.com/?target=http%3A//dev.mysql.com/downloads/repo/yum/)
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png)
+![MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png)
 
 根据你的系统版本，选择对应的安装包，例如我的是CentOS 7.5，这个系统的Linux内核是 Linux 7，所以我选择了红框内的地址，大家依次类推。
 
@@ -141,7 +141,7 @@ rpm -ivh mysql84-community-release-el8-2.noarch.rpm
 yum module disable mysql
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png)
+![执行 yum module disable mysql 并确认，输出 Complete!](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png)
 
 ### 再次安装
 
@@ -215,13 +215,13 @@ CREATE DATABASE HFish001;
 show databases;
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png)
+![在 mysql 中建库 HFish001，随后 show databases 确认已存在](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png)
 
 ## 登录Web界面
 
 华为云服务器需要添加一条安全组规则，允许访问4433端口
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png)
+![云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png)
 
 完成安装后，通过以下网址、账号密码登录
 
@@ -237,19 +237,19 @@ show databases;
 注意：访问管理端的URL中必须有/web/目录
 ```
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png)
+![HFish 登录页，包含账号、密码与验证码输入框](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png)
 
 初次配置需要选择数据库，端口默认3306，数据库名：HFish001，用户名密码为MySQL的数据库密码
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png)
+![HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png)
 
 配置成功，等待重启
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png)
+![提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png)
 
 看到下方的管理界面
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png)
+![HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png)
 
 
 
@@ -257,11 +257,11 @@ show databases;
 
 选择“节点管理”，可以配置蜜罐服务
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png)
+![节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png)
 
 华为云服务器需要相应添加安全组规则，开放端口
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png)
+![云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png)
 
 CentOS内的firewall也需要开放相应端口
 
@@ -275,11 +275,11 @@ CentOS内的firewall也需要开放相应端口
 
 测试http://[ip]:[port]，相应的服务已经可以访问了
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png)
+![仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png)
 
 稍等片刻，就可以看到攻击者的记录了
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png)
+![攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png)
 
 
 
@@ -289,11 +289,11 @@ CentOS内的firewall也需要开放相应端口
 
 在系统配置内，选择“白名单配置”，填入自己的网段可以减少管理蜜罐时产生的误报
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png)
+![系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png)
 
 ### 数据大屏
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png)
+![攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png)
 
 其它功能详见HFish蜜罐功能手册：[[快速了解HFish](https://hfish.net/#/README)]
 
@@ -305,24 +305,24 @@ CentOS内的firewall也需要开放相应端口
 
 可以在网站上预览：
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png)
+![报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png)
 
 
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png)
+![报告正文首页：HFish 分析报告的概述与核心摘要](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png)
 
 通过Word打开显示错误如下：
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png)
+![Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png)
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png)
+![Word 报错弹窗：在试图打开文件时遇到错误](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png)
 
 我的Office版本为2021，2019版本也会遇到这个问题。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png)
+![产品信息：Microsoft Office 家庭和学生版 2021](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png)
 
 ### 解决方法：
 
 使用WPS可以正常打开下载下来的。或者用WPS另存为.doc文件后，word也可以正常打开。
 
-![](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png)
+![WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)](https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png)
