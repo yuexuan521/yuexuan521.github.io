@@ -11,7 +11,7 @@ tags:
 - "BUUCTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191059911.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png)
+ ![题目页「［GUET-CTF2019］zips 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191101989.png)
 
 ### 题目描述：
 
@@ -56,11 +56,11 @@ tags:
 
 使用010Editor打开111.zip文件，修改压缩源文件数据区和目录区的全局方式位标记，达到将伪压缩文件恢复到未加密的状态的目的。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png)
+ ![十六进制里红框标出 00 00 加密标志位，右侧可见 flag.zip 与 .setup.sh](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191109292.png)
 
 解压得到一个zip压缩包和脚本文件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png)
+ ![解压出 flag.zip 与 setup.sh 两个文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191111146.png)
 
 3、尝试解压flag.zip需要密码。使用记事本打开setup.sh文件，如下：
 
@@ -90,15 +90,15 @@ zip -e --password=`python -c "print(__import__('time').time())"` flag.zip flag
 1716272025.41
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png)
+ ![kali 里用 python2 反复打印 time()，得到 1716272004.04 等三个时间戳](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191112198.png)
 
 当我们知道密码格式后就可以采用掩码爆破节约时间，使用Ziperello进行掩码爆破，首先定义掩码字符模板，再设置密码模板，选择起始密码就可以开始爆破。（这里我已经知道大致密码，所以为了节约时间，从1500000000.00开始）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png)
+ ![Ziperello 步骤 3/4：密码模板填 15########.##，起始密码 1558080832.15](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191114100.png)
 
 得到密码1558080832.15
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png)
+ ![Ziperello 跑出「密码: 1558080832.15」，耗时 125 秒](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191116037.png)
 
 ```
 1558080832.15
@@ -106,7 +106,7 @@ zip -e --password=`python -c "print(__import__('time').time())"` flag.zip flag
 
 使用密码解压flag.zip，得到flag文件，打开得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png)
+ ![记事本里的 flag：flag{fkjabPqnLawhvuikfhgzyffj}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191119379.png)
 
 ### flag：
 
