@@ -11,7 +11,7 @@ tags:
 - "音频隐写"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png)
+![题目页「来首歌吧 1」，附件 a29f98b8-e5…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件，解压得到一个.wav音频文件。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png)
+![stego100.wav，显示为 WAV 文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png)
 
 ---
 
@@ -40,13 +40,13 @@ tags:
 
 1、得到一个音频文件，放到Audacity看看。看到有两条音轨，放大上面的那条音轨，看到这一串音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png)
+![Audacity 打开 stego100.wav，1:15 之后上方声道出现一段方波状信号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png)
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png)
+![放大到 1:23–1:38，能看出规律的通断块](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png)
 
 2、举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，转换为“… -… -.-. ----. …— … -… …- ----. -.-. -… ----- .---- —… —… …-. … …— . -… .---- --… -… --… ----- ----. …— ----. .---- ----. .---- -.-. ”。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png)
+![再放大，红框圈出短点与长划的宽度差异](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png)
 
 ```bash
 第一个红框代表“-.”，第二个红框代表“ ”（空格）。
@@ -56,7 +56,7 @@ tags:
 3、使用在线网站，将莫尔斯电码转换为明文字符，得到flag值。
 [在线网站](https://rumkin.com/tools/cipher/morse-code/) 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png)
+![摩尔斯在线解码（Decrypt 模式），解出 5BC925649CB0188F52E617D70929191C](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png)
 
 ### flag：
 

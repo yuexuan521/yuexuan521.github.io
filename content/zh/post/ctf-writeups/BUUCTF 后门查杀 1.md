@@ -13,7 +13,7 @@ tags:
 - "Web安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192720667.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192720667.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192722932.png)
+![题目页「后门查杀 1」：网站被上传 webshell，密码的 md5 即答案](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192722932.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，解压得到一个网站文件夹。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192724587.png)
+![站点根目录列表，admin、cache、data、include、upload 等目录与 .htaccess、article.php](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192724587.png)
 
 ---
 
@@ -43,17 +43,17 @@ tags:
 1、使用工具扫描附件所给的文件夹，可以使用D盾、火绒安全之类的工具，这里我使用D盾。
 打开D盾，点击自定义扫描，选择附件给的网站文件夹，点击确定。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192727358.png)
+![D盾_Web查杀主界面，红框标出「自定义扫描」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192727358.png)
 
 检查出两个文件，我们挨个查看。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192729441.png)
+![D盾_Web查杀扫出两条：web.php 可疑引用 ${$_GET［act］…，include.php 为 base64_decode 加密|system 执行](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192729441.png)
 
 2、第一个文件没有flag，但我们在第二个文件中找到了Webshell中的密码，密码也符合md5的格式，这个就是flag值。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192731588.png)
+![web.php 全部三行：<?php include($_GET［act］ . ".php"); ?>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192731588.png)
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192733491.png)
+![include.php 第 30 行 $pass = '6ac45fb83b3bc355c024f5034b947dd3'; //angel](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192733491.png)
 
 ### flag：
 
