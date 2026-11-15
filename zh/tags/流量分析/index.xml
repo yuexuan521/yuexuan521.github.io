@@ -1264,7 +1264,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193448672.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193448672.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1280,7 +1280,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「被劫持的神秘礼物 1」：找出账号密码串起来做 32 位小写 MD5，附网盘链接与提取码 31vk&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1292,7 +1292,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;gift.pcapng，30.4 KB，显示为 Wireshark capture&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1304,29 +1304,17 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Wireshark 包列表，可见 POST /index.php?r=member/index/login HTTP/1.1&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;题目要求找到帐号密码，我们先将HTTP流量过滤出来看一下。
-
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;看到一个POST方法和两个GET方法，直奔POST方法的那条流量，追踪它的HTTP流，找到账号和密码。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193448672.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193448672.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1342,7 +1330,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193450784.png" 
-             alt="" 
+             alt="题目页「被劫持的神秘礼物 1」：找出账号密码串起来做 32 位小写 MD5，附网盘链接与提取码 31vk" 
               
              loading="lazy"
         />
@@ -1354,7 +1342,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193452658.png" 
-             alt="" 
+             alt="gift.pcapng，30.4 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -1366,7 +1354,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193454456.png" 
-             alt="" 
+             alt="Wireshark 包列表，可见 POST /index.php?r=member/index/login HTTP/1.1" 
               
              loading="lazy"
         />
@@ -1377,7 +1365,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193456943.png" 
-             alt="" 
+             alt="过滤 http 后共 5 条请求，登录 POST 之后紧跟 302 Found" 
               
              loading="lazy"
         />
@@ -1388,7 +1376,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193459085.png" 
-             alt="" 
+             alt="请求详情里红框标出 name=admin&amp;word=adminb&amp;cookie…&amp;checkcode=5129" 
               
              loading="lazy"
         />
@@ -1408,7 +1396,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193500996.png" 
-             alt="" 
+             alt="MD5 工具：adminaadminb → 1d240aafe21a86afc11f38a45b541a49" 
               
              loading="lazy"
         />

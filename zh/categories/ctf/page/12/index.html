@@ -33,7 +33,6 @@ CTF Wiki 题目描述：下载附件，解压得到一个.exe文件。
 CTF Wiki 题目描述：某天小明收到了一件很特别的礼物，有奇怪的后缀，奇怪的名字和格式。小明找到了知心姐姐度娘，度娘好像知道这是啥，但是度娘也不知道里面是啥。。。你帮帮小明？找到帐号密码，串在一起，用32位小写MD5哈希一下得到的就是答案。 链接: https://pan.baidu.com/s/1pwVVpA5_WWY8Og6dhCcWRw 提取码: 31vk
 密文：下载附件，得到一个名为gift.pcapng的wireshark流量包。
 解题思路：1、双击gift.pcapng文件，进入Wireshark中。
-题目要求找到帐号密码，我们先将HTTP流量过滤出来看一下。 看到一个POST方法和两个GET方法，直奔POST方法的那条流量，追踪它的HTTP流，找到账号和密码。
 ...</p></div><footer class=entry-footer><span title='2024-09-23 22:49:54 +0000 UTC'>九月 23, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>348 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 被劫持的神秘礼物 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%A2%AB%E5%8A%AB%E6%8C%81%E7%9A%84%E7%A5%9E%E7%A7%98%E7%A4%BC%E7%89%A9-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 被偷走的文件 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：一黑客入侵了某公司盗取了重要的机密文件，还好管理员记录了文件被盗走时的流量，请分析该流量，分析出该黑客盗走了什么文件。
