@@ -1717,7 +1717,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1734,32 +1734,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;一不小心把存放flag的二维码给撕破了，各位大侠帮忙想想办法吧 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;保存附件，得到860c6e1a-a433-4a70-bfd0-5a318e758705.jpg&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、所见即所得，开始拼二维码吧。&lt;/p&gt;
-&lt;p&gt;首先，将所有二维码碎片截取出来。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1776,7 +1761,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png" 
-             alt="" 
+             alt="题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…" 
               
              loading="lazy"
         />
@@ -1788,7 +1773,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg" 
-             alt="" 
+             alt="桌上摆着 9 块撕碎的二维码碎片，按 3×3 排布" 
               
              loading="lazy"
         />
@@ -1801,7 +1786,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png" 
-             alt="" 
+             alt="拼图界面里把九块碎片拖成 3×3" 
               
              loading="lazy"
         />
@@ -1812,7 +1797,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png" 
-             alt="" 
+             alt="九块碎片拼合后恢复成完整二维码" 
               
              loading="lazy"
         />
@@ -1823,7 +1808,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg" 
-             alt="" 
+             alt="搜索结果页，红框圈出 flag{7bf116c8ec2545708781fd4a0dda44e5}" 
               
              loading="lazy"
         />

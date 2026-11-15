@@ -757,7 +757,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -773,7 +773,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「wireshark 1」，要求从抓到的流量包里找出管理员密码&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -785,7 +785,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;dianli_jbctf_MISC_T10075_20150707_wires… 文件，Wireshark capture，63 KB&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -796,18 +796,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Wireshark 包列表经 HTTP 过滤，可见 POST /user.php?action=login&amp;amp;do=login 等请求&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、分析题目，需要找到管理员登陆网站的流量，并从中找到登录密码。使用“http.request.method==POST”语句过滤流量包，得到一条登录流量。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190404475.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -823,7 +822,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190406495.png" 
-             alt="" 
+             alt="题目页「wireshark 1」，要求从抓到的流量包里找出管理员密码" 
               
              loading="lazy"
         />
@@ -835,7 +834,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190408043.png" 
-             alt="" 
+             alt="dianli_jbctf_MISC_T10075_20150707_wires… 文件，Wireshark capture，63 KB" 
               
              loading="lazy"
         />
@@ -846,7 +845,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190409344.png" 
-             alt="" 
+             alt="Wireshark 包列表经 HTTP 过滤，可见 POST /user.php?action=login&amp;do=login 等请求" 
               
              loading="lazy"
         />
@@ -857,7 +856,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190411511.png" 
-             alt="" 
+             alt="过滤 http.request.method==POST 后只剩 No.20 这一条 POST" 
               
              loading="lazy"
         />
@@ -868,7 +867,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190413288.png" 
-             alt="" 
+             alt="展开 HTML Form URL Encoded：email=flag、password=ffb7567a1d4f4abdffdb54e022f8facd、captcha=BYUG" 
               
              loading="lazy"
         />

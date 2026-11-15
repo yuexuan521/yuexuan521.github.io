@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -41,31 +41,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「派大星的烦恼 1」：16 位位图，0x22 与 0x44 是伤疤、0xf0 是赘肉，答案是 32 位字符串&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;派大星最近很苦恼，因为它的屁股上出现了一道疤痕！我们拍下了它屁股一张16位位图，0x22，0x44代表伤疤两种细胞，0xf0则是派大星的赘肉。还原伤疤，知道是谁打的派大星！(答案为32位的一串字符串) 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到派大星的烦恼.bmp&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、用010Editor打开bmp文件，搜索 &lt;code&gt;0x22、0x44&lt;/code&gt; 两种伤疤细胞。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193122674.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -83,7 +69,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193124793.png" 
-             alt="" 
+             alt="题目页「派大星的烦恼 1」：16 位位图，0x22 与 0x44 是伤疤、0xf0 是赘肉，答案是 32 位字符串" 
               
              loading="lazy"
         />
@@ -95,7 +81,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193126769.bmp" 
-             alt="" 
+             alt="一张纯洋红色的图片，底部有一条隐约的条纹" 
               
              loading="lazy"
         />
@@ -107,7 +93,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193129039.png" 
-             alt="" 
+             alt="010 Editor 里全是 F0 的行与 22、44 组成的行交替出现" 
               
              loading="lazy"
         />
@@ -137,7 +123,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193130850.png" 
-             alt="" 
+             alt="在线转换工具三栏：ASCII 乱码、十六进制 6C 2C 0C 6C… 与二进制 0110110000110000…" 
               
              loading="lazy"
         />
@@ -159,7 +145,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193132315.png" 
-             alt="" 
+             alt="ASCII 栏填入 23834ec4b5e6b6ef5db48145a0596046，正好 32 位" 
               
              loading="lazy"
         />
