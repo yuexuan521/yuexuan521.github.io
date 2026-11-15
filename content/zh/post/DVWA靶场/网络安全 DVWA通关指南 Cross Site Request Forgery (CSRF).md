@@ -15,7 +15,7 @@ tags:
 
 ## DVWA Cross Site Request Forgery (CSRF)
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg)
+![DVWA 标志：灰底上的白色 DVWA 字样与绿色弧线](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959091.jpeg)
 
 
 
@@ -93,17 +93,17 @@ http://dvwa/vulnerabilities/csrf/?password_new=111&password_conf=111&Change=Chan
 
 观察链接，认为使用get方式提交修改密码参数，只要三个参数符合就可以执行密码修改的操作
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png)
+ ![CSRF 页面，地址栏为 password_new=111&password_conf=111&Change=Change#，页面提示 Password Changed.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959092.png)
 
 2、打开一个新标签页，在地址栏输入 `http://dvwa/vulnerabilities/csrf/?password_new=111&password_conf=111&Change=Change#` ，回车后，进入DVWA中并提示Password Changed，修改密码成功。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png)
+ ![浏览器地址栏里显示构造好的整串 URL](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959093.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png)
+ ![新标签页访问同一 URL，同样提示 Password Changed.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959095.png)
 
 3、可以通过将长连接转换为短链接的方法，诱使用户点击链接，通过 [在线工具](https://uutool.cn/dwz/) 转换
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png)
+ ![在线短网址生成器把 CSRF 链接转成 https://3mw.cn/2uuc](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959096.png)
 
 ### DVWA Medium 级别 CSRF
 
@@ -158,31 +158,31 @@ http://dvwa/vulnerabilities/csrf/?password_new=222&password_conf=222&Change=Chan
 
 2、打开新的标签页，使用上面的地址，出现错误提示，密码修改错误
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png)
+ ![参数改成 222 后页面提示 That request didn't look correct.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959097.png)
 
 3、打开计算机代理，修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，BurpSuite调整代理参数与电脑代理一致
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png)
+ ![Edge 设置 → 系统和性能，红框标出「打开计算机的代理设置」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959098.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png)
+ ![网络和 Internet 的代理设置：127.0.0.1:8888，并取消勾选「请勿将代理服务器用于本地(Intranet)地址」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959099.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png)
+ ![Burp 添加代理监听，Bind port 填 8888（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959100.png)
 
 4、正常修改密码的网页，使用BurpSuitePro捕获流量包，发现多出Referer属性信息
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png)
+ ![Burp 拦截到 GET 请求，红框标出 Referer 指向 dvwa 的 CSRF 页面](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959101.png)
 
 5、而直接粘贴链接修改密码失败的报文缺少Referer属性信息，右键选择Send to Repeater
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png)
+ ![同一请求的原始头，Cookie 中 security=medium](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959102.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png)
+ ![Burp 右键菜单里选择 Send to Repeater（红条）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959103.png)
 
 5、打开Repeater选项卡，给Request请求中添加Referer信息，Referer需要包括"dvwa"字段（需要符合同源策略），点击Send发送，修改密码成功
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png)
+ ![请求头里的 Referer 被改成 dvwa（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959104.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png)
+ ![Repeater 发送后，响应页面显示 Password Changed.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959105.png)
 
 ### DVWA High 级别 CSRF
 
@@ -228,11 +228,11 @@ generateSessionToken();
 
 1、正常修改密码并成功，使用BurpSuitePro捕获流量包，发现仍使用get提交方式，但多了验证参数token
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png)
+ ![high 级别下的请求带 user_token，红框标出 token 值](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959106.png)
 
 2、直接将链接复制粘贴修改密码肯定失败，提示token不正确
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png)
+ ![high 级别页面提示 CSRF token is incorrect（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959107.png)
 
 有两种方法可以获得token值
 
@@ -249,25 +249,25 @@ generateSessionToken();
 
 2、保存文件，打开DVWA High级别下的储存型XSS页面，得到token值
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png)
+ ![dvwa 弹窗显示一段十六进制字符串 8f16e033…，可用于构造 token](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959109.png)
 
 3、将得到的token替换，BurpSuitePro捕获流量包中原有的token
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png)
+ ![Repeater 里的 user_token 仍是旧值（红框），security=high](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959110.png)
 
 4、发送构造好的数据包，得到响应，密码修改成功
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png)
+ ![同步 token 后重放，响应页面显示 Password Changed.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959111.png)
 
 方法二：在BurpSuite安装插件，获取token
 
 1、安装CSRF Token Tracker插件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png)
+ ![Burp Extender 的 BApp Store，红框标出已安装的 CSRF Token Tracker](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959112.png)
 
 2、添加一条CSRF Token Tracker规则并勾选，再勾选"根据规则同步requests"
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png)
+ ![CSRF Token Tracker 的配置：勾选同步规则，Host 填 dvwa，Name 填 user_token（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959113.png)
 
 3、截获修改密码请求包
 
@@ -275,7 +275,7 @@ generateSessionToken();
 
 4、将抓到的包Send to Repeater，在Repeater页面修改"password_new"和"password_conf"参数，Send后发现token值发生变化，修改密码成功
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png)
+ ![Firefox 中经短链触发的请求，响应页面显示 Password Changed.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225164959115.png)
 
 ### DVWA Impossible 级别 CSRF
 
