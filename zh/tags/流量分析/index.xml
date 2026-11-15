@@ -729,7 +729,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -746,7 +746,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「大流量分析（二）1」：问黑客用哪个邮箱给员工发钓鱼邮件，附网盘链接与提取码 9jva&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -758,21 +758,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压目录里 10 个 pcap 文件，每个约 488 MB&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、看第一个流量包，钓鱼邮件一般出现在攻击前期，寻找SMTP流量。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;邮件协议：POP、SMTP、IMAP&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -789,7 +785,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png" 
-             alt="" 
+             alt="题目页「大流量分析（二）1」：问黑客用哪个邮箱给员工发钓鱼邮件，附网盘链接与提取码 9jva" 
               
              loading="lazy"
         />
@@ -801,7 +797,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png" 
-             alt="" 
+             alt="解压目录里 10 个 pcap 文件，每个约 488 MB" 
               
              loading="lazy"
         />
@@ -816,7 +812,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png" 
-             alt="" 
+             alt="Wireshark 包列表经 smtp 过滤，可见 EHLO BAY004-OMC1S5.hotmail.com 与 MAIL FROM、RCPT TO" 
               
              loading="lazy"
         />
@@ -827,7 +823,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png" 
-             alt="" 
+             alt="跟踪 TCP 流，红框 MAIL FROM:xsser@live.cn 与两个 RCPT TO 收件人" 
               
              loading="lazy"
         />
@@ -838,7 +834,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png" 
-             alt="" 
+             alt="邮件头部 MIME 信息，红框 Return-Path: xsser@live.cn，下面是 base64 正文" 
               
              loading="lazy"
         />
@@ -875,7 +871,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png" 
-             alt="" 
+             alt="同一条 TCP 流顶部，红框 FROM:xsser@live.cn" 
               
              loading="lazy"
         />
@@ -1437,7 +1433,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193015587.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193015587.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1453,7 +1449,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193017648.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193017648.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「数据包中的线索 1」，附件 94b9c18e-d5…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1465,7 +1461,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193019508.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193019508.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;流量中的线索.pcapng，143 KB，显示为 Wireshark capture&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1477,7 +1473,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193020917.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193020917.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;过滤 http 后只剩 4 条，GET /sdk/vimService?wsdl 与 GET /fenxi.php&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1501,19 +1497,17 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193022716.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193022716.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;跟踪 TCP 流，响应体是一大段 base64&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、我使用Base64编码工具进行解码，得到的都是乱码，没有有意义的文本。看了别人的题解，才知道解码出的内容是一个jpg图片的数据。我们使用这个Base64 在线网站，将得到的密文进行解码，网站提醒我们可以另存为jpg文件，点击另存为，我们会下载一张jpg图片。
-&lt;a href=&#34;https://the-x.cn/encodings/Base64.aspx&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Base64 在线解码、编码&lt;/a&gt;&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193015587.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193015587.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1529,7 +1523,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193017648.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193017648.png" 
-             alt="" 
+             alt="题目页「数据包中的线索 1」，附件 94b9c18e-d5…" 
               
              loading="lazy"
         />
@@ -1541,7 +1535,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193019508.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193019508.png" 
-             alt="" 
+             alt="流量中的线索.pcapng，143 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -1553,7 +1547,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193020917.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193020917.png" 
-             alt="" 
+             alt="过滤 http 后只剩 4 条，GET /sdk/vimService?wsdl 与 GET /fenxi.php" 
               
              loading="lazy"
         />
@@ -1577,7 +1571,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193022716.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193022716.png" 
-             alt="" 
+             alt="跟踪 TCP 流，响应体是一大段 base64" 
               
              loading="lazy"
         />
@@ -1589,7 +1583,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193024887.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193024887.png" 
-             alt="" 
+             alt="Base64 在线解码，右侧提示「该内容已经被插件识别为二进制数据」，并给出 500×480、JFIF" 
               
              loading="lazy"
         />
@@ -1600,7 +1594,7 @@ VoIP可用于包括VoIP电话、智能手机、个人计算机在内的诸多互
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193027464.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193027464.jpeg" 
-             alt="" 
+             alt="解码后恢复出图片：路飞竖大拇指，顶部 flag{209acebf6324a09671abc31c869de72c}" 
               
              loading="lazy"
         />

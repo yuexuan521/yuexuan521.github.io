@@ -1905,7 +1905,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1921,7 +1921,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「你竟然赶我走 1」，附件 d6541cef-5…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1932,7 +1932,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;一张黑白简笔画兔子表情包，配字「你竟然赶我走」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1944,7 +1944,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1955,29 +1955,17 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Stegsolve 的 Analyse 菜单，红框标出 File Format&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;3、拉到最下面，找到flag。（注意要消除所有的空格）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h4 id=&#34;方法二&#34;&gt;方法二：&lt;/h4&gt;&lt;p&gt;1、使用WinHex打开图片，找到flag。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1993,7 +1981,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png" 
-             alt="" 
+             alt="题目页「你竟然赶我走 1」，附件 d6541cef-5…" 
               
              loading="lazy"
         />
@@ -2004,7 +1992,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg" 
-             alt="" 
+             alt="一张黑白简笔画兔子表情包，配字「你竟然赶我走」" 
               
              loading="lazy"
         />
@@ -2016,7 +2004,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png" 
-             alt="" 
+             alt="Stegsolve 主界面，红框标出 File → Open" 
               
              loading="lazy"
         />
@@ -2027,7 +2015,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png" 
-             alt="" 
+             alt="Stegsolve 的 Analyse 菜单，红框标出 File Format" 
               
              loading="lazy"
         />
@@ -2038,7 +2026,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png" 
-             alt="" 
+             alt="File Format Analysis 窗口：End of Image 之后 Additional bytes = 38，Ascii 区可见 flag{stego_is_s0_borling}" 
               
              loading="lazy"
         />
@@ -2049,7 +2037,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192635420.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192635420.png" 
-             alt="" 
+             alt="WinHex 打开 biubiu.jpg，0x6360h 行的 ASCII 区高亮 -flag is flag{stego_is_s0_borling}" 
               
              loading="lazy"
         />
