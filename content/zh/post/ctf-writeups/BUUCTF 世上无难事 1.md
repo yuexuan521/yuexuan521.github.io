@@ -10,7 +10,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204927685.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204927685.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204929989.png)
+ ![题目页「世上无难事 1」：一段被奇怪方式加密的指令，需还原成通顺语句并找 key，答案 32 位](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204929989.png)
 
 ### 题目描述：
 
@@ -41,15 +41,15 @@ VIZZB IFIUOJBWO NVXAP OBC XZZ UKHVN IFIUOJBWO HB XVIXW XAW VXFI X QIXN VBD KQ IF
 
 1、仔细阅读题目，得到答案的位数为32、包含小写字母的信息，通过位数统计，可以确定最后一串字符为答案。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204931709.png)
+![字符统计工具：640l11012805M211J0XJ24MM02X1lW09，共 32 字符，英文 10 个、数字 22 个](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204931709.png)
 
 2、对整个密文进行小写处理，便于观察规律。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204933355.png)
+![字母大小写转换工具框里是一整段替换密码密文，末尾跟着那串 32 位](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204933355.png)
 
 3、根据第一步以及题目中的“key”信息，key=pio，通过工具 [quipqiup](http://quipqiup.com/) 进行暴力破解。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204935561.png)
+![quipqiup：Clues 填 p=okey，解出 hello everybody thank you all right… 并高亮 key](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204935561.png)
 
 4、得到key，包上 flag{} 提交。
 
@@ -57,11 +57,11 @@ VIZZB IFIUOJBWO NVXAP OBC XZZ UKHVN IFIUOJBWO HB XVIXW XAW VXFI X QIXN VBD KQ IF
 
 1、直接使用工具 [quipqiup](http://quipqiup.com/) 进行暴力破解
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204937728.png)
+![放大后能读到 HELLO EVERYBODY THANK YOU ALL RIGHT…，key 是 640e11012805f211b0ab24ff02a1ed09](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204937728.png)
 
 2、将得到的key转换成小写格式，包上 flag{} 提交。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204940060.png)
+![大小写转换工具框里最终只留 key：640e11012805f211b0ab24ff02a1ed09](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204940060.png)
 
 ### flag：
 
