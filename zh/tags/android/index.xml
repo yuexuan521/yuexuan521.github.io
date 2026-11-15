@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34;&gt;
         &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -145,7 +145,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -267,7 +267,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png" 
-             alt="" 
+             alt="Brute Force 登录页，用户名填 admin、密码留空，提示 Username and/or password incorrect." 
               
              loading="lazy"
         />
@@ -286,7 +286,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png" 
-             alt="" 
+             alt="Intruder 的 Payload Positions，Attack type 选 Sniper（红框）" 
               
              loading="lazy"
         />
@@ -296,7 +296,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png" 
-             alt="" 
+             alt="Burp Intruder 全貌，密码位置被 §1234§ 标记（红框）" 
               
              loading="lazy"
         />
@@ -307,7 +307,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png" 
-             alt="" 
+             alt="攻击结果表里 password 那行 Length 5568（红框），其余都是 5519" 
               
              loading="lazy"
         />
@@ -317,7 +317,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png" 
-             alt="" 
+             alt="登录成功后页面显示 Welcome to the password protected area admin" 
               
              loading="lazy"
         />
@@ -406,7 +406,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png" 
-             alt="" 
+             alt="high 级别的结果表，password 行 Length 5577，其余 5528" 
               
              loading="lazy"
         />
@@ -510,7 +510,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png" 
-             alt="" 
+             alt="Attack type 改为 Pitchfork，password 与 user_token 两处都打了标记（红框）" 
               
              loading="lazy"
         />
@@ -521,7 +521,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png" 
-             alt="" 
+             alt="Resource Pool 里新建 Custom resource pool 3，最大并发设为 1（红框）" 
               
              loading="lazy"
         />
@@ -532,7 +532,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png" 
-             alt="" 
+             alt="Options → Grep - Extract，红框标出 Add 按钮与提取正则" 
               
              loading="lazy"
         />
@@ -543,7 +543,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png" 
-             alt="" 
+             alt="定义提取规则：勾选 Extract from regex group，正则 value=&rsquo;(.*?)&rsquo; /&gt;\r\n，并点 Refetch response（红框）" 
               
              loading="lazy"
         />
@@ -553,7 +553,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png" 
-             alt="" 
+             alt="回到 Grep - Extract，红框标出刚添加的提取项" 
               
              loading="lazy"
         />
@@ -564,7 +564,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png" 
-             alt="" 
+             alt="Payloads 里 Payload set 1 用 Simple list，填入密码字典（红框）" 
               
              loading="lazy"
         />
@@ -575,7 +575,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png" 
-             alt="" 
+             alt="Payload set 2 改用 Recursive grep，初始 payload 填上一次拿到的 user_token（红框）" 
               
              loading="lazy"
         />
@@ -586,7 +586,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png" 
-             alt="" 
+             alt="攻击结果里 password 请求 Length 5737，右侧响应页显示登录成功" 
               
              loading="lazy"
         />

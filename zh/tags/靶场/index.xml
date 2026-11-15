@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -41,7 +41,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -110,7 +110,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png" 
-             alt="" 
+             alt="地址栏 ?page=file1.php（红框），页面显示 Hello admin 与 Your IP address is: 127.0.0.1" 
               
              loading="lazy"
         />
@@ -133,7 +133,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312283.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312283.png" 
-             alt="" 
+             alt="?page=iviiigjegj 报 include 失败，错误信息暴露出站点绝对路径" 
               
              loading="lazy"
         />
@@ -154,7 +154,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png" 
-             alt="" 
+             alt="用 ?page=....\hackable\flags\fi.php 读到 flags 里的内容" 
               
              loading="lazy"
         />
@@ -205,7 +205,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png" 
-             alt="" 
+             alt="换成 ?page=../../hackable/flags/fi.php 同样读到内容" 
               
              loading="lazy"
         />
@@ -263,7 +263,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png" 
-             alt="" 
+             alt="改用 file:/// 加绝对路径，同样能包含到目标文件" 
               
              loading="lazy"
         />
@@ -2354,7 +2354,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2404,7 +2404,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536613.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -2455,7 +2455,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536615.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536615.png" 
-             alt="" 
+             alt="Burp 抓到的请求，红框 dvwaSession=1" 
               
              loading="lazy"
         />
@@ -2466,7 +2466,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536616.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536616.png" 
-             alt="" 
+             alt="下一条请求 dvwaSession=2，说明取值可以被预测" 
               
              loading="lazy"
         />
@@ -2476,7 +2476,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536617.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536617.png" 
-             alt="" 
+             alt="请求头里 Cookie 的 dvwaSession=4（高亮）" 
               
              loading="lazy"
         />
@@ -2496,7 +2496,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536618.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536618.png" 
-             alt="" 
+             alt="HackBar 里设置 URL 与 Cookie dvwaSession=4 重放" 
               
              loading="lazy"
         />
@@ -2534,7 +2534,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536619.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536619.png" 
-             alt="" 
+             alt="medium 级别 dvwaSession=1715927707，实际是时间戳" 
               
              loading="lazy"
         />
@@ -2544,7 +2544,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536620.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536620.png" 
-             alt="" 
+             alt="同级别再点一次 Generate，仍是时间戳形式" 
               
              loading="lazy"
         />
@@ -2555,7 +2555,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536621.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536621.png" 
-             alt="" 
+             alt="在线时间戳转换：1715927894 对应 2024-05-17 14:38:13" 
               
              loading="lazy"
         />
@@ -2565,7 +2565,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536622.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536622.png" 
-             alt="" 
+             alt="HackBar 里把 Cookie 改成算出的时间戳" 
               
              loading="lazy"
         />
@@ -2611,7 +2611,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536623.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536623.png" 
-             alt="" 
+             alt="high 级别 dvwaSession=c9f0f895fb98ab9159f51fd0297e236d，是 32 位 MD5" 
               
              loading="lazy"
         />
@@ -2621,7 +2621,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536624.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536624.png" 
-             alt="" 
+             alt="MD5 反查该值，得到明文 8" 
               
              loading="lazy"
         />
@@ -2640,7 +2640,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536625.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536625.png" 
-             alt="" 
+             alt="MD5 工具把 0 加密成 cfcd208495d565ef66e7dff9f98764da" 
               
              loading="lazy"
         />
@@ -2651,7 +2651,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536626.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165536626.png" 
-             alt="" 
+             alt="HackBar 同时带两个 dvwaSession，尝试覆盖旧值" 
               
              loading="lazy"
         />

@@ -298,7 +298,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;DVWA 标志（文章封面）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -316,7 +316,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg" 
-             alt="" 
+             alt="DVWA 标志（文章封面）" 
               
              loading="lazy"
         />
@@ -385,7 +385,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png" 
-             alt="" 
+             alt="地址栏 ?page=file1.php（红框），页面显示 Hello admin 与 Your IP address is: 127.0.0.1" 
               
              loading="lazy"
         />
@@ -408,7 +408,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312283.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312283.png" 
-             alt="" 
+             alt="?page=iviiigjegj 报 include 失败，错误信息暴露出站点绝对路径" 
               
              loading="lazy"
         />
@@ -429,7 +429,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png" 
-             alt="" 
+             alt="用 ?page=....\hackable\flags\fi.php 读到 flags 里的内容" 
               
              loading="lazy"
         />
@@ -480,7 +480,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png" 
-             alt="" 
+             alt="换成 ?page=../../hackable/flags/fi.php 同样读到内容" 
               
              loading="lazy"
         />
@@ -538,7 +538,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png" 
-             alt="" 
+             alt="改用 file:/// 加绝对路径，同样能包含到目标文件" 
               
              loading="lazy"
         />
