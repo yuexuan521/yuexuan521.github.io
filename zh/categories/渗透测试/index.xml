@@ -34,7 +34,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png" 
-             alt="" 
+             alt="网络拓扑图：攻击机 Kali 67.220.91.30 与 Windows 67.220.91.68，经 NGFW 防火墙分出 DMZ 172.16.10.0/24、办公区 10.0.18.0/24、服务器区 10.0.20.0/24" 
               
              loading="lazy"
         />
@@ -47,7 +47,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png" 
-             alt="" 
+             alt="同一张网络拓扑图，用于说明二级隧道的路径" 
               
              loading="lazy"
         />
@@ -58,7 +58,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png" 
-             alt="" 
+             alt="frp 目录下的文件：frpc.exe、frps.exe、frpc.toml、LICENSE 等" 
               
              loading="lazy"
         />
@@ -79,7 +79,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png" 
-             alt="" 
+             alt="选中 frps.ini，记事本内容为 [common] server_port=7000（红框）" 
               
              loading="lazy"
         />
@@ -90,7 +90,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png" 
-             alt="" 
+             alt="右键菜单里选择「在此处打开命令提示符」" 
               
              loading="lazy"
         />
@@ -109,7 +109,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png" 
-             alt="" 
+             alt="执行 frps -c frps.ini，提示 frps started successfully" 
               
              loading="lazy"
         />
@@ -128,7 +128,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png" 
-             alt="" 
+             alt="scp 把 frps 与 frpc 上传到 test@202.1.10.57 的 /bin 目录，两个文件均 100%" 
               
              loading="lazy"
         />
@@ -150,7 +150,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png" 
-             alt="" 
+             alt="ssh 登录 202.1.10.57，显示上次登录来源 67.220.91.30，已进入 root@centos7" 
               
              loading="lazy"
         />
@@ -171,7 +171,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png" 
-             alt="" 
+             alt="chmod &#43;x 给 /bin/frpc 与 /bin/frps 加执行权限" 
               
              loading="lazy"
         />
@@ -190,7 +190,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png" 
-             alt="" 
+             alt="vim 编辑 /tmp/frpc.ini" 
               
              loading="lazy"
         />
@@ -235,7 +235,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png" 
-             alt="" 
+             alt="frpc.ini 内容：[common] 指向 67.220.91.68:7000，[socks5-1] 用 remote_port 1080，[socks5-33] 映射本地 10080 到 10088" 
               
              loading="lazy"
         />
@@ -246,7 +246,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
-             alt="" 
+             alt="vim 底部执行 :wq 保存退出" 
               
              loading="lazy"
         />
@@ -265,7 +265,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png" 
-             alt="" 
+             alt="运行 frpc -c /tmp/frpc.ini，输出 login to server success 与 start proxy success" 
               
              loading="lazy"
         />
@@ -276,7 +276,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png" 
-             alt="" 
+             alt="frps 服务端日志：客户端 202.1.10.57 登录，并为 socks5-33、socks5-1 建立 tcp 代理" 
               
              loading="lazy"
         />
@@ -295,7 +295,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png" 
-             alt="" 
+             alt="vim 编辑 /tmp/frps.ini" 
               
              loading="lazy"
         />
@@ -316,7 +316,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png" 
-             alt="" 
+             alt="frps.ini 内容为 [common] bind_port = 7000" 
               
              loading="lazy"
         />
@@ -327,7 +327,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
-             alt="" 
+             alt="vim 底部执行 :wq 保存退出" 
               
              loading="lazy"
         />
@@ -338,7 +338,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png" 
-             alt="" 
+             alt="ifconfig 输出，红框标出 eth0 的内网地址 172.16.10.183" 
               
              loading="lazy"
         />
@@ -357,7 +357,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png" 
-             alt="" 
+             alt="在 172.16.10.183 上运行 frps -c /tmp/frps.ini，提示 frps started successfully" 
               
              loading="lazy"
         />
@@ -390,7 +390,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png" 
-             alt="" 
+             alt="frpc.ini 改为指向 172.16.10.183:7000，[socks5-2] 的 remote_port 为 10080" 
               
              loading="lazy"
         />
@@ -401,7 +401,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png" 
-             alt="" 
+             alt="远程桌面连接窗口，计算机填 202.1.10.34，用户名 test" 
               
              loading="lazy"
         />
@@ -412,7 +412,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png" 
-             alt="" 
+             alt="Windows 安全中心要求输入 test 的凭据，密码已填写" 
               
              loading="lazy"
         />
@@ -423,7 +423,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png">
         <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png" 
-             alt="" 
+             alt="正在连接到 202.1.10.34，进度条显示正在加密远程连接" 
               
              loading="lazy"
         />

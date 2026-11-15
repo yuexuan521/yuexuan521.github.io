@@ -4057,7 +4057,7 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png" 
-             alt="" 
+             alt="极坐标变换公式：r = √(x²&#43;y²)，θ = arctan(y/x)" 
               
              loading="lazy"
         />
@@ -4208,7 +4208,7 @@ y = r × sin( θ )</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png" 
-             alt="" 
+             alt="弦长与弓高关系式：C = 2·√(H(2R−H))" 
               
              loading="lazy"
         />
@@ -4472,7 +4472,7 @@ y = r × sin( θ )</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png" 
-             alt="" 
+             alt="由弦长求弓高的公式：H = R − ½·√(4R²−C²)" 
               
              loading="lazy"
         />
@@ -4548,7 +4548,7 @@ F=1/2 * (R*L-C(R-H))</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png" 
-             alt="" 
+             alt="圆形截面示意图，标出半径 R、弓高 H、弦长 C、弧长 L 与圆心角 θ" 
               
              loading="lazy"
         />
@@ -4622,7 +4622,7 @@ F=1/2 * (R*L-C(R-H))</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png" 
-             alt="" 
+             alt="圆锥侧面积公式：Area = π·r·(r&#43;√(r²&#43;h²))" 
               
              loading="lazy"
         />
@@ -5558,7 +5558,7 @@ F=1/2 * (R*L-C(R-H))</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210653.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210653.png" 
-             alt="" 
+             alt="多项式公式：x⁶ − 2x⁵ &#43; 3x⁴ − 5x² &#43; 6x &#43; 7" 
               
              loading="lazy"
         />
@@ -7727,7 +7727,7 @@ F=1/2 * (R*L-C(R-H))</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426137.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426137.png" 
-             alt="" 
+             alt="题目文字：给定三角形三边 a、b、c，用宏定义海伦公式求面积，不能构成三角形则输出 −1" 
               
              loading="lazy"
         />
