@@ -46,7 +46,7 @@ tags:
 
 2、使用010Editor打开图片，查阅数据时，发现flag。（flag中的“W”要注意大写！）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190650180.png)
+ ![十六进制视图，107h 行后出现 flag{Wa.df.1.2.3}，紧接着是 tp://ns.adobe.com/xap/1.0/ 的 XMP 元数据](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190650180.png)
 
 ### flag：
 
