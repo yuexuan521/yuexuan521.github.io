@@ -28,7 +28,6 @@ WEB 安全靶场通关指南 修复建议 1、使用白名单限制可以上传�
 CTF Wiki 题目描述：某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？
 密文：下载附件，解压得到一个.pcapng文件。
 解题思路：1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）
-2、通过在顶部过滤器输入“http”语句，将HTTP流量过滤出来。（也可以使用“http.request.method==POST”语句实现更精确的过滤）
 ...</p></div><footer class=entry-footer><span title='2024-09-24 22:49:00 +0000 UTC'>九月 24, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>388 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 被嗅探的流量 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%A2%AB%E5%97%85%E6%8E%A2%E7%9A%84%E6%B5%81%E9%87%8F-1/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 大白 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：看不到图？ 是不是屏幕太小了 。

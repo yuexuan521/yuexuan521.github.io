@@ -2135,7 +2135,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2153,18 +2153,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「粽子的来历 1」：要找 DBAPP 标记，答案是 32 位小写 md5&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;曹操的私生子曹小明因为爸爸活着的时候得罪太多人，怕死后被抄家，所以把财富保存在一个谁也不知道的地方。曹小明比较喜欢屈原，于是把地点藏在他的诗中。三千年后，小明破译了这个密码，然而却因为担心世界因此掀起战争又亲手封印了这个财富并仿造当年曹小明设下四个可疑文件，找到小明喜欢的DBAPP标记，重现战国辉煌。(答案为正确值(不包括数字之间的空格)的小写32位md5值) 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193243698.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2182,7 +2181,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193246202.png" 
-             alt="" 
+             alt="题目页「粽子的来历 1」：要找 DBAPP 标记，答案是 32 位小写 md5" 
               
              loading="lazy"
         />
@@ -2194,7 +2193,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193248131.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193248131.png" 
-             alt="" 
+             alt="四个 Word 文件：我是A.doc、我是B.doc、我是C.doc、我是D.doc，22–26 KB" 
               
              loading="lazy"
         />
@@ -2206,7 +2205,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193249498.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193249498.png" 
-             alt="" 
+             alt="十六进制视图，红框标出 IComeFrom 与 QihooDP，左侧对应 49 43 6F 6D 65 46 72 6F 6D" 
               
              loading="lazy"
         />
@@ -2216,7 +2215,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193251686.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193251686.png" 
-             alt="" 
+             alt="大片 FF FF 中间有一段被橙色高亮，正是被改过的位置" 
               
              loading="lazy"
         />
@@ -2227,7 +2226,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193253068.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193253068.png" 
-             alt="" 
+             alt="离骚全文，从「帝高阳之苗裔兮」到「来吾道夫先路」" 
               
              loading="lazy"
         />
@@ -2238,7 +2237,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193255012.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193255012.png" 
-             alt="" 
+             alt="离骚每行末尾都标着一个 0 或 1，最后一行汇总成 100100100001" 
               
              loading="lazy"
         />
@@ -2249,7 +2248,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193256611.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193256611.png" 
-             alt="" 
+             alt="MD5 工具：100100100001 → d473ee3def34bd022f8e5233036b3345" 
               
              loading="lazy"
         />

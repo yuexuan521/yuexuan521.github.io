@@ -1629,7 +1629,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1645,7 +1645,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「被嗅探的流量 1」：分析抓到的到底是什么文件&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1657,7 +1657,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1668,18 +1668,17 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、通过在顶部过滤器输入“http”语句，将HTTP流量过滤出来。（也可以使用“http.request.method==POST”语句实现更精确的过滤）&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1695,7 +1694,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png" 
-             alt="" 
+             alt="题目页「被嗅探的流量 1」：分析抓到的到底是什么文件" 
               
              loading="lazy"
         />
@@ -1707,7 +1706,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png" 
-             alt="" 
+             alt="被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -1718,7 +1717,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png" 
-             alt="" 
+             alt="过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK" 
               
              loading="lazy"
         />
@@ -1729,7 +1728,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png" 
-             alt="" 
+             alt="过滤 http 后的完整列表，含 GET/POST /upload.php 与一条 JPEG JFIF image" 
               
              loading="lazy"
         />
@@ -1740,7 +1739,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png" 
-             alt="" 
+             alt="同一列表，Info 列被红框整体圈出" 
               
              loading="lazy"
         />
@@ -1751,7 +1750,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png" 
-             alt="" 
+             alt="放大那一条：233 POST /upload.php (JPEG JFIF image)" 
               
              loading="lazy"
         />
@@ -1761,7 +1760,7 @@ mimikatz下载地址： <a href="https://github.com/gentilkiwi/mimikatz/"target=
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png" 
-             alt="" 
+             alt="跟踪流，正文里能看到 flag{da73d88936010da1eeeb36e945ec4b97}" 
               
              loading="lazy"
         />
