@@ -12,7 +12,7 @@ tags:
 - "ZIP"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190843252.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png)
+ ![题目页「［BSidesSF2019］zippy 1」，附件 attachment.p…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190845318.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，得到attachment.pcapng文件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png)
+ ![attachment.pcapng，大小 4 KB，显示为 Wireshark capture](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190846936.png)
 
 ---
 
@@ -48,19 +48,19 @@ unzip -P supercomplexpassword flag.zip
 使用 unzip 工具来解压 flag.zip 文件。-P 选项后面跟的是解压密码 supercomplexpassword。
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png)
+ ![跟踪 TCP 流，可见 nc -lp 4445 > flag.zip 与 unzip -P supercomplexpassword flag.zip，inflating: flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190848070.png)
 
 其中，保存下来的flag.zip文件是解题的关键，解压密码 `supercomplexpassword` 也有用。
 
 2、在Kali中，使用foremost工具分离流量包中的flag.zip文件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png)
+ ![kali 里跑 foremost attachment.pcapng，输出 |foundat=flag.txtUT](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190849813.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png)
+ ![cd output/zip 后 ls，得到 00000002.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190851583.png)
 
 使用解压密码 `supercomplexpassword` 解压flag.zip文件，得到flag.txt文件，得到flag
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png)
+ ![记事本打开 flag.txt，内容是 CTF{this flag is your flag}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190854676.png)
 
 ### flag：
 

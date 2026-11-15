@@ -12,7 +12,7 @@ tags:
 - "BUUCTF"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191502878.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191502878.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191504883.png)
+ ![题目页「［MRCTF2020］ezmisc 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191504883.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，解压得到.png图片。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191506932.png)
+![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191506932.png)
 
 从这里也可以看出图片经过修改，无法正常显示。
 
@@ -44,7 +44,7 @@ tags:
 
 1、在010Editor中打开，提示CRC校验错误，认为图片被修改了宽高，不符合CRC校验。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191508692.png)
+ ![Notepad++ 查找结果报 *ERROR: CRC Mismatch @ chunk［0］; in data: 370c8f0b; expected: 3f9ba6aa](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191508692.png)
 
 通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -66,15 +66,15 @@ for i in range(2000):
 
 得到正确的宽高值。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191510156.png)
+ ![程序输出 hex: 0x1f4 0x1c8，进程已结束，退出代码 0](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191510156.png)
 
 2、修改图片中的宽高参数，然后保存图片查看。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191511514.png)
+![010 Editor 的 IHDR 里，红框标出 00 00 01 F4 与 00 00 01 C8，即宽 500、高 456](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191511514.png)
 
 查看图片，得到flag。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191513318.png)
+![手写体图片「Where is the Flag???」，底部写着 MRCTF{1ts_vEryyyyyy_ez!}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191513318.png)
 
 ### flag：
 

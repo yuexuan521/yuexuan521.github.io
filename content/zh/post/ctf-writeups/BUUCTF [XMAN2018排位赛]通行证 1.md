@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192311959.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png)
+ ![题目页「［XMAN2018排位赛］通行证 1」，附件 attachment.txt，附 GitHub 来源](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192314003.png)
 
 ### 题目描述：
 
@@ -45,7 +45,7 @@ a2FuYmJyZ2doamx7emJfX19ffXZ0bGFsbg==
 kanbbrgghjl{zb____}vtlaln
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png)
+ ![BASE64 加解密工具，输入框里是 kanbbrgghjl{zb____}vtlaln](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192316155.png)
 
 2、发现一对花括号，一般用来包括flag值，在这里位置不同，应尝试转换位置，使用栅栏密码。（没想到，这里使用栅栏加密，而不是解密，并且是W型栅栏加密）
 [栅栏加密/解密](https://ctf.bugku.com/tool/railfence) 
@@ -70,7 +70,7 @@ kanbbrgghjl{zb____}vtlaln
 kzna{blnl_abj_lbh_trg_vg}
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png)
+ ![AmanCTF 栅栏加解密：栏数填 7，标准型与 W 型各给出一组结果，红框是 W 型](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192318503.png)
 
 当栏数为7时，符合flag形式“xxxx{xxxxxxxxx}”
 
@@ -108,13 +108,13 @@ for i in range(26):
     print("%d %s"% (i, plaintext))
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png)
+ ![明文候选列表，第 13 行高亮 xman{oyay_now_you_get_it}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192320176.png)
 
 4、另一种解题思路，通过对base64解出的密文进行凯撒加密，寻找“x”和“f”开头的字符串（因为是flag的形式），再进行栅栏加密。原理都是相同的，且不要求解密顺序。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png)
+ ![另一组候选，第 13 行红框标出 xnaooettuwy{mo____}igynya](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192321751.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png)
+ ![对第 13 行再解码，W 型输出 xman{oyay_now_you_get_it}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192323424.png)
 
 ### flag：
 

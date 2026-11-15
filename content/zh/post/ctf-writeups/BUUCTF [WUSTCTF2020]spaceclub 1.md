@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192245940.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [［WUSTCTF2020］spaceclub](https://www.cnblogs.com/fishjumpriver/p/18119169)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png)
+ ![题目页「［WUSTCTF2020］spaceclub 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192248076.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 
 保存附件，得到attachment.txt
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png)
+ ![记事本打开 attachment.txt，看上去一片空白](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192249826.png)
 
 ---
 
@@ -45,15 +45,15 @@ tags:
 
 1、打开文件，什么都没有？欧~~，有猫腻。(╯°□°）╯︵ ┻━┻
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png)
+ ![全选后才在左侧看到一条蓝色底纹，说明内容其实是大量空格](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192251154.png)
 
 放到SublimeText中，看得更清楚。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png)
+ ![编辑器里带行号 1–37，各行长度明显不同](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192252535.png)
 
 2、接下来就简单了，长的一行对应“ `0` ”，短的一行对应“ `1` ”，得到二进制数据。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png)
+ ![纯 0/1 文本，状态栏显示行 15、列 2、共 623 个字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192254201.png)
 
 合并数据，将二进制数据转换为ASCII字符串，得到flag： `wctf2020{h3re_1s_y0ur_fl@g_s1x_s1x_s1x}` 。
 
@@ -65,7 +65,7 @@ tags:
 
 [2进制到ASCII字符串在线转换工具](https://coding.tools/cn/binary-to-text) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png)
+ ![2 进制转 ASCII 在线工具，输出 wctf2020{h3re_1s_y0ur_fl@g_s1x_s1x_s1x}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192255564.png)
 
 贴一个网上找的脚本：
 

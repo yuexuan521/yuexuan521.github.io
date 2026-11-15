@@ -13,7 +13,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191023595.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 - [［GKCTF 2021］签到](https://www.cnblogs.com/fishjumpriver/p/18015798)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png)
+ ![题目页「［GKCTF 2021］签到 1」，flag 由 flag 头包裹，附件 tmpshell.pca…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191025508.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件，得到tmpshell.pcapng文件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png)
+ ![tmpshell.pcapng，大小 33 KB，显示为 Wireshark capture](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191026881.png)
 
 ---
 
@@ -48,7 +48,7 @@ tags:
 tcp.stream eq 5
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png)
+ ![跟踪 TCP 流 eq 5，红框 QER1=cat%2FF14g%7Cbase64，即 URL 编码的 cat /F14g|base64，响应是一大段 base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191027941.png)
 
 将传输的数据复制下来，进行解密。
 
@@ -117,13 +117,13 @@ DN0QDN0QDlWazNXMx0Wbf9lRGRDNDN0ard0Rf9VZl1WbwADIdRampDKilvFIdRampDKilvVKpM2Y
 ==QIhM0QDN0Q
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png)
+ ![响应正文的 base64，末尾红框标出 ==QHm0QDN0Q](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191030017.png)
 
 2、在tmpshell.pcapng文件的其他流量上，也存在逆序的数据。
 例如：命令whoami，得到数据 `595852685a4331336433634b` 。
 经过解密，得到 `atad-www` ，逆序应为 `www-data` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png)
+ ![跟踪 eq 3，红框 QER1=whoami，返回 595852685a43313364336334b，即 base64 的 root](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191031704.png)
 
 所以，将上面的数据进行按行逆序输出。
 [文字倒序排列](https://www.qqxiuzi.cn/zh/daoxu/) 
@@ -132,7 +132,7 @@ DN0QDN0QDlWazNXMx0Wbf9lRGRDNDN0ard0Rf9VZl1WbwADIdRampDKilvFIdRampDKilvVKpM2Y
 cat flag | rev
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png)
+ ![cat flag | rev 的输出，同样以 ==QHm0QDN0Q 结尾](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191033595.png)
 
 ```bash
 DQoNCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIw0KIyAgICAgICAgIDIw
