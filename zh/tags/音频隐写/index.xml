@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -42,7 +42,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -52,7 +52,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -71,7 +71,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png" 
-             alt="" 
+             alt="题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar" 
               
              loading="lazy"
         />
@@ -83,7 +83,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png" 
-             alt="" 
+             alt="解出 vip.m4a（372 KB）与 vip.zip（368 KB）" 
               
              loading="lazy"
         />
@@ -95,7 +95,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png" 
-             alt="" 
+             alt="播放器打不开 vip.m4a，提示文件类型不受支持，错误码 0xC00D36C4" 
               
              loading="lazy"
         />
@@ -106,7 +106,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png" 
-             alt="" 
+             alt="十六进制从头到尾都是 A1 A1 A1 混着零星字节" 
               
              loading="lazy"
         />
@@ -120,7 +120,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png" 
-             alt="" 
+             alt="红框 66 74 79 70 就是 ftyp，后面紧跟 4D 34 41，即 M4A" 
               
              loading="lazy"
         />
@@ -130,7 +130,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png" 
-             alt="" 
+             alt="0000h 处红框三组：A1 A1 A1、C7 D5 D8 D1、A1 A1 A1，说明每个字节都被异或过" 
               
              loading="lazy"
         />
@@ -141,7 +141,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png" 
-             alt="" 
+             alt="0094ebb0h 处 73 74 73 63 即 stsc，后面 00 01、00 02 被竖线标出" 
               
              loading="lazy"
         />
@@ -151,7 +151,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png" 
-             alt="" 
+             alt="5C1E0h 一带满屏 A1，右侧蓝色高亮 D2 D5，红框圈出非 A1 的字节" 
               
              loading="lazy"
         />
@@ -173,7 +173,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png" 
-             alt="" 
+             alt="010 Editor 工具菜单，选「十六进制运算 → 二进制异或」" 
               
              loading="lazy"
         />
@@ -183,7 +183,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png" 
-             alt="" 
+             alt="十六进制运算窗口：二进制异或，操作数填 A1，按位逐字节异或" 
               
              loading="lazy"
         />
