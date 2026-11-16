@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193211909.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193211909.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193214117.png)
+ ![题目页「秘密文件 1」：从监控流量里分析被偷走的机密文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193214117.png)
 
 ### 题目描述：
 
@@ -31,14 +31,14 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个.pcapng文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193216064.png)
+ ![305df1f78bef4ccfd2a3bd0fe4a6c0d7.pcap，33 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193216064.png)
 
 ---
 
 ### 解题思路：
 
 1、双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193217488.png)
+ ![过滤 ftp：220 HI, i know you are a hacker…、USER ctf、PASS ctf、PORT、RETR](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193217488.png)
 
 追踪ftp流量，有出题者留下的话，并且发现流量中有flag.rar压缩包。
 
@@ -47,21 +47,21 @@ tags:
 翻译：你好，我知道你是黑客，想黑我，但你能找到flag在哪里吗？
 ```
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193219609.png)
+![跟踪流得到完整会话，红框 RETR 6b0341642a8ddcbe2a927dae6d541.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193219609.png)
 
 2、使用Kali中的foremost工具，将rar压缩包从pcapng文件中提取出来。（wireshark 截取的流量中，会截取文件传输对应的流量，也就是说，这个流量包将包括 flag.rar压缩包）
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193221937.png)
+ ![binwalk 显示 RAR archive data 4.x，foremost 分出 00000031.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193221937.png)
 
 尝试解压压缩包，需要密码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193224234.png)
+ ![打开这个 rar 时提示输入密码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193224234.png)
 
 3、因为没有关于密码的提示，所以使用常用的4位纯数字进行破解。使用ARCHPR工具，选定参数，破解得到密码为1903。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193225617.png)
+ ![Advanced Archive Password Recovery 统计：总计口令 1,905、4s 642ms、口令 1903](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193225617.png)
 
 使用密码解压压缩包，得到txt文件，打开得到flag。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193227153.png)
+ ![flag{d72e5a671aa50fa5f400e5d10eedeaa5}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193227153.png)
 
 ### flag：
 

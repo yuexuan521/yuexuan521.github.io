@@ -13,7 +13,7 @@ tags:
 - "逆向"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png)
+ ![题目页「小易的U盘 1」：U 盘中了一个奇怪的病毒，要分析里面藏了什么](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个.iso文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png)
+ ![小易的U盘.iso，显示为光盘映像](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png)
 
 ---
 
@@ -41,27 +41,27 @@ tags:
 
 1、用Bandzip打开.iso文件，看到内部有很多文件。（010 Editor可以看到Rar文件头，能用WinRAR直接解压）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png)
+ ![Bandizip 打开 iso，左树是「小易的U盘」，右侧一堆 autof lag - 副本 (2)–(16).exe，每个 180,271 字节](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png)
 
 使用foremost分离文件，在output目录中找到一个rar文件。（可以修改文件后缀解压，殊途同归）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192942390.png)
+ ![kali 里 foremost 小易的U盘.iso，tree ./output 得到 audit.txt 与 rar/00000000.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192942390.png)
 
 最后都是一堆的文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192944440.png)
+ ![iso 完整列表：精彩电影种子、杂物、.metadata 与 autof lag 副本 2 到 24](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192944440.png)
 
 2、直接查看.inf文件，得到提示信息“autoflag - 副本 (32)”。（autorun.inf文件也可用于双击磁盘时，自动运行文件）
 
 > INF是Device INFormation File的英文缩写，是Microsoft公司为硬件设备制造商发布其驱动程序推出的一种文件格式，是Windows操作系统下用来描述设备或文件等数据信息的文件。INF文件中包含硬件设备的信息或脚本以控制硬件操作。在INF文件中指明了硬件驱动该如何安装到系统中，源文件在哪里、安装到哪一个文件夹中、怎样在注册表中加入自身相关信息等等。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192946463.png)
+ ![列表末尾是 autof lag 副本 62、63 与 autorun.inf（1 KB）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192946463.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192947800.png)
+ ![autorun.inf 内容：［AutoRun］ 换行 Open=autof lag - 副本 (32)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192947800.png)
 
 3、使用IDA打开autoflag - 副本 (32).exe文件，搜索flag，如下图得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192949182.png)
+ ![反汇编里 fputs(Stream, "flag{29a0vkr1ek3eu10ue89yug9y4r0wdu10}")，上面一行是 D:/Program/flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192949182.png)
 
 ### flag：
 

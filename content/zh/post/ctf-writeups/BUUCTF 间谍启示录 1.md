@@ -13,7 +13,7 @@ tags:
 - "ZIP"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png)
+ ![题目页「间谍启示录 1」：从残破 U 盘的镜像里找出秘密](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 ### 密文：
 
 下载附件，得到一个.iso文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png)
+ ![38f7b8b3-de57-4f93-a23e-f17ecf97835c.iso](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png)
 
 ---
 
@@ -41,27 +41,27 @@ tags:
 
 1、用Bandzip打开.iso文件，看到内部有很多文件。（010Editor也可以看到）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png)
+ ![Bandizip 打开 iso，「间谍的秘籍」下有 autorun.inf、systemzx.exe、XXX无马.rar（20 字节）、某国军事力量部署.doc、某组织特工名单.xls 等](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png)
 
 使用foremost分离文件，在output目录中找到四个文件。（可以直接解压.iso文件，会得到很多文件）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193617370.png)
+ ![foremost 之后 tree ./output：exe/00000112.exe、ole/00000680.ole、rar/00000517.rar、xls/00000708.xls](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193617370.png)
 
 而在rar压缩包中，我们找到flag.exe文件。（解压systemzx.exe文件也可以得到flag.exe文件，使用WinRAR）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193619442.png)
+ ![WinRAR 打开 00000517.rar，右侧 SelfExtract 脚本写着 Path=D:\机密文件、Setup=文件已被销毁.exe、License=获取机密](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193619442.png)
 
 2、解压压缩包，运行flag.exe，得到机密文件.txt文件，打开得到flag。（注意：获得的机密文件.txt，是隐藏文件，需要开启查看隐藏项目选项）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193621241.png)
+ ![解压出 flag.exe、文件已被销毁.exe、文件已被销毁.ico 与 机密文件.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193621241.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193622641.png)
+ ![机密文件.txt 内容 Flag{379:7b758:g7dfe7f19:9464f:4g9231}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193622641.png)
 
 ---
 
 开启查看隐藏项目选项
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193624536.png)
+ ![资源管理器「查看」菜单，勾选「隐藏的项目」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193624536.png)
 
 ### flag：
 
