@@ -871,7 +871,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -887,7 +887,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「小易的U盘 1」：U 盘中了一个奇怪的病毒，要分析里面藏了什么&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -899,30 +899,19 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;小易的U盘.iso，显示为光盘映像&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、用Bandzip打开.iso文件，看到内部有很多文件。（010 Editor可以看到Rar文件头，能用WinRAR直接解压）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;使用foremost分离文件，在output目录中找到一个rar文件。（可以修改文件后缀解压，殊途同归）&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、用Bandzip打开.iso文件，看到内部有很多文件。（010 Editor可以看到Rar文件头，能用WinRAR直接解压）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192934645.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -938,7 +927,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192936731.png" 
-             alt="" 
+             alt="题目页「小易的U盘 1」：U 盘中了一个奇怪的病毒，要分析里面藏了什么" 
               
              loading="lazy"
         />
@@ -950,7 +939,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192938517.png" 
-             alt="" 
+             alt="小易的U盘.iso，显示为光盘映像" 
               
              loading="lazy"
         />
@@ -962,7 +951,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192940265.png" 
-             alt="" 
+             alt="Bandizip 打开 iso，左树是「小易的U盘」，右侧一堆 autof lag - 副本 (2)–(16).exe，每个 180,271 字节" 
               
              loading="lazy"
         />
@@ -973,7 +962,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192942390.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192942390.png" 
-             alt="" 
+             alt="kali 里 foremost 小易的U盘.iso，tree ./output 得到 audit.txt 与 rar/00000000.rar" 
               
              loading="lazy"
         />
@@ -984,7 +973,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192944440.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192944440.png" 
-             alt="" 
+             alt="iso 完整列表：精彩电影种子、杂物、.metadata 与 autof lag 副本 2 到 24" 
               
              loading="lazy"
         />
@@ -998,7 +987,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192946463.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192946463.png" 
-             alt="" 
+             alt="列表末尾是 autof lag 副本 62、63 与 autorun.inf（1 KB）" 
               
              loading="lazy"
         />
@@ -1008,7 +997,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192947800.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192947800.png" 
-             alt="" 
+             alt="autorun.inf 内容：［AutoRun］ 换行 Open=autof lag - 副本 (32)" 
               
              loading="lazy"
         />
@@ -1019,7 +1008,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192949182.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192949182.png" 
-             alt="" 
+             alt="反汇编里 fputs(Stream, &ldquo;flag{29a0vkr1ek3eu10ue89yug9y4r0wdu10}&quot;)，上面一行是 D:/Program/flag.txt" 
               
              loading="lazy"
         />

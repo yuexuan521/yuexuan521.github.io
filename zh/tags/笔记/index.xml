@@ -2049,7 +2049,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2065,7 +2065,7 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;一张「图片违规！」的占位图，笑脸 X 眼配一个对话框&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2080,29 +2080,17 @@ R1(config-line)#access-class 102 in</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;打开逐帧查看&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;在这里可以逐帧查看图片（理论上可以在这里看到逐帧的图片，但我这显示不出来）&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2118,7 +2106,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png" 
-             alt="" 
+             alt="一张「图片违规！」的占位图，笑脸 X 眼配一个对话框" 
               
              loading="lazy"
         />
@@ -2133,7 +2121,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png" 
-             alt="" 
+             alt="Stegsolve 主界面，红框标出 File → Open" 
               
              loading="lazy"
         />
@@ -2144,7 +2132,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png" 
-             alt="" 
+             alt="StegSolve 1.4 的 Analyse 菜单，红框标出 Frame Browser" 
               
              loading="lazy"
         />
@@ -2155,7 +2143,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png" 
-             alt="" 
+             alt="Frame Browser 窗口显示「Frame : 1 of 89」，底部是 &lt; &gt; 与 Save" 
               
              loading="lazy"
         />
@@ -2166,7 +2154,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp" 
-             alt="" 
+             alt="红底黑字的一帧：flag{" 
               
              loading="lazy"
         />
@@ -2176,7 +2164,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp" 
-             alt="" 
+             alt="另一帧：he11o" 
               
              loading="lazy"
         />
@@ -2186,7 +2174,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp" 
-             alt="" 
+             alt="再一帧：hongke}" 
               
              loading="lazy"
         />
@@ -2197,7 +2185,7 @@ R1(config-line)#access-class 102 in</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png" 
-             alt="" 
+             alt="Photoshop 里图层 1 到 26，其中图层 21 显示红方块与 flag{" 
               
              loading="lazy"
         />

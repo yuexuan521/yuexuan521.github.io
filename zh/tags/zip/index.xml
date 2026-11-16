@@ -782,7 +782,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -798,7 +798,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「间谍启示录 1」：从残破 U 盘的镜像里找出秘密&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -810,7 +810,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;38f7b8b3-de57-4f93-a23e-f17ecf97835c.iso&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -822,18 +822,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Bandizip 打开 iso，「间谍的秘籍」下有 autorun.inf、systemzx.exe、XXX无马.rar（20 字节）、某国军事力量部署.doc、某组织特工名单.xls 等&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;使用foremost分离文件，在output目录中找到四个文件。（可以直接解压.iso文件，会得到很多文件）&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193610283.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -849,7 +848,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193612307.png" 
-             alt="" 
+             alt="题目页「间谍启示录 1」：从残破 U 盘的镜像里找出秘密" 
               
              loading="lazy"
         />
@@ -861,7 +860,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193614154.png" 
-             alt="" 
+             alt="38f7b8b3-de57-4f93-a23e-f17ecf97835c.iso" 
               
              loading="lazy"
         />
@@ -873,7 +872,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193615499.png" 
-             alt="" 
+             alt="Bandizip 打开 iso，「间谍的秘籍」下有 autorun.inf、systemzx.exe、XXX无马.rar（20 字节）、某国军事力量部署.doc、某组织特工名单.xls 等" 
               
              loading="lazy"
         />
@@ -884,7 +883,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193617370.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193617370.png" 
-             alt="" 
+             alt="foremost 之后 tree ./output：exe/00000112.exe、ole/00000680.ole、rar/00000517.rar、xls/00000708.xls" 
               
              loading="lazy"
         />
@@ -895,7 +894,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193619442.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193619442.png" 
-             alt="" 
+             alt="WinRAR 打开 00000517.rar，右侧 SelfExtract 脚本写着 Path=D:\机密文件、Setup=文件已被销毁.exe、License=获取机密" 
               
              loading="lazy"
         />
@@ -906,7 +905,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193621241.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193621241.png" 
-             alt="" 
+             alt="解压出 flag.exe、文件已被销毁.exe、文件已被销毁.ico 与 机密文件.txt" 
               
              loading="lazy"
         />
@@ -916,7 +915,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193622641.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193622641.png" 
-             alt="" 
+             alt="机密文件.txt 内容 Flag{379:7b758:g7dfe7f19:9464f:4g9231}" 
               
              loading="lazy"
         />
@@ -928,7 +927,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193624536.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193624536.png" 
-             alt="" 
+             alt="资源管理器「查看」菜单，勾选「隐藏的项目」" 
               
              loading="lazy"
         />

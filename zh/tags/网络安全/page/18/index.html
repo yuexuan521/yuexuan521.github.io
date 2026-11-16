@@ -15,8 +15,7 @@ CTF Wiki 题目描述：来源：https://github.com/BjdsecCA/BJDCTF2020
 密文：下载附件，解压得到一张.jpg图片和一个.txt文件。 解题思路：1、一张图片，典型的图片隐写。在010Editor中找到PK文件头，确认隐藏zip压缩包。放到Kali中，使用binwalk检测，也确认图片中有zip压缩包。（第一个“藏”） 使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。 尝试解压压缩包，得到一个.docx文件。 ...</p></div><footer class=entry-footer><span title='2024-08-23 22:47:52 +0000 UTC'>八月 23, 2024</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>424 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [BJDCTF2020]藏藏藏 1" href=https://yuexuan521.github.io/zh/posts/buuctf-bjdctf2020%E8%97%8F%E8%97%8F%E8%97%8F-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 秘密文件 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：深夜里，Hack偷偷的潜入了某公司的内网，趁着深夜偷走了公司的秘密文件，公司的网络管理员通过通过监控工具成功的截取Hack入侵时数据流量，但是却无法分析出Hack到底偷走了什么机密文件，你能帮帮管理员分析出Hack到底偷走了什么机密文件吗？
-密文：下载附件，解压得到一个.pcapng文件。 解题思路：1、双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。 追踪ftp流量，有出题者留下的话，并且发现流量中有flag.rar压缩包。
-1 2 原文：HI, i know you are a hacker who is trying to hack me ,but can u find where is the flag？ 翻译：你好，我知道你是黑客，想黑我，但你能找到flag在哪里吗？ ...</p></div><footer class=entry-footer><span title='2024-08-23 11:03:30 +0000 UTC'>八月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>511 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 秘密文件 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E7%A7%98%E5%AF%86%E6%96%87%E4%BB%B6-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [BJDCTF2020]鸡你太美 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
+密文：下载附件，解压得到一个.pcapng文件。 解题思路：1、双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。 ...</p></div><footer class=entry-footer><span title='2024-08-23 11:03:30 +0000 UTC'>八月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>511 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 秘密文件 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E7%A7%98%E5%AF%86%E6%96%87%E4%BB%B6-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF [BJDCTF2020]鸡你太美 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。来源： https://github.com/BjdsecCA/BJDCTF2020
 密文：下载附件，解压得到两个.gif图片。 第一个gif图片：
@@ -44,7 +43,6 @@ attachment 解题思路：1、浅浅的看了一遍，没发现什么有用的�
 相关阅读
 CTF Wiki 题目描述：小易的U盘中了一个奇怪的病毒，电脑中莫名其妙会多出来东西。小易重装了系统，把U盘送到了攻防实验室，希望借各位的知识分析出里面有啥。请大家加油噢，不过他特别关照，千万别乱点他U盘中的资料，那是机密。 注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，解压得到一个.iso文件。 解题思路：1、用Bandzip打开.iso文件，看到内部有很多文件。（010 Editor可以看到Rar文件头，能用WinRAR直接解压）
-使用foremost分离文件，在output目录中找到一个rar文件。（可以修改文件后缀解压，殊途同归）
 ...</p></div><footer class=entry-footer><span title='2024-08-21 20:25:04 +0000 UTC'>八月 21, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>573 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 小易的U盘 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E5%B0%8F%E6%98%93%E7%9A%84u%E7%9B%98-1/></a></article><footer class=page-footer><nav class=pagination aria-label=分页导航><a class=prev href=https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/page/17/>«&nbsp;上一页&nbsp;
 </a><a class=next href=https://yuexuan521.github.io/zh/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/page/19/>下一页&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><div class=footer-line><span>&copy; 2026 YueXuan</span>
 <span class=footer-dot>·</span>
