@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192652659.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192652659.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192654710.png)
+ ![题目页「刷新过的图片 1」：浏览图片的时候刷新键有没有用呢](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192654710.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到一个.jpg图片。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192656713.jpeg)
+![一张男子大笑的表情图，就是题目附件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192656713.jpeg)
 
 ---
 
@@ -50,7 +50,7 @@ git clone https://github.com/matthewgao/F5-steganography
 ```
 
 安装成功如下图：
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192658030.png)
+ ![kali 里 git clone F5-steganography](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192658030.png)
 
 出现错误参考这篇文章： [安装F5-steganography和使用，及解决java环境版本报错问题](https://blog.csdn.net/pythllc/article/details/128969843) 
 
@@ -60,22 +60,22 @@ git clone https://github.com/matthewgao/F5-steganography
 java Extract Misc.jpg 
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192700481.png)
+ ![java Extract Misc.jpg：Huffman decoding starts、309504 indices shuffled、Length of embedded file: 190 bytes](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192700481.png)
 
 查看output.txt文件，发现pk文件头，确认为zip压缩包，并且内部还有flag.txt文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192702635.png)
+ ![cat output.txt，开头是 PK，中间能看到 flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192702635.png)
 
 3、更改output.txt文件的后缀为.zip，尝试解压压缩包，需要密码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192705006.png)
+ ![把输出存成 output.zip，1 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192705006.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192706136.png)
+ ![解压时提示 flag.txt 需要密码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192706136.png)
 
 因为题目没有关于密码的提示，猜测该zip压缩包为伪加密。
 通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192707781.png)
+![十六进制 0000h 处 50 4B 03 04 14 00 后面红框 00 00，就是加密标志](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192707781.png)
 
 ```bash
 未加密：
@@ -101,7 +101,7 @@ ps:也不一定要09 00或00 00，只要是奇数都视为加密，而偶数则�
 
 保存文件，再次尝试解压，解压成功。打开flag.txt文件，获得flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192709798.png)
+ ![flag{96efd0a2037d06f34199e921079778ee}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192709798.png)
 
 ### flag：
 
