@@ -11,7 +11,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png)
+![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191120443.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -27,7 +27,7 @@ tags:
 - [Misc | 相当于签到 第二届“奇安信”杯网络安全技能竞赛](https://blog.csdn.net/YueXuan_521/article/details/134352467?spm=1001.2014.3001.5502)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png)
+ ![题目页「［GUET-CTF2019］虚假的压缩包 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191122980.png)
 
 ### 题目描述：
 
@@ -37,7 +37,7 @@ tags:
 
 下载附件解压，得到两个压缩包：虚假的压缩包.zip和真实的压缩包.zip
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png)
+ ![两个包：虚假的压缩包.zip（1 KB）与 真实的压缩包.zip（45 KB）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191124567.png)
 
 ---
 
@@ -45,11 +45,11 @@ tags:
 
 1、先处理虚假的压缩包.zip，因为真实的压缩包.zip需要密码。虚假的压缩包.zip使用了伪加密，搜索 `50 4B 01 02` ，将文件头的第9位和第10位改为0。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png)
+ ![010 Editor 里 50 4B 03 04 之后是 50 4B 01 02 中央目录，红框 00 00 是加密标志，右侧可见 Key.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191125895.png)
 
 解压得到Key.txt文件，内容如下：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png)
+ ![Key.txt 出的是一道数学题：n = 33、e = 3、解 26](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191127788.png)
 
 2、猜测为RSA加密，解密脚本如下：
 
@@ -80,19 +80,19 @@ print(ans)
 
 运行脚本，得到答案是 `5` 。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png)
+ ![按 RSA 的思路算，答案 5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191129180.png)
 
 3、解压真实的压缩包.zip，得到一张没卵用且会浪费你时间的图片.jpg和亦真亦假。
 
 解压密码： `答案是5` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png)
+ ![真实的压缩包里是「一张没卵用且会浪费你时间的图片.jpg」和「亦真亦假」两个文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191130320.png)
 
 使用TweakPNG打开jpg图片，发现提示jpg图片CRC不对，应该是被修改宽高啦。（另外该图片应为png文件，png文件头89 50 4E 47）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png)
+ ![TweakPNG 报错：Incorrect crc for IHDR chunk (is 1670bae6, should be 1928b08a)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191131706.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png)
+ ![010 Editor 里 PNG 文件头正常，但 IHDR 里的高度字段对不上](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191133343.png)
 
 使用如下脚本，计算原文件宽高。
 
@@ -114,14 +114,14 @@ for i in range(2000):
 
 得到图片的高应为 `242` ， `0xF2` 。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png)
+ ![算一下高度应该是 198 242，对应 hex 0xc6 0xf2](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191135339.png)
 
 修改图片高度如下
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png)
+ ![把高度改成 C6 F2 之后，结构就对上了](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191137129.png)
 
 得到图片
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png)
+ ![图片能打开了，是那张「这操作和手法 你是蔡徐坤」的表情包，底部多出 ^5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191139101.png)
 
 4、根据上面图片的提示，我们将亦真亦假文件的数据 `异或5` ，python脚本如下：
 
@@ -150,7 +150,7 @@ print("Decryption complete.")
 
 得到flag.doc文件，打开没有发现flag，全选改变字体颜色，得到flag。（word隐藏文字）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png)
+ ![Word 里一篇 Network security issues，末尾红框圈出 FLAG{_th2_7ru8_2iP_}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191141092.png)
 
 ### flag：
 

@@ -11,7 +11,7 @@ tags:
 - "笔记"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193518927.png)
+![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193518927.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193521476.png)
+ ![题目页「谁赢了比赛？1」：小光喜欢下围棋，找到一张棋谱却看不出谁赢，附件 cf5d4917-ee…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193521476.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个.png图片。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193523194.png)
+ ![棋谱图：黑白子交错，每颗子上都标着序号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193523194.png)
 
 ---
 
@@ -39,7 +39,7 @@ tags:
 
 1、放到010Editor中看一下，找到“Rar”文件头，猜测隐藏了rar压缩包。使用Kali中的binwalk工具进行检测，发现rar压缩包。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193526177.png)
+ ![binwalk who_won_the_game.png：0 处是 PNG image 10000 x 10000，1430236（0x15D2DC）起是 RAR archive data 4.x](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193526177.png)
 
 使用binwalk加上“-e”参数，直接分离rar压缩包。
 
@@ -49,38 +49,38 @@ binwalk -e BitcoinPay.png
 binwalk -e BitcoinPay.png --run-as=root
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193528028.png)
+ ![binwalk -e 再加 --run-as=root，参数更全，输出还是那两行](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193528028.png)
 
 2、尝试解压rar压缩包，但是需要密码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193529867.png)
+ ![解出的 15D2DC.rar 里是 hehe.gif，打开提示输入密码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193529867.png)
 
 使用ARCHPR工具，猜测是常见的4位纯数字进行破解，选定参数，破解得到密码为1020。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193531225.png)
+ ![Advanced Archive Password Recovery：总计口令 1,025、2s 664ms、口令 1020](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193531225.png)
 
 用得到的密码解压rar压缩包，得到一张hehe.gif图片和一个flag.txt文本（这个里面当然没有flag，只有“where do you think the flag is? 你认为flag在哪里？”）。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193532894.png)
+ ![解出 flag.txt 与 hehe.gif，后者是一张扫描的棋谱](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193532894.png)
 
 3、因为是.gif文件，可以使用StegSolve或者Photoshop分页查看，我的StegSolve无法显示，这里使用Photoshop为例。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193534373.png)
+ ![打开 hehe.gif 只有白底和底部一行 do_you_know_where_is_the_flag，右侧图层面板却有几百个图层](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193534373.png)
 
 依次浏览图层，在第310个图层，发现了关于flag的提示，不过和之前的flag.txt文本相同的内容“do_you_know_where_is_the_flag 您知道flag在哪里吗？”。不过，这暗示我们flag就在这里，将图层310导出为png。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193536651.png)
+![在图层面板找到纯白的「图层 310」，右键选「快速导出为 PNG」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193536651.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193538454.png)
+ ![导出的 图层 310.png 看着仍是白底，只有右下角一行小字](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193538454.png)
 
 4、使用StegSolve打开图片，查看Red 0等通道发现一张二维码。（这一步我真的没想到）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193539553.png)
+ ![StegSolve 里切 Red plane 0，白底里浮出完整二维码，底部还是那句 do_you_know_where_is_the_flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193539553.png)
 
 使用QR research扫描二维码，得到flag。（我们也知道最后是谁赢得了比赛！----山下敬吾）
 [山下敬吾](https://baike.baidu.com/item/%E5%B1%B1%E4%B8%8B%E6%95%AC%E5%90%BE/4823035#%E5%AE%8C%E6%88%90700%E8%83%9C) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193541517.png)
+ ![QR Research 解码：纠错等级 H、掩码 7，内容 flag{shangxiajingwu_won_the_game}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193541517.png)
 
 ### flag：
 
