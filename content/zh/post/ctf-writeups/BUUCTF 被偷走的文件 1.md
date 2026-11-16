@@ -12,7 +12,7 @@ tags:
 - "Wireshark"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193407556.png)
+![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193407556.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193431277.png)
+ ![题目页「被偷走的文件 1」：黑客入侵盗取机密文件，需分析盗走了什么](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193431277.png)
 
 ### 题目描述：
 
@@ -31,37 +31,37 @@ tags:
 ### 密文：
 
 下载附件，解压得到一个被偷走的文件.pcapng文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193433008.png)
+ ![被偷走的文件.pcapng，2015/8/3，34 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193433008.png)
 
 ---
 
 ### 解题思路：
 
 双击文件，打开wireshark。翻阅流量时找到ftp的流量，将ftp流量过滤下来。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193434804.png)
+ ![过滤 ftp：PASV、227 Entering Passive Mode、RETR flag.rar、226 Transfer complete](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193434804.png)
 
 追踪ftp流量，发现流量中有flag.rar压缩包。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193436768.png)
+ ![追踪 TCP 流 eq 3，同样能看到 RETR flag.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193436768.png)
 
 从这里开始有二种解题的方法：
 
 **第一种方法：** 使用Kali中的foremost工具，将rar压缩包从pcapng文件中提取出来。（wireshark 截取的流量中，会截取文件传输对应的流量，也就是说，这个流量包将包括 flag.rar压缩包）
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193438365.png)
+ ![foremost 这个 pcapng，tree ./output 得到 audit.txt 与 rar/00000011.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193438365.png)
 
 **第二种方法：** ftp协议有个ftp-data是ftp的数据通道，过滤出ftp-data的流量。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193440054.png)
+ ![过滤 ftp-data，第 55 号包是 FTP Data: 164 bytes (RETR flag.rar)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193440054.png)
 
 追踪TCP流，将数据类型选择原始数据，另存为rar压缩包。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193442161.png)
+ ![追踪 tcp.stream eq 4，整段十六进制以 52 61 72 21 1A 07 00 开头，可另存为](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193442161.png)
 
 得到压缩包后，尝试解压压缩包，但是需要密码。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193444426.png)
+ ![解压 00000011.rar 时提示输入密码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193444426.png)
 
 因为没有关于密码的提示，所以使用常用的4位纯数字进行破解。使用ARCHPR工具，选定参数，破解得到密码为5790。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193445810.png)
+ ![Advanced Archive Password Recovery 统计：总计口令 5,793、14s 502ms](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193445810.png)
 
 用密码解压rar压缩包，得到flag.txt文件，打开得到flag。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193447394.png)
+ ![记事本里 flag{6fe99a5d03fb01f833ec3caa80358fa3}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193447394.png)
 
 ### flag：
 

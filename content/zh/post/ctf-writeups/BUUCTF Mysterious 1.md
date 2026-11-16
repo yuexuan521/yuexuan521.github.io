@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png)
+![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png)
+ ![题目页「Mysterious 1」：小明拿到一个神秘盒子，要搞定它](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件，得到一个.exe文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png)
+ ![附件是 fa52d50e-…exe，图标是蓝色爪印](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png)
 
 ---
 
@@ -40,11 +40,11 @@ tags:
 
 1、双击执行文件，出现如下界面，随便输入一些内容，没有回显。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png)
+ ![运行后弹出「CTF」窗口：Input the password 加一个 Crack 按钮](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png)
 
 根据题目描述，本题应该与逆向存在关系，用记事本打开.exe文件，查看这个exe文件是32位还是64位程序。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png)
+ ![记事本打开 exe，前面是 MZ 头与 This program cannot be run in DOS mode.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png)
 
 > 第二行不远处有PE两个字母，再后面两个空格后第三个字符就是标记了，如果是字母L的话，就是32位应用程序，如果是d?就表示是64位应用程序。
 
@@ -52,19 +52,19 @@ tags:
 
 2、使用IDA打开exe文件，（在这一步之前可以使用查壳工具进行查壳），使用快捷键shift+F12查看字符串，寻找有用的信息。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png)
+![IDA 的 Strings 窗口，红框 well_done，下面还有 Buff3r_0v3rf|0w](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png)
 
 双击 `well done` ，找到与flag相关的字符串，定位关键函数。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png)
+![IDA 里几个字符串挨在一起：右花括号、Buff3r_0v3rf|0w、下划线、左花括号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png)
 
 使用快捷键ctrl+x（交叉引用）查看那段函数调用了该字符串，点击“OK”，进入该段函数，查看相关汇编代码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png)
+ ![MessageBoxA 那一行，Caption 后面注释着 "well done"](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png)
 
 使用快捷键F5查看该汇编代码的伪C代码。( “well done!” )
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png)
+ ![伪代码里 atoi(String) 要等于 122，且 String［3］、［4］、［5］ 依次是 120、121、122；满足后拼出 flag 并弹窗](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png)
 
 ```c
 int __stdcall sub_401090(HWND hWnd, int a2, int a3, int a4)
@@ -133,13 +133,13 @@ int __stdcall sub_401090(HWND hWnd, int a2, int a3, int a4)
 
 输入的内容string必须小于等于6。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png)
+ ![ASCII 表片段：0x78 120 x、0x79 121 y、0x7A 122 z](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png)
 
 那么，当v4= `122` ，而String[3]、String[4]、String[5]分别对应ASCII字符 `x、y、z` 时，满足要求返回flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png)
+ ![输入框里填 122xyz，点 Crack](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png)
+ ![弹窗「well done」显示 flag{123_Buff3r_0v3rf|0w}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png)
 
 ### flag：
 
