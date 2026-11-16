@@ -2268,7 +2268,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2286,31 +2286,19 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「hashcat 1」：得到的 flag 请包上 flag{} 提交，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到What kind of document is this_文件。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、文件名提示，需要确定文件类型。在010 Editor中打开，根据文件头 &lt;code&gt;D0 CF 11 E0&lt;/code&gt; 确定是MS Office文件。&lt;/p&gt;</description>
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到What kind of document is this_文件。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2328,7 +2316,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png" 
-             alt="" 
+             alt="题目页「hashcat 1」：得到的 flag 请包上 flag{} 提交，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -2340,7 +2328,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png" 
-             alt="" 
+             alt="解出一个没有扩展名的文件「What kind of document is this_」，124 KB" 
               
              loading="lazy"
         />
@@ -2360,7 +2348,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png" 
-             alt="" 
+             alt="010 Editor 里开头是 D0 CF 11 E0 A1 B1 1A E1，OLE 复合文档头，后面一大片 FF FF" 
               
              loading="lazy"
         />
@@ -2371,7 +2359,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png" 
-             alt="" 
+             alt="用 PowerPoint 打开，提示「输入密码以打开文件 What kind of document is this_.ppt」" 
               
              loading="lazy"
         />
@@ -2393,7 +2381,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png" 
-             alt="" 
+             alt="命令行跑 python office2john.py &ldquo;What kind of document is this_&rdquo; &gt; hash" 
               
              loading="lazy"
         />
@@ -2404,7 +2392,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png" 
-             alt="" 
+             alt="hash 文件里是文件名加 :$office$201010000012816*265c4784… 一整串" 
               
              loading="lazy"
         />
@@ -2423,7 +2411,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png" 
-             alt="" 
+             alt="把文件名前缀去掉，剩下的 $office$2010… 才是 hashcat 要的格式" 
               
              loading="lazy"
         />
@@ -2435,7 +2423,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png" 
-             alt="" 
+             alt="hashcat 官网下载页，红框 v6.2.6 那一行的 Download" 
               
              loading="lazy"
         />
@@ -2476,7 +2464,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png" 
-             alt="" 
+             alt="hashcat 跑起来：Hash.Mode 9500 (MS Office 2010)、Guess.Mask ?d?d?d?d ［4］，1723 H/s，Status Cracked" 
               
              loading="lazy"
         />
@@ -2495,7 +2483,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png" 
-             alt="" 
+             alt="命令行 hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O &ndash;show，末尾红框是 9919" 
               
              loading="lazy"
         />
@@ -2506,7 +2494,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png" 
-             alt="" 
+             alt="顺手改成 .doc 打开，Word 说「发现无法读取的内容」" 
               
              loading="lazy"
         />
@@ -2516,7 +2504,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png" 
-             alt="" 
+             alt="再改成 .xls，Excel 直接报「文件格式无效」" 
               
              loading="lazy"
         />
@@ -2526,7 +2514,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png" 
-             alt="" 
+             alt="其实是 ppt，PowerPoint 打开后标题是「o0e开头MD5值小结」，右侧还有一个大字「题」" 
               
              loading="lazy"
         />
@@ -2537,7 +2525,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png" 
-             alt="" 
+             alt="设置背景格式里选「纯色填充」，把颜色调成黑" 
               
              loading="lazy"
         />
@@ -2548,7 +2536,7 @@ Office2013：-m 9600</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png" 
-             alt="" 
+             alt="黑底上显出 Flag{okYOUWIN}" 
               
              loading="lazy"
         />
