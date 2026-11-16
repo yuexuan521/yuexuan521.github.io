@@ -1137,9 +1137,9 @@
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E6%9E%81%E5%AE%A2%E5%A4%A7%E6%8C%91%E6%88%98-2019easysql-1/</guid>
       <description>&lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_1.png&#34;&gt;
-        &lt;img src=&#34;./assets/1_1.png&#34; 
-             alt=&#34;&#34; 
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_1.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_1.png&#34; 
+             alt=&#34;文章开头的一张插画，蓝发少女配字「刷题嘛~?」「一起嘛~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1153,9 +1153,9 @@
 &lt;/ul&gt;
 &lt;p&gt;
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_2.png&#34;&gt;
-        &lt;img src=&#34;./assets/1_2.png&#34; 
-             alt=&#34;&#34; 
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_2.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_2.png&#34; 
+             alt=&#34;BUUCTF 题目弹窗「［极客大挑战 2019］EasySQL 1」，带靶机信息、启动靶机按钮与 Flag 提交框&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1167,21 +1167,19 @@
 &lt;p&gt;首先，判断提交方式，随机输入数据
 
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;./assets/1_3.png&#34;&gt;
-        &lt;img src=&#34;./assets/1_3.png&#34; 
-             alt=&#34;&#34; 
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_3.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/ctf-writeups/1_3.png&#34; 
+             alt=&#34;黑底红字的 NO, Wrong username password!！！！，地址栏是 check.php?username=1&amp;amp;password=1&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;提交数据出现在URL中，确定为GET提交方式&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2、判断注入类型是字符型还是数字型&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_1.png">
-        <img src="./assets/1_1.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_1.png">
+        <img src="/images/ctf-writeups/1_1.png" 
+             alt="文章开头的一张插画，蓝发少女配字「刷题嘛~?」「一起嘛~」" 
               
              loading="lazy"
         />
@@ -1195,9 +1193,9 @@
 </ul>
 <p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_2.png">
-        <img src="./assets/1_2.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_2.png">
+        <img src="/images/ctf-writeups/1_2.png" 
+             alt="BUUCTF 题目弹窗「［极客大挑战 2019］EasySQL 1」，带靶机信息、启动靶机按钮与 Flag 提交框" 
               
              loading="lazy"
         />
@@ -1209,9 +1207,9 @@
 <p>首先，判断提交方式，随机输入数据
 
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_3.png">
-        <img src="./assets/1_3.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_3.png">
+        <img src="/images/ctf-writeups/1_3.png" 
+             alt="黑底红字的 NO, Wrong username password!！！！，地址栏是 check.php?username=1&amp;password=1" 
               
              loading="lazy"
         />
@@ -1230,9 +1228,9 @@
 </div>
 </div><p>
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_4.png">
-        <img src="./assets/1_4.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_4.png">
+        <img src="/images/ctf-writeups/1_4.png" 
+             alt="黑色登录页，顶部一句「我是cl4y，是一个WEB开发程序员」，用户名填 1&rsquo; 、密码填 1" 
               
              loading="lazy"
         />
@@ -1241,9 +1239,9 @@
 <p>查看是否有报错信息
 
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_5.png">
-        <img src="./assets/1_5.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_5.png">
+        <img src="/images/ctf-writeups/1_5.png" 
+             alt="SQL 报错 You have an error in your SQL syntax，提示 near &lsquo;1&rsquo;&rsquo; at line 1" 
               
              loading="lazy"
         />
@@ -1271,9 +1269,9 @@
 </div><p>如果结果返回了全部的内容，可以判断存在注入点
 
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="./assets/1_6.png">
-        <img src="./assets/1_6.png" 
-             alt="" 
+    <a data-fancybox="gallery" href="/images/ctf-writeups/1_6.png">
+        <img src="/images/ctf-writeups/1_6.png" 
+             alt="Login Success! 页面上显示 flag{60f94177-044e-40dd-8378-e49b803a8362}，地址栏带 1&rsquo; or 1=1#" 
               
              loading="lazy"
         />
