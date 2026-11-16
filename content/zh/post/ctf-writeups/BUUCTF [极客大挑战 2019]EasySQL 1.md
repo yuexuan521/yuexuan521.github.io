@@ -14,7 +14,7 @@ tags:
 
 
 
-![](./assets/1_1.png)
+![文章开头的一张插画，蓝发少女配字「刷题嘛~?」「一起嘛~」](/images/ctf-writeups/1_1.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](./assets/1_2.png)
+ ![BUUCTF 题目弹窗「［极客大挑战 2019］EasySQL 1」，带靶机信息、启动靶机按钮与 Flag 提交框](/images/ctf-writeups/1_2.png)
 
 ### 题目描述：
 
@@ -41,7 +41,7 @@ tags:
 **1、根据题目提示，并且网站也存在输入框，尝试进行SQL注入。** 
 
 首先，判断提交方式，随机输入数据
- ![](./assets/1_3.png)
+ ![黑底红字的 NO, Wrong username password!！！！，地址栏是 check.php?username=1&password=1](/images/ctf-writeups/1_3.png)
 
 提交数据出现在URL中，确定为GET提交方式
 
@@ -53,10 +53,10 @@ tags:
 1' 
 ```
 
- ![](./assets/1_4.png)
+ ![黑色登录页，顶部一句「我是cl4y，是一个WEB开发程序员」，用户名填 1' 、密码填 1](/images/ctf-writeups/1_4.png)
 
 查看是否有报错信息
- ![](./assets/1_5.png)
+ ![SQL 报错 You have an error in your SQL syntax，提示 near '1'' at line 1](/images/ctf-writeups/1_5.png)
 
 ```bash
 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1'' at line 1
@@ -73,7 +73,7 @@ You have an error in your SQL syntax; check the manual that corresponds to your 
 ```
 
 如果结果返回了全部的内容，可以判断存在注入点
- ![](./assets/1_6.png)
+ ![Login Success! 页面上显示 flag{60f94177-044e-40dd-8378-e49b803a8362}，地址栏带 1' or 1=1#](/images/ctf-writeups/1_6.png)
 
 没想到这道题这么简单，仅仅判断注入点flag就出来了，连sqlmap都没用
 
