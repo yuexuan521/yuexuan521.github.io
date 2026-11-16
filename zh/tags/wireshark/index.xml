@@ -607,7 +607,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -628,7 +628,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「greatescape 1」，附件 7a556a41-8c…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -638,7 +638,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -659,7 +659,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png" 
-             alt="" 
+             alt="题目页「greatescape 1」，附件 7a556a41-8c…" 
               
              loading="lazy"
         />
@@ -671,7 +671,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png" 
-             alt="" 
+             alt="greatescape.pcap，957 KB，显示为 Wireshark capture" 
               
              loading="lazy"
         />
@@ -683,7 +683,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png" 
-             alt="" 
+             alt="过滤 ftp，可见 USER bob、PASS toto123、PORT 172,17,42,1,171,159 与 STOR ssc.key" 
               
              loading="lazy"
         />
@@ -693,7 +693,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png" 
-             alt="" 
+             alt="跟踪 TCP 流 eq 18，是完整的 FTP 会话，红框标出 STOR ssc.key" 
               
              loading="lazy"
         />
@@ -814,7 +814,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png" 
-             alt="" 
+             alt="tcp.stream eq 18 的包列表，中间夹着若干 TCP Retransmission" 
               
              loading="lazy"
         />
@@ -824,7 +824,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png" 
-             alt="" 
+             alt="跟踪 eq 19，是 &mdash;&ndash;BEGIN PRIVATE KEY&mdash;&ndash; 开头的完整 PEM 私钥" 
               
              loading="lazy"
         />
@@ -835,7 +835,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png" 
-             alt="" 
+             alt="Wireshark 首选项 → TLS → RSA keys list，Key File 填 ssc.key" 
               
              loading="lazy"
         />
@@ -854,7 +854,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png" 
-             alt="" 
+             alt="解密后的 HTTP 请求里，红框 FLAG: INS{0KThatWasWay2Easy}" 
               
              loading="lazy"
         />
