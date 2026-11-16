@@ -1033,7 +1033,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题图同样是那位蓝发女孩&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1049,7 +1049,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「Mysterious 1」：小明拿到一个神秘盒子，要搞定它&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1061,30 +1061,19 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;附件是 fa52d50e-…exe，图标是蓝色爪印&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击执行文件，出现如下界面，随便输入一些内容，没有回显。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;根据题目描述，本题应该与逆向存在关系，用记事本打开.exe文件，查看这个exe文件是32位还是64位程序。&lt;/p&gt;</description>
+&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击执行文件，出现如下界面，随便输入一些内容，没有回显。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190029799.png" 
-             alt="" 
+             alt="题图同样是那位蓝发女孩" 
               
              loading="lazy"
         />
@@ -1100,7 +1089,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190031828.png" 
-             alt="" 
+             alt="题目页「Mysterious 1」：小明拿到一个神秘盒子，要搞定它" 
               
              loading="lazy"
         />
@@ -1112,7 +1101,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190033728.png" 
-             alt="" 
+             alt="附件是 fa52d50e-…exe，图标是蓝色爪印" 
               
              loading="lazy"
         />
@@ -1124,7 +1113,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190035734.png" 
-             alt="" 
+             alt="运行后弹出「CTF」窗口：Input the password 加一个 Crack 按钮" 
               
              loading="lazy"
         />
@@ -1135,7 +1124,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190037106.png" 
-             alt="" 
+             alt="记事本打开 exe，前面是 MZ 头与 This program cannot be run in DOS mode." 
               
              loading="lazy"
         />
@@ -1150,7 +1139,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190039114.png" 
-             alt="" 
+             alt="IDA 的 Strings 窗口，红框 well_done，下面还有 Buff3r_0v3rf|0w" 
               
              loading="lazy"
         />
@@ -1161,7 +1150,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190040987.png" 
-             alt="" 
+             alt="IDA 里几个字符串挨在一起：右花括号、Buff3r_0v3rf|0w、下划线、左花括号" 
               
              loading="lazy"
         />
@@ -1172,7 +1161,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190042783.png" 
-             alt="" 
+             alt="MessageBoxA 那一行，Caption 后面注释着 &ldquo;well done&rdquo;" 
               
              loading="lazy"
         />
@@ -1183,7 +1172,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190044376.png" 
-             alt="" 
+             alt="伪代码里 atoi(String) 要等于 122，且 String［3］、［4］、［5］ 依次是 120、121、122；满足后拼出 flag 并弹窗" 
               
              loading="lazy"
         />
@@ -1318,7 +1307,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190046202.png" 
-             alt="" 
+             alt="ASCII 表片段：0x78 120 x、0x79 121 y、0x7A 122 z" 
               
              loading="lazy"
         />
@@ -1329,7 +1318,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190047633.png" 
-             alt="" 
+             alt="输入框里填 122xyz，点 Crack" 
               
              loading="lazy"
         />
@@ -1339,7 +1328,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190049042.png" 
-             alt="" 
+             alt="弹窗「well done」显示 flag{123_Buff3r_0v3rf|0w}" 
               
              loading="lazy"
         />
