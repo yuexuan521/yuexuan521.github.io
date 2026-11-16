@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192033727.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192033727.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 - [BUU-MISC-［UTCTF2020］basic-forensics](https://blog.csdn.net/qq_24033605/article/details/117336177)
 
 
- ![题目页「［UTCTF2020］basic-forensics 1」，附件 attachment.jpeg](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192035810.png)
+ ![题目页「［UTCTF2020］basic-forensics 1」，附件 attachment.jpeg](/images/blog/20251228192035810.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件，是一张打不开的图片
 
- ![资源管理器里的 attachment.jpeg，大小 2,335 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192037839.png)
+ ![资源管理器里的 attachment.jpeg，大小 2,335 KB](/images/blog/20251228192037839.png)
 
 ---
 
@@ -44,11 +44,11 @@ tags:
 
 1、使用010Editor打开图片，发现似乎是一本书的数据
 
- ![用 Notepad++ 打开这张 jpeg，内容竟是古腾堡电子书《堂吉诃德》的前言](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192039122.png)
+ ![用 Notepad++ 打开这张 jpeg，内容竟是古腾堡电子书《堂吉诃德》的前言](/images/blog/20251228192039122.png)
 
 直接搜索关键词“flag”，就找到flag了
 
- ![第 2055 行找到 utflag{fil3_ext3nsi0ns_4r3nt_r34l}，底部查找结果列出 15 处 flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192040648.png)
+ ![第 2055 行找到 utflag{fil3_ext3nsi0ns_4r3nt_r34l}，底部查找结果列出 15 处 flag](/images/blog/20251228192040648.png)
 
 ### flag：
 

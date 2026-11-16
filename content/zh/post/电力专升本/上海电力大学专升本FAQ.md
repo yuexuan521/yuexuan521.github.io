@@ -13,7 +13,7 @@ tags:
 
 
 
-![上海电力大学风机配图，配文「好风凭借力，送你上青云」](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042106924.png)
+![上海电力大学风机配图，配文「好风凭借力，送你上青云」](/images/blog/202512042106924.png)
 
 > 2025届考生情况，如有出入，以当年实际情况为准。
 >
@@ -66,7 +66,7 @@ tags:
 11、考试地点
 
 - 2025年考试地点：临港校区三教102（上海市浦东新区沪城环路1851号）
-- ![临港校区平面图，红框标出 A3 三号公共教学楼](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042100892.jpg)
+- ![临港校区平面图，红框标出 A3 三号公共教学楼](/images/blog/202512042100892.jpg)
 
 12、参考书目
 
@@ -86,7 +86,7 @@ tags:
 
 14、往年录取情况
 
-- <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042100893.jpg" alt="往年录取情况" style="zoom: 25%;" />
+- <img src="/images/blog/202512042100893.jpg" alt="往年录取情况" style="zoom: 25%;" width="904" height="2352" loading="lazy" decoding="async">
 
 15、问题新增在这里！
 
@@ -98,7 +98,7 @@ tags:
 
 > “不知道能不能及格”
 
-![一张黄色迎春花的特写照片](https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042115651.jpg)
+![一张黄色迎春花的特写照片](/images/blog/202512042115651.jpg)
 >人生易老天难老，岁岁重阳。今又重阳，战地黄花分外香。
 >
 >一年一度秋风劲，不似春光。胜似春光，寥廓江天万里霜。

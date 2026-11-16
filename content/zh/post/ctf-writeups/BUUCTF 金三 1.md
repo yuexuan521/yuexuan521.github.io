@@ -12,7 +12,7 @@ tags:
 - "网络安全"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228193543814.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png)
+![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](/images/blog/20251228193545912.png)
 
 ### 题目描述：
 
@@ -40,29 +40,29 @@ tags:
 
 在StegSolve中打开GIF图片
 
-![Stegsolve 主界面，红框标出 File → Open](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png)
+![Stegsolve 主界面，红框标出 File → Open](/images/blog/20251228193547762.png)
 
 打开逐帧查看
 
-![StegSolve 1.4 的 Analyse 菜单，红框标出 Frame Browser](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png)
+![StegSolve 1.4 的 Analyse 菜单，红框标出 Frame Browser](/images/blog/20251228193549564.png)
 
 在这里可以逐帧查看图片（理论上可以在这里看到逐帧的图片，但我这显示不出来）
 
-![Frame Browser 窗口显示「Frame : 1 of 89」，底部是 < > 与 Save](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png)
+![Frame Browser 窗口显示「Frame : 1 of 89」，底部是 < > 与 Save](/images/blog/20251228193551191.png)
 
 3、找到三张带有flag的图片，拼在一起得到flag。(中间的那张图片“he11o”，中间是两个数字1)
 
-![红底黑字的一帧：flag{](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp)
+![红底黑字的一帧：flag{](/images/blog/20251228193552982.bmp)
 
-![另一帧：he11o](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp)
+![另一帧：he11o](/images/blog/20251228193554839.bmp)
 
-![再一帧：hongke}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp)
+![再一帧：hongke}](/images/blog/20251228193556699.bmp)
 
 #### 方法二：
 
 1、使用Photoshop打开GIF图片，也可以逐帧查看图片。
 
-![Photoshop 里图层 1 到 26，其中图层 21 显示红方块与 flag{](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png)
+![Photoshop 里图层 1 到 26，其中图层 21 显示红方块与 flag{](/images/blog/20251228193558520.png)
 
 ### flag：
 

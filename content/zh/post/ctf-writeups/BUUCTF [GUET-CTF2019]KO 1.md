@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191035573.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191035573.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「［GUET-CTF2019］KO 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191038124.png)
+![题目页「［GUET-CTF2019］KO 1」，附件 attachment.txt](/images/blog/20251228191038124.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件得到一个.txt文本。
- ![满屏 Ook. Ook. Ook! 组成的 Ook 编码文本](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191039684.png)
+ ![满屏 Ook. Ook. Ook! 组成的 Ook 编码文本](/images/blog/20251228191039684.png)
 
 ---
 
@@ -83,7 +83,7 @@ Ook. Ook? Ook.
 
 2、使用在线网站进行解密，得到flag值。
 [Ook！加密解密](https://www.splitbrain.org/services/ook) 
- ![Ook 解码工具，解码后得到 welcome to CTF](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191042731.png)
+ ![Ook 解码工具，解码后得到 welcome to CTF](/images/blog/20251228191042731.png)
 
 ### flag：
 

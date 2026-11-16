@@ -12,7 +12,7 @@ tags:
 - "BUUCTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190651799.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228190651799.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![题目页「［BJDCTF2020］一叶障目 1」，附 GitHub 来源与 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190653815.png)
+ ![题目页「［BJDCTF2020］一叶障目 1」，附 GitHub 来源与 attachment.rar](/images/blog/20251228190653815.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一张.png图片。
- ![这里显示不出来，暗示被修改了宽高参数。（放在Linux中也无法显示）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190655468.png)
+ ![这里显示不出来，暗示被修改了宽高参数。（放在Linux中也无法显示）](/images/blog/20251228190655468.png)
 
 ---
 
@@ -39,7 +39,7 @@ tags:
 
 1、在010Editor中打开，提示CRC校验错误，结合题目提示“一叶障目”，认为图片被修改了宽高。
 
-![Notepad++ 查找结果报 *ERROR: CRC Mismatch @ chunk［0］; in data: c20f1fc6; expected: 55900eef](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190657303.png)
+![Notepad++ 查找结果报 *ERROR: CRC Mismatch @ chunk［0］; in data: c20f1fc6; expected: 55900eef](/images/blog/20251228190657303.png)
 
 2、通过python脚本爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -61,15 +61,15 @@ for i in range(2000):
 
 得到正确的宽高值。
 
- ![程序输出 321 844，并给出 hex: 0x141 0x34c](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190659146.png)
+ ![程序输出 321 844，并给出 hex: 0x141 0x34c](/images/blog/20251228190659146.png)
 
 3、修改图片中的宽高参数，然后保存图片。（红框左边为宽度，右边为高度）
 
-![十六进制视图，红框标出 00 00 01 41 与 00 00 03 4C](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190700528.png)
+![十六进制视图，红框标出 00 00 01 41 与 00 00 03 4C](/images/blog/20251228190700528.png)
 
 打开图片，找到flag。
 
- ![一张满是噪点的图片，右下角露出 xaflag{66666}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190702273.png)
+ ![一张满是噪点的图片，右下角露出 xaflag{66666}](/images/blog/20251228190702273.png)
 
 ### flag：
 

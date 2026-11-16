@@ -13,7 +13,7 @@ tags:
 
 ## DVWAStored Cross Site Scripting (存储型 XSS)
 
-![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165510527.jpeg)
 
 
 
@@ -79,15 +79,15 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 <script>alert(/XSS/)</script>
 ```
 
- ![Stored XSS 页面，Name 填 12、Message 填 <script>alert(/XSS/)</script>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png)
+ ![Stored XSS 页面，Name 填 12、Message 填 <script>alert(/XSS/)</script>](/images/blog/20251225165510528.png)
 
- ![提交后立即弹出 /XSS/](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png)
+ ![提交后立即弹出 /XSS/](/images/blog/20251225165510529.png)
 
 进入Home标签页，再回到XSS（Stored）页面，仍然可以成功，证明存储型XSS攻击成功
 
- ![左侧菜单的 Home 与 XSS (Stored) 被红框标出](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png)
+ ![左侧菜单的 Home 与 XSS (Stored) 被红框标出](/images/blog/20251225165510530.png)
 
- ![重新打开页面，弹窗依旧触发，说明脚本已经存进数据库](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png)
+ ![重新打开页面，弹窗依旧触发，说明脚本已经存进数据库](/images/blog/20251225165510531.png)
 
 （如果需要删除数据库中存在的XSS代码，进入dvwa数据库中guestbook表，选择性删除数据。）
 
@@ -155,7 +155,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 //双写绕过
 ```
 
- ![开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png)
+ ![开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)](/images/blog/20251225165510532.png)
 
 ### High
 
@@ -196,7 +196,7 @@ if( isset( $_POST[ 'btnSign' ] ) ) {
 <svg onload=alert(/XSS/)>
 ```
 
- ![改用 <img src=x onerror=alert(/XSS/)> 绕过长度限制，红框仍标着 maxlength](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png)
+ ![改用 <img src=x onerror=alert(/XSS/)> 绕过长度限制，红框仍标着 maxlength](/images/blog/20251225165510533.png)
 
 ### Impossible
 

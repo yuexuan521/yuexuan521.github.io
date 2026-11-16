@@ -16,7 +16,7 @@ tags:
 
 ## DVWA Brute Force (爆破)
 
-![DVWA 标志（文章封面）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113338.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165113338.jpeg)
 
 
 
@@ -90,7 +90,7 @@ if( isset( $_GET[ 'Login' ] ) ) {
 
 2、使用管理员admin登录，密码尝试123，提示错误
 
- ![Brute Force 登录页，用户名填 admin、密码留空，提示 Username and/or password incorrect.](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113339.png)
+ ![Brute Force 登录页，用户名填 admin、密码留空，提示 Username and/or password incorrect.](/images/blog/20251225165113339.png)
 
 使用Burp Suite抓包，将数据包发给Intruder（测试器），选择Sniper（狙击手）模式，选择password为有效载荷。
 
@@ -102,15 +102,15 @@ if( isset( $_GET[ 'Login' ] ) ) {
 > 1.Pitchfork：多个参数同时进行遍历，只是一个选字典1，一个选字典2（相当于50m赛跑同时出发，只是赛道不同，互不干扰。爆破次数取决于最短的字典长度）
 > 2.Cluster bomb：有点像两个嵌套的for循环，参数i和参数j，i=0，然后j要从0-10全部跑完，然后i=1，然后j再从0-10跑完，一对多，多次遍历
 
- ![Intruder 的 Payload Positions，Attack type 选 Sniper（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113340.png)
+ ![Intruder 的 Payload Positions，Attack type 选 Sniper（红框）](/images/blog/20251225165113340.png)
 
- ![Burp Intruder 全貌，密码位置被 §1234§ 标记（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113341.png)
+ ![Burp Intruder 全貌，密码位置被 §1234§ 标记（红框）](/images/blog/20251225165113341.png)
 
 使用字典进行爆破，字典可以自己制作，也可以网上直接下载，等待片刻爆破完成，使用爆破出的密码就能登录。
 
- ![攻击结果表里 password 那行 Length 5568（红框），其余都是 5519](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113342.png)
+ ![攻击结果表里 password 那行 Length 5568（红框），其余都是 5519](/images/blog/20251225165113342.png)
 
- ![登录成功后页面显示 Welcome to the password protected area admin](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113343.png)
+ ![登录成功后页面显示 Welcome to the password protected area admin](/images/blog/20251225165113343.png)
 
 ### Medium
 
@@ -159,7 +159,7 @@ if( isset( $_GET[ 'Login' ] ) ) {
 
 试了一下，果然很慢。
 
- ![high 级别的结果表，password 行 Length 5577，其余 5528](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113344.png)
+ ![high 级别的结果表，password 行 Length 5577，其余 5528](/images/blog/20251225165113344.png)
 
 ### High
 
@@ -214,33 +214,33 @@ generateSessionToken();
 
 2、进入Position模块，选择Attacktype为Pitchfork模式，选择password和user_token为爆破对象
 
- ![Attack type 改为 Pitchfork，password 与 user_token 两处都打了标记（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113345.png)
+ ![Attack type 改为 Pitchfork，password 与 user_token 两处都打了标记（红框）](/images/blog/20251225165113345.png)
 
 进入Resource Pool模块，
 
- ![Resource Pool 里新建 Custom resource pool 3，最大并发设为 1（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113346.png)
+ ![Resource Pool 里新建 Custom resource pool 3，最大并发设为 1（红框）](/images/blog/20251225165113346.png)
 
 进入Options模块，找到Grep - Extract选项卡，添加一个正则表达式匹配返回的user_token
 
- ![Options → Grep - Extract，红框标出 Add 按钮与提取正则](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113347.png)
+ ![Options → Grep - Extract，红框标出 Add 按钮与提取正则](/images/blog/20251225165113347.png)
 
 点击Refetch response，从response中找到user_token并选中
 
- ![定义提取规则：勾选 Extract from regex group，正则 value='(.*?)' />\r\n</form>，并点 Refetch response（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113348.png)
+ ![定义提取规则：勾选 Extract from regex group，正则 value='(.*?)' />\r\n</form>，并点 Refetch response（红框）](/images/blog/20251225165113348.png)
 
- ![回到 Grep - Extract，红框标出刚添加的提取项](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113349.png)
+ ![回到 Grep - Extract，红框标出刚添加的提取项](/images/blog/20251225165113349.png)
 
 载入字典
 
- ![Payloads 里 Payload set 1 用 Simple list，填入密码字典（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113350.png)
+ ![Payloads 里 Payload set 1 用 Simple list，填入密码字典（红框）](/images/blog/20251225165113350.png)
 
 第二个参数"token"选择从返回包匹配，填入当前token
 
- ![Payload set 2 改用 Recursive grep，初始 payload 填上一次拿到的 user_token（红框）](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113351.png)
+ ![Payload set 2 改用 Recursive grep，初始 payload 填上一次拿到的 user_token（红框）](/images/blog/20251225165113351.png)
 
 爆破成功，登录成功
 
- ![攻击结果里 password 请求 Length 5737，右侧响应页显示登录成功](https://raw.githubusercontent.com/yuexuan521/image/main/20251225165113352.png)
+ ![攻击结果里 password 请求 Length 5737，右侧响应页显示登录成功](/images/blog/20251225165113352.png)
 
 ### Impossible
 

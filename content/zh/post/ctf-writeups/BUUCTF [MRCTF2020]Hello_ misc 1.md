@@ -12,7 +12,7 @@ tags:
 - "隐写"
 ---
 
-![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png)
+![题图同样是那位蓝发女孩](/images/blog/20251228191514677.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [MRCTF复现](https://blog.csdn.net/weixin_44377940/article/details/105206585)
 
 
- ![题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png)
+ ![题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar](/images/blog/20251228191516830.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件解压，得到hello文件夹，两个文件
 
- ![两个文件：flag.rar（三本书捆皮带的图标）与 try to restore it.png](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191518410.png)
+ ![两个文件：flag.rar（三本书捆皮带的图标）与 try to restore it.png](/images/blog/20251228191518410.png)
 
 ---
 
@@ -44,21 +44,21 @@ tags:
 
 1、解压flag.rar需要密码，先处理try to restore it.png图片。
 
- ![try to restore it.png 打开只有顶部一条紫红噪声带，其余整片纯红](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191520430.png)
+ ![try to restore it.png 打开只有顶部一条紫红噪声带，其余整片纯红](/images/blog/20251228191520430.png)
 
 盲猜LSB隐写，用StegSolve打开，在Red 0通道发现PNG图片数据。
 
- ![StegSolve Extract Preview 勾 Red 第 0 位、MSB First、RGB，预览里能看到 .PNG 与 IHDR](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191522008.png)
+ ![StegSolve Extract Preview 勾 Red 第 0 位、MSB First、RGB，预览里能看到 .PNG 与 IHDR](/images/blog/20251228191522008.png)
 
 保存为png文件，得到：
 
- ![白底手写体：Maybe you should try to separate the files! 并给出 zip-passwd: !@#$%67*()-+](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191523571.png)
+ ![白底手写体：Maybe you should try to separate the files! 并给出 zip-passwd: !@#$%67*()-+](/images/blog/20251228191523571.png)
 
 得到zip-passwd密码，但不是flag.rar的密码。
 
 2、用010Editor打开try to restore it.png图片，在文件尾找到 `PK` 文件头，提取出来保存为zip文件。
 
- ![010 Editor 里 5780h 处 49 45 4E 44 之后紧接 50 4B 03 04，后面还出现 out.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191525518.png)
+ ![010 Editor 里 5780h 处 49 45 4E 44 之后紧接 50 4B 03 04，后面还出现 out.txt](/images/blog/20251228191525518.png)
 
 使用刚得到的密码解压，得到out.txt，文件内容如下：
 
@@ -227,15 +227,15 @@ if __name__ == '__main__':
 
 解密得到 `rar-passwd:0ac1fe6b77be5dbe` ，rar压缩包的密码。
 
- ![程序输出「隐藏的文本：rar-passwd:0ac1fe6b77be5dbe」，退出代码 0](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191527512.png)
+ ![程序输出「隐藏的文本：rar-passwd:0ac1fe6b77be5dbe」，退出代码 0](/images/blog/20251228191527512.png)
 
 3、用得到的密码解压flag.rar压缩包，得到flag文件夹下的fffflag.zip文件。
 
- ![分离出 fffflag.zip，2020/3/24 21:06，12 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191528857.png)
+ ![分离出 fffflag.zip，2020/3/24 21:06，12 KB](/images/blog/20251228191528857.png)
 
 然而它是一个doc文件，更改后缀打开。打开之后，全选内容更改字体颜色，得到一堆密文。（Where is the flag ?）
 
- ![Word 文档只有一行红字 Where is the flag?，最后一段是 MTEwMTEw… 开头的 base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191529916.png)
+ ![Word 文档只有一行红字 Where is the flag?，最后一段是 MTEwMTEw… 开头的 base64](/images/blog/20251228191529916.png)
 
 ```python
 MTEwMTEwMTExMTExMTEwMDExMTEwMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAxMTEwMDAwMDAxMTExMTExMTExMDAxMTAx
@@ -256,7 +256,7 @@ python b64steg.py -f flag.txt -s output.txt
 
 得到
 
- ![output.txt 里是一长串 0 和 1](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191531572.png)
+ ![output.txt 里是一长串 0 和 1](/images/blog/20251228191531572.png)
 
 ```python
 110110111111110011110111111111111111111111111111101110000001111111111001101
@@ -269,7 +269,7 @@ python b64steg.py -f flag.txt -s output.txt
 
 4、全选数据，回到fffflag.doc文件中，粘贴进去。然后搜索“ `0` ”，见证奇迹的时刻，你得到了flag。
 
- ![Word 里把这段二进制选中，导航窗格显示「1 个结果」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191533487.png)
+ ![Word 里把这段二进制选中，导航窗格显示「1 个结果」](/images/blog/20251228191533487.png)
 
 ### flag：
 

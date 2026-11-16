@@ -10,7 +10,7 @@ tags:
 - "CTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192907272.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192907272.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「大白 1」，提示「看不到图？是不是屏幕太小了」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192909259.png)
+![题目页「大白 1」，提示「看不到图？是不是屏幕太小了」](/images/blog/20251228192909259.png)
 
 ### 题目描述：
 
@@ -32,13 +32,13 @@ tags:
 下载附件后解压，发现一张名为dabai.png的图片。
 （似乎因为文件被修改过，原图片无法放在这里，这张图片是我的截图。）
 
-![大白（Baymax）卡通图，左上角写着 Hello~~](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192911388.png)
+![大白（Baymax）卡通图，左上角写着 Hello~~](/images/blog/20251228192911388.png)
 
 ### 解题思路：
 
 1、根据题目信息和图片呈现出来的异常（图片只有一半），推测出图片被修改了图片高度。(从图片的属性中，也可以看出异常)
 
-![dabai.png 属性 → 详细信息：分辨率 679 x 256、位深度 32](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192913282.png)
+![dabai.png 属性 → 详细信息：分辨率 679 x 256、位深度 32](/images/blog/20251228192913282.png)
 
 2、将图片放在010Editor，修改图片宽高。我们来分析png文件格式，
 首先，“89 50 4E 47 0D 0A 1A 0A”为标识png文件的八个字节的文件头标志。
@@ -52,15 +52,15 @@ tags:
 
 我们要修改的就是这串数字，将图像的高设置为与图像的宽一致，也就是将下图的”00 00 01 00“修改为“00 00 02 A7”。
 
-![十六进制 IHDR 处，高亮 00 00 02 A7，即原始高度 679](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192914606.png)
+![十六进制 IHDR 处，高亮 00 00 02 A7，即原始高度 679](/images/blog/20251228192914606.png)
 
 修改后是这样：
 
-![同处改成 00 00 02 97，高度被调小](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192916407.png)
+![同处改成 00 00 02 97，高度被调小](/images/blog/20251228192916407.png)
 
 3、最后，将修改后的图片保存，查看图片拿到flag。
 
-![改完高度后整张图完整显示，右下角 flag{He1l0_d4_ba1}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192918194.png)
+![改完高度后整张图完整显示，右下角 flag{He1l0_d4_ba1}](/images/blog/20251228192918194.png)
 
 ### flag：
 

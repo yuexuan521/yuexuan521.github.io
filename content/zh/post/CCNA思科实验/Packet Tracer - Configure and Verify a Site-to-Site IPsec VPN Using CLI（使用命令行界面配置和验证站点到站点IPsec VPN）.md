@@ -19,7 +19,7 @@ tags:
 
 ### 地址表
 
- ![地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png)
+ ![地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关](/images/blog/20251228212547156.png)
 
 ### 目标
 
@@ -33,13 +33,13 @@ tags:
 
 **ISAKMP阶段1策略参数** 
 
- ![ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png)
+ ![ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55](/images/blog/20251228212549003.png)
 
 注意：加粗参数为默认值。只有非加粗参数需要明确配置。
 
 **IPsec阶段2策略参数** 
 
- ![IPsec 参数表：VPN-SET（esp-aes + esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png)
+ ![IPsec 参数表：VPN-SET（esp-aes + esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp](/images/blog/20251228212550698.png)
 
 路由器已预先配置以下内容：
 
@@ -58,12 +58,12 @@ tags:
 **步骤1：测试连通性。** 
 
 从PC-A向PC-C发送ping请求。
- ![PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png)
+ ![PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms](/images/blog/20251228212552384.png)
 
 **步骤2：启用安全技术包。** 
 
 a. 在R1上执行 `show version` 命令查看安全技术包许可证信息。
- ![R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png)
+ ![R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation](/images/blog/20251228212554645.png)
 
 b. 如果未启用安全技术包，请使用以下命令启用该包。
 
@@ -168,27 +168,27 @@ b. 创建名为VPN-MAP的crypto映射，将所有阶段2参数绑定在一起。
 **步骤1：在出现感兴趣流量之前验证隧道。** 
 
 在R1上执行 `show crypto ipsec sa` 命令。注意封装、加密、解封装和解密的包数量均设置为 **0** 。
- ![R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png)
+ ![R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立](/images/blog/20251228212557007.png)
 
 **步骤2：创建感兴趣流量。** 
 
 从PC-A向PC-C发送ping请求。
- ![PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png)
+ ![PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）](/images/blog/20251228212558358.png)
 
 **步骤3：在产生感兴趣流量后验证隧道。** 
 
 在R1上重新执行 `show crypto ipsec sa` 命令。注意包的数量大于0，这表明IPsec VPN隧道正在工作。
- ![R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png)
+ ![R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE](/images/blog/20251228212600560.png)
 
 **步骤4：创建非感兴趣流量。** 
 
 从PC-A向PC-B发送ping请求。注：从路由器R1向PC-C或R3向PC-A发送ping请求不属于感兴趣流量。
- ![PC-A ping 192.168.2.3，25% 丢包，平均 20 ms](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png)
+ ![PC-A ping 192.168.2.3，25% 丢包，平均 20 ms](/images/blog/20251228212602410.png)
 
 **步骤5：再次验证隧道。** 
 
 在R1上重新执行 `show crypto ipsec sa` 命令。注意包的数量没有改变，这证实了非感兴趣流量并未被加密。
- ![再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png)
+ ![再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3](/images/blog/20251228212604285.png)
 
 **步骤6：检查结果。** 
 

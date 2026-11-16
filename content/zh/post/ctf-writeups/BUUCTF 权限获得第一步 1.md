@@ -10,7 +10,7 @@ tags:
 - "密码学"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205053233.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228205053233.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![BUUCTF「权限获得第一步 1」题目页，附件 8789fff6-91…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205054876.png)
+ ![BUUCTF「权限获得第一步 1」题目页，附件 8789fff6-91…](/images/blog/20251228205054876.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ Administrator:500:806EDC27AA52E314AAD3B435B51404EE:F4AD50F57683D4260DFD48AA351A1
 
 1、有没有很熟悉的感觉，观察密文，尝试md5，得到结果。
 
-![NTLM 反查：F4AD50F57683D4260DFD48AA351A17A8 对应 3617656](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205056443.png)
+![NTLM 反查：F4AD50F57683D4260DFD48AA351A17A8 对应 3617656](/images/blog/20251228205056443.png)
 
 ---
 

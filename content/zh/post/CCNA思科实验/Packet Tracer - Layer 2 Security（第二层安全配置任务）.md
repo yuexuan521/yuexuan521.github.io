@@ -17,7 +17,7 @@ tags:
 
 ## PacketTracer - 第二层安全配置任务
 
- ![实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png)
+ ![实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4](/images/blog/20251228212724150.png)
 
 ### 目标
 
@@ -201,9 +201,9 @@ SW-A# show port-security interface f0/1
 ```
 
 b. 从C1向C2发送Ping请求，然后再次输入 `show port-security interface f0/1` 命令，以验证交换机是否已学会C1的MAC地址。
- ![C1 ping 10.1.1.11 通，0% 丢包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png)
+ ![C1 ping 10.1.1.11 通，0% 丢包](/images/blog/20251228212726209.png)
 
- ![SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png)
+ ![SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址](/images/blog/20251228212728180.png)
 
 **步骤3：禁用未使用的端口。** 
 

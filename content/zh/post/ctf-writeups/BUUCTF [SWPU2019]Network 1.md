@@ -11,7 +11,7 @@ tags:
 - "隐写"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191913118.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 - [TTL隐写](https://guokeya.github.io/post/swpu2019networkttl-yin-xie/#:~:text=%E8%BF%99%E5%B0%B1%E6%98%AFTTL)
 
 
- ![题目页「［SWPU2019］Network 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png)
+ ![题目页「［SWPU2019］Network 1」，附件 attachment.txt](/images/blog/20251228191915164.png)
 
 ### 题目描述：
 
@@ -210,17 +210,17 @@ f2.write(res)
 
 解得数据为ZIP压缩包，修改后缀保存。
 
- ![010 Editor 打开 result.txt，红框标出 50 4B 03 04 与 61 67 2E 74 78 74，即 ZIP 头和 ag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png)
+ ![010 Editor 打开 result.txt，红框标出 50 4B 03 04 与 61 67 2E 74 78 74，即 ZIP 头和 ag.txt](/images/blog/20251228191917177.png)
 
 2、ZIP压缩包伪加密，修改相关参数解压得到flag.txt。
 
 [BUUCTF zip伪加密 1](https://blog.csdn.net/YueXuan_521/article/details/134055375?ops_request_misc=%257B%2522request%255Fid%2522%253A%25225BBF48C9-3DA8-4305-A79E-650F13C45E11%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=5BBF48C9-3DA8-4305-A79E-650F13C45E11&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-134055375-null-null.nonecase&utm_term=%E4%BC%AA%E5%8A%A0%E5%AF%86&spm=1018.2226.3001.4450) 
 
- ![同一文件更靠前的偏移，红框标出 00 00 加密标志位](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png)
+ ![同一文件更靠前的偏移，红框标出 00 00 加密标志位](/images/blog/20251228191919451.png)
 
- ![0x171A0h 附近，红框的 00 00 与 50 4B 并列，右侧能看到 flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png)
+ ![0x171A0h 附近，红框的 00 00 与 50 4B 并列，右侧能看到 flag.txt](/images/blog/20251228191921071.png)
 
- ![0x2E3C0h 附近又出现 00 00 与 50 4B、flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png)
+ ![0x2E3C0h 附近又出现 00 00 与 50 4B、flag.txt](/images/blog/20251228191923402.png)
 
 3、flag.txt的数据经过Base64加密，需要Base64循环解密脚本。
 
@@ -265,7 +265,7 @@ while True:
 
 解得内容为flag。
 
- ![程序输出 最终结果: {189ff9e5b743ae95f940a6ccc6dbd9ab}，循环次数 30](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png)
+ ![程序输出 最终结果: {189ff9e5b743ae95f940a6ccc6dbd9ab}，循环次数 30](/images/blog/20251228191925340.png)
 
 ### flag：
 

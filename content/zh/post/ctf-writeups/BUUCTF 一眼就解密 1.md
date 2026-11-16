@@ -20,7 +20,7 @@ flag：ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=
 flag{THE_FLAG_OF_THIS_STRING}
 ```
 
-<div style="text-align:center;"><img alt="" src="https://i-blog.csdnimg.cn/blog_migrate/77d05a5c47745bdcbd9dbaa753166f97.png"></div>
+<div style="text-align:center;"><img alt="Base64 解码页，输入 ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30= 解出 flag{THE_FLAG_OF_THIS_STRING}" src="/images/blog/csdn_77d05a5c47745bdcbd9dbaa753166f97.png" loading="lazy" decoding="async" width="1537" height="703"></div>
 
 **简述：** 
 

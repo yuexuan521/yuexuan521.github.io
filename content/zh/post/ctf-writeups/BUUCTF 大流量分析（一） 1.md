@@ -13,7 +13,7 @@ tags:
 - "流量分析"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192825456.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192825456.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [BUUCTF:大流量分析（一）](https://blog.csdn.net/wangjin7356/article/details/122525900)
 
 
- ![题目页「大流量分析（一）1」：问黑客攻击 IP，附网盘链接与提取码 9jva](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192827137.png)
+ ![题目页「大流量分析（一）1」：问黑客攻击 IP，附网盘链接与提取码 9jva](/images/blog/20251228192827137.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，有很多pcap流量包
 
- ![解压目录里 10 个 pcap 文件，每个约 488 MB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192828717.png)
+ ![解压目录里 10 个 pcap 文件，每个约 488 MB](/images/blog/20251228192828717.png)
 
 ---
 
@@ -45,7 +45,7 @@ tags:
 
 先统计IP，统计 → IPv4 Statistics → All Addresses
 
- ![统计 → IPv4 Statistics → All Addresses，红框 183.129.152.140，共 196601 个包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192830566.png)
+ ![统计 → IPv4 Statistics → All Addresses，红框 183.129.152.140，共 196601 个包](/images/blog/20251228192830566.png)
 
 将IP出现数量Count进行排序，发现除了 `183.129.152.140` ，其它全部是内网IP。
 
@@ -54,19 +54,19 @@ tags:
 > 172.16.0.0 – 172.31.255.255
 > 192.168.0.0 – 192.168.255.255
 
- ![统计菜单里红框标出「会话(C)」与「端点(E)」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192833055.png)
+ ![统计菜单里红框标出「会话(C)」与「端点(E)」](/images/blog/20251228192833055.png)
 
 2、统计会话和端点，发现 `183.129.152.140` 的分组数，是除内网IP最多的。
 
- ![统计 → Conversations → IPv4，红框 183.129.152.140 与 172.16.61.206、.199 的大量会话](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192835290.png)
+ ![统计 → Conversations → IPv4，红框 183.129.152.140 与 172.16.61.206、.199 的大量会话](/images/blog/20251228192835290.png)
 
 会话
 
- ![同一会话窗口，A→B 与 B→A 的包数、字节数对比](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192837106.png)
+ ![同一会话窗口，A→B 与 B→A 的包数、字节数对比](/images/blog/20251228192837106.png)
 
 端点
 
- ![端点窗口里红框同样是 183.129.152.140](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192839423.png)
+ ![端点窗口里红框同样是 183.129.152.140](/images/blog/20251228192839423.png)
 
 最后，确认黑客的攻击ip是 `183.129.152.140` 。
 

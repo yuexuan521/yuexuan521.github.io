@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191728297.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191728297.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [RCTF 2019 Official Writeup](https://blog.rois.io/2019/06/06/rctf-2019-official-writeup/#:~:text=%E4%BD%BF%E7%94%A8Wire)
 
 
- ![题目页「［RCTF2019］draw 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191730360.png)
+ ![题目页「［RCTF2019］draw 1」，附件 attachment.txt](/images/blog/20251228191730360.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 保存attachment.txt文件，内容如下：
 
- ![Logo 绘图指令文本，含 cs、pu、lt、fd、setcolor pick 等命令](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191731854.png)
+ ![Logo 绘图指令文本，含 cs、pu、lt、fd、setcolor pick 等命令](/images/blog/20251228191731854.png)
 
 ```bash
 cs pu lt 90 fd 500 rt 90 pd fd 100 rt 90 repeat 18[fd 5 rt 10] lt 135 fd 50 lt 135 pu bk 100 pd setcolor pick [ red orange yellow green blue violet ] repeat 18[fd 5 rt 10] rt 90 fd 60 rt 90 bk 30 rt 90 fd 60 pu lt 90 fd 100 pd rt 90 fd 50 bk 50 setcolor pick [ red orange yellow green blue violet ] lt 90 fd 50 rt 90 fd 50 pu fd 50 pd fd 25 bk 50 fd 25 rt 90 fd 50 pu setcolor pick [ red orange yellow green blue violet ] fd 100 rt 90 fd 30 rt 45 pd fd 50 bk 50 rt 90 fd 50 bk 100 fd 50 rt 45 pu fd 50 lt 90 pd fd 50 bk 50 rt 90 setcolor pick [ red orange yellow green blue violet ] fd 50 pu lt 90 fd 100 pd fd 50 rt 90 fd 25 bk 25 lt 90 bk 25 rt 90 fd 25 setcolor pick [ red orange yellow green blue violet ] pu fd 25 lt 90 bk 30 pd rt 90 fd 25 pu fd 25 lt 90 pd fd 50 bk 25 rt 90 fd 25 lt 90 fd 25 bk 50 pu bk 100 lt 90 setcolor pick [ red orange yellow green blue violet ] fd 100 pd rt 90 arc 360 20 pu rt 90 fd 50 pd arc 360 15 pu fd 15 setcolor pick [ red orange yellow green blue violet ] lt 90 pd bk 50 lt 90 fd 25 pu home bk 100 lt 90 fd 100 pd arc 360 20 pu home
@@ -49,7 +49,7 @@ cs pu lt 90 fd 500 rt 90 pd fd 100 rt 90 repeat 18[fd 5 rt 10] lt 135 fd 50 lt 1
 
 Logo解释器： [https://www.calormen.com/jslogo/](https://www.calormen.com/jslogo/) 
 
- ![Logo 解释器把指令渲染成残缺的 RCTF_HexLogo 字样](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191733830.png)
+ ![Logo 解释器把指令渲染成残缺的 RCTF_HexLogo 字样](/images/blog/20251228191733830.png)
 
 附一个类似的python代码：
 
@@ -231,7 +231,7 @@ t.home()  # 返回原点
 turtle.done()
 ```
 
- ![Python Turtle 画出旋转 90 度的字样，要转过来才能读](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191735446.png)
+ ![Python Turtle 画出旋转 90 度的字样，要转过来才能读](/images/blog/20251228191735446.png)
 
 ### flag：
 

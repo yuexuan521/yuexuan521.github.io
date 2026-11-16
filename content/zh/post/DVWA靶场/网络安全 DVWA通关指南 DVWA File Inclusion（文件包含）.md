@@ -16,7 +16,7 @@ tags:
 
 ## DVWA File Inclusion（文件包含）
 
-![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312280.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165312280.jpeg)
 
 
 
@@ -89,7 +89,7 @@ $file = $_GET[ 'page' ];
 
 没有任何过滤措施存在，同时使用GET方法传递参数。尝试查看file1.php文件
 
- ![地址栏 ?page=file1.php（红框），页面显示 Hello admin 与 Your IP address is: 127.0.0.1](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312282.png)
+ ![地址栏 ?page=file1.php（红框），页面显示 Hello admin 与 Your IP address is: 127.0.0.1](/images/blog/20251225165312282.png)
 
 2、在URL输入不存在的路径，提交出现报错信息，得到文件的绝对路径
 
@@ -99,7 +99,7 @@ Warning: include(iviirjgiegij): failed to open stream: No such file or directory
 Warning: include(): Failed opening 'iviirjgiegij' for inclusion (include_path='.;C:\php\pear;../../external/phpids/0.6/lib/') in D:\phpstudy_pro\WWW\DVWA-master\vulnerabilities\fi\index.php on line 36
 ```
 
- ![?page=iviiigjegj 报 include 失败，错误信息暴露出站点绝对路径](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312283.png)
+ ![?page=iviiigjegj 报 include 失败，错误信息暴露出站点绝对路径](/images/blog/20251225165312283.png)
 
 3、使用相对路径访问fi.php，路径为D:\phpstudy_pro\WWW\DVWA-master\hackable\flags\fi.php。
 
@@ -111,7 +111,7 @@ Warning: include(): Failed opening 'iviirjgiegij' for inclusion (include_path='.
 
 成功访问到fi.php文件
 
- ![用 ?page=..\..\hackable\flags\fi.php 读到 flags 里的内容](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312284.png)
+ ![用 ?page=..\..\hackable\flags\fi.php 读到 flags 里的内容](/images/blog/20251225165312284.png)
 
 ## Medium
 
@@ -140,7 +140,7 @@ $file = str_replace( array( "../", "..\"" ), "", $file );
 
 拼接到URL中提交，绕过成功
 
- ![换成 ?page=../../hackable/flags/fi.php 同样读到内容](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312285.png)
+ ![换成 ?page=../../hackable/flags/fi.php 同样读到内容](/images/blog/20251225165312285.png)
 
 ## High
 
@@ -174,7 +174,7 @@ file:///D:\phpstudy_pro\WWW\DVWA-master\hackable\flags\fi.php
 
 拼接到URL中提交，包含文件成功
 
- ![改用 file:/// 加绝对路径，同样能包含到目标文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165312286.png)
+ ![改用 file:/// 加绝对路径，同样能包含到目标文件](/images/blog/20251225165312286.png)
 
 ## Impossible
 

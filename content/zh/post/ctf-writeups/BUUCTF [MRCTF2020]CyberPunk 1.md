@@ -12,7 +12,7 @@ tags:
 - "Windows"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191452501.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png)
+ ![题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip](/images/blog/20251228191454519.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件解压，得到cyberpunk! .exe文件
 
- ![解压出 attachment (1).zip 与 cyberpunk!.exe](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png)
+ ![解压出 attachment (1).zip 与 cyberpunk!.exe](/images/blog/20251228191456196.png)
 
 ---
 
@@ -55,13 +55,13 @@ tags:
 > 
 > 工作室负责人：Adam Badowski
 
- ![程序提示要等到 2020.9.17，当前时间显示月 9、日 27](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png)
+ ![程序提示要等到 2020.9.17，当前时间显示月 9、日 27](/images/blog/20251228191457741.png)
 
 修改完成后，需要重新启动程序，这时就会出现flag
 
- ![Windows 日期和时间设置，红框标出 2020年9月17日 与「更改」按钮](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png)
+ ![Windows 日期和时间设置，红框标出 2020年9月17日 与「更改」按钮](/images/blog/20251228191459544.png)
 
- ![改完日期再运行，输出 MRCTF{We1c0m3_70_cyber_security}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png)
+ ![改完日期再运行，输出 MRCTF{We1c0m3_70_cyber_security}](/images/blog/20251228191501534.png)
 
 ### flag：
 

@@ -10,7 +10,7 @@ tags:
 - "CTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204830302.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228204830302.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![BUUCTF「Cipher 1」题目页，密文为 Dncnoqqfliqrpgeklwmppu](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204832579.png)
+![BUUCTF「Cipher 1」题目页，密文为 Dncnoqqfliqrpgeklwmppu](/images/blog/20251228204832579.png)
 
 ### 题目描述：
 
@@ -43,7 +43,7 @@ Dncnoqqfliqrpgeklwmppu
 
 3、要求输入密钥，密钥提示是“公平的玩吧”一句，所指出的“playfair”密码，密钥为“playfair”。
 
-![Playfair 解密工具：用密钥 playfair 解出 itisnotaproblemhavefun，右侧是密钥矩阵](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204834115.png)
+![Playfair 解密工具：用密钥 playfair 解出 itisnotaproblemhavefun，右侧是密钥矩阵](/images/blog/20251228204834115.png)
 
 4、输入密文、密钥，得到明文为“itisnotaproblemhavefun”。
 

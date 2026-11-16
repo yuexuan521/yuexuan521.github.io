@@ -13,7 +13,7 @@ tags:
 - "流量分析"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192851996.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192851996.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [BUUCTF：大流量分析（二）](https://blog.csdn.net/mochu7777777/article/details/110494041)
 
 
- ![题目页「大流量分析（二）1」：问黑客用哪个邮箱给员工发钓鱼邮件，附网盘链接与提取码 9jva](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192854069.png)
+ ![题目页「大流量分析（二）1」：问黑客用哪个邮箱给员工发钓鱼邮件，附网盘链接与提取码 9jva](/images/blog/20251228192854069.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，有很多pcap流量包。
 
- ![解压目录里 10 个 pcap 文件，每个约 488 MB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192856383.png)
+ ![解压目录里 10 个 pcap 文件，每个约 488 MB](/images/blog/20251228192856383.png)
 
 ---
 
@@ -45,15 +45,15 @@ tags:
 
 > 邮件协议：POP、SMTP、IMAP
 
- ![Wireshark 包列表经 smtp 过滤，可见 EHLO BAY004-OMC1S5.hotmail.com 与 MAIL FROM、RCPT TO](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192858934.png)
+ ![Wireshark 包列表经 smtp 过滤，可见 EHLO BAY004-OMC1S5.hotmail.com 与 MAIL FROM、RCPT TO](/images/blog/20251228192858934.png)
 
 追踪TCP流，发现几个邮箱。（拥有同样后缀@t3sec.cc的邮箱，应该是公司员工的邮箱）
 
- ![跟踪 TCP 流，红框 MAIL FROM:<xsser@live.cn> 与两个 RCPT TO 收件人](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192901470.png)
+ ![跟踪 TCP 流，红框 MAIL FROM:<xsser@live.cn> 与两个 RCPT TO 收件人](/images/blog/20251228192901470.png)
 
 往下查看流量，发现一段Base64编码的数据。
 
- ![邮件头部 MIME 信息，红框 Return-Path: xsser@live.cn，下面是 base64 正文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192903711.png)
+ ![邮件头部 MIME 信息，红框 Return-Path: xsser@live.cn，下面是 base64 正文](/images/blog/20251228192903711.png)
 
 解码后，发现疑似钓鱼邮件，确认黑客使用的邮箱是： `xsser@live.cn` 。
 
@@ -70,7 +70,7 @@ CiAgICDQu9C7tPO80qOhDQoNCg==
     谢谢大家！
 ```
 
- ![同一条 TCP 流顶部，红框 FROM:<xsser@live.cn>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192905527.png)
+ ![同一条 TCP 流顶部，红框 FROM:<xsser@live.cn>](/images/blog/20251228192905527.png)
 
 ### flag：
 

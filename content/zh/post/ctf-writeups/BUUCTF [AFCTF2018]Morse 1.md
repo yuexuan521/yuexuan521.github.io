@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842801.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251213232842801.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「［AFCTF2018］Morse 1」，附件 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842802.png)
+ ![题目页「［AFCTF2018］Morse 1」，附件 attachment.txt](/images/blog/20251213232842802.png)
 
 ### 题目描述：
 
@@ -41,7 +41,7 @@ tags:
 1、观察密文，我想大家不陌生，看一眼题目，直接确定摩斯密码。
 [摩斯密码加解密](https://rumkin.com/tools/cipher/morse-code/) 
 
-![摩尔斯解码工具：一长串点划解出 61666374667B31732…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842803.png)
+![摩尔斯解码工具：一长串点划解出 61666374667B31732…](/images/blog/20251213232842803.png)
 
 2、得到一次明显不是flag的东东，去除一下空格，看下字符串长度。
 
@@ -49,14 +49,14 @@ tags:
 - [字符串长度计算](https://www.toolbaba.cn/d/dev_str_count)
 
 
-![文本去除空格工具，得到 61666374667B317327745F73305F333435797D](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842804.png)
+![文本去除空格工具，得到 61666374667B317327745F73305F333435797D](/images/blog/20251213232842804.png)
 
-![字数统计：文本总长 38，其中数字 34 个](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842805.png)
+![字数统计：文本总长 38，其中数字 34 个](/images/blog/20251213232842805.png)
 
 3、看字符长度，显然不是md5，尝试base32、64后，仍无法解出结果。最后，是通过Hex编码，得到明文。
 [Hex编码/解码](https://www.107000.com/T-Hex) 
 
-![Hex 解码工具：解出 afctf{1s't_s0_345y}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251213232842806.png)
+![Hex 解码工具：解出 afctf{1s't_s0_345y}](/images/blog/20251213232842806.png)
 
 ---
 

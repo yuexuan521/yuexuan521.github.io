@@ -1,10 +1,17 @@
-<!-- 覆盖 Hugo 默认的图片渲染，包裹 Fancybox -->
+<!-- 覆盖 Hugo 默认的图片渲染，包裹 Fancybox。
+     本地图片按 data/images_meta.json 注入 width/height（消除 CLS）；
+     页面首图 eager + fetchpriority=high，其余 lazy + decoding=async。 -->
+{{- $dest := .Destination | safeURL -}}
+{{- $meta := index hugo.Data.images_meta (path.Base (urls.Parse .Destination).Path) -}}
+{{- $loading := "lazy" -}}{{- $fetch := "" -}}
+{{- if eq .Ordinal 0 -}}{{- $loading = "eager" -}}{{- $fetch = ` fetchpriority="high"` -}}{{- end -}}
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="{{ .Destination | safeURL }}">
-        <img src="{{ .Destination | safeURL }}" 
-             alt="{{ .Text }}" 
-             {{ with .Title}} title="{{ . }}"{{ end }} 
-             loading="lazy"
+    <a data-fancybox="gallery" href="{{ $dest }}">
+        <img src="{{ $dest }}"
+             alt="{{ .Text }}"
+             {{ with .Title}} title="{{ . }}"{{ end }}
+             loading="{{ $loading }}" decoding="async"{{ $fetch | safeHTMLAttr }}
+             {{- with $meta }} width="{{ .w }}" height="{{ .h }}"{{ end -}}
         />
     </a>
 </div>

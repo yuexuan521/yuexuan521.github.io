@@ -13,7 +13,7 @@ tags:
 - "流量分析"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192841294.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192841294.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [BUUCTF | 大流量分析 （一）（二）（三）](https://www.cnblogs.com/yunqian2017/p/14298416.html)
 
 
- ![题目页「大流量分析（三）1」，问后门文件名，附网盘链接与提取码 9jva](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192843830.png)
+ ![题目页「大流量分析（三）1」，问后门文件名，附网盘链接与提取码 9jva](/images/blog/20251228192843830.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，有很多pcap流量包。
 
- ![解压目录里 10 个 pcap 文件，每个约 488 MB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192846159.png)
+ ![解压目录里 10 个 pcap 文件，每个约 488 MB](/images/blog/20251228192846159.png)
 
 ---
 
@@ -51,11 +51,11 @@ tcp contains "phpinfo()"
 
 最终，在该流量包 `数据采集D_eth0_NS_20160809_172831.pcap` 发现 `phpinfo()` 。
 
- ![同目录下，红框圈出 数据采集D_eth0_NS_20160809_172831.pcap](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192848528.png)
+ ![同目录下，红框圈出 数据采集D_eth0_NS_20160809_172831.pcap](/images/blog/20251228192848528.png)
 
 执行 `phpinfo()` 的文件是admin.bak.php，黑客预留的后门的文件名是 `admin.bak.php` 。
 
- ![Wireshark 过滤 tcp contains "phpinfo()"，红框行是 GET /admin.bak.php?a=assert&b=phpinfo()](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192850193.png)
+ ![Wireshark 过滤 tcp contains "phpinfo()"，红框行是 GET /admin.bak.php?a=assert&b=phpinfo()](/images/blog/20251228192850193.png)
 
 ```python
 GET /admin.bak.php?a=assert&b=phpinfo() HTTP/1.1\r\n

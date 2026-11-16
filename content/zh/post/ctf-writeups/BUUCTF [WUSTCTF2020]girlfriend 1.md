@@ -13,7 +13,7 @@ tags:
 - "Web安全"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228192235955.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [BUUCTF：［WUSTCTF2020］girlfriend](https://blog.csdn.net/mochu7777777/article/details/105412940)
 
 
- ![题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png)
+ ![题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip](/images/blog/20251228192238168.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 下载附件，得到attachment .zip压缩包，解压后得到girlfriend.zip压缩包。最后材料是girlfriend.wav和题目描述.txt。
 
 题目描述.txt内容如下：
- ![题干：I want a girl friend !!! 将结果用 wctf2020{} 再提交](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png)
+ ![题干：I want a girl friend !!! 将结果用 wctf2020{} 再提交](/images/blog/20251228192239778.png)
 
 ---
 
@@ -46,7 +46,7 @@ tags:
 
 1、尝试听girlfriend.wav音频文件，刚开始没有听出是手机键盘拨号声。后面看题解，得知是DTMF拨号音识别。
 **Audacity显示** 
- ![一段蓝色波形条，就是 DTMF 拨号音的波形](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png)
+ ![一段蓝色波形条，就是 DTMF 拨号音的波形](/images/blog/20251228192240867.png)
 
 使用dtmf2num程序识别拨号内容
 [dtmf2num下载地址](https://link.csdn.net/?from_id=105412940&target=http://aluigi.altervista.org/mytoolz/dtmf2num.zip) 
@@ -56,7 +56,7 @@ dtmf2num.exe ..\资料\girlfriend.wav
 dtmf2num.exe 音频文件位置
 ```
 
- ![dtmf2num 解析 girlfriend.wav，输出 DTMF numbers: 999*666*88*2*777*33*6…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png)
+ ![dtmf2num 解析 girlfriend.wav，输出 DTMF numbers: 999*666*88*2*777*33*6…](/images/blog/20251228192242495.png)
 
 得到如下的按键顺序、次数
 
@@ -66,7 +66,7 @@ dtmf2num.exe 音频文件位置
 
 2、对应手机上九宫格输入，得到最后的字符串为 `YOUAREMYGIRLFRIENDS` 
 
- ![手机九宫格键盘，红框圈出 1–9 键与各自对应的字母](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png)
+ ![手机九宫格键盘，红框圈出 1–9 键与各自对应的字母](/images/blog/20251228192244079.png)
 
 ```bash
 YOUAREMYGIRLFRIENDS

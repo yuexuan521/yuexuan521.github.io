@@ -12,7 +12,7 @@ tags:
 - "Wireshark"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185851554.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228185851554.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -28,7 +28,7 @@ tags:
 - [buuctf-greatescape题目解析](https://blog.csdn.net/chinese_cabbage0/article/details/144456714)
 
 
- ![题目页「greatescape 1」，附件 7a556a41-8c…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185853673.png)
+ ![题目页「greatescape 1」，附件 7a556a41-8c…](/images/blog/20251228185853673.png)
 
 ### 题目描述：
 
@@ -38,7 +38,7 @@ tags:
 
 下载附件，解压得到 `greatescape.pcap` 
 
- ![greatescape.pcap，957 KB，显示为 Wireshark capture](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185855078.png)
+ ![greatescape.pcap，957 KB，显示为 Wireshark capture](/images/blog/20251228185855078.png)
 
 ---
 
@@ -46,9 +46,9 @@ tags:
 
 1、过滤常见协议，如FTP、HTTP。在FTP协议中，查看TCP流，发现ssc.key文件，猜测为TLS密钥文件。（位置在 `tcp.stream eq 18` ）
 
- ![过滤 ftp，可见 USER bob、PASS toto123、PORT 172,17,42,1,171,159 与 STOR ssc.key](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185856071.png)
+ ![过滤 ftp，可见 USER bob、PASS toto123、PORT 172,17,42,1,171,159 与 STOR ssc.key](/images/blog/20251228185856071.png)
 
- ![跟踪 TCP 流 eq 18，是完整的 FTP 会话，红框标出 STOR ssc.key](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185857870.png)
+ ![跟踪 TCP 流 eq 18，是完整的 FTP 会话，红框标出 STOR ssc.key](/images/blog/20251228185857870.png)
 
 在 `tcp.stream eq 19` ，可以找到ssc.key密钥文件数据，另存为ssc.key文件。
 
@@ -107,13 +107,13 @@ xmZSEXjNvG9grjxwR96vp1PK/4Bq1jo=
 -----END PRIVATE KEY-----
 ```
 
- ![tcp.stream eq 18 的包列表，中间夹着若干 TCP Retransmission](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185859533.png)
+ ![tcp.stream eq 18 的包列表，中间夹着若干 TCP Retransmission](/images/blog/20251228185859533.png)
 
- ![跟踪 eq 19，是 -----BEGIN PRIVATE KEY----- 开头的完整 PEM 私钥](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185902069.png)
+ ![跟踪 eq 19，是 -----BEGIN PRIVATE KEY----- 开头的完整 PEM 私钥](/images/blog/20251228185902069.png)
 
 2、在Wireshark中，通过“编辑 > 首选项 > Protocols > TLS”，点击“Edit”后添加Key File并输入ssc.key，最后确认即可完成TLS协议解密。
 
- ![Wireshark 首选项 → TLS → RSA keys list，Key File 填 ssc.key](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185904153.png)
+ ![Wireshark 首选项 → TLS → RSA keys list，Key File 填 ssc.key](/images/blog/20251228185904153.png)
 
 使用如下过滤语句，即可得到flag： `INS{OkThatWasWay2Easy}` 
 
@@ -121,7 +121,7 @@ xmZSEXjNvG9grjxwR96vp1PK/4Bq1jo=
 http contains "FLAG"
 ```
 
- ![解密后的 HTTP 请求里，红框 FLAG: INS{0KThatWasWay2Easy}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185906018.png)
+ ![解密后的 HTTP 请求里，红框 FLAG: INS{0KThatWasWay2Easy}](/images/blog/20251228185906018.png)
 
 ### flag：
 

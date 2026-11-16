@@ -11,7 +11,7 @@ tags:
 - "BUUCTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204843053.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228204843053.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![BUUCTF「password 1」题目页，附件 005f93e8-64…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204845519.png)
+ ![BUUCTF「password 1」题目页，附件 005f93e8-64…](/images/blog/20251228204845519.png)
 
 ### 密文：
 

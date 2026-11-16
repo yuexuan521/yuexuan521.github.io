@@ -15,7 +15,7 @@ tags:
 
 ## DVWA DOM Based Cross Site Scripting (DOM型 XSS)
 
-![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244123.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165244123.jpeg)
 
 
 
@@ -58,7 +58,7 @@ tags:
 //没有任何防御措施
 ```
 
- ![DOM XSS 页面，地址栏 default=English（红框），下方是语言下拉框与 Select 按钮](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244124.png)
+ ![DOM XSS 页面，地址栏 default=English（红框），下方是语言下拉框与 Select 按钮](/images/blog/20251225165244124.png)
 
 2、修改default，在URL拼接Payload
 
@@ -66,7 +66,7 @@ tags:
 <script>alert(/XSS/)</script>
 ```
 
- ![地址栏换成 default=<script>alert(/XSS/)</script>，页面弹出 /XSS/](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244125.png)
+ ![地址栏换成 default=<script>alert(/XSS/)</script>，页面弹出 /XSS/](/images/blog/20251225165244125.png)
 
 ### Medium
 
@@ -91,7 +91,7 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 
 增加对"<script"字符的过滤，查看前端代码
 
- ![开发者工具里 select 元素被插入了 script 标签（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244126.png)
+ ![开发者工具里 select 元素被插入了 script 标签（红框）](/images/blog/20251225165244126.png)
 
 2、构造闭合"option"和"select"标签，执行弹出"/xss/"的语句
 
@@ -99,9 +99,9 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 </optin></select><img src = 1 onerror = alert(/xss/)>
 ```
 
- ![用 /option>--> </select><img src=1 onerror=alert(/xss/)> 闭合标签，弹窗同时把语言列表渲染出来](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244127.png)
+ ![用 /option>--> </select><img src=1 onerror=alert(/xss/)> 闭合标签，弹窗同时把语言列表渲染出来](/images/blog/20251225165244127.png)
 
- ![开发者工具里 option value 内被注入 %3C/option%3E… 与 img onerror（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244128.png)
+ ![开发者工具里 option value 内被注入 %3C/option%3E… 与 img onerror（红框）](/images/blog/20251225165244128.png)
 
 ### High
 
@@ -136,9 +136,9 @@ if ( array_key_exists( "default", $_GET ) && !is_null ($_GET[ 'default' ]) ) {
 (空格)#<script>alert(/xss/)</script>
 ```
 
- ![地址栏 default=English#<script>alert(/XSS/)</script>，弹窗照样触发（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244129.png)
+ ![地址栏 default=English#<script>alert(/XSS/)</script>，弹窗照样触发（红框）](/images/blog/20251225165244129.png)
 
- ![开发者工具里 option value 变成 English#%3Cscript%3E…（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165244130.png)
+ ![开发者工具里 option value 变成 English#%3Cscript%3E…（红框）](/images/blog/20251225165244130.png)
 
 ### Impossible
 

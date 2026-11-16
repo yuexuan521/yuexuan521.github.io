@@ -89,7 +89,8 @@
 
     .logo {
         flex: 0 0 auto;
-        margin: auto 8px auto 0;
+        /* 左侧保留 12px 内边距，避免 logo 紧贴屏幕左边缘 */
+        margin: auto 8px auto 12px;
         gap: 0;
     }
 

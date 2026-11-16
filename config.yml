@@ -14,9 +14,9 @@ outputs:
 # --- 作者信息 (Global) ---
 author:
   name: Yue Xuan        # 全局默认作者名。如果文章没指定作者，就用这个。
-languageCode: en-us     # 网站主要语言代码 (用于 HTML <html lang="en-us">)。
+languageCode: zh-cn     # 网站主要语言代码 (用于 HTML <html lang="zh-cn">)。英文站下线后主语言为中文
 rssLimit: 10            # RSS 订阅源中最多显示最新的 10 篇文章。
-enableRobotsTXT: true   # 是否生成 robots.txt（允许搜索引擎抓取）
+enableRobotsTXT: false  # 关闭自动生成，统一由 static/robots.txt 提供（单一来源，避免两处规则不一致）
 buildDrafts: false      # 是否构建“草稿”。设为 true 则即使文章头有 draft: true 也会显示
 buildFuture: false      # 是否发布日期在未来的文章。True=即使日期是明天也现在发布。
 buildExpired: false     # 是否发布已过期的文章 (在文章头设置了
@@ -163,6 +163,8 @@ params:
 defaultContentLanguageInSubdir: true # 【重要】是否将默认语言放在子目录。
                                      # True = 访问首页自动跳转 /en/ 或 /zh/。
                                      # False = 默认语言直接显示在根目录，其他语言在子目录。
+disableLanguages: ["en"]  # 英文站仅 2 篇且未维护，已下线（不构建 /en/）。
+                          # 配置块保留，日后补全内容后删除本行即可恢复。
 copyright: "See this site's source code [here](https://github.com/yuexuan521/yuexuan521.github.io), licensed under GPLv3 ·"  # 页脚版权信息支持 Markdown。
 defaultContentLanguage: zh  # 默认语言。
 languages: # 定义具体语言板块。

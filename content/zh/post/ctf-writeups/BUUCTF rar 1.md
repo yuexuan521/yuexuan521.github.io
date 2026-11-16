@@ -12,7 +12,7 @@ tags:
 - "笔记"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190206028.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228190206028.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「rar 1」：rar 包被加密，密码是 4 位纯数字](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190208568.png)
+![题目页「rar 1」：rar 包被加密，密码是 4 位纯数字](/images/blog/20251228190208568.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到一个rar压缩包。
 
-![dianli_jbctf_MISC_T10076_20150707_rar.rar，RAR 压缩文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190210601.png)
+![dianli_jbctf_MISC_T10076_20150707_rar.rar，RAR 压缩文件](/images/blog/20251228190210601.png)
 
 ---
 
@@ -47,15 +47,15 @@ tags:
 
 2、下载软件完成后，打开软件。在ARCHPR中打开压缩包，选择字符范围和密码长度，点击开始破解。（根据题目得知是四位纯数字密码）
 
-![Advanced RAR Password Recovery 的「范围」页，勾选「所有数字(0-9)」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190211965.png)
+![Advanced RAR Password Recovery 的「范围」页，勾选「所有数字(0-9)」](/images/blog/20251228190211965.png)
 
-![「长度」页把最小、最大口令长度都设成 4](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190213522.png)
+![「长度」页把最小、最大口令长度都设成 4](/images/blog/20251228190213522.png)
 
 3、破解出的密码是8795，使用这个密码解压rar压缩包，得到一个flag.txt文件，打开得到flag。
 
-![口令恢复统计：总计口令 8,797、平均速度 416/秒、口令为 8795](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190214825.png)
+![口令恢复统计：总计口令 8,797、平均速度 416/秒、口令为 8795](/images/blog/20251228190214825.png)
 
-![flag.txt 里是 flag{1773c5da790bd3caff38e3decd180eb7}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190216200.png)
+![flag.txt 里是 flag{1773c5da790bd3caff38e3decd180eb7}](/images/blog/20251228190216200.png)
 
 **flag：** 
 

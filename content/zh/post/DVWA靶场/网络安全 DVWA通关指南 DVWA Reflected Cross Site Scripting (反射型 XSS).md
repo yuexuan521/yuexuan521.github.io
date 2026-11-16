@@ -14,7 +14,7 @@ tags:
 
 ## DVWAReflected Cross Site Scripting (反射型 XSS)
 
-![DVWA 标志（文章封面）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408561.jpeg)
+![DVWA 标志（文章封面）](/images/blog/20251225165408561.jpeg)
 
 
 
@@ -75,9 +75,9 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 alert() 是JavaScript的一个内置函数，用于显示带有一条消息的对话框。用户必须点击确定按钮才能关闭这个对话框并继续操作页面。
 ```
 
- ![XSS Reflected 页面，输入框里填了 <script>alert(/XSS/)</script>](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408562.png)
+ ![XSS Reflected 页面，输入框里填了 <script>alert(/XSS/)</script>](/images/blog/20251225165408562.png)
 
- ![提交后地址栏带上 payload，页面弹出对话框显示 /XSS/](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408563.png)
+ ![提交后地址栏带上 payload，页面弹出对话框显示 /XSS/](/images/blog/20251225165408563.png)
 
 3、 **解决方案** :
 
@@ -123,9 +123,9 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 //绕过<script>
 ```
 
- ![输入改成 <scr<script>ipt>alert(/XSS/) 试图绕过关键字过滤](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408564.png)
+ ![输入改成 <scr<script>ipt>alert(/XSS/) 试图绕过关键字过滤](/images/blog/20251225165408564.png)
 
- ![这种嵌套写法仍然弹出 /XSS/，说明过滤被绕过](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408565.png)
+ ![这种嵌套写法仍然弹出 /XSS/，说明过滤被绕过](/images/blog/20251225165408565.png)
 
 ### High
 
@@ -184,7 +184,7 @@ alert(/xss/)：这里使用的JavaScript代码与之前的例子相似，目的�
 攻击原理：当这段SVG代码被嵌入到一个网页中，一旦SVG图形加载完成，onload事件就会触发，并执行alert(/xss/), 弹出一个包含/xss/的警告框。实质上，这揭示了网页对用户输入数据处理不当，允许执行恶意脚本的风险。攻击者可以利用这一点，不仅限于弹窗，还可以执行任何JavaScript代码，实现更深层次的攻击，如窃取用户数据、操控页面内容、发起进一步的攻击等。
 ```
 
- ![换成 <img src=x onerror=alert(/XSS/)> 同样触发弹窗，页面回显 Hello](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165408566.png)
+ ![换成 <img src=x onerror=alert(/XSS/)> 同样触发弹窗，页面回显 Hello](/images/blog/20251225165408566.png)
 
 ### Impossible
 

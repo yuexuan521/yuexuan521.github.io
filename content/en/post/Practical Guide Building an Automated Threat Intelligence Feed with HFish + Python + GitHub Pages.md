@@ -53,7 +53,7 @@ HFish provides an API for retrieving attack data.
 3. Obtain the **API Key** and **admin panel address**.
    - *Note: If your HFish is deployed on an internal network, make sure the machine running the script can access the HFish admin port (default: 4433).*
 
-![image-20251227102507885](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png)
+![image-20251227102507885](/images/blog/20260305220719188.png)
 
 ## Step 2: Write the Automated Extraction Script (Python)
 
@@ -231,7 +231,7 @@ Write a Shell script named `update_feed.sh` to combine “generate” and “pus
    2. Check **"Keep my email addresses private"**.
    3. You will see an email like this: `12345678+yourusername@users.noreply.github.com`.
 
-   ![image-20251228221426661](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png)
+   ![image-20251228221426661](/images/blog/20260305220719189.png)
 
    **Configuration method:** (modify step 5, Configure Git identity)
 
@@ -337,7 +337,7 @@ When the automation script runs in the background, it cannot manually enter a Gi
 
    - Open the GitHub repository -> **Settings** -> **Deploy keys** -> **Add deploy key**.
 
-     ![image-20251230120117688](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png)
+     ![image-20251230120117688](/images/blog/20260305220719190.png)
 
    - **Title**: HFish Server
 
@@ -345,7 +345,7 @@ When the automation script runs in the background, it cannot manually enter a Gi
 
    - **Important**: Check **Allow write access**, otherwise pushing will fail!
 
-     ![image-20251230120223456](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png)
+     ![image-20251230120223456](/images/blog/20260305220719191.png)
 
 5. **Manually test the connection** (this must be done once!):
    Run on the server:
@@ -431,4 +431,4 @@ Others can use our data like this:
 
 **Effect demonstration:**
 
-![image-20251230120659771](https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png)
+![image-20251230120659771](/images/blog/20260305220719192.png)

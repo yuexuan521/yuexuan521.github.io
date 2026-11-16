@@ -12,7 +12,7 @@ tags:
 - "BUUCTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191435882.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191435882.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「［HBNIS2018］来题中等的吧 1」，附 GitHub 来源与 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191437871.png)
+ ![题目页「［HBNIS2018］来题中等的吧 1」，附 GitHub 来源与 attachment.zip](/images/blog/20251228191437871.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，解压得到一个.png图片。
 
-![一张竖条纹码图案，条宽并不一致](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191439482.png)
+![一张竖条纹码图案，条宽并不一致](/images/blog/20251228191439482.png)
 
 ---
 
@@ -44,7 +44,7 @@ tags:
 1、这个图片类似一段音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。
 举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，转换为“.- .-… .–. … .- .-… .- -…”。
 
-![同一图案，红框圈出三段宽窄不同的条纹](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191441020.png)
+![同一图案，红框圈出三段宽窄不同的条纹](/images/blog/20251228191441020.png)
 
 ```bash
 第一个红框代表“-”，第二个红框代表“.”，第三个红框代表“ ”（空格）。
@@ -56,9 +56,9 @@ tags:
 [字母大小写转换工具
 ](https://charactercalculator.com/zh-cn/case-converter/) 
 
- ![摩尔斯解码工具：输入 .- -... .. -.-. .... ... 得到 ALPHALAB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191442583.png)
+ ![摩尔斯解码工具：输入 .- -... .. -.-. .... ... 得到 ALPHALAB](/images/blog/20251228191442583.png)
 
- ![字母大小写转换工具，把结果转成小写 alphalab](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191443965.png)
+ ![字母大小写转换工具，把结果转成小写 alphalab](/images/blog/20251228191443965.png)
 
 ### flag：
 

@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205125529.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228205125529.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![BUUCTF「还原大师 1」题目页：神秘字符串 TASC?O3RJMV?WDJKX?ZM，附残缺 MD5 E903???4DAB…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205127717.png)
+![BUUCTF「还原大师 1」题目页：神秘字符串 TASC?O3RJMV?WDJKX?ZM，附残缺 MD5 E903???4DAB…](/images/blog/20251228205127717.png)
 
 ### 题目描述：
 
@@ -58,7 +58,7 @@ for i in range(26):
 
 3、执行代码，得到正确的MD5码作为flag提交。
 
-![编辑器里高亮出补全后的完整 MD5：E9032994DABAC08080091151380478A2](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205129653.png)
+![编辑器里高亮出补全后的完整 MD5：E9032994DABAC08080091151380478A2](/images/blog/20251228205129653.png)
 
 ### flag：
 

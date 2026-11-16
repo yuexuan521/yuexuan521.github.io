@@ -13,7 +13,7 @@ tags:
 - "隐写"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228190415529.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「zip 1」：拼在一起解 base64 就有 flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png)
+ ![题目页「zip 1」：拼在一起解 base64 就有 flag](/images/blog/20251228190417993.png)
 
 ### 题目描述：
 
@@ -40,10 +40,10 @@ tags:
 
 > 注意：一般数据内容小于5Bytes(<=4Bytes)即可尝试通过爆破CRC32穷举数据内容
 
- ![Bandizip 打开 out.zip，里面只有 data.txt，压缩后 18、原始 4 字节](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png)
+ ![Bandizip 打开 out.zip，里面只有 data.txt，压缩后 18、原始 4 字节](/images/blog/20251228190419984.png)
 
 2、使用CRC32爆破脚本尝试爆破第一个压缩包out0.zip，爆破成功得到文件内容 `z5Bz` ，根据题目提示，这是base64编码文件的一部分，需要将所有out*.zip压缩包的文件拼接才能拿到完整的文件
- ![跑 CRC32-Tools.py -4 out.zip，输出 0x75f90d3a 与碰撞结果 z5Bz](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png)
+ ![跑 CRC32-Tools.py -4 out.zip，输出 0x75f90d3a 与碰撞结果 z5Bz](/images/blog/20251228190421759.png)
 
 编写Python脚本进行自动化爆破，借鉴其他人的脚本
 
@@ -85,7 +85,7 @@ f.close()
 z5BzAAANAAAAAAAAAKo+egCAIwBJAAAAVAAAAAKGNKv+a2MdSR0zAwABAAAAQ01UCRUUy91BT5UkSNPoj5hFEVFBRvefHSBCfG0ruGnKnygsMyj8SBaZHxsYHY84LEZ24cXtZ01y3k1K1YJ0vpK9HwqUzb6u9z8igEr3dCCQLQAdAAAAHQAAAAJi0efVT2MdSR0wCAAgAAAAZmxhZy50eHQAsDRpZmZpeCB0aGUgZmlsZSBhbmQgZ2V0IHRoZSBmbGFnxD17AEAHAA==
 ```
 
- ![out.txt 里是一长串 base64，开头正是 z5BzAAAA…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png)
+ ![out.txt 里是一长串 base64，开头正是 z5BzAAAA…](/images/blog/20251228190423301.png)
 
 3、使用在线工具进行解密，看到解出的明文中有如下提示信息：
 [Base64 在线解码、编码](https://the-x.cn/encodings/Base64.aspx) 
@@ -95,10 +95,10 @@ flag.txt
 fix the file and get the flag
 ```
 
- ![Base64 在线解码，右侧十六进制里能读出 flag 与修复提示](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png)
+ ![Base64 在线解码，右侧十六进制里能读出 flag 与修复提示](/images/blog/20251228190424904.png)
 
 提示我们修复这个文件，可以拿到flag。文件尾与RAR文件尾一致（ `C4 3D 7B 00 40 07 00` ），可以确定为rar压缩包，但缺少文件头，需要补上缺失的文件头。
- ![010 Editor 打开解出的文件，能看到 flag.txt 字样](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png)
+ ![010 Editor 打开解出的文件，能看到 flag.txt 字样](/images/blog/20251228190426964.png)
 
 ```bash
 52 61 72 21 1A 07 00   # RAR文件头
@@ -106,10 +106,10 @@ C4 3D 7B 00 40 07 00   # RAR文件尾
 ```
 
 用010 Editor打开，补上文件头，另存为.rar文件。
- ![改好后是 from.rar，红框 52 61 72 21 1A 07 00，即 RAR 文件头](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png)
+ ![改好后是 from.rar，红框 52 61 72 21 1A 07 00，即 RAR 文件头](/images/blog/20251228190429011.png)
 
 最后在rar压缩包的注释中找到flag。
- ![WinRAR 打开 from.rar，右栏就是 flag{nev3r_enc0de_t00_sm4ll_fil3_w1th_zip}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png)
+ ![WinRAR 打开 from.rar，右栏就是 flag{nev3r_enc0de_t00_sm4ll_fil3_w1th_zip}](/images/blog/20251228190430981.png)
 
 ### flag：
 

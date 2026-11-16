@@ -10,7 +10,7 @@ tags:
 - "密码学"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204921015.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228204921015.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![BUUCTF「Windows系统密码 1」题目页，附件 272e88c8-8d…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204923236.png)
+ ![BUUCTF「Windows系统密码 1」题目页，附件 272e88c8-8d…](/images/blog/20251228204923236.png)
 
 ### 题目描述：
 
@@ -36,12 +36,12 @@ SUPPORT_388945a0:1001:aad3b435b51404eeaad3b435b51404ee:bef14eee40dffbc345eeb3f58
 
 1、统计密文长度，为32位，且符合md5加密特征，初步判断为md5加密。
 
-![一段长度 32 的哈希：aad3b435b51404eeaad3b435b51404ee](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204924898.png)
+![一段长度 32 的哈希：aad3b435b51404eeaad3b435b51404ee](/images/blog/20251228204924898.png)
 
 2、对密文依次进行解密，排除不正确的结果。
 **在线解密网站：** [md5在线解密](https://www.cmd5.com/) 
 
-![NTLM 反查 a7fcb22a88038f35a8f39d503e7f0062 得到 good-luck](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204926232.png)
+![NTLM 反查 a7fcb22a88038f35a8f39d503e7f0062 得到 good-luck](/images/blog/20251228204926232.png)
 
 3、最终得到结果
 

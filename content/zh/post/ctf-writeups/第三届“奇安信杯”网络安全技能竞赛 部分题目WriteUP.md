@@ -22,27 +22,27 @@ tags:
 
 下载附件，解压得到test1.jpg。
 
- ![解压得到的 test1.jpg，打开后是一整片黑色画面](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545336.png)
+ ![解压得到的 test1.jpg，打开后是一整片黑色画面](/images/blog/20251211125545336.png)
 
 用010Editor打开，发现GIF文件头，修改文件后缀为gif，文件就可以正常浏览。
 
- ![010 Editor 打开 test1.jpg，文件头显示 GIF89a](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545337.png)
+ ![010 Editor 打开 test1.jpg，文件头显示 GIF89a](/images/blog/20251211125545337.png)
 
- ![原文配图已失效（源站返回占位图）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545338.gif)
+ ![原文配图已失效（源站返回占位图）](/images/blog/20251211125545338.gif)
 
 发现GIF的第二页就是二维码，用StegSolve将第二张图片保存下来。
 
- ![原文配图已失效（源站返回占位图）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545339.bmp)
+ ![原文配图已失效（源站返回占位图）](/images/blog/20251211125545339.bmp)
 
 QR_Research扫码得到flag： `flag{255fb106-47a8-4932-a0e9-4a2567513db3}` 。
 
- ![原文配图已失效（源站返回占位图）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545340.png)
+ ![原文配图已失效（源站返回占位图）](/images/blog/20251211125545340.png)
 
 #### pyc
 
 下载附件，解压得到test.pyc文件。
 
- ![解压出的 test.pyc 文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545341.png)
+ ![解压出的 test.pyc 文件](/images/blog/20251211125545341.png)
 
 使用Uncompyle6工具对test.pyc文件反编译，得到test.py文件。
 
@@ -55,9 +55,9 @@ uncompyle6 -o test.py test.pyc
 // 这会将test.pyc文件反编译，并输出到test.py文件中
 ```
 
- ![uncompile6 将 test.pyc 反编译为 test.py，提示 Successfully decompiled](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545343.png)
+ ![uncompile6 将 test.pyc 反编译为 test.py，提示 Successfully decompiled](/images/blog/20251211125545343.png)
 
- ![目录中同时存在 test.py 与 test.pyc](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545344.png)
+ ![目录中同时存在 test.py 与 test.pyc](/images/blog/20251211125545344.png)
 
 代码如下：
 
@@ -93,26 +93,26 @@ flag = ["'ce}'", 9, "'dcd'", 7, "'affb'", 6, "'-'", 0, "'c'", 7, 8, "'dd-'", 5,
 
 下载附件，解压得到flag.png图片。
 
- ![附件 flag.png 的缩略图，画面是车内两个人](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545345.png)
+ ![附件 flag.png 的缩略图，画面是车内两个人](/images/blog/20251211125545345.png)
 
 用010 Editor打开，提示CRC错误，粘贴到MarkDown中也无法显示，应该被修改宽高了。
 
- ![010 Editor 提示 CRC Mismatch @ chunk［0］](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545346.png)
+ ![010 Editor 提示 CRC Mismatch @ chunk［0］](/images/blog/20251211125545346.png)
 
 显示失败
- ![原文配图已失效（显示「图片转存失败」占位图）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545347.png)
+ ![原文配图已失效（显示「图片转存失败」占位图）](/images/blog/20251211125545347.png)
 
 使用脚本，爆破flag.png图片宽高并修复文件。
 
- ![Deformed-Image-Restorer 爆破宽高成功：1372×863，新 CRC 为 633607721](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545348.png)
+ ![Deformed-Image-Restorer 爆破宽高成功：1372×863，新 CRC 为 633607721](/images/blog/20251211125545348.png)
 
 修复图片如下：
 
- ![修复后的 flag.png 正常显示，底部写着 The Password of zipFile is flag@abc](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545349.png)
+ ![修复后的 flag.png 正常显示，底部写着 The Password of zipFile is flag@abc](/images/blog/20251211125545349.png)
 
 得到flag的密码： `flag@abc` ，压缩包应该隐藏在图片中。用010 Editor打开修复后的图片，发现ZIP压缩包。
 
- ![010 Editor 中图片尾部可见 IEND 与 flag.txt，说明后面附了 ZIP](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545350.png)
+ ![010 Editor 中图片尾部可见 IEND 与 flag.txt，说明后面附了 ZIP](/images/blog/20251211125545350.png)
 
 另存为zip文件，使用密码解压得到flag.txt，内容如下：
 
@@ -249,7 +249,7 @@ print(str)
 
 运行得到flag： `flag{da6ac101b05b6974}` 。（要补个“}”）
 
- ![脚本运行输出 flag{da6ac101b05b6974，还需补一个右花括号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545351.png)
+ ![脚本运行输出 flag{da6ac101b05b6974，还需补一个右花括号](/images/blog/20251211125545351.png)
 
 ---
 
@@ -259,7 +259,7 @@ print(str)
 
 下载附件，解压得到cipher.txt文件。
 
- ![附件 cipher.txt，12 KB 文本](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545352.png)
+ ![附件 cipher.txt，12 KB 文本](/images/blog/20251211125545352.png)
 
 1、cipher.txt内容如下：
 
@@ -269,17 +269,17 @@ print(str)
 
 根据题目提示，使用Base16解密，得到一大串密文，后面应该还有多重Base加密。
 
- ![CyberChef 对密文做 Base16 解码，结果仍是一大串十六进制](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545353.png)
+ ![CyberChef 对密文做 Base16 解码，结果仍是一大串十六进制](/images/blog/20251211125545353.png)
 
 使用多次Base16解密，再切换Base32解密，最后得到flag： `flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}` 。
 
- ![CyberChef 继续 Base16 再切 Base32，得到 flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545354.png)
+ ![CyberChef 继续 Base16 再切 Base32，得到 flag{8ddce78c660f0f6fa4ac1f0d0de6ca18}](/images/blog/20251211125545354.png)
 
 #### base64+32
 
 下载附件，解压得到base64+32.html文件。
 
- ![附件 base64+32.html](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545355.png)
+ ![附件 base64+32.html](/images/blog/20251211125545355.png)
 
 双击文件打开，页面内容如下：
 
@@ -287,7 +287,7 @@ print(str)
 LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTKLEYFUV2JGJHFGVJTKJAT2PI=
 ```
 
- ![浏览器打开 base64+32.html，页面正文是一串 Base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545356.png)
+ ![浏览器打开 base64+32.html，页面正文是一串 Base64](/images/blog/20251211125545356.png)
 
 根据题目提示，大致要使用Base64和Base32解密。
 
@@ -297,7 +297,7 @@ LJWXQ2C2PFKTGULKLEZE6RCKNBNEIRTMJRKFC6SZGJGXITSEIEZFUQZRNBNGUQLZJRKFE2SOPJNGYWTK
 ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA==
 ```
 
- ![CyberChef 对页面内容做 Base64 解码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545357.png)
+ ![CyberChef 对页面内容做 Base64 解码](/images/blog/20251211125545357.png)
 
 再进行Base64解密，得到经过URL编码的字符串。
 
@@ -305,11 +305,11 @@ ZmxhZyU3QjY2ODJhZDFlLTQzY2MtNDA2ZC1hZjAyLTRjNzZlZjY0ZWI2NSU3RA==
 flag%7B6682ad1e-43cc-406d-af02-4c76ef64eb65%7D
 ```
 
- ![再次 Base64 解码，得到 URL 编码形式的 flag%7B...%7D](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545358.png)
+ ![再次 Base64 解码，得到 URL 编码形式的 flag%7B...%7D](/images/blog/20251211125545358.png)
 
 最后进行URL解码，得到flag： `flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}` 。
 
- ![URL 解码后得到 flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545359.png)
+ ![URL 解码后得到 flag{6682ad1e-43cc-406d-af02-4c76ef64eb65}](/images/blog/20251211125545359.png)
 
 #### rsa
 
@@ -351,7 +351,7 @@ print(flag)
 
 运行得到flag： `flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}` 。
 
- ![终端输出 b'flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}'，退出码 0](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251211125545360.png)
+ ![终端输出 b'flag{5dd304276ba5745ec21fc1e6686a0b28da29e6fc}'，退出码 0](/images/blog/20251211125545360.png)
 
 ### WEB
 

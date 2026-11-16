@@ -13,7 +13,7 @@ tags:
 - "Web安全"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228190956824.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -29,7 +29,7 @@ tags:
 - [你知道apng吗](https://blog.csdn.net/wangjin7356/article/details/123402038)
 
 
- ![题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png)
+ ![题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng](/images/blog/20251228190958970.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ tags:
 
 下载附件，解压得到girl.apng文件。
 
- ![girl.apng，1,149 KB，显示为 APNG 文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png)
+ ![girl.apng，1,149 KB，显示为 APNG 文件](/images/blog/20251228191000373.png)
 
 ---
 
@@ -59,41 +59,41 @@ tags:
 
 找到一个APNG在线查看工具： [https://ezgif.com/split?err=expired](https://ezgif.com/split?err=expired) ，上传图片后，点击 `Split` ，得到每帧的图片。
 
- ![在线 GIF frame extractor，工具栏红框 split，底部「Split to frames!」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png)
+ ![在线 GIF frame extractor，工具栏红框 split，底部「Split to frames!」](/images/blog/20251228191001456.png)
 
 ---
 
 `1、` 
- ![其中一帧：女孩抱着花，右边浮出半张倾斜的二维码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png)
+ ![其中一帧：女孩抱着花，右边浮出半张倾斜的二维码](/images/blog/20251228191003482.png)
 
 `2、` 
- ![另一帧：女孩起跳，背后隐约透出二维码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png)
+ ![另一帧：女孩起跳，背后隐约透出二维码](/images/blog/20251228191005565.png)
 
 `3、` 
- ![有一帧显示成「该图片可能违规或链接失效」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png)
+ ![有一帧显示成「该图片可能违规或链接失效」](/images/blog/20251228191007640.png)
 
 `4、` 
- ![紧接着还有一张同样的占位图](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png)
+ ![紧接着还有一张同样的占位图](/images/blog/20251228191009559.png)
 
 ---
 
 2、使用PS（或在线PS）处理第一张图片，选择 `编辑` –> `变换` –> `扭曲` ，此时扫码得到四分之一的flag。
 
- ![Photoshop 编辑 → 变换 → 扭曲，把斜着的二维码拉正](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png)
+ ![Photoshop 编辑 → 变换 → 扭曲，把斜着的二维码拉正](/images/blog/20251228191010855.png)
 
- ![QR Research 解出第一段 flag{a3c7e4e5](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png)
+ ![QR Research 解出第一段 flag{a3c7e4e5](/images/blog/20251228191012920.png)
 
 第二张图片使用StegSolve，查看其它的通道，找到可以识别的二维码。
 
- ![StegSolve 切 Green plane 0，噪点里浮出一个小二维码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png)
+ ![StegSolve 切 Green plane 0，噪点里浮出一个小二维码](/images/blog/20251228191014992.png)
 
- ![解出 -9b9d](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png)
+ ![解出 -9b9d](/images/blog/20251228191017077.png)
 
 剩下两张可以直接扫码得到四分之一flag，最后得到完整flag。
 
- ![另一帧原图里的二维码解出 -ad20，颜色反色且镜像](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png)
+ ![另一帧原图里的二维码解出 -ad20，颜色反色且镜像](/images/blog/20251228191018883.png)
 
- ![最后一帧解出 -0327-288a235370ea}，四段拼起来才是完整 flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png)
+ ![最后一帧解出 -0327-288a235370ea}，四段拼起来才是完整 flag](/images/blog/20251228191021077.png)
 
 ### flag：
 

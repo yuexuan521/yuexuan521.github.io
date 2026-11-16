@@ -11,7 +11,7 @@ tags:
 - "网络安全"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205046211.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228205046211.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「摩丝 1」，附件 1bb81ad9-8d…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205048318.png)
+ ![题目页「摩丝 1」，附件 1bb81ad9-8d…](/images/blog/20251228205048318.png)
 
 ### 密文：
 
@@ -40,7 +40,7 @@ tags:
 4、每个词之间中等的停顿（通常用 / 划分）
 5、以及句子之间长的停顿
 
-![摩尔斯电码表，列出各字符与对应的点划符号](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205049682.jpeg)
+![摩尔斯电码表，列出各字符与对应的点划符号](/images/blog/20251228205049682.jpeg)
 
 观察密文特征，以及提示，确定为莫尔斯编码。用在线工具直接解码，得到flag。
 
@@ -50,6 +50,6 @@ tags:
 ILOVEYOU
 ```
 
-![摩尔斯解码工具，一长串点划解出 ILOVEYOU](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228205051816.png)
+![摩尔斯解码工具，一长串点划解出 ILOVEYOU](/images/blog/20251228205051816.png)
 
 **在线工具：** [在线摩斯密码翻译器](https://www.lddgo.net/encrypt/morse) 

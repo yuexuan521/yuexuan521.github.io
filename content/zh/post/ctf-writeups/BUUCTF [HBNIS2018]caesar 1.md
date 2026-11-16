@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191409306.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191409306.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「［HBNIS2018］caesar 1」，附 GitHub 来源与 attachment.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191411447.png)
+ ![题目页「［HBNIS2018］caesar 1」，附 GitHub 来源与 attachment.txt](/images/blog/20251228191411447.png)
 
 ### 题目描述：
 
@@ -33,7 +33,7 @@ tags:
 
 下载附件，得到一个.txt文件。
 
- ![attachment.txt 内容：描述 gmbhjtdbftbs，要求提交小写明文](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191413497.png)
+ ![attachment.txt 内容：描述 gmbhjtdbftbs，要求提交小写明文](/images/blog/20251228191413497.png)
 
 ---
 
@@ -41,7 +41,7 @@ tags:
 
 1、用浏览器搜索“caesar”，发现是“凯撒”的意思，再看题目描述，感觉是凯撒加密。
 
- ![搜索引擎搜 caesar 的结果页，用来确认凯撒密码的含义](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191414894.png)
+ ![搜索引擎搜 caesar 的结果页，用来确认凯撒密码的含义](/images/blog/20251228191414894.png)
 
 2、使用Python脚本或者工具，对题目描述进行解密，下面提供一个Python脚本。
 
@@ -76,7 +76,7 @@ for i in range(26):
 
 运行脚本，找到有意义的文本，就是flag值。
 
- ![列出偏移 0 到 11 的破解结果，第 1 行高亮 flagiscaesar](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191416753.png)
+ ![列出偏移 0 到 11 的破解结果，第 1 行高亮 flagiscaesar](/images/blog/20251228191416753.png)
 
 ### flag：
 

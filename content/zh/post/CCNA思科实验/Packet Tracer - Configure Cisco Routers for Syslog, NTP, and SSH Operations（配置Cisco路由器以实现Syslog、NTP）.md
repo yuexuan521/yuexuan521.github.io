@@ -19,7 +19,7 @@ tags:
 
 ### 地址表
 
- ![地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png)
+ ![地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C](/images/blog/20251228212606259.png)
 
 ### 目标：
 
@@ -110,7 +110,7 @@ a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。
 
 b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。
 
-![PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png)
+![PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月](/images/blog/20251228212608233.png)
 
 **步骤2：将R1、R2和R3配置为NTP客户端。** 
 

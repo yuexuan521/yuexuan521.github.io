@@ -2,7 +2,7 @@
 {{ partial "math.html" . }}
 {{ end }}
 
-<!-- Fancybox CSS & JS -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Fancybox CSS & JS（已本地化到 static/vendor，不再依赖 jsdelivr） -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.min.css" />
+<script src="/vendor/fancybox/jquery.fancybox.min.js"></script>

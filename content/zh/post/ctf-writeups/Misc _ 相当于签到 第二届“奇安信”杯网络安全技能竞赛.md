@@ -21,7 +21,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png)
+![题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」](/images/blog/20251210144459175.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 下载附件，解压得到一张.jpg图片。
 
-![附件就是那张「一时语塞」的表情包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg)
+![附件就是那张「一时语塞」的表情包](/images/blog/20251210144459176.jpeg)
 
 ---
 
@@ -39,28 +39,28 @@ tags:
 
 1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。
 
-![binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png)
+![binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png](/images/blog/20251210144459177.png)
 
 使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。
 
-![foremost sign.jpg，输出 foundat=repair.png](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png)
+![foremost sign.jpg，输出 foundat=repair.png](/images/blog/20251210144459178.png)
 
-![tree output：audit.txt、jpg/00000000.jpg、zip/00000096.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png)
+![tree output：audit.txt、jpg/00000000.jpg、zip/00000096.zip](/images/blog/20251210144459179.png)
 
 2、尝试解压得到的压缩包，需要密码。
 
-![unzip 00000096.zip 时 repair.png 要密码，直接 skipping](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png)
+![unzip 00000096.zip 时 repair.png 要密码，直接 skipping](/images/blog/20251210144459180.png)
 
 因为没有关于密码的提示，尝试用4位纯数字进行爆破，出现提示“no usable files found”（未找到可用文件）。
 
-![fcrackzip -b -c1 -l 4 -u 跑完只回一句 no usable files found](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png)
+![fcrackzip -b -c1 -l 4 -u 跑完只回一句 no usable files found](/images/blog/20251210144459181.png)
 
 [zip伪加密原理](https://blog.csdn.net/qq_26187985/article/details/83654197) 
 猜测该zip压缩包为伪加密，通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。
 
-![十六进制 0000h 处红框 00 00 是加密标志，Ascii 区可见 PK、repair.png、IHD](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png)
+![十六进制 0000h 处红框 00 00 是加密标志，Ascii 区可见 PK、repair.png、IHD](/images/blog/20251210144459182.png)
 
-![F8C70h 处 IEND 之后紧跟 50 4B 01 02 中央目录，红框又是 00 00](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png)
+![F8C70h 处 IEND 之后紧跟 50 4B 01 02 中央目录，红框又是 00 00](/images/blog/20251210144459183.png)
 
 ```bash
 未加密：
@@ -86,11 +86,11 @@ ps:也不一定要09 00或00 00，只要是奇数都视为加密，而偶数则�
 
 3、修改后，解压压缩包不需要密码，解压成功，得到一张.png图片。
 
-![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png)
+![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](/images/blog/20251210144459184.png)
 
 从这里也可以看出图片经过修改，无法正常显示。在010 Editor中打开，提示CRC校验错误，结合题目提示“图片似乎经过了什么处理”，认为图片被修改了宽高。
 
-![010 Editor 顶部报错：CRC Mismatch @ chunk［0］; in data: 9bf1293b; expected: be8b9d2f](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png)
+![010 Editor 顶部报错：CRC Mismatch @ chunk［0］; in data: 9bf1293b; expected: be8b9d2f](/images/blog/20251210144459185.png)
 
 通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。
 
@@ -112,15 +112,15 @@ for i in range(2000):
 
 得到正确的宽高值。
 
-![按图片实际尺寸算出 810 1200，hex 是 0x32a 0x4b0](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png)
+![按图片实际尺寸算出 810 1200，hex 是 0x32a 0x4b0](/images/blog/20251210144459186.png)
 
 修改图片中的宽高参数，然后保存图片查看。
 
-![把 IHDR 的宽高改成 00 00 03 2A 与 00 00 04 B0，后面就是 tEXtTitle、tEXtAuthor 这些块](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png)
+![把 IHDR 的宽高改成 00 00 03 2A 与 00 00 04 B0，后面就是 tEXtTitle、tEXtAuthor 这些块](/images/blog/20251210144459187.png)
 
 获得flag。
 
-![修复后的图：星空下弹吉他的剪影，中间一个 LISTEN，左下角 flag{bdface45-506b-f530-aa4d-57884b20255e}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png)
+![修复后的图：星空下弹吉他的剪影，中间一个 LISTEN，左下角 flag{bdface45-506b-f530-aa4d-57884b20255e}](/images/blog/20251210144459188.png)
 
 ### flag：
 

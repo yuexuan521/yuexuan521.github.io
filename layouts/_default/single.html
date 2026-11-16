@@ -20,9 +20,9 @@
     {{- end }}
     
     <!-- Random Quote Section -->
-    {{ if and .Site.Data.quotes (.Params.showQuote) }}
-        {{ if .Site.Data.quotes }}
-        {{ $quotes := .Site.Data.quotes.quotes }}
+    {{ if and hugo.Data.quotes (.Params.showQuote) }}
+        {{ if hugo.Data.quotes }}
+        {{ $quotes := hugo.Data.quotes.quotes }}
         {{ $randomIndex := index (seq (len $quotes)) (mod now.UnixNano (len $quotes)) }}
         {{ $randomQuote := index $quotes $randomIndex }}
         <div class="post-quote">

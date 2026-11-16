@@ -11,7 +11,7 @@ tags:
 - "CTF"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204852897.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228204852897.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![BUUCTF「Rabbit 1」题目页，附件 bfdb217e-b9…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204855410.png)
+ ![BUUCTF「Rabbit 1」题目页，附件 bfdb217e-b9…](/images/blog/20251228204855410.png)
 
 ### 题目描述：
 
@@ -39,7 +39,7 @@ U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI
 1、根据题目直接得到编码方式，Rabbit编码，使用在线工具进行解密。
 [Rabbit在线工具](http://www.jsons.cn/rabbitencrypt/) 
 
-![Rabbit 解密工具：U2FsdGVkX1/… 解出 Cute_Rabbit](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228204856907.png)
+![Rabbit 解密工具：U2FsdGVkX1/… 解出 Cute_Rabbit](/images/blog/20251228204856907.png)
 
 2、得到flag。
 

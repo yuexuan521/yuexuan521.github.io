@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191926718.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191926718.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「［SWPU2019］伟大的侦探 1」，签到 flag{buu_ctf}，附 QQ 频道与群链接](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191928889.png)
+![题目页「［SWPU2019］伟大的侦探 1」，签到 flag{buu_ctf}，附 QQ 频道与群链接](/images/blog/20251228191928889.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 
 ### 密文：
 
- ![资源管理器里的 misc 文件夹与 密码.txt（1 KB）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191930787.png)
+ ![资源管理器里的 misc 文件夹与 密码.txt（1 KB）](/images/blog/20251228191930787.png)
 
 ---
 
@@ -44,7 +44,7 @@ tags:
 呜呜呜,我忘记了压缩包密码的编码了,大家帮我解一哈。
 ```
 
- ![Notepad++ 打开密码.txt，压缩包密码是一串乱码，并写着「我忘记了压缩包密码的编码了」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191932123.png)
+ ![Notepad++ 打开密码.txt，压缩包密码是一串乱码，并写着「我忘记了压缩包密码的编码了」](/images/blog/20251228191932123.png)
 
 2、使用010Editor打开密码.txt文件，选择编辑方式为EBCDIC(B)，找到明文密码。（不明白这里的原理）
 
@@ -52,13 +52,13 @@ tags:
 wllm_is_the_best_team!
 ```
 
- ![把编码切成 EBCDIC 后，同一行显示出 wllm is the best team! 等可读字符](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191933522.png)
+ ![把编码切成 EBCDIC 后，同一行显示出 wllm is the best team! 等可读字符](/images/blog/20251228191933522.png)
 
 3、使用密码解压压缩包，得到18个.jpg图片，图片为跳舞的小人图形密码（出自于《福尔摩斯探案集》跳舞的小人），使用如下密码对照表，可以获得明文。
 
- ![18 张 1.jpg–18.jpg 缩略图，每张都是一个跳舞的小人剪影](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191935067.png)
+ ![18 张 1.jpg–18.jpg 缩略图，每张都是一个跳舞的小人剪影](/images/blog/20251228191935067.png)
 
-![w](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191937043.png)
+![w](/images/blog/20251228191937043.png)
 
 4、对照密码表解密，得到flag值。
 

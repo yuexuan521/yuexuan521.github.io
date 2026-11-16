@@ -11,7 +11,7 @@ tags:
 - "网络安全"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120899.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251216120120899.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![BUUCTF「Alice与Bob 1」题目页：大整数 98554799767 需分解成两个素数](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120900.png)
+ ![BUUCTF「Alice与Bob 1」题目页：大整数 98554799767 需分解成两个素数](/images/blog/20251216120120900.png)
 
 ### 题目描述：
 
@@ -79,7 +79,7 @@ print(factorize(n))
 
 得到结果：
 
-![Python 跑出分解结果 ［101999, 966233］](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120901.png)
+![Python 跑出分解结果 ［101999, 966233］](/images/blog/20251216120120901.png)
 
 2、小的放前面，大的放后面，合成一个新的数字。
 
@@ -91,7 +91,7 @@ print(factorize(n))
 3、对这个新数字，进行md5的32位小写哈希加密。
 在线解密网站： [在线16位和32位大小写MD5加密](https://www.matools.com/md5) 
 
-![在线 MD5：101999966233 对应 d450209323a847c8d01c6be47c81811a](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251216120120902.png)
+![在线 MD5：101999966233 对应 d450209323a847c8d01c6be47c81811a](/images/blog/20251216120120902.png)
 
 得到结果
 

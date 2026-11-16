@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![题图同样是那位蓝发女孩](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190218014.png)
+![题图同样是那位蓝发女孩](/images/blog/20251228190218014.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
-![题目页「snake 1」，附件 8033a99b-d…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190220093.png)
+![题目页「snake 1」，附件 8033a99b-d…](/images/blog/20251228190220093.png)
 
 ### 题目描述：
 
@@ -38,37 +38,37 @@ tags:
 ### 解题思路：
 
 1、拿到图片，放010Editor看一下，找到PK标识，说明有隐藏的zip压缩包。
- ![十六进制 4:3EF0h 处，红框 FF D9 后紧跟 50 4B 03 04，右侧露出 key:V2hhcGBycB 一段 base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190221763.png)
+ ![十六进制 4:3EF0h 处，红框 FF D9 后紧跟 50 4B 03 04，右侧露出 key:V2hhcGBycB 一段 base64](/images/blog/20251228190221763.png)
 
 使用Kali中的binwalk工具进行检测，确实存在zip压缩包，用foremost工具分离出zip压缩包，在output目录下查看。
- ![binwalk snake.jpg：JPEG、TIFF（Copyright Apple Inc., 2015），0x43EF4 起 Zip name: key，0x43F67 起 Zip name: cipher](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190223629.png)
+ ![binwalk snake.jpg：JPEG、TIFF（Copyright Apple Inc., 2015），0x43EF4 起 Zip name: key，0x43F67 起 Zip name: cipher](/images/blog/20251228190223629.png)
 
 2、解压zip压缩包，解压成功，得到两个文件：cipher、key。
 
- ![unzip ./output/zip/00000543.zip -d ./output，抽出 key 与 cipher；tree 里共 5 个文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190226491.png)
+ ![unzip ./output/zip/00000543.zip -d ./output，抽出 key 与 cipher；tree 里共 5 个文件](/images/blog/20251228190226491.png)
 
 3、 **key** 文件打开后，显示一串用Base64加密过的密文字符串。
 
- ![记事本里一行 base64：V2hhdCBpcyBOaWNraSBNaW5haid'zIGZhdm9yaXRIHNvbWcgdGhhdCBcByZWZlcnMgdG8gc25ha2VzPwo=](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190229031.png)
+ ![记事本里一行 base64：V2hhdCBpcyBOaWNraSBNaW5haid'zIGZhdm9yaXRIHNvbWcgdGhhdCBcByZWZlcnMgdG8gc25ha2VzPwo=](/images/blog/20251228190229031.png)
 
 解密之后，得到一个明文字符串“What is Nicki Minaj’s favorite song that refers to snakes?”，翻译过来“尼基-米娜最喜欢哪首提到蛇的歌曲？”。
 
- ![在线解码框里出来一句 What is Nicki Minaj's favorite song that refers to snakes?](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190230837.png)
+ ![在线解码框里出来一句 What is Nicki Minaj's favorite song that refers to snakes?](/images/blog/20251228190230837.png)
 
- ![翻译工具把它译成「尼基-米娜最喜欢哪首提到蛇的歌曲？」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190232924.png)
+ ![翻译工具把它译成「尼基-米娜最喜欢哪首提到蛇的歌曲？」](/images/blog/20251228190232924.png)
 
 我搜索了一下，找到了提示所指向的内容。《Anaconda》是美国说唱女歌手妮琪·米娜演唱的一首说唱歌曲，《Anaconda》在美国公告牌单曲榜上最高名次为第2名，是妮琪·米娜成绩最高的歌曲之一。
 “anaconda”就是我们要找的key。
 [https://baike.baidu.com/item/anaconda/15222448](https://baike.baidu.com/item/anaconda/15222448) 
- ![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190235571.png)
+ ![一张「图片违规！」的占位图，笑脸 X 眼配一个对话框](/images/blog/20251228190235571.png)
 
 **cipher：** 是一个数据格式的文件。我是看了别人的题解，才知道使用的是serpent加密算法，同时法语“serpent”翻译过来也是蛇的意思，切合题目。
 [SERPENT算法学习心得](https://blog.csdn.net/douqingl/article/details/50256931) 
- ![翻译：法语 serpent → 中文 蛇 (shé)](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190237423.png)
+ ![翻译：法语 serpent → 中文 蛇 (shé)](/images/blog/20251228190237423.png)
 
 使用在线工具进行解密，再加上之前得到的key，最后得到flag。
 [在线工具](http://serpent.online-domain-tools.com/) 
- ![Serpent 在线解密：File 选 cipher、Mode ECB、Key 填 anaconda，Decrypted text 是 CTF{who_knew_serpent_cipher_existed}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190239013.png)
+ ![Serpent 在线解密：File 选 cipher、Mode ECB、Key 填 anaconda，Decrypted text 是 CTF{who_knew_serpent_cipher_existed}](/images/blog/20251228190239013.png)
 
 ### flag：
 

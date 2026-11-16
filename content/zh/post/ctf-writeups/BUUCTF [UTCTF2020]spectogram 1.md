@@ -12,7 +12,7 @@ tags:
 - "音频隐写"
 ---
 
-![题图同样是那位蓝发女孩，各篇共用的头部插图](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png)
+![题图同样是那位蓝发女孩，各篇共用的头部插图](/images/blog/20251228192124944.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [BUUCTF:［UTCTF2020］spectogram](https://www.cnblogs.com/vuclw/p/15848478.html)
 
 
- ![题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png)
+ ![题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav](/images/blog/20251228192126926.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，得到attachment.wav
 
- ![attachment.wav 文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png)
+ ![attachment.wav 文件](/images/blog/20251228192128658.png)
 
 ---
 
@@ -43,23 +43,23 @@ tags:
 
 1、用Audacity打开attachment.wav，显示频谱图，似乎有隐藏信息。
 
- ![Audacity 切到频谱图视图，红蓝条纹里隐约浮出字母](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png)
+ ![Audacity 切到频谱图视图，红蓝条纹里隐约浮出字母](/images/blog/20251228192129739.png)
 
 2、从题目 `spectogram` 了解到“语谱图”的存在，我们需要呈现音频的语谱图，目前总结三种方法。
 
- ![语谱图原理示意：横轴是时间、纵轴是频率](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png)
+ ![语谱图原理示意：横轴是时间、纵轴是频率](/images/blog/20251228192132577.png)
 
 #### 方法一：
 
 在Audacity中，“ `编辑` ”选项卡“ `首选项` ” -> “ `频谱图` ”，FFT(快速傅里叶窗口变换）窗口大小由默认的256改为 `1024` 。
 
- ![Audacity 编辑菜单，红框「首选项...(F)」，右侧频谱里已经能看到字](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png)
+ ![Audacity 编辑菜单，红框「首选项...(F)」，右侧频谱里已经能看到字](/images/blog/20251228192135053.png)
 
- ![首选项 → 频谱图：窗口大小 1024、Hanning、最高频率 8000、分贝范围 80](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png)
+ ![首选项 → 频谱图：窗口大小 1024、Hanning、最高频率 8000、分贝范围 80](/images/blog/20251228192137314.png)
 
 点击确定，将图像拉宽，得到flag： `utflag{sp3tr0gr4m0ph0n3}` 。
 
- ![调好参数后频谱里清楚显出 utflag{sp3tr0gr4m0ph0n3}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png)
+ ![调好参数后频谱里清楚显出 utflag{sp3tr0gr4m0ph0n3}](/images/blog/20251228192138956.png)
 
 #### 方法二：
 
@@ -67,11 +67,11 @@ tags:
 
 [Sonic Visualiser下载地址：https://www.sonicvisualiser.org/download.html](https://www.sonicvisualiser.org/download.html) 
 
- ![Sonic Visualiser 官网下载页，红框 Download - primary（5.0.1）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png)
+ ![Sonic Visualiser 官网下载页，红框 Download - primary（5.0.1）](/images/blog/20251228192141646.png)
 
 打开文件后，在 `Layer` 选项中点击 `Add Peak Frequency Spectrogram` 或者使用 `Shift+K` ，然后将右边选项调整成如下图所示，得到flag。
 
- ![Sonic Visualiser 打开 wav，红框 Area 菜单，右侧 Colour Green、Scale dB、Window 1024](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png)
+ ![Sonic Visualiser 打开 wav，红框 Area 菜单，右侧 Colour Green、Scale dB、Window 1024](/images/blog/20251228192143437.png)
 
 #### 方法三：
 
@@ -142,7 +142,7 @@ plt.show()
 
 得到的语谱图：
 
- ![matplotlib 画出的 Spectrogram，中间同样显出 utflag{sp3tr0gr4m0ph0n3}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png)
+ ![matplotlib 画出的 Spectrogram，中间同样显出 utflag{sp3tr0gr4m0ph0n3}](/images/blog/20251228192146575.png)
 
 ### flag：
 

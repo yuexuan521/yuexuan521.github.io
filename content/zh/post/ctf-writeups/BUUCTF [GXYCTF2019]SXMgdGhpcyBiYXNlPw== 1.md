@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191207077.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](/images/blog/20251228191207077.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![题目页「［GXYCTF2019］SXMgdGhpcyBiYXNlPw== 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191209590.png)
+ ![题目页「［GXYCTF2019］SXMgdGhpcyBiYXNlPw== 1」，附件 attachment.zip](/images/blog/20251228191209590.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到flag.txt文件。
- ![解压出的 flag.txt 文件图标](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191211420.png)
+ ![解压出的 flag.txt 文件图标](/images/blog/20251228191211420.png)
 
 ---
 
@@ -109,7 +109,7 @@ Sidhdm91ZSBqZSBtYXVkaXMsCt==
 VG91cyBjZXV4IHF1aSBzJ2FpbWVudA==
 ```
 
- ![flag.txt 里满屏 base64 字符串](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191213500.png)
+ ![flag.txt 里满屏 base64 字符串](/images/blog/20251228191213500.png)
 
 2、经过base64编码的数据很多，感觉不是普通的base64解密，尝试base64隐写，得到flag。
 使用如下Python脚本进行解密。
@@ -135,7 +135,7 @@ print(str)
 
 3、运行Python脚本，得到flag。
 
- ![解码输出 GXY{fazhazhenhaoting}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191215308.png)
+ ![解码输出 GXY{fazhazhenhaoting}](/images/blog/20251228191215308.png)
 
 ### flag：
 
