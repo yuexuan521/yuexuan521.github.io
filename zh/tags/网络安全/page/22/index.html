@@ -42,8 +42,7 @@ CTF Wiki 题目描述：下载附件，解压得到一个.jpg图片。
 相关阅读
 CTF Wiki 题目描述：流量分析，你能找到flag吗 注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，解压得到一个.pcapng文件。 解题思路：1、双击文件，打开wireshark。根据题目提示，我们过滤出POST数据包。（菜刀一般使用POST上传）
-1 http.request.method==POST 简单看了几个数据包之后，发现有个数据包不太正常。
-追踪流看一下，发现和前面几个数据包不同，有很长一串16进制字符串。 ...</p></div><footer class=entry-footer><span title='2024-02-23 10:59:54 +0000 UTC'>二月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>661 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 菜刀666 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%8F%9C%E5%88%80666-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 梅花香之苦寒来 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
+1 http.request.method==POST ...</p></div><footer class=entry-footer><span title='2024-02-23 10:59:54 +0000 UTC'>二月 23, 2024</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>661 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF 菜刀666 1" href=https://yuexuan521.github.io/zh/posts/buuctf-%E8%8F%9C%E5%88%80666-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF 梅花香之苦寒来 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
 密文：下载附件，解压得到一张.jpg图片。 解题思路：1、用010Editor看了一下，刚开始以为是修改宽高的题，没有想到这个方向。（想到也不会做） 在010 Editor中看到，在图片数据的后面附加了很多的无关数据。（“FF D9”为jpg文件结尾）
