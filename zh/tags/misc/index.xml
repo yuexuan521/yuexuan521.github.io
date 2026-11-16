@@ -777,7 +777,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -793,7 +793,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［SUCTF 2019］Game 1」，附件一张图和 src.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -806,7 +806,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目配图是动漫女孩的头像&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -816,31 +816,17 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出 css、js 与 index.html（3 KB）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、在网站源代码index.html中，发现经过Base32加密后的密文： &lt;code&gt;ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.qqxiuzi.cn/bianma/base.php&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Base32编码解码&lt;/a&gt;
-使用在线网站进行解密，得到假的flag： &lt;code&gt;suctf{hAHaha_Fak3_F1ag}&lt;/code&gt;&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -856,7 +842,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png" 
-             alt="" 
+             alt="题目页「［SUCTF 2019］Game 1」，附件一张图和 src.zip" 
               
              loading="lazy"
         />
@@ -869,7 +855,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png" 
-             alt="" 
+             alt="题目配图是动漫女孩的头像" 
               
              loading="lazy"
         />
@@ -879,7 +865,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png" 
-             alt="" 
+             alt="解压出 css、js 与 index.html（3 KB）" 
               
              loading="lazy"
         />
@@ -891,7 +877,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png" 
-             alt="" 
+             alt="index.html 里写着 here is your flag:ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===" 
               
              loading="lazy"
         />
@@ -903,7 +889,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png" 
-             alt="" 
+             alt="Base32 解码得到 suctf{hAHaha_Fak3_F1ag}，是个假 flag" 
               
              loading="lazy"
         />
@@ -914,7 +900,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png" 
-             alt="" 
+             alt="StegSolve Data Extract 勾 Red/Green/Blue 的 0 位、MSB First、RGB，Preview 得到 U2FsdGVkX1&#43;zHjSB…" 
               
              loading="lazy"
         />
@@ -930,7 +916,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png" 
-             alt="" 
+             alt="Base64 解码（UTF-16）同样只得到 Salted__ 开头的乱码" 
               
              loading="lazy"
         />
@@ -942,7 +928,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png" 
-             alt="" 
+             alt="3DES 解密：密文 suctf{U_F0und_1t}，密码填上一步的假 flag" 
               
              loading="lazy"
         />
@@ -952,7 +938,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png" 
-             alt="" 
+             alt="html 打开是「WELCOME TO SUCTF」加一个魔方" 
               
              loading="lazy"
         />
@@ -2586,7 +2572,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2602,7 +2588,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［GXYCTF2019］佛系青年 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2614,7 +2600,7 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;attachment.zip，35 KB&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2626,40 +2612,18 @@ Quoted-printable编码</a></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Bandizip 打开，里面是 1.png（33,878）与 fo.txt（2,836）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;解压出的png图片&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;2、压缩包内有两个文件，而且已经解压出了一个文件，我猜测为zip压缩包明文攻击，但后面没有成功解出密码。看过别人的题解之后，发现原来是zip伪加密。
-通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。&lt;/p&gt;</description>
+&lt;p&gt;解压出的png图片&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2675,7 +2639,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png" 
-             alt="" 
+             alt="题目页「［GXYCTF2019］佛系青年 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -2687,7 +2651,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png" 
-             alt="" 
+             alt="attachment.zip，35 KB" 
               
              loading="lazy"
         />
@@ -2699,7 +2663,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png" 
-             alt="" 
+             alt="Bandizip 打开，里面是 1.png（33,878）与 fo.txt（2,836）" 
               
              loading="lazy"
         />
@@ -2710,7 +2674,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png" 
-             alt="" 
+             alt="唐僧的表情包，配字「我FFFF。。佛慈悲」" 
               
              loading="lazy"
         />
@@ -2720,7 +2684,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png" 
-             alt="" 
+             alt="解压 fo.txt 时提示输入密码" 
               
              loading="lazy"
         />
@@ -2732,7 +2696,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png" 
-             alt="" 
+             alt="十六进制里 PK 01 02 的中央目录处，红框 00 00 是加密标志位，右侧可见 1.png 与 fo.txt" 
               
              loading="lazy"
         />
@@ -2743,7 +2707,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png" 
-             alt="" 
+             alt="1.png 打开是 ASCII 画的佛像加一首打油诗，最下面一行「佛曰：遮等諦勝…」" 
               
              loading="lazy"
         />
@@ -2831,7 +2795,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png" 
-             alt="" 
+             alt="AmanCTF 与佛论禅，把那句「佛曰」贴进去，解出 flag{w0_fo_ci_Be1}" 
               
              loading="lazy"
         />
@@ -2844,7 +2808,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png" 
-             alt="" 
+             alt="CTF-Tools 的「解密 → 与佛论禅 → 1.0」，Result 同样是 flag{w0_fo_ci_Be1}" 
               
              loading="lazy"
         />

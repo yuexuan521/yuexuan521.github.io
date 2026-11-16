@@ -1834,7 +1834,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -1852,18 +1852,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -1881,7 +1880,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png" 
-             alt="" 
+             alt="题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -1893,7 +1892,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png" 
-             alt="" 
+             alt="out.wav，显示为 WAV 文件" 
               
              loading="lazy"
         />
@@ -1926,7 +1925,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png" 
-             alt="" 
+             alt="kali 里 steg hide info out.wav：capacity 61.6 KB，内嵌 download.txt（32 字节，rijndael-128 cbc）；extract 后 cat 出 https://share.weiyun.com/5wVTIN3" 
               
              loading="lazy"
         />
@@ -1949,7 +1948,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png" 
-             alt="" 
+             alt="腾讯微云分享页「Léon的分享: GUET.png」，6.97 KB" 
               
              loading="lazy"
         />
@@ -1963,7 +1962,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png" 
-             alt="" 
+             alt="打开 GUET.png 提示「似乎不支持此文件格式」" 
               
              loading="lazy"
         />
@@ -1973,7 +1972,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png" 
-             alt="" 
+             alt="010 Editor 里开头是 89 50 4E 48 0D 0A 1A 0A，第 4 字节被换成了 48" 
               
              loading="lazy"
         />
@@ -1983,7 +1982,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png" 
-             alt="" 
+             alt="改回 89 50 4E 47 之后，IHDR 显示宽 0x453、高 0x120" 
               
              loading="lazy"
         />
@@ -1994,7 +1993,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png" 
-             alt="" 
+             alt="记事本里是一串 \u0034\u0030\u0037\u0030\u000d\u000a\u0031\u0032\u0033\u0034" 
               
              loading="lazy"
         />
@@ -2025,7 +2024,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png" 
-             alt="" 
+             alt="Unicode 在线工具解码，右框得到 4070 与 1234 两行" 
               
              loading="lazy"
         />
