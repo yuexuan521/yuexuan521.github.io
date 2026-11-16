@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Fri, 05 Dec 2025 10:53:56 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
@@ -26,16 +26,15 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727597.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727597.png&#34; 
-             alt=&#34;上海招考热线首页，主办单位为上海市教育考试院&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260131154727597.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260131154727597.png&#34;
+             alt=&#34;上海招考热线首页，主办单位为上海市教育考试院&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1921&#34; height=&#34;1145&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://zs.shiep.edu.cn/zsb/list.htm&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;上海电力大学专升本官网&lt;/a&gt;
 &lt;ul&gt;
@@ -43,16 +42,15 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727599.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727599.png&#34; 
-             alt=&#34;上海电力大学本科招生网的「其他类型招生 → 专升本」栏目列表&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260131154727599.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260131154727599.png&#34;
+             alt=&#34;上海电力大学本科招生网的「其他类型招生 → 专升本」栏目列表&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;2014&#34; height=&#34;1437&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
+&lt;/div&gt;
+&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h3 id="信息收集">信息收集</h3><h4 id="官方权威网站信息发布">官方权威网站（信息发布）</h4><ul>
 <li><a href="https://www.shmeea.edu.cn/page/index.html?"target="_blank" rel="noopener noreferrer">上海市教育考试院</a>
 <ul>
@@ -60,16 +58,15 @@
 </ul>
 </li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727597.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727597.png" 
-             alt="上海招考热线首页，主办单位为上海市教育考试院" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727597.png">
+        <img src="/images/blog/20260131154727597.png"
+             alt="上海招考热线首页，主办单位为上海市教育考试院"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1921" height="1145"/>
     </a>
-</div></p>
+</div>
+</p>
 <ul>
 <li><a href="https://zs.shiep.edu.cn/zsb/list.htm"target="_blank" rel="noopener noreferrer">上海电力大学专升本官网</a>
 <ul>
@@ -77,68 +74,62 @@
 </ul>
 </li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727599.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727599.png" 
-             alt="上海电力大学本科招生网的「其他类型招生 → 专升本」栏目列表" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727599.png">
+        <img src="/images/blog/20260131154727599.png"
+             alt="上海电力大学本科招生网的「其他类型招生 → 专升本」栏目列表"
+             
+             loading="lazy" decoding="async" width="2014" height="1437"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>上海电力大学专升本考试《信息安全专业》考试大纲和招生章程（重要）</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727600.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727600.png" 
-             alt="考试内容与分值分配表：信息安全基础部分约 30 分，列出密码学基础、认证与密钥管理等要求" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727600.png">
+        <img src="/images/blog/20260131154727600.png"
+             alt="考试内容与分值分配表：信息安全基础部分约 30 分，列出密码学基础、认证与密钥管理等要求"
+             
+             loading="lazy" decoding="async" width="1324" height="1166"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727601.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727601.png" 
-             alt="考试形式为闭卷 120 分钟、满分 100 分，并列出四本参考教材" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727601.png">
+        <img src="/images/blog/20260131154727601.png"
+             alt="考试形式为闭卷 120 分钟、满分 100 分，并列出四本参考教材"
+             
+             loading="lazy" decoding="async" width="1406" height="909"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727602.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727602.png" 
-             alt="2025 年上海电力大学「专升本」招生章程表格：院校全称、就读校区、招生计划等" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727602.png">
+        <img src="/images/blog/20260131154727602.png"
+             alt="2025 年上海电力大学「专升本」招生章程表格：院校全称、就读校区、招生计划等"
+             
+             loading="lazy" decoding="async" width="1251" height="1396"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="非官方作为补充">非官方（作为补充）</h4><p><a href="http://www.021zsb.com/"target="_blank" rel="noopener noreferrer">上海专升本考试网-2026年上海普通高校专升本考试信息网站</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727603.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727603.png" 
-             alt="上海普通专升本院校校徽汇总：上外、上理、上师大、华东政法等" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727603.png">
+        <img src="/images/blog/20260131154727603.png"
+             alt="上海普通专升本院校校徽汇总：上外、上理、上师大、华东政法等"
+             
+             loading="lazy" decoding="async" width="1544" height="1139"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727604.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727604.png" 
-             alt="天眼查页面：上海学路网络科技有限公司的工商登记信息" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727604.png">
+        <img src="/images/blog/20260131154727604.png"
+             alt="天眼查页面：上海学路网络科技有限公司的工商登记信息"
+             
+             loading="lazy" decoding="async" width="1404" height="385"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>一些我用到的公众号文章：</p>
 <p><a href="https://mp.weixin.qq.com/s/uGDxYp64lpX38CRJndo2Dw"target="_blank" rel="noopener noreferrer">2025上海专升本最新重要时间节点！</a></p>
 <p><a href="https://mp.weixin.qq.com/s/PssKbh88M03LVQd3qD3kKQ"target="_blank" rel="noopener noreferrer">2024指定参考书|| 上海电力大学专升本</a></p>
@@ -149,26 +140,24 @@
 <p>免责声明：谨慎看待“非官方”的网站和文章，仔细鉴别其中的有效信息和广告。不要盲目相信辅导机构。</p>
 </blockquote>
 <h3 id="学习路线">学习路线</h3><p>上海电力大学的考试分为三个方面：信息安全基础部分（30分）、数据结构部分（30分）和C++面向对象程序设计部分（40分）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727605.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727605.png" 
-             alt="两本教材封面：《C&#43;&#43;语言程序设计（第5版）》与《C&#43;&#43;高级程序设计（第二版）》" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727605.png">
+        <img src="/images/blog/20260131154727605.png"
+             alt="两本教材封面：《C&#43;&#43;语言程序设计（第5版）》与《C&#43;&#43;高级程序设计（第二版）》"
+             
+             loading="lazy" decoding="async" width="600" height="450"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727606.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727606.png" 
-             alt="两本教材封面：《信息安全概论（第二版）》与《数据结构（C语言版 第4版）》" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727606.png">
+        <img src="/images/blog/20260131154727606.png"
+             alt="两本教材封面：《信息安全概论（第二版）》与《数据结构（C语言版 第4版）》"
+             
+             loading="lazy" decoding="async" width="600" height="450"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="题型分值">题型分值</h4><p>第一部分 信息安全概论（总分30分）</p>
 <ul>
 <li>一、选择题（本题共8小题，每小题1.5分，共12分）</li>
@@ -189,140 +178,128 @@
 </ul>
 <h4 id="c">C++</h4><p>C++的学习，我喜欢清华大学的郑莉C++语言程序设计 (第5版)这本书。选择哪本书都可以，重要的是必须熟练掌握C++的语法特性，可以写出题目要求的代码。另外，考试时需要在纸上手写代码大题，所以你还要能默写代码。</p>
 <p>考试题目举例：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727607.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727607.png" 
-             alt="大题：由长方形类派生长方体类，实现求表面积的 SuperficialArea() 与求体积的 Volume()" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727607.png">
+        <img src="/images/blog/20260131154727607.png"
+             alt="大题：由长方形类派生长方体类，实现求表面积的 SuperficialArea() 与求体积的 Volume()"
+             
+             loading="lazy" decoding="async" width="1012" height="220"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>常见的大题题目，要求用C++实现一个简单的类。</p>
 <p>下面给出一个类似的题目：实现一个圆类</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727608.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727608.png" 
-             alt="手写代码：Circle 类与继承它的 column 类，末尾是 main 函数调用" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727608.png">
+        <img src="/images/blog/20260131154727608.png"
+             alt="手写代码：Circle 类与继承它的 column 类，末尾是 main 函数调用"
+             
+             loading="lazy" decoding="async" width="998" height="1346"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="数据结构">数据结构</h4><p>数据结构的学习，我没怎么看那本参考教材，我是看这个网站<a href="https://www.hello-algo.com/chapter_hello_algo/"target="_blank" rel="noopener noreferrer">Hello 算法</a>，再加上《2025王道数据结构考研复习指导》学习的。网络上学习数据结构与算法的资源还是比较多的，可以随意选择。</p>
 <p>要熟练掌握每一种数据结构的常用操作，多练习一些题目。个人感觉这是难度最高的考试科目。</p>
 <p>考试题目举例：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727609.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727609.png" 
-             alt="手写代码照片（与上一张同为 Circle/column 类的实现）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727609.png">
+        <img src="/images/blog/20260131154727609.png"
+             alt="手写代码照片（与上一张同为 Circle/column 类的实现）"
+             
+             loading="lazy" decoding="async" width="865" height="166"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>简答题考察了“哈希查找”和排序，建议熟练掌握。同样符合考试大纲的规定。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727610.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727610.png" 
-             alt="查找与排序的考核要求表格：静态查找、哈希查找与各类排序均标注「掌握」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727610.png">
+        <img src="/images/blog/20260131154727610.png"
+             alt="查找与排序的考核要求表格：静态查找、哈希查找与各类排序均标注「掌握」"
+             
+             loading="lazy" decoding="async" width="1148" height="562"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727611.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727611.png" 
-             alt="同一张查找与排序考核要求表格（重复截图）" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727611.png">
+        <img src="/images/blog/20260131154727611.png"
+             alt="同一张查找与排序考核要求表格（重复截图）"
+             
+             loading="lazy" decoding="async" width="865" height="399"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727612.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727612.png" 
-             alt="排序题：给出待排序序列，要求写出直接插入排序与简单选择排序的第二趟结果" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727612.png">
+        <img src="/images/blog/20260131154727612.png"
+             alt="排序题：给出待排序序列，要求写出直接插入排序与简单选择排序的第二趟结果"
+             
+             loading="lazy" decoding="async" width="1045" height="154"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>数据结构代码大题，今年考了比较简单的算法题，以后不会再有啦。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727613.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727613.png" 
-             alt="标题「三、就地逆置链表」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727613.png">
+        <img src="/images/blog/20260131154727613.png"
+             alt="标题「三、就地逆置链表」"
+             
+             loading="lazy" decoding="async" width="389" height="88"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>给出两种实现的代码</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727614.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727614.png" 
-             alt="手写代码：用头插法就地逆置单链表" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727614.png">
+        <img src="/images/blog/20260131154727614.png"
+             alt="手写代码：用头插法就地逆置单链表"
+             
+             loading="lazy" decoding="async" width="1703" height="945"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727615.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727615.png" 
-             alt="手写代码：用三指针法就地逆置单链表，附红色批注" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727615.png">
+        <img src="/images/blog/20260131154727615.png"
+             alt="手写代码：用三指针法就地逆置单链表，附红色批注"
+             
+             loading="lazy" decoding="async" width="1358" height="829"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="信息安全">信息安全</h4><p>信息安全的学习，就是阅读参考教材，熟悉考纲所规定的知识，要大量的记忆。</p>
 <blockquote>
 <p>填空题今年取消了，明年也可能有新的变化，基础还是要打牢。</p>
 </blockquote>
 <p>考试题目举例：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727616.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727616.png" 
-             alt="查找与排序考核要求表格（与前面同一张图）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727616.png">
+        <img src="/images/blog/20260131154727616.png"
+             alt="查找与排序考核要求表格（与前面同一张图）"
+             
+             loading="lazy" decoding="async" width="865" height="111"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>信息安全的大题就是这样，如果你不记得的话，根本写不出来。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727617.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727617.png" 
-             alt="「二、大题：操作系统安全机制（8 分）」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727617.png">
+        <img src="/images/blog/20260131154727617.png"
+             alt="「二、大题：操作系统安全机制（8 分）」"
+             
+             loading="lazy" decoding="async" width="463" height="100"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727618.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20260131154727618.png" 
-             alt="「三、大题：简述 RSA 算法，e=5、p=7、q=17，求 d」" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260131154727618.png">
+        <img src="/images/blog/20260131154727618.png"
+             alt="「三、大题：简述 RSA 算法，e=5、p=7、q=17，求 d」"
+             
+             loading="lazy" decoding="async" width="673" height="104"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="考试路线">考试路线</h3><h4 id="参考书目">参考书目</h4><ul>
 <li>李红娇等，《信息安全概论（第二版）》，中国电力出版社，2016年5月</li>
 <li>李云清杨庆红等，《数据结构（C语言版第4版）》，人民邮电出版社，2023年8月</li>
@@ -347,16 +324,15 @@
       <link>https://yuexuan521.github.io/zh/posts/%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%ACfaq/</link>
       <pubDate>Mon, 22 Sep 2025 17:15:56 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%ACfaq/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042106924.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042106924.png&#34; 
-             alt=&#34;上海电力大学风机配图，配文「好风凭借力，送你上青云」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/202512042106924.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/202512042106924.png&#34;
+             alt=&#34;上海电力大学风机配图，配文「好风凭借力，送你上青云」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;900&#34; height=&#34;1200&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;2025届考生情况，如有出入，以当年实际情况为准。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;V0.0.0.20250527&lt;/strong&gt;&lt;/p&gt;
@@ -366,16 +342,15 @@
 &lt;li&gt;代码题不会那么难，题型都是固定的&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2、数据结构与算法代码大题用什么语言？&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042106924.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042106924.png" 
-             alt="上海电力大学风机配图，配文「好风凭借力，送你上青云」" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/202512042106924.png">
+        <img src="/images/blog/202512042106924.png"
+             alt="上海电力大学风机配图，配文「好风凭借力，送你上青云」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="900" height="1200"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>2025届考生情况，如有出入，以当年实际情况为准。</p>
 <p><strong>V0.0.0.20250527</strong></p>
@@ -427,16 +402,15 @@
 <p>11、考试地点</p>
 <ul>
 <li>2025年考试地点：临港校区三教102（上海市浦东新区沪城环路1851号）</li>
-<li>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042100892.jpg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042100892.jpg" 
-             alt="临港校区平面图，红框标出 A3 三号公共教学楼" 
-              
-             loading="lazy"
-        />
+<li><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/202512042100892.jpg">
+        <img src="/images/blog/202512042100892.jpg"
+             alt="临港校区平面图，红框标出 A3 三号公共教学楼"
+             
+             loading="lazy" decoding="async" width="1290" height="942"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <p>12、参考书目</p>
 <ul>
@@ -457,7 +431,7 @@
 <p>14、往年录取情况</p>
 <ul>
 <li>
-<img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042100893.jpg" alt="往年录取情况" style="zoom: 25%;" />
+<img src="/images/blog/202512042100893.jpg" alt="往年录取情况" style="zoom: 25%;" width="904" height="2352" loading="lazy" decoding="async">
 </li>
 </ul>
 <p>15、问题新增在这里！</p>
@@ -465,16 +439,15 @@
 <h3 id="闲谈">闲谈</h3><blockquote>
 <p>“不知道能不能及格”</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042115651.jpg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512042115651.jpg" 
-             alt="一张黄色迎春花的特写照片" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/202512042115651.jpg">
+        <img src="/images/blog/202512042115651.jpg"
+             alt="一张黄色迎春花的特写照片"
+             
+             loading="lazy" decoding="async" width="3000" height="4000"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>人生易老天难老，岁岁重阳。今又重阳，战地黄花分外香。</p>
 <p>一年一度秋风劲，不似春光。胜似春光，寥廓江天万里霜。</p>
@@ -490,69 +463,64 @@
       <guid>https://yuexuan521.github.io/zh/posts/2025%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%AC%E8%80%83%E8%AF%95%E7%9C%9F%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;信安&#34;&gt;&lt;strong&gt;信安&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&#34;选择&#34;&gt;&lt;strong&gt;选择&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;一、&lt;/p&gt;
 &lt;p&gt;2． 口令认证在没有加密的情况下会出现中间人攻击。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png&#34;&gt;
-        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png&#34; 
-             alt=&#34;选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260201160654598.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260201160654598.png&#34;
+             alt=&#34;选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;865&#34; height=&#34;111&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;简答&#34;&gt;简答&lt;/h3&gt;&lt;p&gt;二、大题&lt;/p&gt;
 &lt;p&gt;操作系统安全机制（8 分）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="信安"><strong>信安</strong></h2><h3 id="选择"><strong>选择</strong></h3><p>一、</p>
 <p>2． 口令认证在没有加密的情况下会出现中间人攻击。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png" 
-             alt="选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654598.png">
+        <img src="/images/blog/20260201160654598.png"
+             alt="选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="865" height="111"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="简答">简答</h3><p>二、大题</p>
 <p>操作系统安全机制（8 分）</p>
 <p><strong>信安大题</strong></p>
 <p>三、大题</p>
 <p>简述 RSA 算法，及 e = 5，p = 7，q = 17，求 d.</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654599.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654599.png" 
-             alt="简答题 2：简述 RSA 加解密算法，设 p=7、q=17、公钥 e=5、消息 m=19，求私钥 d 与密文" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654599.png">
+        <img src="/images/blog/20260201160654599.png"
+             alt="简答题 2：简述 RSA 加解密算法，设 p=7、q=17、公钥 e=5、消息 m=19，求私钥 d 与密文"
+             
+             loading="lazy" decoding="async" width="865" height="133"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="数据结构"><strong>数据结构</strong></h2><h3 id="选择-1"><strong>选择</strong></h3><p>一、时间复杂度</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png" 
-             alt="选择题 4：数组 A［i,j］ 每个元素 3 字节，列主存时 A［5,8］ 的首地址为 BA&#43;180" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654600.png">
+        <img src="/images/blog/20260201160654600.png"
+             alt="选择题 4：数组 A［i,j］ 每个元素 3 字节，列主存时 A［5,8］ 的首地址为 BA&#43;180"
+             
+             loading="lazy" decoding="async" width="865" height="166"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="数据结构简答题两道10-分"><strong>数据结构简答题两道（10 分）</strong></h3><p>二、大题</p>
 <p>1.散列表, ASLsuc</p>
 <p>（例题相似）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654602.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654602.png" 
-             alt="散列表题：关键字 {7,8,30,11,18,9,14}，H(key)=(key×3) MOD T，线性探测，附填好的表 7.4 与平均查找长度" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654602.png">
+        <img src="/images/blog/20260201160654602.png"
+             alt="散列表题：关键字 {7,8,30,11,18,9,14}，H(key)=(key×3) MOD T，线性探测，附填好的表 7.4 与平均查找长度"
+             
+             loading="lazy" decoding="async" width="865" height="399"/>
     </a>
-</div></p>
+</div>
+</p>
 <ol start="2">
 <li>待排序序列{503,087,512,061,908,170,897,275,653,426}写出排序的第二趟结果。</li>
 </ol>
@@ -562,41 +530,38 @@
 <h2 id="c"><strong>C++</strong></h2><h3 id="选择-2"><strong>选择</strong></h3><p>1.p 是指向数组的指针，<em>(</em>(p))不可以表示数组。</p>
 <p>2.派生类的对象无法作为基类的成员</p>
 <h3 id="代码阅读题两道10-分"><strong>代码阅读题两道（10 分）</strong></h3><p>一、</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654603.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654603.png" 
-             alt="派生类构造函数的三条执行顺序：先基类、再新增成员、最后函数体" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654603.png">
+        <img src="/images/blog/20260201160654603.png"
+             alt="派生类构造函数的三条执行顺序：先基类、再新增成员、最后函数体"
+             
+             loading="lazy" decoding="async" width="865" height="152"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>二、</p>
 <p>1.继承的构造函数调用顺序</p>
 <ol start="2">
 <li>原题</li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654604.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654604.png" 
-             alt="C&#43;&#43; Date 类的构造函数、析构函数与 Print 成员函数代码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654604.png">
+        <img src="/images/blog/20260201160654604.png"
+             alt="C&#43;&#43; Date 类的构造函数、析构函数与 Print 成员函数代码"
+             
+             loading="lazy" decoding="async" width="865" height="729"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654605.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654605.png" 
-             alt="main 函数与运行结果，输出两行 constructor called、两个日期以及两行 deconstructed" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654605.png">
+        <img src="/images/blog/20260201160654605.png"
+             alt="main 函数与运行结果，输出两行 constructor called、两个日期以及两行 deconstructed"
+             
+             loading="lazy" decoding="async" width="865" height="589"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="代码大题10-分"><strong>代码大题（10 分）</strong></h3><p>三、大题</p>
 <p>长方形类，数据成员长、宽，派生出长方体类。</p>
 <p>长方体类继承自长方形类，增加数据成员高，成员函数 SuperficialArea（）。</p>

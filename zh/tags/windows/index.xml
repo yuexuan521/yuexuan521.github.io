@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 23 Dec 2024 07:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/windows/index.xml" rel="self" type="application/rss+xml" />
@@ -19,87 +19,81 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020cyberpunk-1/</link>
       <pubDate>Mon, 23 Dec 2024 07:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020cyberpunk-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191452501.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191452501.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png&#34; 
-             alt=&#34;题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191454519.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191454519.png&#34;
+             alt=&#34;题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;741&#34; height=&#34;592&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件解压，得到cyberpunk! .exe文件&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png&#34; 
-             alt=&#34;解压出 attachment (1).zip 与 cyberpunk!.exe&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191456196.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191456196.png&#34;
+             alt=&#34;解压出 attachment (1).zip 与 cyberpunk!.exe&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;247&#34; height=&#34;76&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、一开始我以为是逆向的题目，直接打开IDA了，没什么成果才返回。实际上，运行程序，根据提示修改电脑的时间就可以得到flag。&lt;/p&gt;
 &lt;p&gt;开始运行程序，提示时间必须在2020年9月17日才可以。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191452501.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191452501.png">
+        <img src="/images/blog/20251228191452501.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191454519.png" 
-             alt="题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191454519.png">
+        <img src="/images/blog/20251228191454519.png"
+             alt="题目页「［MRCTF2020］CyberPunk 1」，附件 attachment.zip"
+             
+             loading="lazy" decoding="async" width="741" height="592"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。
 感谢天璇战队供题。</p>
 <h3 id="密文">密文：</h3><p>下载附件解压，得到cyberpunk! .exe文件</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191456196.png" 
-             alt="解压出 attachment (1).zip 与 cyberpunk!.exe" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191456196.png">
+        <img src="/images/blog/20251228191456196.png"
+             alt="解压出 attachment (1).zip 与 cyberpunk!.exe"
+             
+             loading="lazy" decoding="async" width="247" height="76"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、一开始我以为是逆向的题目，直接打开IDA了，没什么成果才返回。实际上，运行程序，根据提示修改电脑的时间就可以得到flag。</p>
 <p>开始运行程序，提示时间必须在2020年9月17日才可以。</p>
@@ -111,37 +105,34 @@
 <p>创始人：Marcin lwinski</p>
 <p>工作室负责人：Adam Badowski</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191457741.png" 
-             alt="程序提示要等到 2020.9.17，当前时间显示月 9、日 27" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191457741.png">
+        <img src="/images/blog/20251228191457741.png"
+             alt="程序提示要等到 2020.9.17，当前时间显示月 9、日 27"
+             
+             loading="lazy" decoding="async" width="697" height="217"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>修改完成后，需要重新启动程序，这时就会出现flag</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191459544.png" 
-             alt="Windows 日期和时间设置，红框标出 2020年9月17日 与「更改」按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191459544.png">
+        <img src="/images/blog/20251228191459544.png"
+             alt="Windows 日期和时间设置，红框标出 2020年9月17日 与「更改」按钮"
+             
+             loading="lazy" decoding="async" width="1597" height="787"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191501534.png" 
-             alt="改完日期再运行，输出 MRCTF{We1c0m3_70_cyber_security}" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191501534.png">
+        <img src="/images/blog/20251228191501534.png"
+             alt="改完日期再运行，输出 MRCTF{We1c0m3_70_cyber_security}"
+             
+             loading="lazy" decoding="async" width="799" height="244"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

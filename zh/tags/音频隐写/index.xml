@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 28 Jun 2025 20:16:15 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E9%9F%B3%E9%A2%91%E9%9A%90%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
@@ -19,16 +19,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020music-1/</link>
       <pubDate>Sat, 28 Jun 2025 20:16:15 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020music-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190443925.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190443925.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -38,26 +37,24 @@
 &lt;li&gt;&lt;a href=&#34;https://www.ruanyifeng.com/blog/2021/01/_xor.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;异或运算 XOR 教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109806994&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：［ACTF新生赛2020］music&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png&#34; 
-             alt=&#34;题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190445904.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190445904.png&#34;
+             alt=&#34;题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;741&#34; height=&#34;553&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190443925.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190443925.png">
+        <img src="/images/blog/20251228190443925.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -67,96 +64,88 @@
 <li><a href="https://www.ruanyifeng.com/blog/2021/01/_xor.html"target="_blank" rel="noopener noreferrer">异或运算 XOR 教程</a></li>
 <li><a href="https://blog.csdn.net/mochu7777777/article/details/109806994"target="_blank" rel="noopener noreferrer">BUUCTF：［ACTF新生赛2020］music</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190445904.png" 
-             alt="题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190445904.png">
+        <img src="/images/blog/20251228190445904.png"
+             alt="题目页「［ACTF新生赛2020］music 1」，附件 attachment.tar"
+             
+             loading="lazy" decoding="async" width="741" height="553"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到tmp文件夹，内有vip.zip，解压得到vip.m4a文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190447569.png" 
-             alt="解出 vip.m4a（372 KB）与 vip.zip（368 KB）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190447569.png">
+        <img src="/images/blog/20251228190447569.png"
+             alt="解出 vip.m4a（372 KB）与 vip.zip（368 KB）"
+             
+             loading="lazy" decoding="async" width="1032" height="84"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、打开vip.m4a文件，发现该文件已损坏。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190448858.png" 
-             alt="播放器打不开 vip.m4a，提示文件类型不受支持，错误码 0xC00D36C4" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190448858.png">
+        <img src="/images/blog/20251228190448858.png"
+             alt="播放器打不开 vip.m4a，提示文件类型不受支持，错误码 0xC00D36C4"
+             
+             loading="lazy" decoding="async" width="694" height="168"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在010Editor中，也可以观察到文件数据的混乱。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190450366.png" 
-             alt="十六进制从头到尾都是 A1 A1 A1 混着零星字节" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190450366.png">
+        <img src="/images/blog/20251228190450366.png"
+             alt="十六进制从头到尾都是 A1 A1 A1 混着零星字节"
+             
+             loading="lazy" decoding="async" width="1392" height="1059"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、通过观察，参考 <a href="https://blog.csdn.net/liuxunfei15/article/details/120441383"target="_blank" rel="noopener noreferrer">m4a文件格式分析</a> 、 <a href="https://www.ruanyifeng.com/blog/2021/01/_xor.html"target="_blank" rel="noopener noreferrer">异或运算 XOR 教程</a> 两篇文章，我终于明白，vip.m4a文件数据经过对“ <code>A1</code> ”的异或运算，才呈现上面的样子。</p>
 <p>首先，通过对比m4a文件的ftyp（文件标识）和stsc（记录每个trunk的采样数），发现原来是“ <code>00</code> ”的数据变成了“ <code>A1</code> ”，ftyp：“ <code>66 74 79 70</code> ”变为“ <code>C7 D5 D8 D1</code> ”，stsc：“ <code>73 74 73 63</code> ”变为“ <code>D2 D5 D5 D2</code> ”。</p>
 <p>（感谢CSDN半岛铁盒博主的分享，另外周的《半岛铁盒》也很好听）</p>
 <p><strong>ftyp：</strong>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190452337.png" 
-             alt="红框 66 74 79 70 就是 ftyp，后面紧跟 4D 34 41，即 M4A" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190452337.png">
+        <img src="/images/blog/20251228190452337.png"
+             alt="红框 66 74 79 70 就是 ftyp，后面紧跟 4D 34 41，即 M4A"
+             
+             loading="lazy" decoding="async" width="1267" height="94"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190453759.png" 
-             alt="0000h 处红框三组：A1 A1 A1、C7 D5 D8 D1、A1 A1 A1，说明每个字节都被异或过" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190453759.png">
+        <img src="/images/blog/20251228190453759.png"
+             alt="0000h 处红框三组：A1 A1 A1、C7 D5 D8 D1、A1 A1 A1，说明每个字节都被异或过"
+             
+             loading="lazy" decoding="async" width="1354" height="142"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>stsc：</strong>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190455552.png" 
-             alt="0094ebb0h 处 73 74 73 63 即 stsc，后面 00 01、00 02 被竖线标出" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190455552.png">
+        <img src="/images/blog/20251228190455552.png"
+             alt="0094ebb0h 处 73 74 73 63 即 stsc，后面 00 01、00 02 被竖线标出"
+             
+             loading="lazy" decoding="async" width="1496" height="450"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190457661.png" 
-             alt="5C1E0h 一带满屏 A1，右侧蓝色高亮 D2 D5，红框圈出非 A1 的字节" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190457661.png">
+        <img src="/images/blog/20251228190457661.png"
+             alt="5C1E0h 一带满屏 A1，右侧蓝色高亮 D2 D5，红框圈出非 A1 的字节"
+             
+             loading="lazy" decoding="async" width="1435" height="870"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>同时，我了解到异或运算的一条运算规律： <strong>一个值与 0 的运算，总是等于其本身。</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -169,26 +158,24 @@
 </div><p>所以，当“ <code>A1</code> ”与 <code>0</code> 进行异或运算时，结果为“ <code>A1</code> ”。这就是为什么原来是“ <code>00</code> ”的数据变成了“ <code>A1</code> ”。</p>
 <p>从而得出， <strong>vip.m4a文件原数据经过了对“ <code>A1</code> ”的异或运算</strong> 。</p>
 <p>3、在010 Editor中，对整个文件进行对“ <code>A1</code> ”的异或运算，保存得到完好的vip.m4a文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190459369.png" 
-             alt="010 Editor 工具菜单，选「十六进制运算 → 二进制异或」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190459369.png">
+        <img src="/images/blog/20251228190459369.png"
+             alt="010 Editor 工具菜单，选「十六进制运算 → 二进制异或」"
+             
+             loading="lazy" decoding="async" width="1343" height="875"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190501187.png" 
-             alt="十六进制运算窗口：二进制异或，操作数填 A1，按位逐字节异或" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190501187.png">
+        <img src="/images/blog/20251228190501187.png"
+             alt="十六进制运算窗口：二进制异或，操作数填 A1，按位逐字节异或"
+             
+             loading="lazy" decoding="async" width="847" height="504"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>播放vip.m4a文件，将听到的字母记下来，得到： <code>actfabcdfghijk</code> ，flag为： <code>abcdfghijk</code></p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -205,16 +192,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-sctf2019%E7%94%B5%E5%8D%95%E8%BD%A6-1/</link>
       <pubDate>Mon, 21 Apr 2025 08:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-sctf2019%E7%94%B5%E5%8D%95%E8%BD%A6-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191805436.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191805436.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191805436.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191805436.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -223,26 +209,24 @@
 &lt;li&gt;&lt;a href=&#34;https://www.freebuf.com/articles/wireless/191534.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;使用HackCube-Special分析固定码信号&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_49656607/article/details/120323952&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;［SCTF2019］电单车&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191807528.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191807528.png&#34; 
-             alt=&#34;题目页「［SCTF2019］电单车 1」，附件 attachment…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191807528.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191807528.png&#34;
+             alt=&#34;题目页「［SCTF2019］电单车 1」，附件 attachment…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;741&#34; height=&#34;553&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191805436.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191805436.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191805436.png">
+        <img src="/images/blog/20251228191805436.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -251,87 +235,80 @@
 <li><a href="https://www.freebuf.com/articles/wireless/191534.html"target="_blank" rel="noopener noreferrer">使用HackCube-Special分析固定码信号</a></li>
 <li><a href="https://blog.csdn.net/weixin_49656607/article/details/120323952"target="_blank" rel="noopener noreferrer">［SCTF2019］电单车</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191807528.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191807528.png" 
-             alt="题目页「［SCTF2019］电单车 1」，附件 attachment…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191807528.png">
+        <img src="/images/blog/20251228191807528.png"
+             alt="题目页「［SCTF2019］电单车 1」，附件 attachment…"
+             
+             loading="lazy" decoding="async" width="741" height="553"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到attachment.wav</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191809387.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191809387.png" 
-             alt="attachment.wav，10,400 KB，显示为 WAV 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191809387.png">
+        <img src="/images/blog/20251228191809387.png"
+             alt="attachment.wav，10,400 KB，显示为 WAV 文件"
+             
+             loading="lazy" decoding="async" width="1026" height="43"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、用Audacity打开attachment.wav，波形图如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191810497.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191810497.png" 
-             alt="Audacity 打开，0.03–0.06 处有一段密集波形，之后全是平线" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191810497.png">
+        <img src="/images/blog/20251228191810497.png"
+             alt="Audacity 打开，0.03–0.06 处有一段密集波形，之后全是平线"
+             
+             loading="lazy" decoding="async" width="1444" height="673"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>放大突出的部分，可以看到波形大致分两种：长波和短波。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191812587.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191812587.png" 
-             alt="放大到 0.023–0.067，每段波形的间隔清晰可数" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191812587.png">
+        <img src="/images/blog/20251228191812587.png"
+             alt="放大到 0.023–0.067，每段波形的间隔清晰可数"
+             
+             loading="lazy" decoding="async" width="2526" height="651"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>将长波替换为 <code>1</code> ，短波替换为 <code>0</code> ，得到数据： <code>00111010010101010011000100</code> 。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191814676.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191814676.png" 
-             alt="在波形下方逐个标注 0 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191814676.png">
+        <img src="/images/blog/20251228191814676.png"
+             alt="在波形下方逐个标注 0 1 1 1 0 1 0 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0"
+             
+             loading="lazy" decoding="async" width="2526" height="651"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、这里的音频其实是 <strong>PT224X信号</strong> ，一种固定码遥控信号，我们需要将信号中的地址位作为flag提交。</p>
 <p><a href="https://www.freebuf.com/articles/wireless/191534.html"target="_blank" rel="noopener noreferrer">使用HackCube-Special分析固定码信号</a></p>
 <blockquote>
 <p>钥匙信号(PT224X) = 同步引导码(8bit) + 地址位(20bit) + 数据位(4bit) + 停止码(1bit).</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191817476.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191817476.png" 
-             alt="PT224X 协议帧结构：同步码 8Bit、地址位 20Bit、数据位 4Bit、停止码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191817476.png">
+        <img src="/images/blog/20251228191817476.png"
+             alt="PT224X 协议帧结构：同步码 8Bit、地址位 20Bit、数据位 4Bit、停止码"
+             
+             loading="lazy" decoding="async" width="690" height="152"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191819095.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191819095.png" 
-             alt="同一波形上红框分区标出同步码、地址位、数据位与停止码" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191819095.png">
+        <img src="/images/blog/20251228191819095.png"
+             alt="同一波形上红框分区标出同步码、地址位、数据位与停止码"
+             
+             loading="lazy" decoding="async" width="2526" height="651"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><code>0 （同步码） 01110100101010100110（地址位） 0010 （数据位） 0（停止码）</code></p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -348,106 +325,98 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020sstv-1/</link>
       <pubDate>Mon, 07 Apr 2025 08:32:21 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020sstv-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192148732.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192148732.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192148732.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192148732.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192150794.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192150794.png&#34; 
-             alt=&#34;题目页「［UTCTF2020］sstv 1」，附件 attachment.…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192150794.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192150794.png&#34;
+             alt=&#34;题目页「［UTCTF2020］sstv 1」，附件 attachment.…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;741&#34; height=&#34;559&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到attachment.wav文件。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192152139.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192152139.png&#34; 
-             alt=&#34;attachment.wav，22,185 KB，显示为 WAV 文件&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192152139.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192152139.png&#34;
+             alt=&#34;attachment.wav，22,185 KB，显示为 WAV 文件&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1012&#34; height=&#34;43&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、Audacity打开看了一下，结合题目“ &lt;code&gt;sstv&lt;/code&gt; ”，推测 &lt;strong&gt;慢扫描电视&lt;/strong&gt; 技术。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192153161.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192153161.png&#34; 
-             alt=&#34;Audacity 打开，中间是一条红色密集波形带，末尾有一段噪声&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192153161.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192153161.png&#34;
+             alt=&#34;Audacity 打开，中间是一条红色密集波形带，末尾有一段噪声&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;2557&#34; height=&#34;685&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192148732.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192148732.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192148732.png">
+        <img src="/images/blog/20251228192148732.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192150794.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192150794.png" 
-             alt="题目页「［UTCTF2020］sstv 1」，附件 attachment.…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192150794.png">
+        <img src="/images/blog/20251228192150794.png"
+             alt="题目页「［UTCTF2020］sstv 1」，附件 attachment.…"
+             
+             loading="lazy" decoding="async" width="741" height="559"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到attachment.wav文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192152139.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192152139.png" 
-             alt="attachment.wav，22,185 KB，显示为 WAV 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192152139.png">
+        <img src="/images/blog/20251228192152139.png"
+             alt="attachment.wav，22,185 KB，显示为 WAV 文件"
+             
+             loading="lazy" decoding="async" width="1012" height="43"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、Audacity打开看了一下，结合题目“ <code>sstv</code> ”，推测 <strong>慢扫描电视</strong> 技术。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192153161.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192153161.png" 
-             alt="Audacity 打开，中间是一条红色密集波形带，末尾有一段噪声" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192153161.png">
+        <img src="/images/blog/20251228192153161.png"
+             alt="Audacity 打开，中间是一条红色密集波形带，末尾有一段噪声"
+             
+             loading="lazy" decoding="async" width="2557" height="685"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p><strong>慢扫描电视（Slow-scan television）</strong> 是业余无线电爱好者的一种主要图片传输方法，慢扫描电视通过无线电传输和接收单色或彩色静态图片。
 慢扫描电视的一个术语名称是窄带电视。广播电视需要6MHz的带宽，因为帧速为25到30fps。慢扫描电视的带宽只有3kHz，因此慢扫描电视是一种慢得多的静态图像传输方法，通常每帧需要持续8秒或若干分钟。
@@ -463,59 +432,54 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>输入 <code>qsstv</code> ，运行QSSTV</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192155576.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192155576.png" 
-             alt="kali 里执行 qsstv 命令" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192155576.png">
+        <img src="/images/blog/20251228192155576.png"
+             alt="kali 里执行 qsstv 命令"
+             
+             loading="lazy" decoding="async" width="603" height="106"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><code>Options -&gt; Configuration</code> ，在 <code>Sound</code> 勾选 <code>From file</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192156893.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192156893.png" 
-             alt="QSSTV 9.5.8 主界面，红框 Options → Configuration" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192156893.png">
+        <img src="/images/blog/20251228192156893.png"
+             alt="QSSTV 9.5.8 主界面，红框 Options → Configuration"
+             
+             loading="lazy" decoding="async" width="1487" height="471"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192159005.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192159005.png" 
-             alt="Configuration 的 Sound 页：Input Clock Frequency 填 48000，红框勾选「From file」" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192159005.png">
+        <img src="/images/blog/20251228192159005.png"
+             alt="Configuration 的 Sound 页：Input Clock Frequency 填 48000，红框勾选「From file」"
+             
+             loading="lazy" decoding="async" width="849" height="507"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>点击这个按钮，选择 <code>attachment.wav</code> 开始解码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192200529.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192200529.png" 
-             alt="回到主界面 Receive 标签，红框标出最左边的播放按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192200529.png">
+        <img src="/images/blog/20251228192200529.png"
+             alt="回到主界面 Receive 标签，红框标出最左边的播放按钮"
+             
+             loading="lazy" decoding="async" width="940" height="448"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>最后，图像慢慢从上到下打印出来，太cool了，得到flag： <code>utflag{6bdfeac1e2baa12d6ac5384cdfd166b0}</code> 。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192202338.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192202338.png" 
-             alt="解码完成的画面，显示 utflag{6bdfeac1e2baa12d6ac5384cdfd166b0}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192202338.png">
+        <img src="/images/blog/20251228192202338.png"
+             alt="解码完成的画面，显示 utflag{6bdfeac1e2baa12d6ac5384cdfd166b0}"
+             
+             loading="lazy" decoding="async" width="2557" height="1282"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -531,16 +495,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020spectogram-1/</link>
       <pubDate>Thu, 27 Feb 2025 10:54:30 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020spectogram-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34; 
-             alt=&#34;题图同样是那位蓝发女孩，各篇共用的头部插图&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192124944.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192124944.png&#34;
+             alt=&#34;题图同样是那位蓝发女孩，各篇共用的头部插图&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -549,26 +512,24 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/chumingqian/article/details/123019808&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;语谱图（一） Spectrogram 的定义与机理&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/vuclw/p/15848478.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF:［UTCTF2020］spectogram&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34; 
-             alt=&#34;题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192126926.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192126926.png&#34;
+             alt=&#34;题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;745&#34; height=&#34;561&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png" 
-             alt="题图同样是那位蓝发女孩，各篇共用的头部插图" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192124944.png">
+        <img src="/images/blog/20251228192124944.png"
+             alt="题图同样是那位蓝发女孩，各篇共用的头部插图"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -577,106 +538,97 @@
 <li><a href="https://blog.csdn.net/chumingqian/article/details/123019808"target="_blank" rel="noopener noreferrer">语谱图（一） Spectrogram 的定义与机理</a></li>
 <li><a href="https://www.cnblogs.com/vuclw/p/15848478.html"target="_blank" rel="noopener noreferrer">BUUCTF:［UTCTF2020］spectogram</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png" 
-             alt="题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192126926.png">
+        <img src="/images/blog/20251228192126926.png"
+             alt="题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav"
+             
+             loading="lazy" decoding="async" width="745" height="561"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到attachment.wav</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png" 
-             alt="attachment.wav 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192128658.png">
+        <img src="/images/blog/20251228192128658.png"
+             alt="attachment.wav 文件"
+             
+             loading="lazy" decoding="async" width="879" height="54"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、用Audacity打开attachment.wav，显示频谱图，似乎有隐藏信息。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png" 
-             alt="Audacity 切到频谱图视图，红蓝条纹里隐约浮出字母" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192129739.png">
+        <img src="/images/blog/20251228192129739.png"
+             alt="Audacity 切到频谱图视图，红蓝条纹里隐约浮出字母"
+             
+             loading="lazy" decoding="async" width="1414" height="553"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、从题目 <code>spectogram</code> 了解到“语谱图”的存在，我们需要呈现音频的语谱图，目前总结三种方法。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png" 
-             alt="语谱图原理示意：横轴是时间、纵轴是频率" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192132577.png">
+        <img src="/images/blog/20251228192132577.png"
+             alt="语谱图原理示意：横轴是时间、纵轴是频率"
+             
+             loading="lazy" decoding="async" width="1608" height="904"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="方法一">方法一：</h4><p>在Audacity中，“ <code>编辑</code> ”选项卡“ <code>首选项</code> ” -&gt; “ <code>频谱图</code> ”，FFT(快速傅里叶窗口变换）窗口大小由默认的256改为 <code>1024</code> 。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png" 
-             alt="Audacity 编辑菜单，红框「首选项&hellip;(F)」，右侧频谱里已经能看到字" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192135053.png">
+        <img src="/images/blog/20251228192135053.png"
+             alt="Audacity 编辑菜单，红框「首选项&hellip;(F)」，右侧频谱里已经能看到字"
+             
+             loading="lazy" decoding="async" width="722" height="765"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png" 
-             alt="首选项 → 频谱图：窗口大小 1024、Hanning、最高频率 8000、分贝范围 80" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192137314.png">
+        <img src="/images/blog/20251228192137314.png"
+             alt="首选项 → 频谱图：窗口大小 1024、Hanning、最高频率 8000、分贝范围 80"
+             
+             loading="lazy" decoding="async" width="973" height="538"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>点击确定，将图像拉宽，得到flag： <code>utflag{sp3tr0gr4m0ph0n3}</code> 。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png" 
-             alt="调好参数后频谱里清楚显出 utflag{sp3tr0gr4m0ph0n3}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192138956.png">
+        <img src="/images/blog/20251228192138956.png"
+             alt="调好参数后频谱里清楚显出 utflag{sp3tr0gr4m0ph0n3}"
+             
+             loading="lazy" decoding="async" width="1563" height="915"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="方法二">方法二：</h4><p>使用 <code>Sonic Visualiser</code> 分析attachment.wav，得到它的语谱图。</p>
 <p><a href="https://www.sonicvisualiser.org/download.html"target="_blank" rel="noopener noreferrer">Sonic Visualiser下载地址：https://www.sonicvisualiser.org/download.html</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png" 
-             alt="Sonic Visualiser 官网下载页，红框 Download - primary（5.0.1）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192141646.png">
+        <img src="/images/blog/20251228192141646.png"
+             alt="Sonic Visualiser 官网下载页，红框 Download - primary（5.0.1）"
+             
+             loading="lazy" decoding="async" width="1696" height="997"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>打开文件后，在 <code>Layer</code> 选项中点击 <code>Add Peak Frequency Spectrogram</code> 或者使用 <code>Shift+K</code> ，然后将右边选项调整成如下图所示，得到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png" 
-             alt="Sonic Visualiser 打开 wav，红框 Area 菜单，右侧 Colour Green、Scale dB、Window 1024" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192143437.png">
+        <img src="/images/blog/20251228192143437.png"
+             alt="Sonic Visualiser 打开 wav，红框 Area 菜单，右侧 Colour Green、Scale dB、Window 1024"
+             
+             loading="lazy" decoding="async" width="2551" height="1477"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="方法三">方法三：</h4><p>网上找到的脚本，效果不错。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -805,16 +757,15 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>得到的语谱图：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png" 
-             alt="matplotlib 画出的 Spectrogram，中间同样显出 utflag{sp3tr0gr4m0ph0n3}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192146575.png">
+        <img src="/images/blog/20251228192146575.png"
+             alt="matplotlib 画出的 Spectrogram，中间同样显出 utflag{sp3tr0gr4m0ph0n3}"
+             
+             loading="lazy" decoding="async" width="640" height="480"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -830,16 +781,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020girlfriend-1/</link>
       <pubDate>Mon, 18 Nov 2024 12:58:09 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020girlfriend-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192235955.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192235955.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -847,29 +797,27 @@
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/105412940&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：［WUSTCTF2020］girlfriend&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png&#34; 
-             alt=&#34;题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192238168.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192238168.png&#34;
+             alt=&#34;题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;739&#34; height=&#34;625&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。
 感谢 Iven Huang 师傅供题。
 比赛平台：https://ctfgame.w-ais.cn/&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192235955.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192235955.png">
+        <img src="/images/blog/20251228192235955.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -877,44 +825,41 @@
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 <li><a href="https://blog.csdn.net/mochu7777777/article/details/105412940"target="_blank" rel="noopener noreferrer">BUUCTF：［WUSTCTF2020］girlfriend</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192238168.png" 
-             alt="题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192238168.png">
+        <img src="/images/blog/20251228192238168.png"
+             alt="题目页「［WUSTCTF2020］girlfriend 1」，附件 attachment.zip"
+             
+             loading="lazy" decoding="async" width="739" height="625"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。
 感谢 Iven Huang 师傅供题。
 比赛平台：https://ctfgame.w-ais.cn/</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到attachment .zip压缩包，解压后得到girlfriend.zip压缩包。最后材料是girlfriend.wav和题目描述.txt。</p>
 <p>题目描述.txt内容如下：
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192239778.png" 
-             alt="题干：I want a girl friend !!! 将结果用 wctf2020{} 再提交" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192239778.png">
+        <img src="/images/blog/20251228192239778.png"
+             alt="题干：I want a girl friend !!! 将结果用 wctf2020{} 再提交"
+             
+             loading="lazy" decoding="async" width="427" height="114"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、尝试听girlfriend.wav音频文件，刚开始没有听出是手机键盘拨号声。后面看题解，得知是DTMF拨号音识别。
 <strong>Audacity显示</strong>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192240867.png" 
-             alt="一段蓝色波形条，就是 DTMF 拨号音的波形" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192240867.png">
+        <img src="/images/blog/20251228192240867.png"
+             alt="一段蓝色波形条，就是 DTMF 拨号音的波形"
+             
+             loading="lazy" decoding="async" width="2302" height="213"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>使用dtmf2num程序识别拨号内容
 <a href="https://link.csdn.net/?from_id=105412940&amp;target=http://aluigi.altervista.org/mytoolz/dtmf2num.zip"target="_blank" rel="noopener noreferrer">dtmf2num下载地址</a></p>
 <div class="highlight"><div class="chroma">
@@ -927,16 +872,15 @@
 </span></span><span class="line"><span class="cl">dtmf2num.exe 音频文件位置
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192242495.png" 
-             alt="dtmf2num 解析 girlfriend.wav，输出 DTMF numbers: 999666882777336…" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192242495.png">
+        <img src="/images/blog/20251228192242495.png"
+             alt="dtmf2num 解析 girlfriend.wav，输出 DTMF numbers: 999666882777336…"
+             
+             loading="lazy" decoding="async" width="1224" height="703"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>得到如下的按键顺序、次数</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -947,16 +891,15 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>2、对应手机上九宫格输入，得到最后的字符串为 <code>YOUAREMYGIRLFRIENDS</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192244079.png" 
-             alt="手机九宫格键盘，红框圈出 1–9 键与各自对应的字母" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192244079.png">
+        <img src="/images/blog/20251228192244079.png"
+             alt="手机九宫格键盘，红框圈出 1–9 键与各自对应的字母"
+             
+             loading="lazy" decoding="async" width="640" height="480"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1025,127 +968,117 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E6%9D%A5%E9%A6%96%E6%AD%8C%E5%90%A7-1/</link>
       <pubDate>Mon, 23 Sep 2024 22:56:49 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E6%9D%A5%E9%A6%96%E6%AD%8C%E5%90%A7-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193038727.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193038727.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png&#34; 
-             alt=&#34;题目页「来首歌吧 1」，附件 a29f98b8-e5…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193040915.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193040915.png&#34;
+             alt=&#34;题目页「来首歌吧 1」，附件 a29f98b8-e5…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;760&#34; height=&#34;582&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到一个.wav音频文件。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png&#34; 
-             alt=&#34;stego100.wav，显示为 WAV 文件&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193042589.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193042589.png&#34;
+             alt=&#34;stego100.wav，显示为 WAV 文件&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;750&#34; height=&#34;50&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、得到一个音频文件，放到Audacity看看。看到有两条音轨，放大上面的那条音轨，看到这一串音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png&#34; 
-             alt=&#34;Audacity 打开 stego100.wav，1:15 之后上方声道出现一段方波状信号&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193043783.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193043783.png&#34;
+             alt=&#34;Audacity 打开 stego100.wav，1:15 之后上方声道出现一段方波状信号&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1379&#34; height=&#34;501&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193038727.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193038727.png">
+        <img src="/images/blog/20251228193038727.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193040915.png" 
-             alt="题目页「来首歌吧 1」，附件 a29f98b8-e5…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193040915.png">
+        <img src="/images/blog/20251228193040915.png"
+             alt="题目页「来首歌吧 1」，附件 a29f98b8-e5…"
+             
+             loading="lazy" decoding="async" width="760" height="582"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>注意：得到的 flag 请包上 flag{} 提交</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到一个.wav音频文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193042589.png" 
-             alt="stego100.wav，显示为 WAV 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193042589.png">
+        <img src="/images/blog/20251228193042589.png"
+             alt="stego100.wav，显示为 WAV 文件"
+             
+             loading="lazy" decoding="async" width="750" height="50"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、得到一个音频文件，放到Audacity看看。看到有两条音轨，放大上面的那条音轨，看到这一串音频，有很多分组，分组内由粗的音块和细的音块组成，类似莫尔斯电码的“-”和“.”。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193043783.png" 
-             alt="Audacity 打开 stego100.wav，1:15 之后上方声道出现一段方波状信号" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193043783.png">
+        <img src="/images/blog/20251228193043783.png"
+             alt="Audacity 打开 stego100.wav，1:15 之后上方声道出现一段方波状信号"
+             
+             loading="lazy" decoding="async" width="1379" height="501"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193045628.png" 
-             alt="放大到 1:23–1:38，能看出规律的通断块" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193045628.png">
+        <img src="/images/blog/20251228193045628.png"
+             alt="放大到 1:23–1:38，能看出规律的通断块"
+             
+             loading="lazy" decoding="async" width="1382" height="496"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、举例如下图。按照这样的对应将音轨上的分组全部转译为莫尔斯电码，转换为“… -… -.-. &mdash;-. …— … -… …- &mdash;-. -.-. -… &mdash;&ndash; .&mdash;- —… —… …-. … …— . -… .&mdash;- &ndash;… -… &ndash;… &mdash;&ndash; &mdash;-. …— &mdash;-. .&mdash;- &mdash;-. .&mdash;- -.-. ”。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193047437.png" 
-             alt="再放大，红框圈出短点与长划的宽度差异" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193047437.png">
+        <img src="/images/blog/20251228193047437.png"
+             alt="再放大，红框圈出短点与长划的宽度差异"
+             
+             loading="lazy" decoding="async" width="258" height="236"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1158,16 +1091,15 @@
 </div>
 </div><p>3、使用在线网站，将莫尔斯电码转换为明文字符，得到flag值。
 <a href="https://rumkin.com/tools/cipher/morse-code/"target="_blank" rel="noopener noreferrer">在线网站</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193048806.png" 
-             alt="摩尔斯在线解码（Decrypt 模式），解出 5BC925649CB0188F52E617D70929191C" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193048806.png">
+        <img src="/images/blog/20251228193048806.png"
+             alt="摩尔斯在线解码（Decrypt 模式），解出 5BC925649CB0188F52E617D70929191C"
+             
+             loading="lazy" decoding="async" width="1477" height="754"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

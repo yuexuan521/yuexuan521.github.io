@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 01 Jun 2025 12:06:56 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%9C%9F%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
@@ -21,69 +21,64 @@
       <guid>https://yuexuan521.github.io/zh/posts/2025%E4%B8%8A%E6%B5%B7%E7%94%B5%E5%8A%9B%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%8D%87%E6%9C%AC%E8%80%83%E8%AF%95%E7%9C%9F%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;信安&#34;&gt;&lt;strong&gt;信安&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&#34;选择&#34;&gt;&lt;strong&gt;选择&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;一、&lt;/p&gt;
 &lt;p&gt;2． 口令认证在没有加密的情况下会出现中间人攻击。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png&#34;&gt;
-        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png&#34; 
-             alt=&#34;选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260201160654598.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260201160654598.png&#34;
+             alt=&#34;选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;865&#34; height=&#34;111&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;简答&#34;&gt;简答&lt;/h3&gt;&lt;p&gt;二、大题&lt;/p&gt;
 &lt;p&gt;操作系统安全机制（8 分）&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="信安"><strong>信安</strong></h2><h3 id="选择"><strong>选择</strong></h3><p>一、</p>
 <p>2． 口令认证在没有加密的情况下会出现中间人攻击。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654598.png" 
-             alt="选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654598.png">
+        <img src="/images/blog/20260201160654598.png"
+             alt="选择题 5：数据库保护的对象是（D），选项为记录、文件、数据项、以上都是"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="865" height="111"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="简答">简答</h3><p>二、大题</p>
 <p>操作系统安全机制（8 分）</p>
 <p><strong>信安大题</strong></p>
 <p>三、大题</p>
 <p>简述 RSA 算法，及 e = 5，p = 7，q = 17，求 d.</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654599.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654599.png" 
-             alt="简答题 2：简述 RSA 加解密算法，设 p=7、q=17、公钥 e=5、消息 m=19，求私钥 d 与密文" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654599.png">
+        <img src="/images/blog/20260201160654599.png"
+             alt="简答题 2：简述 RSA 加解密算法，设 p=7、q=17、公钥 e=5、消息 m=19，求私钥 d 与密文"
+             
+             loading="lazy" decoding="async" width="865" height="133"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="数据结构"><strong>数据结构</strong></h2><h3 id="选择-1"><strong>选择</strong></h3><p>一、时间复杂度</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654600.png" 
-             alt="选择题 4：数组 A［i,j］ 每个元素 3 字节，列主存时 A［5,8］ 的首地址为 BA&#43;180" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654600.png">
+        <img src="/images/blog/20260201160654600.png"
+             alt="选择题 4：数组 A［i,j］ 每个元素 3 字节，列主存时 A［5,8］ 的首地址为 BA&#43;180"
+             
+             loading="lazy" decoding="async" width="865" height="166"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="数据结构简答题两道10-分"><strong>数据结构简答题两道（10 分）</strong></h3><p>二、大题</p>
 <p>1.散列表, ASLsuc</p>
 <p>（例题相似）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654602.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654602.png" 
-             alt="散列表题：关键字 {7,8,30,11,18,9,14}，H(key)=(key×3) MOD T，线性探测，附填好的表 7.4 与平均查找长度" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654602.png">
+        <img src="/images/blog/20260201160654602.png"
+             alt="散列表题：关键字 {7,8,30,11,18,9,14}，H(key)=(key×3) MOD T，线性探测，附填好的表 7.4 与平均查找长度"
+             
+             loading="lazy" decoding="async" width="865" height="399"/>
     </a>
-</div></p>
+</div>
+</p>
 <ol start="2">
 <li>待排序序列{503,087,512,061,908,170,897,275,653,426}写出排序的第二趟结果。</li>
 </ol>
@@ -93,41 +88,38 @@
 <h2 id="c"><strong>C++</strong></h2><h3 id="选择-2"><strong>选择</strong></h3><p>1.p 是指向数组的指针，<em>(</em>(p))不可以表示数组。</p>
 <p>2.派生类的对象无法作为基类的成员</p>
 <h3 id="代码阅读题两道10-分"><strong>代码阅读题两道（10 分）</strong></h3><p>一、</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654603.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654603.png" 
-             alt="派生类构造函数的三条执行顺序：先基类、再新增成员、最后函数体" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654603.png">
+        <img src="/images/blog/20260201160654603.png"
+             alt="派生类构造函数的三条执行顺序：先基类、再新增成员、最后函数体"
+             
+             loading="lazy" decoding="async" width="865" height="152"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>二、</p>
 <p>1.继承的构造函数调用顺序</p>
 <ol start="2">
 <li>原题</li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654604.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654604.png" 
-             alt="C&#43;&#43; Date 类的构造函数、析构函数与 Print 成员函数代码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654604.png">
+        <img src="/images/blog/20260201160654604.png"
+             alt="C&#43;&#43; Date 类的构造函数、析构函数与 Print 成员函数代码"
+             
+             loading="lazy" decoding="async" width="865" height="729"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654605.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260201160654605.png" 
-             alt="main 函数与运行结果，输出两行 constructor called、两个日期以及两行 deconstructed" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260201160654605.png">
+        <img src="/images/blog/20260201160654605.png"
+             alt="main 函数与运行结果，输出两行 constructor called、两个日期以及两行 deconstructed"
+             
+             loading="lazy" decoding="async" width="865" height="589"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="代码大题10-分"><strong>代码大题（10 分）</strong></h3><p>三、大题</p>
 <p>长方形类，数据成员长、宽，派生出长方体类。</p>
 <p>长方体类继承自长方形类，增加数据成员高，成员函数 SuperficialArea（）。</p>

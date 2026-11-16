@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Sun, 22 Sep 2024 12:21:39 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/php/index.xml" rel="self" type="application/rss+xml" />
@@ -19,16 +19,15 @@
       <link>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</link>
       <pubDate>Sun, 22 Sep 2024 12:21:39 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8-dvwa%E9%80%9A%E5%85%B3%E6%8C%87%E5%8D%97-dvwa-stored-cross-site-scripting-%E5%AD%98%E5%82%A8%E5%9E%8B-xss/</guid>
-      <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg&#34; 
-             alt=&#34;DVWA 标志（文章封面）&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;dvwastored-cross-site-scripting-存储型-xss&#34;&gt;DVWAStored Cross Site Scripting (存储型 XSS)&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251225165510527.jpeg&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251225165510527.jpeg&#34;
+             alt=&#34;DVWA 标志（文章封面）&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;2392&#34; height=&#34;1524&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;参考文献&lt;/p&gt;
 &lt;ul&gt;
@@ -39,16 +38,15 @@
 &lt;h3 id=&#34;xss跨站原理&#34;&gt;XSS跨站原理&lt;/h3&gt;&lt;p&gt;当应用程序发送给浏览器的页面中包含用户提交的数据，但没有经过适当验证或转义时，就会导致跨站脚本漏洞。这个“跨”实际上属于浏览器的特性，而不是缺陷;&lt;/p&gt;
 &lt;p&gt;浏览器同源策略：只有发布Cookie的网站才能读取Cookie。&lt;/p&gt;
 &lt;p&gt;会造成Cookie窃取、劫持用户Web行为、结合CSRF进行针对性攻击等危害&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510527.jpeg" 
-             alt="DVWA 标志（文章封面）" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="dvwastored-cross-site-scripting-存储型-xss">DVWAStored Cross Site Scripting (存储型 XSS)</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510527.jpeg">
+        <img src="/images/blog/20251225165510527.jpeg"
+             alt="DVWA 标志（文章封面）"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="2392" height="1524"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p>参考文献</p>
 <ul>
@@ -127,47 +125,43 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;script&gt;alert(/XSS/)&lt;/script&gt;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510528.png" 
-             alt="Stored XSS 页面，Name 填 12、Message 填 " 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510528.png">
+        <img src="/images/blog/20251225165510528.png"
+             alt="Stored XSS 页面，Name 填 12、Message 填 "
+             
+             loading="lazy" decoding="async" width="1351" height="1033"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510529.png" 
-             alt="提交后立即弹出 /XSS/" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510529.png">
+        <img src="/images/blog/20251225165510529.png"
+             alt="提交后立即弹出 /XSS/"
+             
+             loading="lazy" decoding="async" width="1378" height="268"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>进入Home标签页，再回到XSS（Stored）页面，仍然可以成功，证明存储型XSS攻击成功</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510530.png" 
-             alt="左侧菜单的 Home 与 XSS (Stored) 被红框标出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510530.png">
+        <img src="/images/blog/20251225165510530.png"
+             alt="左侧菜单的 Home 与 XSS (Stored) 被红框标出"
+             
+             loading="lazy" decoding="async" width="914" height="831"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510531.png" 
-             alt="重新打开页面，弹窗依旧触发，说明脚本已经存进数据库" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510531.png">
+        <img src="/images/blog/20251225165510531.png"
+             alt="重新打开页面，弹窗依旧触发，说明脚本已经存进数据库"
+             
+             loading="lazy" decoding="async" width="1368" height="279"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>（如果需要删除数据库中存在的XSS代码，进入dvwa数据库中guestbook表，选择性删除数据。）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -280,16 +274,15 @@
 </span></span><span class="line"><span class="cl">//双写绕过
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510532.png" 
-             alt="开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510532.png">
+        <img src="/images/blog/20251225165510532.png"
+             alt="开发者工具里 input 的 maxlength=100（红框），下方留言列表显示 alert(/XSS/)"
+             
+             loading="lazy" decoding="async" width="1520" height="695"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="high">High</h3><p>1、分析网页源代码</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -358,16 +351,15 @@
 </span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">svg</span> <span class="n">onload</span><span class="o">=</span><span class="n">alert</span><span class="p">(</span><span class="o">/</span><span class="n">XSS</span><span class="o">/</span><span class="p">)</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251225165510533.png" 
-             alt="改用  绕过长度限制，红框仍标着 maxlength" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251225165510533.png">
+        <img src="/images/blog/20251225165510533.png"
+             alt="改用  绕过长度限制，红框仍标着 maxlength"
+             
+             loading="lazy" decoding="async" width="1648" height="531"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="impossible">Impossible</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1

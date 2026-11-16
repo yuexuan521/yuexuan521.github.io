@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 20 Nov 2025 09:01:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E9%9A%90%E5%86%99/index.xml" rel="self" type="application/rss+xml" />
@@ -19,90 +19,84 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-zip-1/</link>
       <pubDate>Thu, 20 Nov 2025 09:01:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-zip-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190415529.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190415529.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png&#34; 
-             alt=&#34;题目页「zip 1」：拼在一起解 base64 就有 flag&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190417993.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190417993.png&#34;
+             alt=&#34;题目页「zip 1」：拼在一起解 base64 就有 flag&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;732&#34; height=&#34;582&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注意：一般数据内容小于5Bytes(&amp;lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190415529.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190415529.png">
+        <img src="/images/blog/20251228190415529.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190417993.png" 
-             alt="题目页「zip 1」：拼在一起解 base64 就有 flag" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190417993.png">
+        <img src="/images/blog/20251228190417993.png"
+             alt="题目页「zip 1」：拼在一起解 base64 就有 flag"
+             
+             loading="lazy" decoding="async" width="732" height="582"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>拼在一起解下base64就有flag 注意：得到的 flag 请包上 flag{} 提交</p>
 <h3 id="密文">密文：</h3><hr>
 <h3 id="解题思路">解题思路：</h3><p>1、将下载的压缩包解压，得到68个小压缩包，压缩包内部文件4个字节，符合CRC32爆破条件</p>
 <blockquote>
 <p>注意：一般数据内容小于5Bytes(&lt;=4Bytes)即可尝试通过爆破CRC32穷举数据内容</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190419984.png" 
-             alt="Bandizip 打开 out.zip，里面只有 data.txt，压缩后 18、原始 4 字节" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190419984.png">
+        <img src="/images/blog/20251228190419984.png"
+             alt="Bandizip 打开 out.zip，里面只有 data.txt，压缩后 18、原始 4 字节"
+             
+             loading="lazy" decoding="async" width="1209" height="301"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、使用CRC32爆破脚本尝试爆破第一个压缩包out0.zip，爆破成功得到文件内容 <code>z5Bz</code> ，根据题目提示，这是base64编码文件的一部分，需要将所有out*.zip压缩包的文件拼接才能拿到完整的文件
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190421759.png" 
-             alt="跑 CRC32-Tools.py -4 out.zip，输出 0x75f90d3a 与碰撞结果 z5Bz" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190421759.png">
+        <img src="/images/blog/20251228190421759.png"
+             alt="跑 CRC32-Tools.py -4 out.zip，输出 0x75f90d3a 与碰撞结果 z5Bz"
+             
+             loading="lazy" decoding="async" width="1811" height="241"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>编写Python脚本进行自动化爆破，借鉴其他人的脚本</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -177,16 +171,15 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">z5BzAAANAAAAAAAAAKo+egCAIwBJAAAAVAAAAAKGNKv+a2MdSR0zAwABAAAAQ01UCRUUy91BT5UkSNPoj5hFEVFBRvefHSBCfG0ruGnKnygsMyj8SBaZHxsYHY84LEZ24cXtZ01y3k1K1YJ0vpK9HwqUzb6u9z8igEr3dCCQLQAdAAAAHQAAAAJi0efVT2MdSR0wCAAgAAAAZmxhZy50eHQAsDRpZmZpeCB0aGUgZmlsZSBhbmQgZ2V0IHRoZSBmbGFnxD17AEAHAA<span class="o">==</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190423301.png" 
-             alt="out.txt 里是一长串 base64，开头正是 z5BzAAAA…" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190423301.png">
+        <img src="/images/blog/20251228190423301.png"
+             alt="out.txt 里是一长串 base64，开头正是 z5BzAAAA…"
+             
+             loading="lazy" decoding="async" width="1891" height="247"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、使用在线工具进行解密，看到解出的明文中有如下提示信息：
 <a href="https://the-x.cn/encodings/Base64.aspx"target="_blank" rel="noopener noreferrer">Base64 在线解码、编码</a></p>
 <div class="highlight"><div class="chroma">
@@ -199,27 +192,25 @@
 </span></span><span class="line"><span class="cl">fix the file and get the flag
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190424904.png" 
-             alt="Base64 在线解码，右侧十六进制里能读出 flag 与修复提示" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190424904.png">
+        <img src="/images/blog/20251228190424904.png"
+             alt="Base64 在线解码，右侧十六进制里能读出 flag 与修复提示"
+             
+             loading="lazy" decoding="async" width="2322" height="778"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>提示我们修复这个文件，可以拿到flag。文件尾与RAR文件尾一致（ <code>C4 3D 7B 00 40 07 00</code> ），可以确定为rar压缩包，但缺少文件头，需要补上缺失的文件头。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190426964.png" 
-             alt="010 Editor 打开解出的文件，能看到 flag.txt 字样" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190426964.png">
+        <img src="/images/blog/20251228190426964.png"
+             alt="010 Editor 打开解出的文件，能看到 flag.txt 字样"
+             
+             loading="lazy" decoding="async" width="1382" height="590"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -231,27 +222,25 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>用010 Editor打开，补上文件头，另存为.rar文件。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190429011.png" 
-             alt="改好后是 from.rar，红框 52 61 72 21 1A 07 00，即 RAR 文件头" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190429011.png">
+        <img src="/images/blog/20251228190429011.png"
+             alt="改好后是 from.rar，红框 52 61 72 21 1A 07 00，即 RAR 文件头"
+             
+             loading="lazy" decoding="async" width="1375" height="607"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>最后在rar压缩包的注释中找到flag。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190430981.png" 
-             alt="WinRAR 打开 from.rar，右栏就是 flag{nev3r_enc0de_t00_sm4ll_fil3_w1th_zip}" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190430981.png">
+        <img src="/images/blog/20251228190430981.png"
+             alt="WinRAR 打开 from.rar，右栏就是 flag{nev3r_enc0de_t00_sm4ll_fil3_w1th_zip}"
+             
+             loading="lazy" decoding="async" width="1573" height="412"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -267,16 +256,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-swpu2019network-1/</link>
       <pubDate>Mon, 25 Aug 2025 08:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-swpu2019network-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191913118.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191913118.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -287,26 +275,24 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/YueXuan_521/article/details/134055375?ops_request_misc=%257B%2522request%255Fid%2522%253A%25225BBF48C9-3DA8-4305-A79E-650F13C45E11%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;amp;request_id=5BBF48C9-3DA8-4305-A79E-650F13C45E11&amp;amp;biz_id=0&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-134055375-null-null.nonecase&amp;amp;utm_term=%E4%BC%AA%E5%8A%A0%E5%AF%86&amp;amp;spm=1018.2226.3001.4450&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF zip伪加密 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://guokeya.github.io/post/swpu2019networkttl-yin-xie/#:~:text=%E8%BF%99%E5%B0%B1%E6%98%AFTTL&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;TTL隐写&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png&#34; 
-             alt=&#34;题目页「［SWPU2019］Network 1」，附件 attachment.txt&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191915164.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191915164.png&#34;
+             alt=&#34;题目页「［SWPU2019］Network 1」，附件 attachment.txt&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;742&#34; height=&#34;552&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191913118.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191913118.png">
+        <img src="/images/blog/20251228191913118.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -317,16 +303,15 @@
 <li><a href="https://blog.csdn.net/YueXuan_521/article/details/134055375?ops_request_misc=%257B%2522request%255Fid%2522%253A%25225BBF48C9-3DA8-4305-A79E-650F13C45E11%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=5BBF48C9-3DA8-4305-A79E-650F13C45E11&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-134055375-null-null.nonecase&amp;utm_term=%E4%BC%AA%E5%8A%A0%E5%AF%86&amp;spm=1018.2226.3001.4450"target="_blank" rel="noopener noreferrer">BUUCTF zip伪加密 1</a></li>
 <li><a href="https://guokeya.github.io/post/swpu2019networkttl-yin-xie/#:~:text=%E8%BF%99%E5%B0%B1%E6%98%AFTTL"target="_blank" rel="noopener noreferrer">TTL隐写</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191915164.png" 
-             alt="题目页「［SWPU2019］Network 1」，附件 attachment.txt" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191915164.png">
+        <img src="/images/blog/20251228191915164.png"
+             alt="题目页「［SWPU2019］Network 1」，附件 attachment.txt"
+             
+             loading="lazy" decoding="async" width="742" height="552"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>保存附件为attachment.txt文件。</p>
 <div class="highlight"><div class="chroma">
@@ -661,48 +646,44 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解得数据为ZIP压缩包，修改后缀保存。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191917177.png" 
-             alt="010 Editor 打开 result.txt，红框标出 50 4B 03 04 与 61 67 2E 74 78 74，即 ZIP 头和 ag.txt" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191917177.png">
+        <img src="/images/blog/20251228191917177.png"
+             alt="010 Editor 打开 result.txt，红框标出 50 4B 03 04 与 61 67 2E 74 78 74，即 ZIP 头和 ag.txt"
+             
+             loading="lazy" decoding="async" width="1380" height="712"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、ZIP压缩包伪加密，修改相关参数解压得到flag.txt。</p>
 <p><a href="https://blog.csdn.net/YueXuan_521/article/details/134055375?ops_request_misc=%257B%2522request%255Fid%2522%253A%25225BBF48C9-3DA8-4305-A79E-650F13C45E11%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&amp;request_id=5BBF48C9-3DA8-4305-A79E-650F13C45E11&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-134055375-null-null.nonecase&amp;utm_term=%E4%BC%AA%E5%8A%A0%E5%AF%86&amp;spm=1018.2226.3001.4450"target="_blank" rel="noopener noreferrer">BUUCTF zip伪加密 1</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191919451.png" 
-             alt="同一文件更靠前的偏移，红框标出 00 00 加密标志位" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191919451.png">
+        <img src="/images/blog/20251228191919451.png"
+             alt="同一文件更靠前的偏移，红框标出 00 00 加密标志位"
+             
+             loading="lazy" decoding="async" width="1387" height="271"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191921071.png" 
-             alt="0x171A0h 附近，红框的 00 00 与 50 4B 并列，右侧能看到 flag.txt" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191921071.png">
+        <img src="/images/blog/20251228191921071.png"
+             alt="0x171A0h 附近，红框的 00 00 与 50 4B 并列，右侧能看到 flag.txt"
+             
+             loading="lazy" decoding="async" width="1440" height="549"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191923402.png" 
-             alt="0x2E3C0h 附近又出现 00 00 与 50 4B、flag.txt" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191923402.png">
+        <img src="/images/blog/20251228191923402.png"
+             alt="0x2E3C0h 附近又出现 00 00 与 50 4B、flag.txt"
+             
+             loading="lazy" decoding="async" width="1422" height="583"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、flag.txt的数据经过Base64加密，需要Base64循环解密脚本。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -780,16 +761,15 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解得内容为flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191925340.png" 
-             alt="程序输出 最终结果: {189ff9e5b743ae95f940a6ccc6dbd9ab}，循环次数 30" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191925340.png">
+        <img src="/images/blog/20251228191925340.png"
+             alt="程序输出 最终结果: {189ff9e5b743ae95f940a6ccc6dbd9ab}，循环次数 30"
+             
+             loading="lazy" decoding="async" width="732" height="216"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -805,16 +785,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020hello_-misc-1/</link>
       <pubDate>Mon, 04 Aug 2025 08:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-mrctf2020hello_-misc-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png&#34; 
-             alt=&#34;题图同样是那位蓝发女孩&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191514677.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191514677.png&#34;
+             alt=&#34;题图同样是那位蓝发女孩&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -823,28 +802,26 @@
 &lt;li&gt;&lt;a href=&#34;https://www.tr0y.wang/2017/06/14/Base64steg/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;神奇的 Base64 隐写&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_44377940/article/details/105206585&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;MRCTF复现&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png&#34; 
-             alt=&#34;题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191516830.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191516830.png&#34;
+             alt=&#34;题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;733&#34; height=&#34;585&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。
 感谢Galaxy师傅供题。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191514677.png" 
-             alt="题图同样是那位蓝发女孩" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191514677.png">
+        <img src="/images/blog/20251228191514677.png"
+             alt="题图同样是那位蓝发女孩"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -853,75 +830,69 @@
 <li><a href="https://www.tr0y.wang/2017/06/14/Base64steg/"target="_blank" rel="noopener noreferrer">神奇的 Base64 隐写</a></li>
 <li><a href="https://blog.csdn.net/weixin_44377940/article/details/105206585"target="_blank" rel="noopener noreferrer">MRCTF复现</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191516830.png" 
-             alt="题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191516830.png">
+        <img src="/images/blog/20251228191516830.png"
+             alt="题目页「［MRCTF2020］Hello_ misc 1」，感谢 Galaxy 师傅供题，附件 attachment.rar"
+             
+             loading="lazy" decoding="async" width="733" height="585"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。
 感谢Galaxy师傅供题。</p>
 <h3 id="密文">密文：</h3><p>下载附件解压，得到hello文件夹，两个文件</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191518410.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191518410.png" 
-             alt="两个文件：flag.rar（三本书捆皮带的图标）与 try to restore it.png" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191518410.png">
+        <img src="/images/blog/20251228191518410.png"
+             alt="两个文件：flag.rar（三本书捆皮带的图标）与 try to restore it.png"
+             
+             loading="lazy" decoding="async" width="349" height="234"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、解压flag.rar需要密码，先处理try to restore it.png图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191520430.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191520430.png" 
-             alt="try to restore it.png 打开只有顶部一条紫红噪声带，其余整片纯红" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191520430.png">
+        <img src="/images/blog/20251228191520430.png"
+             alt="try to restore it.png 打开只有顶部一条紫红噪声带，其余整片纯红"
+             
+             loading="lazy" decoding="async" width="1024" height="780"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>盲猜LSB隐写，用StegSolve打开，在Red 0通道发现PNG图片数据。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191522008.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191522008.png" 
-             alt="StegSolve Extract Preview 勾 Red 第 0 位、MSB First、RGB，预览里能看到 .PNG 与 IHDR" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191522008.png">
+        <img src="/images/blog/20251228191522008.png"
+             alt="StegSolve Extract Preview 勾 Red 第 0 位、MSB First、RGB，预览里能看到 .PNG 与 IHDR"
+             
+             loading="lazy" decoding="async" width="1078" height="832"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>保存为png文件，得到：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191523571.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191523571.png" 
-             alt="白底手写体：Maybe you should try to separate the files! 并给出 zip-passwd: !@#$%67*()-&#43;" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191523571.png">
+        <img src="/images/blog/20251228191523571.png"
+             alt="白底手写体：Maybe you should try to separate the files! 并给出 zip-passwd: !@#$%67*()-&#43;"
+             
+             loading="lazy" decoding="async" width="526" height="298"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>得到zip-passwd密码，但不是flag.rar的密码。</p>
 <p>2、用010Editor打开try to restore it.png图片，在文件尾找到 <code>PK</code> 文件头，提取出来保存为zip文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191525518.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191525518.png" 
-             alt="010 Editor 里 5780h 处 49 45 4E 44 之后紧接 50 4B 03 04，后面还出现 out.txt" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191525518.png">
+        <img src="/images/blog/20251228191525518.png"
+             alt="010 Editor 里 5780h 处 49 45 4E 44 之后紧接 50 4B 03 04，后面还出现 out.txt"
+             
+             loading="lazy" decoding="async" width="1360" height="942"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>使用刚得到的密码解压，得到out.txt，文件内容如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1247,38 +1218,35 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解密得到 <code>rar-passwd:0ac1fe6b77be5dbe</code> ，rar压缩包的密码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191527512.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191527512.png" 
-             alt="程序输出「隐藏的文本：rar-passwd:0ac1fe6b77be5dbe」，退出代码 0" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191527512.png">
+        <img src="/images/blog/20251228191527512.png"
+             alt="程序输出「隐藏的文本：rar-passwd:0ac1fe6b77be5dbe」，退出代码 0"
+             
+             loading="lazy" decoding="async" width="742" height="208"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、用得到的密码解压flag.rar压缩包，得到flag文件夹下的fffflag.zip文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191528857.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191528857.png" 
-             alt="分离出 fffflag.zip，2020/3/24 21:06，12 KB" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191528857.png">
+        <img src="/images/blog/20251228191528857.png"
+             alt="分离出 fffflag.zip，2020/3/24 21:06，12 KB"
+             
+             loading="lazy" decoding="async" width="1030" height="46"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>然而它是一个doc文件，更改后缀打开。打开之后，全选内容更改字体颜色，得到一堆密文。（Where is the flag ?）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191529916.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191529916.png" 
-             alt="Word 文档只有一行红字 Where is the flag?，最后一段是 MTEwMTEw… 开头的 base64" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191529916.png">
+        <img src="/images/blog/20251228191529916.png"
+             alt="Word 文档只有一行红字 Where is the flag?，最后一段是 MTEwMTEw… 开头的 base64"
+             
+             loading="lazy" decoding="async" width="979" height="1366"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1308,16 +1276,15 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>得到</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191531572.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191531572.png" 
-             alt="output.txt 里是一长串 0 和 1" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191531572.png">
+        <img src="/images/blog/20251228191531572.png"
+             alt="output.txt 里是一长串 0 和 1"
+             
+             loading="lazy" decoding="async" width="1033" height="349"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1337,16 +1304,15 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>4、全选数据，回到fffflag.doc文件中，粘贴进去。然后搜索“ <code>0</code> ”，见证奇迹的时刻，你得到了flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191533487.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191533487.png" 
-             alt="Word 里把这段二进制选中，导航窗格显示「1 个结果」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191533487.png">
+        <img src="/images/blog/20251228191533487.png"
+             alt="Word 里把这段二进制选中，导航窗格显示「1 个结果」"
+             
+             loading="lazy" decoding="async" width="2332" height="891"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1362,16 +1328,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020file-carving-1/</link>
       <pubDate>Mon, 23 Jun 2025 08:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020file-carving-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192056488.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192056488.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1380,26 +1345,24 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109855105&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：［UTCTF2020］File Carving&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/m0_62107966/article/details/126806622&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF之misc ［UTCTF2020］File Carving&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png&#34; 
-             alt=&#34;题目页「［UTCTF2020］File Carving 1」，附件 attachment.p…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192058540.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192058540.png&#34;
+             alt=&#34;题目页「［UTCTF2020］File Carving 1」，附件 attachment.p…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;742&#34; height=&#34;550&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192056488.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192056488.png">
+        <img src="/images/blog/20251228192056488.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1408,51 +1371,47 @@
 <li><a href="https://blog.csdn.net/mochu7777777/article/details/109855105"target="_blank" rel="noopener noreferrer">BUUCTF：［UTCTF2020］File Carving</a></li>
 <li><a href="https://blog.csdn.net/m0_62107966/article/details/126806622"target="_blank" rel="noopener noreferrer">BUUCTF之misc ［UTCTF2020］File Carving</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192058540.png" 
-             alt="题目页「［UTCTF2020］File Carving 1」，附件 attachment.p…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192058540.png">
+        <img src="/images/blog/20251228192058540.png"
+             alt="题目页「［UTCTF2020］File Carving 1」，附件 attachment.p…"
+             
+             loading="lazy" decoding="async" width="742" height="550"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>保存附件，一张attachment.png图片</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192059647.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192059647.png" 
-             alt="格里菲斯天文台的昼景照片" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192059647.png">
+        <img src="/images/blog/20251228192059647.png"
+             alt="格里菲斯天文台的昼景照片"
+             
+             loading="lazy" decoding="async" width="320" height="155"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、根据题目，似乎和文件有关，先在010Editor看一下，然后发现ZIP压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192101734.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192101734.png" 
-             alt="十六进制 1:F300h，红框 50 4B 03 04，右侧可见 hidden_binaryUT" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192101734.png">
+        <img src="/images/blog/20251228192101734.png"
+             alt="十六进制 1:F300h，红框 50 4B 03 04，右侧可见 hidden_binaryUT"
+             
+             loading="lazy" decoding="async" width="1429" height="781"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>另存为zip文件，解压得到hidden_binary文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192104292.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192104292.png" 
-             alt="分离出的 hidden_binary 文件，大小 17 KB" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192104292.png">
+        <img src="/images/blog/20251228192104292.png"
+             alt="分离出的 hidden_binary 文件，大小 17 KB"
+             
+             loading="lazy" decoding="async" width="1060" height="60"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、用kali中的file命令确定hidden_binary的文件格式为ELF文件，在kali中执行得到flag： <code>utflag{2fbe9adc2ad89c71da48cabe90a121c0}</code> 。</p>
 <blockquote>
 <p><code>hidden_binary</code> 是一个 ELF（Executable and Linkable Format）格式的 64 位可执行文件。ELF 是 Linux 和 Unix 系统中常用的可执行文件格式。</p>
@@ -1467,26 +1426,24 @@
 </span></span><span class="line"><span class="cl"><span class="o">./</span><span class="n">hidden_binary</span>  
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192105460.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192105460.png" 
-             alt="kali 里 file hidden_binary：ELF 64-bit LSB pie executable, x86-64, dynamically linked" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192105460.png">
+        <img src="/images/blog/20251228192105460.png"
+             alt="kali 里 file hidden_binary：ELF 64-bit LSB pie executable, x86-64, dynamically linked"
+             
+             loading="lazy" decoding="async" width="1582" height="180"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192107291.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192107291.png" 
-             alt="直接运行 ./hidden_binary，输出 Ah, you found me! 与 utflag{2fbe9adc2ad89c71da48cabe90a121c0}" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192107291.png">
+        <img src="/images/blog/20251228192107291.png"
+             alt="直接运行 ./hidden_binary，输出 Ah, you found me! 与 utflag{2fbe9adc2ad89c71da48cabe90a121c0}"
+             
+             loading="lazy" decoding="async" width="750" height="174"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>另一种方法：使用 <code>strings</code> 命令来查看文件中包含的所有可打印字符串。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1514,27 +1471,25 @@
 </span></span><span class="line"><span class="cl"><span class="mi">0</span><span class="n">a121c0</span><span class="p">}</span><span class="n">H</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192108873.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192108873.png" 
-             alt="strings hidden_binary | grep &ldquo;flag&rdquo; 命中 utflag{2H…，全量 strings 里能看到它被拆成多行" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192108873.png">
+        <img src="/images/blog/20251228192108873.png"
+             alt="strings hidden_binary | grep &ldquo;flag&rdquo; 命中 utflag{2H…，全量 strings 里能看到它被拆成多行"
+             
+             loading="lazy" decoding="async" width="775" height="988"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>另一种方法：直接在010 Editor中搜索flag，找到后再进行处理。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192110924.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192110924.png" 
-             alt="十六进制 1180h 处给出完整 utflag{2fbe9adc2ad89c71da48cabe90a121c0}" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192110924.png">
+        <img src="/images/blog/20251228192110924.png"
+             alt="十六进制 1180h 处给出完整 utflag{2fbe9adc2ad89c71da48cabe90a121c0}"
+             
+             loading="lazy" decoding="async" width="1402" height="507"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1550,16 +1505,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020zero-1/</link>
       <pubDate>Mon, 21 Apr 2025 08:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-utctf2020zero-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192204670.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192204670.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1568,26 +1522,24 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109817723https://blog.csdn.net/mochu7777777/article/details/109817723&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：［UTCTF2020］zero&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://lazzzaro.github.io/2020/05/24/misc-%E9%9B%B6%E5%AE%BD%E5%BA%A6%E5%AD%97%E7%AC%A6%E9%9A%90%E5%86%99/index.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;零宽度字符隐写&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png&#34; 
-             alt=&#34;题目页「［UTCTF2020］zero 1」，附件 attachment.txt&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192206718.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192206718.png&#34;
+             alt=&#34;题目页「［UTCTF2020］zero 1」，附件 attachment.txt&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;742&#34; height=&#34;553&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192204670.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192204670.png">
+        <img src="/images/blog/20251228192204670.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1596,28 +1548,26 @@
 <li><a href="https://blog.csdn.net/mochu7777777/article/details/109817723https://blog.csdn.net/mochu7777777/article/details/109817723"target="_blank" rel="noopener noreferrer">BUUCTF：［UTCTF2020］zero</a></li>
 <li><a href="https://lazzzaro.github.io/2020/05/24/misc-%E9%9B%B6%E5%AE%BD%E5%BA%A6%E5%AD%97%E7%AC%A6%E9%9A%90%E5%86%99/index.html"target="_blank" rel="noopener noreferrer">零宽度字符隐写</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192206718.png" 
-             alt="题目页「［UTCTF2020］zero 1」，附件 attachment.txt" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192206718.png">
+        <img src="/images/blog/20251228192206718.png"
+             alt="题目页「［UTCTF2020］zero 1」，附件 attachment.txt"
+             
+             loading="lazy" decoding="async" width="742" height="553"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>保存附件，内容如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192208079.png" 
-             alt="attachment.txt 是 Lorem ipsum 文本，行内夹着一个个红色小方块" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192208079.png">
+        <img src="/images/blog/20251228192208079.png"
+             alt="attachment.txt 是 Lorem ipsum 文本，行内夹着一个个红色小方块"
+             
+             loading="lazy" decoding="async" width="2206" height="259"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、密文如下，本来想尝试凯撒加密，但在PyCharm中看到存在大量“ZWJ”字符，联想到零宽隐写。</p>
 <blockquote>
@@ -1632,39 +1582,36 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="err">​​​​​​​</span><span class="n">Lorem</span> <span class="n">ipsum</span><span class="err">​​​​​​​</span> <span class="n">dolor</span> <span class="err">‌‌‌‌‍﻿‍‍</span><span class="n">sit</span><span class="err">​​​​​​​​</span> <span class="n">amet</span><span class="err">​​​​​​​​​‌‌‌‌‍﻿‍‌</span><span class="p">,</span> <span class="n">consectetur</span> <span class="err">​​​​​​​</span><span class="n">adipiscing</span><span class="err">​​​​​​​‌‌‌‌‍‬‍‬</span> <span class="n">elit</span><span class="err">​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍‬﻿‌​​​​​​​‌‌‌‌‍‬‌‍</span> <span class="n">Phasellus</span> <span class="n">quis</span><span class="err">​​​​​​​</span> <span class="n">tempus</span><span class="err">​​​​​​</span> <span class="n">ante</span><span class="p">,</span> <span class="err">​​​​​​​​</span><span class="n">nec</span> <span class="n">vehicula</span><span class="err">​​​​​​​​​​​​​​​​</span> <span class="n">mi</span><span class="err">​​​​​​​​</span><span class="o">.</span> <span class="err">​​​​​​​‌‌‌‌‍‬‍﻿</span><span class="n">Aliquam</span> <span class="n">nec</span><span class="err">​​​​​​​​​‌‌‌‌‍﻿‬﻿</span> <span class="n">nisi</span> <span class="n">ut</span> <span class="n">neque</span><span class="err">​​​​​​​</span> <span class="n">interdum</span> <span class="n">auctor</span><span class="err">​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍﻿‍﻿</span> <span class="n">Aliquam</span> <span class="n">felis</span> <span class="err">‌‌‌‌‍‬‬‌</span><span class="n">orci</span><span class="err">​​​​​​​</span><span class="p">,</span> <span class="n">vestibulum</span> <span class="err">‌‌‌‌‍﻿‬‍</span><span class="n">sit</span> <span class="err">​​​​​​​</span><span class="n">amet</span><span class="err">​​​​​​​​​</span> <span class="n">ante</span><span class="err">‌‌‌‌‍‌﻿‬</span> <span class="n">at</span><span class="err">​​​​​​​</span><span class="p">,</span> <span class="n">consectetur</span><span class="err">‌‌‌‌‍‌﻿﻿</span> <span class="n">lobortis</span> <span class="n">eros</span><span class="err">​​​​​​​​​</span><span class="o">.</span><span class="err">‌‌‌‌‍‍‍‌</span> <span class="err">‌‌‌‌‍‌‌‌​​​​​​​</span><span class="n">Orci</span> <span class="n">varius</span><span class="err">​​​​​​​</span> <span class="err">​​​​​​​</span><span class="n">natoque</span> <span class="err">‌‌‌‌‍﻿‌﻿</span><span class="n">penatibus</span> <span class="n">et</span> <span class="err">‌‌‌‌‍‬‌﻿​​​​​​​</span><span class="n">magnis</span><span class="err">‌‌‌‌‌﻿‌‍‌‌‌‌‌﻿‌‍</span> <span class="n">dis</span> <span class="err">​​​​​​​‌‌‌‌‍‍﻿﻿</span><span class="n">parturient</span> <span class="n">montes</span><span class="p">,</span> <span class="err">​​​​​​​</span><span class="n">nascetur</span> <span class="n">ridiculus</span> <span class="err">‌‌‌‌‌﻿‍‌​​​​​​​​​​​​​​‌‌‌‌‌﻿‬‍</span><span class="n">mus</span><span class="o">.</span> <span class="n">In</span> <span class="n">finibus</span><span class="err">‌‌‌‌‌﻿‌‬</span> <span class="n">magna</span><span class="err">​​​​​​‌‌‌‌‌﻿‍﻿</span> <span class="n">mauris</span><span class="p">,</span> <span class="n">quis</span><span class="err">‌‌‌‌‍‬‌‍</span> <span class="n">auctor</span> <span class="err">‌‌‌‌‍‬‌‍</span><span class="n">libero</span> <span class="n">congue</span> <span class="n">quis</span><span class="o">.</span> <span class="err">‌‌‌‌‍‬‬‬</span><span class="n">Duis</span><span class="err">‌‌‌‌‍‬‌‬</span> <span class="n">sagittis</span> <span class="n">consequat</span> <span class="n">urna</span> <span class="n">non</span> <span class="n">tristique</span><span class="o">.</span> <span class="n">Pellentesque</span> <span class="n">eu</span> <span class="n">lorem</span> <span class="err">‌‌‌‌‍﻿‌‍</span><span class="n">id</span><span class="err">‌‌‌‌‍‬‬﻿</span> <span class="n">quam</span> <span class="n">vestibulum</span> <span class="n">ultricies</span> <span class="n">vel</span> <span class="n">ac</span> <span class="n">purus</span><span class="err">‌‌‌‌‌﻿‌‍</span><span class="o">.</span><span class="err">‌‌‌‌‌﻿‍‌‌‌‌‌‍﻿﻿‍</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192209547.png" 
-             alt="隐藏字符被可视化出来：ZWSP、ZWNJ、ZWJ、BSP 交替重复出现" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192209547.png">
+        <img src="/images/blog/20251228192209547.png"
+             alt="隐藏字符被可视化出来：ZWSP、ZWNJ、ZWJ、BSP 交替重复出现"
+             
+             loading="lazy" decoding="async" width="1831" height="111"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>（在Linux的vim编辑器中也可以看到）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192210963.png" 
-             alt="全文都是 %e2%80%8b、%e2%80%8c、%e2%80%8d、%ef%bb%bf 这类零宽字符" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192210963.png">
+        <img src="/images/blog/20251228192210963.png"
+             alt="全文都是 %e2%80%8b、%e2%80%8c、%e2%80%8d、%ef%bb%bf 这类零宽字符"
+             
+             loading="lazy" decoding="async" width="2527" height="730"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、使用在线解密网站，得到flag： <code>utflag{whyNOT@sc11_4927aajbqk14}</code> 。</p>
 <p>零宽度字符隐写： <a href="https://330k.github.io/misc_tools/unicode_steganography.html"target="_blank" rel="noopener noreferrer">https://330k.github.io/misc_tools/unicode_steganography.html</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192213365.png" 
-             alt="在线文本隐写工具解码出 utflag{YW0NBUc11_4927aajbqk14}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192213365.png">
+        <img src="/images/blog/20251228192213365.png"
+             alt="在线文本隐写工具解码出 utflag{YW0NBUc11_4927aajbqk14}"
+             
+             loading="lazy" decoding="async" width="2535" height="670"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1713,16 +1660,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BA%8C%E7%BB%B4%E7%A0%81-1%E6%B1%82%E6%B1%82%E4%BA%86%E5%88%AB%E8%AE%A9%E6%88%91%E5%86%8D%E6%8B%BC%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%95%A6/</link>
       <pubDate>Mon, 24 Mar 2025 08:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BA%8C%E7%BB%B4%E7%A0%81-1%E6%B1%82%E6%B1%82%E4%BA%86%E5%88%AB%E8%AE%A9%E6%88%91%E5%86%8D%E6%8B%BC%E4%BA%8C%E7%BB%B4%E7%A0%81%E5%95%A6/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192554081.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192554081.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1730,26 +1676,24 @@
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/qq_45163122/article/details/106124042&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF-Misc-二维码（二）撕破的二维码&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png&#34; 
-             alt=&#34;题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192557018.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192557018.png&#34;
+             alt=&#34;题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;739&#34; height=&#34;592&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192554081.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192554081.png">
+        <img src="/images/blog/20251228192554081.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1757,63 +1701,58 @@
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 <li><a href="https://blog.csdn.net/qq_45163122/article/details/106124042"target="_blank" rel="noopener noreferrer">CTF-Misc-二维码（二）撕破的二维码</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192557018.png" 
-             alt="题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192557018.png">
+        <img src="/images/blog/20251228192557018.png"
+             alt="题目页「二维码 1」，说明二维码被撕碎，附件 860c6e1a-a4…"
+             
+             loading="lazy" decoding="async" width="739" height="592"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>一不小心把存放flag的二维码给撕破了，各位大侠帮忙想想办法吧 注意：得到的 flag 请包上 flag{} 提交</p>
 <h3 id="密文">密文：</h3><p>保存附件，得到860c6e1a-a433-4a70-bfd0-5a318e758705.jpg</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192558368.jpeg" 
-             alt="桌上摆着 9 块撕碎的二维码碎片，按 3×3 排布" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192558368.jpeg">
+        <img src="/images/blog/20251228192558368.jpeg"
+             alt="桌上摆着 9 块撕碎的二维码碎片，按 3×3 排布"
+             
+             loading="lazy" decoding="async" width="2448" height="2448"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、所见即所得，开始拼二维码吧。</p>
 <p>首先，将所有二维码碎片截取出来。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192601525.png" 
-             alt="拼图界面里把九块碎片拖成 3×3" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192601525.png">
+        <img src="/images/blog/20251228192601525.png"
+             alt="拼图界面里把九块碎片拖成 3×3"
+             
+             loading="lazy" decoding="async" width="949" height="930"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>最后，用PS拼在一起。（糟糕的手艺活）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192603853.png" 
-             alt="九块碎片拼合后恢复成完整二维码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192603853.png">
+        <img src="/images/blog/20251228192603853.png"
+             alt="九块碎片拼合后恢复成完整二维码"
+             
+             loading="lazy" decoding="async" width="682" height="652"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、得到二维码后，用QR_Research一直扫不出来，转用手机夸克扫出来，flag: <code>flag{7bf116c8ec2545708781fd4a0dda44e5}</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192606320.jpeg" 
-             alt="搜索结果页，红框圈出 flag{7bf116c8ec2545708781fd4a0dda44e5}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192606320.jpeg">
+        <img src="/images/blog/20251228192606320.jpeg"
+             alt="搜索结果页，红框圈出 flag{7bf116c8ec2545708781fd4a0dda44e5}"
+             
+             loading="lazy" decoding="async" width="1080" height="1263"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>发现我拼的二维码，用什么在线网站都扫不出来，真是我拼的差吗？(╯°□°）╯︵ ┻━┻）</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1830,16 +1769,15 @@
       <link>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019soul-sipse-1/</link>
       <pubDate>Thu, 13 Mar 2025 11:23:36 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-guet-ctf2019soul-sipse-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191044084.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191044084.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1848,26 +1786,24 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/Aluxian_/article/details/121968033&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF 隐写工具Steghide&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/mochu7777777/article/details/109838676&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BUUCTF：［GUET-CTF2019］soul sipse&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png&#34; 
-             alt=&#34;题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228191046248.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228191046248.png&#34;
+             alt=&#34;题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;739&#34; height=&#34;613&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191044084.png">
+        <img src="/images/blog/20251228191044084.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1876,28 +1812,26 @@
 <li><a href="https://blog.csdn.net/Aluxian_/article/details/121968033"target="_blank" rel="noopener noreferrer">CTF 隐写工具Steghide</a></li>
 <li><a href="https://blog.csdn.net/mochu7777777/article/details/109838676"target="_blank" rel="noopener noreferrer">BUUCTF：［GUET-CTF2019］soul sipse</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png" 
-             alt="题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191046248.png">
+        <img src="/images/blog/20251228191046248.png"
+             alt="题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip"
+             
+             loading="lazy" decoding="async" width="739" height="613"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到out.wav</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png" 
-             alt="out.wav，显示为 WAV 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191047951.png">
+        <img src="/images/blog/20251228191047951.png"
+             alt="out.wav，显示为 WAV 文件"
+             
+             loading="lazy" decoding="async" width="1026" height="49"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、out.wav文件使用了Steghide工具进行隐写。</p>
 <blockquote>
@@ -1921,16 +1855,15 @@
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">https://share.weiyun.com/5wVTIN3
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png" 
-             alt="kali 里 steg hide info out.wav：capacity 61.6 KB，内嵌 download.txt（32 字节，rijndael-128 cbc）；extract 后 cat 出 https://share.weiyun.com/5wVTIN3" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191049010.png">
+        <img src="/images/blog/20251228191049010.png"
+             alt="kali 里 steg hide info out.wav：capacity 61.6 KB，内嵌 download.txt（32 字节，rijndael-128 cbc）；extract 后 cat 出 https://share.weiyun.com/5wVTIN3"
+             
+             loading="lazy" decoding="async" width="993" height="862"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1944,61 +1877,56 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>访问该链接，到腾讯微云下载一张图片GUET.png。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png" 
-             alt="腾讯微云分享页「Léon的分享: GUET.png」，6.97 KB" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191051039.png">
+        <img src="/images/blog/20251228191051039.png"
+             alt="腾讯微云分享页「Léon的分享: GUET.png」，6.97 KB"
+             
+             loading="lazy" decoding="async" width="1246" height="487"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、图片无法打开，用010Editor打开，发现png文件头错误，修改为 <code>89 50 4E 47</code> ，保存可正常浏览。</p>
 <blockquote>
 <p>PNG (png) 文件头：89 50 4E 47</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png" 
-             alt="打开 GUET.png 提示「似乎不支持此文件格式」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191052361.png">
+        <img src="/images/blog/20251228191052361.png"
+             alt="打开 GUET.png 提示「似乎不支持此文件格式」"
+             
+             loading="lazy" decoding="async" width="544" height="511"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png" 
-             alt="010 Editor 里开头是 89 50 4E 48 0D 0A 1A 0A，第 4 字节被换成了 48" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191053792.png">
+        <img src="/images/blog/20251228191053792.png"
+             alt="010 Editor 里开头是 89 50 4E 48 0D 0A 1A 0A，第 4 字节被换成了 48"
+             
+             loading="lazy" decoding="async" width="1348" height="325"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png" 
-             alt="改回 89 50 4E 47 之后，IHDR 显示宽 0x453、高 0x120" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191055329.png">
+        <img src="/images/blog/20251228191055329.png"
+             alt="改回 89 50 4E 47 之后，IHDR 显示宽 0x453、高 0x120"
+             
+             loading="lazy" decoding="async" width="1366" height="280"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>正常图片：
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png" 
-             alt="记事本里是一串 \u0034\u0030\u0037\u0030\u000d\u000a\u0031\u0032\u0033\u0034" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228191057015.png">
+        <img src="/images/blog/20251228191057015.png"
+             alt="记事本里是一串 \u0034\u0030\u0037\u0030\u000d\u000a\u0031\u0032\u0033\u0034"
+             
+             loading="lazy" decoding="async" width="1107" height="288"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、图片中的内容为，经过Unicode编码后的数据。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2020,16 +1948,15 @@
 </span></span><span class="line"><span class="cl"><span class="m">1234</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png" 
-             alt="Unicode 在线工具解码，右框得到 4070 与 1234 两行" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191058516.png">
+        <img src="/images/blog/20251228191058516.png"
+             alt="Unicode 在线工具解码，右框得到 4070 与 1234 两行"
+             
+             loading="lazy" decoding="async" width="1782" height="529"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>最后，将得到数据相加，得到flag： <code>5304</code> .</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2095,16 +2022,15 @@ $$</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</link>
       <pubDate>Sun, 19 Jan 2025 11:53:54 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-gkctf-2021%E4%BD%A0%E7%9F%A5%E9%81%93apng%E5%90%97-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190956824.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190956824.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -2116,26 +2042,24 @@ $$</p>
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/qq_29977871/article/details/128507643&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;buuctf-misc-［GKCTF 2021］你知道apng吗1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/wangjin7356/article/details/123402038&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;你知道apng吗&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png&#34; 
-             alt=&#34;题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190958970.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190958970.png&#34;
+             alt=&#34;题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;743&#34; height=&#34;616&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190956824.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190956824.png">
+        <img src="/images/blog/20251228190956824.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -2147,28 +2071,26 @@ $$</p>
 <li><a href="https://blog.csdn.net/qq_29977871/article/details/128507643"target="_blank" rel="noopener noreferrer">buuctf-misc-［GKCTF 2021］你知道apng吗1</a></li>
 <li><a href="https://blog.csdn.net/wangjin7356/article/details/123402038"target="_blank" rel="noopener noreferrer">你知道apng吗</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190958970.png" 
-             alt="题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190958970.png">
+        <img src="/images/blog/20251228190958970.png"
+             alt="题目页「［GKCTF 2021］你知道apng吗 1」，附件 girl.apng"
+             
+             loading="lazy" decoding="async" width="743" height="616"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>（flag由flag头包裹</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到girl.apng文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191000373.png" 
-             alt="girl.apng，1,149 KB，显示为 APNG 文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191000373.png">
+        <img src="/images/blog/20251228191000373.png"
+             alt="girl.apng，1,149 KB，显示为 APNG 文件"
+             
+             loading="lazy" decoding="async" width="1032" height="53"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、根据题目 <code>你知道apng吗</code> ，搜索得到这是一种类似于GIF的动图文件。</p>
 <p><a href="https://www.bilibili.com/opus/301546385385594815"target="_blank" rel="noopener noreferrer">科普（APNG）</a></p>
@@ -2181,125 +2103,114 @@ $$</p>
 </blockquote>
 <p>使用Firefox可以打开girl.apng，可以看到有多个二维码一闪而过。</p>
 <p>找到一个APNG在线查看工具： <a href="https://ezgif.com/split?err=expired"target="_blank" rel="noopener noreferrer">https://ezgif.com/split?err=expired</a> ，上传图片后，点击 <code>Split</code> ，得到每帧的图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191001456.png" 
-             alt="在线 GIF frame extractor，工具栏红框 split，底部「Split to frames!」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191001456.png">
+        <img src="/images/blog/20251228191001456.png"
+             alt="在线 GIF frame extractor，工具栏红框 split，底部「Split to frames!」"
+             
+             loading="lazy" decoding="async" width="1531" height="948"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><code>1、</code>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191003482.png" 
-             alt="其中一帧：女孩抱着花，右边浮出半张倾斜的二维码" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228191003482.png">
+        <img src="/images/blog/20251228191003482.png"
+             alt="其中一帧：女孩抱着花，右边浮出半张倾斜的二维码"
+             
+             loading="lazy" decoding="async" width="658" height="370"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><code>2、</code>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191005565.png" 
-             alt="另一帧：女孩起跳，背后隐约透出二维码" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228191005565.png">
+        <img src="/images/blog/20251228191005565.png"
+             alt="另一帧：女孩起跳，背后隐约透出二维码"
+             
+             loading="lazy" decoding="async" width="658" height="370"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><code>3、</code>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191007640.png" 
-             alt="有一帧显示成「该图片可能违规或链接失效」" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228191007640.png">
+        <img src="/images/blog/20251228191007640.png"
+             alt="有一帧显示成「该图片可能违规或链接失效」"
+             
+             loading="lazy" decoding="async" width="1280" height="720"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><code>4、</code>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191009559.png" 
-             alt="紧接着还有一张同样的占位图" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228191009559.png">
+        <img src="/images/blog/20251228191009559.png"
+             alt="紧接着还有一张同样的占位图"
+             
+             loading="lazy" decoding="async" width="1280" height="720"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p>2、使用PS（或在线PS）处理第一张图片，选择 <code>编辑</code> –&gt; <code>变换</code> –&gt; <code>扭曲</code> ，此时扫码得到四分之一的flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191010855.png" 
-             alt="Photoshop 编辑 → 变换 → 扭曲，把斜着的二维码拉正" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191010855.png">
+        <img src="/images/blog/20251228191010855.png"
+             alt="Photoshop 编辑 → 变换 → 扭曲，把斜着的二维码拉正"
+             
+             loading="lazy" decoding="async" width="1480" height="1339"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191012920.png" 
-             alt="QR Research 解出第一段 flag{a3c7e4e5" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191012920.png">
+        <img src="/images/blog/20251228191012920.png"
+             alt="QR Research 解出第一段 flag{a3c7e4e5"
+             
+             loading="lazy" decoding="async" width="808" height="987"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>第二张图片使用StegSolve，查看其它的通道，找到可以识别的二维码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191014992.png" 
-             alt="StegSolve 切 Green plane 0，噪点里浮出一个小二维码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191014992.png">
+        <img src="/images/blog/20251228191014992.png"
+             alt="StegSolve 切 Green plane 0，噪点里浮出一个小二维码"
+             
+             loading="lazy" decoding="async" width="994" height="727"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191017077.png" 
-             alt="解出 -9b9d" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191017077.png">
+        <img src="/images/blog/20251228191017077.png"
+             alt="解出 -9b9d"
+             
+             loading="lazy" decoding="async" width="808" height="987"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>剩下两张可以直接扫码得到四分之一flag，最后得到完整flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191018883.png" 
-             alt="另一帧原图里的二维码解出 -ad20，颜色反色且镜像" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191018883.png">
+        <img src="/images/blog/20251228191018883.png"
+             alt="另一帧原图里的二维码解出 -ad20，颜色反色且镜像"
+             
+             loading="lazy" decoding="async" width="808" height="987"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191021077.png" 
-             alt="最后一帧解出 -0327-288a235370ea}，四段拼起来才是完整 flag" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228191021077.png">
+        <img src="/images/blog/20251228191021077.png"
+             alt="最后一帧解出 -0327-288a235370ea}，四段拼起来才是完整 flag"
+             
+             loading="lazy" decoding="async" width="808" height="987"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2315,16 +2226,15 @@ $$</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E6%B9%96%E5%8D%97%E7%9C%81%E8%B5%9B2019findme-1/</link>
       <pubDate>Mon, 13 Jan 2025 09:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E6%B9%96%E5%8D%97%E7%9C%81%E8%B5%9B2019findme-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png&#34; 
-             alt=&#34;文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192422078.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192422078.png&#34;
+             alt=&#34;文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -2335,26 +2245,24 @@ $$</p>
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/pone2233/article/details/107990787&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BuuCTF难题详解| Misc | ［湖南省赛2019］Findme&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/zhoujiaff/p/17071345.html&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;［湖南省赛2019］Findme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png&#34; 
-             alt=&#34;BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192424087.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192424087.png&#34;
+             alt=&#34;BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;735&#34; height=&#34;551&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192422078.png" 
-             alt="文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192422078.png">
+        <img src="/images/blog/20251228192422078.png"
+             alt="文章题图：蓝发动漫少女，配文「刷题嘛~？一起呀」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -2365,28 +2273,26 @@ $$</p>
 <li><a href="https://blog.csdn.net/pone2233/article/details/107990787"target="_blank" rel="noopener noreferrer">BuuCTF难题详解| Misc | ［湖南省赛2019］Findme</a></li>
 <li><a href="https://www.cnblogs.com/zhoujiaff/p/17071345.html"target="_blank" rel="noopener noreferrer">［湖南省赛2019］Findme</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192424087.png" 
-             alt="BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192424087.png">
+        <img src="/images/blog/20251228192424087.png"
+             alt="BUUCTF 题目「［湖南省赛2019］Findme 1」页面，附件为 attachment.zip"
+             
+             loading="lazy" decoding="async" width="735" height="551"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到1.png、2.png、3.png、4.png、5.png。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192426123.png" 
-             alt="解压出的 1.png 到 5.png，其中 1.png 尺寸明显异常" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192426123.png">
+        <img src="/images/blog/20251228192426123.png"
+             alt="解压出的 1.png 到 5.png，其中 1.png 尺寸明显异常"
+             
+             loading="lazy" decoding="async" width="869" height="233"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、先看第一张图片1.png，显示出错，而且与其它四张图片不同，尝试修改宽高。</p>
 <p>通过python脚本爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
@@ -2426,187 +2332,171 @@ $$</p>
 <p>宽为 227， 高为 453， 新CRC值为 806611， 宽为 e3， 高为 1c5</p>
 </blockquote>
 <p>正确的图片显示如下，还是有问题。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192428376.png" 
-             alt="1.png 打开后只剩一条极窄的横条，说明高度被改过" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192428376.png">
+        <img src="/images/blog/20251228192428376.png"
+             alt="1.png 打开后只剩一条极窄的横条，说明高度被改过"
+             
+             loading="lazy" decoding="async" width="548" height="569"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>用010Editor打开，发现struct PNG_CHUNK <code>chunk[2]</code> 、 <code>chunk[3]</code> 缺少 <code>IDAT</code> 标识。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192429862.png" 
-             alt="010 Editor 中 chunk［2］、chunk［3］ 缺少 IDAT 标识（红框处）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192429862.png">
+        <img src="/images/blog/20251228192429862.png"
+             alt="010 Editor 中 chunk［2］、chunk［3］ 缺少 IDAT 标识（红框处）"
+             
+             loading="lazy" decoding="async" width="1050" height="483"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>添加 <code>IDAT</code> 标识，在struct PNG_CHUNK <code>chunk[2]</code> 下的 <code>union CTYPE type</code> 中的 <code>uint32 crc</code> ，添加值 <code>49444154h</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192431495.png" 
-             alt="在 chunk［2］ 的 CTYPE 处补回 IDAT（49444154）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192431495.png">
+        <img src="/images/blog/20251228192431495.png"
+             alt="在 chunk［2］ 的 CTYPE 处补回 IDAT（49444154）"
+             
+             loading="lazy" decoding="async" width="1071" height="855"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>图片正常显示如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192433666.png" 
-             alt="修复后的 1.png 正常显示，是一张套娃照片" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192433666.png">
+        <img src="/images/blog/20251228192433666.png"
+             alt="修复后的 1.png 正常显示，是一张套娃照片"
+             
+             loading="lazy" decoding="async" width="312" height="516"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>使用Stegsolve打开，在 <code>blue 2</code> 通道发现二维码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192435675.png" 
-             alt="原文配图已失效（源站返回占位图）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192435675.png">
+        <img src="/images/blog/20251228192435675.png"
+             alt="原文配图已失效（源站返回占位图）"
+             
+             loading="lazy" decoding="async" width="1280" height="720"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192437073.png" 
-             alt="原文配图已失效（源站返回占位图）" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192437073.png">
+        <img src="/images/blog/20251228192437073.png"
+             alt="原文配图已失效（源站返回占位图）"
+             
+             loading="lazy" decoding="async" width="1280" height="720"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>扫码二维码，得到 <code>ZmxhZ3s0X3</code> 。</p>
 <p>2、第二张图片2.png，用010 Editor打开，在文件尾发现 <code>7z</code> 开头的数据，提取出来再处理。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192438964.png" 
-             alt="2.png 尾部 IEND 之后跟着 50 4B 03 04 与 0.txt 等文件名，说明附了 ZIP" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192438964.png">
+        <img src="/images/blog/20251228192438964.png"
+             alt="2.png 尾部 IEND 之后跟着 50 4B 03 04 与 0.txt 等文件名，说明附了 ZIP"
+             
+             loading="lazy" decoding="async" width="1463" height="644"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>保存为7z文件后，无法正常解压。将文件数据中全部的 <code>7z</code> 替换为 <code>PK</code> ，保存为zip文件，可以正常解压。</p>
 <blockquote>
 <p>7z文件头： <code>37 7A BC AF 27 1C</code>
 zip文件头： <code>50 4B 03 04</code></p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192441296.png" 
-             alt="解压后得到 0.txt 至 15.txt 等大量文本文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192441296.png">
+        <img src="/images/blog/20251228192441296.png"
+             alt="解压后得到 0.txt 至 15.txt 等大量文本文件"
+             
+             loading="lazy" decoding="async" width="1366" height="1088"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>解压得到1000个文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192443393.png" 
-             alt="十六进制中成片出现 50 4B 03 04（PK 头）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192443393.png">
+        <img src="/images/blog/20251228192443393.png"
+             alt="十六进制中成片出现 50 4B 03 04（PK 头）"
+             
+             loading="lazy" decoding="async" width="1109" height="704"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>将文件按照文件大小，从大到小排列，发现618.txt</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192445482.png" 
-             alt="Kali 终端按大小排序，618.txt 大小为 21 字节" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192445482.png">
+        <img src="/images/blog/20251228192445482.png"
+             alt="Kali 终端按大小排序，618.txt 大小为 21 字节"
+             
+             loading="lazy" decoding="async" width="811" height="160"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192446813.png" 
-             alt="文件列表中 618.txt 被红框标出" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192446813.png">
+        <img src="/images/blog/20251228192446813.png"
+             alt="文件列表中 618.txt 被红框标出"
+             
+             loading="lazy" decoding="async" width="1102" height="657"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>618.txt内容如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192448370.png" 
-             alt="618.txt 的内容：You find it: 1RVcmVfc" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192448370.png">
+        <img src="/images/blog/20251228192448370.png"
+             alt="618.txt 的内容：You find it: 1RVcmVfc"
+             
+             loading="lazy" decoding="async" width="376" height="94"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>得到 <code>1RVcmVfc</code></p>
 <p>3、第三张图片3.png，用010 Editor打开，在struct PNG_CHUNK chunk[0、1、2、3、4、5、6、7]下的 <code>uint32 crc</code> ，全部隐藏了十六进制数据。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192449809.png" 
-             alt="010 Editor 中多处 CRC 字段被红框标出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192449809.png">
+        <img src="/images/blog/20251228192449809.png"
+             alt="010 Editor 中多处 CRC 字段被红框标出"
+             
+             loading="lazy" decoding="async" width="1190" height="961"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>16进制转换文本： <a href="https://www.sojson.com/hexadecimal.html"target="_blank" rel="noopener noreferrer">https://www.sojson.com/hexadecimal.html</a>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192451695.png" 
-             alt="在线进制转换：33526C5A33303D 转成 3RIZ30=" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192451695.png">
+        <img src="/images/blog/20251228192451695.png"
+             alt="在线进制转换：33526C5A33303D 转成 3RIZ30="
+             
+             loading="lazy" decoding="async" width="972" height="304"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>提取出来转换为ASCII字符，得到 <code>3RlZ30=</code></p>
 <p>4、第四张图片4.png，使用Kali中的exiftool查看4.png的EXIF信息。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192453102.png" 
-             alt="exiftool 查看 4.png，Artist 字段写着 another part:cExlX1BsY" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192453102.png">
+        <img src="/images/blog/20251228192453102.png"
+             alt="exiftool 查看 4.png，Artist 字段写着 another part:cExlX1BsY"
+             
+             loading="lazy" decoding="async" width="1854" height="896"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在Artist下发现another part： <code>cExlX1BsY</code></p>
 <p>5、第五张图片5.png，用010 Editor打开，在最后发现 a gift。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192455621.png" 
-             alt="5.png 尾部 IEND 之后写着 a gift:Yzcllfc0lN" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192455621.png">
+        <img src="/images/blog/20251228192455621.png"
+             alt="5.png 尾部 IEND 之后写着 a gift:Yzcllfc0lN"
+             
+             loading="lazy" decoding="async" width="1530" height="571"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>得到 <code>Yzcllfc0lN</code></p>
 <p>6、按照1.png、5.png、4.png、2.png、3.png的顺序组合，得到可以解码的Base64字符串。</p>
 <div class="highlight"><div class="chroma">
@@ -2618,16 +2508,15 @@ zip文件头： <code>50 4B 03 04</code></p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>解码得到flag： <code>flag{4_v3rY_sIMpLe_PlcTUre_steg}</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192457825.png" 
-             alt="Base64 解码得到 flag{4_v3rY_sIMpLe_PlcTUre_steg}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192457825.png">
+        <img src="/images/blog/20251228192457825.png"
+             alt="Base64 解码得到 flag{4_v3rY_sIMpLe_PlcTUre_steg}"
+             
+             loading="lazy" decoding="async" width="581" height="236"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2643,16 +2532,15 @@ zip文件头： <code>50 4B 03 04</code></p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E5%89%91%E9%BE%99-1/</link>
       <pubDate>Mon, 13 Jan 2025 08:30:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-actf%E6%96%B0%E7%94%9F%E8%B5%9B2020%E5%89%91%E9%BE%99-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png&#34; 
-             alt=&#34;题图同样是那位蓝发女孩&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190557074.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190557074.png&#34;
+             alt=&#34;题图同样是那位蓝发女孩&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -2662,27 +2550,25 @@ zip文件头： <code>50 4B 03 04</code></p>
 &lt;li&gt;&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/pone2233/article/details/108601733&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;BuuCTF难题详解| Misc | ［ACTF新生赛2020］剑龙&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34; 
-             alt=&#34;题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228190559563.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228190559563.png&#34;
+             alt=&#34;题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;745&#34; height=&#34;563&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png" 
-             alt="题图同样是那位蓝发女孩" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190557074.png">
+        <img src="/images/blog/20251228190557074.png"
+             alt="题图同样是那位蓝发女孩"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -2692,56 +2578,52 @@ zip文件头： <code>50 4B 03 04</code></p>
 <li><a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></li>
 <li><a href="https://blog.csdn.net/pone2233/article/details/108601733"target="_blank" rel="noopener noreferrer">BuuCTF难题详解| Misc | ［ACTF新生赛2020］剑龙</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png" 
-             alt="题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190559563.png">
+        <img src="/images/blog/20251228190559563.png"
+             alt="题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar"
+             
+             loading="lazy" decoding="async" width="745" height="563"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png" 
-             alt="解出 hint.zip（64 KB）与一个叫 O_O 的文件（3 KB）" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190601129.png">
+        <img src="/images/blog/20251228190601129.png"
+             alt="解出 hint.zip（64 KB）与一个叫 O_O 的文件（3 KB）"
+             
+             loading="lazy" decoding="async" width="1047" height="112"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、先看一下hint.zip压缩包，解压得到</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png" 
-             alt="hint.zip 里是 hh.jpg（柠檬水彩画）与 pwd.txt" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190602214.png">
+        <img src="/images/blog/20251228190602214.png"
+             alt="hint.zip 里是 hh.jpg（柠檬水彩画）与 pwd.txt"
+             
+             loading="lazy" decoding="async" width="362" height="209"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>pwd.txt内容如下：</p>
 <blockquote>
 <p>ﾟωﾟﾉ= /｀ｍ´）ﾉ ~┻━┻ // <em>´∇｀</em> / [‘ <em>&rsquo;]; o=(ﾟｰﾟ) =</em> =3; c=(ﾟΘﾟ) =(ﾟｰﾟ)-(ﾟｰﾟ); (ﾟДﾟ) =(ﾟΘﾟ)= (o<sup><em></sup>o)/ (o<sup></em></sup>o);(ﾟДﾟ)={ﾟΘﾟ: ‘ <em>’ ,ﾟωﾟﾉ : ((ﾟωﾟﾉ==3) +&rsquo;</em> ’) [ﾟΘﾟ] ,ﾟｰﾟﾉ :(ﾟωﾟﾉ+ ‘ <em>‘)[o<sup>_</sup>o -(ﾟΘﾟ)] ,ﾟДﾟﾉ:((ﾟｰﾟ==3) +’</em> ’)[ﾟｰﾟ] }; (ﾟДﾟ) [ﾟΘﾟ] =((ﾟωﾟﾉ <mark>3) +‘ <em>‘) [c<sup>_</sup>o];(ﾟДﾟ) [‘c’] = ((ﾟДﾟ)+’</em> ’) [ (ﾟｰﾟ)+(ﾟｰﾟ)-(ﾟΘﾟ) ];(ﾟДﾟ) [‘o’] = ((ﾟДﾟ)+‘ <em>‘) [ﾟΘﾟ];(ﾟoﾟ)=(ﾟДﾟ) [‘c’]+(ﾟДﾟ) [‘o’]+(ﾟωﾟﾉ +’</em> ’)[ﾟΘﾟ]+ ((ﾟωﾟﾉ</mark> 3) +’ <em>‘) [ﾟｰﾟ] + ((ﾟДﾟ) +’</em> ‘) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ ((ﾟｰﾟ <mark>3) +‘<em>’) [ﾟΘﾟ]+((ﾟｰﾟ</mark> 3) +’ <em>‘) [(ﾟｰﾟ) - (ﾟΘﾟ)]+(ﾟДﾟ) [‘c’]+((ﾟДﾟ)+’</em> ‘) [(ﾟｰﾟ)+(ﾟｰﾟ)]+ (ﾟДﾟ) [‘o’]+((ﾟｰﾟ <mark>3) +‘ <em>‘) [ﾟΘﾟ];(ﾟДﾟ) [’</em> ’] =(o<sup></em></sup>o) [ﾟoﾟ] [ﾟoﾟ];(ﾟεﾟ)=((ﾟｰﾟ</mark> 3) +’ <em>‘) [ﾟΘﾟ]+ (ﾟДﾟ) .ﾟДﾟﾉ+((ﾟДﾟ)+’</em> ‘) [(ﾟｰﾟ) + (ﾟｰﾟ)]+((ﾟｰﾟ <mark>3) +‘<em>’) [o<sup></em></sup>o -ﾟΘﾟ]+((ﾟｰﾟ</mark> 3) +’ <em>‘) [ﾟΘﾟ]+ (ﾟωﾟﾉ +’</em> ‘) [ﾟΘﾟ]; (ﾟｰﾟ)+=(ﾟΘﾟ); (ﾟДﾟ)[ﾟεﾟ]=’\‘; (ﾟДﾟ).ﾟΘﾟﾉ=(ﾟДﾟ+ ﾟｰﾟ)[o<sup><em></sup>o -(ﾟΘﾟ)];(oﾟｰﾟo)=(ﾟωﾟﾉ +’ *‘)[c<sup></em></sup>o];(ﾟДﾟ) [ﾟoﾟ]=’&quot;‘;(ﾟДﾟ) [’* ‘] ( (ﾟДﾟ) [’ <em>‘] (ﾟεﾟ+(ﾟДﾟ)[ﾟoﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((o<sup><em></sup>o) +(o<sup></em></sup>o))+ ((ﾟｰﾟ) + (o<sup><em></sup>o))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟｰﾟ)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ (ﾟｰﾟ)+ (o<sup></em></sup>o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (o<sup><em></sup>o))+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟΘﾟ)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+((o<sup></em></sup>o) +(o<sup><em></sup>o))+ (o<sup></em></sup>o)+ (ﾟДﾟ)[ﾟεﾟ]+(ﾟｰﾟ)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟoﾟ]) (ﾟΘﾟ)) (’</em> &lsquo;);</p>
 </blockquote>
 <p>确认为aaEncode编码，使用在线工具解得 <code>welcom3!</code></p>
 <p><a href="https://toolwa.com/aaencode/"target="_blank" rel="noopener noreferrer">在线工具：https://toolwa.com/aaencode/</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png" 
-             alt="aaEncode 加解密页：把 JavaScript 转成颜文字，输入框里是 welcom3!" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190603819.png">
+        <img src="/images/blog/20251228190603819.png"
+             alt="aaEncode 加解密页：把 JavaScript 转成颜文字，输入框里是 welcom3!"
+             
+             loading="lazy" decoding="async" width="576" height="436"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、剩下一张图片，再加上一个密码，确认使用steghide工具加密。</p>
 <p>steghide下载地址： <a href="https://sourceforge.net/projects/steghide/"target="_blank" rel="noopener noreferrer">https://sourceforge.net/projects/steghide/</a></p>
 <p>使用如下命令，得到隐藏信息。</p>
@@ -2753,37 +2635,34 @@ zip文件头： <code>50 4B 03 04</code></p>
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">steghide extract -sf hh.jpg -p welcom3!
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png" 
-             alt="命令行 steg hide.exe extract -sf hh.jpg -p welcom3! → wrote extracted data to &ldquo;secret.txt&rdquo;" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190605825.png">
+        <img src="/images/blog/20251228190605825.png"
+             alt="命令行 steg hide.exe extract -sf hh.jpg -p welcom3! → wrote extracted data to &ldquo;secret.txt&rdquo;"
+             
+             loading="lazy" decoding="async" width="850" height="76"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png" 
-             alt="secret.txt 写着「想要flag吗？解出我的密文吧~」，下面是 U2FsdGVkX1/7KeHVI5984OsGUVSanPfPednHpK9lKvp0kdrxO4Tj/Q==" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190606909.png">
+        <img src="/images/blog/20251228190606909.png"
+             alt="secret.txt 写着「想要flag吗？解出我的密文吧~」，下面是 U2FsdGVkX1/7KeHVI5984OsGUVSanPfPednHpK9lKvp0kdrxO4Tj/Q=="
+             
+             loading="lazy" decoding="async" width="833" height="236"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在hh.jpg的属性找到密钥： <code>@#$%^&amp;%%$)</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png" 
-             alt="hh.jpg 属性 → 详细信息：标题「这里有密钥」、主题「@#$$%^&amp;&amp;%%$)」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190608265.png">
+        <img src="/images/blog/20251228190608265.png"
+             alt="hh.jpg 属性 → 详细信息：标题「这里有密钥」、主题「@#$$%^&amp;&amp;%%$)」"
+             
+             loading="lazy" decoding="async" width="729" height="523"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>解得如下信息：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2794,60 +2673,55 @@ zip文件头： <code>50 4B 03 04</code></p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>DES加解密： <a href="https://www.sojson.com/encrypt_des.html"target="_blank" rel="noopener noreferrer">https://www.sojson.com/encrypt_des.html</a>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png" 
-             alt="DES 解密页：明文 think about stegosaurus、密码 @#$$%^&amp;&amp;%%$)、密文那串，显示解密成功" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228190609623.png">
+        <img src="/images/blog/20251228190609623.png"
+             alt="DES 解密页：明文 think about stegosaurus、密码 @#$$%^&amp;&amp;%%$)、密文那串，显示解密成功"
+             
+             loading="lazy" decoding="async" width="1951" height="505"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、搜索发现对应题目“剑龙”，但其实指的是stegosaurus pyc隐写工具。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png" 
-             alt="搜 stegosaurus 才明白题目为什么叫剑龙，也顺带指到了同名工具" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190611323.png">
+        <img src="/images/blog/20251228190611323.png"
+             alt="搜 stegosaurus 才明白题目为什么叫剑龙，也顺带指到了同名工具"
+             
+             loading="lazy" decoding="async" width="1261" height="1005"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>O_O文件的确是一个pyc文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png" 
-             alt="kali 里 file 0_0 → python 3.6 byte-compiled" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190613551.png">
+        <img src="/images/blog/20251228190613551.png"
+             alt="kali 里 file 0_0 → python 3.6 byte-compiled"
+             
+             loading="lazy" decoding="async" width="633" height="135"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>stegosaurus下载地址： <a href="https://github.com/AngelKitty/stegosaurus"target="_blank" rel="noopener noreferrer">https://github.com/AngelKitty/stegosaurus</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png" 
-             alt="GitHub 上的 AngelKitty/stegosaurus：把 payload 藏进 Python 字节码的隐写工具" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190614895.png">
+        <img src="/images/blog/20251228190614895.png"
+             alt="GitHub 上的 AngelKitty/stegosaurus：把 payload 藏进 Python 字节码的隐写工具"
+             
+             loading="lazy" decoding="async" width="2230" height="1161"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>运行脚本加上 <code>-x</code> 参数，得到flag： <code>flag{3teg0Sauru3_!1}</code></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png" 
-             alt="python stegosaurus.py -x 0_0.pyc → Extracted payload: flag{3teg0Sauru3_!1}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228190617000.png">
+        <img src="/images/blog/20251228190617000.png"
+             alt="python stegosaurus.py -x 0_0.pyc → Extracted payload: flag{3teg0Sauru3_!1}"
+             
+             loading="lazy" decoding="async" width="842" height="89"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1

@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:48:24 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/ccna/index.xml" rel="self" type="application/rss+xml" />
@@ -19,29 +19,27 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
-             alt=&#34;地址规划表：R1/R2/R3 各接口，TACACS&amp;#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212534006.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212534006.png&#34;
+             alt=&#34;地址规划表：R1/R2/R3 各接口，TACACS&amp;#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1024&#34; height=&#34;549&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
-             alt="地址规划表：R1/R2/R3 各接口，TACACS&#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212534006.png">
+        <img src="/images/blog/20251228212534006.png"
+             alt="地址规划表：R1/R2/R3 各接口，TACACS&#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1024" height="549"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
@@ -133,16 +131,15 @@ R1(config-line)# login authentication default</p>
 <li>使用本地数据库验证用户EXEC登录过程。</li>
 </ul>
 <p>通过以上配置后，可以在R1的控制台上用Admin1账户和对应的密码admin1pa55进行登录，验证本地AAA身份验证是否生效。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
-             alt="登录提示输入 Username: Admin1，密码通过后进入 R1&gt;" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212536693.png">
+        <img src="/images/blog/20251228212536693.png"
+             alt="登录提示输入 Username: Admin1，密码通过后进入 R1&gt;"
+             
+             loading="lazy" decoding="async" width="568" height="147"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3><p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
 a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
 b. 创建一个1024位的RSA加密密钥。</p>
@@ -191,16 +188,15 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <p><strong>步骤4：验证AAA认证方法</strong></p>
 <ul>
 <li>从PC-A的命令提示符处通过SSH连接到R1，验证SSH配置及AAA身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
-             alt="PC 上执行 ssh -l Admin1 192.168.1.1，登录后进入 R1&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212538090.png">
+        <img src="/images/blog/20251228212538090.png"
+             alt="PC 上执行 ssh -l Admin1 192.168.1.1，登录后进入 R1&gt;"
+             
+             loading="lazy" decoding="async" width="487" height="168"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
@@ -213,16 +209,15 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <ul>
 <li>点击TACACS+ Server，查看“服务”选项卡中的AAA设置，确认存在针对R2的网络配置条目和针对Admin2的用户设置条目。</li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
-             alt="TACACS&#43; Server 的 AAA 配置：客户端 R2 192.168.2.1、密钥 tacacspa55，用户 Admin2/admin2pa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212539539.png">
+        <img src="/images/blog/20251228212539539.png"
+             alt="TACACS&#43; Server 的 AAA 配置：客户端 R2 192.168.2.1、密钥 tacacspa55，用户 Admin2/admin2pa55"
+             
+             loading="lazy" decoding="async" width="953" height="847"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在R2上配置TACACS+服务器详细信息</strong></p>
 <ul>
 <li>在R2上配置AAA TACACS+服务器IP地址和共享密钥。</li>
@@ -252,16 +247,15 @@ R2(config-line)#login authentication default</p>
 <p><strong>步骤6：验证AAA认证方法</strong></p>
 <ul>
 <li>通过AAA TACACS+服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R2并观察其是否成功通过TACACS+服务器进行身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
-             alt="登录时输入 Username: Admin2，认证通过进入 R2&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212542088.png">
+        <img src="/images/blog/20251228212542088.png"
+             alt="登录时输入 Username: Admin2，认证通过进入 R2&gt;"
+             
+             loading="lazy" decoding="async" width="388" height="157"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
@@ -274,16 +268,15 @@ R2(config-line)#login authentication default</p>
 <ul>
 <li>点击RADIUS服务器，并查看“服务”选项卡中的AAA设置。注意其中包含针对R3的网络配置条目和针对Admin3的用户设置条目。</li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
-             alt="RADIUS Server 的 AAA 配置：客户端 R3 192.168.3.1、密钥 radiuspa55，用户 Admin3/admin3pa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212543941.png">
+        <img src="/images/blog/20251228212543941.png"
+             alt="RADIUS Server 的 AAA 配置：客户端 R3 192.168.3.1、密钥 radiuspa55，用户 Admin3/admin3pa55"
+             
+             loading="lazy" decoding="async" width="951" height="851"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在R3上配置RADIUS服务器详细信息</strong></p>
 <ul>
 <li>在R3上配置AAA RADIUS服务器IP地址和共享密钥。</li>
@@ -313,16 +306,15 @@ R3(config-line)#login authentication default</p>
 <p><strong>步骤6：验证AAA认证方法</strong></p>
 <ul>
 <li>通过AAA RADIUS服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R3并观察其是否成功通过RADIUS服务器进行身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
-             alt="登录时输入 Username: Admin3，认证通过进入 R3&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212545768.png">
+        <img src="/images/blog/20251228212545768.png"
+             alt="登录时输入 Username: Admin3，认证通过进入 R3&gt;"
+             
+             loading="lazy" decoding="async" width="445" height="135"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <p><strong>步骤7：检查结果</strong></p>
 <ul>
@@ -335,29 +327,27 @@ R3(config-line)#login authentication default</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;
+             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;988&#34; height=&#34;616&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212724150.png">
+        <img src="/images/blog/20251228212724150.png"
+             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="988" height="616"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
@@ -567,26 +557,24 @@ Security Violation Count : 0</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>b. 从C1向C2发送Ping请求，然后再次输入 <code>show port-security interface f0/1</code> 命令，以验证交换机是否已学会C1的MAC地址。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="C1 ping 10.1.1.11 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212726209.png">
+        <img src="/images/blog/20251228212726209.png"
+             alt="C1 ping 10.1.1.11 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="892" height="603"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212728180.png">
+        <img src="/images/blog/20251228212728180.png"
+             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址"
+             
+             loading="lazy" decoding="async" width="729" height="343"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：禁用未使用的端口。</strong></p>
 <p>禁用当前所有未使用的端口。</p>
 <blockquote>
@@ -745,28 +733,26 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;
+             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;963&#34; height=&#34;310&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
 &lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212710707.png">
+        <img src="/images/blog/20251228212710707.png"
+             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="963" height="310"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
 <p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
 <h3 id="背景场景">背景/场景</h3><p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
@@ -860,16 +846,15 @@ R1(config-if)# ip access-group 100 in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC1 ping Server。如果无法成功ping通，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="PC ping 172.22.34.62 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212712649.png">
+        <img src="/images/blog/20251228212712649.png"
+             alt="PC ping 172.22.34.62 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="757" height="355"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC1 FTP至Server。用户名和密码均为cisco。</p>
 <blockquote>
 <p>PC&gt; ftp 172.22.34.62</p>
@@ -878,27 +863,25 @@ R1(config-if)# ip access-group 100 in</p>
 <blockquote>
 <p>ftp&gt; quit</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212715058.png">
+        <img src="/images/blog/20251228212715058.png"
+             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出"
+             
+             loading="lazy" decoding="async" width="613" height="399"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 从PC1 ping PC2。由于未明确允许此流量，目标主机应无法到达。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212716887.png">
+        <img src="/images/blog/20251228212716887.png"
+             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）"
+             
+             loading="lazy" decoding="async" width="801" height="334"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
 <p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
 <blockquote>
@@ -948,38 +931,35 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC2 ping Server。如果ping成功，则继续进行下一步；如果不成功，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212718693.png">
+        <img src="/images/blog/20251228212718693.png"
+             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="754" height="346"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC2通过FTP连接到Server。连接应该失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212720616.png">
+        <img src="/images/blog/20251228212720616.png"
+             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP"
+             
+             loading="lazy" decoding="async" width="640" height="403"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>c. 在PC2上打开网页浏览器，将Server的IP地址作为URL输入。连接应该成功建立。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212722197.png">
+        <img src="/images/blog/20251228212722197.png"
+             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页"
+             
+             loading="lazy" decoding="async" width="940" height="501"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -987,26 +967,24 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;
+             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;964&#34; height=&#34;622&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212730148.png">
+        <img src="/images/blog/20251228212730148.png"
+             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="964" height="622"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在SW-1和SW-2之间建立新的冗余链路。</p>
@@ -1036,60 +1014,55 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 </li>
 </ul>
 <h3 id="第一部分验证连通性">第一部分：验证连通性</h3><p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212732555.png">
+        <img src="/images/blog/20251228212732555.png"
+             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="541"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="C3 ping 192.168.10.1 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212734673.png">
+        <img src="/images/blog/20251228212734673.png"
+             alt="C3 ping 192.168.10.1 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="576"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：验证C2（VLAN 10）与D1（VLAN 5）之间的连通性。</strong>
 注：如果使用简易PDU GUI包，请确保ping两次以允许ARP过程完成。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="C2 ping 192.168.5.2 通，TTL=127" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212736073.png">
+        <img src="/images/blog/20251228212736073.png"
+             alt="C2 ping 192.168.5.2 通，TTL=127"
+             
+             loading="lazy" decoding="async" width="942" height="523"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212738694.png">
+        <img src="/images/blog/20251228212738694.png"
+             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%"
+             
+             loading="lazy" decoding="async" width="936" height="595"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3><p><strong>步骤1：连接SW-1和SW-2。</strong></p>
 <p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212740831.png">
+        <img src="/images/blog/20251228212740831.png"
+             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联"
+             
+             loading="lazy" decoding="async" width="653" height="259"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：在SW-1和SW-2之间的链路上启用干线功能，包括所有干线安全机制。</strong></p>
 <p>已预先配置了所有现存干线接口的干线功能。新链接必须设置为干线，并包括所有干线安全机制。在SW-1和SW-2上，将端口设置为干线模式，将本征VLAN 15分配给干线端口，并禁用自动协商功能。</p>
 <blockquote>
@@ -1155,26 +1128,24 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 </blockquote>
 <p><strong>步骤3：连接并配置管理PC。</strong></p>
 <p>将管理PC连接到SW-A的F0/1端口，并确保为其分配192.168.20.0/24网络内的可用IP地址。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212742442.png">
+        <img src="/images/blog/20251228212742442.png"
+             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）"
+             
+             loading="lazy" decoding="async" width="416" height="254"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212744001.png">
+        <img src="/images/blog/20251228212744001.png"
+             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100"
+             
+             loading="lazy" decoding="async" width="945" height="394"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：在SW-A上确保管理PC属于VLAN 20。</strong></p>
 <p>接口F0/1必须是VLAN 20的一部分。</p>
 <blockquote>
@@ -1184,26 +1155,24 @@ SW-A(config-if)#no shutdown</p>
 </blockquote>
 <p><strong>步骤5：验证管理PC与所有交换机之间的连通性</strong> 。</p>
 <p>管理PC应能成功ping通SW-A、SW-B、SW-1、SW-2和中央交换机。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212745938.png">
+        <img src="/images/blog/20251228212745938.png"
+             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%"
+             
+             loading="lazy" decoding="async" width="895" height="1480"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212748325.png">
+        <img src="/images/blog/20251228212748325.png"
+             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包"
+             
+             loading="lazy" decoding="async" width="847" height="926"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3><p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
 <p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
 <blockquote>
@@ -1242,41 +1211,38 @@ R1(config-line)#access-class 102 in</p>
 <blockquote>
 <p>PC&gt; ssh -l SSHadmin 192.168.20.100</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212750446.png">
+        <img src="/images/blog/20251228212750446.png"
+             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#"
+             
+             loading="lazy" decoding="async" width="496" height="211"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从管理PC尝试ping SW-A、SW-B和R1，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212751788.png">
+        <img src="/images/blog/20251228212751788.png"
+             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包"
+             
+             loading="lazy" decoding="async" width="841" height="1002"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>VLAN20 中的设备不需要通过路由器进行路由，不受ACL的影响。</p>
 </blockquote>
 <p>c. 从D1尝试ping管理PC，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212754164.png">
+        <img src="/images/blog/20251228212754164.png"
+             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断"
+             
+             loading="lazy" decoding="async" width="909" height="478"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>不同 VLAN 中的设备 ping VLAN20 中的设备，必须进行路由，而路由器具有阻止所有数据包访问 192.168.20.0 目标网络的 ACL。</p>
 </blockquote>

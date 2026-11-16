@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E8%9C%9C%E7%BD%90/index.xml" rel="self" type="application/rss+xml" />
@@ -68,16 +68,15 @@
 </ul>
 </li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
-             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719188.png">
+        <img src="/images/blog/20260305220719188.png"
+             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1607" height="1475"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2><p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
 <p>在 HFish 服务器或能访问 HFish 的机器上创建 /root/generate_feed.py：（需修改HFISH_HOST、API_KEY、OUTPUT_TXT的值，第10行）</p>
 <div class="highlight"><div class="chroma">
@@ -392,16 +391,15 @@
 <li>勾选 <strong>&ldquo;Keep my email addresses private&rdquo;</strong>。</li>
 <li>你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。</li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
-             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719189.png">
+        <img src="/images/blog/20260305220719189.png"
+             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」"
+             
+             loading="lazy" decoding="async" width="2024" height="1167"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>配置方法：</strong>（修改5. 配置 Git 身份）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -590,16 +588,15 @@
 <ul>
 <li>
 <p>打开 GitHub 仓库 -&gt; <strong>Settings</strong> -&gt; <strong>Deploy keys</strong> -&gt; <strong>Add deploy key</strong>。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
-             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719190.png">
+        <img src="/images/blog/20260305220719190.png"
+             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮"
+             
+             loading="lazy" decoding="async" width="2507" height="1401"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p><strong>Title</strong>: HFish Server</p>
@@ -609,16 +606,15 @@
 </li>
 <li>
 <p><strong>重要</strong>：勾选 <strong>Allow write access</strong>（允许写入权限），否则无法推送！</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
-             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719191.png">
+        <img src="/images/blog/20260305220719191.png"
+             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问"
+             
+             loading="lazy" decoding="async" width="1256" height="801"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 </ul>
 </li>
@@ -730,16 +726,15 @@
 <li><strong>Linux 服务器</strong>：写个脚本 wget 你的文件并导入 ipset。</li>
 </ol>
 <p><strong>效果展示：</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
-             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719192.png">
+        <img src="/images/blog/20260305220719192.png"
+             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表"
+             
+             loading="lazy" decoding="async" width="897" height="1358"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -748,28 +743,26 @@
       <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;p&gt;闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34;&gt;
-        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34; 
-             alt=&#34;云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260305215310735.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260305215310735.png&#34;
+             alt=&#34;云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1000&#34; height=&#34;50&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://hfish.net/#/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish蜜罐官网：https://hfish.net/#/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png" 
-             alt="云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310735.png">
+        <img src="/images/blog/20260305215310735.png"
+             alt="云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1000" height="50"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><a href="https://hfish.net/#/"target="_blank" rel="noopener noreferrer">HFish蜜罐官网：https://hfish.net/#/</a></p>
 <h2 id="蜜罐基础知识">蜜罐基础知识</h2><h3 id="蜜罐的定义">蜜罐的定义</h3><p>蜜罐是一种主动防御的欺骗技术，其核心思想是通过部署虚假的主机、服务或信息作为诱饵，诱导攻击者实施攻击。在此过程中，蜜罐能够记录攻击行为、分析攻击手法与工具，并推断攻击者的意图，从而帮助防御方更清晰地识别威胁，并针对性地提升真实系统的安全防护能力。[<a href="https://baike.baidu.com/item/%e8%9c%9c%e7%bd%90%e6%8a%80%e6%9c%af/9165942"target="_blank" rel="noopener noreferrer">蜜罐技术_百度百科</a>]</p>
 <h3 id="蜜罐的优势">蜜罐的优势</h3><ol>
@@ -794,27 +787,25 @@
 </span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png" 
-             alt="firewall-cmd 放行 4433、4434 端口并 reload，均返回 success" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310736.png">
+        <img src="/images/blog/20260305215310736.png"
+             alt="firewall-cmd 放行 4433、4434 端口并 reload，均返回 success"
+             
+             loading="lazy" decoding="async" width="869" height="216"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>可能提示需要开启防火墙，使用如下命令：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png" 
-             alt="执行 firewall-cmd 时报错 FirewallD is not running" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310737.png">
+        <img src="/images/blog/20260305215310737.png"
+             alt="执行 firewall-cmd 时报错 FirewallD is not running"
+             
+             loading="lazy" decoding="async" width="839" height="68"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -827,16 +818,15 @@
 </span></span><span class="line"><span class="cl">systemctl status firewalld
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png" 
-             alt="systemctl 启动 firewalld 后，状态变为 active (running)" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310738.png">
+        <img src="/images/blog/20260305215310738.png"
+             alt="systemctl 启动 firewalld 后，状态变为 active (running)"
+             
+             loading="lazy" decoding="async" width="1232" height="688"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="一键部署hfish蜜罐">一键部署HFish蜜罐</h3><p>以root权限运行以下一键部署命令，输入“1”，安装并运行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -846,27 +836,25 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">bash &lt;(curl -sS -L https://hfish.net/webinstall.sh)
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png" 
-             alt="执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310739.png">
+        <img src="/images/blog/20260305215310739.png"
+             alt="执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1"
+             
+             loading="lazy" decoding="async" width="1019" height="413"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>出现下面提示，表示成功安装。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png" 
-             alt="安装完成输出 install hfish success! 与 install hfish finished!" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310740.png">
+        <img src="/images/blog/20260305215310740.png"
+             alt="安装完成输出 install hfish success! 与 install hfish finished!"
+             
+             loading="lazy" decoding="async" width="828" height="499"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="安装mysql">安装MySQL</h2><h3 id="使用-yum-安装">使用 yum 安装</h3><p>首先，尝试一下直接使用 yum 安装 MySQL</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -892,16 +880,15 @@
 </div>
 </div><p>表示我们没有添加安装包的源信息，需要安装 MySQL rpm 源信息</p>
 <h3 id="安装-mysql-rpm-源信息">安装 MySQL rpm 源信息</h3><p>打开 <a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/downloads/repo/yum/"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/downloads/repo/yum/</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png" 
-             alt="MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310741.png">
+        <img src="/images/blog/20260305215310741.png"
+             alt="MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包"
+             
+             loading="lazy" decoding="async" width="1662" height="1352"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>根据你的系统版本，选择对应的安装包，例如我的是CentOS 7.5，这个系统的Linux内核是 Linux 7，所以我选择了红框内的地址，大家依次类推。</p>
 <p>拼接下载地址头：<a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/get/</a>，得到以下地址</p>
 <div class="highlight"><div class="chroma">
@@ -957,16 +944,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum module disable mysql
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png" 
-             alt="执行 yum module disable mysql 并确认，输出 Complete!" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310742.png">
+        <img src="/images/blog/20260305215310742.png"
+             alt="执行 yum module disable mysql 并确认，输出 Complete!"
+             
+             loading="lazy" decoding="async" width="1361" height="441"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="再次安装">再次安装</h3><p>再尝试使用 yum 安装MySQL</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1060,27 +1046,25 @@
 </span></span><span class="line"><span class="cl">show databases;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png" 
-             alt="在 mysql 中建库 HFish001，随后 show databases 确认已存在" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310743.png">
+        <img src="/images/blog/20260305215310743.png"
+             alt="在 mysql 中建库 HFish001，随后 show databases 确认已存在"
+             
+             loading="lazy" decoding="async" width="491" height="513"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="登录web界面">登录Web界面</h2><p>华为云服务器需要添加一条安全组规则，允许访问4433端口</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png" 
-             alt="云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310745.png">
+        <img src="/images/blog/20260305215310745.png"
+             alt="云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0"
+             
+             loading="lazy" decoding="async" width="1566" height="75"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>完成安装后，通过以下网址、账号密码登录</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1103,71 +1087,65 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：访问管理端的URL中必须有/web/目录
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png" 
-             alt="HFish 登录页，包含账号、密码与验证码输入框" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310746.png">
+        <img src="/images/blog/20260305215310746.png"
+             alt="HFish 登录页，包含账号、密码与验证码输入框"
+             
+             loading="lazy" decoding="async" width="2553" height="1486"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>初次配置需要选择数据库，端口默认3306，数据库名：HFish001，用户名密码为MySQL的数据库密码</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png" 
-             alt="HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310747.png">
+        <img src="/images/blog/20260305215310747.png"
+             alt="HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等"
+             
+             loading="lazy" decoding="async" width="2500" height="1488"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>配置成功，等待重启</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png" 
-             alt="提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310748.png">
+        <img src="/images/blog/20260305215310748.png"
+             alt="提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点"
+             
+             loading="lazy" decoding="async" width="2560" height="1492"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>看到下方的管理界面</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png" 
-             alt="HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310749.png">
+        <img src="/images/blog/20260305215310749.png"
+             alt="HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数"
+             
+             loading="lazy" decoding="async" width="2529" height="1492"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="配置蜜罐服务">配置蜜罐服务</h2><p>选择“节点管理”，可以配置蜜罐服务</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png" 
-             alt="节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310750.png">
+        <img src="/images/blog/20260305215310750.png"
+             alt="节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态"
+             
+             loading="lazy" decoding="async" width="2557" height="1440"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>华为云服务器需要相应添加安全组规则，开放端口</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png" 
-             alt="云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310751.png">
+        <img src="/images/blog/20260305215310751.png"
+             alt="云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」"
+             
+             loading="lazy" decoding="async" width="1614" height="225"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>CentOS内的firewall也需要开放相应端口</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1186,114 +1164,104 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>测试http://[ip]:[port]，相应的服务已经可以访问了</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png" 
-             alt="仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310752.png">
+        <img src="/images/blog/20260305215310752.png"
+             alt="仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐"
+             
+             loading="lazy" decoding="async" width="2551" height="1273"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>稍等片刻，就可以看到攻击者的记录了</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png" 
-             alt="攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310753.png">
+        <img src="/images/blog/20260305215310753.png"
+             alt="攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录"
+             
+             loading="lazy" decoding="async" width="2555" height="1055"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="其它配置">其它配置</h2><h3 id="配置白名单">配置白名单</h3><p>在系统配置内，选择“白名单配置”，填入自己的网段可以减少管理蜜罐时产生的误报</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png" 
-             alt="系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310754.png">
+        <img src="/images/blog/20260305215310754.png"
+             alt="系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24"
+             
+             loading="lazy" decoding="async" width="1855" height="1464"/>
     </a>
-</div></p>
-<h3 id="数据大屏">数据大屏</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png" 
-             alt="攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<h3 id="数据大屏">数据大屏</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310755.png">
+        <img src="/images/blog/20260305215310755.png"
+             alt="攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件"
+             
+             loading="lazy" decoding="async" width="2553" height="1485"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>其它功能详见HFish蜜罐功能手册：[<a href="https://hfish.net/#/README"target="_blank" rel="noopener noreferrer">快速了解HFish</a>]</p>
 <h2 id="报告导出word无法打开问题解决">报告导出word无法打开问题解决</h2><p>我在使用HFish蜜罐导出自动生成的周报时遇到问题，下载下来的word（.docx）文件无法打开，显示错误如下。网上修复的方法试了很多，最后找到一种真正有效的方法。</p>
 <p>可以在网站上预览：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png" 
-             alt="报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310756.png">
+        <img src="/images/blog/20260305215310756.png"
+             alt="报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成"
+             
+             loading="lazy" decoding="async" width="2256" height="182"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png" 
-             alt="报告正文首页：HFish 分析报告的概述与核心摘要" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310757.png">
+        <img src="/images/blog/20260305215310757.png"
+             alt="报告正文首页：HFish 分析报告的概述与核心摘要"
+             
+             loading="lazy" decoding="async" width="1223" height="557"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>通过Word打开显示错误如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png" 
-             alt="Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310758.png">
+        <img src="/images/blog/20260305215310758.png"
+             alt="Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复"
+             
+             loading="lazy" decoding="async" width="1348" height="308"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png" 
-             alt="Word 报错弹窗：在试图打开文件时遇到错误" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310759.png">
+        <img src="/images/blog/20260305215310759.png"
+             alt="Word 报错弹窗：在试图打开文件时遇到错误"
+             
+             loading="lazy" decoding="async" width="605" height="410"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>我的Office版本为2021，2019版本也会遇到这个问题。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png" 
-             alt="产品信息：Microsoft Office 家庭和学生版 2021" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310760.png">
+        <img src="/images/blog/20260305215310760.png"
+             alt="产品信息：Microsoft Office 家庭和学生版 2021"
+             
+             loading="lazy" decoding="async" width="567" height="243"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="解决方法">解决方法：</h3><p>使用WPS可以正常打开下载下来的。或者用WPS另存为.doc文件后，word也可以正常打开。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png" 
-             alt="WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310761.png">
+        <img src="/images/blog/20260305215310761.png"
+             alt="WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)"
+             
+             loading="lazy" decoding="async" width="707" height="1275"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
   </channel>

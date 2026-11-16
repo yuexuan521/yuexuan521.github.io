@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 10 Aug 2023 16:29:35 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" />
@@ -4053,16 +4053,15 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 <h3 id="mt1052-直角坐标到极坐标的转换">MT1052 直角坐标到极坐标的转换</h3><p><em><strong>（1）题目</strong></em>
 请编写一个简单程序，实现直角坐标（x，y）到极坐标 (r,θ)的转换。数学中，极坐标系是一个二维坐标系，其中平面上的每个点由一个夹角和一段相对中心点——极点（相当于我们较为熟知的直角坐标系中的原点）的距离来表示。PI=3.1415926</p>
 <p>其中：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237137.png" 
-             alt="极坐标变换公式：r = √(x²&#43;y²)，θ = arctan(y/x)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162237137.png">
+        <img src="/images/blog/20251220162237137.png"
+             alt="极坐标变换公式：r = √(x²&#43;y²)，θ = arctan(y/x)"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="259" height="138"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4204,16 +4203,15 @@ y = r × sin( θ )</p>
 </div><hr>
 <h3 id="mt1054-弓形弦长">MT1054 弓形弦长</h3><p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，输入R和H，输出弓形弦长C。计算公式如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237139.png" 
-             alt="弦长与弓高关系式：C = 2·√(H(2R−H))" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162237139.png">
+        <img src="/images/blog/20251220162237139.png"
+             alt="弦长与弓高关系式：C = 2·√(H(2R−H))"
+             
+             loading="lazy" decoding="async" width="373" height="54"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4468,16 +4466,15 @@ y = r × sin( θ )</p>
 </div><hr>
 <h3 id="mt1058-弓形弦高">MT1058 弓形弦高</h3><p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，输入R和C，按公式计算并输出弓形弦高H。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237140.png" 
-             alt="由弦长求弓高的公式：H = R − ½·√(4R²−C²)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162237140.png">
+        <img src="/images/blog/20251220162237140.png"
+             alt="由弦长求弓高的公式：H = R − ½·√(4R²−C²)"
+             
+             loading="lazy" decoding="async" width="372" height="55"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4544,16 +4541,15 @@ y = r × sin( θ )</p>
 <h3 id="mt1059-弓形面积">MT1059 弓形面积</h3><p><em><strong>（1）题目</strong></em>
 假定弓形弦长为C,半径为R，弦高为H，弧长为L,输入R、C、H和L，按公式计算并输出弓形面积F。
 F=1/2 * (R*L-C(R-H))</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237141.png" 
-             alt="圆形截面示意图，标出半径 R、弓高 H、弦长 C、弧长 L 与圆心角 θ" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162237141.png">
+        <img src="/images/blog/20251220162237141.png"
+             alt="圆形截面示意图，标出半径 R、弓高 H、弦长 C、弧长 L 与圆心角 θ"
+             
+             loading="lazy" decoding="async" width="915" height="723"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -4618,16 +4614,15 @@ F=1/2 * (R*L-C(R-H))</p>
 <h3 id="mt1060-圆锥的表面积">MT1060 圆锥的表面积</h3><p><em><strong>（1）题目</strong></em>
 请编写一个简单程序，输入半径和高度，计算输出圆锥的表面积。（PI是3.1415926）</p>
 <p>计算公式为：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162237142.png" 
-             alt="圆锥侧面积公式：Area = π·r·(r&#43;√(r²&#43;h²))" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162237142.png">
+        <img src="/images/blog/20251220162237142.png"
+             alt="圆锥侧面积公式：Area = π·r·(r&#43;√(r²&#43;h²))"
+             
+             loading="lazy" decoding="async" width="414" height="63"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -5554,16 +5549,15 @@ F=1/2 * (R*L-C(R-H))</p>
 </div><hr>
 <h3 id="mt1033-多项式计算">MT1033 多项式计算</h3><p><em><strong>（1）题目</strong></em>
 计算公式</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210653.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162210653.png" 
-             alt="多项式公式：x⁶ − 2x⁵ &#43; 3x⁴ − 5x² &#43; 6x &#43; 7" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162210653.png">
+        <img src="/images/blog/20251220162210653.png"
+             alt="多项式公式：x⁶ − 2x⁵ &#43; 3x⁴ − 5x² &#43; 6x &#43; 7"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="520" height="51"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -7723,16 +7717,15 @@ F=1/2 * (R*L-C(R-H))</p>
 </div>
 </div><hr>
 <h3 id="mt1104-三角形">MT1104 三角形</h3><p><em><strong>（1）题目</strong></em></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426137.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162426137.png" 
-             alt="题目文字：给定三角形三边 a、b、c，用宏定义海伦公式求面积，不能构成三角形则输出 −1" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162426137.png">
+        <img src="/images/blog/20251220162426137.png"
+             alt="题目文字：给定三角形三边 a、b、c，用宏定义海伦公式求面积，不能构成三角形则输出 −1"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1255" height="136"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">

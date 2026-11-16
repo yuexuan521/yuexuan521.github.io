@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:47:44 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
@@ -19,26 +19,24 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;
+             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;964&#34; height=&#34;622&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212730148.png">
+        <img src="/images/blog/20251228212730148.png"
+             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="964" height="622"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在SW-1和SW-2之间建立新的冗余链路。</p>
@@ -68,60 +66,55 @@
 </li>
 </ul>
 <h3 id="第一部分验证连通性">第一部分：验证连通性</h3><p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212732555.png">
+        <img src="/images/blog/20251228212732555.png"
+             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="541"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="C3 ping 192.168.10.1 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212734673.png">
+        <img src="/images/blog/20251228212734673.png"
+             alt="C3 ping 192.168.10.1 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="576"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：验证C2（VLAN 10）与D1（VLAN 5）之间的连通性。</strong>
 注：如果使用简易PDU GUI包，请确保ping两次以允许ARP过程完成。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="C2 ping 192.168.5.2 通，TTL=127" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212736073.png">
+        <img src="/images/blog/20251228212736073.png"
+             alt="C2 ping 192.168.5.2 通，TTL=127"
+             
+             loading="lazy" decoding="async" width="942" height="523"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212738694.png">
+        <img src="/images/blog/20251228212738694.png"
+             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%"
+             
+             loading="lazy" decoding="async" width="936" height="595"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3><p><strong>步骤1：连接SW-1和SW-2。</strong></p>
 <p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212740831.png">
+        <img src="/images/blog/20251228212740831.png"
+             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联"
+             
+             loading="lazy" decoding="async" width="653" height="259"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：在SW-1和SW-2之间的链路上启用干线功能，包括所有干线安全机制。</strong></p>
 <p>已预先配置了所有现存干线接口的干线功能。新链接必须设置为干线，并包括所有干线安全机制。在SW-1和SW-2上，将端口设置为干线模式，将本征VLAN 15分配给干线端口，并禁用自动协商功能。</p>
 <blockquote>
@@ -187,26 +180,24 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 </blockquote>
 <p><strong>步骤3：连接并配置管理PC。</strong></p>
 <p>将管理PC连接到SW-A的F0/1端口，并确保为其分配192.168.20.0/24网络内的可用IP地址。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212742442.png">
+        <img src="/images/blog/20251228212742442.png"
+             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）"
+             
+             loading="lazy" decoding="async" width="416" height="254"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212744001.png">
+        <img src="/images/blog/20251228212744001.png"
+             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100"
+             
+             loading="lazy" decoding="async" width="945" height="394"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：在SW-A上确保管理PC属于VLAN 20。</strong></p>
 <p>接口F0/1必须是VLAN 20的一部分。</p>
 <blockquote>
@@ -216,26 +207,24 @@ SW-A(config-if)#no shutdown</p>
 </blockquote>
 <p><strong>步骤5：验证管理PC与所有交换机之间的连通性</strong> 。</p>
 <p>管理PC应能成功ping通SW-A、SW-B、SW-1、SW-2和中央交换机。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212745938.png">
+        <img src="/images/blog/20251228212745938.png"
+             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%"
+             
+             loading="lazy" decoding="async" width="895" height="1480"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212748325.png">
+        <img src="/images/blog/20251228212748325.png"
+             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包"
+             
+             loading="lazy" decoding="async" width="847" height="926"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3><p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
 <p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
 <blockquote>
@@ -274,41 +263,38 @@ R1(config-line)#access-class 102 in</p>
 <blockquote>
 <p>PC&gt; ssh -l SSHadmin 192.168.20.100</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212750446.png">
+        <img src="/images/blog/20251228212750446.png"
+             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#"
+             
+             loading="lazy" decoding="async" width="496" height="211"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从管理PC尝试ping SW-A、SW-B和R1，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212751788.png">
+        <img src="/images/blog/20251228212751788.png"
+             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包"
+             
+             loading="lazy" decoding="async" width="841" height="1002"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>VLAN20 中的设备不需要通过路由器进行路由，不受ACL的影响。</p>
 </blockquote>
 <p>c. 从D1尝试ping管理PC，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212754164.png">
+        <img src="/images/blog/20251228212754164.png"
+             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断"
+             
+             loading="lazy" decoding="async" width="909" height="478"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>不同 VLAN 中的设备 ping VLAN20 中的设备，必须进行路由，而路由器具有阻止所有数据包访问 192.168.20.0 目标网络的 ACL。</p>
 </blockquote>
@@ -455,26 +441,24 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:18 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34; 
-             alt=&#34;地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212646524.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212646524.png&#34;
+             alt=&#34;地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;877&#34; height=&#34;526&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png" 
-             alt="地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212646524.png">
+        <img src="/images/blog/20251228212646524.png"
+             alt="地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="877" height="526"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>验证连接并探索ASA设备</p>
@@ -596,27 +580,25 @@ R1(config-line)#access-class 102 in</p>
 </ol>
 <p><strong>步骤5：测试到ASA的连接性。</strong></p>
 <p>a. 应该可以从PC-B成功ping通ASA内部接口地址（192.168.1.1）。如果无法ping通，请按需排查配置问题。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png" 
-             alt="PC-B ping 网关 192.168.1.1 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212649034.png">
+        <img src="/images/blog/20251228212649034.png"
+             alt="PC-B ping 网关 192.168.1.1 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="934" height="585"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-B尝试ping VLAN 2（外部）接口的IP地址209.165.200.226。理论上您不应该能ping通这个地址。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png" 
-             alt="PC-B ping 209.165.200.226（ASA Outside）全部超时，丢包 100%" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212651625.png">
+        <img src="/images/blog/20251228212651625.png"
+             alt="PC-B ping 209.165.200.226（ASA Outside）全部超时，丢包 100%"
+             
+             loading="lazy" decoding="async" width="939" height="502"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第三部分使用cli配置路由地址转换和检查策略">第三部分：使用CLI配置路由、地址转换和检查策略</h3><p><strong>步骤1：为ASA配置静态默认路由。</strong></p>
 <p>在ASA外部接口上配置默认静态路由，以便ASA能够访问外部网络。</p>
 <p>a. 使用 <code>route</code> 命令创建一个“全零”默认路由，将其与ASA外部接口关联，并将R1 G0/0 IP地址（209.165.200.225）设置为最后手段网关。</p>
@@ -648,16 +630,15 @@ R1(config-line)#access-class 102 in</p>
 </div>
 </div><p>b. ASA将配置拆分为定义要转换的网络的对象部分以及实际的nat命令参数。这些内容会在运行配置中的两个不同位置显示。使用 <code>show run</code> 命令显示NAT对象配置。</p>
 <p>c. 从PC-B尝试ping R1 G0/0接口IP地址209.165.200.225。这些ping请求应失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png" 
-             alt="PC-B ping 209.165.200.225（R1）同样全部超时" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212653563.png">
+        <img src="/images/blog/20251228212653563.png"
+             alt="PC-B ping 209.165.200.225（R1）同样全部超时"
+             
+             loading="lazy" decoding="async" width="948" height="496"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 在ASA上发出 <code>show nat</code> 命令查看已翻译和未翻译的命中次数。请注意，来自PC-B的ping请求中有四个被翻译，四个未被翻译。外出的ping（echo请求）已被翻译并发送至目标。返回的echo响应由于防火墙策略而被阻止。您将在本部分活动的第3步配置默认检查策略以允许ICMP流量。</p>
 <p><strong>步骤3：修改默认MPF应用检查全局服务策略。</strong></p>
 <p>为了实现应用层检查和其他高级选项，Cisco ASA设备提供了MPF功能。</p>
@@ -686,16 +667,15 @@ R1(config-line)#access-class 102 in</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>b. 从PC-B再次尝试ping R1 G0/0接口IP地址209.165.200.225。这次ping应该成功，因为现在ICMP流量正在被检查，合法的返回流量被允许通过。若ping失败，请排查您的配置。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png" 
-             alt="配置 NAT 后 PC-B 再 ping 209.165.200.225，已通，TTL=254" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212655546.png">
+        <img src="/images/blog/20251228212655546.png"
+             alt="配置 NAT 后 PC-B 再 ping 209.165.200.225，已通，TTL=254"
+             
+             loading="lazy" decoding="async" width="945" height="535"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第四部分配置dhcpaaa和ssh">第四部分：配置DHCP、AAA和SSH</h3><p><strong>步骤1：配置ASA作为DHCP服务器。</strong></p>
 <p>a. 在ASA内部接口上配置DHCP地址池并启用它。</p>
 <div class="highlight"><div class="chroma">
@@ -725,16 +705,15 @@ R1(config-line)#access-class 102 in</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>d. 将PC-B从静态IP地址更改为DHCP客户端，并验证其是否接收到IP地址信息。如有必要，请解决任何问题。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png" 
-             alt="PC-B 通过 DHCP 获得 192.168.1.5，网关 192.168.1.1，DNS 209.165.201.2" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212657871.png">
+        <img src="/images/blog/20251228212657871.png"
+             alt="PC-B 通过 DHCP 获得 192.168.1.5，网关 192.168.1.1，DNS 209.165.201.2"
+             
+             loading="lazy" decoding="async" width="940" height="400"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：配置AAA以使用本地数据库进行身份验证。</strong></p>
 <p>a. 使用username命令定义一个名为admin的本地用户，并指定密码adminpa55。</p>
 <div class="highlight"><div class="chroma">
@@ -787,16 +766,15 @@ R1(config-line)#access-class 102 in</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 209.165.200.226
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png" 
-             alt="PC-C 用 ssh -l admin 209.165.200.226 登录 ASA，进入 CCNAS-ASA&gt;" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212700132.png">
+        <img src="/images/blog/20251228212700132.png"
+             alt="PC-C 用 ssh -l admin 209.165.200.226 登录 ASA，进入 CCNAS-ASA&gt;"
+             
+             loading="lazy" decoding="async" width="943" height="391"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 从PC-B通过SSH建立到ASA（192.168.1.1）的会话。如不成功，请排查问题。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -806,16 +784,15 @@ R1(config-line)#access-class 102 in</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 192.168.1.1
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png" 
-             alt="PC-B 用 ssh -l admin 192.168.1.1 从内网登录 ASA" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212701975.png">
+        <img src="/images/blog/20251228212701975.png"
+             alt="PC-B 用 ssh -l admin 192.168.1.1 从内网登录 ASA"
+             
+             loading="lazy" decoding="async" width="940" height="385"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第五部分配置dmz静态nat和acl">第五部分：配置DMZ、静态NAT和ACL</h3><p>R1 G0/0接口与ASA的外部接口分别使用209.165.200.225和.226。您将使用公网地址209.165.200.227，并通过静态NAT提供对服务器的地址转换访问。</p>
 <p><strong>步骤1：在ASA上配置DMZ接口VLAN 3。</strong></p>
 <p>a. 配置DMZ VLAN 3，该VLAN将是公共访问Web服务器所在的位置。为它分配IP地址192.168.2.1/24，并命名为 <strong>dmz</strong> ，同时为其设置安全级别为 <strong>70</strong> 。由于服务器无需主动与内部用户通信，因此禁用到接口VLAN 1的转发。</p>
@@ -852,42 +829,39 @@ R1(config-line)#access-class 102 in</p>
 <ol>
 <li>
 <p>使用 <code>show interface ip brief</code> 命令显示所有ASA接口的状态。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png" 
-             alt="ASA 上 show interface ip brief：Vlan1 192.168.1.1、Vlan2 209.165.200.226、Vlan3 192.168.2.1" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212704275.png">
+        <img src="/images/blog/20251228212704275.png"
+             alt="ASA 上 show interface ip brief：Vlan1 192.168.1.1、Vlan2 209.165.200.226、Vlan3 192.168.2.1"
+             
+             loading="lazy" decoding="async" width="1149" height="765"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p>使用 <code>show ip address</code> 命令显示第3层VLAN接口的信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png" 
-             alt="ASA 上 show ip address：inside/outside/dmz 三个接口的地址与掩码" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212706400.png">
+        <img src="/images/blog/20251228212706400.png"
+             alt="ASA 上 show ip address：inside/outside/dmz 三个接口的地址与掩码"
+             
+             loading="lazy" decoding="async" width="1144" height="325"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p>使用 <code>show switch vlan</code> 命令显示ASA上的inside和outside VLAN配置以及分配的端口信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png" 
-             alt="ASA 上 show switch vlan：VLAN1 inside、VLAN2 outside、VLAN3 dmz 及各自成员端口" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212708670.png">
+        <img src="/images/blog/20251228212708670.png"
+             alt="ASA 上 show switch vlan：VLAN1 inside、VLAN2 outside、VLAN3 dmz 及各自成员端口"
+             
+             loading="lazy" decoding="async" width="1093" height="210"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 </ol>
 <p><strong>步骤2：使用网络对象配置到DMZ服务器的静态NAT。</strong></p>
@@ -1073,29 +1047,27 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</link>
       <pubDate>Thu, 23 Jan 2025 12:41:12 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-a-zone-based-policy-firewall-%E9%85%8D%E7%BD%AE%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9F%9F%E7%9A%84%E7%AD%96%E7%95%A5%E9%98%B2%E7%81%AB%E5%A2%99-zpf/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png&#34; 
-             alt=&#34;地址规划表：R1 Fa0/1 192.168.1.1、R2 两条串口、R3 Fa0/1 192.168.3.1，以及 PC-A、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置基于区域的策略防火墙zpf&#34;&gt;Packet Tracer - 配置基于区域的策略防火墙（ZPF）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212629252.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212629252.png&#34;
+             alt=&#34;地址规划表：R1 Fa0/1 192.168.1.1、R2 两条串口、R3 Fa0/1 192.168.3.1，以及 PC-A、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1153&#34; height=&#34;468&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在防火墙配置前验证设备之间的连通性。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212629252.png" 
-             alt="地址规划表：R1 Fa0/1 192.168.1.1、R2 两条串口、R3 Fa0/1 192.168.3.1，以及 PC-A、PC-C" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置基于区域的策略防火墙zpf">Packet Tracer - 配置基于区域的策略防火墙（ZPF）</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212629252.png">
+        <img src="/images/blog/20251228212629252.png"
+             alt="地址规划表：R1 Fa0/1 192.168.1.1、R2 两条串口、R3 Fa0/1 192.168.3.1，以及 PC-A、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1153" height="468"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在防火墙配置前验证设备之间的连通性。</p>
@@ -1128,39 +1100,36 @@ R1(config-line)#access-class 102 in</p>
 </ul>
 <h3 id="第一部分验证基本网络连通性">第一部分：验证基本网络连通性</h3><p>在配置基于区域的策略防火墙之前，验证网络连通性。</p>
 <p><strong>步骤1：从PC-A命令提示符，ping PC-C的192.168.3.3地址。</strong>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212631463.png" 
-             alt="PC-A ping 192.168.3.3 通，25% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212631463.png">
+        <img src="/images/blog/20251228212631463.png"
+             alt="PC-A ping 192.168.3.3 通，25% 丢包"
+             
+             loading="lazy" decoding="async" width="789" height="459"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：从PC-C命令提示符，通过telnet连接到Router R2 S0/0/1接口的10.2.2.2地址。退出Telnet会话。</strong>
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212633272.png" 
-             alt="PC-C telnet 10.2.2.2 到 R2，出现 User Access Verification 提示" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212633272.png">
+        <img src="/images/blog/20251228212633272.png"
+             alt="PC-C telnet 10.2.2.2 到 R2，出现 User Access Verification 提示"
+             
+             loading="lazy" decoding="async" width="886" height="373"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：从PC-C打开一个网页浏览器访问PC-A服务器。</strong></p>
 <p>a. 点击桌面标签页并点击Web浏览器应用程序。将PC-A的IP地址 <strong>192.168.1.3</strong> 作为URL输入。此时应显示来自Web服务器的Packet Tracer欢迎页面。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212634919.png" 
-             alt="PC-C 浏览器访问 http://192.168.1.3，显示 Packet Tracer 5.x 示例页面" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212634919.png">
+        <img src="/images/blog/20251228212634919.png"
+             alt="PC-C 浏览器访问 http://192.168.1.3，显示 Packet Tracer 5.x 示例页面"
+             
+             loading="lazy" decoding="async" width="1036" height="351"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 关闭PC-C上的浏览器。</p>
 <h3 id="第二部分在路由器r3上创建防火墙区域">第二部分：在路由器R3上创建防火墙区域</h3><p>注意：对于所有配置任务，请确保使用指定的确切名称。</p>
 <p><strong>步骤1：创建内部区域。</strong></p>
@@ -1305,83 +1274,77 @@ R1(config-line)#access-class 102 in</p>
 <h3 id="第六部分从in-zone到out-zone测试防火墙功能">第六部分：从IN-ZONE到OUT-ZONE测试防火墙功能</h3><p>验证配置基于区域的策略防火墙后，内部主机仍能访问外部资源。</p>
 <p><strong>步骤1：从内部PC-C，ping外部PC-A服务器。</strong></p>
 <p>从PC-C命令提示符，ping PC-A的192.168.1.3地址。ping操作应成功。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212636519.png" 
-             alt="PC-C ping 192.168.1.3，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212636519.png">
+        <img src="/images/blog/20251228212636519.png"
+             alt="PC-C ping 192.168.1.3，0% 丢包"
+             
+             loading="lazy" decoding="async" width="772" height="456"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：从内部PC-C，telnet到路由器R2 S0/0/1接口。</strong></p>
 <p>a. 从PC-C命令提示符，telnet到R2的10.2.2.2，并提供vty密码 <strong>ciscovtypa55</strong> 。Telnet会话应成功。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212638375.png" 
-             alt="PC-C 再次 telnet 10.2.2.2，输入密码后进入 R2&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212638375.png">
+        <img src="/images/blog/20251228212638375.png"
+             alt="PC-C 再次 telnet 10.2.2.2，输入密码后进入 R2&gt;"
+             
+             loading="lazy" decoding="async" width="756" height="339"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 在活动的Telnet会话中，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212640108.png" 
-             alt="R3 的 show policy-map type inspect zone-pair sessions：IN-2-OUT-ZPAIR 已建立 192.168.3.3→10.2.2.2:23 的会话" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212640108.png">
+        <img src="/images/blog/20251228212640108.png"
+             alt="R3 的 show policy-map type inspect zone-pair sessions：IN-2-OUT-ZPAIR 已建立 192.168.3.3→10.2.2.2:23 的会话"
+             
+             loading="lazy" decoding="async" width="1027" height="544"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>源IP地址和端口号是什么？</p>
 <p>目标IP地址和端口号是什么？</p>
 <p><strong>步骤3：从PC-C退出R2上的Telnet会话并关闭命令提示符窗口。</strong></p>
 <p><strong>步骤4：从内部PC-C，打开一个网页浏览器访问PC-A服务器的网页。</strong></p>
 <p>在浏览器URL字段中输入服务器IP地址192.168.1.3，并点击“Go”。HTTP会话应成功。在HTTP会话活动期间，在R3上执行命令 <code>show policy-map type inspect zone-pair sessions</code> 以查看已建立的会话。</p>
 <p>注：如果在您在R3上执行命令之前HTTP会话超时，您需要在PC-C上点击“Go”按钮来生成PC-C与PC-A之间的会话。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212641865.png" 
-             alt="同一输出里又出现 192.168.3.3→192.168.1.3:80 的会话，说明放行生效" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212641865.png">
+        <img src="/images/blog/20251228212641865.png"
+             alt="同一输出里又出现 192.168.3.3→192.168.1.3:80 的会话，说明放行生效"
+             
+             loading="lazy" decoding="async" width="934" height="640"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>源IP地址和端口号是什么？</p>
 <p>目标IP地址和端口号是什么？</p>
 <p><strong>步骤5：关闭PC-C上的浏览器。</strong></p>
 <h3 id="第七部分从out-zone到in-zone测试防火墙功能">第七部分：从OUT-ZONE到IN-ZONE测试防火墙功能</h3><p>验证配置基于区域的策略防火墙后，外部主机无法访问内部资源。</p>
 <p><strong>步骤1：从PC-A服务器命令提示符，ping PC-C。</strong></p>
 <p>从PC-A命令提示符，ping PC-C的192.168.3.3地址。ping操作应失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212643452.png" 
-             alt="PC-A ping 192.168.3.3 全部超时，100% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212643452.png">
+        <img src="/images/blog/20251228212643452.png"
+             alt="PC-A ping 192.168.3.3 全部超时，100% 丢包"
+             
+             loading="lazy" decoding="async" width="862" height="406"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：从路由器R2，ping PC-C。</strong></p>
 <p>从R2，ping PC-C的192.168.3.3地址。ping操作应失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212645060.png" 
-             alt="R2 ping 192.168.3.3，5 个包全部超时，成功率 0%" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212645060.png">
+        <img src="/images/blog/20251228212645060.png"
+             alt="R2 ping 192.168.3.3，5 个包全部超时，成功率 0%"
+             
+             loading="lazy" decoding="async" width="946" height="279"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈和已完成的必要组件验证。</p>
 ]]></content:encoded>
@@ -1391,16 +1354,15 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020%E7%88%AC-1/</link>
       <pubDate>Fri, 01 Nov 2024 11:40:18 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-wustctf2020%E7%88%AC-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192257155.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192257155.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1409,28 +1371,26 @@ R1(config-line)#access-class 102 in</p>
 &lt;li&gt;&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png&#34; 
-             alt=&#34;题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192259208.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192259208.png&#34;
+             alt=&#34;题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;753&#34; height=&#34;642&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到一个没有后缀的文件。
-
 &lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png&#34; 
-             alt=&#34;解压出的文件就叫「爬」，没有扩展名&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192301260.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192301260.png&#34;
+             alt=&#34;解压出的文件就叫「爬」，没有扩展名&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;151&#34; height=&#34;196&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、文件没有后缀，用010Editor看一下文件类型，是PDF文件。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1441,26 +1401,24 @@ R1(config-line)#access-class 102 in</p>
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Adobe Acrobat &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;pdf&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;， 文件头：25 &lt;span class=&#34;m&#34;&gt;50&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;44&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;46&lt;/span&gt; 2D &lt;span class=&#34;m&#34;&gt;31&lt;/span&gt; 2E
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png&#34; 
-             alt=&#34;十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;/div&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192302299.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192302299.png&#34;
+             alt=&#34;十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1413&#34; height=&#34;325&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192257155.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192257155.png">
+        <img src="/images/blog/20251228192257155.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1469,28 +1427,26 @@ R1(config-line)#access-class 102 in</p>
 <li><a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a></li>
 <li><a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192259208.png" 
-             alt="题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192259208.png">
+        <img src="/images/blog/20251228192259208.png"
+             alt="题目页「［WUSTCTF2020］爬 1」，感谢 Iven Huang 师傅供题，附 ctfgame 链接与 attachment.zip"
+             
+             loading="lazy" decoding="async" width="753" height="642"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>得到的 flag 请包上 flag{} 提交。</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到一个没有后缀的文件。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192301260.png" 
-             alt="解压出的文件就叫「爬」，没有扩展名" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228192301260.png">
+        <img src="/images/blog/20251228192301260.png"
+             alt="解压出的文件就叫「爬」，没有扩展名"
+             
+             loading="lazy" decoding="async" width="151" height="196"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、文件没有后缀，用010Editor看一下文件类型，是PDF文件。</p>
 <div class="highlight"><div class="chroma">
@@ -1501,38 +1457,35 @@ R1(config-line)#access-class 102 in</p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Adobe Acrobat <span class="o">(</span>pdf<span class="o">)</span>， 文件头：25 <span class="m">50</span> <span class="m">44</span> <span class="m">46</span> 2D <span class="m">31</span> 2E
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192302299.png" 
-             alt="十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192302299.png">
+        <img src="/images/blog/20251228192302299.png"
+             alt="十六进制开头是 %PDF-1.7，可见 /Type/Catalog/Pages、/StructTreeRoot"
+             
+             loading="lazy" decoding="async" width="1413" height="325"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>修改文件后缀为.pdf，打开如下图所示。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192304095.png" 
-             alt="PDF 里的图片是一块金色「爬」字标志牌，页脚写着「Flag 被图片覆盖住了」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192304095.png">
+        <img src="/images/blog/20251228192304095.png"
+             alt="PDF 里的图片是一块金色「爬」字标志牌，页脚写着「Flag 被图片覆盖住了」"
+             
+             loading="lazy" decoding="async" width="808" height="870"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、提示flag在图片的后面，但PDF文件是无法修改的。使用电脑上的Word打开PDF文件，转换为word文件进行编辑。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192306428.png" 
-             alt="用 Word 打开该 PDF，红框标出左侧「打开」与「这台电脑」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192306428.png">
+        <img src="/images/blog/20251228192306428.png"
+             alt="用 Word 打开该 PDF，红框标出左侧「打开」与「这台电脑」"
+             
+             loading="lazy" decoding="async" width="1926" height="780"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>删除图片，得到一串十六进制的数据图片。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1542,27 +1495,25 @@ R1(config-line)#access-class 102 in</p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">0x77637466323032307b746831735f31735f405f7064665f616e645f7930755f63616e5f7573655f70686f7430736830707d
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192308325.png" 
-             alt="图片上层还压着一行 0x7763746632303230…70686f7430736830707d" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192308325.png">
+        <img src="/images/blog/20251228192308325.png"
+             alt="图片上层还压着一行 0x7763746632303230…70686f7430736830707d"
+             
+             loading="lazy" decoding="async" width="841" height="789"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、将这串十六进制数据转换为ASCII字符串，得到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192310311.png" 
-             alt="十六进制转 ASCII：wctf2020{th1s_1s_@_pdf_and_y0u_can_use_phot0sh0p}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192310311.png">
+        <img src="/images/blog/20251228192310311.png"
+             alt="十六进制转 ASCII：wctf2020{th1s_1s_@_pdf_and_y0u_can_use_phot0sh0p}"
+             
+             loading="lazy" decoding="async" width="895" height="378"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1578,16 +1529,15 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</link>
       <pubDate>Fri, 01 Nov 2024 11:37:26 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E5%B0%8F%E6%98%8E%E7%9A%84%E4%BF%9D%E9%99%A9%E7%AE%B1-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192920231.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192920231.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192920231.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192920231.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
@@ -1596,41 +1546,38 @@ R1(config-line)#access-class 102 in</p>
 &lt;li&gt;&lt;a href=&#34;https://hello-ctf.com/HC_Start/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Hello CTF&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ns.openctf.net/learn/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;NewStar CTF&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192922350.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192922350.png&#34; 
-             alt=&#34;题目页「小明的保险箱 1」：四位纯数字密码&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192922350.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192922350.png&#34;
+             alt=&#34;题目页「小明的保险箱 1」：四位纯数字密码&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;766&#34; height=&#34;692&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;小明有一个保险箱，里面珍藏了小明的日记本，他记录了什么秘密呢？。。。告诉你，其实保险箱的密码四位纯数字密码。&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到一张.jpg图片。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192924269.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192924269.jpeg&#34; 
-             alt=&#34;3D 小人站在保险箱旁提公文包，是这道题的配图素材&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192924269.jpeg&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192924269.jpeg&#34;
+             alt=&#34;3D 小人站在保险箱旁提公文包，是这道题的配图素材&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;650&#34; height=&#34;585&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、读完题目，感觉这是一道图片隐藏文件的题目，另外还需要用到压缩包密码破解的知识。先使用010 Editor查看图片，没有找到PK（zip文件的标志），反而被一个域名和一些HTML源代码扰乱方向，StegSolve上也没有什么帮助。转换方向，使用Kali的binwalk工具，看到图片中隐藏了一个rar压缩包，确定目标。
 &lt;a href=&#34;https://blog.csdn.net/weixin_45728231/article/details/120988424&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Windows平台参考思路&lt;/a&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192920231.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192920231.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192920231.png">
+        <img src="/images/blog/20251228192920231.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
@@ -1639,84 +1586,77 @@ R1(config-line)#access-class 102 in</p>
 <li><a href="https://hello-ctf.com/HC_Start/"target="_blank" rel="noopener noreferrer">Hello CTF</a></li>
 <li><a href="https://ns.openctf.net/learn/"target="_blank" rel="noopener noreferrer">NewStar CTF</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192922350.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192922350.png" 
-             alt="题目页「小明的保险箱 1」：四位纯数字密码" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192922350.png">
+        <img src="/images/blog/20251228192922350.png"
+             alt="题目页「小明的保险箱 1」：四位纯数字密码"
+             
+             loading="lazy" decoding="async" width="766" height="692"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>小明有一个保险箱，里面珍藏了小明的日记本，他记录了什么秘密呢？。。。告诉你，其实保险箱的密码四位纯数字密码。</p>
 <h3 id="密文">密文：</h3><p>下载附件，得到一张.jpg图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192924269.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192924269.jpeg" 
-             alt="3D 小人站在保险箱旁提公文包，是这道题的配图素材" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192924269.jpeg">
+        <img src="/images/blog/20251228192924269.jpeg"
+             alt="3D 小人站在保险箱旁提公文包，是这道题的配图素材"
+             
+             loading="lazy" decoding="async" width="650" height="585"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、读完题目，感觉这是一道图片隐藏文件的题目，另外还需要用到压缩包密码破解的知识。先使用010 Editor查看图片，没有找到PK（zip文件的标志），反而被一个域名和一些HTML源代码扰乱方向，StegSolve上也没有什么帮助。转换方向，使用Kali的binwalk工具，看到图片中隐藏了一个rar压缩包，确定目标。
 <a href="https://blog.csdn.net/weixin_45728231/article/details/120988424"target="_blank" rel="noopener noreferrer">Windows平台参考思路</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192925919.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192925919.png" 
-             alt="binwalk 该 jpg：JPEG、TIFF，还有 RAR archive data（version 4.x）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192925919.png">
+        <img src="/images/blog/20251228192925919.png"
+             alt="binwalk 该 jpg：JPEG、TIFF，还有 RAR archive data（version 4.x）"
+             
+             loading="lazy" decoding="async" width="1419" height="367"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、我没有直接在Kali平台下直接分离文件，而是在Windows下，通过修改图片文件后缀名为.rar来实现。解压压缩包果然需要密码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192928061.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192928061.png" 
-             alt="分离出的 4a81409d-…rar，大小 70 KB" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192928061.png">
+        <img src="/images/blog/20251228192928061.png"
+             alt="分离出的 4a81409d-…rar，大小 70 KB"
+             
+             loading="lazy" decoding="async" width="1062" height="51"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、根据题目的提示，密码为四位纯数字。使用RARP工具暴力破解密码，选定合适的约束条件可以大幅减少破解所需要的时间。破解得到的密码为7869。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192929495.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192929495.png" 
-             alt="RAR Password Unlocker：4 位、0-9，日志「恢复成功，密码是: 7869」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192929495.png">
+        <img src="/images/blog/20251228192929495.png"
+             alt="RAR Password Unlocker：4 位、0-9，日志「恢复成功，密码是: 7869」"
+             
+             loading="lazy" decoding="async" width="902" height="806"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192931547.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192931547.png" 
-             alt="弹窗「密码已恢复」，文件的密码是 7869" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192931547.png">
+        <img src="/images/blog/20251228192931547.png"
+             alt="弹窗「密码已恢复」，文件的密码是 7869"
+             
+             loading="lazy" decoding="async" width="660" height="260"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、使用密码来解压压缩包，得到2.txt文件，打开得到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192933191.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192933191.png" 
-             alt="2.txt 内容 flag{75a3d68bf071ee188c418ea6cf0bb043}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192933191.png">
+        <img src="/images/blog/20251228192933191.png"
+             alt="2.txt 内容 flag{75a3d68bf071ee188c418ea6cf0bb043}"
+             
+             loading="lazy" decoding="async" width="512" height="207"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1732,147 +1672,135 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E8%A2%AB%E5%97%85%E6%8E%A2%E7%9A%84%E6%B5%81%E9%87%8F-1/</link>
       <pubDate>Tue, 24 Sep 2024 22:49:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E8%A2%AB%E5%97%85%E6%8E%A2%E7%9A%84%E6%B5%81%E9%87%8F-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193502458.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193502458.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png&#34; 
-             alt=&#34;题目页「被嗅探的流量 1」：分析抓到的到底是什么文件&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193504562.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193504562.png&#34;
+             alt=&#34;题目页「被嗅探的流量 1」：分析抓到的到底是什么文件&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;766&#34; height=&#34;658&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到一个.pcapng文件。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png&#34; 
-             alt=&#34;被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193506954.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193506954.png&#34;
+             alt=&#34;被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1020&#34; height=&#34;49&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png&#34; 
-             alt=&#34;过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193508795.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193508795.png&#34;
+             alt=&#34;过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;2560&#34; height=&#34;755&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193502458.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193502458.png">
+        <img src="/images/blog/20251228193502458.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193504562.png" 
-             alt="题目页「被嗅探的流量 1」：分析抓到的到底是什么文件" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193504562.png">
+        <img src="/images/blog/20251228193504562.png"
+             alt="题目页「被嗅探的流量 1」：分析抓到的到底是什么文件"
+             
+             loading="lazy" decoding="async" width="766" height="658"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>某黑客潜入到某公司内网通过嗅探抓取了一段文件传输的数据，该数据也被该公司截获，你能帮该公司分析他抓取的到底是什么文件的数据吗？</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到一个.pcapng文件。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193506954.png" 
-             alt="被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193506954.png">
+        <img src="/images/blog/20251228193506954.png"
+             alt="被嗅探的流量.pcapng，207 KB，显示为 Wireshark capture"
+             
+             loading="lazy" decoding="async" width="1020" height="49"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="解题思路">解题思路：</h3><p>1、双击.pcapng文件，在Wireshark中打开，开始分析流量。我首先大致浏览了一下流量，发现HTTP协议的流量有上传文件的痕迹。（upload上传）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193508795.png" 
-             alt="过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193508795.png">
+        <img src="/images/blog/20251228193508795.png"
+             alt="过滤 http，No.54 是 POST /upload.php，响应 864 HTTP/1.1 200 OK"
+             
+             loading="lazy" decoding="async" width="2560" height="755"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、通过在顶部过滤器输入“http”语句，将HTTP流量过滤出来。（也可以使用“http.request.method==POST”语句实现更精确的过滤）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193511377.png" 
-             alt="过滤 http 后的完整列表，含 GET/POST /upload.php 与一条 JPEG JFIF image" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193511377.png">
+        <img src="/images/blog/20251228193511377.png"
+             alt="过滤 http 后的完整列表，含 GET/POST /upload.php 与一条 JPEG JFIF image"
+             
+             loading="lazy" decoding="async" width="2143" height="548"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、我是将每一条上传的流量都追踪HTTP流，最后找到有flag的报文。其实，可以查看流量的提示信息更快的定位目标流量。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193513413.png" 
-             alt="同一列表，Info 列被红框整体圈出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193513413.png">
+        <img src="/images/blog/20251228193513413.png"
+             alt="同一列表，Info 列被红框整体圈出"
+             
+             loading="lazy" decoding="async" width="2143" height="548"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>4、在这条流量的提示信息中，我们看到包含JPEG图像，追踪这条流量的HTTP流，看到很多的数据，在数据的最下面找到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193515560.png" 
-             alt="放大那一条：233 POST /upload.php (JPEG JFIF image)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193515560.png">
+        <img src="/images/blog/20251228193515560.png"
+             alt="放大那一条：233 POST /upload.php (JPEG JFIF image)"
+             
+             loading="lazy" decoding="async" width="2110" height="49"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193516983.png" 
-             alt="跟踪流，正文里能看到 flag{da73d88936010da1eeeb36e945ec4b97}" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193516983.png">
+        <img src="/images/blog/20251228193516983.png"
+             alt="跟踪流，正文里能看到 flag{da73d88936010da1eeeb36e945ec4b97}"
+             
+             loading="lazy" decoding="async" width="1675" height="535"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1888,148 +1816,136 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BD%A0%E7%AB%9F%E7%84%B6%E8%B5%B6%E6%88%91%E8%B5%B0-1/</link>
       <pubDate>Tue, 24 Sep 2024 22:37:55 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E4%BD%A0%E7%AB%9F%E7%84%B6%E8%B5%B6%E6%88%91%E8%B5%B0-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192621766.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192621766.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png&#34; 
-             alt=&#34;题目页「你竟然赶我走 1」，附件 d6541cef-5…&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192624322.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192624322.png&#34;
+             alt=&#34;题目页「你竟然赶我走 1」，附件 d6541cef-5…&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;789&#34; height=&#34;599&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;下载附件后有一张图片。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg&#34; 
-             alt=&#34;一张黑白简笔画兔子表情包，配字「你竟然赶我走」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192625993.jpeg&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192625993.jpeg&#34;
+             alt=&#34;一张黑白简笔画兔子表情包，配字「你竟然赶我走」&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;440&#34; height=&#34;444&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;有两种解题方法&lt;/p&gt;
 &lt;h4 id=&#34;方法一&#34;&gt;方法一：&lt;/h4&gt;&lt;p&gt;1、使用StegSolve打开图片。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png&#34; 
-             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192627438.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192627438.png&#34;
+             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;721&#34; height=&#34;885&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;2、打开FileFormat（文件格式）&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png&#34; 
-             alt=&#34;Stegsolve 的 Analyse 菜单，红框标出 File Format&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228192628780.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228192628780.png&#34;
+             alt=&#34;Stegsolve 的 Analyse 菜单，红框标出 File Format&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;727&#34; height=&#34;382&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192621766.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192621766.png">
+        <img src="/images/blog/20251228192621766.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192624322.png" 
-             alt="题目页「你竟然赶我走 1」，附件 d6541cef-5…" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192624322.png">
+        <img src="/images/blog/20251228192624322.png"
+             alt="题目页「你竟然赶我走 1」，附件 d6541cef-5…"
+             
+             loading="lazy" decoding="async" width="789" height="599"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>下载附件后有一张图片。</p>
-<h3 id="密文">密文：</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192625993.jpeg" 
-             alt="一张黑白简笔画兔子表情包，配字「你竟然赶我走」" 
-              
-             loading="lazy"
-        />
+<h3 id="密文">密文：</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192625993.jpeg">
+        <img src="/images/blog/20251228192625993.jpeg"
+             alt="一张黑白简笔画兔子表情包，配字「你竟然赶我走」"
+             
+             loading="lazy" decoding="async" width="440" height="444"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="解题思路">解题思路：</h3><p>有两种解题方法</p>
 <h4 id="方法一">方法一：</h4><p>1、使用StegSolve打开图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192627438.png" 
-             alt="Stegsolve 主界面，红框标出 File → Open" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192627438.png">
+        <img src="/images/blog/20251228192627438.png"
+             alt="Stegsolve 主界面，红框标出 File → Open"
+             
+             loading="lazy" decoding="async" width="721" height="885"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、打开FileFormat（文件格式）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192628780.png" 
-             alt="Stegsolve 的 Analyse 菜单，红框标出 File Format" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192628780.png">
+        <img src="/images/blog/20251228192628780.png"
+             alt="Stegsolve 的 Analyse 菜单，红框标出 File Format"
+             
+             loading="lazy" decoding="async" width="727" height="382"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、拉到最下面，找到flag。（注意要消除所有的空格）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192633841.png" 
-             alt="File Format Analysis 窗口：End of Image 之后 Additional bytes = 38，Ascii 区可见 flag{stego_is_s0_borling}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192633841.png">
+        <img src="/images/blog/20251228192633841.png"
+             alt="File Format Analysis 窗口：End of Image 之后 Additional bytes = 38，Ascii 区可见 flag{stego_is_s0_borling}"
+             
+             loading="lazy" decoding="async" width="964" height="716"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="方法二">方法二：</h4><p>1、使用WinHex打开图片，找到flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192635420.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192635420.png" 
-             alt="WinHex 打开 biubiu.jpg，0x6360h 行的 ASCII 区高亮 -flag is flag{stego_is_s0_borling}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228192635420.png">
+        <img src="/images/blog/20251228192635420.png"
+             alt="WinHex 打开 biubiu.jpg，0x6360h 行的 ASCII 区高亮 -flag is flag{stego_is_s0_borling}"
+             
+             loading="lazy" decoding="async" width="1678" height="1361"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2045,152 +1961,140 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/buuctf-%E9%87%91%E4%B8%89-1/</link>
       <pubDate>Tue, 24 Sep 2024 22:36:19 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/buuctf-%E9%87%91%E4%B8%89-1/</guid>
-      <description>&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png&#34; 
-             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193543814.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193543814.png&#34;
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;640&#34; height=&#34;360&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BUUCTF: &lt;a href=&#34;https://buuoj.cn/challenges&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://buuoj.cn/challenges&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;相关阅读&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png&#34; 
-             alt=&#34;一张「图片违规！」的占位图，笑脸 X 眼配一个对话框&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193545912.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193545912.png&#34;
+             alt=&#34;一张「图片违规！」的占位图，笑脸 X 眼配一个对话框&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1068&#34; height=&#34;598&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;只有一个附件，下载下来有一张GIF图片。&lt;/p&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;本题一共有2种解法（本人找到的）&lt;/p&gt;
 &lt;h4 id=&#34;方法一&#34;&gt;方法一：&lt;/h4&gt;&lt;p&gt;1、打开这张GIF图片，观察到不正常闪动，似乎有东西藏在图片中。
 2、使用StegSolve工具，对图片进行逐帧查看。&lt;/p&gt;
 &lt;p&gt;在StegSolve中打开GIF图片&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png&#34; 
-             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228193547762.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228193547762.png&#34;
+             alt=&#34;Stegsolve 主界面，红框标出 File → Open&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;721&#34; height=&#34;885&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193543814.png" 
-             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193543814.png">
+        <img src="/images/blog/20251228193543814.png"
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="640" height="360"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>BUUCTF: <a href="https://buuoj.cn/challenges"target="_blank" rel="noopener noreferrer">https://buuoj.cn/challenges</a></strong></p>
 <hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193545912.png" 
-             alt="一张「图片违规！」的占位图，笑脸 X 眼配一个对话框" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193545912.png">
+        <img src="/images/blog/20251228193545912.png"
+             alt="一张「图片违规！」的占位图，笑脸 X 眼配一个对话框"
+             
+             loading="lazy" decoding="async" width="1068" height="598"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>只有一个附件，下载下来有一张GIF图片。</p>
 <h3 id="解题思路">解题思路：</h3><p>本题一共有2种解法（本人找到的）</p>
 <h4 id="方法一">方法一：</h4><p>1、打开这张GIF图片，观察到不正常闪动，似乎有东西藏在图片中。
 2、使用StegSolve工具，对图片进行逐帧查看。</p>
 <p>在StegSolve中打开GIF图片</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193547762.png" 
-             alt="Stegsolve 主界面，红框标出 File → Open" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193547762.png">
+        <img src="/images/blog/20251228193547762.png"
+             alt="Stegsolve 主界面，红框标出 File → Open"
+             
+             loading="lazy" decoding="async" width="721" height="885"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>打开逐帧查看</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193549564.png" 
-             alt="StegSolve 1.4 的 Analyse 菜单，红框标出 Frame Browser" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193549564.png">
+        <img src="/images/blog/20251228193549564.png"
+             alt="StegSolve 1.4 的 Analyse 菜单，红框标出 Frame Browser"
+             
+             loading="lazy" decoding="async" width="722" height="237"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>在这里可以逐帧查看图片（理论上可以在这里看到逐帧的图片，但我这显示不出来）</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193551191.png" 
-             alt="Frame Browser 窗口显示「Frame : 1 of 89」，底部是 &lt; &gt; 与 Save" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193551191.png">
+        <img src="/images/blog/20251228193551191.png"
+             alt="Frame Browser 窗口显示「Frame : 1 of 89」，底部是 &lt; &gt; 与 Save"
+             
+             loading="lazy" decoding="async" width="574" height="620"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>3、找到三张带有flag的图片，拼在一起得到flag。(中间的那张图片“he11o”，中间是两个数字1)</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193552982.bmp" 
-             alt="红底黑字的一帧：flag{" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193552982.bmp">
+        <img src="/images/blog/20251228193552982.bmp"
+             alt="红底黑字的一帧：flag{"
+             
+             loading="lazy" decoding="async" width="219" height="186"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193554839.bmp" 
-             alt="另一帧：he11o" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193554839.bmp">
+        <img src="/images/blog/20251228193554839.bmp"
+             alt="另一帧：he11o"
+             
+             loading="lazy" decoding="async" width="219" height="186"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193556699.bmp" 
-             alt="再一帧：hongke}" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193556699.bmp">
+        <img src="/images/blog/20251228193556699.bmp"
+             alt="再一帧：hongke}"
+             
+             loading="lazy" decoding="async" width="219" height="186"/>
     </a>
-</div></p>
+</div>
+</p>
 <h4 id="方法二">方法二：</h4><p>1、使用Photoshop打开GIF图片，也可以逐帧查看图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193558520.png" 
-             alt="Photoshop 里图层 1 到 26，其中图层 21 显示红方块与 flag{" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228193558520.png">
+        <img src="/images/blog/20251228193558520.png"
+             alt="Photoshop 里图层 1 到 26，其中图层 21 显示红方块与 flag{"
+             
+             loading="lazy" decoding="async" width="1818" height="979"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2211,144 +2115,132 @@ R1(config-line)#access-class 102 in</p>
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png&#34; 
-             alt=&#34;题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251210144459175.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251210144459175.png&#34;
+             alt=&#34;题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;939&#34; height=&#34;573&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;图片似乎经过了什么处理，你能否将其复原呢？&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到一张.jpg图片。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg&#34; 
-             alt=&#34;附件就是那张「一时语塞」的表情包&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251210144459176.jpeg&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251210144459176.jpeg&#34;
+             alt=&#34;附件就是那张「一时语塞」的表情包&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;713&#34; height=&#34;801&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png&#34; 
-             alt=&#34;binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251210144459177.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251210144459177.png&#34;
+             alt=&#34;binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png&#34;
+             
+             loading=&#34;lazy&#34; decoding=&#34;async&#34; width=&#34;1644&#34; height=&#34;349&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
+&lt;/div&gt;
+&lt;/p&gt;</description>
       <content:encoded><![CDATA[<hr>
 <p>相关阅读</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459175.png" 
-             alt="题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459175.png">
+        <img src="/images/blog/20251210144459175.png"
+             alt="题目页「Misc | 相当于签到」：当前分值 555 pt（您已攻克），描述「图片似乎经过了什么处理，你能否将其复原呢？」"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="939" height="573"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>图片似乎经过了什么处理，你能否将其复原呢？</p>
 <h3 id="密文">密文：</h3><p>下载附件，解压得到一张.jpg图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459176.jpeg" 
-             alt="附件就是那张「一时语塞」的表情包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459176.jpeg">
+        <img src="/images/blog/20251210144459176.jpeg"
+             alt="附件就是那张「一时语塞」的表情包"
+             
+             loading="lazy" decoding="async" width="713" height="801"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <h3 id="解题思路">解题思路：</h3><p>1、一张图片，典型的图片隐写。放到Kali中，使用binwalk检测，确认图片中隐藏zip压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459177.png" 
-             alt="binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459177.png">
+        <img src="/images/blog/20251210144459177.png"
+             alt="binwalk sign.jpg：JPEG JFIF 1.01、TIFF，49356（0xC0CC）起是 Zip，compressed 1018984、uncompressed 1018634，name: repair.png"
+             
+             loading="lazy" decoding="async" width="1644" height="349"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>使用foremost分离图片中的压缩包，在output目录中找到隐藏的zip压缩包。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459178.png" 
-             alt="foremost sign.jpg，输出 foundat=repair.png" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459178.png">
+        <img src="/images/blog/20251210144459178.png"
+             alt="foremost sign.jpg，输出 foundat=repair.png"
+             
+             loading="lazy" decoding="async" width="413" height="192"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459179.png" 
-             alt="tree output：audit.txt、jpg/00000000.jpg、zip/00000096.zip" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459179.png">
+        <img src="/images/blog/20251210144459179.png"
+             alt="tree output：audit.txt、jpg/00000000.jpg、zip/00000096.zip"
+             
+             loading="lazy" decoding="async" width="476" height="216"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>2、尝试解压得到的压缩包，需要密码。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459180.png" 
-             alt="unzip 00000096.zip 时 repair.png 要密码，直接 skipping" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459180.png">
+        <img src="/images/blog/20251210144459180.png"
+             alt="unzip 00000096.zip 时 repair.png 要密码，直接 skipping"
+             
+             loading="lazy" decoding="async" width="981" height="197"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>因为没有关于密码的提示，尝试用4位纯数字进行爆破，出现提示“no usable files found”（未找到可用文件）。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459181.png" 
-             alt="fcrackzip -b -c1 -l 4 -u 跑完只回一句 no usable files found" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459181.png">
+        <img src="/images/blog/20251210144459181.png"
+             alt="fcrackzip -b -c1 -l 4 -u 跑完只回一句 no usable files found"
+             
+             loading="lazy" decoding="async" width="959" height="121"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><a href="https://blog.csdn.net/qq_26187985/article/details/83654197"target="_blank" rel="noopener noreferrer">zip伪加密原理</a>
 猜测该zip压缩包为伪加密，通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459182.png" 
-             alt="十六进制 0000h 处红框 00 00 是加密标志，Ascii 区可见 PK、repair.png、IHD" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459182.png">
+        <img src="/images/blog/20251210144459182.png"
+             alt="十六进制 0000h 处红框 00 00 是加密标志，Ascii 区可见 PK、repair.png、IHD"
+             
+             loading="lazy" decoding="async" width="1195" height="215"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459183.png" 
-             alt="F8C70h 处 IEND 之后紧跟 50 4B 01 02 中央目录，红框又是 00 00" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459183.png">
+        <img src="/images/blog/20251210144459183.png"
+             alt="F8C70h 处 IEND 之后紧跟 50 4B 01 02 中央目录，红框又是 00 00"
+             
+             loading="lazy" decoding="async" width="1283" height="371"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -2394,27 +2286,25 @@ R1(config-line)#access-class 102 in</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>3、修改后，解压压缩包不需要密码，解压成功，得到一张.png图片。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459184.png" 
-             alt="一张「图片违规！」的占位图，笑脸 X 眼配一个对话框" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459184.png">
+        <img src="/images/blog/20251210144459184.png"
+             alt="一张「图片违规！」的占位图，笑脸 X 眼配一个对话框"
+             
+             loading="lazy" decoding="async" width="1068" height="598"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>从这里也可以看出图片经过修改，无法正常显示。在010 Editor中打开，提示CRC校验错误，结合题目提示“图片似乎经过了什么处理”，认为图片被修改了宽高。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459185.png" 
-             alt="010 Editor 顶部报错：CRC Mismatch @ chunk［0］; in data: 9bf1293b; expected: be8b9d2f" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459185.png">
+        <img src="/images/blog/20251210144459185.png"
+             alt="010 Editor 顶部报错：CRC Mismatch @ chunk［0］; in data: 9bf1293b; expected: be8b9d2f"
+             
+             loading="lazy" decoding="async" width="921" height="79"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>通过爆破宽高，得到正确的宽高，然后修改图片的宽高数据，得到正确的图片。爆破所用代码如下。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2449,38 +2339,35 @@ R1(config-line)#access-class 102 in</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>得到正确的宽高值。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459186.png" 
-             alt="按图片实际尺寸算出 810 1200，hex 是 0x32a 0x4b0" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459186.png">
+        <img src="/images/blog/20251210144459186.png"
+             alt="按图片实际尺寸算出 810 1200，hex 是 0x32a 0x4b0"
+             
+             loading="lazy" decoding="async" width="492" height="93"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>修改图片中的宽高参数，然后保存图片查看。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459187.png" 
-             alt="把 IHDR 的宽高改成 00 00 03 2A 与 00 00 04 B0，后面就是 tEXtTitle、tEXtAuthor 这些块" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459187.png">
+        <img src="/images/blog/20251210144459187.png"
+             alt="把 IHDR 的宽高改成 00 00 03 2A 与 00 00 04 B0，后面就是 tEXtTitle、tEXtAuthor 这些块"
+             
+             loading="lazy" decoding="async" width="1214" height="437"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>获得flag。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251210144459188.png" 
-             alt="修复后的图：星空下弹吉他的剪影，中间一个 LISTEN，左下角 flag{bdface45-506b-f530-aa4d-57884b20255e}" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251210144459188.png">
+        <img src="/images/blog/20251210144459188.png"
+             alt="修复后的图：星空下弹吉他的剪影，中间一个 LISTEN，左下角 flag{bdface45-506b-f530-aa4d-57884b20255e}"
+             
+             loading="lazy" decoding="async" width="810" height="1200"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -2501,16 +2388,15 @@ R1(config-line)#access-class 102 in</p>
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://ctf-wiki.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;CTF Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png&#34; 
-             alt=&#34;奇安信杯「Crypto | Affine password」题目：明文经 y=3x&amp;#43;9 加密成 JYYHWV…，要求提交大写明文&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/202512081856849.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/202512081856849.png&#34;
+             alt=&#34;奇安信杯「Crypto | Affine password」题目：明文经 y=3x&amp;#43;9 加密成 JYYHWV…，要求提交大写明文&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;937&#34; height=&#34;505&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。&lt;/p&gt;
 &lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2528,16 +2414,15 @@ R1(config-line)#access-class 102 in</p>
 <ul>
 <li><a href="https://ctf-wiki.org/"target="_blank" rel="noopener noreferrer">CTF Wiki</a></li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856849.png" 
-             alt="奇安信杯「Crypto | Affine password」题目：明文经 y=3x&#43;9 加密成 JYYHWV…，要求提交大写明文" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/202512081856849.png">
+        <img src="/images/blog/202512081856849.png"
+             alt="奇安信杯「Crypto | Affine password」题目：明文经 y=3x&#43;9 加密成 JYYHWV…，要求提交大写明文"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="937" height="505"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="题目描述">题目描述：</h3><p>明文经过仿射函数y=3x+9加密之后变为JYYHWVPIDCOZ，请对其进行解密，flag的格式为flag{明文的大写形式}。</p>
 <h3 id="密文">密文：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2550,16 +2435,15 @@ R1(config-line)#access-class 102 in</p>
 </div><hr>
 <h3 id="解题思路">解题思路：</h3><p>1、使用在线网站直接破解或手工计算破解，获得flag。（参数a=3，b=9，对应仿射函数y=3x+9）
 <a href="http://www.metools.info/code/affinecipher183.html"target="_blank" rel="noopener noreferrer">仿射密码加密_仿射密码解密</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/202512081856851.png" 
-             alt="仿射密码工具：a=3、b=9，输入 JYYHWV… 解密得到 AFFINECRYPTO" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/202512081856851.png">
+        <img src="/images/blog/202512081856851.png"
+             alt="仿射密码工具：a=3、b=9，输入 JYYHWV… 解密得到 AFFINECRYPTO"
+             
+             loading="lazy" decoding="async" width="965" height="433"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>手工计算使用解密函数为D(x) = a^-1(x - b) (mod m)，也可以获得flag。</p>
 <h3 id="flag">flag：</h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

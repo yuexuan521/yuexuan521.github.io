@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 12:46:59 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/ios/index.xml" rel="self" type="application/rss+xml" />
@@ -19,26 +19,24 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212610089.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212610089.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1288&#34; height=&#34;550&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212610089.png">
+        <img src="/images/blog/20251228212610089.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1288" height="550"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>启用IOS入侵防御系统（IPS）。</p>
@@ -78,27 +76,25 @@ R1#reload</p>
 <p>e. 使用 <code>show version</code> 命令验证是否已启用“Security Technology”包。</p>
 <p><strong>步骤2：验证网络连接性。</strong></p>
 <p>a. 从PC-C向PC-A发送ping请求。应能成功ping通。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="PC-C ping 192.168.1.2 通，25% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212612030.png">
+        <img src="/images/blog/20251228212612030.png"
+             alt="PC-C ping 192.168.1.2 通，25% 丢包"
+             
+             loading="lazy" decoding="async" width="784" height="510"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-A向PC-C发送ping请求。应能成功ping通。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="PC-A ping 192.168.3.2 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212617990.png">
+        <img src="/images/blog/20251228212617990.png"
+             alt="PC-A ping 192.168.3.2 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="757" height="502"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在闪存中创建一个IOS IPS配置目录。</strong></p>
 <p>在R1上，使用 <code>mkdir</code> 命令在闪存中创建一个目录。将目录命名为ipsdir。</p>
 <blockquote>
@@ -171,63 +167,58 @@ R1(config-sigdef)#exit</p>
 </blockquote>
 <p><strong>步骤2：使用show命令验证IPS配置。</strong></p>
 <p>使用 <code>show ip ips all</code> 命令查看IPS配置状态摘要。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212619669.png">
+        <img src="/images/blog/20251228212619669.png"
+             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips"
+             
+             loading="lazy" decoding="async" width="676" height="532"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>iosips规则应用于哪些接口以及什么方向？</p>
 <p><strong>步骤3：验证IPS是否正常工作。</strong></p>
 <p>a. 从PC-C尝试ping PC-A。这些ping请求成功了吗？请解释原因。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212621339.png">
+        <img src="/images/blog/20251228212621339.png"
+             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）"
+             
+             loading="lazy" decoding="async" width="790" height="421"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-A尝试ping PC-C。这些ping请求成功了吗？请解释原因。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="PC-A ping 192.168.3.2 仍通，25% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212623416.png">
+        <img src="/images/blog/20251228212623416.png"
+             alt="PC-A ping 192.168.3.2 仍通，25% 丢包"
+             
+             loading="lazy" decoding="async" width="790" height="417"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：查看syslog消息。</strong></p>
 <p>a. 点击Syslog服务器。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212625436.png">
+        <img src="/images/blog/20251228212625436.png"
+             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24"
+             
+             loading="lazy" decoding="async" width="989" height="373"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 选择“服务”标签页。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212627003.png">
+        <img src="/images/blog/20251228212627003.png"
+             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录"
+             
+             loading="lazy" decoding="async" width="1037" height="515"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>c. 在左侧导航菜单中，选择SYSLOG以查看日志文件。</p>
 <p><strong>步骤5：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息及已完成的必要组件验证。</p>

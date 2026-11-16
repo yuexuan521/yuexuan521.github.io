@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 03 Mar 2025 09:30:02 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E7%A0%81%E8%B9%84%E6%9D%AF/index.xml" rel="self" type="application/rss+xml" />
@@ -3812,16 +3812,15 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 </div><hr>
 <h3 id="mt1290-级数">MT1290 级数</h3><p><em><strong>（1）题目</strong></em>
 编写程序求级数前n项的和，其中n从键盘上输入</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644041.png" 
-             alt="级数通项公式：Σ (−1)^(j−1)·2^j / (［2^j&#43;(−1)^j］［2^(j&#43;1)&#43;(−1)^(j&#43;1)］)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162644041.png">
+        <img src="/images/blog/20251220162644041.png"
+             alt="级数通项公式：Σ (−1)^(j−1)·2^j / (［2^j&#43;(−1)^j］［2^(j&#43;1)&#43;(−1)^(j&#43;1)］)"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="334" height="60"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -3897,16 +3896,15 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 </div><hr>
 <h3 id="mt1291-级数ii">MT1291 级数II</h3><p><em><strong>（1）题目</strong></em>
 编写程序求级数前n项的和，其中n从键盘上输入</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644042.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162644042.png" 
-             alt="同上级数，把底数 2 换成 3 的求和公式" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162644042.png">
+        <img src="/images/blog/20251220162644042.png"
+             alt="同上级数，把底数 2 换成 3 的求和公式"
+             
+             loading="lazy" decoding="async" width="337" height="64"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -8914,16 +8912,15 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 </div><hr>
 <h3 id="mt1225-复杂分数">MT1225 复杂分数</h3><p><em><strong>（1）题目</strong></em>
 编写程序连续输入a1、a2、…、a5，计算下列表达式的值并输出。本题不考虑输入0，负数或者其他特殊情况。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558048.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558048.png" 
-             alt="连分式：1 &#43; a₁/(1 &#43; a₂/(1 &#43; a₃/(1 &#43; a₄/a₅)))" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162558048.png">
+        <img src="/images/blog/20251220162558048.png"
+             alt="连分式：1 &#43; a₁/(1 &#43; a₂/(1 &#43; a₃/(1 &#43; a₄/a₅)))"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="223" height="112"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -9001,16 +8998,15 @@ S=1/2 * |x1y2+x2y3+x3y1-x1y3-x2y1-x3y2|</p>
 </div><hr>
 <h3 id="mt1226-解不等式">MT1226 解不等式</h3><p><em><strong>（1）题目</strong></em>
 n为正整数，求解n满足不等式:</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558049.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162558049.png" 
-             alt="不等式：a &lt; 1 &#43; 1/(1&#43;1/2) &#43; … &#43; 1/(1&#43;1/2&#43;…&#43;1/n) &lt; b" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162558049.png">
+        <img src="/images/blog/20251220162558049.png"
+             alt="不等式：a &lt; 1 &#43; 1/(1&#43;1/2) &#43; … &#43; 1/(1&#43;1/2&#43;…&#43;1/n) &lt; b"
+             
+             loading="lazy" decoding="async" width="654" height="70"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -11068,16 +11064,15 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 </span></span><span class="line"><span class="cl">输出格式:
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543013.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543013.png" 
-             alt="由字母 W 排成的沙漏图案，逐行递减再递增" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162543013.png">
+        <img src="/images/blog/20251220162543013.png"
+             alt="由字母 W 排成的沙漏图案，逐行递减再递增"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="149" height="430"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><em><strong>（2）参考代码</strong></em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -12049,16 +12044,15 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 </div>
 </div><hr>
 <h3 id="mt1219斐波那契数列ii">MT1219斐波那契数列II</h3><p><em><strong>（1）题目</strong></em></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543014.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162543014.png" 
-             alt="题目文字：判断 N（N&lt;2⁹）是否出现在斐波那契数列中，输出 YES 或 NO" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162543014.png">
+        <img src="/images/blog/20251220162543014.png"
+             alt="题目文字：判断 N（N&lt;2⁹）是否出现在斐波那契数列中，输出 YES 或 NO"
+             
+             loading="lazy" decoding="async" width="879" height="55"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">
@@ -13409,16 +13403,15 @@ N件家具(N&lt;=10)，力气大的一次可以搬2件，力气小的一次只�
 </div><hr>
 <h3 id="mt1195-公式求和">MT1195 公式求和</h3><p><em><strong>（1）题目</strong></em>
 输入正整数N和M，按照下列公式求和。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162532463.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251220162532463.png" 
-             alt="级数公式：1/N² &#43; 1/(N&#43;1)² &#43; … &#43; 1/M²" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251220162532463.png">
+        <img src="/images/blog/20251220162532463.png"
+             alt="级数公式：1/N² &#43; 1/(N&#43;1)² &#43; … &#43; 1/M²"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="399" height="58"/>
     </a>
-</div></p>
+</div>
+</p>
 <hr>
 <p><strong>格式</strong></p>
 <div class="highlight"><div class="chroma">

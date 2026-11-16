@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Mon, 10 Jun 2024 09:32:56 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E8%9A%81%E5%89%91/index.xml" rel="self" type="application/rss+xml" />
@@ -22,129 +22,118 @@
       <description>&lt;h2 id=&#34;2024511中国蚁剑安装教程&#34;&gt;2024/5/11中国蚁剑安装教程&lt;/h2&gt;&lt;p&gt;一、下载中国蚁剑的加载器和核心源码（两个都要用到）&lt;/p&gt;
 &lt;p&gt;github官方下载地址：https://github.com/AntSwordProject/&lt;/p&gt;
 &lt;p&gt;参考文档： &lt;a href=&#34;https://github.com/AntSwordProject/antSword/blob/master/README_CN.md&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;antSword/README_CN.md at master · AntSwordProject/antSword · GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png&#34; 
-             alt=&#34;GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251217144829872.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251217144829872.png&#34;
+             alt=&#34;GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;2559&#34; height=&#34;918&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
+&lt;/div&gt;
+&lt;/p&gt;</description>
       <content:encoded><![CDATA[<h2 id="2024511中国蚁剑安装教程">2024/5/11中国蚁剑安装教程</h2><p>一、下载中国蚁剑的加载器和核心源码（两个都要用到）</p>
 <p>github官方下载地址：https://github.com/AntSwordProject/</p>
 <p>参考文档： <a href="https://github.com/AntSwordProject/antSword/blob/master/README_CN.md"target="_blank" rel="noopener noreferrer">antSword/README_CN.md at master · AntSwordProject/antSword · GitHub</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829872.png" 
-             alt="GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829872.png">
+        <img src="/images/blog/20251217144829872.png"
+             alt="GitHub 的 AntSwordProject 主页，红框标出 antSword 核心源码与 AntSword-Loader 加载器"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="2559" height="918"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><a href="https://github.com/AntSwordProject/antSword?tab=readme-ov-file"target="_blank" rel="noopener noreferrer">核心源码下载：</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829873.png" 
-             alt="antSword 仓库页点开 Code 菜单，红框为 Download ZIP" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829873.png">
+        <img src="/images/blog/20251217144829873.png"
+             alt="antSword 仓库页点开 Code 菜单，红框为 Download ZIP"
+             
+             loading="lazy" decoding="async" width="2231" height="997"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><a href="https://github.com/AntSwordProject/AntSword-Loader"target="_blank" rel="noopener noreferrer">加载器下载：</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829874.png" 
-             alt="AntSword-Loader 的 README，红框圈出各操作系统的下载地址与 MD5 表格" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829874.png">
+        <img src="/images/blog/20251217144829874.png"
+             alt="AntSword-Loader 的 README，红框圈出各操作系统的下载地址与 MD5 表格"
+             
+             loading="lazy" decoding="async" width="2036" height="1245"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>二、在完成两个文件的下载后，进行解压缩。接下来，到名为“AntSword-Loader-v4.0.3-win32-x64”的加载器文件夹，然后启动该文件夹内的AntSword.exe应用程序。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829875.png" 
-             alt="AntSword-Loader-v4.0.3-win32-x64 目录，红框为 AntSword.exe（91,784 KB）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829875.png">
+        <img src="/images/blog/20251217144829875.png"
+             alt="AntSword-Loader-v4.0.3-win32-x64 目录，红框为 AntSword.exe（91,784 KB）"
+             
+             loading="lazy" decoding="async" width="1029" height="853"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>加载器页面：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829876.png" 
-             alt="中国蚁剑加载器启动界面，提示「请选择蚁剑工作目录」，下方是初始化按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829876.png">
+        <img src="/images/blog/20251217144829876.png"
+             alt="中国蚁剑加载器启动界面，提示「请选择蚁剑工作目录」，下方是初始化按钮"
+             
+             loading="lazy" decoding="async" width="1195" height="933"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>三、假如依照指示，用户选定一个空白目录来进行初始化操作，系统将自动执行源代码的下载任务。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829877.png" 
-             alt="加载器正在下载… 7.48 Mb，界面变暗" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829877.png">
+        <img src="/images/blog/20251217144829877.png"
+             alt="加载器正在下载… 7.48 Mb，界面变暗"
+             
+             loading="lazy" decoding="async" width="1192" height="931"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>不过，我们已经将源代码下载好了，选择源代码的文件夹路径。文件夹内如下所示：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829878.png" 
-             alt="Application 目录结构：.github、modules、source、views、static 等" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829878.png">
+        <img src="/images/blog/20251217144829878.png"
+             alt="Application 目录结构：.github、modules、source、views、static 等"
+             
+             loading="lazy" decoding="async" width="1045" height="856"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>初始化进程完毕后，系统会自动重新启动。再次开启程序时，即可直接开始使用。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829879.png" 
-             alt="中国蚁剑主界面，数据管理为空，右侧只有默认分类" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829879.png">
+        <img src="/images/blog/20251217144829879.png"
+             alt="中国蚁剑主界面，数据管理为空，右侧只有默认分类"
+             
+             loading="lazy" decoding="async" width="1530" height="1029"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>小问题：</p>
 <p>下载中国蚁剑的核心源码时，可能因为检测到病毒无法下载，或文件被防火墙删除。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829880.png" 
-             alt="浏览器下载列表：安装包已被删除，antSword-master.zip 提示检测到病毒无法下载" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829880.png">
+        <img src="/images/blog/20251217144829880.png"
+             alt="浏览器下载列表：安装包已被删除，antSword-master.zip 提示检测到病毒无法下载"
+             
+             loading="lazy" decoding="async" width="525" height="205"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>前往“Windows防护中心”–&gt;“保护历史记录”，选择“操作”中的“还原”，就可以解决问题。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251217144829882.png" 
-             alt="Windows 安全中心保护历史记录，显示已阻止 Backdoor:PHP/Remoteshell.E" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251217144829882.png">
+        <img src="/images/blog/20251217144829882.png"
+             alt="Windows 安全中心保护历史记录，显示已阻止 Backdoor:PHP/Remoteshell.E"
+             
+             loading="lazy" decoding="async" width="1294" height="1142"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
   </channel>

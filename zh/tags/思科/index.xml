@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 23 Jan 2025 16:37:23 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E6%80%9D%E7%A7%91/index.xml" rel="self" type="application/rss+xml" />
@@ -19,26 +19,27 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</link>
       <pubDate>Thu, 23 Jan 2025 16:37:23 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</guid>
-      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212547156.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212547156.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1036&#34; height=&#34;498&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;验证整个网络的连通性。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212547156.png">
+        <img src="/images/blog/20251228212547156.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1036" height="498"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>验证整个网络的连通性。</p>
@@ -49,28 +50,26 @@
 </ul>
 <h3 id="背景场景">背景/场景</h3><p>网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。</p>
 <p><strong>ISAKMP阶段1策略参数</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
-             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212549003.png">
+        <img src="/images/blog/20251228212549003.png"
+             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55"
+             
+             loading="lazy" decoding="async" width="1056" height="346"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>注意：加粗参数为默认值。只有非加粗参数需要明确配置。</p>
 <p><strong>IPsec阶段2策略参数</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png" 
-             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212550698.png">
+        <img src="/images/blog/20251228212550698.png"
+             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp"
+             
+             loading="lazy" decoding="async" width="828" height="409"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>路由器已预先配置以下内容：</p>
 <p>· 控制台线路密码： <strong>ciscoconpa55</strong></p>
 <p>· vty线路密码： <strong>ciscovtypa55</strong></p>
@@ -79,28 +78,26 @@
 <p>· OSPF进程号 <strong>101</strong></p>
 <h3 id="第一部分在r1上配置ipsec参数">第一部分：在R1上配置IPsec参数</h3><p><strong>步骤1：测试连通性。</strong></p>
 <p>从PC-A向PC-C发送ping请求。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
-             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212552384.png">
+        <img src="/images/blog/20251228212552384.png"
+             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms"
+             
+             loading="lazy" decoding="async" width="829" height="454"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：启用安全技术包。</strong></p>
 <p>a. 在R1上执行 <code>show version</code> 命令查看安全技术包许可证信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
-             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212554645.png">
+        <img src="/images/blog/20251228212554645.png"
+             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation"
+             
+             loading="lazy" decoding="async" width="904" height="412"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 如果未启用安全技术包，请使用以下命令启用该包。</p>
 <blockquote>
 <p>R1(config)# license boot module c1900 technology-package securityk9</p>
@@ -184,64 +181,59 @@ R3(config-if)# crypto map VPN-MAP</p>
 </blockquote>
 <h3 id="第三部分验证ipsec-vpn">第三部分：验证IPsec VPN</h3><p><strong>步骤1：在出现感兴趣流量之前验证隧道。</strong></p>
 <p>在R1上执行 <code>show crypto ipsec sa</code> 命令。注意封装、加密、解封装和解密的包数量均设置为 <strong>0</strong> 。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
-             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212557007.png">
+        <img src="/images/blog/20251228212557007.png"
+             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立"
+             
+             loading="lazy" decoding="async" width="955" height="892"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：创建感兴趣流量。</strong></p>
 <p>从PC-A向PC-C发送ping请求。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
-             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212558358.png">
+        <img src="/images/blog/20251228212558358.png"
+             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）"
+             
+             loading="lazy" decoding="async" width="783" height="456"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在产生感兴趣流量后验证隧道。</strong></p>
 <p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量大于0，这表明IPsec VPN隧道正在工作。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
-             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212600560.png">
+        <img src="/images/blog/20251228212600560.png"
+             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE"
+             
+             loading="lazy" decoding="async" width="975" height="945"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：创建非感兴趣流量。</strong></p>
 <p>从PC-A向PC-B发送ping请求。注：从路由器R1向PC-C或R3向PC-A发送ping请求不属于感兴趣流量。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
-             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212602410.png">
+        <img src="/images/blog/20251228212602410.png"
+             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms"
+             
+             loading="lazy" decoding="async" width="850" height="456"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤5：再次验证隧道。</strong></p>
 <p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量没有改变，这证实了非感兴趣流量并未被加密。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
-             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212604285.png">
+        <img src="/images/blog/20251228212604285.png"
+             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3"
+             
+             loading="lazy" decoding="async" width="955" height="892"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤6：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息以及已完成的必要组件验证。</p>
 <h3 id="实验脚本">实验脚本：</h3><p><strong>R1:</strong></p>
@@ -341,26 +333,24 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:36 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</guid>
-      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212606259.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212606259.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1036&#34; height=&#34;439&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212606259.png">
+        <img src="/images/blog/20251228212606259.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1036" height="439"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标：</h3><ul>
 <li>
 <p>配置OSPF MD5身份验证。</p>
@@ -467,16 +457,15 @@ R3(config-if)# crypto map VPN-MAP</p>
 <h3 id="第二部分配置ntp">第二部分：配置NTP</h3><p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
 <p>a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。</p>
 <p>b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
-             alt="PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212608233.png">
+        <img src="/images/blog/20251228212608233.png"
+             alt="PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月"
+             
+             loading="lazy" decoding="async" width="957" height="845"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：将R1、R2和R3配置为NTP客户端。</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -848,29 +837,27 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;
+             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;988&#34; height=&#34;616&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212724150.png">
+        <img src="/images/blog/20251228212724150.png"
+             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="988" height="616"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
@@ -1080,26 +1067,24 @@ Security Violation Count : 0</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>b. 从C1向C2发送Ping请求，然后再次输入 <code>show port-security interface f0/1</code> 命令，以验证交换机是否已学会C1的MAC地址。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="C1 ping 10.1.1.11 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212726209.png">
+        <img src="/images/blog/20251228212726209.png"
+             alt="C1 ping 10.1.1.11 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="892" height="603"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212728180.png">
+        <img src="/images/blog/20251228212728180.png"
+             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址"
+             
+             loading="lazy" decoding="async" width="729" height="343"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：禁用未使用的端口。</strong></p>
 <p>禁用当前所有未使用的端口。</p>
 <blockquote>
@@ -1258,28 +1243,26 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;
+             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;963&#34; height=&#34;310&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
 &lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212710707.png">
+        <img src="/images/blog/20251228212710707.png"
+             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="963" height="310"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
 <p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
 <h3 id="背景场景">背景/场景</h3><p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
@@ -1373,16 +1356,15 @@ R1(config-if)# ip access-group 100 in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC1 ping Server。如果无法成功ping通，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="PC ping 172.22.34.62 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212712649.png">
+        <img src="/images/blog/20251228212712649.png"
+             alt="PC ping 172.22.34.62 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="757" height="355"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC1 FTP至Server。用户名和密码均为cisco。</p>
 <blockquote>
 <p>PC&gt; ftp 172.22.34.62</p>
@@ -1391,27 +1373,25 @@ R1(config-if)# ip access-group 100 in</p>
 <blockquote>
 <p>ftp&gt; quit</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212715058.png">
+        <img src="/images/blog/20251228212715058.png"
+             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出"
+             
+             loading="lazy" decoding="async" width="613" height="399"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 从PC1 ping PC2。由于未明确允许此流量，目标主机应无法到达。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212716887.png">
+        <img src="/images/blog/20251228212716887.png"
+             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）"
+             
+             loading="lazy" decoding="async" width="801" height="334"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
 <p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
 <blockquote>
@@ -1461,38 +1441,35 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC2 ping Server。如果ping成功，则继续进行下一步；如果不成功，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212718693.png">
+        <img src="/images/blog/20251228212718693.png"
+             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="754" height="346"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC2通过FTP连接到Server。连接应该失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212720616.png">
+        <img src="/images/blog/20251228212720616.png"
+             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP"
+             
+             loading="lazy" decoding="async" width="640" height="403"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>c. 在PC2上打开网页浏览器，将Server的IP地址作为URL输入。连接应该成功建立。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212722197.png">
+        <img src="/images/blog/20251228212722197.png"
+             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页"
+             
+             loading="lazy" decoding="async" width="940" height="501"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
   </channel>

@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
@@ -68,16 +68,15 @@
 </ul>
 </li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
-             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719188.png">
+        <img src="/images/blog/20260305220719188.png"
+             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1607" height="1475"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2><p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
 <p>在 HFish 服务器或能访问 HFish 的机器上创建 /root/generate_feed.py：（需修改HFISH_HOST、API_KEY、OUTPUT_TXT的值，第10行）</p>
 <div class="highlight"><div class="chroma">
@@ -392,16 +391,15 @@
 <li>勾选 <strong>&ldquo;Keep my email addresses private&rdquo;</strong>。</li>
 <li>你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。</li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
-             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719189.png">
+        <img src="/images/blog/20260305220719189.png"
+             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」"
+             
+             loading="lazy" decoding="async" width="2024" height="1167"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>配置方法：</strong>（修改5. 配置 Git 身份）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -590,16 +588,15 @@
 <ul>
 <li>
 <p>打开 GitHub 仓库 -&gt; <strong>Settings</strong> -&gt; <strong>Deploy keys</strong> -&gt; <strong>Add deploy key</strong>。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
-             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719190.png">
+        <img src="/images/blog/20260305220719190.png"
+             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮"
+             
+             loading="lazy" decoding="async" width="2507" height="1401"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p><strong>Title</strong>: HFish Server</p>
@@ -609,16 +606,15 @@
 </li>
 <li>
 <p><strong>重要</strong>：勾选 <strong>Allow write access</strong>（允许写入权限），否则无法推送！</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
-             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719191.png">
+        <img src="/images/blog/20260305220719191.png"
+             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问"
+             
+             loading="lazy" decoding="async" width="1256" height="801"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 </ul>
 </li>
@@ -730,16 +726,15 @@
 <li><strong>Linux 服务器</strong>：写个脚本 wget 你的文件并导入 ipset。</li>
 </ol>
 <p><strong>效果展示：</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
-             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719192.png">
+        <img src="/images/blog/20260305220719192.png"
+             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表"
+             
+             loading="lazy" decoding="async" width="897" height="1358"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
   </channel>

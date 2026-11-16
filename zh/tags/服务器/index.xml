@@ -10,7 +10,7 @@
       <link>https://yuexuan521.github.io/og-default.png</link>
     </image>
     <generator>Hugo -- 0.160.1</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3 ·</copyright>
     <lastBuildDate>Thu, 05 Mar 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://yuexuan521.github.io/zh/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
@@ -68,16 +68,15 @@
 </ul>
 </li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719188.png" 
-             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719188.png">
+        <img src="/images/blog/20260305220719188.png"
+             alt="HFish 系统配置 → API 配置，红框标出 api_key 输入框"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1607" height="1475"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="第二步编写自动化提取脚本-python">第二步：编写自动化提取脚本 (Python)</h2><p>我们需要编写一个 Python 脚本，完成“拉取数据 -&gt; 过滤白名单 -&gt; 格式化 -&gt; 写入文件”的动作。</p>
 <p>在 HFish 服务器或能访问 HFish 的机器上创建 /root/generate_feed.py：（需修改HFISH_HOST、API_KEY、OUTPUT_TXT的值，第10行）</p>
 <div class="highlight"><div class="chroma">
@@ -392,16 +391,15 @@
 <li>勾选 <strong>&ldquo;Keep my email addresses private&rdquo;</strong>。</li>
 <li>你会看到一个类似这样的邮箱：12345678+你的用户名@users.noreply.github.com。</li>
 </ol>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719189.png" 
-             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719189.png">
+        <img src="/images/blog/20260305220719189.png"
+             alt="GitHub 账户的电子邮件设置，红框为已开启的「保持我的电子邮件地址的私密性」"
+             
+             loading="lazy" decoding="async" width="2024" height="1167"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>配置方法：</strong>（修改5. 配置 Git 身份）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -590,16 +588,15 @@
 <ul>
 <li>
 <p>打开 GitHub 仓库 -&gt; <strong>Settings</strong> -&gt; <strong>Deploy keys</strong> -&gt; <strong>Add deploy key</strong>。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719190.png" 
-             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719190.png">
+        <img src="/images/blog/20260305220719190.png"
+             alt="仓库 Settings → 部署密钥，红框标出「添加部署密钥」按钮"
+             
+             loading="lazy" decoding="async" width="2507" height="1401"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p><strong>Title</strong>: HFish Server</p>
@@ -609,16 +606,15 @@
 </li>
 <li>
 <p><strong>重要</strong>：勾选 <strong>Allow write access</strong>（允许写入权限），否则无法推送！</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719191.png" 
-             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719191.png">
+        <img src="/images/blog/20260305220719191.png"
+             alt="部署密钥/新添页面：标题填 HFish Server，并勾选允许写访问"
+             
+             loading="lazy" decoding="async" width="1256" height="801"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 </ul>
 </li>
@@ -730,16 +726,15 @@
 <li><strong>Linux 服务器</strong>：写个脚本 wget 你的文件并导入 ipset。</li>
 </ol>
 <p><strong>效果展示：</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305220719192.png" 
-             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305220719192.png">
+        <img src="/images/blog/20260305220719192.png"
+             alt="浏览器打开 ip_list.txt，内容是 HFish 威胁情报 IP 列表"
+             
+             loading="lazy" decoding="async" width="897" height="1358"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -748,28 +743,26 @@
       <pubDate>Thu, 05 Mar 2026 12:00:00 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BAhfish%E8%9C%9C%E7%BD%90%E5%85%A8%E6%B5%81%E7%A8%8B-%E6%8A%A5%E5%91%8A%E5%AF%BC%E5%87%BA%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;p&gt;闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34;&gt;
-        &lt;img src=&#34;https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png&#34; 
-             alt=&#34;云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20260305215310735.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20260305215310735.png&#34;
+             alt=&#34;云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1000&#34; height=&#34;50&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://hfish.net/#/&#34;target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;HFish蜜罐官网：https://hfish.net/#/&lt;/a&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>闲来无事，用一台闲置的华为云服务器配置个HFish蜜罐，系统是CentOS 8。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310735.png" 
-             alt="云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310735.png">
+        <img src="/images/blog/20260305215310735.png"
+             alt="云服务器规格：华东-上海一、2 核 2 GiB、系统盘 40 GiB、CentOS 8.0 64bit"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1000" height="50"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><a href="https://hfish.net/#/"target="_blank" rel="noopener noreferrer">HFish蜜罐官网：https://hfish.net/#/</a></p>
 <h2 id="蜜罐基础知识">蜜罐基础知识</h2><h3 id="蜜罐的定义">蜜罐的定义</h3><p>蜜罐是一种主动防御的欺骗技术，其核心思想是通过部署虚假的主机、服务或信息作为诱饵，诱导攻击者实施攻击。在此过程中，蜜罐能够记录攻击行为、分析攻击手法与工具，并推断攻击者的意图，从而帮助防御方更清晰地识别威胁，并针对性地提升真实系统的安全防护能力。[<a href="https://baike.baidu.com/item/%e8%9c%9c%e7%bd%90%e6%8a%80%e6%9c%af/9165942"target="_blank" rel="noopener noreferrer">蜜罐技术_百度百科</a>]</p>
 <h3 id="蜜罐的优势">蜜罐的优势</h3><ol>
@@ -794,27 +787,25 @@
 </span></span><span class="line"><span class="cl"><span class="n">firewall</span><span class="o">-</span><span class="n">cmd</span> <span class="o">--</span><span class="n">reload</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310736.png" 
-             alt="firewall-cmd 放行 4433、4434 端口并 reload，均返回 success" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310736.png">
+        <img src="/images/blog/20260305215310736.png"
+             alt="firewall-cmd 放行 4433、4434 端口并 reload，均返回 success"
+             
+             loading="lazy" decoding="async" width="869" height="216"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>可能提示需要开启防火墙，使用如下命令：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310737.png" 
-             alt="执行 firewall-cmd 时报错 FirewallD is not running" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310737.png">
+        <img src="/images/blog/20260305215310737.png"
+             alt="执行 firewall-cmd 时报错 FirewallD is not running"
+             
+             loading="lazy" decoding="async" width="839" height="68"/>
     </a>
-</div></p>
+</div>
+</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -827,16 +818,15 @@
 </span></span><span class="line"><span class="cl">systemctl status firewalld
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310738.png" 
-             alt="systemctl 启动 firewalld 后，状态变为 active (running)" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310738.png">
+        <img src="/images/blog/20260305215310738.png"
+             alt="systemctl 启动 firewalld 后，状态变为 active (running)"
+             
+             loading="lazy" decoding="async" width="1232" height="688"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="一键部署hfish蜜罐">一键部署HFish蜜罐</h3><p>以root权限运行以下一键部署命令，输入“1”，安装并运行。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -846,27 +836,25 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">bash &lt;(curl -sS -L https://hfish.net/webinstall.sh)
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310739.png" 
-             alt="执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310739.png">
+        <img src="/images/blog/20260305215310739.png"
+             alt="执行 HFish 一键安装脚本，显示 HFish v3.3.6 与 Input: 1"
+             
+             loading="lazy" decoding="async" width="1019" height="413"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>出现下面提示，表示成功安装。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310740.png" 
-             alt="安装完成输出 install hfish success! 与 install hfish finished!" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310740.png">
+        <img src="/images/blog/20260305215310740.png"
+             alt="安装完成输出 install hfish success! 与 install hfish finished!"
+             
+             loading="lazy" decoding="async" width="828" height="499"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="安装mysql">安装MySQL</h2><h3 id="使用-yum-安装">使用 yum 安装</h3><p>首先，尝试一下直接使用 yum 安装 MySQL</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -892,16 +880,15 @@
 </div>
 </div><p>表示我们没有添加安装包的源信息，需要安装 MySQL rpm 源信息</p>
 <h3 id="安装-mysql-rpm-源信息">安装 MySQL rpm 源信息</h3><p>打开 <a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/downloads/repo/yum/"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/downloads/repo/yum/</a></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310741.png" 
-             alt="MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310741.png">
+        <img src="/images/blog/20260305215310741.png"
+             alt="MySQL Yum 仓库页面，红框标出 CentOS 8 与 CentOS 7 的 rpm 包"
+             
+             loading="lazy" decoding="async" width="1662" height="1352"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>根据你的系统版本，选择对应的安装包，例如我的是CentOS 7.5，这个系统的Linux内核是 Linux 7，所以我选择了红框内的地址，大家依次类推。</p>
 <p>拼接下载地址头：<a href="https://link.zhihu.com/?target=http%3A//dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm"target="_blank" rel="noopener noreferrer">http://dev.mysql.com/get/</a>，得到以下地址</p>
 <div class="highlight"><div class="chroma">
@@ -957,16 +944,15 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum module disable mysql
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310742.png" 
-             alt="执行 yum module disable mysql 并确认，输出 Complete!" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310742.png">
+        <img src="/images/blog/20260305215310742.png"
+             alt="执行 yum module disable mysql 并确认，输出 Complete!"
+             
+             loading="lazy" decoding="async" width="1361" height="441"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="再次安装">再次安装</h3><p>再尝试使用 yum 安装MySQL</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1060,27 +1046,25 @@
 </span></span><span class="line"><span class="cl">show databases;
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310743.png" 
-             alt="在 mysql 中建库 HFish001，随后 show databases 确认已存在" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310743.png">
+        <img src="/images/blog/20260305215310743.png"
+             alt="在 mysql 中建库 HFish001，随后 show databases 确认已存在"
+             
+             loading="lazy" decoding="async" width="491" height="513"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="登录web界面">登录Web界面</h2><p>华为云服务器需要添加一条安全组规则，允许访问4433端口</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310745.png" 
-             alt="云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310745.png">
+        <img src="/images/blog/20260305215310745.png"
+             alt="云安全组规则：允许 TCP:4433，源地址 0.0.0.0/0"
+             
+             loading="lazy" decoding="async" width="1566" height="75"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>完成安装后，通过以下网址、账号密码登录</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1103,71 +1087,65 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">注意：访问管理端的URL中必须有/web/目录
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310746.png" 
-             alt="HFish 登录页，包含账号、密码与验证码输入框" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310746.png">
+        <img src="/images/blog/20260305215310746.png"
+             alt="HFish 登录页，包含账号、密码与验证码输入框"
+             
+             loading="lazy" decoding="async" width="2553" height="1486"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>初次配置需要选择数据库，端口默认3306，数据库名：HFish001，用户名密码为MySQL的数据库密码</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310747.png" 
-             alt="HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310747.png">
+        <img src="/images/blog/20260305215310747.png"
+             alt="HFish 数据库配置页，可选 SQLite 或 MySQL/MariaDB，并填写地址、端口、库名等"
+             
+             loading="lazy" decoding="async" width="2500" height="1488"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>配置成功，等待重启</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310748.png" 
-             alt="提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310748.png">
+        <img src="/images/blog/20260305215310748.png"
+             alt="提示「恭喜您！蜜罐设备已成功上线」，下方是三条产品特点"
+             
+             loading="lazy" decoding="async" width="2560" height="1492"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>看到下方的管理界面</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310749.png" 
-             alt="HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310749.png">
+        <img src="/images/blog/20260305215310749.png"
+             alt="HFish 首页大屏：节点 1/1、蜜罐 7/7，以及攻击链各项计数"
+             
+             loading="lazy" decoding="async" width="2529" height="1492"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="配置蜜罐服务">配置蜜罐服务</h2><p>选择“节点管理”，可以配置蜜罐服务</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310750.png" 
-             alt="节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310750.png">
+        <img src="/images/blog/20260305215310750.png"
+             alt="节点管理详情：内置节点 192.168.3.152 与各蜜罐服务的在线状态"
+             
+             loading="lazy" decoding="async" width="2557" height="1440"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>华为云服务器需要相应添加安全组规则，开放端口</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310751.png" 
-             alt="云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310751.png">
+        <img src="/images/blog/20260305215310751.png"
+             alt="云安全组规则：自定义 TCP 8080,9215,6379,9200,9000 允许所有来源，描述为「蜜罐开放端口」"
+             
+             loading="lazy" decoding="async" width="1614" height="225"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>CentOS内的firewall也需要开放相应端口</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1186,114 +1164,104 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>测试http://[ip]:[port]，相应的服务已经可以访问了</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310752.png" 
-             alt="仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310752.png">
+        <img src="/images/blog/20260305215310752.png"
+             alt="仿冒「业务协作平台 6.0」的登录页，作为钓鱼蜜罐"
+             
+             loading="lazy" decoding="async" width="2551" height="1273"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>稍等片刻，就可以看到攻击者的记录了</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310753.png" 
-             alt="攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310753.png">
+        <img src="/images/blog/20260305215310753.png"
+             alt="攻击列表：多条 TCP端口监听与海康摄像头蜜罐的被攻击记录"
+             
+             loading="lazy" decoding="async" width="2555" height="1055"/>
     </a>
-</div></p>
+</div>
+</p>
 <h2 id="其它配置">其它配置</h2><h3 id="配置白名单">配置白名单</h3><p>在系统配置内，选择“白名单配置”，填入自己的网段可以减少管理蜜罐时产生的误报</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310754.png" 
-             alt="系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310754.png">
+        <img src="/images/blog/20260305215310754.png"
+             alt="系统配置 → 白名单配置，本地白名单里填了 111.111.111.0/24"
+             
+             loading="lazy" decoding="async" width="1855" height="1464"/>
     </a>
-</div></p>
-<h3 id="数据大屏">数据大屏</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310755.png" 
-             alt="攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<h3 id="数据大屏">数据大屏</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310755.png">
+        <img src="/images/blog/20260305215310755.png"
+             alt="攻击态势大屏：世界地图上标注各国攻击来源与近期攻击事件"
+             
+             loading="lazy" decoding="async" width="2553" height="1485"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>其它功能详见HFish蜜罐功能手册：[<a href="https://hfish.net/#/README"target="_blank" rel="noopener noreferrer">快速了解HFish</a>]</p>
 <h2 id="报告导出word无法打开问题解决">报告导出word无法打开问题解决</h2><p>我在使用HFish蜜罐导出自动生成的周报时遇到问题，下载下来的word（.docx）文件无法打开，显示错误如下。网上修复的方法试了很多，最后找到一种真正有效的方法。</p>
 <p>可以在网站上预览：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310756.png" 
-             alt="报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310756.png">
+        <img src="/images/blog/20260305215310756.png"
+             alt="报告列表：周报(2025-11-03~2025-11-09)，976.3 KB，状态已生成"
+             
+             loading="lazy" decoding="async" width="2256" height="182"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310757.png" 
-             alt="报告正文首页：HFish 分析报告的概述与核心摘要" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310757.png">
+        <img src="/images/blog/20260305215310757.png"
+             alt="报告正文首页：HFish 分析报告的概述与核心摘要"
+             
+             loading="lazy" decoding="async" width="1223" height="557"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>通过Word打开显示错误如下：</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310758.png" 
-             alt="Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310758.png">
+        <img src="/images/blog/20260305215310758.png"
+             alt="Word 弹窗：在周报 docx 中发现无法读取的内容，询问是否恢复"
+             
+             loading="lazy" decoding="async" width="1348" height="308"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310759.png" 
-             alt="Word 报错弹窗：在试图打开文件时遇到错误" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310759.png">
+        <img src="/images/blog/20260305215310759.png"
+             alt="Word 报错弹窗：在试图打开文件时遇到错误"
+             
+             loading="lazy" decoding="async" width="605" height="410"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>我的Office版本为2021，2019版本也会遇到这个问题。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310760.png" 
-             alt="产品信息：Microsoft Office 家庭和学生版 2021" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310760.png">
+        <img src="/images/blog/20260305215310760.png"
+             alt="产品信息：Microsoft Office 家庭和学生版 2021"
+             
+             loading="lazy" decoding="async" width="567" height="243"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="解决方法">解决方法：</h3><p>使用WPS可以正常打开下载下来的。或者用WPS另存为.doc文件后，word也可以正常打开。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png">
-        <img src="https://raw.githubusercontent.com/yuexuan521/image/main/20260305215310761.png" 
-             alt="WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20260305215310761.png">
+        <img src="/images/blog/20260305215310761.png"
+             alt="WPS 文件菜单 → 另存为 → 选择 Word 文件 (*.docx)"
+             
+             loading="lazy" decoding="async" width="707" height="1275"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1301,26 +1269,27 @@
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</link>
       <pubDate>Thu, 23 Jan 2025 16:37:23 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-and-verify-a-site-to-site-ipsec-vpn-using-cli%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE%E5%92%8C%E9%AA%8C%E8%AF%81%E7%AB%99%E7%82%B9%E5%88%B0%E7%AB%99%E7%82%B9ipsec-vpn/</guid>
-      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn&#34;&gt;PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212547156.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212547156.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1036&#34; height=&#34;498&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212547156.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;验证整个网络的连通性。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---使用命令行界面配置和验证站点到站点ipsec-vpn">PacketTracer - 使用命令行界面配置和验证站点到站点IPsec VPN</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212547156.png">
+        <img src="/images/blog/20251228212547156.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A/B/C 的地址与网关"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1036" height="498"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>验证整个网络的连通性。</p>
@@ -1331,28 +1300,26 @@
 </ul>
 <h3 id="背景场景">背景/场景</h3><p>网络拓扑图显示了三个路由器。您的任务是配置R1和R3，以便在各自局域网（LAN）之间的流量流动时支持站点到站点的IPsec VPN。IPsec VPN隧道从R1经由R2到达R3。R2充当通过设备，并不了解VPN的存在。IPsec提供了一种在不受保护的网络（如互联网）上安全传输敏感信息的方法。IPsec在网络层运行，负责保护并验证参与IPsec设备（对等体）之间的IP数据包，例如Cisco路由器。</p>
 <p><strong>ISAKMP阶段1策略参数</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212549003.png" 
-             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212549003.png">
+        <img src="/images/blog/20251228212549003.png"
+             alt="ISAKMP 策略参数表：AES 256、SHA-1、pre-share、DH 5、86400 秒、预共享密钥 vpnpa55"
+             
+             loading="lazy" decoding="async" width="1056" height="346"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>注意：加粗参数为默认值。只有非加粗参数需要明确配置。</p>
 <p><strong>IPsec阶段2策略参数</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212550698.png" 
-             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212550698.png">
+        <img src="/images/blog/20251228212550698.png"
+             alt="IPsec 参数表：VPN-SET（esp-aes &#43; esp-sha-hmac）、对端地址、access-list 110、VPN-MAP、ipsec-isakmp"
+             
+             loading="lazy" decoding="async" width="828" height="409"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>路由器已预先配置以下内容：</p>
 <p>· 控制台线路密码： <strong>ciscoconpa55</strong></p>
 <p>· vty线路密码： <strong>ciscovtypa55</strong></p>
@@ -1361,28 +1328,26 @@
 <p>· OSPF进程号 <strong>101</strong></p>
 <h3 id="第一部分在r1上配置ipsec参数">第一部分：在R1上配置IPsec参数</h3><p><strong>步骤1：测试连通性。</strong></p>
 <p>从PC-A向PC-C发送ping请求。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212552384.png" 
-             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212552384.png">
+        <img src="/images/blog/20251228212552384.png"
+             alt="PC-A ping 192.168.3.3，首包超时后连通，平均 9 ms"
+             
+             loading="lazy" decoding="async" width="829" height="454"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：启用安全技术包。</strong></p>
 <p>a. 在R1上执行 <code>show version</code> 命令查看安全技术包许可证信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212554645.png" 
-             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212554645.png">
+        <img src="/images/blog/20251228212554645.png"
+             alt="R1 的 license 输出：ipbasek9 为 Permanent，securityk9 为 Evaluation"
+             
+             loading="lazy" decoding="async" width="904" height="412"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 如果未启用安全技术包，请使用以下命令启用该包。</p>
 <blockquote>
 <p>R1(config)# license boot module c1900 technology-package securityk9</p>
@@ -1466,64 +1431,59 @@ R3(config-if)# crypto map VPN-MAP</p>
 </blockquote>
 <h3 id="第三部分验证ipsec-vpn">第三部分：验证IPsec VPN</h3><p><strong>步骤1：在出现感兴趣流量之前验证隧道。</strong></p>
 <p>在R1上执行 <code>show crypto ipsec sa</code> 命令。注意封装、加密、解封装和解密的包数量均设置为 <strong>0</strong> 。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212557007.png" 
-             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212557007.png">
+        <img src="/images/blog/20251228212557007.png"
+             alt="R1 执行 show crypto ipsec sa，加密与解密计数都是 0，SA 尚未建立"
+             
+             loading="lazy" decoding="async" width="955" height="892"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：创建感兴趣流量。</strong></p>
 <p>从PC-A向PC-C发送ping请求。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212558358.png" 
-             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212558358.png">
+        <img src="/images/blog/20251228212558358.png"
+             alt="PC-A 再 ping 192.168.3.3，首包超时后通，25% 丢包（隧道正在协商）"
+             
+             loading="lazy" decoding="async" width="783" height="456"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在产生感兴趣流量后验证隧道。</strong></p>
 <p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量大于0，这表明IPsec VPN隧道正在工作。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212600560.png" 
-             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212600560.png">
+        <img src="/images/blog/20251228212600560.png"
+             alt="R1 的 show crypto ipsec sa：encaps/decaps 各 3，入向 ESP SA 的 spi 与 Status ACTIVE"
+             
+             loading="lazy" decoding="async" width="975" height="945"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：创建非感兴趣流量。</strong></p>
 <p>从PC-A向PC-B发送ping请求。注：从路由器R1向PC-C或R3向PC-A发送ping请求不属于感兴趣流量。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212602410.png" 
-             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212602410.png">
+        <img src="/images/blog/20251228212602410.png"
+             alt="PC-A ping 192.168.2.3，25% 丢包，平均 20 ms"
+             
+             loading="lazy" decoding="async" width="850" height="456"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤5：再次验证隧道。</strong></p>
 <p>在R1上重新执行 <code>show crypto ipsec sa</code> 命令。注意包的数量没有改变，这证实了非感兴趣流量并未被加密。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212604285.png" 
-             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212604285.png">
+        <img src="/images/blog/20251228212604285.png"
+             alt="再次查看 IPsec SA，入向 SA 仍为 ACTIVE，计数器保持 3/3"
+             
+             loading="lazy" decoding="async" width="955" height="892"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤6：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息以及已完成的必要组件验证。</p>
 <h3 id="实验脚本">实验脚本：</h3><p><strong>R1:</strong></p>
@@ -1623,26 +1583,24 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:36 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-cisco-routers-for-syslog-ntp-and-ssh-operations%E9%85%8D%E7%BD%AEcisco%E8%B7%AF%E7%94%B1%E5%99%A8%E4%BB%A5%E5%AE%9E%E7%8E%B0syslogntp/</guid>
-      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---配置cisco路由器以实现syslogntp和ssh功能&#34;&gt;PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212606259.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212606259.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1036&#34; height=&#34;439&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212606259.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---配置cisco路由器以实现syslogntp和ssh功能">PacketTracer - 配置Cisco路由器以实现Syslog、NTP和SSH功能</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212606259.png">
+        <img src="/images/blog/20251228212606259.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，以及 PC-A、PC-B、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1036" height="439"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标：</h3><ul>
 <li>
 <p>配置OSPF MD5身份验证。</p>
@@ -1749,16 +1707,15 @@ R3(config-if)# crypto map VPN-MAP</p>
 <h3 id="第二部分配置ntp">第二部分：配置NTP</h3><p><strong>步骤1：在PC-A上启用NTP身份验证。</strong></p>
 <p>a. 在PC-A上，点击服务标签下的“NTP”以确认NTP服务已启用。</p>
 <p>b. 为配置NTP身份验证，请点击“认证”下的“启用”。使用密钥1和密码NTPpa55进行身份验证。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212608233.png" 
-             alt="PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212608233.png">
+        <img src="/images/blog/20251228212608233.png"
+             alt="PC-A 的 Services → NTP 页面：启用认证，Key 1、密码 NTPpa55，日历停在 2024 年 1 月"
+             
+             loading="lazy" decoding="async" width="957" height="845"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：将R1、R2和R3配置为NTP客户端。</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -2130,29 +2087,27 @@ R3(config-if)# crypto map VPN-MAP</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:24 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-aaa-authentication-on-cisco-routers%E5%9C%A8%E6%80%9D%E7%A7%91%E8%B7%AF%E7%94%B1%E5%99%A8%E4%B8%8A%E9%85%8D%E7%BD%AE-aaa-%E8%AE%A4%E8%AF%81/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png&#34; 
-             alt=&#34;地址规划表：R1/R2/R3 各接口，TACACS&amp;#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---在思科路由器上配置-aaa-认证&#34;&gt;Packet Tracer - 在思科路由器上配置 AAA 认证&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212534006.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212534006.png&#34;
+             alt=&#34;地址规划表：R1/R2/R3 各接口，TACACS&amp;#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1024&#34; height=&#34;549&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212534006.png" 
-             alt="地址规划表：R1/R2/R3 各接口，TACACS&#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---在思科路由器上配置-aaa-认证">Packet Tracer - 在思科路由器上配置 AAA 认证</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212534006.png">
+        <img src="/images/blog/20251228212534006.png"
+             alt="地址规划表：R1/R2/R3 各接口，TACACS&#43; Server 192.168.2.2、RADIUS Server 192.168.3.2，以及 PC-A/B/C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1024" height="549"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在R1上配置本地用户账户，并使用本地AAA进行控制台和vty线路的身份验证。</p>
@@ -2244,16 +2199,15 @@ R1(config-line)# login authentication default</p>
 <li>使用本地数据库验证用户EXEC登录过程。</li>
 </ul>
 <p>通过以上配置后，可以在R1的控制台上用Admin1账户和对应的密码admin1pa55进行登录，验证本地AAA身份验证是否生效。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212536693.png" 
-             alt="登录提示输入 Username: Admin1，密码通过后进入 R1&gt;" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212536693.png">
+        <img src="/images/blog/20251228212536693.png"
+             alt="登录提示输入 Username: Admin1，密码通过后进入 R1&gt;"
+             
+             loading="lazy" decoding="async" width="568" height="147"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分在r1上配置本地aaa认证以实现vty线路访问">第二部分：在R1上配置本地AAA认证以实现vty线路访问</h3><p><strong>步骤1：配置域名和加密密钥以配合SSH使用</strong>
 a. 在R1上将 <strong>ccnasecurity.com</strong> 设置为域名。
 b. 创建一个1024位的RSA加密密钥。</p>
@@ -2302,16 +2256,15 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <p><strong>步骤4：验证AAA认证方法</strong></p>
 <ul>
 <li>从PC-A的命令提示符处通过SSH连接到R1，验证SSH配置及AAA身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212538090.png" 
-             alt="PC 上执行 ssh -l Admin1 192.168.1.1，登录后进入 R1&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212538090.png">
+        <img src="/images/blog/20251228212538090.png"
+             alt="PC 上执行 ssh -l Admin1 192.168.1.1，登录后进入 R1&gt;"
+             
+             loading="lazy" decoding="async" width="487" height="168"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <h3 id="第三部分在r2上配置基于tacacs服务器的aaa认证">第三部分：在R2上配置基于TACACS+服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
@@ -2324,16 +2277,15 @@ R1(config-line)# login authentication SSH-LOGIN</p>
 <ul>
 <li>点击TACACS+ Server，查看“服务”选项卡中的AAA设置，确认存在针对R2的网络配置条目和针对Admin2的用户设置条目。</li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212539539.png" 
-             alt="TACACS&#43; Server 的 AAA 配置：客户端 R2 192.168.2.1、密钥 tacacspa55，用户 Admin2/admin2pa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212539539.png">
+        <img src="/images/blog/20251228212539539.png"
+             alt="TACACS&#43; Server 的 AAA 配置：客户端 R2 192.168.2.1、密钥 tacacspa55，用户 Admin2/admin2pa55"
+             
+             loading="lazy" decoding="async" width="953" height="847"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在R2上配置TACACS+服务器详细信息</strong></p>
 <ul>
 <li>在R2上配置AAA TACACS+服务器IP地址和共享密钥。</li>
@@ -2363,16 +2315,15 @@ R2(config-line)#login authentication default</p>
 <p><strong>步骤6：验证AAA认证方法</strong></p>
 <ul>
 <li>通过AAA TACACS+服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R2并观察其是否成功通过TACACS+服务器进行身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212542088.png" 
-             alt="登录时输入 Username: Admin2，认证通过进入 R2&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212542088.png">
+        <img src="/images/blog/20251228212542088.png"
+             alt="登录时输入 Username: Admin2，认证通过进入 R2&gt;"
+             
+             loading="lazy" decoding="async" width="388" height="157"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <h3 id="第四部分在r3上配置基于radius服务器的aaa认证">第四部分：在R3上配置基于RADIUS服务器的AAA认证</h3><p><strong>步骤1：配置备用本地数据库条目（Admin）</strong></p>
 <ul>
@@ -2385,16 +2336,15 @@ R2(config-line)#login authentication default</p>
 <ul>
 <li>点击RADIUS服务器，并查看“服务”选项卡中的AAA设置。注意其中包含针对R3的网络配置条目和针对Admin3的用户设置条目。</li>
 </ul>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212543941.png" 
-             alt="RADIUS Server 的 AAA 配置：客户端 R3 192.168.3.1、密钥 radiuspa55，用户 Admin3/admin3pa55" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212543941.png">
+        <img src="/images/blog/20251228212543941.png"
+             alt="RADIUS Server 的 AAA 配置：客户端 R3 192.168.3.1、密钥 radiuspa55，用户 Admin3/admin3pa55"
+             
+             loading="lazy" decoding="async" width="951" height="851"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在R3上配置RADIUS服务器详细信息</strong></p>
 <ul>
 <li>在R3上配置AAA RADIUS服务器IP地址和共享密钥。</li>
@@ -2424,16 +2374,15 @@ R3(config-line)#login authentication default</p>
 <p><strong>步骤6：验证AAA认证方法</strong></p>
 <ul>
 <li>通过AAA RADIUS服务器验证用户EXEC登录。可以尝试从另一设备通过console或SSH等方式登录R3并观察其是否成功通过RADIUS服务器进行身份验证。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212545768.png" 
-             alt="登录时输入 Username: Admin3，认证通过进入 R3&gt;" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212545768.png">
+        <img src="/images/blog/20251228212545768.png"
+             alt="登录时输入 Username: Admin3，认证通过进入 R3&gt;"
+             
+             loading="lazy" decoding="async" width="445" height="135"/>
     </a>
-</div></li>
+</div>
+</li>
 </ul>
 <p><strong>步骤7：检查结果</strong></p>
 <ul>
@@ -2446,29 +2395,27 @@ R3(config-line)#login authentication default</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:48:13 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-security%E7%AC%AC%E4%BA%8C%E5%B1%82%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png&#34; 
-             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层安全配置任务&#34;&gt;PacketTracer - 第二层安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212724150.png&#34;
+             alt=&#34;实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;988&#34; height=&#34;616&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;确保将中心交换机（3560型号）设置为根桥。&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212724150.png" 
-             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层安全配置任务">PacketTracer - 第二层安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212724150.png">
+        <img src="/images/blog/20251228212724150.png"
+             alt="实验拓扑：R1 经 Se0/0/0 接 Cloud0，Central 3560-24PS 下挂 SW-1/SW-2，两台交换机交叉互联并接 C1–C4、D1–D4"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="988" height="616"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>确保将中心交换机（3560型号）设置为根桥。</p>
@@ -2678,26 +2625,24 @@ Security Violation Count : 0</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>b. 从C1向C2发送Ping请求，然后再次输入 <code>show port-security interface f0/1</code> 命令，以验证交换机是否已学会C1的MAC地址。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212726209.png" 
-             alt="C1 ping 10.1.1.11 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212726209.png">
+        <img src="/images/blog/20251228212726209.png"
+             alt="C1 ping 10.1.1.11 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="892" height="603"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212728180.png" 
-             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212728180.png">
+        <img src="/images/blog/20251228212728180.png"
+             alt="SW-A 上 show port-security int f0/1：已启用、违规动作为 Shutdown、最大 MAC 数 2、已学到 1 个 sticky 地址"
+             
+             loading="lazy" decoding="async" width="729" height="343"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：禁用未使用的端口。</strong></p>
 <p>禁用当前所有未使用的端口。</p>
 <blockquote>
@@ -2856,28 +2801,26 @@ SW-B(config-if-range)#shutdown</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:58 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-extended-acls-scenario-1%E9%85%8D%E7%BD%AE%E6%89%A9%E5%B1%95%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E5%9C%BA%E6%99%AF1/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png&#34; 
-             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---配置扩展访问控制列表---场景1&#34;&gt;Packet Tracer - 配置扩展访问控制列表 - 场景1&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212710707.png&#34;
+             alt=&#34;地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;963&#34; height=&#34;310&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;&lt;p&gt;第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）&lt;/p&gt;
 &lt;p&gt;第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212710707.png" 
-             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98" 
-              
-             loading="lazy"
-        />
+      <content:encoded><![CDATA[<h2 id="packet-tracer---配置扩展访问控制列表---场景1">Packet Tracer - 配置扩展访问控制列表 - 场景1</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212710707.png">
+        <img src="/images/blog/20251228212710707.png"
+             alt="地址表：R1 三个接口 172.22.34.65/.97/.1，Server .62，PC1 .66，PC2 .98"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="963" height="310"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><p>第一部分：配置、应用并验证一个编号扩展访问控制列表（Extended ACL）</p>
 <p>第二部分：配置、应用并验证一个命名扩展访问控制列表（Extended Named ACL）</p>
 <h3 id="背景场景">背景/场景</h3><p>两位员工需要访问由服务器提供的服务。PC1只需要FTP访问权限，而PC2仅需Web访问权限。两台计算机都能ping通服务器，但彼此之间不能互相ping通。</p>
@@ -2971,16 +2914,15 @@ R1(config-if)# ip access-group 100 in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC1 ping Server。如果无法成功ping通，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212712649.png" 
-             alt="PC ping 172.22.34.62 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212712649.png">
+        <img src="/images/blog/20251228212712649.png"
+             alt="PC ping 172.22.34.62 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="757" height="355"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC1 FTP至Server。用户名和密码均为cisco。</p>
 <blockquote>
 <p>PC&gt; ftp 172.22.34.62</p>
@@ -2989,27 +2931,25 @@ R1(config-if)# ip access-group 100 in</p>
 <blockquote>
 <p>ftp&gt; quit</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212715058.png" 
-             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212715058.png">
+        <img src="/images/blog/20251228212715058.png"
+             alt="PC 用 cisco 账号 ftp 172.22.34.62，登录成功后 quit 退出"
+             
+             loading="lazy" decoding="async" width="613" height="399"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 从PC1 ping PC2。由于未明确允许此流量，目标主机应无法到达。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212716887.png" 
-             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212716887.png">
+        <img src="/images/blog/20251228212716887.png"
+             alt="PC ping 172.22.34.96 全部 Destination host unreachable，100% 丢包（被 ACL 阻断）"
+             
+             loading="lazy" decoding="async" width="801" height="334"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分配置应用并验证一个命名扩展访问控制列表">第二部分：配置、应用并验证一个命名扩展访问控制列表</h3><p><strong>步骤 1：配置ACL以允许HTTP访问和ICMP</strong></p>
 <p>a. 命名ACL以“ip”关键字开始。在R1的全局配置模式下，输入以下命令后跟问号。</p>
 <blockquote>
@@ -3059,38 +2999,35 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 </blockquote>
 <p><strong>步骤 3：验证ACL实现</strong></p>
 <p>a. 从PC2 ping Server。如果ping成功，则继续进行下一步；如果不成功，请先验证IP地址是否正确。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212718693.png" 
-             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212718693.png">
+        <img src="/images/blog/20251228212718693.png"
+             alt="同一台 PC ping 172.22.34.62 仍通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="754" height="346"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC2通过FTP连接到Server。连接应该失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212720616.png" 
-             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212720616.png">
+        <img src="/images/blog/20251228212720616.png"
+             alt="PC 访问 ftp 172.22.34.62 报 Error opening ftp (Timed out)，说明扩展 ACL 已阻断 FTP"
+             
+             loading="lazy" decoding="async" width="640" height="403"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>c. 在PC2上打开网页浏览器，将Server的IP地址作为URL输入。连接应该成功建立。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212722197.png" 
-             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212722197.png">
+        <img src="/images/blog/20251228212722197.png"
+             alt="PC2 用浏览器访问 http://172.22.34.62，仍能打开 Cisco Packet Tracer 欢迎页"
+             
+             loading="lazy" decoding="async" width="940" height="501"/>
     </a>
-</div></p>
+</div>
+</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -3098,26 +3035,24 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Thu, 23 Jan 2025 12:47:44 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-layer-2-vlan-security%E7%AC%AC%E4%BA%8C%E5%B1%82vlan%E5%AE%89%E5%85%A8%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/</guid>
-      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png&#34; 
-             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packettracer---第二层vlan安全配置任务&#34;&gt;PacketTracer - 第二层VLAN安全配置任务&lt;/h2&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212730148.png&#34;
+             alt=&#34;实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;964&#34; height=&#34;622&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212730148.png" 
-             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packettracer---第二层vlan安全配置任务">PacketTracer - 第二层VLAN安全配置任务</h2><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212730148.png">
+        <img src="/images/blog/20251228212730148.png"
+             alt="实验拓扑：R1 1941 接 Cloud0，Central 2950T 下挂 SW-1/SW-2，SW-A/SW-B 各接 VLAN10、VLAN5 主机，管理机在 VLAN20"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="964" height="622"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>在SW-1和SW-2之间建立新的冗余链路。</p>
@@ -3147,60 +3082,55 @@ R1(config-if)# ip access-group HTTP_ONLY in</p>
 </li>
 </ul>
 <h3 id="第一部分验证连通性">第一部分：验证连通性</h3><p><strong>步骤1：验证C2（VLAN 10）与C3（VLAN 10）之间的连通性。</strong></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212732555.png" 
-             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212732555.png">
+        <img src="/images/blog/20251228212732555.png"
+             alt="C2 ping 192.168.10.2 通，TTL=128，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="541"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212734673.png" 
-             alt="C3 ping 192.168.10.1 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212734673.png">
+        <img src="/images/blog/20251228212734673.png"
+             alt="C3 ping 192.168.10.1 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="946" height="576"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：验证C2（VLAN 10）与D1（VLAN 5）之间的连通性。</strong>
 注：如果使用简易PDU GUI包，请确保ping两次以允许ARP过程完成。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212736073.png" 
-             alt="C2 ping 192.168.5.2 通，TTL=127" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212736073.png">
+        <img src="/images/blog/20251228212736073.png"
+             alt="C2 ping 192.168.5.2 通，TTL=127"
+             
+             loading="lazy" decoding="async" width="942" height="523"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212738694.png" 
-             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212738694.png">
+        <img src="/images/blog/20251228212738694.png"
+             alt="D1 ping 192.168.10.1，首个包超时，丢包率 25%"
+             
+             loading="lazy" decoding="async" width="936" height="595"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第二部分在sw-1和sw-2之间创建冗余链路">第二部分：在SW-1和SW-2之间创建冗余链路</h3><p><strong>步骤1：连接SW-1和SW-2。</strong></p>
 <p>使用交叉线缆将SW-1的F0/23端口与SW-2的F0/23端口相连。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212740831.png" 
-             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212740831.png">
+        <img src="/images/blog/20251228212740831.png"
+             alt="拓扑局部红框：SW-A 与 SW-B 之间经 Gi0/1 与 Fa0/23 互联"
+             
+             loading="lazy" decoding="async" width="653" height="259"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：在SW-1和SW-2之间的链路上启用干线功能，包括所有干线安全机制。</strong></p>
 <p>已预先配置了所有现存干线接口的干线功能。新链接必须设置为干线，并包括所有干线安全机制。在SW-1和SW-2上，将端口设置为干线模式，将本征VLAN 15分配给干线端口，并禁用自动协商功能。</p>
 <blockquote>
@@ -3266,26 +3196,24 @@ SW-B(config-if)#ip address 192.168.20.5 255.255.255.0</p>
 </blockquote>
 <p><strong>步骤3：连接并配置管理PC。</strong></p>
 <p>将管理PC连接到SW-A的F0/1端口，并确保为其分配192.168.20.0/24网络内的可用IP地址。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212742442.png" 
-             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212742442.png">
+        <img src="/images/blog/20251228212742442.png"
+             alt="拓扑局部红框：管理主机 C1 接在 SW-A 的 Fa0/1 口（VLAN20）"
+             
+             loading="lazy" decoding="async" width="416" height="254"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212744001.png" 
-             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212744001.png">
+        <img src="/images/blog/20251228212744001.png"
+             alt="C1 的 IP 配置：静态 192.168.20.6/24，网关 192.168.20.100"
+             
+             loading="lazy" decoding="async" width="945" height="394"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：在SW-A上确保管理PC属于VLAN 20。</strong></p>
 <p>接口F0/1必须是VLAN 20的一部分。</p>
 <blockquote>
@@ -3295,26 +3223,24 @@ SW-A(config-if)#no shutdown</p>
 </blockquote>
 <p><strong>步骤5：验证管理PC与所有交换机之间的连通性</strong> 。</p>
 <p>管理PC应能成功ping通SW-A、SW-B、SW-1、SW-2和中央交换机。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212745938.png" 
-             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212745938.png">
+        <img src="/images/blog/20251228212745938.png"
+             alt="C1 依次 ping 192.168.20.1、.2、.3，均首个包超时后通，丢包 25%"
+             
+             loading="lazy" decoding="async" width="895" height="1480"/>
     </a>
-</div></p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212748325.png" 
-             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包" 
-              
-             loading="lazy"
-        />
+</div>
+</p>
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212748325.png">
+        <img src="/images/blog/20251228212748325.png"
+             alt="C1 继续 ping 192.168.20.4 与 .5，同样 25% 丢包"
+             
+             loading="lazy" decoding="async" width="847" height="926"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第四部分使管理pc能够访问路由器r1">第四部分：使管理PC能够访问路由器R1</h3><p><strong>步骤1：在路由器R1上启用新的子接口。</strong></p>
 <p>a. 创建子接口 <strong>g0/0.3</strong> ，并设置封装类型为 <strong>dot1q 20</strong> ，以便支持VLAN 20。</p>
 <blockquote>
@@ -3353,41 +3279,38 @@ R1(config-line)#access-class 102 in</p>
 <blockquote>
 <p>PC&gt; ssh -l SSHadmin 192.168.20.100</p>
 </blockquote>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212750446.png" 
-             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212750446.png">
+        <img src="/images/blog/20251228212750446.png"
+             alt="在 C1 上 ssh -l SSHadmin 192.168.20.100 登录路由器，进入 R1#"
+             
+             loading="lazy" decoding="async" width="496" height="211"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从管理PC尝试ping SW-A、SW-B和R1，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212751788.png" 
-             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212751788.png">
+        <img src="/images/blog/20251228212751788.png"
+             alt="配置生效后 C1 ping .1、.5、.100 全部 0% 丢包"
+             
+             loading="lazy" decoding="async" width="841" height="1002"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>VLAN20 中的设备不需要通过路由器进行路由，不受ACL的影响。</p>
 </blockquote>
 <p>c. 从D1尝试ping管理PC，是否成功？请解释结果。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212754164.png" 
-             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212754164.png">
+        <img src="/images/blog/20251228212754164.png"
+             alt="D1 ping 192.168.20.6 全部失败，回显 Destination host unreachable，说明 VLAN ACL 已阻断"
+             
+             loading="lazy" decoding="async" width="909" height="478"/>
     </a>
-</div></p>
+</div>
+</p>
 <blockquote>
 <p>不同 VLAN 中的设备 ping VLAN20 中的设备，必须进行路由，而路由器具有阻止所有数据包访问 192.168.20.0 目标网络的 ACL。</p>
 </blockquote>
@@ -3534,26 +3457,24 @@ R1(config-line)#access-class 102 in</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:59 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configure-ios-intrusion-prevention-system-ips-using-the-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEios%E5%85%A5%E4%BE%B5%E9%98%B2%E5%BE%A1%E7%B3%BB%E7%BB%9F/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png&#34; 
-             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置ios入侵防御系统ips&#34;&gt;Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）&lt;/h2&gt;&lt;h3 id=&#34;地址表&#34;&gt;地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212610089.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212610089.png&#34;
+             alt=&#34;地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;1288&#34; height=&#34;550&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212610089.png" 
-             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置ios入侵防御系统ips">Packet Tracer - 使用CLI配置IOS入侵防御系统（IPS）</h2><h3 id="地址表">地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212610089.png">
+        <img src="/images/blog/20251228212610089.png"
+             alt="地址规划表：R1 192.168.1.1、R2 两条串口、R3 192.168.3.1，Syslog 服务器 192.168.1.50，以及 PC-A、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="1288" height="550"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>启用IOS入侵防御系统（IPS）。</p>
@@ -3593,27 +3514,25 @@ R1#reload</p>
 <p>e. 使用 <code>show version</code> 命令验证是否已启用“Security Technology”包。</p>
 <p><strong>步骤2：验证网络连接性。</strong></p>
 <p>a. 从PC-C向PC-A发送ping请求。应能成功ping通。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212612030.png" 
-             alt="PC-C ping 192.168.1.2 通，25% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212612030.png">
+        <img src="/images/blog/20251228212612030.png"
+             alt="PC-C ping 192.168.1.2 通，25% 丢包"
+             
+             loading="lazy" decoding="async" width="784" height="510"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-A向PC-C发送ping请求。应能成功ping通。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212617990.png" 
-             alt="PC-A ping 192.168.3.2 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212617990.png">
+        <img src="/images/blog/20251228212617990.png"
+             alt="PC-A ping 192.168.3.2 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="757" height="502"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤3：在闪存中创建一个IOS IPS配置目录。</strong></p>
 <p>在R1上，使用 <code>mkdir</code> 命令在闪存中创建一个目录。将目录命名为ipsdir。</p>
 <blockquote>
@@ -3686,63 +3605,58 @@ R1(config-sigdef)#exit</p>
 </blockquote>
 <p><strong>步骤2：使用show命令验证IPS配置。</strong></p>
 <p>使用 <code>show ip ips all</code> 命令查看IPS配置状态摘要。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212619669.png" 
-             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212619669.png">
+        <img src="/images/blog/20251228212619669.png"
+             alt="R1 的 show ip ips all：IPS 规则名 iosips，fail closed 关闭，GigabitEthernet0/1 的出向规则为 iosips"
+             
+             loading="lazy" decoding="async" width="676" height="532"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>iosips规则应用于哪些接口以及什么方向？</p>
 <p><strong>步骤3：验证IPS是否正常工作。</strong></p>
 <p>a. 从PC-C尝试ping PC-A。这些ping请求成功了吗？请解释原因。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212621339.png" 
-             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212621339.png">
+        <img src="/images/blog/20251228212621339.png"
+             alt="PC-C ping 192.168.1.2 全部超时，100% 丢包（IPS 签名已生效）"
+             
+             loading="lazy" decoding="async" width="790" height="421"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-A尝试ping PC-C。这些ping请求成功了吗？请解释原因。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212623416.png" 
-             alt="PC-A ping 192.168.3.2 仍通，25% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212623416.png">
+        <img src="/images/blog/20251228212623416.png"
+             alt="PC-A ping 192.168.3.2 仍通，25% 丢包"
+             
+             loading="lazy" decoding="async" width="790" height="417"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤4：查看syslog消息。</strong></p>
 <p>a. 点击Syslog服务器。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212625436.png" 
-             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212625436.png">
+        <img src="/images/blog/20251228212625436.png"
+             alt="实验拓扑：Syslog 服务器 192.168.1.50 接 S1，R1–R2–R3 串口相连，右侧为 192.168.3.0/24"
+             
+             loading="lazy" decoding="async" width="989" height="373"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 选择“服务”标签页。</p>
-<p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212627003.png" 
-             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录" 
-              
-             loading="lazy"
-        />
+<p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212627003.png">
+        <img src="/images/blog/20251228212627003.png"
+             alt="Syslog 服务器的 Services → SYSLOG 页面，日志列表里多条 %IPS-4-SIGNATURE 记录"
+             
+             loading="lazy" decoding="async" width="1037" height="515"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>c. 在左侧导航菜单中，选择SYSLOG以查看日志文件。</p>
 <p><strong>步骤5：检查结果。</strong></p>
 <p>您的完成百分比应为100%。点击“CheckResults”查看反馈信息及已完成的必要组件验证。</p>
@@ -3753,26 +3667,24 @@ R1(config-sigdef)#exit</p>
       <link>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</link>
       <pubDate>Thu, 23 Jan 2025 12:46:18 +0000</pubDate>
       <guid>https://yuexuan521.github.io/zh/posts/packet-tracer-configuring-asa-basic-settings-and-firewall-using-cli%E4%BD%BF%E7%94%A8cli%E9%85%8D%E7%BD%AEasa%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E5%92%8C%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
-      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png&#34; 
-             alt=&#34;地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
+      <description>&lt;h2 id=&#34;packet-tracer---使用cli配置asa基本设置和防火墙&#34;&gt;Packet Tracer - 使用CLI配置ASA基本设置和防火墙&lt;/h2&gt;&lt;h3 id=&#34;ip地址表&#34;&gt;IP地址表&lt;/h3&gt;&lt;p&gt;&lt;div class=&#34;post-img-view&#34;&gt;
+    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://yuexuan521.github.io/images/blog/20251228212646524.png&#34;&gt;
+        &lt;img src=&#34;https://yuexuan521.github.io/images/blog/20251228212646524.png&#34;
+             alt=&#34;地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C&#34;
+             
+             loading=&#34;eager&#34; decoding=&#34;async&#34; fetchpriority=&#34;high&#34; width=&#34;877&#34; height=&#34;526&#34;/&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212646524.png" 
-             alt="地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C" 
-              
-             loading="lazy"
-        />
+&lt;/div&gt;
+&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="packet-tracer---使用cli配置asa基本设置和防火墙">Packet Tracer - 使用CLI配置ASA基本设置和防火墙</h2><h3 id="ip地址表">IP地址表</h3><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212646524.png">
+        <img src="/images/blog/20251228212646524.png"
+             alt="地址规划表：R1/R2/R3 各接口地址，ASA 的 inside 192.168.1.1、outside 209.165.200.226、dmz 192.168.2.1，以及 DMZ Server 与 PC-B、PC-C"
+             
+             loading="eager" decoding="async" fetchpriority="high" width="877" height="526"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="目标">目标</h3><ul>
 <li>
 <p>验证连接并探索ASA设备</p>
@@ -3894,27 +3806,25 @@ R1(config-sigdef)#exit</p>
 </ol>
 <p><strong>步骤5：测试到ASA的连接性。</strong></p>
 <p>a. 应该可以从PC-B成功ping通ASA内部接口地址（192.168.1.1）。如果无法ping通，请按需排查配置问题。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212649034.png" 
-             alt="PC-B ping 网关 192.168.1.1 通，0% 丢包" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212649034.png">
+        <img src="/images/blog/20251228212649034.png"
+             alt="PC-B ping 网关 192.168.1.1 通，0% 丢包"
+             
+             loading="lazy" decoding="async" width="934" height="585"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>b. 从PC-B尝试ping VLAN 2（外部）接口的IP地址209.165.200.226。理论上您不应该能ping通这个地址。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212651625.png" 
-             alt="PC-B ping 209.165.200.226（ASA Outside）全部超时，丢包 100%" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212651625.png">
+        <img src="/images/blog/20251228212651625.png"
+             alt="PC-B ping 209.165.200.226（ASA Outside）全部超时，丢包 100%"
+             
+             loading="lazy" decoding="async" width="939" height="502"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第三部分使用cli配置路由地址转换和检查策略">第三部分：使用CLI配置路由、地址转换和检查策略</h3><p><strong>步骤1：为ASA配置静态默认路由。</strong></p>
 <p>在ASA外部接口上配置默认静态路由，以便ASA能够访问外部网络。</p>
 <p>a. 使用 <code>route</code> 命令创建一个“全零”默认路由，将其与ASA外部接口关联，并将R1 G0/0 IP地址（209.165.200.225）设置为最后手段网关。</p>
@@ -3946,16 +3856,15 @@ R1(config-sigdef)#exit</p>
 </div>
 </div><p>b. ASA将配置拆分为定义要转换的网络的对象部分以及实际的nat命令参数。这些内容会在运行配置中的两个不同位置显示。使用 <code>show run</code> 命令显示NAT对象配置。</p>
 <p>c. 从PC-B尝试ping R1 G0/0接口IP地址209.165.200.225。这些ping请求应失败。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212653563.png" 
-             alt="PC-B ping 209.165.200.225（R1）同样全部超时" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212653563.png">
+        <img src="/images/blog/20251228212653563.png"
+             alt="PC-B ping 209.165.200.225（R1）同样全部超时"
+             
+             loading="lazy" decoding="async" width="948" height="496"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 在ASA上发出 <code>show nat</code> 命令查看已翻译和未翻译的命中次数。请注意，来自PC-B的ping请求中有四个被翻译，四个未被翻译。外出的ping（echo请求）已被翻译并发送至目标。返回的echo响应由于防火墙策略而被阻止。您将在本部分活动的第3步配置默认检查策略以允许ICMP流量。</p>
 <p><strong>步骤3：修改默认MPF应用检查全局服务策略。</strong></p>
 <p>为了实现应用层检查和其他高级选项，Cisco ASA设备提供了MPF功能。</p>
@@ -3984,16 +3893,15 @@ R1(config-sigdef)#exit</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>b. 从PC-B再次尝试ping R1 G0/0接口IP地址209.165.200.225。这次ping应该成功，因为现在ICMP流量正在被检查，合法的返回流量被允许通过。若ping失败，请排查您的配置。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212655546.png" 
-             alt="配置 NAT 后 PC-B 再 ping 209.165.200.225，已通，TTL=254" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212655546.png">
+        <img src="/images/blog/20251228212655546.png"
+             alt="配置 NAT 后 PC-B 再 ping 209.165.200.225，已通，TTL=254"
+             
+             loading="lazy" decoding="async" width="945" height="535"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第四部分配置dhcpaaa和ssh">第四部分：配置DHCP、AAA和SSH</h3><p><strong>步骤1：配置ASA作为DHCP服务器。</strong></p>
 <p>a. 在ASA内部接口上配置DHCP地址池并启用它。</p>
 <div class="highlight"><div class="chroma">
@@ -4023,16 +3931,15 @@ R1(config-sigdef)#exit</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>d. 将PC-B从静态IP地址更改为DHCP客户端，并验证其是否接收到IP地址信息。如有必要，请解决任何问题。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212657871.png" 
-             alt="PC-B 通过 DHCP 获得 192.168.1.5，网关 192.168.1.1，DNS 209.165.201.2" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212657871.png">
+        <img src="/images/blog/20251228212657871.png"
+             alt="PC-B 通过 DHCP 获得 192.168.1.5，网关 192.168.1.1，DNS 209.165.201.2"
+             
+             loading="lazy" decoding="async" width="940" height="400"/>
     </a>
-</div></p>
+</div>
+</p>
 <p><strong>步骤2：配置AAA以使用本地数据库进行身份验证。</strong></p>
 <p>a. 使用username命令定义一个名为admin的本地用户，并指定密码adminpa55。</p>
 <div class="highlight"><div class="chroma">
@@ -4085,16 +3992,15 @@ R1(config-sigdef)#exit</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 209.165.200.226
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212700132.png" 
-             alt="PC-C 用 ssh -l admin 209.165.200.226 登录 ASA，进入 CCNAS-ASA&gt;" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212700132.png">
+        <img src="/images/blog/20251228212700132.png"
+             alt="PC-C 用 ssh -l admin 209.165.200.226 登录 ASA，进入 CCNAS-ASA&gt;"
+             
+             loading="lazy" decoding="async" width="943" height="391"/>
     </a>
-</div></p>
+</div>
+</p>
 <p>d. 从PC-B通过SSH建立到ASA（192.168.1.1）的会话。如不成功，请排查问题。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -4104,16 +4010,15 @@ R1(config-sigdef)#exit</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">PC&gt; ssh -l admin 192.168.1.1
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212701975.png" 
-             alt="PC-B 用 ssh -l admin 192.168.1.1 从内网登录 ASA" 
-              
-             loading="lazy"
-        />
+</div><p><div class="post-img-view">
+    <a data-fancybox="gallery" href="/images/blog/20251228212701975.png">
+        <img src="/images/blog/20251228212701975.png"
+             alt="PC-B 用 ssh -l admin 192.168.1.1 从内网登录 ASA"
+             
+             loading="lazy" decoding="async" width="940" height="385"/>
     </a>
-</div></p>
+</div>
+</p>
 <h3 id="第五部分配置dmz静态nat和acl">第五部分：配置DMZ、静态NAT和ACL</h3><p>R1 G0/0接口与ASA的外部接口分别使用209.165.200.225和.226。您将使用公网地址209.165.200.227，并通过静态NAT提供对服务器的地址转换访问。</p>
 <p><strong>步骤1：在ASA上配置DMZ接口VLAN 3。</strong></p>
 <p>a. 配置DMZ VLAN 3，该VLAN将是公共访问Web服务器所在的位置。为它分配IP地址192.168.2.1/24，并命名为 <strong>dmz</strong> ，同时为其设置安全级别为 <strong>70</strong> 。由于服务器无需主动与内部用户通信，因此禁用到接口VLAN 1的转发。</p>
@@ -4150,42 +4055,39 @@ R1(config-sigdef)#exit</p>
 <ol>
 <li>
 <p>使用 <code>show interface ip brief</code> 命令显示所有ASA接口的状态。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212704275.png" 
-             alt="ASA 上 show interface ip brief：Vlan1 192.168.1.1、Vlan2 209.165.200.226、Vlan3 192.168.2.1" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212704275.png">
+        <img src="/images/blog/20251228212704275.png"
+             alt="ASA 上 show interface ip brief：Vlan1 192.168.1.1、Vlan2 209.165.200.226、Vlan3 192.168.2.1"
+             
+             loading="lazy" decoding="async" width="1149" height="765"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p>使用 <code>show ip address</code> 命令显示第3层VLAN接口的信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212706400.png" 
-             alt="ASA 上 show ip address：inside/outside/dmz 三个接口的地址与掩码" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212706400.png">
+        <img src="/images/blog/20251228212706400.png"
+             alt="ASA 上 show ip address：inside/outside/dmz 三个接口的地址与掩码"
+             
+             loading="lazy" decoding="async" width="1144" height="325"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 <li>
 <p>使用 <code>show switch vlan</code> 命令显示ASA上的inside和outside VLAN配置以及分配的端口信息。
-
 <div class="post-img-view">
-    <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png">
-        <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228212708670.png" 
-             alt="ASA 上 show switch vlan：VLAN1 inside、VLAN2 outside、VLAN3 dmz 及各自成员端口" 
-              
-             loading="lazy"
-        />
+    <a data-fancybox="gallery" href="/images/blog/20251228212708670.png">
+        <img src="/images/blog/20251228212708670.png"
+             alt="ASA 上 show switch vlan：VLAN1 inside、VLAN2 outside、VLAN3 dmz 及各自成员端口"
+             
+             loading="lazy" decoding="async" width="1093" height="210"/>
     </a>
-</div></p>
+</div>
+</p>
 </li>
 </ol>
 <p><strong>步骤2：使用网络对象配置到DMZ服务器的静态NAT。</strong></p>
