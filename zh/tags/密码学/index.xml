@@ -381,7 +381,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题图同样是那位蓝发女孩&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -400,7 +400,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［ACTF新生赛2020］明文攻击 1」，附件 attachment.tar&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -410,7 +410,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190618732.png" 
-             alt="" 
+             alt="题图同样是那位蓝发女孩" 
               
              loading="lazy"
         />
@@ -429,7 +429,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190620679.png" 
-             alt="" 
+             alt="题目页「［ACTF新生赛2020］明文攻击 1」，附件 attachment.tar" 
               
              loading="lazy"
         />
@@ -441,7 +441,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190622314.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190622314.png" 
-             alt="" 
+             alt="解出 res.zip（1 KB）与 woo.jpg（17 KB）" 
               
              loading="lazy"
         />
@@ -451,7 +451,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190623424.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190623424.jpeg" 
-             alt="" 
+             alt="猫和老鼠表情包：汤姆和杰瑞一起竖大拇指，配字「一级棒」" 
               
              loading="lazy"
         />
@@ -463,7 +463,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190624826.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190624826.png" 
-             alt="" 
+             alt="010 Editor 里 woo.jpg 的 FF D9 之后是一大片 32 填充，40C0h 处接着 03 04，再往后是 50 4B 01 02 与 flag.txt" 
               
              loading="lazy"
         />
@@ -474,7 +474,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190626656.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190626656.png" 
-             alt="" 
+             alt="拆出来的 1.zip 开头是 50 4B 03 04，里面可见 flag.txt" 
               
              loading="lazy"
         />
@@ -485,7 +485,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190629298.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190629298.png" 
-             alt="" 
+             alt="1.zip 里的 flag.txt 内容只有 this is the flag." 
               
              loading="lazy"
         />
@@ -499,7 +499,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190630346.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190630346.png" 
-             alt="" 
+             alt="res.zip 里两个文件 flag.txt 与 secret.txt 都带加密标记，flag.txt 的 CRC 是 b0c530d8" 
               
              loading="lazy"
         />
@@ -509,7 +509,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190631734.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190631734.png" 
-             alt="" 
+             alt="1.zip 里的 flag.txt 同样 17 字节、CRC b0c530d8，和 res.zip 里那个完全一样" 
               
              loading="lazy"
         />
@@ -523,7 +523,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190633480.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190633480.png" 
-             alt="" 
+             alt="ARCHPR 选「明文」攻击，明文文件指到 1.zip，勾上「允许使用二进制文件作为明文 ZIP 档案文件」" 
               
              loading="lazy"
         />
@@ -534,7 +534,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190635693.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190635693.png" 
-             alt="" 
+             alt="密钥恢复成功：4m 57s，这个文件的口令未找到，加密密钥 251dfe00 ec858db2 6e8a0dff" 
               
              loading="lazy"
         />
@@ -545,7 +545,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190637817.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190637817.png" 
-             alt="" 
+             alt="另存为 res_decrypted.zip，同目录里已经有 res_decrypted 文件夹" 
               
              loading="lazy"
         />
@@ -556,7 +556,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190640317.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190640317.png" 
-             alt="" 
+             alt="secret.txt 内容 ACTF{3te9 nbb ahh8}" 
               
              loading="lazy"
         />

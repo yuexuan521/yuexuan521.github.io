@@ -2647,7 +2647,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题图同样是那位蓝发女孩&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2666,29 +2666,18 @@ zip文件头： <code>50 4B 03 04</code></p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，解压得到
-
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;</description>
+&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;得到的 flag 请包上 flag{} 提交。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190557074.png" 
-             alt="" 
+             alt="题图同样是那位蓝发女孩" 
               
              loading="lazy"
         />
@@ -2707,7 +2696,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190559563.png" 
-             alt="" 
+             alt="题目页「［ACTF新生赛2020］剑龙 1」，附件 attachment.tar" 
               
              loading="lazy"
         />
@@ -2719,7 +2708,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190601129.png" 
-             alt="" 
+             alt="解出 hint.zip（64 KB）与一个叫 O_O 的文件（3 KB）" 
               
              loading="lazy"
         />
@@ -2731,7 +2720,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190602214.png" 
-             alt="" 
+             alt="hint.zip 里是 hh.jpg（柠檬水彩画）与 pwd.txt" 
               
              loading="lazy"
         />
@@ -2747,7 +2736,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190603819.png" 
-             alt="" 
+             alt="aaEncode 加解密页：把 JavaScript 转成颜文字，输入框里是 welcom3!" 
               
              loading="lazy"
         />
@@ -2768,7 +2757,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190605825.png" 
-             alt="" 
+             alt="命令行 steg hide.exe extract -sf hh.jpg -p welcom3! → wrote extracted data to &ldquo;secret.txt&rdquo;" 
               
              loading="lazy"
         />
@@ -2778,7 +2767,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190606909.png" 
-             alt="" 
+             alt="secret.txt 写着「想要flag吗？解出我的密文吧~」，下面是 U2FsdGVkX1/7KeHVI5984OsGUVSanPfPednHpK9lKvp0kdrxO4Tj/Q==" 
               
              loading="lazy"
         />
@@ -2789,7 +2778,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190608265.png" 
-             alt="" 
+             alt="hh.jpg 属性 → 详细信息：标题「这里有密钥」、主题「@#$$%^&amp;&amp;%%$)」" 
               
              loading="lazy"
         />
@@ -2809,7 +2798,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190609623.png" 
-             alt="" 
+             alt="DES 解密页：明文 think about stegosaurus、密码 @#$$%^&amp;&amp;%%$)、密文那串，显示解密成功" 
               
              loading="lazy"
         />
@@ -2820,7 +2809,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190611323.png" 
-             alt="" 
+             alt="搜 stegosaurus 才明白题目为什么叫剑龙，也顺带指到了同名工具" 
               
              loading="lazy"
         />
@@ -2831,7 +2820,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190613551.png" 
-             alt="" 
+             alt="kali 里 file 0_0 → python 3.6 byte-compiled" 
               
              loading="lazy"
         />
@@ -2842,7 +2831,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190614895.png" 
-             alt="" 
+             alt="GitHub 上的 AngelKitty/stegosaurus：把 payload 藏进 Python 字节码的隐写工具" 
               
              loading="lazy"
         />
@@ -2853,7 +2842,7 @@ zip文件头： <code>50 4B 03 04</code></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190617000.png" 
-             alt="" 
+             alt="python stegosaurus.py -x 0_0.pyc → Extracted payload: flag{3teg0Sauru3_!1}" 
               
              loading="lazy"
         />
