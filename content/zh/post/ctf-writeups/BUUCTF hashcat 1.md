@@ -13,7 +13,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185908081.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -25,7 +25,7 @@ tags:
 - [HashCat 恢复Excel、Word、PPT密码保姆教程](https://blog.csdn.net/qq_39150356/article/details/135980077)
 - [buuctf MISC - hashcat](https://blog.csdn.net/c868954104/article/details/134599989)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png)
+ ![题目页「hashcat 1」：得到的 flag 请包上 flag{} 提交，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185910079.png)
 
 ### 题目描述：
 
@@ -35,7 +35,7 @@ tags:
 
 下载附件，解压得到What kind of document is this_文件。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png)
+ ![解出一个没有扩展名的文件「What kind of document is this_」，124 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185911867.png)
 
 ---
 
@@ -47,11 +47,11 @@ tags:
 MS Office文件      文件头：D0 CF 11 E0
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png)
+ ![010 Editor 里开头是 D0 CF 11 E0 A1 B1 1A E1，OLE 复合文档头，后面一大片 FF FF](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185912963.png)
 
 但是MS Office文件包括MS Word/Excel/PPT三种文件，随便尝试一种文件，发现有密码。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png)
+ ![用 PowerPoint 打开，提示「输入密码以打开文件 What kind of document is this_.ppt」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185914958.png)
 
 2、结合题目 `hashcat` ，我们使用HashCat恢复MS Office文件（Excel、Word、PPT）密码。
 
@@ -65,11 +65,11 @@ CMD中打开，命令如下：
 python office2john.py "What kind of document is this_" > hash
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png)
+ ![命令行跑 python office2john.py "What kind of document is this_" > hash](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185916686.png)
 
 得到文件的hash值如下：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png)
+ ![hash 文件里是文件名加 :$office$*2010*100000*128*16*265c4784… 一整串](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185917937.png)
 
 去掉文件名 `What kind of document is this_:` ，保留 `$office$` 及之后的数据。（从 `$office$*2010*` 可以得到该文件使用的是 **Office2010** 版本，后面要用到！）
 
@@ -77,13 +77,13 @@ python office2john.py "What kind of document is this_" > hash
 $office$*2010*100000*128*16*265c4784621f00ddb85cc3a7227dade7*f0cc4179b2fcc2a2c5fa417566806249*b5ad5b66c0b84ba6e5d01f27ad8cffbdb409a4eddc4a87cd4dfbc46ad60160c9
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png)
+ ![把文件名前缀去掉，剩下的 $office$*2010*… 才是 hashcat 要的格式](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185919283.png)
 
 最后，使用HashCat根据hash值去解析密码。
 
 HashCat官方网站： [https://hashcat.net/hashcat/](https://hashcat.net/hashcat/) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png)
+ ![hashcat 官网下载页，红框 v6.2.6 那一行的 Download](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185920623.png)
 
 将hash文件放到hashcat文件夹下，CMD打开，命令如下：
 
@@ -111,7 +111,7 @@ hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O
 > ?b = 0x00 - 0xff
 
 出现下图所示内容，表示成功运行。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png)
+ ![hashcat 跑起来：Hash.Mode 9500 (MS Office 2010)、Guess.Mask ?d?d?d?d ［4］，1723 H/s，Status Cracked](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185922895.png)
 
 在上条命令的后面加上 `--show` 参数，显示密码为 `9919` 。
 
@@ -119,23 +119,23 @@ hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O
 hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O --show
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png)
+ ![命令行 hashcat -m 9500 hash -a 3 ?d?d?d?d -w 3 -O --show，末尾红框是 9919](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185925153.png)
 
 3、使用密码尝试Excel、Word、PPT文件，直到后缀为 `.ppt` 的PPT文件，才正常显示内容。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png)
+ ![顺手改成 .doc 打开，Word 说「发现无法读取的内容」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185926521.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png)
+ ![再改成 .xls，Excel 直接报「文件格式无效」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185927923.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png)
+ ![其实是 ppt，PowerPoint 打开后标题是「o0e开头MD5值小结」，右侧还有一个大字「题」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185928981.png)
 
 存在7张空白的幻灯片，全选之后，到“设计”选项卡，选择“设置背景格式”，选择黑色纯色填充。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png)
+ ![设置背景格式里选「纯色填充」，把颜色调成黑](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185931258.png)
 
 在第七张幻灯片中，得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png)
+ ![黑底上显出 Flag{okYOUWIN}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228185933091.png)
 
 ### flag：
 
