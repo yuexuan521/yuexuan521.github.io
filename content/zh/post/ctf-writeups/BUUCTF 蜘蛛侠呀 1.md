@@ -14,7 +14,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193338867.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193338867.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -30,7 +30,7 @@ tags:
 - [MISC（时间隐写）蜘蛛侠呀](https://guokeya.github.io/post/Y7dlMvs3K/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png)
+ ![题目页「蜘蛛侠呀 1」：将获得的明显信息 md5 加密后，以 flag{xxx} 格式提交](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193340873.png)
 
 ### 题目描述：
 
@@ -40,7 +40,7 @@ tags:
 
 下载附件，解压得到out.pcap
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png)
+ ![out.pcap，2018/2/12 18:50，9,305 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193342598.png)
 
 ---
 
@@ -48,13 +48,13 @@ tags:
 
 1、打开out.pcap，发现大量ICMP报文，携带以 `$$START$$` 开头的数据，似乎是Base64数据。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png)
+ ![包列表几乎全是 ICMP Echo，十六进制区能看到 $ $ S T A R T $ $ 与 E N D](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193343645.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png)
+ ![放大后是 $$START$$---- BEGIN CERTIFICATE-----](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193345675.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png)
+ ![再往后 $$START$$UESDBBQAAAAIAKm…，base64 里藏着 flag.gif 的字样](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193346948.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png)
+ ![另一段 $$START$$ 后面是 AKp6c fzoo9MBF… 这样的 base64 片段](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193348529.png)
 
 使用Python脚本，提取数据。
 
@@ -97,17 +97,17 @@ print('done')
 
 [Base64 在线解码、编码](https://the-x.cn/encodings/Base64.aspx) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png)
+ ![把整段 base64 拼起来，红框标出那个 BEGIN CERTIFICATE](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193353373.png)
 
 解码后的数据提示是一个zip文件，另存为zip。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png)
+ ![Base64 解码页右侧插件认出【Zip】，并解出 flag.gif](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193355718.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png)
+ ![插件详情：另存为 zip文件，Encrypted:false、Files:1、Total Size:870062](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193358417.png)
 
 2、解压zip文件，得到flag.gif
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif)
+ ![解出的 gif 是蜘蛛侠战衣的局部，画面很窄](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193400043.gif)
 
 观察该GIF，发现播放非常缓慢，猜测帧间隔存在隐写数据。这似乎是 `时间隐写` 。
 
@@ -117,7 +117,7 @@ print('done')
 identify -format '%T' flag.gif
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png)
+ ![kali 里 identify -format '%T' flag.gif，输出一长串由 2、0、5 组成的帧延时](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193402664.png)
 
 ```bash
 2050502050502050205020202050202020205050205020502050205050505050202050502020205020505050205020206666
@@ -137,12 +137,12 @@ identify -format '%T' flag.gif
 mD5_1t
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png)
+ ![把这串数字转成二进制，再用在线工具转 ASCII，得到 mD5_1t](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193404437.png)
 
 将 `mD5_1t` 进行md5加密，得到flag： `f0f1003afe4ae8ce4aa8e8487a8ab3b6` 。
 
 [MD5加解密工具](https://www.sojson.com/md5/) 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png)
+ ![MD5 加密 mD5_1t，得到 f0f1003afe4ae8ce4aa8e8487a8ab3b6](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193406125.png)
 
 ---
 

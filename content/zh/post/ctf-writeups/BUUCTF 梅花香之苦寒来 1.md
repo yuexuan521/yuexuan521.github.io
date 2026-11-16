@@ -12,7 +12,7 @@ tags:
 - "MISC"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193050688.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193050688.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 
 - [CTF Wiki](https://ctf-wiki.org/)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193052876.png)
+ ![题目页「梅花香之苦寒来 1」：注意：得到的 flag 请包上 flag{} 提交](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193052876.png)
 
 ### 题目描述：
 
@@ -31,7 +31,7 @@ tags:
 ### 密文：
 
 下载附件，解压得到一张.jpg图片。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193054864.jpeg)
+ ![一张水墨画，上面写着「图穷匕见」，左下角一枝桃花](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193054864.jpeg)
 
 ---
 
@@ -40,11 +40,11 @@ tags:
 1、用010Editor看了一下，刚开始以为是修改宽高的题，没有想到这个方向。（想到也不会做）
 在010 Editor中看到，在图片数据的后面附加了很多的无关数据。（“FF D9”为jpg文件结尾）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193056343.png)
+ ![十六进制 52D0h 处红框 FF D9，往后是 /T!..hB 之类，52F0h 起是一长串 30 61 38 32 37 63 33 37 32 39](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193056343.png)
 
 2、将这些数据转换一下，看看是什么文件的数据。将全部的灰色数据复制下来，新建一个txt文本，粘贴进去保存。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193058939.png)
+ ![记事本里整页都是 28372c37290a 这种十六进制，两两一组用 0a 隔开](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193058939.png)
 
 在010 Editor中，使用“文件”选项卡的“导入16进制文件”选项，导入刚才新建的txt文件。
 
@@ -52,11 +52,11 @@ tags:
 
 得到一堆坐标数据，接下来尝试将数据转换为图像。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193107572.png)
+ ![Notepad++ 打开 hex：第 1 行 (7,7)、第 2 行 (7,8)、第 3 行 (7,9)，往后逐个递增](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193107572.png)
 
 （这一步其实就是将16进制的数据转换为ASCII字符，使用任意转换工具都可以，这里提供一个python脚本）
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193109380.png)
+ ![在线工具把十六进制转成文本，右框输出 (7,7)(7,8)(7,9)…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193109380.png)
 
 ```python
 with open('hex.txt', 'r') as h:     # hex.txt为要转换的文本文件
@@ -75,7 +75,7 @@ with open('result.txt', 'w') as re: # 转换完成后写入result.txt
 
 3、使用gnuplot来进行绘制图像（ [gnuplot下载地址](https://pan.baidu.com/s/1VE72XqOErGFQqJeuI3lIug#list/path=/) ，提取码：wel5），安装好gnuplot之后，需要去环境变量（查看高级系统设置）里添加变量，然后就可以在命令行里运行gnuplot了。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193111524.png)
+ ![gnuplot 的环境路径里加上 D:\CTF\gnuplot\bin](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193111524.png)
 
 4、使用gnuplot之前需要先将坐标数据格式转换成gnuplot可以识别的格式，下面是Python脚本：
 
@@ -100,7 +100,7 @@ with open('gnuplotTxt.txt', 'w') as gnup:  # 将转换后的坐标写入gnuplotT
 
 转换之后是这样的数据格式。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193113395.png)
+ ![把坐标里的逗号换成空格，每行就成了「7 7」「7 8」「7 9」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193113395.png)
 
 5、将gnuplotTxt.txt放到gnuplot.exe的文件夹下，启动gnuplot，在命令行使用如下命令即可绘图。
 
@@ -108,17 +108,17 @@ with open('gnuplotTxt.txt', 'w') as gnup:  # 将转换后的坐标写入gnuplotT
 plot "gnuplotTxt.txt"
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193114940.png)
+ ![gnuplot 终端里执行 plot "gnuplotTxt.txt"](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193114940.png)
 
 得到一张二维码图片，扫描二维码得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193116644.png)
+ ![Gnuplot 窗口画出紫色点阵，形状已经像二维码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193116644.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193118944.png)
+ ![QR Research 解出 flag{40fc0a979f759c8892f4dc045e28b820}，标注「颜色正常、镜像」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193118944.png)
 
 （原来一开始图片属性就有提示）
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193120998.png)
+![meihuai.jpg 属性 → 详细信息：标题「图穷flag见」、主题「会画图吗？」、作者「出题人已跑路~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193120998.png)
 
 ### flag：
 

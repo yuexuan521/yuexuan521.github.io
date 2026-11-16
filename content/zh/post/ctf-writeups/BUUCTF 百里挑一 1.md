@@ -13,7 +13,7 @@ tags:
 - "Wireshark"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193134440.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193134440.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -26,7 +26,7 @@ tags:
 - [NewStar CTF](https://ns.openctf.net/learn/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png)
+ ![题目页「百里挑一 1」：好多漂亮的壁纸，赶快挑一张吧](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193136490.png)
 
 ### 题目描述：
 
@@ -36,7 +36,7 @@ tags:
 
 下载附件解压，得到pacap流量文件
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png)
+ ![results.pcap，图标上印着 010101](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193138130.png)
 
 ---
 
@@ -44,21 +44,21 @@ tags:
 
 1、双击打开文件，简单浏览发现存在大量的图片，将全部图片导出分析
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png)
+ ![Wireshark 导出 HTTP 对象：image1.html 加一堆 0.jpg–117.jpg，右下角红框「Save All」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193139593.png)
 
 得到的图片如下：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg)
+ ![导出的壁纸之一：海贼王草帽团合影](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193141386.jpeg)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg)
+ ![另一张：英雄联盟辛德拉，蓝紫色调](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193143006.jpeg)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg)
+ ![「STRONG WORLD」剧场版海报壁纸](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193144782.jpeg)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg)
+ ![黄昏湖面与楼阁的风景壁纸](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193146178.jpeg)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg)
+ ![英雄联盟戴安娜（皎月）同人壁纸](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193147584.jpeg)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg)
+ ![草地与木棚的黄昏风景壁纸](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193149409.jpeg)
 
 简单看了几张，没有什么有用的信息
 
@@ -72,11 +72,11 @@ tags:
 exiftool * | grep flag
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193150869.png)
+ ![kali 里 exiftool * | grep flag，XP Comment 写着「恭喜你！找到一半了，还有另一半哦！flag{ae58d0408e26e8f」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193150869.png)
 
 这一步可以使用其他的方法，按字符串分组字节流方式查找flag，也可以找到前半部分flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193152693.png)
+ ![Wireshark 按字符串 flag 过滤，分组字节流里是 f.l.a.g { a e 5 8 d 0 4 0 8 e 2 6 e 8 f](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193152693.png)
 
 3、经过以上的解题过程，猜测接下来的后半部分flag，也与exif信息有关。
 
@@ -84,9 +84,9 @@ exiftool * | grep flag
 
 回到Wireshark，查找exif字符，追踪TCP流，就可以找到后半部分flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193154758.png)
+ ![改过滤 exif，18066 与 18078 两个包是 FTP 的 RETR 8.jpg](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193154758.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193156836.png)
+ ![追踪 TCP 流 eq 114，底部是一排 a.c.0.5.8.9.d.2.3.e.d.e.e.c.}，每个字符之间都有竖线](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228193156836.png)
 
 ### flag：
 
