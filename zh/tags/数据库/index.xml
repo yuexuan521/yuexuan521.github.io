@@ -2649,7 +2649,7 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2665,7 +2665,7 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［安洵杯 2019］吹着贝斯扫二维码 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2677,7 +2677,7 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;解压出十几个随机命名的文件，另有一个 flag.zip（1 KB）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2689,26 +2689,17 @@ SW-B(config-if-range)#shutdown</p>
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;Bandizip 看 flag.zip：flag.txt 压缩后 34、原始 22，底部注释栏是一串 GNATOMJVIQZUKN…&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GNATOMJVIQZUKNJXGRCTGNRTGI3EMNZTGNBTKRJWGI2UIMRRGNBDEQZWGI3DKMSFGNCDMRJTII3TMNBQGM4TERRTGEZTOMRXGQYDGOBWGI2DCNBY
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;查看其他的无后缀文件，在010Editor中观察到jpg文件的文件头，猜测为jpg文件。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835644.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2724,7 +2715,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835645.png" 
-             alt="" 
+             alt="题目页「［安洵杯 2019］吹着贝斯扫二维码 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -2736,7 +2727,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835646.png" 
-             alt="" 
+             alt="解压出十几个随机命名的文件，另有一个 flag.zip（1 KB）" 
               
              loading="lazy"
         />
@@ -2748,7 +2739,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835647.png" 
-             alt="" 
+             alt="Bandizip 看 flag.zip：flag.txt 压缩后 34、原始 22，底部注释栏是一串 GNATOMJVIQZUKN…" 
               
              loading="lazy"
         />
@@ -2775,7 +2766,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835648.png" 
-             alt="" 
+             alt="010 Editor 打开其中一个随机名文件，开头 FF D8 FF E0 与 JFIF，CREATOR: gd-jpeg v1.0" 
               
              loading="lazy"
         />
@@ -2786,7 +2777,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835649.jpeg" 
-             alt="" 
+             alt="这些随机名文件其实是碎片，只拼出二维码左上角那一小块" 
               
              loading="lazy"
         />
@@ -2826,7 +2817,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835650.png" 
-             alt="" 
+             alt="全部拼起来才得到完整二维码" 
               
              loading="lazy"
         />
@@ -2837,7 +2828,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835651.png" 
-             alt="" 
+             alt="QR Research 解码：版本 6、纠错等级 H、掩码 3，内容「BASE Family Bucket ??? 85-&gt;64-&gt;85-&gt;13-&gt;16-&gt;32」" 
               
              loading="lazy"
         />
@@ -2867,7 +2858,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835652.png" 
-             alt="" 
+             alt="按提示先 Base32：GNATOM… 解出 3A715D3E…" 
               
              loading="lazy"
         />
@@ -2886,7 +2877,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835653.png" 
-             alt="" 
+             alt="再 Base16：3A715D3E… 解出 冒号q］&gt;WN62os…" 
               
              loading="lazy"
         />
@@ -2905,7 +2896,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835654.png" 
-             alt="" 
+             alt="接着 ROT13：变成 :d］&gt;JA62bf&lt;^o］!;,or.=a;i@9/17&rsquo;@8oNU" 
               
              loading="lazy"
         />
@@ -2924,7 +2915,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835655.png" 
-             alt="" 
+             alt="Base85 解出 PCtvdWU4VFJnQUBYy4mK1IraTA=" 
               
              loading="lazy"
         />
@@ -2943,7 +2934,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835656.png" 
-             alt="" 
+             alt="再 BASE64 解：得到 &lt;&#43;oue8TRgA@rc.&amp;&#43;Yki0" 
               
              loading="lazy"
         />
@@ -2962,7 +2953,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835657.png" 
-             alt="" 
+             alt="在线工具认出这是 Base85(ASCII85)，结果是 ThisIsSecret!233" 
               
              loading="lazy"
         />
@@ -2972,7 +2963,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835658.png" 
-             alt="" 
+             alt="换个 base85 解码页，同样给出 ThisIsSecret!233" 
               
              loading="lazy"
         />
@@ -2983,7 +2974,7 @@ SW-B(config-if-range)#shutdown</p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228173835659.png" 
-             alt="" 
+             alt="flag.txt 里是 flag{Qr Is MeAn1nGfuL}" 
               
              loading="lazy"
         />
