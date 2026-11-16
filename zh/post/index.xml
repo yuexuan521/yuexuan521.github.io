@@ -2329,7 +2329,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2345,7 +2345,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［DDCTF2018］流量分析 1」，附件 attachment.zip&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2357,7 +2357,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;两个文件：流量分析.pcap（23,736 KB）与 流量分析.txt（2 KB）&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -2387,31 +2387,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-----END RSA PRIVATE KEY-----
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;搜索 &lt;code&gt;“KEY”&lt;/code&gt; 。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcp contains &lt;span class=&#34;s2&#34;&gt;&amp;#34;KEY&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;追踪TCP流，找到一句话提到了密钥，最后大部分是一张图片的base64数据。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;p&gt;搜索 &lt;code&gt;“KEY”&lt;/code&gt; 。&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png" 
-             alt="" 
+             alt="文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」" 
               
              loading="lazy"
         />
@@ -2427,7 +2408,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png" 
-             alt="" 
+             alt="题目页「［DDCTF2018］流量分析 1」，附件 attachment.zip" 
               
              loading="lazy"
         />
@@ -2439,7 +2420,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png" 
-             alt="" 
+             alt="两个文件：流量分析.pcap（23,736 KB）与 流量分析.txt（2 KB）" 
               
              loading="lazy"
         />
@@ -2482,7 +2463,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png" 
-             alt="" 
+             alt="过滤 tcp contains &ldquo;KEY&rdquo;，命中第 6741 号包：FTP Data: 32701 bytes (PASV) (RETR &hellip;" 
               
              loading="lazy"
         />
@@ -2493,7 +2474,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png" 
-             alt="" 
+             alt="追踪 TCP 流 eq 2016：multipart/alternative，Content-transfer-encoding: quoted-printable，红框一大串 =E4=BD=A0=E5=A5=BD…" 
               
              loading="lazy"
         />
@@ -2505,7 +2486,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png" 
-             alt="" 
+             alt="Quoted-printable 在线解码：字符集选 utf8，解出「你好，请你将密钥安装到服务器上。谢谢」" 
               
              loading="lazy"
         />
@@ -2515,7 +2496,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png" 
-             alt="" 
+             alt="同一个流往后翻，第二段 multipart 是 image/png，name=&ldquo;image001.png&rdquo;，编码 base64" 
               
              loading="lazy"
         />
@@ -2527,7 +2508,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png" 
-             alt="" 
+             alt="Base64 解码页提示「该内容已经被插件识别为二进制数据」，右下角认出是 png、1164×530" 
               
              loading="lazy"
         />
@@ -2538,7 +2519,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png" 
-             alt="" 
+             alt="解出来的文本以 MIICX 开头，一屏放不下" 
               
              loading="lazy"
         />
@@ -2550,7 +2531,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png" 
-             alt="" 
+             alt="把那张 png 丢进在线 OCR，输出框里就是这串 MIICX… 开头的文本" 
               
              loading="lazy"
         />
@@ -2598,7 +2579,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png" 
-             alt="" 
+             alt="Wireshark 的「编辑 → 首选项&hellip;」（红框）" 
               
              loading="lazy"
         />
@@ -2609,7 +2590,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png" 
-             alt="" 
+             alt="首选项 → Protocols → TLS，RSA keys list 点 Edit，Key File 填 D:/CTF/资料/Key.txt" 
               
              loading="lazy"
         />
@@ -2620,7 +2601,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png" 
-             alt="" 
+             alt="再过滤 http，只剩 17078、17079 两个包" 
               
              loading="lazy"
         />
@@ -2630,7 +2611,7 @@ Quoted-printable编码</a></p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png" 
-             alt="" 
+             alt="追踪 HTTP 流 eq 2019：nginx 欢迎页，末尾红框 DDCTF{0ca2d8642f90e10efd9092cd6a2831c0}" 
               
              loading="lazy"
         />

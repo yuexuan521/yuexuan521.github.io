@@ -20,7 +20,6 @@ CTF Wiki 题目描述：得到的 flag 请包上 flag{} 提交。
 密文：下载附件解压，得到流量分析.pcap和流量分析.txt
 解题思路：1、先看流量分析.txt，看hint二去pcap包里找 “KEY” 。
 1 2 3 4 5 6 7 8 流量分析 200pt 提示一：若感觉在中间某个容易出错的步骤，若有需要检验是否正确时，可以比较MD5: 90c490781f9c320cd1ba671fcb112d1c 提示二：注意补齐私钥格式 -----BEGIN RSA PRIVATE KEY----- XXXXXXX -----END RSA PRIVATE KEY----- 搜索 “KEY” 。
-1 tcp contains "KEY" 追踪TCP流，找到一句话提到了密钥，最后大部分是一张图片的base64数据。
 ...</p></div><footer class=entry-footer><span title='2025-11-11 15:24:51 +0000 UTC'>十一月 11, 2025</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>461 字</span></footer><a class=entry-link aria-label="阅读：BUUCTF [DDCTF2018]流量分析 1" href=https://yuexuan521.github.io/zh/posts/buuctf-ddctf2018%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-1/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>BUUCTF Rabbit 1</h2></header><div class=entry-content><p>BUUCTF: https://buuoj.cn/challenges
 相关阅读
 CTF Wiki 题目描述：注意：得到的 flag 请包上 flag{} 提交
