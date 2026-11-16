@@ -11,7 +11,7 @@ tags:
 - "网络安全"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190910849.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -22,7 +22,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png)
+ ![题目页「［DDCTF2018］流量分析 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190912872.png)
 
 ### 题目描述：
 
@@ -32,7 +32,7 @@ tags:
 
 下载附件解压，得到流量分析.pcap和流量分析.txt
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png)
+ ![两个文件：流量分析.pcap（23,736 KB）与 流量分析.txt（2 KB）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190914452.png)
 
 ---
 
@@ -57,34 +57,34 @@ XXXXXXX
 tcp contains "KEY"
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png)
+ ![过滤 tcp contains "KEY"，命中第 6741 号包：FTP Data: 32701 bytes (PASV) (RETR ...](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190916301.png)
 
 追踪TCP流，找到一句话提到了密钥，最后大部分是一张图片的base64数据。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png)
+ ![追踪 TCP 流 eq 2016：multipart/alternative，Content-transfer-encoding: quoted-printable，红框一大串 =E4=BD=A0=E5=A5=BD…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190918330.png)
 
 [
 Quoted-printable编码](http://www.hiencode.com/quoted.html#:~:text=%E5%9C%A8%E7%BA%BFQuot) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png)
+ ![Quoted-printable 在线解码：字符集选 utf8，解出「你好，请你将密钥安装到服务器上。谢谢」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190919892.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png)
+ ![同一个流往后翻，第二段 multipart 是 image/png，name="image001.png"，编码 base64](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190921515.png)
 
 保存下来，尝试base64解码，另存为png文件。
 
 [Base64 在线解码、编码](https://the-x.cn/encodings/Base64.aspx) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png)
+ ![Base64 解码页提示「该内容已经被插件识别为二进制数据」，右下角认出是 png、1164×530](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190923478.png)
 
 得到图片如下：
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png)
+ ![解出来的文本以 MIICX 开头，一屏放不下](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190925805.png)
 
 2、将图片转换为文本，校对一遍，注意不要出错，套上正确的SSL私钥格式，保存为txt文件。
 
 ORC在线识别： [https://www.onlineocr.net/zh_hant/](https://www.onlineocr.net/zh_hant/) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png)
+ ![把那张 png 丢进在线 OCR，输出框里就是这串 MIICX… 开头的文本](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190928683.png)
 
 ```bash
 -----BEGIN RSA PRIVATE KEY-----
@@ -108,17 +108,17 @@ AnbJ4Z6opJCGu+UP2c8SC8m0bhZJDelPRC8IKE28eB6SotgP61ZqaVmQ+HLJ1/wH
 
 选择“ `首选项` ”
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png)
+ ![Wireshark 的「编辑 → 首选项...」（红框）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190930589.png)
 
 选择“ `TLS` ”，选择TLS密钥文件位置。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png)
+ ![首选项 → Protocols → TLS，RSA keys list 点 Edit，Key File 填 D:/CTF/资料/Key.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190933003.png)
 
 最后，过滤HTTP流量，追踪HTTP流，得到flag。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png)
+ ![再过滤 http，只剩 17078、17079 两个包](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190935025.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png)
+ ![追踪 HTTP 流 eq 2019：nginx 欢迎页，末尾红框 DDCTF{0ca2d8642f90e10efd9092cd6a2831c0}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190937066.png)
 
 ### flag：
 
