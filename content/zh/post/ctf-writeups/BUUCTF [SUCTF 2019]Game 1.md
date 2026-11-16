@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191821473.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png)
+ ![题目页「［SUCTF 2019］Game 1」，附件一张图和 src.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191823927.png)
 
 ### 题目描述：
 
@@ -35,9 +35,9 @@ flag 请替换 SUCTF{} 为 flag{} 后提交。
 
 下载附件，得到一张图片和一个网站源代码
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png)
+ ![题目配图是动漫女孩的头像](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191825575.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png)
+ ![解压出 css、js 与 index.html（3 KB）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191828044.png)
 
 ---
 
@@ -45,16 +45,16 @@ flag 请替换 SUCTF{} 为 flag{} 后提交。
 
 1、在网站源代码index.html中，发现经过Base32加密后的密文： `ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png)
+ ![index.html 里写着 here is your flag:ON2WG5DGPNUECSDBNBQV6RTBNMZV6RRRMFTX2===](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191829453.png)
 
 [Base32编码解码](https://www.qqxiuzi.cn/bianma/base.php) 
 使用在线网站进行解密，得到假的flag： `suctf{hAHaha_Fak3_F1ag}` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png)
+ ![Base32 解码得到 suctf{hAHaha_Fak3_F1ag}，是个假 flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191831117.png)
 
 2、转过方向，看看那张图片。发现存在LSB隐写，密文为： `U2FsdGVkX1+zHjSBeYPtWQVSwXzcVFZLu6Qm0To/KeuHg8vKAxFrVQ==` 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png)
+ ![StegSolve Data Extract 勾 Red/Green/Blue 的 0 位、MSB First、RGB，Preview 得到 U2FsdGVkX1+zHjSB…](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191832778.png)
 
 [Base64编码转换](https://www.qqxiuzi.cn/bianma/base64.htm) 
 密文与Base64编码非常相似，并且Base64解码后头部是"Salted"，猜测加密方式为AES或3DES。（根据U2FsdGVkX1开头，也有同样效果）
@@ -62,14 +62,14 @@ flag 请替换 SUCTF{} 为 flag{} 后提交。
 > **3DES** (Triple DES): PKCS#5 的早期实现通常使用 3DES 加密算法。当使用 3DES 时，加密的数据块可能会以 “Salted” 开头，后面跟着一个随机生成的盐值，用于派生密钥。
 > **AES** (Advanced Encryption Standard): 虽然 AES 通常不需要特定的前缀，但在某些实现中，如果使用 PKCS#5 或者类似的密码派生标准，也可能看到类似的前缀。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png)
+ ![Base64 解码（UTF-16）同样只得到 Salted__ 开头的乱码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191834495.png)
 
 3、加密方式是3DES，密钥为之前的假flag： `suctf{hAHaha_Fak3_F1ag}` ，解密得到flag
 [TripleDes加密/解密](https://www.sojson.com/encrypt_triple_des.html) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png)
+ ![3DES 解密：密文 suctf{U_F0und_1t}，密码填上一步的假 flag](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191836631.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png)
+ ![html 打开是「WELCOME TO SUCTF」加一个魔方](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191838200.png)
 
 ### flag：
 

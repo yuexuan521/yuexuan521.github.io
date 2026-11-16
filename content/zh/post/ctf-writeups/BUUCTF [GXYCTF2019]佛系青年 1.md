@@ -12,7 +12,7 @@ tags:
 - "密码学"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191216628.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -23,7 +23,7 @@ tags:
 - [CTF Wiki](https://ctf-wiki.org/)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png)
+ ![题目页「［GXYCTF2019］佛系青年 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191219294.png)
 
 ### 题目描述：
 
@@ -33,28 +33,28 @@ tags:
 
 下载附件，解压得到ZIP压缩包。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png)
+![attachment.zip，35 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191221432.png)
 
 ---
 
 ### 解题思路：
 
 1、压缩包内有一张png图片和一个txt文本，解压zip压缩包，解压出图片，但txt文本提示需要输入密码。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png)
+ ![Bandizip 打开，里面是 1.png（33,878）与 fo.txt（2,836）](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191222835.png)
 
 解压出的png图片
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png)
+![唐僧的表情包，配字「我FFFF。。佛慈悲」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191358437.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png)
+ ![解压 fo.txt 时提示输入密码](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191400614.png)
 
 2、压缩包内有两个文件，而且已经解压出了一个文件，我猜测为zip压缩包明文攻击，但后面没有成功解出密码。看过别人的题解之后，发现原来是zip伪加密。
 通过010Editor修改压缩源文件数据区和目录区的全局方式位标记（下图红色标识），将伪压缩文件恢复到未加密的状态。
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png)
+![十六进制里 PK 01 02 的中央目录处，红框 00 00 是加密标志位，右侧可见 1.png 与 fo.txt](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191402433.png)
 
 保存文件，解压得到fo.txt文件。
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png)
+ ![1.png 打开是 ASCII 画的佛像加一首打油诗，最下面一行「佛曰：遮等諦勝…」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191404239.png)
 
 ```bash
                                                                       _ooOoo_
@@ -97,13 +97,13 @@ tags:
 佛曰：遮等諳勝能礙皤藐哆娑梵迦侄羅哆迦梵者梵楞蘇涅侄室實真缽朋能。奢怛俱道怯都諳怖梵尼怯一罰心缽謹缽薩苦奢夢怯帝梵遠朋陀諳陀穆諳所呐知涅侄以薩怯想夷奢醯數羅怯諸
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png)
+ ![AmanCTF 与佛论禅，把那句「佛曰」贴进去，解出 flag{w0_fo_ci_Be1}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191406093.png)
 
 **更正** 
 在线网站已经无法使用，可以下载这个工具进行解码。
 [https://github.com/qianxiao996/CTF-Tools](https://github.com/qianxiao996/CTF-Tools) 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png)
+ ![CTF-Tools 的「解密 → 与佛论禅 → 1.0」，Result 同样是 flag{w0_fo_ci_Be1}](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191407660.png)
 
 ### flag：
 

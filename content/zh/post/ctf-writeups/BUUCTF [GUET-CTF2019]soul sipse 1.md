@@ -11,7 +11,7 @@ tags:
 - "隐写"
 ---
 
-![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png)
+![文章头图：蓝发少女插画，手写「刷题嘛~？」「一起听~」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191044084.png)
 
 **BUUCTF: [https://buuoj.cn/challenges](https://buuoj.cn/challenges)** 
 
@@ -24,7 +24,7 @@ tags:
 - [BUUCTF：［GUET-CTF2019］soul sipse](https://blog.csdn.net/mochu7777777/article/details/109838676)
 
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png)
+ ![题目页「［GUET-CTF2019］soul sipse 1」，附件 attachment.zip](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191046248.png)
 
 ### 题目描述：
 
@@ -34,7 +34,7 @@ tags:
 
 下载附件，解压得到out.wav
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png)
+ ![out.wav，显示为 WAV 文件](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191047951.png)
 
 ---
 
@@ -56,7 +56,7 @@ apt-get install  steghide
 https://share.weiyun.com/5wVTIN3
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png)
+ ![kali 里 steg hide info out.wav：capacity 61.6 KB，内嵌 download.txt（32 字节，rijndael-128 cbc）；extract 后 cat 出 https://share.weiyun.com/5wVTIN3](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191049010.png)
 
 ```powershell
 steghide info out.wav
@@ -66,20 +66,20 @@ cat download.txt
 
 访问该链接，到腾讯微云下载一张图片GUET.png。
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png)
+ ![腾讯微云分享页「Léon的分享: GUET.png」，6.97 KB](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191051039.png)
 
 2、图片无法打开，用010Editor打开，发现png文件头错误，修改为 `89 50 4E 47` ，保存可正常浏览。
 
 > PNG (png) 文件头：89 50 4E 47
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png)
+ ![打开 GUET.png 提示「似乎不支持此文件格式」](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191052361.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png)
+ ![010 Editor 里开头是 89 50 4E 48 0D 0A 1A 0A，第 4 字节被换成了 48](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191053792.png)
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png)
+ ![改回 89 50 4E 47 之后，IHDR 显示宽 0x453、高 0x120](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191055329.png)
 
 正常图片：
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png)
+ ![记事本里是一串 \u0034\u0030\u0037\u0030\u000d\u000a\u0031\u0032\u0033\u0034](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191057015.png)
 
 3、图片中的内容为，经过Unicode编码后的数据。
 
@@ -95,7 +95,7 @@ Unicode解码：
 1234
 ```
 
- ![](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png)
+ ![Unicode 在线工具解码，右框得到 4070 与 1234 两行](https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228191058516.png)
 
 最后，将得到数据相加，得到flag： `5304` .
 
