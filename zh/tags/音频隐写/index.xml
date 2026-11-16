@@ -535,7 +535,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题图同样是那位蓝发女孩，各篇共用的头部插图&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -553,7 +553,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -563,7 +563,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192124944.png" 
-             alt="" 
+             alt="题图同样是那位蓝发女孩，各篇共用的头部插图" 
               
              loading="lazy"
         />
@@ -581,7 +581,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192126926.png" 
-             alt="" 
+             alt="题目页「［UTCTF2020］spectogram 1」，附件 attachment.wav" 
               
              loading="lazy"
         />
@@ -593,7 +593,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192128658.png" 
-             alt="" 
+             alt="attachment.wav 文件" 
               
              loading="lazy"
         />
@@ -605,7 +605,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192129739.png" 
-             alt="" 
+             alt="Audacity 切到频谱图视图，红蓝条纹里隐约浮出字母" 
               
              loading="lazy"
         />
@@ -616,7 +616,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192132577.png" 
-             alt="" 
+             alt="语谱图原理示意：横轴是时间、纵轴是频率" 
               
              loading="lazy"
         />
@@ -627,7 +627,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192135053.png" 
-             alt="" 
+             alt="Audacity 编辑菜单，红框「首选项&hellip;(F)」，右侧频谱里已经能看到字" 
               
              loading="lazy"
         />
@@ -637,7 +637,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192137314.png" 
-             alt="" 
+             alt="首选项 → 频谱图：窗口大小 1024、Hanning、最高频率 8000、分贝范围 80" 
               
              loading="lazy"
         />
@@ -648,7 +648,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192138956.png" 
-             alt="" 
+             alt="调好参数后频谱里清楚显出 utflag{sp3tr0gr4m0ph0n3}" 
               
              loading="lazy"
         />
@@ -660,7 +660,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192141646.png" 
-             alt="" 
+             alt="Sonic Visualiser 官网下载页，红框 Download - primary（5.0.1）" 
               
              loading="lazy"
         />
@@ -671,7 +671,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192143437.png" 
-             alt="" 
+             alt="Sonic Visualiser 打开 wav，红框 Area 菜单，右侧 Colour Green、Scale dB、Window 1024" 
               
              loading="lazy"
         />
@@ -809,7 +809,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228192146575.png" 
-             alt="" 
+             alt="matplotlib 画出的 Spectrogram，中间同样显出 utflag{sp3tr0gr4m0ph0n3}" 
               
              loading="lazy"
         />

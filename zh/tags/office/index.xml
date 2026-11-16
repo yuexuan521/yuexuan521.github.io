@@ -23,7 +23,7 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题图：蓝发动漫女孩，配字「刷题嘛~？」「一起吖~」&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
@@ -41,42 +41,17 @@
 &lt;div class=&#34;post-img-view&#34;&gt;
     &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34;&gt;
         &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png&#34; 
-             alt=&#34;&#34; 
+             alt=&#34;题目页「［GKCTF 2021］excel 骚操作 1」：你真的了解 excel 吗，附件 flag.xlsx&#34; 
               
              loading=&#34;lazy&#34;
         /&gt;
     &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;h3 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h3&gt;&lt;p&gt;你真的了解excel吗（flag由flag头包裹&lt;/p&gt;
-&lt;h3 id=&#34;密文&#34;&gt;密文：&lt;/h3&gt;&lt;p&gt;下载附件，得到flag.xlsx文件&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;解题思路&#34;&gt;解题思路：&lt;/h3&gt;&lt;p&gt;1、打开文件，hint： &lt;code&gt;我看见flag了，你呢？&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;div class=&#34;post-img-view&#34;&gt;
-    &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png&#34;&gt;
-        &lt;img src=&#34;https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png&#34; 
-             alt=&#34;&#34; 
-              
-             loading=&#34;lazy&#34;
-        /&gt;
-    &lt;/a&gt;
-&lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;随便点击几个地方，发现有的单元格有数字 &lt;code&gt;1&lt;/code&gt; ，而且不是均匀分布的。&lt;/p&gt;</description>
+&lt;/div&gt;&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190938943.png" 
-             alt="" 
+             alt="题图：蓝发动漫女孩，配字「刷题嘛~？」「一起吖~」" 
               
              loading="lazy"
         />
@@ -94,7 +69,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190940931.png" 
-             alt="" 
+             alt="题目页「［GKCTF 2021］excel 骚操作 1」：你真的了解 excel 吗，附件 flag.xlsx" 
               
              loading="lazy"
         />
@@ -106,7 +81,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190942599.png" 
-             alt="" 
+             alt="flag.xlsx，13 KB，显示为 Microsoft Excel 工作表" 
               
              loading="lazy"
         />
@@ -118,7 +93,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190943700.png" 
-             alt="" 
+             alt="Excel 打开，A1 单元格里写着「我看见flag了，你呢？」" 
               
              loading="lazy"
         />
@@ -129,7 +104,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190945457.png" 
-             alt="" 
+             alt="选中 E6，编辑栏显示 1，可单元格本身是空白" 
               
              loading="lazy"
         />
@@ -140,7 +115,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190946800.png" 
-             alt="" 
+             alt="设置单元格格式 → 数字 → 自定义，红框标出「自定义」与类型框里的 G/通用格式" 
               
              loading="lazy"
         />
@@ -150,7 +125,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190948348.png" 
-             alt="" 
+             alt="视图缩到 10%，满屏的 1 拼成一张二维码" 
               
              loading="lazy"
         />
@@ -161,7 +136,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190950045.png" 
-             alt="" 
+             alt="条件格式 → 突出显示单元格规则 → 等于(E)&hellip;" 
               
              loading="lazy"
         />
@@ -171,7 +146,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190951477.png" 
-             alt="" 
+             alt="「等于」对话框里填 1，格式选「自定义格式&hellip;」" 
               
              loading="lazy"
         />
@@ -182,7 +157,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190953273.png" 
-             alt="" 
+             alt="设好之后 1 变成黑块，二维码清晰浮现" 
               
              loading="lazy"
         />
@@ -194,7 +169,7 @@
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg">
         <img src="https://cdn.jsdelivr.net/gh/yuexuan521/image/20251228190954674.jpeg" 
-             alt="" 
+             alt="手机扫码结果：smsto:1351100000:flag{9ee0cb62-f443-4a72-e9a3-43c0b910757e}，码制 HANXIN" 
               
              loading="lazy"
         />
